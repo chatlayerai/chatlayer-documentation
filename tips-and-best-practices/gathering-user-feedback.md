@@ -21,7 +21,11 @@ This tutorial will teach you how to gather feedback from your users about the qu
 
 ![](../.gitbook/assets/image%20%28298%29.png)
 
-* Add the following code to your Code plugin
+{% hint style="info" %}
+In this tutorial, we will be using [this Airtable](https://airtable.com/shrip6vQuFSy5z7Tz). Feel free to reuse it!
+{% endhint %}
+
+* Add the following code to your Code plugin in Chatlayer.ai
 
 ```javascript
 const body = {
