@@ -95,7 +95,8 @@ If you can't find your preferred language in this list or one of these languages
 * Persian \(Tajikistan and Uzbekistan, Cyrillic script\) 
 * Piedmontese
 * Polish
-* Portuguese
+* Portuguese \(Brazil\)
+* Portuguese \(Portugal\)
 * Quechua 
 * Romanian
 * Romansh 
