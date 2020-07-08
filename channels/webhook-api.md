@@ -8,6 +8,8 @@ This document describes what can be done, under which conditions and the expecte
 
 Note that the API can easily be tested from any web browser, command line terminal or API development environment.
 
+The Chatlayer.ai Webhook API is often used to integrate Chatlayer.ai into a mobile app.
+
 ## Building HTTP request
 
 ### Scheme and hostname
