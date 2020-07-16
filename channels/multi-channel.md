@@ -48,6 +48,7 @@ The table below gives an overview of which features are available in which chann
 | Quick replies | ✅ | ✅ | ✅ |  | ✅ | ✅ |
 | Carousel | ✅ | ✅ | ✅ |  | ✅ | ✅ |
 | List | ✅ | ✅ | ✅ |  | ✅ | ✅ |
+| Media | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | File upload | ✅ |  |  |  |  |  |
 | Branding customization | ✅ | \(✅\) | \(✅\) |  | ✅ | ✅ |
 | iframe | ✅ |  |  |  |  |  |
