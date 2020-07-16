@@ -37,3 +37,18 @@ The values for botType correspond to the channel names:
 * Phone: voice
 * All channels managed through the Sinch Conversation API: sinchConversationAPI
 
+## Channel comparison
+
+The table below gives an overview of which features are available in which channels. If a feature is not listed below, it's available for all channels.
+
+|  | Chat Widget | Facebook Messenger | Facebook Workplace | WhatsApp | Voice channels | Webhook  API | Zendesk |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Buttons | ✅ | ✅ | ✅ |  |  | ✅ | ✅ |
+| Quick replies | ✅ | ✅ | ✅ |  |  | ✅ | ✅ |
+| Carousel | ✅ | ✅ | ✅ |  |  | ✅ | ✅ |
+| List | ✅ | ✅ | ✅ |  |  | ✅ | ✅ |
+| File upload | ✅ |  |  |  |  |  |  |
+| Branding customization | ✅ | \(✅\) | \(✅\) |  |  | ✅ | ✅ |
+| iframe | ✅ |  |  |  |  |  |  |
+| Webview | ✅ | ✅ | \(✅\) |  |  |  |  |
+
