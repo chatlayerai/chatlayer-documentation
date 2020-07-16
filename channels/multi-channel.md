@@ -50,7 +50,7 @@ The table below gives an overview of which features are available in which chann
 | List | ✅ | ✅ | ✅ |  | ✅ | ✅ |
 | Media | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | File upload | ✅ |  |  |  |  |  |
-| Branding customization | ✅ | \(✅\) | \(✅\) |  | ✅ | ✅ |
+| Branding customization | ✅ | \(✅\) | \(✅\) | \(✅\) | ✅ | ✅ |
 | iframe | ✅ |  |  |  |  |  |
 | Webview | ✅ | ✅ | \(✅\) |  |  |  |
 

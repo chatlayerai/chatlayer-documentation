@@ -60,4 +60,6 @@ Different live chat platforms support different feature sets. Below you can find
 | Rich templates \(buttons, carousels, ...\) | ✅ |  | ✅ | ✅ | ✅ |  |
 | Bot history visible to agent | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Agent conversations in Chatlayer.ai history |  |  | ✅ |  | ✅ |  |
+| Skill & language based routing | ✅ |  | ✅ | ✅ | ✅ | ✅ |
+| Tags & variables | ✅ |  | ✅ |  |  |  |
 
