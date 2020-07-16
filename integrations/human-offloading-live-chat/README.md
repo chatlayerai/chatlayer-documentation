@@ -49,3 +49,15 @@ There are three predefined dialog states specifically for human offloading.
 * **Offloading closed**: message to be displayed when a user reaches the 'offloaded' state but the live chat is not open \(configurable: typically at night, lunch or weekends\)
 * **Offloading opened**: temporary waiting message that is displayed once the user has reached the 'offloaded' state. Typically a message similar to "Please wait for a couple of minutes while a live agent connects to this chat session."
 
+## Human handover comparison
+
+Different live chat platforms support different feature sets. Below you can find a list of what's supported by which provider.
+
+|  | Zendesk | Sparkcentral | Genesys Cloud | \#Interact | Help Scout | Intercom |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Chatlayer.ai widget & channel configuration |  |  | ✅ | \(✅\) | ✅ |  |
+| Provider widget & channel configuration | ✅ | ✅ |  | ✅ |  | ✅ |
+| Rich templates \(buttons, carousels, ...\) | ✅ |  | ✅ | ✅ | ✅ |  |
+| Bot history visible to agent | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Agent conversations in Chatlayer.ai history |  |  | ✅ |  | ✅ |  |
+
