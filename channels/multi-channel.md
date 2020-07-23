@@ -20,6 +20,8 @@ Publishing your bot on a channel is quite easy, as you can read in our channel g
 
 {% page-ref page="webhook-api.md" %}
 
+{% page-ref page="sinch-conversation-api-beta.md" %}
+
 ## Multi-channel
 
 If you want to have your users receive a different flow based on the channel they are on you can use Chatlayer.ai's multi-channel functionality. To do this, add a [Go To](../bot-answers/dialog-state/plugins.md) at the point in the flow you want to diverge based on channel.
