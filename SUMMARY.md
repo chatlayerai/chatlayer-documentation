@@ -72,6 +72,7 @@
 * [Chat widget](channels/webwidget.md)
 * [Phone & voice](channels/phone-and-voice.md)
 * [Workplace from Facebook](channels/workplace-from-facebook.md)
+* [Sinch Conversation API \(beta\)](channels/sinch-conversation-api-beta.md)
 
 ## Tips & Best practices
 
