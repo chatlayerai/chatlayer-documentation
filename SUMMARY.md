@@ -86,4 +86,5 @@
 ## Support
 
 * [Get in touch](support/get-in-touch.md)
+* [Status](https://status.chatlayer.ai/)
 
