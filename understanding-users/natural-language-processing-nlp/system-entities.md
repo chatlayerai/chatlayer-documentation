@@ -1,6 +1,16 @@
+---
+description: Learn about automatically detected entities
+---
+
 # System entities
 
 System entities are entities that are extracted from the messages of users automatically. You can use these to enrich your conversations and data integrations without having to configure custom entities yourself.
+
+{% hint style="warning" %}
+You should not overwrite System Entities yourself - they will always be overwritten with the last detected value if any are available. Instead, copy the System Entity variable to a variable of your own choosing outside the **sys** or **internal** namespaces.
+{% endhint %}
+
+## Supported system entities
 
 Chatlayer.ai supports the following system entity types:
 
