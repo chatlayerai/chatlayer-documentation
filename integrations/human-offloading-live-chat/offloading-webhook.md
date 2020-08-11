@@ -28,10 +28,6 @@ We will send a test request to your API URL when you press Save to validate whet
 
 Congratulations! You are ready to start using your custom human handover integration.
 
-To a user requests a handover to a human agent
-
-![](../../.gitbook/assets/image%20%28313%29.png)
-
 ## API Methods
 
 All requests will arrive in JSON format at the API URL configured during the setup of the offloading webhook in Chatlayer. Every JSON POST request has a body with a **type** parameter that allows you to distinguish between the different types of data coming in. Different types are explained below.
