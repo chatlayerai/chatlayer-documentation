@@ -218,6 +218,37 @@ By adding the properties underneath to your CSS, you can resize the chat widget 
 </style>
 ```
 
+### Encryption
+
+There are two main options for securing the chat widget. You can either verify the payload by using JWT, making sure it hasn't been tampered with, or you can encrypt the session created by the chat widget by using AES-256 data protection.
+
+![](../.gitbook/assets/image%20%28310%29.png)
+
+  
+When you turn on the AES-256 data protection, you can only pass an encrypted token as the chat session. This token should be generated in your own back-end. The code to generate the token looks like this \(using node.js\):
+
+```javascript
+const crypto = require('crypto');
+const SECRET = 'CHATLAYER_TOKEN'
+const createAESToken = (payload, secret = SECRET) => {
+    const iv = Buffer.from(crypto.randomBytes(8)).toString('hex');
+    const secretBuffer = Buffer.from(secret, 'hex');
+    const cipher = crypto.createCipheriv('aes-256-cbc', secretBuffer, iv);
+    const update = cipher.update(typeof payload === 'object' ? JSON.stringify(payload) : String(payload));
+    const encrypted = Buffer.concat([update, cipher.final()]);
+    return iv + encrypted.toString('hex');
+};
+const token = createAESToken({
+    exp: Math.floor(Date.now() / 1000) + 36000,
+    session: {
+        isAuthorized: true
+    },
+    sessionId: 'UNIQUE_ID_FOR_THIS_USER'
+});
+```
+
+How you pass this token to the client will depend on how you are generating your html, but this server-generated token should be what is passed to the chatlayer function:`const chat = chatlayer({token: serverGeneratedToken});`
+
 ## Live example
 
 We've created an example of how you can initialize and destroy the Chatlayer.ai chat widget through your own Javascript code.
