@@ -1,4 +1,4 @@
-# Webhook API
+# Webhook Channel API
 
 ## Introduction
 
