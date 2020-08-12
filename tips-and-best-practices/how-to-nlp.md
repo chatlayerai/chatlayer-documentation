@@ -62,6 +62,6 @@ Entities should only be used if their value is needed in the bot flow. For insta
 When adding entities to your training data, take the following points into accounts:
 
 1. **Punctuation**. Do not include any punctuation marks such as '.' or '?' in the entity. '-' is ok, as it is often part of the entity, as in 'Sint-Niklaas'. 
-2. **Capitalisation.** The entity extraction models are case sensitive. We noticed that many users do not use capitalisation when chatting with a bot. In order to also accurately identify lower case entities, include both capitalised and non-capitalised entities in your training data. For instance, add both 'Brussels' and 'brussels'. 
+2. **Capitalisation.** The entity extraction models are not case sensitive. So there is no need to add both 'Brussels' and 'brussels'. 
 3. **Words, not sentences**. Entities are words or small groups of words, usually noun phrases. Never mark full sentences or bigger phrases as an entity. If users often use paraphrases instead of a word, which frequently happens with technical terms, such as 'the little box that I use in order to have internet everywhere in my house' instead of 'wifi extender', consider not using entities but a separate intent. 
 
