@@ -6,14 +6,14 @@ description: >-
 
 # Offloading Webhook
 
-The offloading webhook allows you to
+The offloading webhook allows you to integrate any human handover live chat platform. You can use the webhook to:
 
 * Receive incoming user messages
 * Receive outgoing bot messages
 * Act upon offloading requests from a user
 
 {% hint style="info" %}
-This feature is currently in beta. If you would like access, please contact us at support@chatlayer.ai
+This feature is currently in beta. If you would like access, please [get in touch](../../support/get-in-touch.md).
 {% endhint %}
 
 ## Configuration
@@ -161,8 +161,6 @@ The items in the messages array have the following format -
 // Postback
 { "messageType": "postback", "title": "I'm a button" }
 ```
-
-
 
 {% api-method method="post" host="<your\_api\_url>" path="" %}
 {% api-method-summary %}

@@ -52,7 +52,6 @@
 * [Retrieving data from Airtable \(GET\)](integrations/retrieving-data-from-airtable-get.md)
 * [Sending data to Airtable \(POST\)](integrations/airtable.md)
 * [Human handover & live chat](integrations/human-offloading-live-chat/README.md)
-  * [Offloading Webhook](integrations/human-offloading-live-chat/offloading-webhook.md)
   * [\#Interact](integrations/human-offloading-live-chat/interact.md)
   * [RingCentral Engage Digital](integrations/human-offloading-live-chat/ringcentral-engage-digital.md)
   * [Genesys Cloud](integrations/human-offloading-live-chat/genesys-purecloud.md)
@@ -60,6 +59,7 @@
   * [Zendesk Chat](integrations/human-offloading-live-chat/zendesk-chat.md)
   * [Intercom](integrations/human-offloading-live-chat/intercom-integration.md)
   * [Sparkcentral \(beta\)](integrations/human-offloading-live-chat/sparkcentral-beta.md)
+  * [Offloading Webhook](integrations/human-offloading-live-chat/offloading-webhook.md)
 
 ## Channels
 
