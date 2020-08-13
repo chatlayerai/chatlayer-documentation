@@ -12,7 +12,7 @@ Since each language has its own words and grammar, we have a separate NLP engine
 
 ## Adding an Intent
 
-An **intent** is a joint name for a specific action your user can do or a type of question your user can ask. Intents are single blocks of meaning that the NLP can recognise. For example an intent can be a question, a statement, an answer to a question or a greeting. Each intent can be expressed in many ways, that all effectively mean the same thing. We call these different ways of saying the same thing **expressions**.
+An **intent** is a name for a specific action your user can do or a type of question your user can ask. Intents are single blocks of meaning that the NLP can recognise. For example an intent can be a question, a statement, an answer to a question or a greeting. Each intent can be expressed in many ways, that all effectively mean the same thing. We call these different ways of saying the same thing **expressions**.
 
 Some examples of intents and expressions:
 
@@ -24,10 +24,6 @@ Some examples of intents and expressions:
   * What is your name?
   * What can you do?
   * What should I call you?
-* Intent: I want to leave at 9pm Expressions:
-  * Can I leave at 9pm?
-  * I need to take the train that departs at 9pm
-  * Well, I was thinking about getting on the 9pm train.
 * Intent: yes Expressions:
   * Looks good
   * Yes
