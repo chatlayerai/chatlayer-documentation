@@ -6,6 +6,10 @@ description: Learn how to configure Interact with your chatbot
 
 Proximus \#Interact is a live chat solution that allows you to manage replies to your customers on all your social networks in one place. Read more [here](https://www.proximus.be/en/id_cl_customer_relationships/companies-and-public-sector/it-services/customer-relationships.html).
 
+{% hint style="info" %}
+The \#Interact environment used by customers can only be connected to the Chatlayer.ai production environment.
+{% endhint %}
+
 ## Configure \#Interact offloading
 
 Create an access token in \#Interact by going to Settings &gt; Tokens &gt; Add token.  The access token will automatically be copied to your clipboard.
