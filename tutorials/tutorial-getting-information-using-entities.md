@@ -32,6 +32,7 @@ If you're having trouble doing this, feel free to take a look at the [previous t
 Next, it's time to add an entity.
 
 * Click on `+ Add expression`
+* Select `book train ticket` intent
 * Enter an expression that contains an entity, like:
 
 > I want to book a ticket from Brussels to Paris
