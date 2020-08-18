@@ -21,7 +21,7 @@ But how do you keep track of these two components? How do you make sure you use 
 
 In the following 2 sections I will go deeper into how machine learning models work and how they can distinguish sentences based on these 2 features. In the last section I will dive deeper into the expression creation strategy that should give you the optimal set of expressions.
 
-**Word Diversity in Machine Learning Models**
+## **Word Diversity in Machine Learning Models**
 
 To make sure machine learning algorithms can work with words as input data they are converted into a set of numbers. For those who remember something of their math education in secondary school, this is comparable to x and y coordinates. For example the point \(3,2\) is the point where x = 3 and y = 2. Instead of using just 2 dimensions like x and y, word vectors use hundreds if not thousands of dimensions.
 
@@ -39,7 +39,7 @@ But the opposite case can also occur. Imagine you want to transport something bi
 
 The above illustration can give you a general idea on how machine learning models handle words. To make sure your chatbot understands what is good and what is bad, you should make sure that you use words that are diverse in each direction that is relevant for the use case. But for cases that are not allowed you should be very specific about which words not to include.
 
-**Word Order and Syntactic Structure in Machine Learning Models**
+## **Word Order and Syntactic Structure in Machine Learning Models**
 
 We all know that word order can have a specific meaning for us. “I want to take the train not the car” does not have the same meaning as “I want to take the car not the train” even though both sentences contain the same words.
 
@@ -53,11 +53,11 @@ With some imagination you can see that each of these sentences contain more or l
 
 Native English speakers will notice that sentence like “To Paris I want to take the train” are not syntactically correct in this context. However, don’t expect your customers to be always syntactically or even grammatically correct. And not all your customers will be native speakers. As long as you as a human can understand what has been said, you should include this type of expression in your model.
 
-**Optimal Expression Generation Strategy**
+## **Optimal Expression Generation Strategy**
 
 Now that we know that word order and word diversity is important and why, how can we use this insight to create a step by step guide to make a good set of expressions. Don’t expect a complicated algorithm here. It is actually quite simple. You only need 2 steps.
 
-**Step 1 - Word Order and Syntactic Structure**
+### Step 1 - Word Order and Syntactic Structure
 
 Try to come up with a range of very different sentences. In this step the word order and syntactic structure of the sentences is most important. You can ignore the word diversity for now. If we look at the expressions shown above for taking the train we can already use the sentences above and add a few more:
 
@@ -72,7 +72,7 @@ Try to come up with as many weird sentences as you can that might convey your in
 
 Now that you have these sentences with very diverse word orders you are ready to go to step 2.
 
-**Step 2 - Word Diversity**
+### Step 2 - Word Diversity
 
 In this step you take all of these sentences above and try to come up with as many synonyms as possible. To make your life easy we have included an expression generator in our platform.
 
@@ -112,7 +112,7 @@ Following this approach you quickly generate a large amount of expressions. If y
 
 Since the Chatlayer NLU doesn’t need such a high number of expressions to work well, our system selects the 50 most diverse sentences to train on. So per sentence you will only see up to 50 expressions show up in our platform.
 
-**Conclusion**
+## **Conclusion**
 
 If you follow this 2-step guide you are sure that you have covered all possible word orders that you can come up with and that you have a diverse set of words included. No more going through all of your expressions to check whether you haven’t missed anything. And if a real human comes up with a new word order you can simply add this sentence to the set, include all the synonyms and alternatives and retrain your model. And now you will have an even stronger chatbot.
 
