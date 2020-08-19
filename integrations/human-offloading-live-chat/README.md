@@ -55,7 +55,7 @@ Different live chat platforms support different feature sets. Below you can find
 
 |  | Zendesk | Sparkcentral | Genesys Cloud | \#Interact | Help Scout | Intercom |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Chatlayer.ai widget & channel configuration |  |  | ✅ | \(✅\) | ✅ |  |
+| Chatlayer.ai widget & channel configuration |  |  | ✅ |  | ✅ |  |
 | Provider widget & channel configuration | ✅ | ✅ |  | ✅ |  | ✅ |
 | Rich templates \(buttons, carousels, ...\) | ✅ |  | ✅ | ✅ | ✅ |  |
 | Bot history visible to agent | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
