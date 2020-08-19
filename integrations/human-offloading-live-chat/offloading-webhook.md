@@ -174,6 +174,10 @@ Offload
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="payload" type="object" required=false %}
+The payload you configured in the action dialogstate
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="channel" type="string" required=false %}
 
 {% endapi-method-parameter %}
@@ -229,9 +233,9 @@ Use a "Send to offload provider" bot action dialog to trigger an **offload** cal
 
 ![](../../.gitbook/assets/image%20%28313%29.png)
 
-### Taking over the conversation
+### Sending messages as an agent
 
-An agent may want to manually take over the user's conversation with the bot. To do this, you can pause the bot through the REST API.
+Use the [asynchronous actions API ](https://docs.chatlayer.ai/channels/webhook-api#asynchronous-actions)to send messages as an agent. 
 
 
 
