@@ -22,7 +22,7 @@ If you don't have credentials yet you can contact us [here](https://www.chatlaye
 * \(Optional\) Add other languages if you want a multi-lingual bot.
 * Click `Create` to create your new bot.
 
-![](../.gitbook/assets/image%20%28133%29.png)
+![](../.gitbook/assets/createbot.png)
 
 {% hint style="warning" %}
 Be aware that you can't add additional languages once the bot is created. Contact our support team [here](https://chatlayer.zendesk.com/hc/en-us) to if you need to add a language on an existing bot.
