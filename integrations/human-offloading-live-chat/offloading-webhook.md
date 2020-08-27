@@ -28,9 +28,45 @@ We will send a test request to your API URL when you press Save to validate whet
 
 Congratulations! You are ready to start using your custom human handover integration.
 
-## API Methods
+## Offloading Webhook API
 
-All requests will arrive in JSON format at the API URL configured during the setup of the offloading webhook in Chatlayer. Every JSON POST request has a body with a **type** parameter that allows you to distinguish between the different types of data coming in. Different types are explained below.
+To send 
+
+{% api-method method="get" host="https://api\[.staging\].chatlayer.ai/" path="v1/offload/webhook/:webhookId" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+## Webservice Implementation Reference
+
+Your webservice will need to implement the following API methods for us to communicate with. All requests will arrive in JSON format at the API URL configured during the setup of the offloading webhook in Chatlayer. Every JSON POST request has a body with an **event** parameter that allows you to distinguish between the different types of data coming in. Different types are explained below.
 
 We expect a status code of 200 for every request made to the webservice. Response data should be in JSON format.
 
@@ -77,6 +113,12 @@ Messages
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="challenge.verifyToken" type="string" required=false %}
+The verifyToken allows you to validate the request is made by Chatlayer
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+
 {% api-method-body-parameters %}
 {% api-method-parameter name="timestamp" type="string" required=false %}
 The time at which the message was generated
@@ -86,7 +128,7 @@ The time at which the message was generated
 An array of user and bot messages
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="type" type="string" required=false %}
+{% api-method-parameter name="event" type="string" required=false %}
 The type of request, in this case **`messages`**
 {% endapi-method-parameter %}
 
@@ -225,6 +267,8 @@ The type of request, in this case **`offload`**
 {% endapi-method-spec %}
 {% endapi-method %}
 
+The items in the transcript array have the same format as in the **messages** method described above.
+
 ## Recipes
 
 ### User-requested human handover
@@ -236,6 +280,8 @@ Use a "Send to offload provider" bot action dialog to trigger an **offload** cal
 ### Sending messages as an agent
 
 Use the [asynchronous actions API ](https://docs.chatlayer.ai/channels/webhook-api#asynchronous-actions)to send messages as an agent. 
+
+
 
 
 
