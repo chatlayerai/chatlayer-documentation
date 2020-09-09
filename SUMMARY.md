@@ -76,8 +76,8 @@
 
 ## Chatlayer API
 
-* [Webhook Channel API \(Deprecated\)](chatlayer-api/webhook-api.md)
 * [V1 API Reference](https://api.chatlayer.ai/v1/docs)
+* [Webhook Channel API \(Deprecated\)](chatlayer-api/webhook-api.md)
 
 ## Tips & Best practices
 
