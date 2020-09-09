@@ -1,4 +1,8 @@
-# Webhook Channel API
+# Webhook Channel API \(Deprecated\)
+
+{% hint style="danger" %}
+The Webhook Channel API is deprecated, please refer to the V1 API reference for new integrations.
+{% endhint %}
 
 ## Introduction
 

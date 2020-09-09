@@ -48,7 +48,7 @@ The postMessage API can also handle `UPDATE_SESSION` and `GO_TO_DIALOGSTATE` eve
 
 ## JSON Builder
 
-If your bot is published on the [Webhook API](../../channels/webhook-api.md) channel, you can use the JSON Builder action to send messages to the conversation that don't need to result in an actual message to the user. Typically, it's used to send information about the user or bot conversation to the website the bot is published at.
+If your bot is published on the [Webhook API](../../chatlayer-api/webhook-api.md) channel, you can use the JSON Builder action to send messages to the conversation that don't need to result in an actual message to the user. Typically, it's used to send information about the user or bot conversation to the website the bot is published at.
 
 ![](../../.gitbook/assets/image%20%28230%29.png)
 

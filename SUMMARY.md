@@ -69,11 +69,15 @@
   * [Facebook Webview Whitelisting](channels/facebook/facebook-webview-whitelisting.md)
 * [WhatsApp Business API](channels/whatsapp.md)
 * [Google Assistant](channels/google-assistant.md)
-* [Webhook Channel API](channels/webhook-api.md)
 * [Chat widget](channels/webwidget.md)
 * [Phone & voice](channels/phone-and-voice.md)
 * [Workplace from Facebook](channels/workplace-from-facebook.md)
 * [Sinch Conversation API \(beta\)](channels/sinch-conversation-api-beta.md)
+
+## Chatlayer API
+
+* [Webhook Channel API \(Deprecated\)](chatlayer-api/webhook-api.md)
+* [V1 API Reference](https://api.chatlayer.ai/v1/docs)
 
 ## Tips & Best practices
 
