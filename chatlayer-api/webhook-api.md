@@ -1,7 +1,7 @@
 # Webhook Channel API \(Deprecated\)
 
 {% hint style="danger" %}
-The Webhook Channel API is deprecated, please refer to the V1 API reference for new integrations.
+The Webhook Channel API is deprecated, please refer to the [V1 API reference](https://api.chatlayer.ai/v1/docs/) for new integrations.
 {% endhint %}
 
 ## Introduction
