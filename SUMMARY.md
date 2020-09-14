@@ -77,8 +77,8 @@
 
 ## Chatlayer API
 
-* [Legacy API](chatlayer-api/legacy-api.md)
 * [V1 API Reference](https://api.chatlayer.ai/v1/docs)
+* [Legacy API](chatlayer-api/legacy-api.md)
 
 ## Tips & Best practices
 
