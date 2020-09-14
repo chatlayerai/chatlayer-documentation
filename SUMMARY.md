@@ -68,6 +68,7 @@
   * [Facebook Admin Removal](channels/facebook/facebook-admin-removal.md)
   * [Facebook Webview Whitelisting](channels/facebook/facebook-webview-whitelisting.md)
 * [WhatsApp Business API](channels/whatsapp.md)
+* [Webhook Channel](channels/webhook-api.md)
 * [Google Assistant](channels/google-assistant.md)
 * [Chat widget](channels/webwidget.md)
 * [Phone & voice](channels/phone-and-voice.md)
@@ -76,8 +77,8 @@
 
 ## Chatlayer API
 
+* [Legacy API](chatlayer-api/legacy-api.md)
 * [V1 API Reference](https://api.chatlayer.ai/v1/docs)
-* [Webhook Channel API \(Deprecated\)](chatlayer-api/webhook-api.md)
 
 ## Tips & Best practices
 

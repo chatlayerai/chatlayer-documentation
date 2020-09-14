@@ -18,7 +18,7 @@ Publishing your bot on a channel is quite easy, as you can read in our channel g
 
 {% page-ref page="workplace-from-facebook.md" %}
 
-{% page-ref page="../chatlayer-api/webhook-api.md" %}
+{% page-ref page="webhook-api.md" %}
 
 {% page-ref page="sinch-conversation-api-beta.md" %}
 
