@@ -225,68 +225,6 @@ The size of the results
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="" path="/api/sessionData/:botId/:senderId/:namespace" %}
-{% api-method-summary %}
-Get the user session data
-{% endapi-method-summary %}
-
-{% api-method-description %}
-This method can be used to retrieve user session data from a namespace. A namespace is used to save your session data into. You can use this data for interpolation of session variable values in messages, API requests, etc.
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-query-parameters %}
-{% api-method-parameter name="access\_token" type="string" required=false %}
-
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="botId" type="string" required=false %}
-The bot ID you want to send the message to
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="senderId" type="string" required=false %}
-The user's sender ID
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="namespace" type="string" required=false %}
-The namespace of the variables to get
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```javascript
-{
-  "myAwesomeVar": "myAwesomeValue",
-  "myAwesomeVarDeep":  {
-    "aa": "bb"
-  }
-}
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=302 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
 ## Sending User Messages & Receiving Bot messages
 
 Chatlayer.ai provides:
