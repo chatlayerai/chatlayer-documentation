@@ -53,5 +53,7 @@ If you want to create an intent that allows a user to clear their current langua
 
 In the web widget you can trigger a specific bot language based on the language of the page the user is looking at. You can find more information [here](../channels/webwidget.md#default-locale).
 
+#### Voice
 
+When using the chatbot with voice capabilities, e.g., over phone, the voicebot will greet the user in the default language. However, when the user starts talking for the first time, the language of the user will be detected based on this first utterance \(expression\). The bot will automatically switch to that language and continue the whole conversation in that language.  Note that it will only be able to switch to languages the bot supports.
 
