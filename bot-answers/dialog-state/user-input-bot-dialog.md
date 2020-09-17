@@ -64,34 +64,32 @@ The Date input parser type will try to parse the response as a date. Sentences l
 
 #### Location
 
-The location parser will send the user input sentence to the Google Geocoding API service. When a correct address or location is recognized, Chatlayer will automatically create variables with all relevant geo data.
+The location parser will send the user input sentence to the Google Geocoding API service. When a correct address or location is recognized, Chatlayer will automatically create a variable with all relevant geodata.
 
-The variable name will be concatenated with an underscore ‘\_’ and the following field names:
+![An example for a location input validation](../../.gitbook/assets/screenshot-2020-09-17-at-12.25.45.png)
 
-* longitude
-* latitude
-* fullAddress
-* streetNumber
-* streetName
-* city
-* country
-* zipcode
+For the bot dialog that we configured as shown in the screenshot, a message 'Where do you work?' would be prompted to the user. When the user of the bot answers that question, an object containing information about the location will be stored in the `user_work_location` variable. Below is an example that shows how the `user_work_location` variable will look when the user responds with 'Chatlayer.ai':
 
-A new configuration setting ‘language’ is added for the location type which defines the geocoding result language.
+```javascript
+{
+    fullAddress: "Oudeleeuwenrui 39, 2000 Antwerpen, Belgium",
+    latitude: 51.227317,
+    longitude: 4.409155999999999,
+    streetNumber: "39",
+    streetName: "Oudeleeuwenrui",
+    city: "Antwerpen",
+    country: "Belgium",
+    zipcode: "2000",
+}
+```
 
-For example, a user input of 'Faction XYZ' with a variable name 'awesome\_location' will create the following variables and values:
+A bot message configured as:
 
-| **Session variable name** | **Value** |
-| :--- | :--- |
-| awesome\_location | Chatlayer |
-| awesome\_location\_fullAddress | Oude Leeuwenrui 39, 2000 Antwerpen, Belgium |
-| awesome\_location\_zipcode | 2000 |
-| awesome\_location\_city | Antwerpen |
-| awesome\_location\_latitude | 51.2305651 |
-| awesome\_location\_longitude | 4.4032441 |
-| awesome\_location\_country | Belgium |
-| awesome\_location\_streetName | Oude Leeuwenrui |
-| awesome\_location\_streetNumber | 39 |
+`Thank you, shall I send your package to {user_work_location.fullAddress} then?`
+
+Will result in the following message to the user in this specific example:
+
+`Thank you, shall I send your package to Oudeleeuwenrui 39, 2000 Antwerpen, Belgium then?`
 
 #### Number
 
