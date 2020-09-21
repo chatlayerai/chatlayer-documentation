@@ -228,7 +228,7 @@ The payload you configured in the action dialogstate
 An array containing all messages sent throughout the conversation.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="type" type="string" required=false %}
+{% api-method-parameter name="event" type="string" required=false %}
 The type of request, in this case **`offload`**
 {% endapi-method-parameter %}
 
