@@ -18,3 +18,9 @@ Direct links to the most popular pages:
 
 {% page-ref page="tips-and-best-practices/how-to-nlp.md" %}
 
+Prefer to watch instead of read? You can find our Tutorial Video Series here:
+
+{% embed url="https://www.youtube.com/playlist?list=PLTwwnFHi9r7L3RHxrsRci73kHMFj8Kumm" %}
+
+
+

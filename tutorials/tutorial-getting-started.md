@@ -4,6 +4,14 @@ In this tutorial, we will introduce you to the steps needed to create a chatbot 
 
 If you are working on an existing project, you don't need to set up a new project so feel free to skip ahead to the next tutorial.
 
+## Get familiar with chatbots
+
+We've created a short tutorial video that will help you understand the key concepts of chatbots, and the terms that are used in the Chatlayer.ai platform.
+
+{% embed url="https://www.youtube.com/watch?v=Zo5NFfcuOA8" %}
+
+
+
 ## Create a new bot
 
 We will create a conversational interface called Choo-choo, a digital assistant for booking train tickets.To get started, make sure you have valid credentials for using Chatlayer.ai.
