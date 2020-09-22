@@ -188,7 +188,8 @@ The items in the messages array have the following format -
 // Intro
 { 
     "messageType": "intro", 
-    // These fields are repeated for every other UserMessage example
+    // These fields are also included in every other UserMessage example
+    // For brievity, we'll only document them once:
     "channelType": "web",
     "sender": {
         // The sender object differs between channelTypes, but will always include:
