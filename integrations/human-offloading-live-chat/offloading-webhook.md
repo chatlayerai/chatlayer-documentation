@@ -168,7 +168,7 @@ The items in the messages array have the following format -
 
 ```javascript
 {
-    "type": "bot" | "user",
+    "actor": "bot" | "user",
     "message": UserMessage | BotMessage
 }
 ```
@@ -177,10 +177,7 @@ The items in the messages array have the following format -
 
 ```javascript
 // BotMessage example
-{
-    "type": "bot",
-    "message": { "text": "Hi, I'm a chatbot" }
-}
+{ "text": "Hi, I'm a chatbot" }
 ```
 
 **UserMessage** objects may have the following structures:
@@ -189,19 +186,41 @@ The items in the messages array have the following format -
 // UserMessage examples
 
 // Intro
-{ "messageType": "intro" }
+{ 
+    "messageType": "intro", 
+    // These fields are repeated for every other UserMessage example
+    "channelType": "web",
+    "sender": {
+        // The sender object differs between channelTypes, but will always include:
+        "id": "123",
+        "botId": "123"
+    },
+    "timestamp": "2020-09-22T19:34:16.049Z" 
+}
 
 // Text
-{ "messageType": "text", "text": "Hi, I'm a user and I'd like to talk to an agent" }
+{ 
+    "messageType": "text", 
+    "text": "Hi, I'm a user and I'd like to talk to an agent" 
+}
 
 // Upload
-{ "messageType": "upload", "urls": [] }
+{ 
+    "messageType": "upload", 
+    "urls": [] 
+}
 
 // Location
-{ "messageType": "location", "coordinates": { "lat": 0, "long": 0 } }
+{ 
+    "messageType": "location", 
+    "coordinates": { "lat": 0, "long": 0 } 
+}
 
 // Postback
-{ "messageType": "postback", "title": "I'm a button" }
+{ 
+    "messageType": "postback", 
+    "title": "I'm a button" 
+}
 ```
 
 {% api-method method="post" host="<your\_api\_url>" path="" %}
