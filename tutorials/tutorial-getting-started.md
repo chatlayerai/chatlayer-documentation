@@ -20,7 +20,7 @@ We will create a conversational interface called Choo-choo, a digital assistant 
 If you don't have credentials yet you can contact us [here](https://www.chatlayer.ai/contact).
 {% endhint %}
 
-* Log in using your credentials on [https://cms-staging.chatlayer.ai](https://cms-staging.chatlayer.ai)
+* Log in using your credentials on [https://cms.staging.chatlayer.ai/](https://cms.staging.chatlayer.ai/)
 * To start, click the `+ Add bot` button to create a new bot
 
 ![](../.gitbook/assets/image%20%28196%29.png)
@@ -35,10 +35,6 @@ If you don't have credentials yet you can contact us [here](https://www.chatlaye
 {% hint style="warning" %}
 Be aware that you can't add additional languages once the bot is created. Contact our support team [here](https://chatlayer.zendesk.com/hc/en-us) to if you need to add a language on an existing bot.
 {% endhint %}
-
-Once you have created the bot, click on the pencil icon to start creating your bot.
-
-![](../.gitbook/assets/image%20%28137%29.png)
 
 In the menu on the left, click on `Bot dialogs`. Enter the `General` flow by clicking the flow icon 
 
@@ -62,7 +58,7 @@ Our Choo Choo bot will start each conversation. You can configure this greeting 
 **What is a bot dialog?** A bot dialog is a something that the bot will do or say when triggered by a user. This can be anything from a message to a user, to making a connection to an external system, to jumping to another part of the conversation.
 {% endhint %}
 
-* Zoom in or out by use the scrolling wheel. Click and drag to move through the dialogue tree.
+* Zoom in or out by use the scrolling wheel. Click and drag to move through the dialog tree.
 * Click on the edit icon of the`introduction` bot dialog
 
 ![](../.gitbook/assets/image%20%28143%29.png)

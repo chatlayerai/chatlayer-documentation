@@ -4,7 +4,7 @@ In the previous tutorial, we created a new bot and added a greeting. Now it is t
 
 ## The NLP engine
 
-The Natural Language Processing \(NLP\) engine is the underlying code that does the understanding of the natural language that is entered by the user.
+The Natural Language Processing \(NLP\) engine is the underlying algorithm that does the understanding of the natural language that is entered by the user.
 
 > Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. Computers are no different. To train an NLP engine, huge amounts of data are needed. Luckily, we rely on pre-trained models that have a lot of smarts built in. The NLP engine will take care of spelling mistakes, synonyms, slang, varying word order, etc...
 
