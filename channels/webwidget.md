@@ -176,7 +176,7 @@ Remove `.staging` from the URL if you want to integrate a production bot. You ca
 If you want to recognize a returning bot user, you can send a unique sender ID for each person opening the bot, which can then be used to open the same conversation when the page is reloaded.
 
 ```markup
-<iframe src="https://chatbox.staging.chatlayer.ai/TOKEN?senderID=5241bbd5-6fd8-4333-85e0-72bsdf04f4c91"/>
+<iframe src="https://chatbox.staging.chatlayer.ai/TOKEN?senderId=5241bbd5-6fd8-4333-85e0-72bsdf04f4c91"/>
 ```
 
 Make sure that your sender ID is 20 characters or longer.
