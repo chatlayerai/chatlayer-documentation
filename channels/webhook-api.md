@@ -11,7 +11,7 @@ The overall mechanism is loosely based on Pubsub protocol , and rely on HTTP req
 
 ## Register a webhook API
 
-Add a new channel type webhook in your channel configuration in Chatayer.
+Add a new channel type webhook in your channel configuration in Chatlayer.
 
 ![](../.gitbook/assets/0%20%282%29.png)
 
