@@ -40,7 +40,9 @@ The richer the variety of expression you have, the more accurate your bot will r
 
 ## Entities
 
-Entities are important pieces of information that are extracted from an expression. Often, you want to store these in a separate variable for re-using them later. See the tutorial 'Getting information using entities' for learning how to use them.
+Entities are important pieces of information that are extracted from an expression. Often, you want to store these in a separate variable for re-using them later. Read more about entities here:
+
+{% page-ref page="synonym-entities.md" %}
 
 ## Updating the NLP
 
