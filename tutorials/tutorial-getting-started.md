@@ -8,9 +8,7 @@ If you are working on an existing project, you don't need to set up a new projec
 
 We've created a short tutorial video that will help you understand the key concepts of chatbots, and the terms that are used in the Chatlayer.ai platform.
 
-{% embed url="https://www.youtube.com/watch?v=Zo5NFfcuOA8" %}
-
-
+{% embed url="https://www.youtube.com/watch?v=QYLPu9Z1V08&list=PLDWxiKsSIVPJl0zssvGATGsib6Luj0WSH" %}
 
 ## Create a new bot
 
