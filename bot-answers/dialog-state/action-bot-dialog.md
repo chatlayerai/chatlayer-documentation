@@ -20,7 +20,13 @@ This action is used to integrate back-end services into your Chatlayer.ai bot. M
 
 ## Code
 
-Use the code editor to apply custom logic and functions to your flow, using Javascript. Click on the hamburger menu on the right to include some examples in your editor. You can find a tutorial about the use of the Code action [here](../../integrations/airtable.md).
+The code editor allows developers to quickly build custom logic on top of Chatlayer.ai by writing their own Javascript code blocks. Typically, the code editor is used to perform requests to external systems, or to do operations with variables.
+
+Click on the hamburger menu on the right to include some examples in your editor. There are two tutorials about the use of the Code editor:
+
+{% page-ref page="../../integrations/retrieving-data-from-airtable-get.md" %}
+
+{% page-ref page="../../integrations/airtable.md" %}
 
 ## iframe
 
