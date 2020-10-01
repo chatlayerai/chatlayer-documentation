@@ -1,5 +1,7 @@
 # NLP Dashboard & NLP Improve
 
+The NLP dashboard & NLP improve give you an automatic overview of the quality of your NLP model. It automatically detects overlap between intents, which is especially useful if you are building a larger NLP model or if multiple team members work on it.
+
 ## **NLP Dashboard**
 
 The NLP dashboard gives you an overall indication how well you are doing for each language. Based on how you have trained your NLP we give you an overall model score ranging from 0% to 100%. The overall model score is computed based on the amount of intents with too few expressions and the amount of intents with misclassified expressions.
