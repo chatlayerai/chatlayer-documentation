@@ -299,7 +299,7 @@ Use a "Send to offload provider" bot action dialog to trigger an **offload** cal
 
 ### Sending messages as an agent
 
-Use the [asynchronous actions API ](https://docs.chatlayer.ai/channels/webhook-api#asynchronous-actions)to send messages as an agent. 
+Use the [asynchronous actions API ](https://api.chatlayer.ai/v1/docs/#operation/executeConversationAction)to send messages as an agent. 
 
 
 
