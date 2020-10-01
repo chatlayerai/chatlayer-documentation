@@ -64,7 +64,7 @@ chatlayer.send()
 
 ### Available functionality
 
-To make the Code action more flexible, the following functionality inside the Code action's scope:
+The the following functionality exists inside the Code action's scope:
 
 #### lodash \(\_\)
 
