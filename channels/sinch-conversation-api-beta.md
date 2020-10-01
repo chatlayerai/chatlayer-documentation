@@ -1,4 +1,4 @@
-# Sinch Conversation API \(beta\)
+# Sinch Conversation API
 
 The [Sinch Conversation API](https://www.sinch.com/products/apis/messaging/conversation-api/) allows you to connect Chatlayer.ai to multiple channels at the same time, without the need for any additional configuration. The Sinch Conversation API currently supports:
 
@@ -10,13 +10,9 @@ The [Sinch Conversation API](https://www.sinch.com/products/apis/messaging/conve
 
 You don't have to think about which type of message works with which channel - the Conversation API transcodes the messages automatically to match the target channel.
 
-{% hint style="warning" %}
-The Sinch Conversation API integration is currently in beta, if you would like to try it out, [get in touch](../support/get-in-touch.md) with us.
-{% endhint %}
-
 ## Setting up the Conversation API integration
 
-![](../.gitbook/assets/image%20%28309%29.png)
+![](../.gitbook/assets/image%20%28316%29.png)
 
 In the Channels page of Chatlayer.ai, add a new channel that is activated through the Sinch Conversation API. 
 
