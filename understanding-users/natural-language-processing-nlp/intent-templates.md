@@ -1,7 +1,7 @@
 ---
 description: >-
-  This page gives a summary of the intent templates we offer that can be used to
-  generate intents and expressions faster.
+  Here you can find a summary of the intent templates we currently offer. You
+  can use these to quickly generate intents and expressions.
 ---
 
 # Intent templates
@@ -88,5 +88,5 @@ which_{subject1}_can_be_payed
 why_{subject1}
 ```
 
-For more information on the intent templates contact [info@chatlayer.ai](mailto:info@chatlayer.ai)
+For more information on the intent templates, please contact us at [info@chatlayer.ai](mailto:info@chatlayer.ai).
 
