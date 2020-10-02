@@ -1,22 +1,26 @@
 # Message components
 
-To design your conversational flow, you can use multiple components like text messages, buttons and carousels. Depending on the channel you publish the bot to \(Facebook Messenger, web, Slack, Telegram, ...\), these will be rendered slightly differently.
+To design your conversational flow, you can use multiple components, like text messages, buttons and carousels. Depending on the channel you publish the bot to \(Facebook Messenger, web, Slack, Telegram, ...\), these will be shown slightly different.
 
 {% hint style="info" %}
 **Character limits**
 
-When you're building your flows, Chatlayer.ai gives you advice on how many characters to use in buttons, text messages, etc.
+When you're building your flows, our platform gives you advice on how many characters you can use in buttons, text messages, etc.
 
 ![](../../.gitbook/assets/image%20%2817%29.png)
 
-For the Facebook Messenger channel, these are hard limits, which means that if you're adding a button label that's longer than 20 characters it will be cut off with "...".
+For Facebook Messenger, these are hard limits, meaning that if you're adding a button label longer than 20 characters, it will be cut off and shown with "..."   
+  
+For example: the label "hello I am a button click me" will be shown as "hello I am a button..."
+{% endhint %}
 
-For all other channels, the character limit is just an advice, we recommend staying below the limit, but it's not mandatory.
+{% hint style="info" %}
+For all other channels, the character limit is based on best practices. We recommend using less characters than the limit, but it's not mandatory.
 {% endhint %}
 
 ## Text Messages <a id="text"></a>
 
-Text messages are the simplest components. Most channels will show them as 'text bubbles'.
+Text messages are the most simple components. Most channels will show them as 'text bubbles'.
 
 ## Buttons
 
@@ -34,43 +38,43 @@ You can link a button to an external URL.
 
 #### Call
 
-This button will initiate a call if the user is working on a mobile device.
+This button will initiate a call if the user is using a mobile device.
 
 ## Media
 
-Using the Media template you can make the bot send files to your users.
+With the Media template, you can enable the bot to send files to your users.
 
 #### Images
 
-All typical image file types, such as jpg, png and gif are supported.
+All typical image types, such as jpg, png and gif are supported on our platform.
 
 #### Video
 
-Videos are available in the emulator, web widget and Facebook channel. The following video formats are supported:
+Videos are available in the Emulator, web widget and Facebook channel. The following video formats are supported:
 
 * mp4
 * ogv
 * webm
 
-A nice addition to the Facebook Messenger channel is that people can share the video with friends by clicking the button on the right side of the video:
+A nice feature of Facebook Messenger is that people can share a video with their friends by clicking the button on the right side of the video:
 
 ![](../../.gitbook/assets/video-messenger.png)
 
 #### Audio
 
-The audio widget is available in the emulator, the web widget and Facebook Messenger. The only supported audio format is MP3.
+The audio widget is available in the Emulator, the web widget and Facebook Messenger. Currently we only support MP3 as an audio format.
 
 ### ![](../../.gitbook/assets/messenger-audio.png)
 
 #### Files
 
-File attachments are available in the emulator, web widget and Facebook Messenger. Currently, only pdf files are allowed.
+File attachments are available in the Emulator, web widget and Facebook Messenger. Currently, only PDF is supported.
 
 ![](../../.gitbook/assets/attachment.png)
 
 ## Quick replies
 
-Quick replies behave similarly to buttons. They are rendered horizontally next to each other in a scrollable container. This means you add as many quick replies as you see necessary.
+Quick replies behave similarly to buttons. They are shown horizontally next to each other in a scrollable container. This means that you can add as many quick replies as you think necessary.
 
 #### Payloads
 
@@ -88,63 +92,63 @@ Optionally, you can add an icon to a quick reply by specifying its URL.
 
 #### Location
 
-This button will save your location to a defined variable. Define the language for all location related data.
+This button will save your location to a defined variable. Make sure to set the language for all location related data.
 
 ## Carousel
 
-Carousels are a way to visualize options with images. Each option can have up to three buttons with separate actions, but that is not required. These buttons are the same buttons as in a button template with the same properties like payloads an URL, with the addition of an extra share button.
+Carousels are a way to visualize options by using images. Each option can have up to three buttons with separate actions, but this is not required. These buttons are the same buttons as in the button template and use the same properties like payloads and URL, with the addition of an extra share button.
 
 {% hint style="info" %}
-Facebook has renamed Carousel to Generic Template. You can read about their guidelines for Generic Templates [here](https://developers.facebook.com/docs/messenger-platform/send-messages/template/generic).
+Facebook has renamed the 'Carousel' template to 'Generic Template'. You can read more about their guidelines for Generic Templates [here](https://developers.facebook.com/docs/messenger-platform/send-messages/template/generic).
 {% endhint %}
 
 #### Share button
 
-The share button opens a share dialog in Facebook Messenger enabling people to share message bubbles with friends. A message bubble is a carousel card.
+The share button opens a sharing-dialog in Facebook Messenger, enabling people to share message bubbles \(aka carousel cards\) with their friends.
 
-When a new user receives the bubble he can share it again with other friends by tapping the same share button. When tapping a postback button the user is send to the start page of the bot.
+When a new user receives a message bubble, he can share it with his friends by tapping the same share button. When tapping the postback button, the user is send to the start page of the bot.
 
-You can only use share button in generic templates \(carousels\) items and only items with maximum one url will be shared by Facebook. It is not possible to change the button title: Facebook Messenger will translate the button to the user his preferred language profile setting.
+You can only use share button in generic templates items \(previously called carousels\) and only items with maximum one url can be shared by Facebook. It is not possible to change the button title: Facebook Messenger will translate the button to the user's preferred language profile setting.
 
 ![](../../.gitbook/assets/carousel.png)
 
 ## List
 
-The List Template is a template that allows you to present a set of items vertically.
+The List Template is a template that allows you to present a list of items, shown vertically.
 
-Each item may render a button which can be used as a call-to-action \(postback\). You can also provide a URL to be opened when an item is tapped.
+Each item may shown a button that can be used as a call-to-action \(postback\). You can also provide a URL that opens when an item is tapped.
 
-Each list template message can also have up to 1 global button which will be rendered below the item list.
+Each list template message can also have up to one global button that will show below the item list.
 
-### List rendering styles
+### List styles
 
-Lists can be rendered in two different ways: Large and Compact.
+Lists can be shown in two different ways: Large and Compact.
 
 #### Large
 
-The first way renders the first item with a cover image with text overlaid. This is good to making the first item appear prominently above the other items.
+Large lists show the first item with a cover image and text overlay. This is useful if you want to make the first item stand out over the other items.
 
 ![](../../.gitbook/assets/list-template.png)
 
 #### Compact
 
-The second way renders each item identically and is useful for presenting a list of items where no item is shown prominently.
+Compact lists show each item in the same way. This is useful for presenting a list of items where no item is shown more prominently.
 
 ![](../../.gitbook/assets/list-template-compact.png)
 
 ## File upload
 
-Use the file upload template to let users upload a file directly from their device to the bot.
+Use the file upload template to let users upload a file directly from their device to your bot.
 
 ![](../../.gitbook/assets/image%20%287%29.png)
 
-Configuring the File Upload as shown above will result in an Upload button in the conversation:
+Configuring the File Upload as shown above will show an Upload button in the conversation:
 
 ![](../../.gitbook/assets/image%20%2890%29.png)
 
-If the upload failed because there was a problem with the connection, or the file the user chose was above 10 MB, the bot will go to the "failed upload" bot dialog.
+If the upload failed because there was a problem with the connection, or the file the user chose was bigger than 10 MB, the bot will go to the "failed upload" bot dialog.
 
-The URL where the uploaded file is stored can be found under the `{uploadedFileUrl}` variable in the session of the user. You can reuse this variable to show the file the user uploaded, by using the [Media](message-components.md#attachments) template. Alternatively, you can retrieve the URL with an [API plugin](../../integrations/custom-back-end-integrations/) to store the files on your servers.
+The URL where the uploaded file is stored can be found under the `{uploadedFileUrl}` variable in the user's session. You can reuse this variable to show the file that the user uploaded by using the [Media](message-components.md#attachments) template. Alternatively, you can retrieve the URL with an [API plugin](../../integrations/custom-back-end-integrations/) to store the files on your servers.
 
 ![](../../.gitbook/assets/image%20%28106%29.png)
 
