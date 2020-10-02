@@ -1,6 +1,6 @@
 # Go To
 
-Go To enables the bot to redirect the user to a bot dialog state depending on conditions of the session variables.
+Go To enables your bot to redirect the user to a bot dialog state depending on the conditions of the session variables.
 
 ![](../../.gitbook/assets/image%20%28169%29.png)
 
