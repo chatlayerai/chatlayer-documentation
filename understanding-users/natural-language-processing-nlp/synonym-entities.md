@@ -1,42 +1,43 @@
 # Entities
 
-Entities are important pieces of information that are extracted from an expression. Often, you want to store these in a separate variable for re-using them later.
+Entities are important pieces of information that are extracted from an expression. You want to store these entities in a separate variable so you can re-use them later on.
 
 ## Contextual entities
 
-Contextual entities use machine learning to extract entities from your sentence by learning which type of word your entity is, where in the sentence it's placed and what the context around it is.
+Contextual entities use machine learning to identify entities in your sentence by learning which type of word your entity is, where in the sentence it's placed and what the specific context is.
 
 ### Adding synonyms for entities
 
-Synonym entities allow you to add alternatives to entities that are mapped to the same value. For example
+Synonym entities allow you to add alternatives to entities that are assigned to the same value.   
+For example:
 
 `I want to go to Brussels`
 
 `I want to go to Bruxelles`
 
-The meaning of these two expressions is exactly the same, but you want to convert `Bruxelles` to `Brussels` so your ticketing system understands the destination this user wants to go to.
+The meaning of these two expressions is exactly the same, but you want to convert `Bruxelles` to `Brussels` so that your bot understands the destination your user wants to go to.
 
-To do this, go to the Entities tab, and edit the entity you want to add synonyms for.
+To do this, go to the Entities tab and click on the entity you want to create synonyms for to add them.
 
 ![](../../.gitbook/assets/image%20%28201%29.png)
 
 ### Fuzzy matching for contextual entities
 
-Fuzzy matching allows you to recognize a slight variation of a synonym or entity value as the original value. For example "Brusselt" will be replaced by "Brussels".
+Fuzzy matching allows you to recognize a slight variation of a synonym or entity value as the original value. For example "Brusselt" will be corrected to "Brussels".
 
-The fuzzy matching is quite strict. It comes down to less than 20% of characters that can be different in order to map it to another entity. This is to avoid that the value is mapped to another entity which has also overlap. 
+The fuzzy matching is quite strict. Less than 20% of the characters can be different in order to map it to another entity. This is to avoid that the value is mapped to another entity which also has overlap. 
 
 ## System entities
 
-System entities are entities that are extracted from the messages of users automatically. You can use these to enrich your conversations and data integrations without having to configure custom entities yourself.
+System entities are entities that are automatically extracted from the messages of users. You can use these to enrich your conversations and data integrations without having to configure custom entities yourself.
 
 {% hint style="warning" %}
-You should not overwrite System Entities yourself - they will always be overwritten with the last detected value if any are available. Instead, copy the System Entity variable to a variable of your own choosing outside the **sys** or **internal** namespaces.
+You should not overwrite System Entities yourself – they will automatically be overwritten with the last detected value if any are available. Instead, copy the System Entity variable to a variable of your own choosing outside the **sys** or **internal** namespaces.
 {% endhint %}
 
 ### Supported system entities
 
-Chatlayer.ai supports the following system entity types:
+We support the following system entity types:
 
 | Variable name | Example input by user | Example result in session |
 | :--- | :--- | :--- |

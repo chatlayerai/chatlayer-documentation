@@ -16,8 +16,8 @@
 
 * [Natural Language Processing \(NLP\)](understanding-users/natural-language-processing-nlp/README.md)
   * [NLP threshold](understanding-users/natural-language-processing-nlp/settings.md)
-  * [NLP Import & Export](understanding-users/natural-language-processing-nlp/nlp-import-and-export.md)
-  * [Train your bot with actual user messages](understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages.md)
+  * [NLP import & export](understanding-users/natural-language-processing-nlp/nlp-import-and-export.md)
+  * [Training your bot with actual user input](understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages.md)
   * [NLP Dashboard & NLP Improve](understanding-users/natural-language-processing-nlp/nlp-dashboard-and-nlp-improve.md)
   * [Entities](understanding-users/natural-language-processing-nlp/synonym-entities.md)
   * [Supported languages](understanding-users/natural-language-processing-nlp/supported-languages.md)
