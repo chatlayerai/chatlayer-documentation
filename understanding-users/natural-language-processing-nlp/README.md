@@ -1,64 +1,66 @@
 # Natural Language Processing \(NLP\)
 
-The Natural Language Processing \(NLP\) engine is the underlying code that's used to understand the natural language that is entered by the user.
+The Natural Language Processing \(NLP\) engine is the underlying code that's used to understand the natural language that is used by the user.
 
-Understanding language isn't easy: it takes us humans about 12 years and hundreds of examples to understand the most common 20,000 words. Computers are no different. To train an NLP engine, huge amounts of data are needed. Luckily, we rely on pre-trained models that have a lot of smarts built in. The NLP engine will take care of spelling mistakes, synonyms, slang, varying word order, etc...
+Understanding language isn't easy: it takes us humans about 12 years and hundreds of examples to understand the most common 20,000 words. And computers are not so different. To train an NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in. Our NLP engine will take care of spelling mistakes, synonyms, slang, varying word order, etc ...
 
 ## Intent
 
-An intent is a joint name for a specific action your user can do. Intents are single blocks of meaning that the NLP can recognise. For example an intent can be a question, a statement, an answer to a question or a greeting.
+An intent is a joint name for a specific action your user can take. Intents are single blocks of meaning that the NLP can recognise. For example, an intent can be a question, a statement, an answer to a question or a greeting.
 
 Some examples of intents:
 
 * Can you book me a train ticket from Brussels to Amsterdam?
 * Who are you?
-* I want to leave at 9pm
+* I want to leave at 9 pm
 * Yes
 * Thank you
 * I want to speak to a human
 
 ## Expressions
 
-Expressions are example sentences for a specific Intent. In the literature, this will sometimes be called 'utterances' as well. The more Expression you add to an Intent, the more accurately it will be recognized. It is crucial for an Intent to have a wide variety of expressions to give accurate results. The more expression you can think of, the better the result of the NLP will be and the 'smarter' your bot will be
+Expressions are example sentences for a specific Intent. In industry literature, they are sometimes called 'utterances'. The more Expression you add to an Intent, the more accurately it will be recognized. It is crucial for an Intent to have a wide variety of expressions to give accurate results. The more expression you can think of, the better the result of the NLP and the 'smarter' your bot will appear.
 
-Some examples of expressions for an intent 'who are you'
+Here are some examples of expressions for the intent 'who are you'
 
 * Who are you?
 * What is your name?
-* Can I know your name?
+* Do you have a name?
 * Tell me more about yourself
 * Please, I'd like to know who I am talking to
-* How should I call you
-* who is choo choo
-* tell me what your name is
-* Who are ya
+* How should I call you?
+* who is choo choo?
+* Tell me what your name is
+* Who are ya?
 * What do people call you?
 * Are you a robot?
 * Do you have a name?
 
-The richer the variety of expression you have, the more accurate your bot will respond.
+The more expression you have, and the more varied, the more accurate your bot will respond.
 
 ## Entities
 
-Entities are important pieces of information that are extracted from an expression. Often, you want to store these in a separate variable for re-using them later. Read more about entities here:
+Entities are important pieces of information that are extracted from an expression. Often, you want to store these in a separate variable so you can re-use them later. 
+
+Find out more about entities here:
 
 {% page-ref page="synonym-entities.md" %}
 
 ## Updating the NLP
 
-On every page there is an update NLP button on the top right of the screen, visible on all pages. When you see a spinner instead of a brain icon, your NLP model is still training.
+On every page in our tool, you will find an 'update NLP' button at the top right of the screen. When you see a spinner instead of a brain symbol, your NLP model is still training.
 
 ![](../../.gitbook/assets/image%20%28162%29.png)
 
 {% hint style="info" %}
-Do you want to learn how to improve your NLP model? Learn about the best practices our article:
+Do you want to learn how you can improve your NLP model? You can find tips and tricks in the article below.
 
 {% page-ref page="../../tips-and-best-practices/how-to-nlp.md" %}
 {% endhint %}
 
 ## Intent pack
 
-We've created a small intent pack in the most frequently used languages to allow you to quickly get started with your NLP model. This pack contains intents such as "yes", "no", "thank you", "who are you", and Chit Chat intents such as "tell me a joke".
+We've created a small intent pack in the most frequently used languages to allow you to quickly get started with your NLP model. This pack contains intents such as "yes", "no", "thank you", "who are you", and chit chat intents such as "tell me a joke". Download them here:
 
 {% file src="../../.gitbook/assets/default-intents-chit-chat-en.csv" caption="Basic intent pack EN" %}
 

@@ -1,14 +1,15 @@
 # Introduction
 
-Chatlayer.ai is a platform that provides the tools to build robust chat- and voice bots that support mission critical processes and serious business cases.
+Chatlayer.ai allows you to build clever AI chat- and voice bots to help you improve conversations, scale your support and drive more revenue – no technical skills required.
 
-On this website, you can find documentation regarding the most important aspects of Chatlayer.ai, and we help you get to know our platform with easy to follow tutorials.
+This documentation explains you how to get started on our platform, using easy-to-follow tutorials and visual guides. Within minutes, you'll be able to create a conversational chat bot and build advanced dialogues for better conversations.
 
-Glad to have you on board with us!
+Happy building!
 
 ![](.gitbook/assets/image%20%28160%29.png)
 
-Direct links to the most popular pages:
+  
+Head straight to our most popular popular pages:
 
 {% page-ref page="tutorials/tutorial-getting-started.md" %}
 

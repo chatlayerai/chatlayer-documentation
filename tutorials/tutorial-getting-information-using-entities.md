@@ -1,6 +1,6 @@
 # Capturing information with entities
 
-In the Choo Choo bot, we can define a new intent that tells us that the user wants to book a train ticket by training it with expressions like:
+We can define a new intent that tells us the user wants to book a train ticket by training it with expressions like:
 
 * I want a train ticket
 * I need a ticket
@@ -12,11 +12,11 @@ But what happens when a user says something like:
 * I need to go to Antwerp tomorrow
 * Can I book a train ticket to Brussels please?
 
-Those expressions contain valuable information. We want to make sure we capture the destination and store it as a variable. In this tutorial, we will see how to store data that was mentioned in intents using entities. In the next tutorial, you will see how we can ask explicitly for missing variables.
+Those expressions contain valuable information. We want to make sure we capture the destination and save it as a variable. In this tutorial, you will learn how to store data that was mentioned in intents, using entities. In the next tutorial, you will learn how you can ask explicitly for missing variables.
 
 ## Creating entities
 
-Not all users will immediately give the destination, so let's make sure we train our intent without entities as well:
+Not all users will immediately mention their destination, so let's make sure we train our intent without those specific entities as well:
 
 * Go to `NLP` &gt; `Intents`
 * Add a new intent called `book train ticket`
@@ -26,14 +26,14 @@ Not all users will immediately give the destination, so let's make sure we train
   * Can I book a train ticket, please?
 
 {% hint style="info" %}
-If you're having trouble doing this, feel free to take a look at the [previous tutorial](tutorial-adding-content.md).
+If you have trouble doing this, please read the [previous tutorial](tutorial-adding-content.md).
 {% endhint %}
 
 Next, it's time to add an entity.
 
 * Click on `+ Add expression`
-* Select `book train ticket` intent
-* Enter an expression that contains an entity, like:
+* Select the `book train ticket` intent
+* Enter an expression that contains an entity, for example:
 
 > I want to book a ticket from Brussels to Paris
 
@@ -41,42 +41,44 @@ Next, it's time to add an entity.
 
 ![](../.gitbook/assets/image%20%2815%29.png)
 
-* Click on the + entity icon in the bottom right of the expression box to create a new entity for Brussels
-* Brussels is the location the user wants to depart from so we will name this entity `origin`. 
-* Type `origin` in the `Create new entity` field and click the Create new entity button to confirm.
+* Click on the + entity icon in the bottom right of the expression box to create a new entity for 'Brussels'
+* Brussels is the location the user wants to depart from, so we will name this entity `origin` 
+* Type `origin` in the `Create new entity` field and click on 'Create new entity' to confirm
 
 ![](../.gitbook/assets/image%20%28250%29.png)
 
-* Brussels will be added to the list of possible values for the @origin variable.
-* Do the same thing for `Paris` as a destination entity.
+* Brussels will be added to the list of possible values for the @origin variable
+* Do the same thing for `Paris` as a 'destination' entity
 
 ![](../.gitbook/assets/image%20%2886%29.png)
 
-* Add some other values for the @origin and @destination entities in the expression field. These will be saved for all future expressions.
-* Add more expressions that contain the entities **origin** and **destination**.
+* Add some other values to the @origin and @destination entities in the expression field. These will be saved for all future expressions
+* Add more expressions that contain the entities **origin** and **destination**
 
 {% hint style="info" %}
-Chatlayer.ai recommends adding at least 30 expressions per entity, to guarantee the quality of the entity detection.
+We recommends adding at least 30 expressions per entity, to guarantee the quality of the entity detection.
 {% endhint %}
 
-* Some suggestions for expressions:
+* Some ideas for expressions:
+
   * Can I book a train from Cologne to Brussels?
   * I need to be in Rotterdam
   * I need a train to London
-  * I need to be in Lyon
-  * I want to buy a ticket from Moscow to Vladivostok.
+  * I want to travel to Lyon
+  * I want to buy a ticket from Moscow to Vladivostok
   * I need a ticket from New York to Baltimore
-* Make sure you retrain the model by clicking the `Update NLP` button.
+
+* Make sure you retrain the NLP model by clicking the `Update NLP` button.
 
 ## Testing entities
 
-After we have retrained the model, let's see if the model is good enough to recognise the destination entity.
+After we have retrained our model, let's see if its good enough to recognise the destination entity.
 
-* Go to `NLP` &gt;`Test` to open the testing console. 
+* Go to `NLP` &gt;`Test` to open the testing console 
 * Write 'I would like to go to Brussels from Amsterdam' as the expression to be tested
-* Click on `Test`.
+* Click on `Test`
 
-You see that the entity gets recognized with a 89.72% confidence. Your results will be different based on your training set. If the entity is not recognized correctly, you can add it here as a training expression immediately. 
+You'll see that the entity gets recognized with a 89.72% confidence. The results will be different based on your training set. If the entity is not recognized correctly, you can add it here as a training expression immediately. 
 
 {% hint style="warning" %}
 Make sure you retrain the model before testing newly added expressions.
@@ -86,12 +88,12 @@ Make sure you retrain the model before testing newly added expressions.
 
 ## Using variables in messages
 
-When a user says something with an entity, and the entity is successfully detected, Chatlayer will automatically store it as a **variable** for that specific user.
+When a user says something containing an entity, and the entity is successfully detected, our tool will automatically store the entity as a **variable** for that specific user.
 
-To reuse the variable later in the conversation, you can put it in between curly brackets like this: `{variable_name}`. When writing this message to the users, Chatlayer.ai will automatically substitute `{variable_name}` ****with the value of the variable. If the variable is empty, an empty string will be printed.
+To reuse the variable later on in the conversation, you can put it in between curly brackets like this: `{variable_name}`. When writing this message to the users, we will automatically substitute `{variable_name}` ****with the value of the variable. If the variable is empty, an empty string will be shown.
 
-* In Bot dialogs, create a bot dialog of type Bot message `book train ticket` and link the `book train ticket` intent to it in the NLP tab.
-* Add a new text message with the text 'So you want to go to `{destination}`, I can help you with that!'
+* In Bot dialogs, create a bot dialog of the type 'Bot message' `book train ticket` and link the `book train ticket` intent to it in the NLP tab.
+* Add a new text message with the text "So you want to go to `{destination}`, I can help you with that!"
 
 Variables can be used everywhere throughout the platform, for example in API calls, list templates and button labels.
 
@@ -105,29 +107,29 @@ Not only entities can be variables. Later on you will learn how to use variables
 
 Now that we have linked everything, we are ready to test if everything is configured correctly by using the emulator.
 
-* Open the Emulator \(aka `Test your bot`\)
-* Enter "I want to go to Amsterdam" and submit
+* Open the emulator \(aka `Test your bot`\)
+* Enter "I want to go to Amsterdam" and click on submit
 * Open the debugger
 
 ![](../.gitbook/assets/image%20%28193%29.png)
 
-In the 'NLP Result' tab you can now see the entity was extracted correctly.
+In the tab 'NLP Result'  you can now see if the entity was extracted correctly.
 
-All entities are stored in the variables list automatically. Under the 'Debugger' tab, you can find a list of all known variables under 'User Session'. Since the entity was recognized in the previous message, this contains the variable 'destination'.
+All entities are automatically stored in the variables list. In the 'Debugger' tab, you can find a list of all known variables under 'User Session'. Since the entity was recognized in the previous message, this contains the variable 'destination'.
 
 ![](../.gitbook/assets/image%20%28253%29.png)
 
 {% hint style="info" %}
-If your entity is recognised by the NLP but does not show up in the User Session, it did not pass the threshold. By default the threshold is set to 80%. You can lower it in the NLP tab, but better still is to add more expressions to your bot so that the model becomes more robust and will work better in the future.
+If your entity is recognised by the NLP but doesn't show up in the User Session, it did not pass the threshold. By default the threshold is set to 80%. You can lower it in the NLP tab, but better still is to add more expressions to your bot so that the model becomes more robust and will work better in the future.
 {% endhint %}
 
 ## Multiple entities
 
-You can add as many entities as you want to an expression. It can sometimes make sense to prepare for a lot of entities and add expressions like
+You can add as many entities as you want to one expression. Sometimes it makes sense to prepare for a lot of entities and add an expression like
 
 * I want to go from **Antwerp** to **Brussels** **tomorrow** at **9am** in **first** class
 
-with entities
+with the following entities:
 
 * origin: Antwerp
 * destination: Brussels
@@ -135,11 +137,11 @@ with entities
 * departure-time: 9am
 * class: first
 
-Keep in mind that NLP techniques are probabilistic in nature. When you try to capture 5 expressions in one sentence, it might not recognise all of them correctly. As a general rule of thumb, you can start to expect reasonable results for one entity when the NLP was given 30 expression to learn from. 
+Keep in mind that NLP techniques are probabilistic in nature. When you try to capture five expressions in one sentence, it might not be able to recognise all of them correctly. As a general rule of thumb, you can start to expect reasonable results for one entity when the NLP was given at least 30 expression to learn from. 
 
 ![](../.gitbook/assets/expression-withentities.png)
 
-#### Additional Expression suggestions
+#### Additional suggestions for expressions
 
 * I need to be in Paris next Thursday
 * I need to be in New York on Friday
@@ -152,25 +154,25 @@ Keep in mind that NLP techniques are probabilistic in nature. When you try to ca
 
 ## Missing entities
 
-### Test your entities
+### Testing your entities
 
-Update your `book train ticket` message to display the entities.
+Update the `book train ticket` message to display the entities:
 
 `So I have a request for a train ticket; {origin} to {destination} on {departure-date}, {departure-time}, {class} class.`
 
-Re-train your NLP model and test your bot.
+Now retrain your NLP model and test your bot
 
 ![](../.gitbook/assets/incomplete-conversation%20%281%29.png)
 
-Oops, not completely what we want. The departure date and time is not set \(your result can be different depending on your expressions\).  
+Uh oh, this isn't really what we expected. As you can see, the departure date and time is not set \(your result may be different depending on the expressions you used\).  
   
-What is the problem? Let's look at the NLP Results:
+So, what's the problem? Lets have a look at the NLP Results:
 
 ![](../.gitbook/assets/nlp-result%20%281%29.png)
 
-`origin`, `destination` and `departure-date` is found but only `origin` and `destination` have a confidence score above 80%. So `departure-date` is not processed and put into a variable.  
+`origin`, `destination` and `departure-date` were found correctly, but only `origin` and `destination` have a confidence score above 80%. So `departure-date` was not processed and put into a variable.  
   
-More expressions can help you fix this problem.
+More expressions can help you fix this problem!
 
-Not every user will input all the entities you might need. In the [next tutorial](tutorial-request-and-use-information-using-input-plugins.md), we will see how we can check if a user has already provided information, and ask for everything that is missing.
+Not every user will input all the entities you need. In the [next tutorial](tutorial-request-and-use-information-using-input-plugins.md), you will learn how to check if a user has already provided certain information, and ask for what's missing.
 
