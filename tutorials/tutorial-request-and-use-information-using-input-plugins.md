@@ -1,4 +1,4 @@
-# Capture information with input validation
+# Capturing information with input validation
 
 So far, our content was limited to a simple conversation. In a lot of use cases, the bot needs input from the user to fully fulfil their flow. That input can then be used later in the flow, or you can send it to the database with the API plugin.
 
@@ -14,7 +14,7 @@ In our Choo Choo example, the user has shown an interest in booking a train tick
 
 Let's start by asking for the departure location.
 
-* Open the `book train ticket` bot dialog.
+* Open the `book train ticket` bot dialog
 * In the Bot Message tab, click the green + icon at the bottom to add a Go to
 * Type `destination` in the Go to field, and click `Create Input Validation 'destination'`
 

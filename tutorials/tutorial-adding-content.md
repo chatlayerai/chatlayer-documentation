@@ -55,7 +55,7 @@ The more Expressions you add to an Intent, the more accurately it will be recogn
 
 * Select the `who are you` intent in the **Intents** pane
 * Click on `+ Add Expression` in the **Expressions** pane
-* Enter `Who are you?` in the open text field.
+* Enter `Who are you?` in the open text field
 * Click on `Create`
 
 ![](../.gitbook/assets/image%20%2818%29.png)
