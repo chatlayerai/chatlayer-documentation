@@ -1,4 +1,4 @@
-# Capture information with entities
+# Capturing information with entities
 
 In the Choo Choo bot, we can define a new intent that tells us that the user wants to book a train ticket by training it with expressions like:
 
