@@ -6,7 +6,7 @@ Context is used to reuse intents across several bot dialogs. Learn more about ho
 
 ## Example
 
-Consider the following dialog tree
+Consider the following dialog tree:
 
 * Bot dialog `ask confirmation of pizza order`
 
@@ -28,7 +28,7 @@ To make that happen, we need to reuse the '_Yes'_ intent for both bot dialogs. H
 
 ![](../.gitbook/assets/image%20%2857%29.png)
 
-Similarly, you can specify the output context of the `another joke?` bot dialog to **joking** and require **joking** as a required context for the bot dialog `second joke`
+Similarly, you can specify the output context of the `another joke?` bot dialog to **joking** and require **joking** as a required context for the bot dialog `second joke`.
 
 Now, when the 'yes' intent is recognized, the bot will check which context is active. Depending on the context, a user will be directed to either the `confirm order` bot dialog \(when the **confirmingpizza** context is active\) or to the `second joke` bot dialog \(if the **joking** context was active\)
 
@@ -49,7 +49,7 @@ To configure this, you can define the **lifespan** of the output context. Each t
 
 ![](../.gitbook/assets/image%20%28190%29.png)
 
-All of this means that a user is redirected to a dialog state when:
+All of this means that a user is redirected to a bot dialog when:
 
 1. The NLP model result has a top scoring intent with a value higher than the NLP intent recognition threshold value, and
 2. This intent is linked to a bot dialog and the optional context linked to this bot dialog is available in the user session
