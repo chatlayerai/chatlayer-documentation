@@ -3,20 +3,20 @@
 Integrating your bot with Facebook Messenger is easy, just follow the steps in the wizard.
 
 {% hint style="danger" %}
-In order for your Facebook Messenger bot to be publicly available, you will have to go through Facebook's stringent App Review process. You can find steps & best practices for App Review [here](https://developers.facebook.com/docs/apps/review/).
+In order for your Facebook Messenger bot to be publicly available, you will have to go through Facebook's strict App Review process. We've listed the steps & best practices for App Review [here](https://developers.facebook.com/docs/apps/review/).
 {% endhint %}
 
 ## Facebook Messenger Specific Content
 
-In the `Channels > Messenger` section you can define some settings that are specific to Facebook Messenger.
+In the `Channels > Messenger` section you can define settings that are specific to Facebook Messenger.
 
 ### Greeting Message
 
-The greeting message is what will first be shown when the bot is opened by a user. In the example below, the greeting message is configure to `Timeless apparel for the masses`.
+The greeting message is what will be shown first when the bot is clicked on by a user. In the example below, the greeting message is configure to `Timeless apparel for the masses`.
 
 #### Personalization
 
-You can personalize the greeting text using the person's name. You can use the following template strings:
+You can personalize the greeting text using the user's name by using these template strings:
 
 * `{{user_first_name}}`
 * `{{user_last_name}}`
@@ -26,7 +26,7 @@ You can personalize the greeting text using the person's name. You can use the f
 
 ### Get Started Button
 
-Facebook has a `Get Started` button attached to every page. Clicking on that button routes you to a bot dialog that you can choose here. Typically, this is a bot dialog introducing the bot and what it can do.
+Facebook has a `Get Started` button visible on every page. Clicking that button redirects you to a bot dialog which you can choose here. Typically, this is a bot dialog introducing the bot and what it can do for the user.
 
 ### Persistent Menu
 
