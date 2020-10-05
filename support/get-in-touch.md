@@ -1,12 +1,12 @@
 # Get in touch
 
-Contact our support team [on this page](https://chatlayer.zendesk.com) to get help, ask any question about the platform or building bots, or report an issue. You can also send an email to [support@chatlayer.ai](mailto:support@chatlayer.ai).
+Need help? Got questions that need answering? We got you! You can find the most frequently asked questions [here](https://support.chatlayer.ai/hc/en-us), or submit your own request at the top right. You can also send an email directly to [support@chatlayer.ai](mailto:support@chatlayer.ai).
 
-Questions about upgrading your Chatlayer.ai license or enabling that feature you've always wanted? Send a message to [info@chatlayer.ai](mailto:info@chatlayer.ai).
+Questions about upgrading your Chatlayer.ai license or enabling that feature you've always wanted? Send us a message at [info@chatlayer.ai](mailto:info@chatlayer.ai).
 
 ### Creating a Zendesk account
 
-If you want to follow up the tickets of your organization or contribute to the [Chatlayer.ai Community](https://chatlayer.zendesk.com/hc/en-us/community/topics), you can create a Chatlayer.ai Zendesk account.
+Want to follow up on your ticket? Or contribute to our [community](https://chatlayer.zendesk.com/hc/en-us/community/topics)? You can do so by creating a Chatlayer.ai Zendesk account following these steps:
 
 * Go to the [Chatlayer.ai Zendesk home page](https://chatlayer.zendesk.com/)
 * Click Sign in on the top right of the page
