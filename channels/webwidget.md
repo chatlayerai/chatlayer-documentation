@@ -6,7 +6,7 @@ One of the most common ways of making a bot available to your clients is through
 
 To create a chat widget for your bot, navigate to the Channels tab and then click on the pencil icon next to Web.
 
-Click on "+ Create" to start building your first custom chat widget.
+Click "+ Create" to start building your first custom chat widget.
 
 {% hint style="info" %}
 You can create multiple chat widgets for one bot, remove them, view them, and copy them using the buttons in the chat widget table.
@@ -33,33 +33,33 @@ On the Chat Widget page you can customize a number of key chat widget components
 
 ### White listing
 
-To make sure your bot can only be activated on your website, all Chatlayer.ai chat widgets must be whitelisted before use. To do this, go to the config tab of the Chat Widget builder and add your domains in regex format. 
+To make sure your bot can only be activated on your website, all your chat widgets must be whitelisted before you can use them. To do this, go to the config tab of the Chat Widget builder and add your domain names in regex format. 
 
 An example of this regex format for https://www.chatlayer.ai: `^https:\/\/www\.chatlayer\.ai(\/|$)`
 
 ## Embedding the web widget on your website
 
-To embed the bot into your website, start by clicking the Embed button in the top right of the Custom Chat Widget page.
+To embed the bot on your website, start by clicking the Embed button in the top right of the Custom Chat Widget page.
 
 ![](../.gitbook/assets/mar-04-2020-17-40-50.gif)
 
-There are two ways of integrating the Chatlayer.ai Chat Widget onto your website: you can use an **iframe** or the **SDK**.
+There are two ways of integrating the Chat Widget on your website: you can use either **iframe** or **SDK**.
 
 You can switch between SDK and iframe using the Type switcher above your widget:
 
 ![](../.gitbook/assets/image%20%28224%29.png)
 
-### Should I use the SDK or an iframe?
+### Should I use SDK or iframe?
 
-The Chatlayer chat widget SDK is a layer on top of the iframe, which includes some other functionalities such as a button that is shown before the chat window is opened, an option to close the chatbot.
+Our chat widget SDK is a layer on top of an iframe, which includes some other functionalities like a button that is shown before the chat window opens, with the option to close the chatbot.
 
-If you want to get the chat widget onto your website with minimal custom development it's best to use the SDK. The only thing you need to do is include a HTML script tag as described below.
+If you want to get the chat widget onto your website with minimal custom development, it's best to use an SDK. The only thing you need to do is include a HTML script tag as described below.
 
-If you want more control over other elements, such as the chat button, it's best to use the iframe.
+If you want more control over other elements, such as the chat button, it's best to use iframe.
 
 ### SDK
 
-You can load the Chatlayer.ai chat widget by using the script tag below. Calling the `chatlayer` function will render the button and your chat widget to the page.
+You can load the chat widget by using the script tag below. Calling the `chatlayer` function will show the button and your chat widget on the page.
 
 ```markup
 <script src="https://chatbox.staging.chatlayer.ai/sdk/INSERT-TOKEN-HERE" 
@@ -77,7 +77,7 @@ Remove `.staging` from the URL if you want to integrate a production bot. You ca
 </script>
 ```
 
-In this case, the bot will be opened in English, and when a user clicks the SDK button, it will be opened with the Grow animation.
+In this case, your bot will be opened in English, and when a user clicks the SDK button, it will be opened with the Grow animation.
 
 ![](../.gitbook/assets/mar-04-2020-18-07-31.gif)
 
@@ -85,7 +85,7 @@ In this case, the bot will be opened in English, and when a user clicks the SDK 
 
 | Property name | Type | Remark |
 | :--- | :--- | :--- |
-| `withCloseButton` | `boolean` | The close button allows customers to close the bot using an "X" icon in the top right of the chat widget |
+| `withCloseButton` | `boolean` | The close button allows customers to close the bot clicking an "X" icon at the top right of the chat widget |
 | `autoOpen` | `boolean` |  |
 | `noButton` | `boolean` |  |
 | `session` | `object` | Add data to the session which can be used to guide the flow. |
