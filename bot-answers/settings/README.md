@@ -2,7 +2,7 @@
 
 ### Status
 
-Click the status slider to disable the bot temporarily. The message configured under the `bot disabled` bot dialog will be shown.
+Click the status slider to temporarily disable the bot. The message configured under the `bot disabled` bot dialog will be shown.
 
 ### Botflow URL
 
