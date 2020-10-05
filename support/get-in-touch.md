@@ -1,16 +1,16 @@
 # Get in touch
 
-Need help? Got questions that need answering? We got you! You can find the most frequently asked questions [here](https://support.chatlayer.ai/hc/en-us), or submit your own request at the top right. You can also send an email directly to [support@chatlayer.ai](mailto:support@chatlayer.ai).
+Still have questions after reading this documentation? Need help with a specific issue? We got you. You can find the most frequently asked questions [here](https://support.chatlayer.ai/hc/en-us), or submit your own request using the button at the top right. You can also contact us directly at [support@chatlayer.ai](mailto:support@chatlayer.ai).
 
-Questions about upgrading your Chatlayer.ai license or enabling that feature you've always wanted? Send us a message at [info@chatlayer.ai](mailto:info@chatlayer.ai).
+Do you have questions about upgrading your Chatlayer.ai license? Have an idea for a great feature? Send us a message at [info@chatlayer.ai](mailto:info@chatlayer.ai).
 
 ### Creating a Zendesk account
 
-Want to follow up on your ticket? Or contribute to our [community](https://chatlayer.zendesk.com/hc/en-us/community/topics)? You can do so by creating a Chatlayer.ai Zendesk account following these steps:
+Want to follow up on your ticket? Contribute to our [community](https://chatlayer.zendesk.com/hc/en-us/community/topics)? You can do so by creating a Chatlayer.ai Zendesk account following these steps:
 
 * Go to the [Chatlayer.ai Zendesk home page](https://chatlayer.zendesk.com/)
-* Click Sign in on the top right of the page
-* In the window that pops up, click the "New to Chatlayer? Sign up" button
+* Click 'Sign in' on the top right of the page
+* In the pop-up window, click on 'Sign up' link on the bottom left
 
 ![](../.gitbook/assets/image%20%2867%29.png)
 
