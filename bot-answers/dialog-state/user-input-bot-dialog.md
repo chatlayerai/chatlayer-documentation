@@ -1,38 +1,36 @@
 # Input Validation
 
-An input validation dialog state can be used to get information from the bot users. 
+An input validation dialog state can be used to get information from the bot's user. It first checks if the variable specified in the 'variable' field exists. 
 
-The input validation dialog state first checks if the variable specified under the 'variable' field exists.
+If 'variable' has a value already, the bot will go automatically to the next bot dialog specified in the 'Next bot dialog' dropdown list.
 
-If 'variable' has a value, the plugin automatically goes to the next bot dialog specified in the 'Next bot dialog' dropdown list.
+If 'variable' does not have a value, the bot will ask the question as defined in the Question section.
 
-If 'variable' does not have a value, the plugin will ask the question as defined under the Question section.
+Session variables can already be known for a number of reasons:
 
-Session variables can be already known for various reasons:
-
-* the user has answered this question before
-* an entity was extracted with the same variable name
-* the user is authenticated and the variable was automatically set
+* The user has answered this question before
+* An entity was extracted with the same variable name
+* The user is authenticated and the variable was automatically set
 
 ## Invalid input
 
-You can specify the message to be displayed when input validation fails, or fails 3x. For example the first time a message might simply be "Can you try again?" or "Can you try DD/MM/YYY format?" and after 3 fails the message might be "Please contact our support at \[tel number\]" or to redirect the user to a live agent.
+The input is invalid? You can specify the message to be displayed when input validation fails, or fails 3 times. For example: the first time a message might simply be "Can you try again?" or "Can you try DD/MM/YYY format?" but after 3 fails, the message might be "Please contact our support at \[tel number\]" or your bot can redirect the user to a live agent.
 
 ## Settings
 
 ### Disable NLP
 
-Users are able to leave the input validation if an intent is recognized. For bots with a very small NLP model, this might trigger a false positive. The disable NLP checkmark allows you to to disable the NLP model while in the input validation, which makes sure that whatever the user says gets saved as input.
+Users are able to leave the input validation if an intent is recognized. For bots with a very small NLP model, this might trigger a false positive. The 'disable NLP' checkbox allows you to disable the NLP model while in the input validation, which makes sure that whatever the user says gets saved as input.
 
 ![](../../.gitbook/assets/image%20%28109%29.png)
 
 ### Always past - always future
 
-Chatlayer parses the expressions from users to match a default date format. If the date you ask should always be present or future, you can use these options. A user saying “Thursday” for example will be either mapped to last or next Thursday.
+Our platform parses user's expressions to match a default date format. If the date you ask should always be in the present or future, you can use these options. A user saying “Thursday” for example will be either mapped to last or next Thursday.
 
 ### Input types
 
-Input plugins automatically validate and extract different input types based on the type setting. The type parser is responsible for extracting the data out from the user input. For example if the input plugin has a type of _date_ and the user his input sentence was 'I need to be in Paris _in two days_' the input plugin parser will extract the date definition out of this user input which results in 'in two days'. The parser will convert this into a date representation, DD/MM/YYY and the result will be stored in the user session.
+Input plugins automatically validate and extract different input types based on the type setting. The type parser is responsible for extracting the data from the user's input. For example: if the input-plugin has a type of **date** and the user's input-sentence was 'I need to be in Paris _in two days_' the input plugin parser will extract the date definition from this input which results in 'in two days'. The parser will convert this into a date representation, DD/MM/YYY, and the result will be stored in the user session.
 
 #### Any
 
@@ -40,13 +38,13 @@ The 'Any' input type will accept all string values as an input. It is important 
 
 #### Date
 
-The Date input parser type will try to parse the response as a date. Sentences like 'next week monday' are automatically converted to a DD/MM/YYYY date object. Supported formats \(also in other supported NLP languages\)
+The Date input parser type will try to parse the response as a date. Sentences like 'next week Monday' are automatically converted to a DD/MM/YYYY date object. Supported formats \(also in other supported NLP languages\) are:
 
 * 22/04/2018
 * 22/04
 * 22 apr
 * 22 april 18
-* twenty two april 2018
+* twenty two April 2018
 * yesterday
 * today
 * now
@@ -54,21 +52,21 @@ The Date input parser type will try to parse the response as a date. Sentences l
 * tomorrow, tmr
 * in two weeks
 * in 3 days
-* next monday
-* next week friday
-* last/past monday
+* next Monday
+* next week Friday
+* last/past Monday
 * last/past week
 * within/in 5/five days
-* friday/fri
-* ... \(Contact the [Support](https://github.com/chatlayer/chatlayer-documentation/tree/583d39b48ac82ffccf142520f337ede136bb68e2/reference/support.md) team for extra supported formats\)
+* Friday/Fri
+* ... \(Contact our [Support](https://github.com/chatlayer/chatlayer-documentation/tree/583d39b48ac82ffccf142520f337ede136bb68e2/reference/support.md) team if you need additional formats\)
 
 #### Location
 
-The location parser will send the user input sentence to the Google Geocoding API service. When a correct address or location is recognized, Chatlayer will automatically create a variable with all relevant geodata.
+The location parser will send the user's input sentence to a Google Geocoding API service. When a correct address or location is recognized, our platform will automatically create a variable with all relevant geo-data.
 
 ![An example for a location input validation](../../.gitbook/assets/screenshot-2020-09-17-at-12.25.45.png)
 
-For the bot dialog that we configured as shown in the screenshot, a message 'Where do you work?' would be prompted to the user. When the user of the bot answers that question, an object containing information about the location will be stored in the `user_work_location` variable. Below is an example that shows how the `user_work_location` variable will look when the user responds with 'Chatlayer.ai':
+Look at the bot dialog below, where we ask the user "Where do you work?" When the user answers that question, an object containing information about the location will be stored as a `user_work_location` variable. Below is an example that shows how the `user_work_location` variable would be stored when the user responds with 'Chatlayer.ai':
 
 ```javascript
 {
@@ -87,7 +85,7 @@ A bot message configured as:
 
 `Thank you, shall I send your package to {user_work_location.fullAddress} then?`
 
-Will result in the following message to the user in this specific example:
+Will show the following message to the user:
 
 `Thank you, shall I send your package to Oudeleeuwenrui 39, 2000 Antwerpen, Belgium then?`
 
@@ -105,11 +103,11 @@ This input type will parse and validate currencies.
 
 #### E-mail
 
-This input type will parse and validate e-mail addresses.
+This input type will parse and validate email addresses.
 
 #### Postal code
 
-This input type will parse and validate postal codes. Note: as of now, only Belgian postal codes are supported.
+This input type will parse and validate zip codes. Note: currently we only support Belgian zip codes.
 
 **Image**
 
@@ -119,15 +117,15 @@ The image format type allows you to check if a user has uploaded an image. Curre
 
 This input type will parse and validate NLP supported languages.
 
-* English: \(en-us\): 'engels', 'english', 'en', 'anglais'
-* Dutch \(nl-nl\): 'nederlands', 'dutch', 'ned', 'nl', 'vlaams', 'hollands', 'be', 'ned', 'néerlandais', 'belgisch'
-* French \(fr-fr\): 'french', 'français', 'frans', 'fr', 'francais'
-* Chinese \(zh-cn\): 'chinese', 'cn', 'zh', 'chinees'
+* English: \(en-us\): 'engels', 'English', 'en', 'anglais'
+* Dutch \(nl-nl\): 'nederlands', 'Dutch', 'ned', 'nl', 'vlaams', 'hollands', 'be', 'ned', 'néerlandais', 'belgisch'
+* French \(fr-fr\): 'French', 'français', 'frans', 'fr', 'francais'
+* Chinese \(zh-cn\): 'Chinese', 'cn', 'zh', 'chinees'
 * Spanish \(es-es\): 'Spanish', 'español', 'es', 'spaans'
-* Italian \(it-it\): 'italian', 'italiaans', 'italiano', 'it
-* German \(de-de\): 'german', 'duits', 'de', 'deutsch
-* Japanese \(ja-jp\): 'japanese', 'japans', 'jp', '日本の
-* Brazil Portugese \(pt-br\): 'brazil portugese', 'portugese', 'portugees', 'braziliaans portugees', 'português'
+* Italian \(it-it\): 'Italian', 'italiaans', 'italiano', 'it
+* German \(de-de\): 'German', 'duits', 'de', 'deutsch
+* Japanese \(ja-jp\): 'Japanese', 'japans', 'jp', '日本の
+* Brazil Portugese \(pt-br\): 'Brazil Portugese', 'Portugese', 'portugees', 'braziliaans portugees', 'português'
 
 #### **Voice message**
 
