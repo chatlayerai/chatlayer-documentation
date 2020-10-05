@@ -1,10 +1,10 @@
 # Channels
 
-A channel is a way to expose the chatbot you've built in Chatlayer towards users of the bot. The channel you should choose for your bot depends on where the target audience for your bot likes to talk.
+Users can use your chat bot via a channel. The channel you choose for your bot depends on where its users will most likely look for help or hang out.
 
-For example, if you're building an internal HR bot, it's best to put it on the company HR portal through a web widget, or on Facebook Workplace. However, if you're building a bot that's targeted towards a young demographic, Facebook Messenger might be a better way to go.
+For example, if you are building an internal HR bot, we think it's best to put it on the company HR portal using a web widget, or perhaps on Facebook Workplace. However, if you're building a bot that targets a young\(er\) demographic, Facebook Messenger might be a better channel.
 
-Publishing your bot on a channel is quite easy, as you can read in our channel guides:
+Publishing your bot on a channel is quite easy if you follow our channel guides:
 
 {% page-ref page="facebook/" %}
 
