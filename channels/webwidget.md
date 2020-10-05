@@ -94,9 +94,9 @@ In this case, your bot will be opened in English, and when a user clicks the SDK
 | `button` | `HTMLElement` |  |
 | `wrapper` | `HTMLElement` |  |
 
-#### Passing a variable to the SDK
+#### Transferring a variable to the SDK
 
-If you want to pass data from your website to the chatbot, you can add these to the `chatlayer` function. All data will be put onto the `root.session` variable in the Chatlayer.ai session. This data can then be used to customize the chatbot flow based on website data.
+If you want to transfer data from your website to the chatbot, you can add that data to the `chatlayer` function. All data will be put onto the `root.session` variable in the Chatlayer.ai session. This data can then be used to customize the chatbot flow, based on actual website data.
 
 ```markup
 <script src="https://chatbox.staging.chatlayer.ai/sdk/INSERT-TOKEN-HERE"
@@ -104,7 +104,7 @@ If you want to pass data from your website to the chatbot, you can add these to 
 </script>
 ```
 
-Passing the variables `firstName` and `lastName` to the SDK allows you to set the corresponding internal Chatlayer session variables. These specific variables decide how the user will show up in the Chatlayer conversations table.
+Transferring the variables `firstName` and `lastName` to the SDK allows you to set the corresponding internal Chatlayer session variables. These specific variables decide how the user will show up in the Chatlayer conversations table.
 
 ```javascript
 internal: {
@@ -129,7 +129,7 @@ internal: {
 
 #### User authentication with the chat widget SDK
 
-For a lot of use cases, it's required to know **who** is talking to the bot. One way to do this is by sending a login ID, gathered on the website where your user is logged in, and pass that on to the bot, when the SDK is initialized:
+In a lot of cases it's required to know **who** is talking to the bot. One way to find out is by sending a login ID, detected on the website your user is logged in, and passing it on to the bot, when the SDK is initialized:
 
 ```markup
 <script src="YOUR_CHATWIDGET_URL" 
@@ -137,7 +137,7 @@ onload='chatlayer({ sessionId: LoginID }})' async>
 </script>
 ```
 
-This login ID can then be reused to perform calls with the [API plugin](../integrations/custom-back-end-integrations/).
+This login ID can later be reused to perform calls with the [API plugin](../integrations/custom-back-end-integrations/).
 
 #### Chat widget button behaviour
 
