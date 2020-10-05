@@ -1,34 +1,35 @@
-# How to NLP
+# More about NLP
 
-Chatbots are automated computer programs that act like human support agents chatting on e.g. Facebook Messenger. They 'understand' what users say and react accordingly. The Natural Language Processing \(NLP\) engine of a chatbot is the underlying algorithm that takes care of this understanding.
+Chatbots are automated computer programs that act like human support agents, chatting on, for example, Facebook Messenger. They 'understand' what the user is saying and react accordingly. The Natural Language Processing \(NLP\) engine of a chatbot is the underlying algorithm that enables the bot to 'understand' what's being said.
 
-Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. Computers are no different. To train an NLP engine, large amounts of example phrases are needed.
+Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. And computers are not that different. To train an NLP engine, you need large amounts of example phrases.
 
-Intent recognition is the core of a smart chatbot. An intent can be understood as the speaker's 'intention': what does the user want to accomplish? In order to correctly recognise an intent, the chatbot has to learn the variety of ways of expressing a particular intent. For this to be possible, the bot is trained on a set of expressions: for each intent, it needs a sufficiently large number of expressions that convey the same message.
+Intent recognition is the core of a clever chatbot. An intent can be understood as the speaker's 'intention' or need: what does the user wish to accomplish? In order to correctly recognise an intent, the chatbot has to learn a variety of ways of expressing a particular intent. For this to be possible, the bot needs to be trained for a set of expressions: for each intent, it needs a sufficiently large number of expressions that convey the same message \(= intent\).
 
 {% hint style="info" %}
-**Example**
+**An example**
 
-Intent: buy train ticket
+Intent: buy a train ticket
 
 Expressions:
 
 * I need a train ticket
 * I would like to buy a train ticket
-* we need tickets to go to Brussels
+* We need tickets to go to Brussels
 * I have to go to Antwerp
+* I want a ticket to Ghent
 {% endhint %}
 
-The more expressions you add for an intent, and the more varied they are, the more accurately the chatbot will recognise the user’s input. The quality of the data you train your bot on is crucial for its accuracy. The interplay of several factors determines the quality of your training data: the intent structure, the expressions for each intent, and the entities.
+The more expressions you add for one intent and the more varied they are, the more accurate the chatbot will recognise the user’s input. The quality of the data you train your bot with is crucial for this accuracy. Several factors determine the quality of your training data: the intent structure, the expressions for each intent, and the entities.
 
 ## Intent structure <a id="Trainingdatagenerationforchatbots:bestpractices-Intentstructure"></a>
 
-Coming up with a taxonomy of the intents that you need for your bot is no easy feat. Additionally, there is no correct way of doing it. Which intents you need depends largely on what you want your bot to do, on how you define the bot flow, and on how the users actually interact with the bot. 
+Thinking of the intents that you need for your bot is not always so easy. Additionally, there is no correct way of doing it, it depends on what you want your bot to do, how you define the bot flow, and on how the user actually interacts with the bot. 
 
-There are some best practices:
+Here are some tips & tricks to create great intents:
 
-1. **Think like a user**. Don't make the mistake of defining the structure of your intents based on your own needs. Think for instance of a support bot for a software company that should route user problems to the right specialised support agent. There is an agent for authentication issues, one for compatibility issues, one for feature requests, one for bug reports and one for functional issues. You define an intent structure with 5 intents, one for each type of issue. When one of these intents is recognised, the user is routed to the corresponding support agent.  When you put the bot into production, you notice that the users are rarely correctly routed or that the bot doesn't understand what they need most of the time. You check the user messages and notice that they write messages such as 'the program freezes' or 'I cannot do X or Y', instead of the 'I cannot do X because the update of your software is not backwards compatible with my operation system' you would like them to say for the routing to work well. Do not ask users to stick to a script that they are not aware of, because they won't.  
-2. **Use all the information you have.**  If you already have user data, such as a database of questions that have been asked to your support desk, use it. Analyse the data to understand which questions are frequently asked and, more importantly, how they are asked. Calculate the volumes for each group of questions and prioritise. In case you have no idea how users will actually interact with the bot and what they might ask, you can start out with a simple click bot, which will allow you to gather a lot of useful information on your users' needs, permitting you to define an adequate intent structure.  
+1. **Think like your user** Don't make the mistake of defining the structure of your intents based on your own needs. Think for instance of a support bot for a software company. The goal is for the bot to route specific user problems to the correct specialised support agent. There is an agent for authentication issues, one for compatibility issues, one for feature requests, one for bug reports and one for functional issues. So you define an intent structure of 5 intents, one for each type of issue. When one of these intents is recognised, the user is routed to the corresponding support agent.   But when you put your bot into production, you notice that users are almost never routed to the right agent, or that the bot doesn't understand what the user needs. So you check your user's messages and notice that they write things like "the program freezes" or "I cannot do X or Y", instead of "I cannot do X because the update of your software is not backwards compatible with my operation system," which is what you planned for them to say for the routing to be correct. Learning: do not ask your users to stick to a strict script that they are not aware of, because they won't. It doesn't come natural to them.  So think like your user. Use their words, listen to how they phrase their problems, and use that to create your bot's messages and flow.  
+2. **Use all the data you have**  If you already have user data, such as a database of questions that have been asked to your support desk, use it. Analyse the data to understand which questions are frequently asked and, more importantly, how they are asked. Calculate the volumes for each group of questions and prioritise. In case you have no idea how users will actually interact with the bot and what they might ask, you can start out with a simple click bot, which will allow you to gather a lot of useful information on your users' needs, permitting you to define an adequate intent structure.  
 3. **Keep it simple.** Do not be afraid of starting with a bot that can only handle four of the questions that you eventually want it to handle, especially not if those four questions constitute 90% of incoming calls. You will only need four intents to build a bot that considerably improves the life of the support agents without affecting the quality of customer support, only the remaining 10% of questions will have to be handled manually. New intents can be added once you gather more user data. 
 4. **Revise**. Start with a general flow and general intents, with follow-up questions to get to the details of what the user needs. This will allow you to gather the necessary data to revise your intent structure. For instance, for a telco support bot, you could start with 'problem with phone' and a 'problem with wifi' intent, with follow up questions concerning the model of the phone or the model of the modem. After a few weeks, you analyse the actual user messages, and notice that users often include the model of their phone \(eg. Samsung Galaxy S9\) in their messages before the bot explicitly asks for it, while they never use specific terms for anything related to wifi. In this case, it is a good idea to refine the 'problem with phone' intent, by splitting it up in several intents or by making use of entities to capture the phone model, avoiding that the bot asks a piece of information that the user already gave. The 'problem with wifi' general intent should be maintained, with follow-up questions to pin-point the exact problem. Keep in mind that defining a good intent structure is an iterative process.
 

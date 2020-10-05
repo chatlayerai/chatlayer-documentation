@@ -82,7 +82,7 @@
 
 ## Tips & Best practices
 
-* [How to NLP](tips-and-best-practices/how-to-nlp.md)
+* [More about NLP](tips-and-best-practices/how-to-nlp.md)
 * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
 * [Why is my bot not responding the way I want it to?](tips-and-best-practices/why-is-my-bot-not-responding-the-way-i-want-it-to.md)
 * [What makes a good chatbot?](tips-and-best-practices/what-makes-a-good-chatbot.md)
