@@ -15,6 +15,6 @@ Want to follow up on your ticket? Contribute to our [community](https://chatlaye
 ![](../.gitbook/assets/image%20%2867%29.png)
 
 {% hint style="info" %}
-Do you have ideas to improve our product, or do you want to ask a question to other bot builders? Ask it on the [Chatlayer.ai Community](https://chatlayer.zendesk.com/hc/en-us/community/topics).
+Do you have ideas to improve our product, or do you want to ask a question to other bot builders? Become part of the [Chatlayer.ai Community](https://chatlayer.zendesk.com/hc/en-us/community/topics).
 {% endhint %}
 
