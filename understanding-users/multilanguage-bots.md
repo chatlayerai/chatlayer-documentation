@@ -1,4 +1,4 @@
-# Multi-language bots
+# Multilingual bots
 
 Chatlayer.ai was built to support all the languages that your customers speak. From Dutch to English, Hindi and Afrikaans – you can find the complete list [here](natural-language-processing-nlp/supported-languages.md).
 

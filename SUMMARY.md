@@ -24,7 +24,7 @@
   * [Intent templates](understanding-users/natural-language-processing-nlp/intent-templates.md)
 * [Expression generator](understanding-users/expression-generator.md)
 * [Context](understanding-users/using-context.md)
-* [Multi-language bots](understanding-users/multilanguage-bots.md)
+* [Multilingual bots](understanding-users/multilanguage-bots.md)
 
 ## Bot answers
 

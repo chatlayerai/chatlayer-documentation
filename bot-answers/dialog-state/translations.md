@@ -1,6 +1,6 @@
 # Translations
 
-The 'Translations' module is used to manage translations for multilingual bots. For more information on how to configure your multi-language bot, go here:
+The 'Translations' module is used to manage translations for multilingual bots. Find more information on how to configure your multilingual bot here:
 
 {% page-ref page="../../understanding-users/multilanguage-bots.md" %}
 
