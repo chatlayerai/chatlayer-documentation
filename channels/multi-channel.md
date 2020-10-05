@@ -24,9 +24,9 @@ Publishing your bot on a channel is quite easy if you follow our channel guides:
 
 ## Multi-channel
 
-If you want to have your users receive a different flow based on the channel they are on you can use Chatlayer.ai's multi-channel functionality. To do this, add a [Go To](../bot-answers/dialog-state/plugins.md) at the point in the flow you want to diverge based on channel.
+If you want your users to follow a different flow based on the channel they are using, you can use our multi-channel functionality. To do this, add a [Go To](../bot-answers/dialog-state/plugins.md) to the point in your flow where you wish to diverge, based on the channel.
 
-In this Go To, guide the user based on the botType variable, which contains the channel variable. For example:
+Within this 'Go To', guide the user based on the botType variable, which contains the channel variable. For example:
 
 ![](../.gitbook/assets/image%20%2824%29.png)
 
