@@ -1,8 +1,8 @@
 # Phone & voice
 
-We see a voice bot as nothing more than an extra layer on top of your chatbot. You can reuse your existing chatbot, and Chatlayer will handle the speech-to-text \(STT\) and text-to-speech \(TTS\). Configuring voice in Chatlayer.ai is a matter of minutes, and we've created some custom components to make configuration easier.
+A voice bot is an extra layer on top of your chatbot. You can reuse your existing chatbot, and we will handle speech-to-text \(STT\) and text-to-speech \(TTS\). Configuring voice using our platform is a matter of minutes and we've created some custom components to make the configuration even easier.
 
-Activate your Chatlayer.ai phone channel by going to the Channels tab, and clicking the + icon next to Phone.
+Activate your phone channel by going to the Channels tab and clicking the '+' button next to 'Phone'.
 
 ![](../.gitbook/assets/image%20%28179%29.png)
 
@@ -10,7 +10,7 @@ Activate your Chatlayer.ai phone channel by going to the Channels tab, and click
 
 ### Testing
 
-If you want to test out a first version of your voice bot, before going to production, you can use the Chatlayer.ai test number. Before you can use this test number to call your bot, you have to your number to the bot, so Chatlayer.ai knows which bot you're trying to talk to.
+If you want to test a first version of your voice bot before going into production, you can use a test number. Before you can use a test number and call your bot, you have to give your number to the bot, so we know which bot you're trying to talk to.
 
 Click the Create Configuration button to set this up. The Chatlayer.ai test number will be shown on top of the Phone configuration screen.
 
@@ -18,7 +18,7 @@ Click the Create Configuration button to set this up. The Chatlayer.ai test numb
 
 ### Production
 
-When you're ready to move your bot to production, [get in touch](../support/get-in-touch.md) with us. We will set up a phone number for your bot specifically which can be used to forward calls to or be called directly. A typical phone architecture looks like this:
+When you're ready to move your bot into production, please [get in touch](../support/get-in-touch.md). We will set up a specific phone number for your bot which can be used to call directly or forward calls to. A typical phone architecture looks like this:
 
 ![](../.gitbook/assets/nlp-high-level-architecture-2x-1.png)
 
@@ -26,16 +26,16 @@ When you're ready to move your bot to production, [get in touch](../support/get-
 
 ### Silence detected event
 
-If you want to trigger a certain flow when the user is silent for a set time, use the event described [here](../bot-answers/events.md#silence-detected-event).
+If you want to trigger a certain flow when the user is silent for a set time, use the event which we describe [here](../bot-answers/events.md#silence-detected-event).
 
 ### Voice message format type for input validation
 
-You can save whatever it is the user is saying as a variable by using the voice message format type in an input validation. Read more [here](../bot-answers/dialog-state/user-input-bot-dialog.md#voice-message).
+You can save anything the user is saying as a variable by using the voice message format type in an input validation. Read more [here](../bot-answers/dialog-state/user-input-bot-dialog.md#voice-message).
 
 ### Actions: forward call & close call
 
 These actions are available when you configure the voice channel and will allow you to:
 
-* Forward a call to a number of your choosing, often used to handover a customer from the bot to a live agent,
-* Close the call by hanging up.
+* Forward a call to a number of your choosing, often used to handover a customer from the bot to a live agent
+* End the call by hanging up
 
