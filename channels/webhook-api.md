@@ -2,23 +2,23 @@
 
 ## Sending User Messages & Receiving Bot messages
 
-Chatlayer.ai provides:
+Our platform provides the following features:
 
 * a Webhook message API endpoint to send a user message to the bot
 * a Webhook configuration to be notified when bot messages are returned as response to a user messages sent to the webhook message API as described in [this section](webhook-api.md#save-user-session-data). This API is almost realtime and the purpose is to be able to trigger event-based behavior as soon as a bot message response occurs . This way you will be able to integrate the bot flow logic in your own application or message channel.
 
-The overall mechanism is loosely based on Pubsub protocol , and rely on HTTP request containing the bot message response being sent to a consumer Endpoint URL. The customer webhook Endpoint URL can be configured in Chatlayer.ai as described in [this section](webhook-api.md#register-a-webhook-api).
+The overall mechanism is loosely based on Pubsub protocol and relies on HTTP request containing the bot message response being sent to a consumer Endpoint URL. The customer webhook Endpoint URL can be configured on our platform as described in [this section](webhook-api.md#register-a-webhook-api).
 
-## Register a webhook API
+## Registering a webhook API
 
-Add a new channel type webhook in your channel configuration in Chatlayer.
+You can register a webhook API by adding a new channel type webhook in your channel configuration:
 
 ![](../.gitbook/assets/0%20%282%29.png)
 
-Configure both settings
+Now configure both settings:
 
-* **Webhook URL**: this URL must either be publicly available, or at least available from Chatlayer.ai’s IP range. We strongly advise using HTTPS for this endpoint.
-* **Verify token**: This can be any arbitrary string, but it is recommended to be chosen randomly.
+* **Webhook URL**: this URL must either be publicly available, or at least available from our platform's IP range. We strongly advise using HTTPS for this endpoint.
+* **Verify token**: This can be any arbitrary string, but it is recommended to be chosen at random.
 
 ![](../.gitbook/assets/1%20%281%29.png)
 
@@ -56,7 +56,7 @@ When a user message is sent to the webhook message API, the bot response\(s\) wi
 
 ## Message objects
 
-Chatlayer.ai bot message send to the customer webhook endpoint URL and returned as response of a user messages can have different object structures depending on the message type. This section describes the different message type object structures.
+A bot message sent to the customer webhook endpoint URL and returned as response of a user messages can have different object structures, depending on the message type. This section describes the different message type object structures.
 
 ### Text
 
@@ -449,9 +449,9 @@ An attachment represents a file such as images and video.
 | :--- | :--- | :--- |
 | url | string | The attachment url |
 
-#### Custom components
+### Custom components
 
-Chatlayer.ai provides custom component development for your channels. Please contact your project manager to discuss further integration.
+We provide custom component development for your channels. Please contact your project manager to discuss further integration.
 
 ### 
 
