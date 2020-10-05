@@ -349,5 +349,5 @@ JSON builder plugin configuration:
 View a live version of this code [here](https://codesandbox.io/s/chatlayer-destroy-webwidget-s0lnj?file=/index.html).
 {% endhint %}
 
-As you can see from above example, you can initialize the widget, open/close it as well as destroy it from your own code. The example shows how you can use the JSON Builder plugin to trigger a destroy event for the chat widget.
+As you can see from the example above, you can initialize the widget, open/close it, as well as destroy it from your own code. The example shows you how to use the JSON Builder plugin to trigger a destroy event for the chat widget.
 
