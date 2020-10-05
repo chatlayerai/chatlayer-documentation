@@ -1,6 +1,6 @@
 # User flow
 
-The user flow metrics show how users are navigating through your bot.
+The user flow metrics show how users are navigating through your bot:
 
 ![](../../.gitbook/assets/image%20%28175%29.png)
 
