@@ -85,7 +85,7 @@
 * [More about NLP](tips-and-best-practices/how-to-nlp.md)
 * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
 * [Why is my bot not responding the way I want it to?](tips-and-best-practices/why-is-my-bot-not-responding-the-way-i-want-it-to.md)
-* [What makes a good chatbot?](tips-and-best-practices/what-makes-a-good-chatbot.md)
+* [How to make a good chatbot](tips-and-best-practices/what-makes-a-good-chatbot.md)
 * [How to recognize a returning bot user](tips-and-best-practices/how-to-recognize-a-returning-bot-user.md)
 * [Gathering user feedback](tips-and-best-practices/gathering-user-feedback.md)
 * [Using time in your chatbot](tips-and-best-practices/using-time-in-your-chatbot.md)
