@@ -6,7 +6,7 @@ description: >-
 
 # Creating diverse expressions
 
-Creating a chatbot seems easy at first. Let’s take a simple Frequently Asked Questions \(FAQ\) bot for a pizza place as an example. If a user asks “Which toppings do you have?” we recognise this as an intention by the user to know all possible toppings. We call this an intent in chatbot speak.
+Creating a chatbot seems easy at first. Let’s look at a simple Frequently Asked Questions \(FAQ\) bot for a pizza place as an example. If a user asks “What toppings do you have?” we recognise this as an intention by the user to know all possible toppings. We call this an intent in chatbot speak.
 
 Once you put your FAQ chatbot in production you notice that real humans come up with unlimited different ways of asking a question, for example: “What else can you put on my pizza?”. This question we call an expression of an intent. Machine Learning based chatbot platforms like Chatlayer will allow you to train the chatbot and its Natural Language Understanding component with expressions.
 
