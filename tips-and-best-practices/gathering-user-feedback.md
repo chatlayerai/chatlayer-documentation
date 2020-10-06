@@ -1,6 +1,6 @@
 # Gathering user feedback
 
-This tutorial will teach you how to gather feedback from your users about the quality of the bot and send that feedback to an external database for further analysis. In this example we will send the feedback data to Airtable.
+This tutorial will show you how to gather feedback from your users about the quality of the bot and send that feedback to an external database for further analysis. In this example, we will send the feedback data to Airtable – a tool that allows you to create a spreadsheet that you can talk to using an API.
 
 * Start by creating a flow in your Chatlayer.ai bot that contains rating options, for example:
 
@@ -56,7 +56,7 @@ Remember to get the right app id, table name and bearer token for your Airtable.
 {% endhint %}
 
 * Add a small confirmation to the "feedback recorded" bot dialog
-* Ready to test!
+* Ready to test
 
 ![](../.gitbook/assets/image%20%28296%29.png)
 
