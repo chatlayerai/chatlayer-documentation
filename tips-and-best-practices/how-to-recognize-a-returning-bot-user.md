@@ -1,18 +1,16 @@
 # How to recognize a returning bot user
 
-A good bot can make users feel they're talking to a real 'artificial intelligence', with a distinct personality. However, when it starts the next conversation as if you've never met before, the illusion is gone.
-
-Chatlayer.ai enables you to treat returning users differently, using saved variables from previous sessions.
+A good bot can make users feel like they're talking to real AI \(artificial intelligence\) that has a distinct personality. However, when your bot starts the next conversation as if he never met that same user before, that personal connection is gone. That is why our platform enables you to treat returning users differently, by using saved variables from previous sessions.
 
 {% hint style="info" %}
-Note that not all channels save variables the same way! 
+Know that not all channels save variables the same way.
 
-Facebook Messenger saves them indefinitely, but by default, the Webwidget only keeps variables for the duration of the session - unless authentication of unique users is built in.
+Facebook Messenger saves them indefinitely, but by default, the Webwidget only keeps variables for the duration of the session – unless authentication of unique users is built in.
 {% endhint %}
 
 ## Change the introduction to a _Go to_
 
-Every conversation starts with the _introduction_ dialog:
+Every conversation starts with an _introduction_ dialog:
 
 ![](../.gitbook/assets/schermafbeelding-2019-01-24-om-10.56.45.png)
 
@@ -20,18 +18,18 @@ By default, this is a `Bot message`:
 
 ![](../.gitbook/assets/schermafbeelding-2019-01-24-om-10.56.17-kopie.png)
 
-However, instead of greeting the user right away, we can first check whether the bot has talked to him before by converting the _introduction_ into a `Go to`:
+However, instead of greeting the user right away, we can first check whether the bot has talked to them before by converting the _introduction_ into a `Go to`:
 
 ![](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.17.12.png)
 
 ## Identify returning users with a 'known\_user\_flag' variable
 
-Using a variable 'known\_user\_flag' \(feel free to rename in line with your naming conventions\), the bot can check whether it has talked to the user before, and redirect to the right dialogs accordingly. 
+Using a variable 'known\_user\_flag' \(feel free to rename this\), the bot can check whether it has talked to the user before, and redirect them to the right dialog accordingly. 
 
-Build an If-statement as follows:
+How to build an If-statement:
 
-* If 'known\_user\_flag' is equal to 1, we know for certain that there has been a conversation before - else the variable would be empty - so the user can be directed to an introduction dialog appropriate for returning users.
-* Else, if 'known\_user\_flag' is not defined, the user must be new, and can be redirected to an introduction for new users. At the same time, you can already set the 'known\_user\_flag' to 1, as the user is not new anymore. Alternatively, you can only change this value later on in the conversation, but changing it here is the most simple option.
+* If 'known\_user\_flag' is equal to 1, we know for certain that there has been a conversation before, otherwise this variable would be empty, so the user can be directed to an introduction dialog appropriate for returning users.
+* Else, if 'known\_user\_flag' is not defined, the user must be new and can be redirected to an introduction for new users. At the same time, you can already set the 'known\_user\_flag' to 1, as the user is not new anymore. Alternatively, you can only change this value later on in the conversation, but changing it here is the most simple option.
 
 ![](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.24.35.png)
 
@@ -45,7 +43,7 @@ Simply having a modified introduction for returning users is already of great va
 
 However, you can really take the bot to the next level by also using other saved variables from previous encounters.
 
-For example, the Choo-choo bot can use previous 'origin' and 'destination' values to suggest a new journey.
+For example, our Choo-choo bot can reuse the values 'origin' and 'destination' from its previous user conversation to suggest a new journey.
 
 You'll first want to check whether any values have been saved:
 
@@ -55,5 +53,5 @@ You'll first want to check whether any values have been saved:
 
 ![](../.gitbook/assets/schermafbeelding-2019-01-24-om-12.03.20.png)
 
-Used this way, saved variables can provide returning users are more personalized and efficient experience!
+This way, saved variables can provide returning users are more personalized experience.
 
