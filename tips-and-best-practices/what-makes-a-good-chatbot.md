@@ -1,4 +1,4 @@
-# How to make a good chatbot
+# Creating a good chatbot
 
 Creating a chatbot is easy. Creating a **good** chatbot requires some skill. Having built dozens of chatbots, we offer some tips on how to make your chatbot a clever success.
 
