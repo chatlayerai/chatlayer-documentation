@@ -1,8 +1,8 @@
 # Using time in your chatbot
 
-With Chatlayer.ai, you can use the Get Time plugin to guide your flow based on the current moment in time.
+The Get Time plugin on our platform guides your flow based on the current moment in time.
 
-One of our customers, for example, uses this to determine if it is winter or summer, and will recommend tires based on the current season.
+For example: one of our customers uses this plugin to determine if it's winter or summer, and will recommend tires based on the right season.
 
 To implement this, first create an `Action` bot dialog that contains a Get Time plugin.
 
