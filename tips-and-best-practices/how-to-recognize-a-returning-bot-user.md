@@ -1,4 +1,4 @@
-# How to recognize a returning bot user
+# Recognizing a returning user
 
 A good bot can make users feel like they're talking to real AI \(artificial intelligence\) that has a distinct personality. However, when your bot starts the next conversation as if he never met that same user before, that personal connection is gone. That is why our platform enables you to treat returning users differently, by using saved variables from previous sessions.
 

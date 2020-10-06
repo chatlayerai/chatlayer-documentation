@@ -1,4 +1,4 @@
-# Why is my bot not responding the way I want it to?
+# Solving bot issues
 
 There are a couple of problems you might encounter as a starting bot developer. In this article you will learn how to find and fix the most common bot problems.
 
