@@ -1,6 +1,6 @@
 ---
 description: >-
-  This tutorial will dive deeper in to a methodology we use at Chatlayer to
+  This tutorial will dive deeper in a methodology we use here at Chatlayer to
   create chatbots that can really understand what your users say.
 ---
 
