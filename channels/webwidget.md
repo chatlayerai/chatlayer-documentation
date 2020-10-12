@@ -31,11 +31,32 @@ On the Chat Widget page you can customize a number of key chat widget components
 * **Translations tab**
   * Translations for the default chat widget messages such as "Write reply..."
 
-### White listing
+### Whitelisting
 
-To make sure your bot can only be activated on your website, all your chat widgets must be whitelisted before you can use them. To do this, go to the config tab of the Chat Widget builder and add your domain names in regex format. 
+To make sure your bot can only be activated on your website, all your chat widgets must be whitelisted before you can use them. To do this, go to the config tab of the Chat Widget builder and add a regular expression that matches the domain names that you wish to whitelist. 
 
-An example of this regex format for https://www.chatlayer.ai: `^https:\/\/www\.chatlayer\.ai(\/|$)`
+A simple example of this regex format for https://www.chatlayer.ai: `^https:\/\/www\.chatlayer\.ai(\/|$)`
+
+Whitelisting regexes can also be used for more complex, multi-domain configurations. Take the following set of domains as an example:`^https:\/\/www\.(subdomain1|subdomain2)\.(rootdomain1|rootdomain2)\.com(\/|$)` will whitelist the domains:
+
+* https://www.subdomain1.rootdomain1.com
+* https://www.subdomain1.rootdomain2.com
+* https://www.subdomain2.rootdomain1.com
+* https://www.subdomain2.rootdomain2.com
+
+You can separate the alternatives by using a `|` character as follows:
+
+```markup
+^https:\/\/www\.subdomain1\.rootdomain1\.com(\/|$)|^https:\/\/www\.subdomain2\.rootdomain1\.com(\/|$)|^https:\/\/www\.subdomain1\.rootdomain2\.com(\/|$)|^https:\/\/www\.subdomain2\.rootdomain2\.com(\/|$)
+```
+
+A shorter regular expression which will match the same domains is:
+
+```markup
+^https:\/\/www\.(subdomain1|subdomain2)\.(rootdomain1|rootdomain2)\.com(\/|$)
+```
+
+An easy way to validate your regular expression is by using online tools like [https://regex101.com/](https://regex101.com/)
 
 ## Embedding the web widget on your website
 
