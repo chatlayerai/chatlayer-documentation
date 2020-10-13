@@ -29,11 +29,10 @@
 ## Bot answers
 
 * [Bot dialogs](bot-answers/dialog-state/README.md)
-  * [Message components](bot-answers/dialog-state/message-components.md)
+  * [Bot message](bot-answers/dialog-state/message-components.md)
   * [Go To](bot-answers/dialog-state/plugins.md)
   * [Input Validation](bot-answers/dialog-state/user-input-bot-dialog.md)
-  * [Action](bot-answers/dialog-state/action-bot-dialog/README.md)
-    * [Code Action](bot-answers/dialog-state/action-bot-dialog/code-action.md)
+  * [Action](bot-answers/dialog-state/action-bot-dialog.md)
   * [Translations](bot-answers/dialog-state/translations.md)
 * [Conversations](bot-answers/user-messages.md)
 * [Analytics](bot-answers/analytics/README.md)
@@ -48,6 +47,7 @@
 
 * [API integration](integrations/custom-back-end-integrations/README.md)
   * [Advanced API integrations](integrations/custom-back-end-integrations/advanced-api-integrations.md)
+* [Code Editor](integrations/code-action.md)
 * [Chat message structure for API's](integrations/chat-message-structure-for-apis.md)
 * [Retrieving data from Airtable \(GET\)](integrations/retrieving-data-from-airtable-get.md)
 * [Sending data to Airtable \(POST\)](integrations/airtable.md)

@@ -27,7 +27,7 @@ As an example we're going to be building a bot that shows information about chat
 ![](../.gitbook/assets/image%20%28122%29.png)
 
 {% hint style="info" %}
-Want to learn more about the possibilities of the Code plug-in? You can find it [here](../bot-answers/dialog-state/action-bot-dialog/code-action.md).
+Want to learn more about the possibilities of the Code plug-in? You can find it [here](code-action.md).
 {% endhint %}
 
 * Next, add this code snippet:

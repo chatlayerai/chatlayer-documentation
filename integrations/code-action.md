@@ -4,7 +4,7 @@ description: >-
   Action.
 ---
 
-# Code Action
+# Code Editor
 
 The code action allows developers to quickly build custom logic on top of their bot by writing their own Javascript code blocks. Typically, the code editor is used to perform requests to external systems, or to do operations with variables.
 
@@ -12,13 +12,13 @@ The code action allows developers to quickly build custom logic on top of their 
 
 To get started with the Code Action, create a new 'Action Dialogstate' and select the **Code** plugin as an action.
 
-![](../../../.gitbook/assets/image%20%28318%29.png)
+![](../.gitbook/assets/image%20%28318%29.png)
 
 ### Arguments
 
 You can pass arguments to your Code actions by assigning them keys. Your keys will be made available to the `args` variable inside the Code Editor.
 
-![](../../../.gitbook/assets/image%20%28319%29.png)
+![](../.gitbook/assets/image%20%28319%29.png)
 
 ### ChatlayerResponseBuilder
 
@@ -26,7 +26,7 @@ The `ChatlayerResponseBuilder` function is a helper function that allows you to 
 
 To start using the ChatlayerResponseBuilder, simply call it in your Code action:
 
-![Initializing the ChatlayerResponseBuilder](../../../.gitbook/assets/image%20%28320%29.png)
+![Initializing the ChatlayerResponseBuilder](../.gitbook/assets/image%20%28320%29.png)
 
 This Chatlayer constant will now make it possible for you to call specific functionality within the bot's flow. When you're ready to publish your changes, use the `send()` function to send them to your user's conversation. 
 

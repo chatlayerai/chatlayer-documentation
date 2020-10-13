@@ -30,7 +30,7 @@ There are 4 kinds of bot dialogs, each with its own color and functionalities:
   * Any message a bot is sending to a user is what we call a bot message. This includes text messages, buttons, quick replies, etc.
 * \*\*\*\*[**Go to**](plugins.md)
   * If you want to add rules to determine where a user is guided to, based on the value of a variable, you can do it with this bot dialog type.
-* \*\*\*\*[**Action**](action-bot-dialog/)\*\*\*\*
+* \*\*\*\*[**Action**](action-bot-dialog.md)\*\*\*\*
   * Actions allow you to configure the settings of a user session, such as the language that will be used to reply to your user, or the offloading of a user.
 * \*\*\*\*[**Input validation**](user-input-bot-dialog.md)
   * Use this bot dialog type to gather input from your users.

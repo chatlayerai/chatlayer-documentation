@@ -1,4 +1,4 @@
-# Message components
+# Bot message
 
 To design your conversational flow, you can use multiple components, like text messages, buttons and carousels. Depending on the channel you publish the bot to \(Facebook Messenger, web, Slack, Telegram, ...\), these will be shown slightly different.
 
@@ -151,4 +151,32 @@ If the upload failed because there was a problem with the connection, or the fil
 The URL where the uploaded file is stored can be found under the `{uploadedFileUrl}` variable in the user's session. You can reuse this variable to show the file that the user uploaded by using the [Media](message-components.md#attachments) template. Alternatively, you can retrieve the URL with an [API plugin](../../integrations/custom-back-end-integrations/) to store the files on your servers.
 
 ![](../../.gitbook/assets/image%20%28106%29.png)
+
+## Rich text
+
+Rich text allows you to go beyond text messages and style your text the way you want it. This message type is only available if you're using the Chat Widget as a channel.
+
+![](../../.gitbook/assets/image%20%28323%29.png)
+
+The rich text editor allows you to use the following styles:
+
+* Paragraph
+* Heading 1
+* Heading 2
+* Heading 3
+* Heading 4
+* Bulleted list
+* Ordered list \(= numbered list\)
+
+And format the text in the following ways:
+
+* **Bold**
+* _Italic_
+* Underline
+
+You can also add hyperlinks that either go to an external page or to a specific place in your conversation.
+
+![](../../.gitbook/assets/image%20%28321%29.png)
+
+
 
