@@ -25,6 +25,11 @@ In this tutorial, we will be using [this Airtable](https://airtable.com/invite/l
 {% endhint %}
 
 * At the point in the flow where you want to send the data to Airtable, add an Action containing a Code plugin.
+
+{% hint style="info" %}
+Want to learn more about the possibilities of the Code plug-in? You can find it [here](../bot-answers/dialog-state/action-bot-dialog/code-action.md).
+{% endhint %}
+
 * In our example, we want to send the customer's type and first name. Furthermore, we want to jump to another bot dialog as soon as the data has been sent. Start by adding these parameters at the top of your code editor.
 
 ![](../.gitbook/assets/image%20%28173%29.png)
