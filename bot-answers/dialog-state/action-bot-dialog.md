@@ -59,5 +59,24 @@ If your bot is published on the [Webhook API](../../channels/webhook-api.md) cha
 
 ![](../../.gitbook/assets/image%20%28230%29.png)
 
+### Website window events 
 
+**You can use the JSON builder action** **in combination with the webwidget channel** to receive window events on your webpage. These events will contain the data as configured in your JSON builder action. 
+
+Here's an example:   
+Configure your JSON builder action to send a **language** key, with a variable retrieved from the session, and the "Send config to parent window" toggled on.
+
+![JSON builder action with a language field](../../.gitbook/assets/image%20%28324%29.png)
+
+Your widget will trigger an event for that configuration to its parent window as a MessageEvent. The MessageEvent will contain a \`data\` field which contains the stringified result of the JSON builder configuration. Here's an example on how to listen to these events:
+
+```javascript
+// Chatlayer JSON Builder Event Handler
+window.addEventListener('message', (event) => {
+    const data = event && event.data && JSON.parse(event.data) || {}
+    const { type, payload } = data
+    if (type !== 'CL_DISPATCH_EVENT') return;
+    console.log('Chatlayer language received: ' + payload.language)
+})
+```
 
