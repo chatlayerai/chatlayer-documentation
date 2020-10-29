@@ -32,7 +32,7 @@ Congratulations! You are ready to start using your custom human handover integra
 
 Your webservice will need to implement the following API methods for us to communicate with. All requests will arrive in JSON format at the API URL configured during the setup of the offloading webhook in Chatlayer. Every JSON POST request has a body with an **event** parameter that allows you to distinguish between the different types of data coming in. Different types are explained below.
 
-We expect a status code of 200 for every request made to the webservice. Response data should be in JSON format.
+We expect a HTTP status code of 200 for every request made to the webservice. Response data should be in JSON format.
 
 {% api-method method="get" host="<your\_api\_url>" path="" %}
 {% api-method-summary %}
@@ -263,7 +263,7 @@ Use a "Send to offload provider" bot action dialog to trigger an **offload** cal
 
 ### Sending messages as an agent
 
-Use the [asynchronous actions API ](https://api.chatlayer.ai/v1/docs/#operation/executeConversationAction)to send messages as an agent. 
+Use the [conversation actions API ](https://api.chatlayer.ai/v1/docs/#operation/executeConversationAction)to send messages as an agent. 
 
 
 
