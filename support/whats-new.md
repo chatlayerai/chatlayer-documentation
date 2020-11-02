@@ -6,11 +6,11 @@
 
 
 
-### Sort buttons, quick replies carousel items and 
+### Sort buttons, quick replies carousel items and go to's
 
 
 
-### Dialog state language switching
+### Bot dialog language switching
 
 
 
