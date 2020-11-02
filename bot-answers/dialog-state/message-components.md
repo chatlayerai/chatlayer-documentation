@@ -72,6 +72,10 @@ File attachments are available in the Emulator, web widget and Facebook Messenge
 
 ![](../../.gitbook/assets/attachment.png)
 
+{% hint style="info" %}
+We recommend media files shared on Facebook Messenger to be below 5 MB in size, as Facebook seems to have trouble in handling files larges with acceptable performance.
+{% endhint %}
+
 ## Quick replies
 
 Quick replies behave similarly to buttons. They are shown horizontally next to each other in a scrollable container. This means that you can add as many quick replies as you think necessary.
