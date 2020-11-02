@@ -34,7 +34,7 @@ After creating an App, you can view the App ID in the App table.
 
 #### Client ID & client secret
 
-To get a client ID and client secret, you need to create an access token. Navigate to [this page](https://dashboard.sinch.com/convapi/access-keys) to start the process.
+To get a client ID and client secret, you need to create an access token. Navigate to [this page](https://dashboard.sinch.com/settings/access-keys) to start the process.
 
 Click on 'New Key' and enter an access key display name:
 

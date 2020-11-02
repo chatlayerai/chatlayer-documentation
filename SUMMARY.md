@@ -93,5 +93,6 @@
 ## Support
 
 * [Get in touch](support/get-in-touch.md)
+* [What's new](support/whats-new.md)
 * [Status](https://status.chatlayer.ai/)
 
