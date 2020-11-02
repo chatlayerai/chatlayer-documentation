@@ -94,5 +94,6 @@
 
 * [Get in touch](support/get-in-touch.md)
 * [What's new](support/whats-new.md)
+* [Glossary](support/glossary.md)
 * [Status](https://status.chatlayer.ai/)
 
