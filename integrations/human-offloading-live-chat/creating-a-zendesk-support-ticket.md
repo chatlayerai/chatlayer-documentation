@@ -26,14 +26,14 @@ If you're new to using variables in Chatlayer.ai, follow [this](https://docs.cha
 const body = {
     "ticket": {
         "subject": args.questionType + " question from " + args.name,
-        "email_ccs": [ { "user_email": args.email, "user_name": args.name } ],
+        "email_ccs": [{ "user_email": args.email, "user_name": args.name }],
         "tags": [args.questionType],
         "comment": {
             "body": args.question
         }
     }
 }
-const zendeskResult = await fetch('https://chatlayer.zendesk.com/api/v2/tickets.json', {
+const zendeskResult = await fetch('https://{subdomain}.zendesk.com/api/v2/tickets.json', {
     method: 'POST',
     body: JSON.stringify(body),
     headers: {
