@@ -26,7 +26,7 @@ If you're new to using variables in Chatlayer.ai, follow [this](https://docs.cha
 const body = {
     "ticket": {
         "subject": args.questionType + " question from " + args.name,
-        "email_ccs": [{ "user_email": args.email, "user_name": args.name }],
+        "requester": { "name": args.name, "email": args.email },
         "tags": [args.questionType],
         "comment": {
             "body": args.question
