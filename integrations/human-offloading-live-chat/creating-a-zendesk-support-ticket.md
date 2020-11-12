@@ -47,7 +47,7 @@ ChatlayerResponseBuilder()
     .send()
 ```
 
-* Remember to fill in the right subdomain. For the authorization, you should encode your e-mail address and API token in base64 in this format: `{email_address}/token:{api_token}`. To encode it, you can use a free tool like [this](https://opinionatedgeek.com/Codecs/Base64Encoder) one.
+* Remember to fill in the right subdomain. For the authorization, you should encode your e-mail address and API token in base64 in this format: `{email_address}/token:{api_token}` \(fill in email address and api token and remove the curly brackets\). To encode it, you can use a free tool like [this](https://opinionatedgeek.com/Codecs/Base64Encoder) one.
 * Et voilà! Now, every time a user goes through your flow, a new ticket will be created in Zendesk, and the user will receive an e-mail notification of that ticket as well.
 
 ![](../../.gitbook/assets/image%20%28330%29.png)
