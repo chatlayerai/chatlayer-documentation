@@ -1,5 +1,9 @@
 # Capturing information with entities
 
+## Entities
+
+In this tutorial, you will learn how to save valuable information that was mentioned in intents, using **entities**. Entities are important pieces of information that are extracted from an expression. You want to store these entities in a separate variable so you can re-use them later on. In the next tutorial, you will learn how you can ask explicitly for missing information.
+
 Let's create a new intent that tells us the user wants to book a train ticket. A few different expressions can be: 
 
 * I want a train ticket
@@ -12,9 +16,7 @@ But what happens when the user says something like:
 * I need to go to **Antwerp tomorrow**
 * Can I book a train ticket to **Brussels** please?
 
-These expressions contain valuable information. We want to make sure we capture that information, in this case the destination and time, and save it. 
-
-In this tutorial, you will learn how to store data that was mentioned in intents, using **entities**. Entities are important pieces of information that are extracted from an expression. You want to store these entities in a separate variable so you can re-use them later on. In the next tutorial, you will learn how you can ask explicitly for missing information.
+These expressions contain valuable information. We want to make sure we capture that information, in this case the destination and time, and save it as **entities**.
 
 ## Creating entities
 
