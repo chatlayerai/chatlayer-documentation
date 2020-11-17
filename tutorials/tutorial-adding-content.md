@@ -8,7 +8,7 @@ The Natural Language Processing \(NLP\) engine is the underlying algorithm that 
 
 > Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. And computers are not that different. To train an NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in already.
 
-## Adding an Intent
+## Adding an intent
 
 An **intent** is a specific action your user can do, or a type of question your user can ask. Intents are single blocks of meaning that the NLP can recognise. For example: an intent can be a question, a statement, an answer to a question, or a greeting. Each intent can be expressed in many different ways, that all mean the same thing. We call these different ways of saying the same thing **expressions**.
 
