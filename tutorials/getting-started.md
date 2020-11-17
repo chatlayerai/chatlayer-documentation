@@ -69,7 +69,7 @@ Always make to strategically guide the user back to an existing flow, like in th
 
 ![A good answer to an out-of-scope question that puts the user back on track](../.gitbook/assets/image%20%28343%29.png)
 
-## Time to build
+## Time to start building
 
 Now that you've done all the groundwork, it's time to build your bot on the Chatlayer.ai platform.   
 Get started with our next tutorial:
