@@ -1,6 +1,10 @@
-# Introduction
+---
+description: >-
+  Build clever AI chat- and voice bots to help you improve conversations, scale
+  your support and drive more revenue – no technical skills required.
+---
 
-Chatlayer.ai allows you to build clever AI chat- and voice bots to help you improve conversations, scale your support and drive more revenue – no technical skills required.
+# Introduction
 
 This documentation explains you how to get started on our platform, using easy-to-follow tutorials and visual guides. Within minutes, you'll be able to create a conversational chat bot and build advanced dialogues for better conversations.
 
