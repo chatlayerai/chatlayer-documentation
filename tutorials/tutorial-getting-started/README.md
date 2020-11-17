@@ -24,14 +24,14 @@ If you don't have log-in credentials yet, please request them [here](https://www
 * Log in using your credentials on [https://cms.staging.chatlayer.ai/](https://cms.staging.chatlayer.ai/)
 * To start, click the `+ Add bot` button to create a new bot
 
-![](../.gitbook/assets/image%20%28196%29.png)
+![](../../.gitbook/assets/image%20%28196%29.png)
 
 * Enter `Choo Choo (your first name)` as the name of your bot
 * Choose `English` as the primary language. This is the language your bot will use
 * \(Optional: you can add other languages if you want a multilingual bot\)
 * Click `Create` to create your new bot
 
-![](../.gitbook/assets/createbot.png)
+![](../../.gitbook/assets/createbot.png)
 
 {% hint style="warning" %}
 Be aware that you can't add additional languages once the bot is created.   
@@ -44,11 +44,11 @@ In the menu on the left, click on `Bot dialogs`. Enter the `General` flow by cli
 Flows are a way to group your bot dialogs. You will learn more about this in a later tutorial.
 {% endhint %}
 
-![](../.gitbook/assets/image%20%28186%29.png)
+![](../../.gitbook/assets/image%20%28186%29.png)
 
 After entering the flow, you will see an empty chatbot flow containing only the standard predefined dialog states. Your screen should look something like this:
 
-![](../.gitbook/assets/image%20%28246%29.png)
+![](../../.gitbook/assets/image%20%28246%29.png)
 
 ### Adding a greeting
 
@@ -63,7 +63,7 @@ Our Choo Choo bot will start each conversation. You can edit this greeting in th
 * Zoom in \(or out\) by use the scrolling wheel. Click and drag to move through the dialog tree.
 * Click on the edit icon of the`introduction` bot dialog
 
-![](../.gitbook/assets/image%20%28143%29.png)
+![](../../.gitbook/assets/image%20%28143%29.png)
 
 Chatlayer.ai supports multiple content types. Depending on the channel your bot will use \(Facebook, Slack, Skype, Google Home, ...\) these will be rendered slightly differently. Since this is our first bot and our first message, let's start with a simple text message:
 
@@ -81,7 +81,7 @@ Chatlayer.ai supports multiple content types. Depending on the channel your bot 
 
 The result will be:
 
-![](../.gitbook/assets/bot-message.png)
+![](../../.gitbook/assets/bot-message.png)
 
 Just like in normal conversations, your users won't like it when your bot always replies with the exact same messages. That's why Chatlayer.ai supports random messages. In a Text Message block, you can add multiple alternatives to the same message. Chatlayer.ai will randomly pick one of these messages, making your dialogue feel more natural and human.
 
@@ -91,7 +91,7 @@ Just like in normal conversations, your users won't like it when your bot always
 
 Tip: you can add as many random messages as you like. 
 
-![](../.gitbook/assets/image%20%2891%29.png)
+![](../../.gitbook/assets/image%20%2891%29.png)
 
 Click on `Save` to save all the changes you made in the `introduction` bot dialog.
 
@@ -101,13 +101,13 @@ Time to check if we configured everything correctly. To do so, it's not necessar
 
 * Click on the Emulator icon in the lower right corner to test your bot.
 
-![](../.gitbook/assets/image%20%2876%29.png)
+![](../../.gitbook/assets/image%20%2876%29.png)
 
 If you have configured everything correctly, Choo Choo will now reply with the right messages. You can ignore the debug button for now, but this will be useful later when you want to debug more complicated flows.
 
-![](../.gitbook/assets/image%20%28228%29.png)
+![](../../.gitbook/assets/image%20%28228%29.png)
 
 {% hint style="info" %}
-In the [next tutorial](tutorial-adding-content.md), you will learn how to configure some questions the user can ask the bot.
+In the [next tutorial](../tutorial-adding-content.md), you will learn how to configure some questions the user can ask the bot.
 {% endhint %}
 
