@@ -8,7 +8,7 @@
 * [Building your bot on the platform](tutorials/tutorial-getting-started.md)
 * [Adding content to your bot](tutorials/tutorial-adding-content.md)
 * [Entities](tutorials/tutorial-getting-information-using-entities.md)
-* [Capturing information with input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
+* [Input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
 * [Reusing intents with context](tutorials/tutorial-using-context-for-intent-reuse.md)
 * [Flow navigation with variables](tutorials/tutorial-conditional-flow-navigation.md)
 * [Adding new users to your account](tutorials/user-management.md)
