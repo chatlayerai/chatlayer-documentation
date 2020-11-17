@@ -58,11 +58,11 @@ The more Expressions you add to an Intent, the more accurately it will be recogn
 * Enter `Who are you?` in the open text field
 * Click on `Create`
 
-![](../.gitbook/assets/image%20%28336%29.png)
+![](../.gitbook/assets/image%20%28337%29.png)
 
 Your screen should look like this:
 
-![](../.gitbook/assets/image%20%28332%29.png)
+![](../.gitbook/assets/image%20%28333%29.png)
 
 Add some more expressions:
 
@@ -148,13 +148,13 @@ You can view the intents linked to a bot dialog, along with input and output con
 
 * Click on `Create`
 
-![](../.gitbook/assets/image%20%28340%29.png)
+![](../.gitbook/assets/image%20%28342%29.png)
 
 We have defined the `introduction` bot dialog as the parent dialog state here. Parent bot dialogs do not limit or define the possible flow of the dialogue, they are a visual tool to structure the conversational flow and keep the overview. They make it easier to create complex conversational flows. Bot dialogs can be reached from any point in the conversation by linking a bot dialog to an intent, although you can restrict them too by using Contexts. This mimics the way humans talk, jumping from one subject to another.
 
 ### Adding multiple messages
 
-As an exercise, you can now add multiple messages to the `who are you` bot message.  You can do this via Bot Dialogs &gt; Flow &gt; Edit 'Who are you' Bot Message   .
+As an exercise, you can now add multiple messages to the `who are you` bot message.  You can do this via Bot Dialogs &gt; Flow &gt; Edit 'Who are you' Bot Message.
 
 Update the single message to show multiple messages:
 

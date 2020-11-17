@@ -12,7 +12,7 @@ But what happens when a user says something like:
 * I need to go to Antwerp tomorrow
 * Can I book a train ticket to Brussels please?
 
-Those expressions contain valuable information. We want to make sure we capture the destination and save it as a variable. In this tutorial, you will learn how to store data that was mentioned in intents, using entities. In the next tutorial, you will learn how you can ask explicitly for missing variables.
+Those expressions contain valuable information. We want to make sure we capture the destination and save this information. In this tutorial, you will learn how to store data that was mentioned in intents, using **entities**. Entities are important pieces of information that are extracted from an expression. You want to store these entities in a separate variable so you can re-use them later on. In the next tutorial, you will learn how you can ask explicitly for missing information.
 
 ## Creating entities
 
@@ -94,6 +94,12 @@ Make sure you retrain the model before testing newly added expressions.
 When a user says something containing an entity, and the entity is successfully detected, our tool will automatically store the entity as a **variable** for that specific user.
 
 To reuse the variable later on in the conversation, you can put it in between curly brackets like this: `{variable_name}`. When writing this message to the users, we will automatically substitute `{variable_name}` ****with the value of the variable. If the variable is empty, an empty string will be shown.
+
+At the moment, when you test your bot, the user is stuck after giving the information about the ticket:
+
+![](../.gitbook/assets/image%20%28341%29.png)
+
+We can change that by adding a new Bot message: 
 
 * In Bot dialogs, create a bot dialog of the type 'Bot message' `book train ticket` and link the `book train ticket` intent to it in the NLP tab.
 * Add a new text message with the text "So you want to go to `{destination}`, I can help you with that!"
