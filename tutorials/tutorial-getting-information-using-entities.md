@@ -1,4 +1,4 @@
-# Capturing information with entities
+# Entities
 
 ## Entities
 
