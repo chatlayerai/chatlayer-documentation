@@ -1,7 +1,5 @@
 # Entities
 
-## Entities
-
 In this tutorial, you will learn how to save valuable information that was mentioned in intents, using **entities**. Entities are important pieces of information that are extracted from an expression. You want to store these entities in a separate variable so you can re-use them later on. In the next tutorial, you will learn how you can ask explicitly for missing information.
 
 Let's create a new intent that tells us the user wants to book a train ticket. A few different expressions can be: 
