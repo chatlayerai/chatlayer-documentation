@@ -4,11 +4,9 @@ In the previous tutorial, we created a new bot and added a greeting. Now it's ti
 
 ## The NLP engine
 
-The Natural Language Processing \(NLP\) engine is the underlying algorithm that enables the understanding of the natural language that is used by the user.
+The Natural Language Processing \(NLP\) engine is the underlying algorithm that allows the bot to understand what the user is saying. Since each language has its own words and grammar, we have a separate NLP engine for each language.
 
-> Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. And computers are not that different. To train an NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in already. The NLP engine will take care of spelling mistakes, synonyms, slang, varying word order, etc ...
-
-Since each language has its own words and grammar, we have a separate NLP engine for each language.
+> Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. And computers are not that different. To train an NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in already.
 
 ## Adding an Intent
 
