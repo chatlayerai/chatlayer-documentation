@@ -10,28 +10,32 @@ The Natural Language Processing \(NLP\) engine is the underlying algorithm that 
 
 ## Adding an intent
 
-An **intent** is a specific action your user can do, or a type of question your user can ask. Intents are single blocks of meaning that the NLP can recognise. For example: an intent can be a question, a statement, an answer to a question, or a greeting. Each intent can be expressed in many different ways, that all mean the same thing. We call these different ways of saying the same thing **expressions**.
+An **intent** is a specific question from your user, or an action they can do. For example: an intent can be a question, a statement, an answer to a question, or a greeting. Each intent can be expressed in many different ways, we call these different ways of saying the same thing **expressions**.
 
-Some examples of intents and expressions:
+![](../.gitbook/assets/untitled-1.png)
 
-* Intent: book train ticket Expressions:
+In the example above, the user intent is "How do I sign up for a free trial?". This is then recognised by the  NLP engine, which triggers the correct response.
+
+Here are some more examples of intents and expressions:
+
+* **Intent: book train ticket** Expressions:
   * I want to book a train ticket
   * I need to go from Antwerp to Brussels
   * Can I order a ticket here?
-* Intent: who are you? Expressions:
+* **Intent: who are you?** Expressions:
   * What is your name?
   * What can you do?
   * What should I call you?
-* Intent: yes Expressions:
+* **Intent: yes** Expressions:
   * Looks good
   * Yes
   * Ok, confirm
-* Intent: I want to speak to a human Expressions:
+* **Intent: I want to speak to a human** Expressions:
   * Can i speak to a real person?
   * human please
-  * You are a dumb bot
+  * I want to talk to a human
 
-For this tutorial, we want to give Choo Choo the ability to answer basic questions about itself. To get started, we will create an intent for the simple question `Who are you?`
+For this tutorial, we want to give Choo Choo the ability to answer basic questions about itself. To get started, we will create an intent for the question: `Who are you?`
 
 * On the left side of the screen in the navigation menu, click on `NLP` to navigate to the NLP module. Click the `Intents` submenu.
 
