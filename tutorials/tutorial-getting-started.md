@@ -99,7 +99,7 @@ Click on `Save` to save all the changes you made in the `introduction` bot dialo
 
 Time to check if we configured everything correctly. To do so, it's not necessary to publish your bot to a channel like Facebook Messenger or Slack. You can see how your bot replies by using our built-in emulator.
 
-* Click on the Emulator icon in the lower right corner.
+* Click on the Emulator icon in the lower right corner to test your bot.
 
 ![](../.gitbook/assets/image%20%2876%29.png)
 

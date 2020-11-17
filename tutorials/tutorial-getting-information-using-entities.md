@@ -41,7 +41,7 @@ Next, it's time to add an entity.
 
 ![](../.gitbook/assets/image%20%2815%29.png)
 
-* Click on the + entity icon in the bottom right of the expression box to create a new entity for 'Brussels'
+* Click on the ![](../.gitbook/assets/entity-add-.png)  '+ entity' icon in the bottom right of the expression box to create a new entity for 'Brussels'  
 * Brussels is the location the user wants to depart from, so we will name this entity `origin` 
 * Type `origin` in the `Create new entity` field and click on 'Create new entity' to confirm
 
@@ -52,7 +52,7 @@ Next, it's time to add an entity.
 
 ![](../.gitbook/assets/image%20%2886%29.png)
 
-* Add some other values to the @origin and @destination entities in the expression field. These will be saved for all future expressions
+* Add some other values to the 'origin' and 'destination' entities in the expression field. These will be saved for all future expressions.
 * Add more expressions that contain the entities **origin** and **destination**
 
 {% hint style="info" %}
@@ -68,7 +68,10 @@ We recommends adding at least 30 expressions per entity, to guarantee the qualit
   * I want to buy a ticket from Moscow to Vladivostok
   * I need a ticket from New York to Baltimore
 
+* Tip: when typing a new expression, use the '@' to choose from an existing entity to add it to the sentence.
 * Make sure you retrain the NLP model by clicking the `Update NLP` button.
+
+We have built a way to create a lot of expressions really fast: the **expression generator**. Follow the instructions on [this page](../understanding-users/expression-generator.md) to get started.
 
 ## Testing entities
 

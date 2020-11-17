@@ -58,11 +58,11 @@ The more Expressions you add to an Intent, the more accurately it will be recogn
 * Enter `Who are you?` in the open text field
 * Click on `Create`
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](../.gitbook/assets/image%20%28336%29.png)
 
 Your screen should look like this:
 
-![](../.gitbook/assets/image%20%28104%29.png)
+![](../.gitbook/assets/image%20%28332%29.png)
 
 Add some more expressions:
 
@@ -79,8 +79,6 @@ Add some more expressions:
 * Do you have a name?
 
 Again, the more expression you have, the more accurate your bot will be able to respond. Later on, we will see how we can make sure that our bot gets smarter over time, by looking at actual user input once the bot is made public.
-
-We have built a way to create a lot of expressions really fast: the **expression generator**. Follow the instructions on [this page](../understanding-users/expression-generator.md) to get started.
 
 {% hint style="info" %}
 It’s important to have a roughly equal number of expressions for each intent. Even if it usually takes more examples to train your most important intent than your second-order ones, strive to keep their number of expressions around the same amount. This helps avoid a bias towards intents with a large expression count.
@@ -150,9 +148,22 @@ You can view the intents linked to a bot dialog, along with input and output con
 
 * Click on `Create`
 
-![](../.gitbook/assets/image%20%28141%29.png)
+![](../.gitbook/assets/image%20%28340%29.png)
 
 We have defined the `introduction` bot dialog as the parent dialog state here. Parent bot dialogs do not limit or define the possible flow of the dialogue, they are a visual tool to structure the conversational flow and keep the overview. They make it easier to create complex conversational flows. Bot dialogs can be reached from any point in the conversation by linking a bot dialog to an intent, although you can restrict them too by using Contexts. This mimics the way humans talk, jumping from one subject to another.
+
+### Adding multiple messages
+
+As an exercise, you can now add multiple messages to the `who are you` bot message.  You can do this via Bot Dialogs &gt; Flow &gt; Edit 'Who are you' Bot Message   .
+
+Update the single message to show multiple messages:
+
+* `I'am Choo Choo.`
+* `Your train traveling assistant.`
+* `You can book a train ticket or ask my support.`
+* `After your booking I'll keep you updated about train details so you don't have to worry about your journey.`
+
+This makes your bot more user-friendly and human.
 
 ### Testing your bot
 
@@ -165,19 +176,6 @@ This 'Test your bot' is also referred to as the emulator.
 {% endhint %}
 
 Open the Debugger and select a user message in the `Messages` list to retrieve detailed information about the bot's response message, the user funnel and context, Natural Language Processing results and user session data. 
-
-### Adding multiple messages
-
-As an exercise, you can now add multiple messages to the `who are you` intent.
-
-Update the single message to show multiple messages:
-
-* `I'am Choo Choo.`
-* `Your train traveling assistant.`
-* `You can book a train ticket or ask my support.`
-* `After your booking I'll keep you updated about train details so you don't have to worry about your journey.`
-
-This makes your bot more user-friendly and human.
 
 ### Using multiple languages
 
