@@ -4,8 +4,8 @@
 
 ## Getting started <a id="tutorials"></a>
 
-* [Getting started](tutorials/tutorial-getting-started/README.md)
-  * [The Conversation Design process](tutorials/tutorial-getting-started/the-conversation-design-process.md)
+* [Getting started](tutorials/getting-started.md)
+* [Building your bot on the platform](tutorials/tutorial-getting-started.md)
 * [Adding content to your bot](tutorials/tutorial-adding-content.md)
 * [Capturing information with entities](tutorials/tutorial-getting-information-using-entities.md)
 * [Capturing information with input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
@@ -98,4 +98,6 @@
 * [What's new](support/whats-new.md)
 * [Glossary](support/glossary.md)
 * [Status](https://status.chatlayer.ai/)
+
+## Getting started
 
