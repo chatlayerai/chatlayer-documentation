@@ -16,7 +16,7 @@ Define a different message, based on which class the user selected: `first` or `
   * If the user has selected no class at all, we want to redirect the user to the **bot dialog** `first or second class`. Here, the traveler will be asked explicitly in which class they want to travel
 * Configure the **Go To** like this:
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%28345%29.png)
 
 * Add a **text message** in the `selected first class` **bot dialog** and a **Go To** that redirects the user to `confirm booking`
 * Adjust the **Go To** settings in the **input validation** in the `first or second class` **bot dialog** to go to the **bot dialog** `class redirect`. Adjust the **Go To** in the `first class` button

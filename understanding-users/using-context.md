@@ -17,7 +17,7 @@ Consider the following dialog tree:
   * Bot dialog `second joke` - Intent: positive \(yes\)
   * Bot dialog `no more jokes` - Intent: negative \(no\)
 
-We have two separate conversation in this tree. The first one orders a pizza and ends by asking the user to confirm the order. The second conversation tells our user a joke and asks if they would like to hear another one.
+We have two separate conversations in this tree. The first one orders a pizza and ends by asking the user to confirm the order. The second conversation tells our user a joke and asks if they would like to hear another one.
 
 When in the `ask confirmation of pizza order` bot dialog, you want the user to be able to answer with something like _yes, confirm_ or _that looks good_. On the other hand when you are in the`another joke?` bot dialog, you also want the user to be able to answer with _yeah sure_ or _looks good_ or a similarly positive expression.
 
@@ -34,7 +34,7 @@ Now, when the 'yes' intent is recognized, the bot will check which context is ac
 
 You can repeat this configuration for the 'no' intent as well. In the end, you would get a configuration like this:
 
-* Bot dialog `ask confirmation of pizza orde`- Output context: **confirmingpizza**
+* Bot dialog `ask confirmation of pizza order`- Output context: **confirmingpizza**
 
   * Bot dialog `confirm order` - Required context: **confirmingpizza,** Intent: positive
   * Bot dialog `change order` - Required context: **confirmingpizza**, Intent: negative
