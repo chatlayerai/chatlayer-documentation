@@ -52,9 +52,9 @@ The meaning of these two expressions is exactly the same, but you want to conver
 
 ### Match pattern
 
-Use a pattern to extract some data out of the user's expression if it matches a particular format. Patterns are
+Use a pattern to extract some data out of the user's expression if it matches a particular format. Patterns are formed as regular expressions \(Python style\). You can learn about how to create a regular expression and test your regular expressions [here](https://regex101.com/).
 
-For example: you have defined @customerID as a match entity, and have provided the following regex pattern: \[a-z\]{5}A\[0-9\]{2}. This means that when a users says "My customer ID is **terwf33**", which consists of 5 letters and 2 numbers, it is saved as @customerID with value "terwf33".
+For example: you have defined @customerID as a match entity, and have provided the following regex pattern: \[a-z\]{5}\[0-9\]{2}. This means that when a users says "My customer ID is **terwf33**", which consists of 5 letters and 2 numbers, it is saved as @customerID with value "terwf33".
 
 ## Contextual entities
 
