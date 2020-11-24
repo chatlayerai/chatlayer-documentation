@@ -22,7 +22,6 @@
   * [NLP Dashboard & NLP Improve](understanding-users/natural-language-processing-nlp/nlp-dashboard-and-nlp-improve.md)
   * [Entities](understanding-users/natural-language-processing-nlp/synonym-entities.md)
   * [Supported languages](understanding-users/natural-language-processing-nlp/supported-languages.md)
-  * [Intent templates](understanding-users/natural-language-processing-nlp/intent-templates.md)
 * [Expression generator](understanding-users/expression-generator.md)
 * [Context](understanding-users/using-context.md)
 * [Multilingual bots](understanding-users/multilanguage-bots.md)

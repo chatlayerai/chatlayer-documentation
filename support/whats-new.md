@@ -4,15 +4,39 @@
 
 ### Bot import/export \(in beta\)
 
+Save a copy of your bot in an export. The export contains:
 
+* NLP
+  * Intents
+  * Expressions
+  * Entities
+* Bot dialogs
+  * Flows
+  * Messages and translations
+  * Variables
 
-### Sort buttons, quick replies carousel items and go to's
+The export does not contain:
 
+* Conversation history
+* Analytics
+* Channel settings
+* Bot settings
 
+Exporting a bot will result in a JSON file that you can download to your computer.
+
+This JSON file can be imported again to overwrite a bot with the data that is in the JSON file.
+
+### Sorting
+
+You can now change the order of buttons, quick replies, carousel items and go to's using drag and drop.
+
+![](../.gitbook/assets/nov-24-2020-15-29-40.gif)
 
 ### Bot dialog language switching
 
+Change the language of a bot dialog to immediately add or edit the translations for a message or button while you're creating or editing the flow.
 
+![](../.gitbook/assets/nov-24-2020-15-26-26.gif)
 
 ### Rich text messages
 

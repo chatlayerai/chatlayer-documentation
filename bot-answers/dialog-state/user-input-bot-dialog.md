@@ -58,7 +58,6 @@ The Date input parser type will try to parse the response as a date. Sentences l
 * last/past week
 * within/in 5/five days
 * Friday/Fri
-* ... \(Contact our [Support](https://github.com/chatlayer/chatlayer-documentation/tree/583d39b48ac82ffccf142520f337ede136bb68e2/reference/support.md) team if you need additional formats\)
 
 #### Location
 

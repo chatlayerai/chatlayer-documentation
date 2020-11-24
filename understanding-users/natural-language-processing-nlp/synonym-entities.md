@@ -1,29 +1,72 @@
 # Entities
 
-Entities are important pieces of information that are extracted from an expression. You want to store these entities in a separate variable so you can re-use them later on.
+Entities are important pieces of information that are extracted from an expression. You want to store these entities in a variable so you can re-use them later on.
 
-## Contextual entities
+## Types of entities
 
-Contextual entities use machine learning to identify entities in your sentence by learning which type of word your entity is, where in the sentence it's placed and what the specific context is.
+There are four types of entities:
 
-### Adding synonyms for entities
+* **Match entity:** if the user says a word that is in a list or matches a certain pattern, the entity is detected
+  * For example: I want to know more about the **Premium** pack: _@product:_ Premium
+* **Contextual entity:** train your NLP to recognize entities that depend on the context of the sentence
+  * For example: Book a train ticket from **Brussels** to **Amsterdam**: _@origin:_ Brussels, _@destination:_ Amsterdam
+* **System entity:** pre-built entities for common use cases that are extracted automatically
+  * For example: My e-mail address is **ilovebots@chatlayer.ai**: _@sys.email_: ilovebots@chatlayer.ai
+* **Composite entity:** a set of different but related entities combined into one
+  * For example: **Two** **fries** please: _@order_ consists of _@sys.number:_ 2 and _@foodItem_: fries
 
-Synonym entities allow you to add alternatives to entities that are assigned to the same value.   
+### When to use which entity type
+
+Use the following flowchart to find out which type of entity best fits your use case:
+
+![](../../.gitbook/assets/image%20%28347%29.png)
+
+{% hint style="warning" %}
+Entities of all types are only detected after you have pressed the "Update NLP" at least once.
+{% endhint %}
+
+## Match entities
+
+Match entities is an entity type that is detected when the user says a word that is in a list or matches a certain pattern.
+
+### Match text
+
+Add a list of possible entity values for an entity. If a user mentions one of these words during their conversation with the bot, that word will be saved as an entity.
+
+For example: you have defined @product as a match entity, and have provided 4 possible values. When a user says "I want to know more about the **Premium** pack", the entity @product will be saved, with the value "Premium".
+
+#### Synonyms
+
+For each value, you can add a synonym that will be converted to the original value
+
+Synonyms allow you to add alternatives to entities that are assigned to the same value.   
 For example:
 
 `I want to go to Brussels`
 
 `I want to go to Bruxelles`
 
-The meaning of these two expressions is exactly the same, but you want to convert `Bruxelles` to `Brussels` so that your bot understands the destination your user wants to go to.
+The meaning of these two expressions is exactly the same, but you want to convert `Bruxelles` to `Brussels` so your bot can work with one and the same value.
 
-To do this, go to the Entities tab and click on the entity you want to create synonyms for to add them.
+![](../../.gitbook/assets/image%20%28348%29.png)
 
-![](../../.gitbook/assets/image%20%28201%29.png)
+### Match pattern
+
+Use a pattern to extract some data out of the user's expression if it matches a particular format. Patterns are
+
+For example: you have defined @customerID as a match entity, and have provided the following regex pattern: \[a-z\]{5}A\[0-9\]{2}. This means that when a users says "My customer ID is **terwf33**", which consists of 5 letters and 2 numbers, it is saved as @customerID with value "terwf33".
+
+## Contextual entities
+
+Contextual entities use machine learning to identify entities in your sentence by learning which type of word your entity is, where in the sentence it's placed and what the specific context is.
+
+[Synonyms](synonym-entities.md#synonyms) can also be added for contextual entities.
 
 ### Fuzzy matching for contextual entities
 
 Fuzzy matching allows you to recognize a slight variation of a synonym or entity value as the original value. For example "Brusselt" will be corrected to "Brussels".
+
+![](../../.gitbook/assets/image%20%28346%29.png)
 
 The fuzzy matching is quite strict. Less than 20% of the characters can be different in order to map it to another entity. This is to avoid that the value is mapped to another entity which also has overlap. 
 
@@ -52,4 +95,8 @@ We support the following system entity types:
 | `sys.time` | "3 pm tomorrow" | `sys: {time: '2020-12-25T15:00:00.000+00:00', time_grain: 'hour'}` |
 | `sys.url` | "[www.chatlayer.ai/jobs](https://www.chatlayer.ai/jobs)" | `sys: {url: 'www.chatlayer.ai/jobs', url_domain: 'chatlayer.ai'}` |
 | `sys.duration` | "3 hours" | `sys: {duration: '3', duration_unit: 'hour', duration_normalized: '10800', duration_normalized_unit: 'second'}` |
+
+## Composite entities
+
+
 

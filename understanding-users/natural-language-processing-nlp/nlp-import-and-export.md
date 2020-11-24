@@ -20,5 +20,7 @@ The second step lets you choose between **adding** to or **replacing** your exis
 
 Our platform also allows you to import and export **entities**. If you go to the 'Entities' module under NLP, you can import and export the entity values and the synonyms for these values.
 
+All entity types will be included in the export.
+
 ![](../../.gitbook/assets/image%20%28302%29.png)
 
