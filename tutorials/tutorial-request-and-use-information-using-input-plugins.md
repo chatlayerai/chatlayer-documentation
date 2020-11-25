@@ -18,7 +18,7 @@ Let's start by asking for the departure location.
 * In the Bot Message tab, click the green + icon at the bottom to add a Go to
 * Type `destination` in the Go to field, and click `Create Input Validation 'destination'`
 
-![](../.gitbook/assets/image%20%2862%29.png)
+![](../.gitbook/assets/image%20%28350%29.png)
 
 * Save the `book train ticket` bot dialog
 * Open the newly created `destination` input validation
@@ -40,7 +40,7 @@ You can find more info about plugin parser types [here](../bot-answers/dialog-st
 
 The end result should look like this:
 
-![](../.gitbook/assets/add-input-validation.png)
+![](../.gitbook/assets/image%20%28349%29.png)
 
 Once created you will see the following flow:
 
