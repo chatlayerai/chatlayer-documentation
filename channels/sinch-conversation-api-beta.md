@@ -18,6 +18,12 @@ First, you need to create channels in the [Sinch dashboard](https://dashboard.si
 
 You can find detailed instructions on how to create a Conversation API app [here](https://developers.sinch.com/docs/conversation-getting-started).
 
+{% hint style="warning" %}
+Make sure that the region of your app is EU.
+
+![](../.gitbook/assets/image%20%28351%29.png)
+{% endhint %}
+
 ## Setting up the Conversation API integration in Chatlayer
 
 ![](../.gitbook/assets/image%20%28316%29.png)
