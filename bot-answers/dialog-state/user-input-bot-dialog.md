@@ -108,7 +108,7 @@ This input type will parse and validate email addresses.
 
 This input type will parse and validate zip codes. Note: currently we only support Belgian zip codes.
 
-**Image**
+#### **Image**
 
 The image format type allows you to check if a user has uploaded an image. Currently, this is only possible in Facebook Messenger and WhatsApp. 
 
