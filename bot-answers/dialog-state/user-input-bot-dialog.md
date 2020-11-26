@@ -110,7 +110,9 @@ This input type will parse and validate zip codes. Note: currently we only suppo
 
 **Image**
 
-The image format type allows you to check if a user has uploaded an image. Currently, this is only possible in Facebook Messenger.
+The image format type allows you to check if a user has uploaded an image. Currently, this is only possible in Facebook Messenger and WhatsApp. 
+
+For the chat widget, we recommend using the [file upload](message-components.md#file-upload) template.
 
 #### Language
 
