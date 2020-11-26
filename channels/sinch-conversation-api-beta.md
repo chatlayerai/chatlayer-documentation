@@ -10,7 +10,15 @@ The [Sinch Conversation API](https://www.sinch.com/products/apis/messaging/conve
 
 You don't have to think about which type of message works with which channel – the Conversation API transcodes the messages automatically to match the target channel. Easy peasy! 
 
-## Setting up the Conversation API integration
+## Creating your channels
+
+First, you need to create channels in the [Sinch dashboard](https://dashboard.sinch.com/). Depending on the channel you want to set-up, the instructions will be different.
+
+## Linking the channels to the Conversation API app
+
+You can find detailed instructions on how to create a Conversation API app [here](https://developers.sinch.com/docs/conversation-getting-started).
+
+## Setting up the Conversation API integration in Chatlayer
 
 ![](../.gitbook/assets/image%20%28316%29.png)
 
