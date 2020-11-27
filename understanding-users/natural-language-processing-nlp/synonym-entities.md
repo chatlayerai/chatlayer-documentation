@@ -6,14 +6,14 @@ Entities are important pieces of information that are extracted from an expressi
 
 There are four types of entities:
 
-* **Match entity:** if the user says a word that is in a list or matches a certain pattern, the entity is detected
-  * For example: I want to know more about the **Premium** pack: _@product:_ Premium
+* **Match entity:** if the user says a word that is in a list or matches a certain pattern, a match entity is detected
+  * For example: "I want to know more about the **Premium** pack": _@product:_ Premium
 * **Contextual entity:** train your NLP to recognize entities that depend on the context of the sentence
-  * For example: Book a train ticket from **Brussels** to **Amsterdam**: _@origin:_ Brussels, _@destination:_ Amsterdam
+  * For example: "Book a train ticket from **Brussels** to **Amsterdam"**: _@origin:_ Brussels, _@destination:_ Amsterdam
 * **System entity:** pre-built entities for common use cases that are extracted automatically
-  * For example: My e-mail address is **ilovebots@chatlayer.ai**: _@sys.email_: ilovebots@chatlayer.ai
+  * For example: "My e-mail address is **ilovebots@chatlayer.ai"**: _@sys.email_: ilovebots@chatlayer.ai
 * **Composite entity:** a set of different but related entities combined into one
-  * For example: **Two** **fries** please: _@order_ consists of _@sys.number:_ 2 and _@foodItem_: fries
+  * For example: "**Two** **fries** please": _@order_ consists of _@sys.number:_ 2 and _@foodItem_: fries
 
 ### When to use which entity type
 
@@ -22,7 +22,7 @@ Use the following flowchart to find out which type of entity best fits your use 
 ![](../../.gitbook/assets/image%20%28347%29.png)
 
 {% hint style="warning" %}
-Entities of all types are only detected after you have pressed the "Update NLP" at least once.
+Entities of all types are only detected after you have **updated your NLP** at least once.
 {% endhint %}
 
 ## Match entities
@@ -98,5 +98,7 @@ We support the following system entity types:
 
 ## Composite entities
 
+A Composite entity is a set of different but related entities combined into one. This entity type allows you to combine two separate entities into one.
 
+For example: "**Two** **fries** please": _@order_ \(composite entity\) consists of _@sys.number:_ 2 \(system entity\) and _@foodItem_: fries \(match entity\)
 
