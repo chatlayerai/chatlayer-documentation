@@ -6,14 +6,14 @@ Entities are important pieces of information that can be extracted from an expre
 
 There are four types of entities:
 
-* **Match entity:** if the user states a word that is part of a predefined list or matches a certain pattern, this word will be saved as a match entity. _For example: "I want to know more about the **Premium** pack"_ → _@product: Premium_
-* **Contextual entity:** train your NLP to recognise entities that depend on the context of an expression. _For example: "Book a train ticket from **Brussels** to **Amsterdam"**_ → _****@origin: Brussels, @destination: Amsterdam_
-* **System entity:** pre-built entities for common use cases that are extracted automatically _For example: "My e-mail address is **ilovebots@chatlayer.ai"**_ → _@sys.email: ilovebots@chatlayer.ai_
-* **Composite entity:** a set of different but related entities combined into one _For example: "**Two** **fries** please"_ → _@order consists of @sys.number \(2\) and @foodItem \(fries\)_
+* **Match entity:** if the user states a word that is part of a predefined list or matches a certain pattern, this word will be detected as a match entity. _For example: "I want to know more about the **Premium** pack"_ → _@product: Premium_ 
+* **Contextual entity:** train your NLP so it can recognise entities that depend on the context of an expression. _For example: "Book a train ticket from **Brussels** to **Amsterdam"**_ → _****@origin: Brussels, @destination: Amsterdam_ 
+* **System entity:** these are entities that are pre-built into the platform and can be detected automatically. _For example: "My e-mail address is **ilovebots@chatlayer.ai"**_ → _@sys.email: ilovebots@chatlayer.ai_ 
+* **Composite entity:** a combination of different, but related entities _For example: "**Two** **fries** please"_ → _@order consists of @sys.number \(2\) and @foodItem \(fries\)_
 
-### When to use which entity type
+### When to use which entity type?
 
-Use the following flowchart to find out which type of entity best fits your use case:
+We created a handy flowchart so you can find out which type of entity best fits your use case:
 
 ![](../../.gitbook/assets/image%20%28347%29.png)
 
