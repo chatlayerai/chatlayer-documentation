@@ -1,6 +1,6 @@
-# Entities
+# Using entities
 
-Entities are important pieces of information that are extracted from an expression. You want to store these entities in a variable so you can re-use them later on.
+Entities are important pieces of information that can be extracted from an expression. You want to store these entities as variables so you can re-use them later on.
 
 ## Types of entities
 
