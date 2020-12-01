@@ -58,6 +58,8 @@ Contextual entities use machine learning to identify entities in your sentence b
 
 [Synonyms](synonym-entities.md#synonyms) can also be added for contextual entities.
 
+Contextual entities are the only type of entities that can and should be added in the expression itself, for example: "I want to book a train ticket from @origin to @destination"
+
 ### Fuzzy matching for contextual entities
 
 Fuzzy matching allows you to recognize a slight variation of a synonym or entity value as the original value. For example "Brusselt" will be corrected to "Brussels".
