@@ -6,14 +6,10 @@ Entities are important pieces of information that can be extracted from an expre
 
 There are four types of entities:
 
-* **Match entity:** if the user says a word that is in a list or matches a certain pattern, a match entity is detected
-  * For example: "I want to know more about the **Premium** pack": _@product:_ Premium
-* **Contextual entity:** train your NLP to recognize entities that depend on the context of the sentence
-  * For example: "Book a train ticket from **Brussels** to **Amsterdam"**: _@origin:_ Brussels, _@destination:_ Amsterdam
-* **System entity:** pre-built entities for common use cases that are extracted automatically
-  * For example: "My e-mail address is **ilovebots@chatlayer.ai"**: _@sys.email_: ilovebots@chatlayer.ai
-* **Composite entity:** a set of different but related entities combined into one
-  * For example: "**Two** **fries** please": _@order_ consists of _@sys.number:_ 2 and _@foodItem_: fries
+* **Match entity:** if the user states a word that is part of a predefined list or matches a certain pattern, this word will be saved as a match entity. _For example: "I want to know more about the **Premium** pack"_ → _@product: Premium_
+* **Contextual entity:** train your NLP to recognise entities that depend on the context of an expression. _For example: "Book a train ticket from **Brussels** to **Amsterdam"**_ → _****@origin: Brussels, @destination: Amsterdam_
+* **System entity:** pre-built entities for common use cases that are extracted automatically _For example: "My e-mail address is **ilovebots@chatlayer.ai"**_ → _@sys.email: ilovebots@chatlayer.ai_
+* **Composite entity:** a set of different but related entities combined into one _For example: "**Two** **fries** please"_ → _@order consists of @sys.number \(2\) and @foodItem \(fries\)_
 
 ### When to use which entity type
 
