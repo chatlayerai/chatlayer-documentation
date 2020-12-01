@@ -4,7 +4,7 @@
 
 ## Getting started <a id="tutorials"></a>
 
-* [Getting started](tutorials/getting-started.md)
+* [Conversation Design](tutorials/getting-started.md)
 * [Building your bot on the platform](tutorials/tutorial-getting-started.md)
 * [Adding content to your bot](tutorials/tutorial-adding-content.md)
 * [Entities](tutorials/tutorial-getting-information-using-entities.md)
