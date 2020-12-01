@@ -68,6 +68,7 @@
 * [Facebook Messenger](channels/facebook/README.md)
   * [Facebook Admin Removal](channels/facebook/facebook-admin-removal.md)
   * [Facebook Webview Whitelisting](channels/facebook/facebook-webview-whitelisting.md)
+  * [Facebook Messenger API Updates for Europe](channels/facebook/facebook-messenger-api-updates-for-europe.md)
 * [WhatsApp Business API](channels/whatsapp.md)
 * [Webhook Channel](channels/webhook-api.md)
 * [Google Assistant](channels/google-assistant.md)
