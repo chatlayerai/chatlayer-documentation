@@ -15,70 +15,71 @@ There are four types of entities:
 
 Use this handy flowchart so you can find out which type of entity best fits your use case:
 
-![](../../.gitbook/assets/image%20%28347%29.png)
+![](../../.gitbook/assets/untitled-document.png)
 
 {% hint style="warning" %}
-Entities of all types are only detected after you have **updated your NLP** at least once.
+All entities will only be detected after you've **updated the NLP** at least once
 {% endhint %}
 
-## Match entities
+## 1 – Match entities
 
-Match entities is an entity type that is detected when the user says a word that is in a list or matches a certain pattern.
+Match entities are a type of entity that is detected when the user states a word that is part of a predefined list, or matches a certain pattern.
 
-### Match text
+### Option 1: Match text
 
-Add a list of possible entity values for an entity. If a user mentions one of these words during their conversation with the bot, that word will be saved as an entity.
+Create a list of possible values for an entity. If a user mentions one of these values during their conversation with the bot, that value will automatically be saved as an entity.
 
-For example: you have defined @product as a match entity, and have provided 4 possible values. When a user says "I want to know more about the **Premium** pack", the entity @product will be saved, with the value "Premium".
+For example: you have defined @product as a match entity, and have created four possible values: Basic, Beginner, Intermediate, Premium. When a user says "I want to know more about the **Premium** pack", the entity @product will be saved, with the value "Premium".
 
 #### Synonyms
 
-For each value, you can add a synonym that will be converted to the original value
+For each value, you can add a synonym that will be detected as the original value. Synonyms allow you to add alternatives to entities that are assigned to the same value. 
 
-Synonyms allow you to add alternatives to entities that are assigned to the same value.   
 For example:
 
 `I want to go to Brussels`
 
 `I want to go to Bruxelles`
 
-The meaning of these two expressions is exactly the same, but you want to convert `Bruxelles` to `Brussels` so your bot can work with one and the same value.
+The meaning of the two expressions above is exactly the same, but you want to convert `Bruxelles` to `Brussels` so your bot can work with one and the same value.
 
 ![](../../.gitbook/assets/image%20%28348%29.png)
 
-### Match pattern
+### Option 2: Match pattern
 
-Use a pattern to extract some data out of the user's expression if it matches a particular format. Patterns are formed as regular expressions \(Python style\). You can learn about how to create a regular expression and test your regular expressions [here](https://regex101.com/).
+Use a pattern to extract data from a user expression if it matches a particular format. Patterns are formed as regular expressions \(like in Python\). You can learn more about how to create regular expressions [here](https://regex101.com/).
 
-For example: you have defined @customerID as a match entity, and have provided the following regex pattern: \[a-z\]{5}\[0-9\]{2}. This means that when a users says "My customer ID is **terwf33**", which consists of 5 letters and 2 numbers, it is saved as @customerID with value "terwf33".
+For example: you have defined @customerID as a match entity, and have provided the following regex pattern: \[a-z\]{5}\[0-9\]{2}. This means that when a users says "My customer ID is **terwf33**", which consists of 5 letters and 2 numbers, it is saved as @customerID with the value "terwf33".
 
-## Contextual entities
+## 2 – Contextual entities
 
-Contextual entities use machine learning to identify entities in your sentence by learning which type of word your entity is, where in the sentence it's placed and what the specific context is.
+Contextual entities use machine learning to identify entities in sentences by learning which type of word your entity is, where it's placed in the sentence, and what the specific context is.
 
 [Synonyms](synonym-entities.md#synonyms) can also be added for contextual entities.
 
-Contextual entities are the only type of entities that can and should be added in the expression itself, for example: "I want to book a train ticket from @origin to @destination"
+{% hint style="info" %}
+Contextual entities are the only type of entities that can \(and should be\) added to the expression itself, for example: "I want to book a train ticket from @origin to @destination"
+{% endhint %}
 
 ### Fuzzy matching for contextual entities
 
-Fuzzy matching allows you to recognize a slight variation of a synonym or entity value as the original value. For example "Brusselt" will be corrected to "Brussels".
+Fuzzy matching allows you to recognise a slight variation of an entity value \(or its synonym\) as the original value. For example "Brusselt" will be automatically corrected to "Brussels" by using fuzzy matching.
 
 ![](../../.gitbook/assets/image%20%28346%29.png)
 
-The fuzzy matching is quite strict. Less than 20% of the characters can be different in order to map it to another entity. This is to avoid that the value is mapped to another entity which also has overlap. 
+Fuzzy matching is quite strict. Less than 20% of the characters are allowed to be different in order to link it to another entity. This is to avoid that the value is linked to another entity which also has overlap. 
 
-## System entities
+## 3 – System entities
 
-System entities are entities that are automatically extracted from the messages of users. You can use these to enrich your conversations and data integrations without having to configure custom entities yourself.
+System entities are entities that can be automatically extracted from the user's messages. You can use these to enrich your conversations and data integrations without having to configure custom entities yourself.
 
 {% hint style="warning" %}
-You should not overwrite System Entities yourself – they will automatically be overwritten with the last detected value if any are available. Instead, copy the System Entity variable to a variable of your own choosing outside the **sys** or **internal** namespaces.
+You should not overwrite System Entities yourself – they will automatically be overwritten with the last detected value \(if any are available\). So instead, copy the System Entity variable to a variable of your own choosing outside the **sys** or **internal** namespaces.
 {% endhint %}
 
 ### Supported system entities
 
-We support the following system entity types:
+Chatlayer.ai supports the following system entity types:
 
 | Variable name | Example input by user | Example result in session |
 | :--- | :--- | :--- |
@@ -94,9 +95,9 @@ We support the following system entity types:
 | `sys.url` | "[www.chatlayer.ai/jobs](https://www.chatlayer.ai/jobs)" | `sys: {url: 'www.chatlayer.ai/jobs', url_domain: 'chatlayer.ai'}` |
 | `sys.duration` | "3 hours" | `sys: {duration: '3', duration_unit: 'hour', duration_normalized: '10800', duration_normalized_unit: 'second'}` |
 
-## Composite entities
+## 4 – Composite entities
 
-A Composite entity is a set of different but related entities combined into one. This entity type allows you to combine two separate entities into one.
+A Composite Entity is a combination of different, but related entities. This type of entity allows you to combine two separate entities into a single one.
 
 For example: "**Two** **fries** please": _@order_ \(composite entity\) consists of _@sys.number:_ 2 \(system entity\) and _@foodItem_: fries \(match entity\)
 
