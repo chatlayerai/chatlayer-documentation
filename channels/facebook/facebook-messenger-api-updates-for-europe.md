@@ -1,31 +1,38 @@
 # Facebook Messenger API Updates for Europe
 
-Facebook unexpectedly published a breaking change to the Messenger API which will impact most bots that are currently live on their platform, especially for European users.
+Facebook unexpectedly [published a breaking change to the Messenger API](https://developers.facebook.com/docs/messenger-platform/europe-updates/) which will impact a large part of the over 300.000 chatbots that are currently live on their platform, especially for European users.
 
 This article helps you understand what is changing and what you can do in Chatlayer.ai to ease the impact.
 
+## Will this impact my bot?
+
+We will guide you through a couple of questions to help you determine if your bot will be impacted by these changes from Facebook.
+
+### Is your bot published on Facebook Messenger?
+
+Only bots published on the Facebook Messenger channel are impacted. If your bot is not on this channel, there's no impact for you.
+
+If you do have a bot published on Facebook Messenger, you might be impacted.
+
+### Is the Facebook page connected to your bot the page of a European \(EEA\) company? Do you have European users?
+
+This change only impacts businesses and users of bots in Europe.
+
+For non-European Facebook bots talking to non-European customers, nothing changes.
+
+### Are you using Carousels / Buttons / Quick Replies / Video Media in your bot?
+
+Only the messages that contain a **carousel** \(also called generic template\), a **button** template, **quick replies** or a **video** will be impacted. All other messages \(normal text messages, webviews\) will remain the same.
+
+### Are the users of your bot accessing it through [messenger.com](https://messenger.com)?
+
+Only users that use Facebook Messenger through the website [messenger.com](https://messenger.com), on whichever device, will be impacted. All conversations happening through the Facebook Messenger app on Android and iOS devices will not be impacted.
+
+Facebook doesn't publish data on the percentage of users accessing Messenger through apps or through the website.
+
 ## What is changing?
 
-Beginning December 16th, buttons, video’s, carousels will not work on FB Messenger Web anymore after December 16th \(will still work on iOS/Android\)
-
-**Will this impact my bot?**
-
-Only bots published on Facebook Messenger are impacted, if your bot is not on this channel, this change will have no impact on your bot.
-
-If you do have a bot published on Facebook Messenger:
-
-Is the Facebook page connected to your bot the page of a European \(EEA\) company?
-
-If yes, all messages sent by the bot will 
-
-These changes by Facebook will impact you if:
-
-* The Facebook page on which the bot lives is for a European \(EEA\) company
-* One or more admins of the page are residing in Europe
-
-Some chats
-
-* The Facebook page is not European, but the person talking to  bot chats with users residing 
+Beginning December 16th, buttons, carrousels, video’s, carousels will not work on FB Messenger Web anymore after December 16th \(will still work on iOS/Android\)
 
 **What we don’t know**
 
