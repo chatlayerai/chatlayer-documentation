@@ -1,8 +1,8 @@
-# Chat widget
+# Web chat widget
 
 One of the most common ways of making a bot available to your clients is through a chat widget. In this technical guide, we will guide you through the process of integrating the bot in your website.
 
-## Creating your chat widget
+## Creating your web chat widget
 
 To create a chat widget for your bot, navigate to the Channels tab and then click on the pencil icon next to Web.
 

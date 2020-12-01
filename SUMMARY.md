@@ -71,7 +71,7 @@
 * [WhatsApp Business API](channels/whatsapp.md)
 * [Webhook Channel](channels/webhook-api.md)
 * [Google Assistant](channels/google-assistant.md)
-* [Chat widget](channels/webwidget.md)
+* [Web chat widget](channels/webwidget.md)
 * [Phone & voice](channels/phone-and-voice.md)
 * [Workplace from Facebook](channels/workplace-from-facebook.md)
 * [Sinch Conversation API](channels/sinch-conversation-api-beta.md)
