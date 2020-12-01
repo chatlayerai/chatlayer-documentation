@@ -13,7 +13,7 @@ There are four types of entities:
 
 ### When to use which entity type?
 
-We created a handy flowchart so you can find out which type of entity best fits your use case:
+Use this handy flowchart so you can find out which type of entity best fits your use case:
 
 ![](../../.gitbook/assets/image%20%28347%29.png)
 
