@@ -23,7 +23,11 @@ More details can be found in [our tutorial](https://app.gitbook.com/@chatlayer/s
 
 The code editor allows developers to quickly build custom logic on top of the bot by writing their own Javascript code blocks. Typically, the code editor is used to perform requests to external systems, or to do operations with variables.
 
-Click on the hamburger menu on the right to include some examples in your editor. There are two tutorials on how to use the Code editor:
+You can find more information about the code editor here:
+
+{% page-ref page="../../integrations/code-action.md" %}
+
+There are also two tutorials in which we show you how the code editor can be used:
 
 {% page-ref page="../../integrations/retrieving-data-from-airtable-get.md" %}
 
