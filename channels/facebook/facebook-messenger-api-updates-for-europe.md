@@ -32,14 +32,14 @@ Facebook doesn't publish data on the percentage of users accessing Messenger thr
 
 ## What is changing?
 
-Starting December 16th, if your page or user fits the criteria outlined above, whenever a user triggers a message from the bot that contains a:
+Starting December 16th, if the page, user and device of the user fits the criteria outlined above, whenever a user triggers a message from the bot that contains a:
 
 * Button
 * Carousel \(also called generic template\)
 * Quick reply
 * Media containing a video
 
-An error will be shown to the user of the bot, and the message will not be shown. We're not sure what this error will look like yet.
+An error will be shown to the user of the bot, and the message will not be shown. We don't know what this error will look like yet.
 
 ## What is not changing?
 
@@ -47,6 +47,7 @@ The following features will not be impacted by the changes:
 
 * m.me links
 * Get Started button
+* Webviews
 
 ## **What we don’t know**
 
