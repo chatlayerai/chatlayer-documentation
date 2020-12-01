@@ -1,8 +1,8 @@
 # Facebook Messenger API Updates for Europe
 
-Facebook unexpectedly [published a breaking change to the Messenger API](https://developers.facebook.com/docs/messenger-platform/europe-updates/) which will impact a large part of the over 300.000 chatbots that are currently live on their platform, especially for European users.
+Facebook unexpectedly [published a breaking change to the Messenger API](https://developers.facebook.com/docs/messenger-platform/europe-updates/) which will impact a large part of the over 300.000 chatbots that are currently live on their platform.
 
-This article helps you understand what is changing and what you can do in Chatlayer.ai to ease the impact.
+This guide helps you understand what is changing and what you can do in Chatlayer.ai to ease the impact.
 
 ## Will this impact my bot?
 
@@ -20,9 +20,17 @@ This change only impacts businesses and users of bots in Europe.
 
 For non-European Facebook bots talking to non-European customers, nothing changes.
 
+If you want to know if your page will be impacted, go to developers.facebook.com, open your app, go to Messenger settings and find the following box:
+
+![As you can see, our test page will be affected by the changes](../../.gitbook/assets/image%20%28352%29.png)
+
+Enter your page ID here to check if it's affected by the changes.
+
 ### Are you using Carousels / Buttons / Quick Replies / Video Media in your bot?
 
-Only the messages that contain a **carousel** \(also called generic template\), a **button** template, **quick replies** or a **video** will be impacted. All other messages \(normal text messages, webviews\) will remain the same.
+Only the messages that contain a **carousel** \(also called generic template\), a **button** template, **quick replies** or media other than images \(video, files, audio\) will be impacted. 
+
+All other messages \(normal text messages, webviews\) will remain the same.
 
 ### Are the users of your bot accessing it through [messenger.com](https://messenger.com)?
 
@@ -37,31 +45,59 @@ Starting December 16th, if the page, user and device of the user fits the criter
 * Button
 * Carousel \(also called generic template\)
 * Quick reply
-* Media containing a video
+* Media other than images \(video, files, audio\)
 
-An error will be shown to the user of the bot, and the message will not be shown. We don't know what this error will look like yet.
+That message will not be shown to the user.
+
+Additionally:
+
+* All typing indicators and read reports will not be shown to the user.
+* m.me links with a referral with not work anymore
+* The [persistent menu](./#persistent-menu) or hamburger menu will not be shown to the user.
 
 ## What is not changing?
 
-The following features will not be impacted by the changes:
+The following Facebook Messenger features will not be impacted by the changes:
 
-* m.me links
 * Get Started button
 * Webviews
 
-## **What we don’t know**
+## **How to convert your chatbot to avoid errors after December 16th?**
 
-**What will happen on December 16th?**
+There are a few steps you can take to prepare your bot for the changes that are coming.
 
-**What can you do to make your bot compliant with the new regulations?**
+{% hint style="warning" %}
+Facebook's policy doesn't seem to be set in stone, they are still adapting their policies and guidelines. Keep this in mind before starting a major rework of your bot.
+{% endhint %}
 
-**Why are we only hearing about this now?**
+* Remove all Buttons, Quick Replies and Carousels from your bot
+  * You can filter on all bot dialogs containing buttons or quick replies using the [translations](../../bot-answers/dialog-state/translations.md) table
+  * You can use a combination of [context](../../understanding-users/using-context.md) and intents to replace the buttons
+* Facebook recommends URL buttons to be converted into a message containing a URL. Users can click that URL to get to the same place.
 
-As soon as Facebook released their official statement, we started preparing this 
+![](../../.gitbook/assets/image%20%28353%29.png)
 
-**Are these changes temporary?**
+* Remove all media except images
+  * Video's, audio and files can be replaced with a direct link to the file itself
+* Remove the [persistent menu](./#persistent-menu) of your bot
 
-Facebook writes on their official page “We are currently working to restore these features and will continue to update this document with the details as they are available.”
+## **Why are we only hearing about this now?**
 
-**Why is Facebook pushing these changes?**
+As soon as Facebook released their official statement, we published this guide. We aren't sure why Facebook is releasing this information so close to the deadline.
+
+## **Are these changes permanent?**
+
+Facebook writes on [their official post](https://developers.facebook.com/docs/messenger-platform/europe-updates/): 
+
+`We are currently working to restore these features and will continue to update this document (...) with the details as they are available.`
+
+Right now, we do not know what exactly will change in their policies before the December 16th deadline.
+
+## **Why is Facebook making these changes?**
+
+Most likely, these changes are caused by ongoing litigation between Facebook and the members of the European Economic Area.
+
+## I need help
+
+We have written all we know about the changes in the guide above, but if you have any questions specific to your bot, feel free to [get in touch](../../support/get-in-touch.md) with us.
 
