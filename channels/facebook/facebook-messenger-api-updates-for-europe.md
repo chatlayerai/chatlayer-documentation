@@ -26,15 +26,29 @@ Only the messages that contain a **carousel** \(also called generic template\), 
 
 ### Are the users of your bot accessing it through [messenger.com](https://messenger.com)?
 
-Only users that use Facebook Messenger through the website [messenger.com](https://messenger.com), on whichever device, will be impacted. All conversations happening through the Facebook Messenger app on Android and iOS devices will not be impacted.
+Only users that use Facebook Messenger through the website [messenger.com](https://messenger.com), or through the [chat plugin](https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/), will be impacted. All conversations happening through the Facebook Messenger app on Android and iOS devices will not be impacted.
 
-Facebook doesn't publish data on the percentage of users accessing Messenger through apps or through the website.
+Facebook doesn't publish data on the percentage of users accessing Messenger through apps or through the website or chat plugin.
 
 ## What is changing?
 
-Beginning December 16th, buttons, carrousels, video’s, carousels will not work on FB Messenger Web anymore after December 16th \(will still work on iOS/Android\)
+Starting December 16th, if your page or user fits the criteria outlined above, whenever a user triggers a message from the bot that contains a:
 
-**What we don’t know**
+* Button
+* Carousel \(also called generic template\)
+* Quick reply
+* Media containing a video
+
+An error will be shown to the user of the bot, and the message will not be shown. We're not sure what this error will look like yet.
+
+## What is not changing?
+
+The following features will not be impacted by the changes:
+
+* m.me links
+* Get Started button
+
+## **What we don’t know**
 
 **What will happen on December 16th?**
 
