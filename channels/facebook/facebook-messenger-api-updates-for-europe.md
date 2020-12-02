@@ -40,7 +40,7 @@ Only users that access Facebook Messenger through the website [messenger.com](ht
 
 ## What is changing exactly?
 
-If the page, user and device of the user fits the criteria outlined above, messages that contain one or more of the items below will no longer be shown to the user from December 16th on:
+Starting December 16th, if the page, user location and device of the user fits the criteria above, users will no longer be able to see messages that contain one or more of the items below:
 
 * Button
 * Carousel \(also called generic template\)
