@@ -28,13 +28,15 @@ If you want to know if your page will be impacted, go to [developers.facebook.co
 
 Enter your page ID to check if your page is affected by the new updates.
 
+### 3 – Does your bot use Carousels/Buttons/Video Media?
+
 ### 3 – Are the users of your bot accessing it through [messenger.com](https://messenger.com)?
 
 Only users that access Facebook Messenger through the website [messenger.com](https://messenger.com), or through the [chat plugin](https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/), will be impacted. Conversations happening on the Facebook Messenger app on Android and iOS devices **will not be impacted**.
 
 ### 4 – Does your bot use Carousels/Buttons/Quick Replies/Video Media?
 
-Only the messages that contain a **carousel** \(also called generic template\), a **button** template, **quick replies** or media other than images \(video, files, audio\) will be impacted. 
+Only the messages that contain a **carousel** \(also called generic template\), a **button** template, or **media** other than images \(video, files, audio\) will be impacted. 
 
 All other messages \(normal text messages, webviews\) will remain the same.
 
@@ -44,7 +46,6 @@ Starting December 16th, if the page, user location and device of the user fits t
 
 * Button
 * Carousel \(also called generic template\)
-* Quick reply
 * Media other than images \(video, files, audio\)
 
 Additionally:
@@ -59,6 +60,7 @@ The following Facebook Messenger features will not be impacted by the updates:
 
 * Get Started button
 * Webviews
+* Quick replies
 
 ## **How to update your chatbot to avoid any errors from December 16th on?**
 
@@ -68,9 +70,10 @@ There are a few steps you can take to prepare your bot for the changes that are 
 Facebook's policy doesn't seem to be set in stone, they are still adapting their policies and guidelines. Keep this in mind before starting a major rework of your bot.
 {% endhint %}
 
-* Remove all Buttons, Quick Replies and Carousels from your bot
+* Remove all Buttons and Carousels from your bot
   * You can filter on bot dialogs containing buttons or quick replies using the [translations](../../bot-answers/dialog-state/translations.md) table
   * You can use a combination of [context](../../understanding-users/using-context.md) and intents to replace any buttons
+  * You can use quick replies to replace some of the functionalities of buttons
 * Facebook recommends URL buttons to be converted into a message containing a URL. Users can click that URL to get to the same place.
 
 ![](../../.gitbook/assets/image%20%28353%29.png)
