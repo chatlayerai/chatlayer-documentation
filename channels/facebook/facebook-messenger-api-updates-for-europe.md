@@ -82,6 +82,8 @@ Facebook's policy doesn't seem to be set in stone, they are still adapting their
   * Video's, audio and files can be replaced with a direct link to the file itself
 * Remove the [persistent menu](./#persistent-menu) of your bot
 
+If you want detailed advice on how to keep a good conversation design with a buttonless bot, we have written a guide ["How to create a buttonless bot"](https://tesstettelin.medium.com/dd68772f8560) to help you out.
+
 ## **Why are we only hearing about this now?**
 
 As soon as Facebook released their official statement, we created this guide. We aren't sure why Facebook is releasing this information so close to the deadline, but we are doing our best to prepare and help you.
