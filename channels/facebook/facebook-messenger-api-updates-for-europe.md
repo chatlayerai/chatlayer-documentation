@@ -53,11 +53,13 @@ Additionally:
 * All typing indicators and read reports will not be shown to the user
 * m.me links with a referral will not work anymore
 * The [persistent menu](./#persistent-menu) or hamburger menu will not be shown to the user
+* The locale parameter, which is used to determine the user's language, as well as the first and last name of the user, cannot be retrieved any longer, even if those permission has been granted for your app.
 
 ## What is not changing?
 
 The following Facebook Messenger features will not be impacted by the updates:
 
+* Text messages
 * Get Started button
 * Webviews
 * Quick replies
