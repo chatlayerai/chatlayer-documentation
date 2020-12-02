@@ -62,7 +62,7 @@ The following Facebook Messenger features will not be impacted by the updates:
 * Webviews
 * Quick replies
 
-## **How to update your chatbot to avoid any errors from December 16th on?**
+## **How to update your chatbot to avoid any errors from December 16th onwards?**
 
 There are a few steps you can take to prepare your bot for the changes that are coming.
 
