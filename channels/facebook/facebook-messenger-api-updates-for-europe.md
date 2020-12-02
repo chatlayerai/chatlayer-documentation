@@ -28,13 +28,11 @@ If you want to know if your page will be impacted, go to [developers.facebook.co
 
 Enter your page ID to check if your page is affected by the new updates.
 
-### 3 – Does your bot use Carousels/Buttons/Video Media?
-
 ### 3 – Are the users of your bot accessing it through [messenger.com](https://messenger.com)?
 
 Only users that access Facebook Messenger through the website [messenger.com](https://messenger.com), or through the [chat plugin](https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/), will be impacted. Conversations happening on the Facebook Messenger app on Android and iOS devices **will not be impacted**.
 
-### 4 – Does your bot use Carousels/Buttons/Quick Replies/Video Media?
+### 4 – Does your bot use Carousels/Buttons/Video Media?
 
 Only the messages that contain a **carousel** \(also called generic template\), a **button** template, or **media** other than images \(video, files, audio\) will be impacted. 
 
