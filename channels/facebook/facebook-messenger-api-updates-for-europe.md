@@ -1,6 +1,6 @@
 # Facebook Messenger API updates for Europe
 
-On the 30th of November, Facebook announced [a new change to the Messenger API ](https://developers.facebook.com/docs/messenger-platform/europe-updates/)which will impact a big part of the 300.000+ chatbots that are currently live on this platform.
+On the 30th of November, Facebook announced they'll be [updating their Messenger API](https://developers.facebook.com/docs/messenger-platform/europe-updates/) which will impact a big part of the 300.000+ chatbots that are currently live on this platform.
 
 Beginning December 16th, several Messenger APIs will be unavailable for developers and businesses in Europe, and for people in Europe who connect with businesses globally.
 
