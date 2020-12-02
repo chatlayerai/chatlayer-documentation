@@ -1,46 +1,46 @@
 # Facebook Messenger API updates for Europe
 
-On the 30th of November, Facebook published [a new change to the Messenger API ](https://developers.facebook.com/docs/messenger-platform/europe-updates/)which will impact a big part of the 300.000+ chatbots that are currently live on this platform.
+On the 30th of November, Facebook announced [a new change to the Messenger API ](https://developers.facebook.com/docs/messenger-platform/europe-updates/)which will impact a big part of the 300.000+ chatbots that are currently live on this platform.
 
-We created this guide to help you understand what is changing exactly and what you can do on the Chatlayer.ai platform to ease the impact.
+Beginning December 16th, several Messenger APIs will be unavailable for developers and businesses in Europe, and for people in Europe who connect with businesses globally.
+
+We created this guide to help you understand what is changing exactly and what you can do on the Chatlayer.ai platform to minimise the impact on your bot.
 
 ## Will this impact my bot?
 
 We will guide you through a couple of questions to help you determine if your bot will be impacted by the new changes from Facebook.
 
-### Is your bot published on Facebook Messenger?
+### 1 – Is your bot published on Facebook Messenger?
 
 Only bots that are published on Facebook Messenger will be impacted. If your bot is not on this channel, there will be no impact for you.
 
-If you do have a bot published on Facebook Messenger, it might be impacted. Read on to find out more.
+If you do have a bot published on Facebook Messenger, it might be impacted. Keep reading to find out more.
 
-### Does the Facebook page where your bot is connected belong to a European \(EEA\) company? Are your users European?
+### 2 – Is your bot connected to a Facebook page that belongs to a European \(EEA\) company? Are your users European?
 
-Facebook's API updates only impact businesses and users of bots located **in Europe**. 
+Facebook's API updates only impact businesses and bot users located **in Europe**. 
 
-Bots that are live on non-European Facebook pages and talk to non-European customers will not be affected by the updates.
+Bots that are live on non-European Facebook pages and talk to non-European customers will not be affected by these updates.
 
-If you want to know if your page will be impacted, go to developers.facebook.com, open your app, go to Messenger settings and find the following box:
+If you want to know if your page will be impacted, go to [developers.facebook.com](https://developers.facebook.com/), open your app, go to Messenger settings and find the following box:
 
 ![As you can see, our test page will be affected by the changes](../../.gitbook/assets/image%20%28352%29.png)
 
-Enter your page ID here to check if it's affected by the changes.
+Enter your page ID to check if your page is affected by the new updates.
 
-### Are you using Carousels / Buttons / Quick Replies / Video Media in your bot?
+### 3 – Does your bot use Carousels/Buttons/Quick Replies/Video Media?
 
 Only the messages that contain a **carousel** \(also called generic template\), a **button** template, **quick replies** or media other than images \(video, files, audio\) will be impacted. 
 
 All other messages \(normal text messages, webviews\) will remain the same.
 
-### Are the users of your bot accessing it through [messenger.com](https://messenger.com)?
+### 4 – Are the users of your bot accessing it through [messenger.com](https://messenger.com)?
 
-Only users that use Facebook Messenger through the website [messenger.com](https://messenger.com), or through the [chat plugin](https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/), will be impacted. All conversations happening through the Facebook Messenger app on Android and iOS devices will not be impacted.
+Only users that access Facebook Messenger through the website [messenger.com](https://messenger.com), or through the [chat plugin](https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/), will be impacted. Conversations happening on the Facebook Messenger app on Android and iOS devices **will not be impacted**.
 
-Facebook doesn't publish data on the percentage of users accessing Messenger through apps or through the website or chat plugin.
+## What is changing exactly?
 
-## What is changing?
-
-Starting December 16th, if the page, user and device of the user fits the criteria outlined above, whenever a user triggers a message from the bot that contains a:
+If the page, user and device of the user fits the criteria outlined above, messages that contain one or more of the items below will no longer be shown to the user from December 16th on:
 
 * Button
 * Carousel \(also called generic template\)
