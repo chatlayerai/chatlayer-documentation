@@ -1,24 +1,24 @@
-# Facebook Messenger API Updates for Europe
+# Facebook Messenger API updates for Europe
 
-Facebook unexpectedly [published a breaking change to the Messenger API](https://developers.facebook.com/docs/messenger-platform/europe-updates/) which will impact a large part of the over 300.000 chatbots that are currently live on their platform.
+On the 30th of November, Facebook published [a new change to the Messenger API ](https://developers.facebook.com/docs/messenger-platform/europe-updates/)which will impact a big part of the 300.000+ chatbots that are currently live on this platform.
 
-This guide helps you understand what is changing and what you can do in Chatlayer.ai to ease the impact.
+We created this guide to help you understand what is changing exactly and what you can do on the Chatlayer.ai platform to ease the impact.
 
 ## Will this impact my bot?
 
-We will guide you through a couple of questions to help you determine if your bot will be impacted by these changes from Facebook.
+We will guide you through a couple of questions to help you determine if your bot will be impacted by the new changes from Facebook.
 
 ### Is your bot published on Facebook Messenger?
 
-Only bots published on the Facebook Messenger channel are impacted. If your bot is not on this channel, there's no impact for you.
+Only bots that are published on Facebook Messenger will be impacted. If your bot is not on this channel, there will be no impact for you.
 
-If you do have a bot published on Facebook Messenger, you might be impacted.
+If you do have a bot published on Facebook Messenger, it might be impacted. Read on to find out more.
 
-### Is the Facebook page connected to your bot the page of a European \(EEA\) company? Do you have European users?
+### Does the Facebook page where your bot is connected belong to a European \(EEA\) company? Are your users European?
 
-This change only impacts businesses and users of bots in Europe.
+Facebook's API updates only impact businesses and users of bots located **in Europe**. 
 
-For non-European Facebook bots talking to non-European customers, nothing changes.
+Bots that are live on non-European Facebook pages and talk to non-European customers will not be affected by the updates.
 
 If you want to know if your page will be impacted, go to developers.facebook.com, open your app, go to Messenger settings and find the following box:
 
