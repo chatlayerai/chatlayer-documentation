@@ -47,22 +47,20 @@ Starting December 16th, if the page, user location and device of the user fits t
 * Quick reply
 * Media other than images \(video, files, audio\)
 
-That message will not be shown to the user.
-
 Additionally:
 
-* All typing indicators and read reports will not be shown to the user.
-* m.me links with a referral with not work anymore
-* The [persistent menu](./#persistent-menu) or hamburger menu will not be shown to the user.
+* All typing indicators and read reports will not be shown to the user
+* m.me links with a referral will not work anymore
+* The [persistent menu](./#persistent-menu) or hamburger menu will not be shown to the user
 
 ## What is not changing?
 
-The following Facebook Messenger features will not be impacted by the changes:
+The following Facebook Messenger features will not be impacted by the updates:
 
 * Get Started button
 * Webviews
 
-## **How to convert your chatbot to avoid errors after December 16th?**
+## **How to update your chatbot to avoid any errors from December 16th on?**
 
 There are a few steps you can take to prepare your bot for the changes that are coming.
 
@@ -71,33 +69,33 @@ Facebook's policy doesn't seem to be set in stone, they are still adapting their
 {% endhint %}
 
 * Remove all Buttons, Quick Replies and Carousels from your bot
-  * You can filter on all bot dialogs containing buttons or quick replies using the [translations](../../bot-answers/dialog-state/translations.md) table
-  * You can use a combination of [context](../../understanding-users/using-context.md) and intents to replace the buttons
+  * You can filter on bot dialogs containing buttons or quick replies using the [translations](../../bot-answers/dialog-state/translations.md) table
+  * You can use a combination of [context](../../understanding-users/using-context.md) and intents to replace any buttons
 * Facebook recommends URL buttons to be converted into a message containing a URL. Users can click that URL to get to the same place.
 
 ![](../../.gitbook/assets/image%20%28353%29.png)
 
-* Remove all media except images
+* Remove all media except for images
   * Video's, audio and files can be replaced with a direct link to the file itself
 * Remove the [persistent menu](./#persistent-menu) of your bot
 
 ## **Why are we only hearing about this now?**
 
-As soon as Facebook released their official statement, we published this guide. We aren't sure why Facebook is releasing this information so close to the deadline.
+As soon as Facebook released their official statement, we created this guide. We aren't sure why Facebook is releasing this information so close to the deadline, but we are doing our best to prepare and help you.
 
 ## **Are these changes permanent?**
 
-Facebook writes on [their official post](https://developers.facebook.com/docs/messenger-platform/europe-updates/): 
+Facebook said this in their [official release](https://developers.facebook.com/docs/messenger-platform/europe-updates/): 
 
 `We are currently working to restore these features and will continue to update this document (...) with the details as they are available.`
 
-Right now, we do not know what exactly will change in their policies before the December 16th deadline.
+That means that right now, we don't really know what exactly will change in their policies before December 16th...
 
 ## **Why is Facebook making these changes?**
 
-Most likely, these changes are caused by ongoing litigation between Facebook and the members of the European Economic Area.
+Most likely, these changes are caused by ongoing litigation between Facebook and the members of the European Economic Area. Facebook is updating their Messenger API as part of their efforts to comply with new privacy rules in Europe.
 
-## I need help
+## I need more help!
 
-We have written all we know about the changes in the guide above, but if you have any questions specific to your bot, feel free to [get in touch](../../support/get-in-touch.md) with us.
+This guide contains all information we have so far, and is being updated every time we receive more information. But if you still have questions specific to your bot, feel free to [get in touch](../../support/get-in-touch.md) with us.
 
