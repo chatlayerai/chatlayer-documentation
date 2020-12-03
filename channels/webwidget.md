@@ -115,7 +115,7 @@ In this case, your bot will be opened in English, and when a user clicks the SDK
 | `button` | `HTMLElement` |  |
 | `wrapper` | `HTMLElement` |  |
 
-#### Transferring a variable to the SDK
+#### Transferring a variable from your website, through the SDK to the chatbot
 
 If you want to transfer data from your website to the chatbot, you can add that data to the `chatlayer` function. All data will be put onto the `root.session` variable in the Chatlayer.ai session. This data can then be used to customize the chatbot flow, based on actual website data.
 
@@ -202,7 +202,7 @@ If you want to recognize a returning bot user, you can send a unique sender ID f
 
 Make sure that your sender ID is 20 characters or longer.
 
-#### Passing a variable to the iframe
+#### Transferring a variable from your website, through the iframe to the chatbot
 
 A user's session can be updated at any time through the [Asynchronous Actions API](webhook-api.md#asynchronous-actions).
 
