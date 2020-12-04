@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# Frequently Asked Questions \(FAQ\)
 
 ## Is it possible to connect two bots to each other?
 
