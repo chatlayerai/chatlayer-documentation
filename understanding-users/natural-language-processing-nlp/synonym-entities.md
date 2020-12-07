@@ -21,7 +21,7 @@ Use this handy flowchart so you can find out which type of entity best fits your
 All entities will only be detected after you've **updated the NLP** at least once
 {% endhint %}
 
-## 1 – Match entities
+## Match entities
 
 Match entities are a type of entity that is detected when the user states a word that is part of a predefined list, or matches a certain pattern.
 
@@ -51,7 +51,7 @@ Use a pattern to extract data from a user expression if it matches a particular 
 
 For example: you have defined @customerID as a match entity, and have provided the following regex pattern: \[a-z\]{5}\[0-9\]{2}. This means that when a users says "My customer ID is **terwf33**", which consists of 5 letters and 2 numbers, it is saved as @customerID with the value "terwf33".
 
-## 2 – Contextual entities
+## Contextual entities
 
 Contextual entities use machine learning to identify entities in sentences by learning which type of word your entity is, where it's placed in the sentence, and what the specific context is.
 
@@ -69,7 +69,7 @@ Fuzzy matching allows you to recognise a slight variation of an entity value \(o
 
 Fuzzy matching is quite strict. Less than 20% of the characters are allowed to be different in order to link it to another entity. This is to avoid that the value is linked to another entity which also has overlap. 
 
-## 3 – System entities
+## System entities
 
 System entities are entities that can be automatically extracted from the user's messages. You can use these to enrich your conversations and data integrations without having to configure custom entities yourself.
 
@@ -95,7 +95,7 @@ Chatlayer.ai supports the following system entity types:
 | `sys.url` | "[www.chatlayer.ai/jobs](https://www.chatlayer.ai/jobs)" | `sys: {url: 'www.chatlayer.ai/jobs', url_domain: 'chatlayer.ai'}` |
 | `sys.duration` | "3 hours" | `sys: {duration: '3', duration_unit: 'hour', duration_normalized: '10800', duration_normalized_unit: 'second'}` |
 
-## 4 – Composite entities
+## Composite entities
 
 A Composite Entity is a combination of different, but related entities. This type of entity allows you to combine two separate entities into a single one.
 
