@@ -3,7 +3,7 @@
 Integrating your bot with Facebook Messenger is easy, just follow the steps in the wizard.
 
 {% hint style="danger" %}
-In order for your Facebook Messenger bot to be publicly available, you will have to go through Facebook's strict App Review process. We've listed the steps & best practices for App Review [here](https://developers.facebook.com/docs/apps/review/).
+In order for your Facebook Messenger bot to be publicly available, you will have to go through Facebook's strict App Review process. The steps & best practices that must be taken for App Review, as detailed by Facebook, can be found [here](https://developers.facebook.com/docs/apps/review/).
 {% endhint %}
 
 ## Facebook Messenger Specific Content
