@@ -18,9 +18,9 @@ The greeting message is what will be shown first when the bot is clicked on by a
 
 You can personalize the greeting text using the user's name by using these template strings:
 
-* `{{internal.user_firstName}}`
-* `{{internal.user_lastName}}`
-* `{{internal.user_fullName}}`
+* `{internal.user_firstName}`
+* `{internal.user_lastName}`
+* `{internal.user_fullName}`
 
 ![](../../.gitbook/assets/static-content-greeting-message.png)
 
