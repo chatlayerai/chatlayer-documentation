@@ -1,4 +1,4 @@
-# Using entities
+# Entities
 
 Entities are important pieces of information that can be extracted from an expression. You want to store these entities as variables so you can re-use them later on.
 

@@ -1,4 +1,4 @@
-# Input validation
+# Get data with an input validation
 
 So far, our content was limited to a simple conversation. But in a lot of cases, the bot needs input from the user to fully fulfil their flow. That input can then be used later in the flow, or you can send it to the database using the API plugin.
 

@@ -1,6 +1,12 @@
-# Entities
+# Get data from an expression with contextual entities
 
-In this tutorial, you will learn how to save valuable information that was mentioned in intents, using **entities**. Entities are important pieces of information that are extracted from an expression. You want to store these entities in a separate variable so you can re-use them later on. In the next tutorial, you will learn how you can ask explicitly for missing information.
+In this tutorial, you will learn how to save valuable information that was mentioned in intents, using **contextual entities**. Entities are important pieces of information that are extracted from an expression. There are four types of entities. You can find more information about them here:
+
+{% page-ref page="../understanding-users/natural-language-processing-nlp/synonym-entities.md" %}
+
+In this tutorial we will focus on one entity type: contextual entities. Contextual entities use machine learning to identify entities in sentences by learning which type of word your entity is, where it's placed in the sentence, and what the specific context is.
+
+You want to store these contextual entities in a separate variable so you can re-use them later on. In the next tutorial, you will learn how you can ask explicitly for missing information.
 
 Let's create a new intent that tells us the user wants to book a train ticket. A few different expressions can be: 
 
@@ -16,7 +22,7 @@ But what happens when the user says something like:
 
 These expressions contain valuable information. We want to make sure we capture that information, in this case the destination and time, and save it as **entities**.
 
-## Creating entities
+## Creating contextual entities
 
 Not all users will immediately mention their destination, so let's make sure we train our intent without those specific entities as well:
 
@@ -73,9 +79,9 @@ We recommends adding at least 30 expressions per entity, to guarantee the qualit
 * Tip: when typing a new expression, use the '@' to choose from an existing entity to add it to the sentence.
 * Make sure you retrain the NLP model by clicking the `Update NLP` button.
 
-We have built a way to create a lot of expressions really fast: the **expression generator**. Follow the instructions on [this page](../understanding-users/expression-generator.md) to get started.
+We have built a way to create a lot of expressions really fast: the **expression generator**. Follow the instructions on [this page](../understanding-users/expression-generator.md) to get started with that tool.
 
-## Testing entities
+## Testing contextual entities
 
 After we have retrained our model, let's see if its good enough to recognise the destination entity.
 

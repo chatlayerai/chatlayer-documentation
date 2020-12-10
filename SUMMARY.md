@@ -7,8 +7,8 @@
 * [Conversation Design](tutorials/getting-started.md)
 * [Building your bot on the platform](tutorials/tutorial-getting-started.md)
 * [Adding content to your bot](tutorials/tutorial-adding-content.md)
-* [Entities](tutorials/tutorial-getting-information-using-entities.md)
-* [Input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
+* [Get data from an expression with contextual entities](tutorials/tutorial-getting-information-using-entities.md)
+* [Get data with an input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
 * [Reusing intents with context](tutorials/tutorial-using-context-for-intent-reuse.md)
 * [Flow navigation with variables](tutorials/tutorial-conditional-flow-navigation.md)
 * [Adding new users to your account](tutorials/user-management.md)
@@ -20,7 +20,7 @@
   * [NLP import & export](understanding-users/natural-language-processing-nlp/nlp-import-and-export.md)
   * [Training your bot with actual user input](understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages.md)
   * [NLP Dashboard & NLP Improve](understanding-users/natural-language-processing-nlp/nlp-dashboard-and-nlp-improve.md)
-  * [Using entities](understanding-users/natural-language-processing-nlp/synonym-entities.md)
+  * [Entities](understanding-users/natural-language-processing-nlp/synonym-entities.md)
   * [Supported languages](understanding-users/natural-language-processing-nlp/supported-languages.md)
 * [Expression generator](understanding-users/expression-generator.md)
 * [Context](understanding-users/using-context.md)
@@ -84,7 +84,7 @@
 
 ## Tips & Best practices
 
-* [More about NLP](tips-and-best-practices/how-to-nlp.md)
+* [NLP best practices](tips-and-best-practices/how-to-nlp.md)
 * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
 * [Solving bot issues](tips-and-best-practices/why-is-my-bot-not-responding-the-way-i-want-it-to.md)
 * [Creating a good chatbot](tips-and-best-practices/what-makes-a-good-chatbot.md)
@@ -99,6 +99,4 @@
 * [Frequently Asked Questions \(FAQ\)](support/frequently-asked-questions.md)
 * [Glossary](support/glossary.md)
 * [Status](https://status.chatlayer.ai/)
-
-## Getting started
 

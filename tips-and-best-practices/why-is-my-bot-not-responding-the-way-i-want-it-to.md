@@ -2,7 +2,7 @@
 
 There are a couple of problems you might encounter as a starting bot developer. In this article you will learn how to find and fix the most common bot problems.
 
-## 1 – Your user asks a question, your bot doesn't give the correct response
+## Your user asks a question, your bot doesn't give the correct response
 
 * Open the `Test your bot`  window and type the expression that returns the unexpected result
 * Go to the `NLP result` tab

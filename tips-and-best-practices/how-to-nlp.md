@@ -1,4 +1,4 @@
-# More about NLP
+# NLP best practices
 
 Chatbots are automated computer programs that act like human support agents, chatting on, for example, Facebook Messenger. They 'understand' what the user is saying and react accordingly. The Natural Language Processing \(NLP\) engine of a chatbot is the underlying algorithm that enables the bot to 'understand' what's being said.
 
