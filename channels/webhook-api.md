@@ -449,9 +449,5 @@ An attachment represents a file such as images and video.
 | :--- | :--- | :--- |
 | url | string | The attachment url |
 
-### Custom components
-
-We provide custom component development for your channels. Please contact your project manager to discuss further integration.
-
 ### 
 
