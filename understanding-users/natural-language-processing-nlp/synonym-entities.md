@@ -29,7 +29,9 @@ Match entities are a type of entity that is detected when the user states a word
 
 Create a list of possible values for an entity. If a user mentions one of these values during their conversation with the bot, that value will automatically be saved as an entity.
 
-For example: you have defined @product as a match entity, and have created four possible values: Basic, Beginner, Intermediate, Premium. When a user says "I want to know more about the **Premium** pack", the entity @product will be saved, with the value "Premium".
+For example: you have defined @product as a match entity, and have created three possible values: Basic, Intermediate, Premium. When a user says "I want to know more about the **Premium** pack", the entity @product will be saved, with the value "Premium".
+
+![](../../.gitbook/assets/image%20%28354%29.png)
 
 #### Synonyms
 
@@ -49,7 +51,9 @@ The meaning of the two expressions above is exactly the same, but you want to co
 
 Use a pattern to extract data from a user expression if it matches a particular format. Patterns are formed as regular expressions \(like in Python\). You can learn more about how to create regular expressions [here](https://regex101.com/).
 
-For example: you have defined @customerID as a match entity, and have provided the following regex pattern: \[a-z\]{5}\[0-9\]{2}. This means that when a users says "My customer ID is **terwf33**", which consists of 5 letters and 2 numbers, it is saved as @customerID with the value "terwf33".
+For example: you have defined @customerID as a match entity, and have provided the following regex pattern: `[a-z]{5}[0-9]{2}`. This means that when a users says "My customer ID is **terwf33**", which consists of 5 letters and 2 numbers, it is saved as @customerID with the value "terwf33".
+
+![](../../.gitbook/assets/image%20%28356%29.png)
 
 ## Contextual entities
 
@@ -65,7 +69,7 @@ Contextual entities are the only type of entities that can \(and should be\) add
 
 Fuzzy matching allows you to recognise a slight variation of an entity value \(or its synonym\) as the original value. For example "Brusselt" will be automatically corrected to "Brussels" by using fuzzy matching.
 
-![](../../.gitbook/assets/image%20%28346%29.png)
+![](../../.gitbook/assets/image%20%28355%29.png)
 
 Fuzzy matching is quite strict. Less than 20% of the characters are allowed to be different in order to link it to another entity. This is to avoid that the value is linked to another entity which also has overlap. 
 
@@ -100,4 +104,6 @@ Chatlayer.ai supports the following system entity types:
 A Composite Entity is a combination of different, but related entities. This type of entity allows you to combine two separate entities into a single one.
 
 For example: "**Two** **fries** please": _@order_ \(composite entity\) consists of _@sys.number:_ 2 \(system entity\) and _@foodItem_: fries \(match entity\)
+
+![](../../.gitbook/assets/image%20%28357%29.png)
 
