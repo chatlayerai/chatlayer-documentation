@@ -204,7 +204,7 @@ Make sure that your sender ID is 20 characters or longer.
 
 #### Transferring a variable from your website, through the iframe to the chatbot
 
-A user's session can be updated at any time through the [Asynchronous Actions API](https://api.chatlayer.ai/v1/docs/#operation/sendWebhookMessage).
+A user's session can be updated at any time through the [Send messages through a Webhook channel](https://api.chatlayer.ai/v1/docs/#operation/sendWebhookMessage) API call.
 
 The same goal can also be achieved by changing the iframe url:
 
