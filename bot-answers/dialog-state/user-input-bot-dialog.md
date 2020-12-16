@@ -14,7 +14,7 @@ Session variables can already be known for a number of reasons:
 
 ## Invalid input
 
-The input is invalid? You can specify the message to be displayed when input validation fails, or fails 3 times. For example: the first time a message might simply be "Can you try again?" or "Can you try DD/MM/YYY format?" but after 3 fails, the message might be "Please contact our support at \[tel number\]" or your bot can redirect the user to a live agent.
+The input is invalid? You can specify the message to be displayed when input validation fails, or fails 3 times. For example: the first time a message might simply be "Can you try again?" or "Can you try DD-MM-YYYY format?" but after 3 fails, the message might be "Please contact our support at \[tel number\]" or your bot can redirect the user to a live agent.
 
 ## Settings
 
@@ -30,7 +30,7 @@ Our platform parses user's expressions to match a default date format. If the da
 
 ### Input types
 
-Input plugins automatically validate and extract different input types based on the type setting. The type parser is responsible for extracting the data from the user's input. For example: if the input-plugin has a type of **date** and the user's input-sentence was 'I need to be in Paris _in two days_' the input plugin parser will extract the date definition from this input which results in 'in two days'. The parser will convert this into a date representation, DD/MM/YYY, and the result will be stored in the user session.
+Input plugins automatically validate and extract different input types based on the type setting. The type parser is responsible for extracting the data from the user's input. For example: if the input-plugin has a type of **date** and the user's input-sentence was 'I need to be in Paris _in two days_' the input plugin parser will extract the date definition from this input which results in 'in two days'. The parser will convert this into a date representation, DD-MM-YYYY, and the result will be stored in the user session.
 
 #### Any
 
@@ -38,10 +38,10 @@ The 'Any' input type will accept all string values as an input. It is important 
 
 #### Date
 
-The Date input parser type will try to parse the response as a date. Sentences like 'next week Monday' are automatically converted to a DD/MM/YYYY date object. Supported formats \(also in other supported NLP languages\) are:
+The Date input parser type will try to parse the response as a date. Sentences like 'next week Monday' are automatically converted to a DD-MM-YYYY date object. Supported formats \(also in other supported NLP languages\) are:
 
-* 22/04/2018
-* 22/04
+* 22-04-2018
+* 22-04
 * 22 apr
 * 22 april 18
 * twenty two April 2018
