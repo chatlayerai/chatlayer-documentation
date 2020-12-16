@@ -117,7 +117,7 @@ In this case, your bot will be opened in English, and when a user clicks the SDK
 
 #### Transferring a variable from your website, through the SDK to the chatbot
 
-If you want to transfer data from your website to the chatbot, you can add that data to the `chatlayer` function. All data will be put onto the `root.session` variable in the Chatlayer.ai session. This data can then be used to customize the chatbot flow, based on actual website data.
+If you want to transfer data from your website to the chatbot, you can add that data to the `chatlayer` function. All data will be put onto the `session` variable in the Chatlayer.ai session. This data can then be used to customize the chatbot flow, based on actual website data.
 
 ```markup
 <script src="https://chatbox.staging.chatlayer.ai/sdk/INSERT-TOKEN-HERE"
