@@ -1,5 +1,11 @@
 # What's new
 
+## December 2020 Release
+
+We released new types of entities. You can find all information about them here:
+
+{% page-ref page="../understanding-users/natural-language-processing-nlp/synonym-entities.md" %}
+
 ## October 2020 Release
 
 ### Bot import/export \(in beta\)

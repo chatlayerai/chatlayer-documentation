@@ -65,6 +65,10 @@ Contextual entities use machine learning to identify entities in sentences by le
 Contextual entities are the only type of entities that can \(and should be\) added to the expression itself, for example: "I want to book a train ticket from @origin to @destination"
 {% endhint %}
 
+You can see a live example of how you can use contextual entities in our tutorial here:
+
+{% page-ref page="../../tutorials/tutorial-getting-information-using-entities.md" %}
+
 ### Fuzzy matching for contextual entities
 
 Fuzzy matching allows you to recognise a slight variation of an entity value \(or its synonym\) as the original value. For example "Brusselt" will be automatically corrected to "Brussels" by using fuzzy matching.
