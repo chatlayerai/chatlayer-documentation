@@ -31,6 +31,8 @@ Create a list of possible values for an entity. If a user mentions one of these 
 
 For example: you have defined @product as a match entity, and have created three possible values: Basic, Intermediate, Premium. When a user says "I want to know more about the **Premium** pack", the entity @product will be saved, with the value "Premium".
 
+Match entities are _case_ _insensitive_.
+
 ![](../../.gitbook/assets/image%20%28354%29.png)
 
 #### Synonyms
