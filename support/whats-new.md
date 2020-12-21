@@ -46,7 +46,7 @@ Change the language of a bot dialog to immediately add or edit the translations 
 
 ### Rich text messages
 
-Customize text messages the way you want them to look, and add links to other pages and bot dialogs, using richt text messages. You can read all about them [here](../bot-answers/dialog-state/message-components.md#rich-text).
+Customize text messages the way you want them to look, and add links to other pages and bot dialogs, using rich text messages. You can read all about them [here](../bot-answers/dialog-state/message-components.md#rich-text).
 
 ![](../.gitbook/assets/image%20%28325%29.png)
 
