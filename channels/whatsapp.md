@@ -1,18 +1,6 @@
 # WhatsApp Business API
 
-WhatsApp is a messaging service owned by Facebook with over 1.5 billion monthly active users. Our platform supports an integration with WhatsApp Business API through our official WhatsApp integration partner [CM.com](https://www.cm.com).
-
-If you'd like to integrate your bot on WhatsApp, please follow these steps:
-
-1. [x] Contact us at [sales@chatlayer.ai](mailto:sales@chatlayer.ai) and request an integration with WhatsApp for your specific bot
-2. [x] Our sales department will inform you about all WhatsApp-specific terms and conditions and will connect you to CM.com.
-3. [x] After you have successfully signed up for CM.com, you should copy the URL of your WhatsApp webhook and share it with CM.com. You can find this URL under Settings &gt; Channels &gt; "+ WhatsApp"
-
-![](../.gitbook/assets/image%20%28121%29.png)
-
-1. [x] CM.com will give you a product token. Fill out this token, as well as your WhatsApp Business API phone number, on our platform.
-
-![](../.gitbook/assets/image%20%2825%29.png)
+WhatsApp is a messaging service owned by Facebook with over 1.5 billion monthly active users. Our platform supports an integration with WhatsApp Business API through the [Sinch Conversation API](sinch-conversation-api-beta.md).
 
 ## Inform users of your WhatsApp bot
 
