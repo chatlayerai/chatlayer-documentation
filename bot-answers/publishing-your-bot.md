@@ -3,7 +3,7 @@
 Our platform provides 2 environments: staging and production, to support working in parallel on a new version of your chatbot without interfering with your production version which is talking to your users in real-time. You have access to both environments.
 
 * Staging \('Draft'\)
-  * [https://cms-staging.chatlayer.ai](https://cms-staging.chatlayer.ai)
+  * [https://cms.staging.chatlayer.ai](https://cms.staging.chatlayer.ai)
   * Used to build and test new bot versions and improve your NLP model
 * Production \('Live'\)
   * [https://cms.chatlayer.ai](https://cms.chatlayer.ai)
@@ -20,15 +20,12 @@ Each day your production user messages are added to the staging environment so t
 
 To publish your bot, go to the 'Versioning' module in the staging environment.
 
-![](../.gitbook/assets/image%20%2894%29.png)
+![](../.gitbook/assets/image%20%28370%29.png)
 
-Enter a description for the new version of your bot and publish it by clicking the button. You will then be prompted to choose between 'Publish Full Bot' and 'Publish NLP Only':
+Enter a description for the new version of your bot and publish it by clicking the button.
 
-![](../.gitbook/assets/image%20%28178%29.png)
+![](../.gitbook/assets/image%20%28369%29.png)
 
-**'Publish Full Bot'** will publish both the latest NLP model and all of your flows.
-
-**'Publish NLP Only'** will only publish your NLP model, leaving the flows of the Live version unchanged.   
 Take into account that:
 
 * The NLP needs to be trained **before** publishing it

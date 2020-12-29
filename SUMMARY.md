@@ -11,7 +11,7 @@
 * [Get data with an input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
 * [Reusing intents with context](tutorials/tutorial-using-context-for-intent-reuse.md)
 * [Flow navigation with variables](tutorials/tutorial-conditional-flow-navigation.md)
-* [Adding new users to your account](tutorials/user-management.md)
+* [Adding team members](tutorials/user-management.md)
 
 ## Understanding users
 
@@ -39,7 +39,6 @@
   * [User flow](bot-answers/analytics/user-flow.md)
 * [Publishing your bot](bot-answers/publishing-your-bot.md)
 * [Events](bot-answers/events.md)
-* [Reuse flows](bot-answers/reuse-flows.md)
 * [Settings](bot-answers/settings/README.md)
   * [Variables](bot-answers/settings/secure-variables-gdpr.md)
 
@@ -88,13 +87,14 @@
 * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
 * [Solving bot issues](tips-and-best-practices/why-is-my-bot-not-responding-the-way-i-want-it-to.md)
 * [Creating a good chatbot](tips-and-best-practices/what-makes-a-good-chatbot.md)
-* [Recognizing a returning user](tips-and-best-practices/how-to-recognize-a-returning-bot-user.md)
-* [Gathering user feedback](tips-and-best-practices/gathering-user-feedback.md)
-* [Using time in your chatbot](tips-and-best-practices/using-time-in-your-chatbot.md)
 
 ## Tutorials <a id="tutorials-1"></a>
 
 * ['Not understood' Google search](tutorials-1/not-understood-google-search.md)
+* [Recognizing a returning user](tutorials-1/how-to-recognize-a-returning-bot-user.md)
+* [Gathering user feedback](tutorials-1/gathering-user-feedback.md)
+* [Using time in your chatbot](tutorials-1/using-time-in-your-chatbot.md)
+* [Reuse flows](tutorials-1/reuse-flows.md)
 
 ## Support
 

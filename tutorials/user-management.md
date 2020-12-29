@@ -1,4 +1,4 @@
-# Adding new users to your account
+# Adding team members
 
 In the platform users module you can add or remove users from your Chatlayer.ai account. 
 
