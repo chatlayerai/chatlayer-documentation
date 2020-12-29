@@ -1,16 +1,20 @@
 # 'Not understood' Google search
 
-Users can ask many different questions and it is nearly impossible to put all these questions in your bot. That's why Chatlayer offers the 'not understood' bot dialog message for when the bot cannot understand user input. This usually leads to an offloading action. However, there is a way to make this 'not understood' bot message more user-friendly and help them search for the correct answer without offloading. This tutorial will show you how to create a search engine lookup on your own website using the user input from your chatbot!
+What if a user asks a question that is outside of the bot's scope? Or what if your bot can't understand the user input? One of the things you can do is show a 'not understood' bot dialog message, which usually leads to an offloading action. It works well, but what if there's a more user-friendly way for the user to still get the answer to their question without offloading or leaving the bot?  
 
-This tutorial will walk you through the steps of creating a lookup search on your website, using Google's 'Programmable Search'. For example, the user asks about 'opening hours' in the chatbot. However, this is not recognized because there isn't such an intent in the bot. So, the bot will go to 'not understood'. Then, a search will be done on your website using the input. Google will search for '{your website} + opening hours' and show the first five results in a carousel in the chatbot.
+This tutorial will show you how to create a **search engine lookup** on your own website using the user input from your chatbot! We will walk you through the steps of creating a lookup search on your website, using Google's 'Programmable Search'. 
 
-![An example of the &apos;Not understood&apos; lookup functionality with of docs.chatlayer.ai](../.gitbook/assets/image%20%28359%29.png)
+For example, the user asks about 'opening hours' in the chatbot. However, this is not recognized because there isn't such an intent in the bot. So, the bot will go to 'not understood'. Then, a search will be done on your website using the input. Google will search for '{your website} + opening hours' and show the first five results in a carousel in the chatbot.
+
+![An example of the &apos;Not understood&apos; lookup functionality using the Chatlayer docs.](../.gitbook/assets/image%20%28359%29.png)
+
+
 
 ## Google Programmable Search
 
-With Google Programmable Search you can include a search engine on a website you specified. We will use this \(free\) feature of Google for this tutorial. First, create a new search engine [here ](https://programmablesearchengine.google.com/cse/create/new)for your website. Simply add your website where you want to search and save.
+With Google Programmable Search you can include a search engine on a website you specified. We will use this \(free\) feature of Google for this tutorial. First, create a new search engine [here ](https://programmablesearchengine.google.com/cse/create/new)for your website. Simply add your website or the webpages where you want to search and click save.
 
-For this tutorial you need the [GoogleAPI key ](https://developers.google.com/custom-search/v1/introduction)and your search engine ID.
+For this tutorial, you need the [GoogleAPI key ](https://developers.google.com/custom-search/v1/introduction)and your search engine ID.
 
 ![](../.gitbook/assets/image%20%28358%29.png)
 
