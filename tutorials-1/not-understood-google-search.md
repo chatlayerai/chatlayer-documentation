@@ -22,15 +22,15 @@ For this tutorial, you need the [GoogleAPI key ](https://developers.google.com/c
 
 Now we can put the _Lookup_ with the information of the Google Engine in an _Action dialog_ in the chatbot:
 
-Add the following arguments in your action dialog:
+Add the following arguments to your action dialog:
 
 * NLP: this is the variable what we are looking for, so the input the user has given and resulted in a 'not understood'
-* googleAPIKey: To be retrieved with the link mentioned above
+* googleAPIKey: this you retrieved using the link mentioned above
 * googleEngine: The 'Search engine ID' on the search engine page above 
 
 ![](../.gitbook/assets/image%20%28361%29.png)
 
-Then, add the following code in the same action dialog. In line 15, paste a fallback image there, for example the company logo. This will be the image shown in the carousel if the search does not retrieve an image. 
+Once that's done, add the following code in the same action dialog. In line 15, paste a fallback image there, for example the company logo. This will be the image shown in the carousel if the search does not retrieve an image. 
 
 ```javascript
 const { nlp, googleEngine, googleAPIKey } = args;
