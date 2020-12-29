@@ -92,6 +92,10 @@
 * [Gathering user feedback](tips-and-best-practices/gathering-user-feedback.md)
 * [Using time in your chatbot](tips-and-best-practices/using-time-in-your-chatbot.md)
 
+## Tutorials <a id="tutorials-1"></a>
+
+* ['Not understood' Google search](tutorials-1/not-understood-google-search.md)
+
 ## Support
 
 * [Get in touch](support/get-in-touch.md)
