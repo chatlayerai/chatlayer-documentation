@@ -30,7 +30,7 @@ Add the following arguments to your action dialog:
 
 ![](../.gitbook/assets/image%20%28361%29.png)
 
-Once that's done, add the following code in the same action dialog. In line 15, paste a fallback image there, for example the company logo. This will be the image shown in the carousel if the search does not retrieve an image. 
+Once that's done, add the following code in the same action dialog. In line 15, paste a fallback image there, for example your company logo. This image will be shown in the carousel if the search does not retrieve an image. 
 
 ```javascript
 const { nlp, googleEngine, googleAPIKey } = args;
@@ -74,19 +74,18 @@ if (elements.length) {
 
 builder.send();
 
-
 ```
 
-This code block already takes care of the carousel so no need to add an extra bot message dialog. The last thing we have to do is link this to the 'Not understood' bot message:
+This code block already takes care of the carousel, so there's no need to add an extra bot message dialog. Now the final thing to do is link this to the 'Not understood' bot message:
 
-* Change the text message with {internal.nlp.expression}, so the user input is reflected in the 'not understood' message
+* Change the text message with {internal.nlp.expression}, so the user input is shown in the 'not understood' message
 * Add a 'Go to' to link the Lookup action dialog to 'Not understood'
 
 ![](../.gitbook/assets/image%20%28363%29.png)
 
 You can also add the offloading message after the lookup, to make sure the user can get the answer from a human agent if the answer is not sufficient. 
 
-And that's it! A more user-friendly 'not understood' message!
+And that's it! You just created a more user-friendly 'not understood' message!
 
 
 
