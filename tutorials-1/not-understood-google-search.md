@@ -20,7 +20,7 @@ For this tutorial, you need the [GoogleAPI key ](https://developers.google.com/c
 
 ## Action dialog Expression Lookup
 
-Now we can put the Lookup with the information of the Google Engine in an Action dialog in the chatbot:
+Now we can put the _Lookup_ with the information of the Google Engine in an _Action dialog_ in the chatbot:
 
 Add the following arguments in your action dialog:
 
