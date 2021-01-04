@@ -22,37 +22,59 @@ You can pass arguments to your Code actions by assigning them keys. Your keys wi
 
 ### ChatlayerResponseBuilder
 
-The `ChatlayerResponseBuilder` function is a helper function that allows you to steer your conversation by sending messages as a bot, navigating to dialogstates, or even creating session data.
+The `ChatlayerResponseBuilder` function returns a helper instance that allows you to steer your conversation by sending messages as a bot, navigating to bot dialogs, or even creating session data.
 
-To start using the ChatlayerResponseBuilder, simply call it in your Code action:
-
-![Initializing the ChatlayerResponseBuilder](../.gitbook/assets/image%20%28320%29.png)
-
-This Chatlayer constant will now make it possible for you to call specific functionality within the bot's flow. When you're ready to publish your changes, use the `send()` function to send them to your user's conversation. 
-
-#### setSessionVariable\(namespace: string, data: any\)
-
-Insert a variable on a certain namespace within the session. 
+To start manipulating conversation data in your code action, simply call the function `ChatlayerResponseBuilder()` which will return a `ChatlayerResponseBuilder` instance. The response builder has a fluent interface, this means that every function you call will return the same instance. This makes it easy to chain multiple function calls when, for example, you want to show a message and manipulate session data at the same time. Whenever you want to publish your changes to the conversation, you can call the `send()` function. If you don't call the `send()` function anywhere in your Code Action, users will not see any of your results after the code has executed.
 
 ```javascript
-const chatlayer = ChatlayerResponseBuilder()
-chatlayer.setSessionVariable('userName', 'Joachim')
-chatlayer.send()
+ChatlayerResponseBuilder()
+    .setSessionVariable("user", { address: { ... } })
+    .addMessage("Thank you for sharing your address!")
+    .send();
 ```
 
-#### addMessage\(message: string\)
-
-Adds a text message to be sent by the bot.
+Another way to accomplish the same result:
 
 ```javascript
-const chatlayer = ChatlayerResponseBuilder()
-chatlayer.addMessage('Hello!')
-chatlayer.send()
+const builder = ChatlayerResponseBuilder();
+
+builder.setSessionVariable("user", { address: { ... } })
+builder.addMessage("Thank you for sharing your address!")
+builder.send();
 ```
+
+#### Set variables or send messages
+
+The `ChatlayerResponseBuilder` has the ability to set variables or adding messages to the chatbot. Both are shown in the example below:
+
+_`setSessionVariable(namespace: string, data: any)`:_  Insert a variable on a certain namespace within the session. 
+
+_`addMessage(message: string)`:_ Adds a text message to be sent by the bot.
+
+```javascript
+ChatlayerResponseBuilder()
+    .setSessionVariable("user", 'Joachim')
+    .addMessage("setSessionVariable done.")
+    .send();
+```
+
+To enhance your variables even more, you can store multiple variables about the user in an object. 
+
+```javascript
+ChatlayerResponseBuilder()
+    .setSessionVariable("user", { firstName: "Joachim", lastName: "Chatbot" })
+    .send();
+```
+
+If you would like to use this information in a bot message, simply type `{user.lastName}` and the information is visible in the chatbot!
+
+### Next or previous dialogs
+
+Based on code, variables or other input, you can steer the conversation to other dialogstates. With the code below you can go to a next dialogstate. 
 
 #### setNextDialogState\(dialogstateId: string\)
 
-Route the conversation to the given dialogstate ID.
+Route the conversation to the given dialogstate ID. 
 
 ```javascript
 const { introductionDialogstate } = args
@@ -60,6 +82,138 @@ const { introductionDialogstate } = args
 const chatlayer = ChatlayerResponseBuilder()
 chatlayer.setNextDialogState(introductionDialogstate)
 chatlayer.send()
+```
+
+### Bot Message functionalities
+
+In the code editor, some 'bot message' functionalities are also available, such as quick replies or buttons. For more in depth functionality, these same options can be created using code. 
+
+#### addCarousel
+
+In the Code Editor it is also possible to add a carousel, just like in Bot messages. This can be of added value when dynamic content needs to be shown or to combine a Bot message and Action dialog in one.
+
+```javascript
+ChatlayerResponseBuilder().addCarousel([
+    {
+        title: 'Item 1',
+        imageUrl: 'https://st.depositphotos.com/1708346/1858/i/600/depositphotos_18582903-stock-photo-carousel-at-night.jpg',
+        buttons: [
+            { type: 'web_url', url: 'https://docs.chatlayer.ai', title: 'Docs' }
+        ]
+    },
+    {
+        title: 'Item 2',
+        // This is optional
+        subTitle: 'Item 2 Subtitle',
+        // This is also optional, it will redirect a user to a certain website when they click the carousel image
+        webUrl: 'https://docs.chatlayer.ai',
+        imageUrl: 'https://st.depositphotos.com/1708346/1858/i/600/depositphotos_18582903-stock-photo-carousel-at-night.jpg',
+        buttons: [
+            { type: 'web_url', url: 'https://docs.chatlayer.ai', title: 'Docs' }
+        ]
+    }
+]).send()
+```
+
+#### addQuickReplies
+
+Just like the example above, Quick Replies can also be created in the code editor. By copying the code below you can add as many Quick reply buttons as needed.
+
+```javascript
+const quickReplies = [
+    {
+        title: 'Option 1',
+        payload: {
+            nextDialogstateId: args.setNextDialogstateDs
+        },
+        params: [
+            // This will be set on the session.
+            { key: 'choice', value: 'option1' }
+        ]
+    },
+        {
+        title: 'Option 2',
+        payload: {
+            nextDialogstateId: args.addHtmlDs
+        },
+        params: [
+            // This will be set on the session.
+            { key: 'choice', value: 'option1' }
+        ]
+    },
+]
+
+ChatlayerResponseBuilder()
+    .addQuickReplies({
+        title: 'How can we help you?', // this is the title of the Quick Replies
+        quickReplies,
+    })
+    .send()
+```
+
+#### addButtonGroup
+
+With bot messages we can also add buttons, but with code there is more variety than the bot message.
+
+![These buttons are created with the code below](../.gitbook/assets/image%20%28371%29.png)
+
+```javascript
+const invoices = [
+ "123",
+ "456",
+ "789"
+]
+
+const buttons = invoices.map((invoiceNumber, index) => ({
+    type: 'postback',
+    title: 'Choose ' + invoiceNumber,
+    payload: {
+        nextDialogstateId: args.nextDialogstate,
+        params: [
+            { key: 'chosenNumber', value: invoiceNumber },
+        ],
+    },
+}));
+
+ChatlayerResponseBuilder()
+    .addButtonGroup({
+        title: "These 'postback' buttons can be used to navigate to a certain bot dialog and set a variable when a users clicks on them.",
+        buttons,
+    })
+    .addButtonGroup({
+        title: 'You can also add URL buttons.',
+        buttons: [
+            { type: 'web_url', title: 'docs', url: 'https://docs.chatlayer.ai' },
+            { type: 'phone_number', title: 'Call 1207', payload: '1207'}
+        ]
+    })
+    .send()
+```
+
+Here, the 'invoices' are the different button options displayed. With the `.addButtonGroup` you can add these buttons or create URL buttons. 
+
+### Add HTML or Iframe
+
+HTML can de added in the chatbot to show more diverse output to the user.
+
+```javascript
+ChatlayerResponseBuilder()
+    .addHtml(`
+        <h1>This is a header</h1>
+        <p>Unfortunately, html messages will only work on the web widget.</p>
+    `, { withBalloon: true })
+    .send()
+```
+
+Iframes can be used to embed other pages in the chatbot. A perfect example of why you would need an iframe is embedding Youtube videos.
+
+```javascript
+ChatlayerResponseBuilder()
+    .addIframe("https://www.youtube.com/watch?v=yaYzSQn9rL4", {
+        withBalloon: false,
+        height: "200px"
+    })
+    .send();
 ```
 
 ### Available functionality
