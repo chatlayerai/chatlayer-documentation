@@ -14,13 +14,13 @@ To get started with the Code Action, create a new 'Action Dialogstate' and selec
 
 ![](../.gitbook/assets/image%20%28318%29.png)
 
-### Arguments
+### Arguments in the Code Editor
 
 You can pass arguments to your Code actions by assigning them keys. Your keys will be made available to the `args` variable inside the Code Editor.
 
 ![](../.gitbook/assets/image%20%28319%29.png)
 
-### ChatlayerResponseBuilder
+### ChatlayerResponseBuilder function
 
 The `ChatlayerResponseBuilder` function returns a helper instance that allows you to steer your conversation by sending messages as a bot, navigating to bot dialogs, or even creating session data.
 
@@ -216,9 +216,9 @@ ChatlayerResponseBuilder()
     .send();
 ```
 
-### Available functionality
+### Utility library and API calls
 
-The the following functionality exists inside the Code action's scope:
+The following functionality exists inside the Code action's scope:
 
 #### lodash \(\_\)
 
