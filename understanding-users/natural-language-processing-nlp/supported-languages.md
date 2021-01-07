@@ -4,11 +4,6 @@ description: A complete list of languages the Chatlayer.ai NLP currently support
 
 # Supported languages
 
-{% hint style="info" %}
-If you can't find your preferred language in this list or one of these languages is missing in the platform, please [get in touch](../../support/get-in-touch.md) so we can update this.
-{% endhint %}
-
-  
 Afrikaans  
 Albanian  
 Amharic  
