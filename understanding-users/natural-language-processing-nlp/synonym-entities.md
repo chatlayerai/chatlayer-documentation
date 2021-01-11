@@ -21,7 +21,7 @@ Use this handy flowchart so you can find out which type of entity best fits your
 All entities will only be detected after you've **updated the NLP** at least once
 {% endhint %}
 
-## Match entities
+## 1 – Match entities
 
 Match entities are a type of entity that is detected when the user states a word that is part of a predefined list, or matches a certain pattern.
 
@@ -57,7 +57,7 @@ For example: you have defined @customerID as a match entity, and have provided t
 
 ![](../../.gitbook/assets/image%20%28356%29.png)
 
-## Contextual entities
+## 2 – Contextual entities
 
 Contextual entities use machine learning to identify entities in sentences by learning which type of word your entity is, where it's placed in the sentence, and what the specific context is.
 
@@ -79,7 +79,7 @@ Fuzzy matching allows you to recognise a slight variation of an entity value \(o
 
 Fuzzy matching is quite strict. Less than 20% of the characters are allowed to be different in order to link it to another entity. This is to avoid that the value is linked to another entity which also has overlap. 
 
-## System entities
+## 3 – System entities
 
 System entities are entities that can be automatically extracted from the user's messages. You can use these to enrich your conversations and data integrations without having to configure custom entities yourself.
 
@@ -105,11 +105,23 @@ Chatlayer.ai supports the following system entity types:
 | `sys.url` | "[www.chatlayer.ai/jobs](https://www.chatlayer.ai/jobs)" | `sys: {url: 'www.chatlayer.ai/jobs', url_domain: 'chatlayer.ai'}` |
 | `sys.duration` | "3 hours" | `sys: {duration: '3', duration_unit: 'hour', duration_normalized: '10800', duration_normalized_unit: 'second'}` |
 
-## Composite entities
+## 4 – Composite entities
 
 A Composite Entity is a combination of different, but related entities. This type of entity allows you to combine two separate entities into a single one.
 
 For example: "**Two** **fries** please": _@order_ \(composite entity\) consists of _@sys.number:_ 2 \(system entity\) and _@foodItem_: fries \(match entity\)
 
 ![](../../.gitbook/assets/image%20%28357%29.png)
+
+## The difference between entities, variables, and values
+
+**A value is a possible element of a variable.** For example, the variable 'destination' can have the following values: Antwerp, London, Brussels, ...
+
+**An entity that was successfully recognized by the NLP engine will be stored as a variable.** For example, say you created the match text entity 'Levels' with values 'Beginner', 'Intermediate' and 'Expert'. When the user says 'I think I'm an expert', the value 'expert' will be saved as a variable. So a variable is an entity that was successfully recognized and stored by the chatbot.
+
+**Variables are pieces of information you know about the person talking to the bot.** For example, if someone is talking to the bot in English, we will remember their preference and save 'English' as a value for the variable “Language”. **Variables and values always appear in pairs.** They are stored on the user session that gathers all information about a user.
+
+**Entities should only be used if their value is needed in the bot conversations**. For example, if your bot can help the user find information about a certain product and you need the name of that product to look up the information in a database, you should use entities. If your bot simply redirects to a web page with an overview of all products, you do not need entities.
+
+
 
