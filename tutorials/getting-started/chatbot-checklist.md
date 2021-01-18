@@ -1,13 +1,8 @@
----
-description: >-
-  Designing a bot isn't hard. Designing a good bot takes a bit more time.
-  Consider the following points when designing your bot so that it can help your
-  users in the best way possible.
----
-
 # Chatbot checklist
 
-The tips below are must haves when designing a bot. In section 2 of this page, we've listed some nice-to-haves. They are not key when designing a well-functioniong bot, but nevertheless important if you want to create a great user experience – And of course, you want to.
+Building a bot isn't so hard, but building a **great bot** takes a bit more effort. Here are some points to keep in mind when designing your bot, so that it can help your users in the best way possible.
+
+Some of these points are important must haves, others are nice-to-haves. These are not key when designing a bot, but nevertheless important if you want to create a great user experience \(which of course, you want to\).
 
 ## ✅ Bot must haves 
 
