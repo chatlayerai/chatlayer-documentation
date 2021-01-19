@@ -68,7 +68,7 @@ The audio widget is available in the Emulator, the web widget and Facebook Messe
 
 #### Files
 
-File attachments are available in the Emulator, web widget and Facebook Messenger. Currently, only PDF is supported.
+File attachments are available in the Emulator and Facebook Messenger. Currently, only PDF is supported.
 
 ![](../../.gitbook/assets/attachment.png)
 
