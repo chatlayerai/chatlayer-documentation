@@ -9,7 +9,7 @@ Happy building!
   
 Head straight to our most popular popular pages:
 
-{% page-ref page="tutorials/getting-started/" %}
+{% page-ref page="tutorials/getting-started.md" %}
 
 {% page-ref page="tutorials/tutorial-getting-started.md" %}
 
