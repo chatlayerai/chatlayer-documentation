@@ -39,3 +39,11 @@ These actions are available when you configure the voice channel and will allow 
 * Forward a call to a number of your choosing, often used to handover a customer from the bot to a live agent
 * End the call by hanging up
 
+### SSML & external audio files
+
+SSML is a markup language designed to give instructions to the text-to-speech engine. You can find more about SSML [here](https://cloud.google.com/text-to-speech/docs/ssml). Chatlayer.ai supports the use of SSML in text messages which will be used by the TTS engine.
+
+SSML can also be used to play external audio files in a text message. Alternatively, you can use the "[media](../bot-answers/dialog-state/message-components.md#audio)" template to achieve the same functionality.
+
+
+
