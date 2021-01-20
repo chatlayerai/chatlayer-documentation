@@ -10,9 +10,16 @@ Activate your phone channel by going to the Channels tab and clicking the '+' bu
 
 ### Testing
 
-If you want to test a first version of your voice bot before going into production, you can use a test number. Before you can use a test number and call your bot, you have to give your number to the bot, so we know which bot you're trying to talk to.
+If you want to test a first version of your voice bot before going into production, you can do so in two ways:
 
-Click the Create Configuration button to set this up. The Chatlayer.ai test number will be shown on top of the Phone configuration screen.
+1 – Use the 'test your bot' feature by clicking on 'debugger' and then selecting voice. After you give your browser permission to use your microphone, you can now talk to your bot.
+
+![click on &apos;default&apos; and select &apos;voice&apos; to test your voice bot](../.gitbook/assets/image%20%28375%29.png)
+
+2 – If you want to enact the real experience, you can call a test number. Before you can use a test number to call your bot, you have to add your number to the bot so we know which bot you're trying to talk to.
+
+**Adding your number:**  
+Click the blue 'Create Configuration' button to set up the phone configuration. The Chatlayer.ai test number will be shown at the top of the Phone configuration screen.
 
 ![](../.gitbook/assets/image%20%2860%29.png)
 
