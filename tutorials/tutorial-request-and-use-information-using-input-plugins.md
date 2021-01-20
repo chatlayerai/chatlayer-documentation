@@ -122,7 +122,7 @@ Depending on the user input, different actions will be executed:
 Now that you have all this extra information, it's time to show all the data you've gathered in the input validations to the user:
 
 * Open the `Confirm booking` bot dialog
-* Replace the existing text message with "I have a train ticket for you from {origin} to {destination} on {departure date} at {departure time}h, in {class} class."
+* Replace the existing text message with "I have a train ticket for you from {origin} to {destination} on {departure-date} at {departure-time}h, in {class} class."
 
 Now test your newly created bot to see if it works!
 
