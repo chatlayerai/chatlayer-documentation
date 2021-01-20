@@ -44,6 +44,12 @@ This button will initiate a call if the user is using a mobile device.
 
 With the Media template, you can enable the bot to send files to your users.
 
+{% hint style="warning" %}
+If you upload the file directly in the platform, there is a file size limit of 10 MB. If you use a direct URL to the file, there is no file size limit.
+
+![](../../.gitbook/assets/image%20%28372%29.png)
+{% endhint %}
+
 #### Images
 
 All typical image types, such as jpg, png and gif are supported on our platform.
@@ -68,7 +74,7 @@ The audio widget is available in the Emulator, the web widget and Facebook Messe
 
 #### Files
 
-File attachments are available in the Emulator and Facebook Messenger. Currently, only PDF is supported.
+File attachments are available in Facebook Messenger. Currently, only PDF is supported.
 
 ![](../../.gitbook/assets/attachment.png)
 
