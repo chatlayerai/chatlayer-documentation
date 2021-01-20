@@ -14,7 +14,7 @@ If you want to test a first version of your voice bot before going into producti
 
 1 – Use the 'test your bot' feature by clicking on 'debugger' and then selecting voice. After you give your browser permission to use your microphone, you can now talk to your bot.
 
-![click on &apos;default&apos; and select &apos;voice&apos; to test your voice bot](../.gitbook/assets/image%20%28375%29.png)
+![click on &apos;default&apos; and select &apos;voice&apos; to test your voice bot](../.gitbook/assets/image%20%28376%29.png)
 
 2 – If you want to enact the real experience, you can call a test number. Before you can use a test number to call your bot, you have to add your number to the bot so we know which bot you're trying to talk to.
 

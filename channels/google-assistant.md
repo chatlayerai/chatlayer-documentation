@@ -6,7 +6,9 @@ Google Assistant is a virtual assistant developed by Google that is available bo
 Google Assistant is a voice channel, which means the channel doesn't support buttons, carousels, lists or images.
 {% endhint %}
 
-All the information required to configure your Google Assistant integration is shown when you configure the channel itself:
+Configuring the Google Home assistant is easy: just follow the steps shown after clicking the Google Home button: 
 
 ![](../.gitbook/assets/image%20%28168%29.png)
+
+![](../.gitbook/assets/image%20%28374%29.png)
 
