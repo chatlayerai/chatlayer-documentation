@@ -1,24 +1,29 @@
 # Reusing intents with context
 
 {% hint style="info" %}
-Context is used to reuse intents across several bot dialogs. Learn more about the concept of context [here](https://app.gitbook.com/@chatlayer/s/chatlayer-documentation/~/drafts/-MIZHNX0kLbXdbSP80Xb/understanding-users/using-context).
+Context can be used to reuse intents across several bot dialogs. Learn more about the concept of context [here](https://app.gitbook.com/@chatlayer/s/chatlayer-documentation/~/drafts/-MIZHNX0kLbXdbSP80Xb/understanding-users/using-context).
 {% endhint %}
 
-When the intent 'who are you' is recognised, the bot will introduce himself and ask if the user would like to order a ticket.
+So, you've created the following two intents:
 
+* General\_yes: this indicates that the user agrees with the bot
+* General\_no: this indicates that the user disagrees with the bot
 
+Now let's have a look at our Choo Choo bot. 
 
 ![](../.gitbook/assets/image%20%2859%29.png)
 
-In a totally different part of the conversation, at the end of the `Book train ticket` conversation flow, the chatbot asks for a booking confirmation.
+The user will respond with either **yes** or **no** here.
+
+Then later in the conversation, at the end of the `Book train ticket` flow, the chatbot asks the user to confirm their booking info:
 
 ![](../.gitbook/assets/image%20%28260%29.png)
 
-Both bot questions expect a user intent answer of **yes** or **no**. To support correct reuse of intents, we can define a bot dialog intent linked to a certain context. The user will only be redirected to the linked bot dialog if the intent is recognized and the user is in a specific context.
+Both of these bot questions can be answered by the user with **yes** or **no**. To support the correct reuse of intents, we can link specific bot dialog intents to a specific context. The user will only be redirected to the linked bot dialog if the intent is recognized with a specific context.
 
-* Add the `yes` and `no` intents and train them with expressions
-* In the bot dialog `Confirm booking` go to the NLP tab
-* Add an **output context** `confirm_booking`. Press enter to create the output context
+* Add a `yes` and `no` intent and add a few expressions
+* Go to the bot dialog `Confirm booking` and click on the NLP tab
+* There, add the **output context** `confirm_booking`. Now press enter to create this output context
 * When a user reaches this bot dialog the output context is added to the user session context
 
 {% hint style="info" %}
