@@ -48,7 +48,9 @@ These actions are available when you configure the voice channel and will allow 
 
 ### SSML & external audio files
 
-SSML is a markup language designed to give instructions to the text-to-speech engine. You can find more about SSML [here](https://cloud.google.com/text-to-speech/docs/ssml). Chatlayer.ai supports the use of SSML in text messages which will be used by the TTS engine.
+Speech Synthesis Markup Language \(SSML\) is a markup language designed to give instructions to a text-to-speech engine. You can read more about SSML [here](https://cloud.google.com/text-to-speech/docs/ssml). 
+
+Chatlayer.ai supports the use of SSML in text messages which will be used by the TTS engine.
 
 SSML can also be used to play external audio files in a text message. Alternatively, you can use the "[media](../bot-answers/dialog-state/message-components.md#audio)" template to achieve the same functionality.
 
