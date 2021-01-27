@@ -1,4 +1,4 @@
-# Conversation Design
+# Scoping & scripting
 
 Before you can start building your bot on the Chatlayer.ai platform, there are a few strategic steps to take. From defining the use cases to crafting a bot personality – here's how to build a bot just right for your business.
 
@@ -71,8 +71,7 @@ Always make to strategically guide the user back to an existing flow, like in th
 
 ## Time to start building
 
-Now that you've done all the groundwork, it's time to build your bot on the Chatlayer.ai platform.   
-Get started with our next tutorial:
+Now that you've done all the groundwork, it's time to build your bot on the Chatlayer.ai platform. Continue to our next tutorial:
 
 {% page-ref page="tutorial-getting-started.md" %}
 

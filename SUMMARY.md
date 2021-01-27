@@ -4,7 +4,7 @@
 
 ## Getting started <a id="tutorials"></a>
 
-* [Conversation Design](tutorials/getting-started.md)
+* [Scoping & scripting](tutorials/getting-started.md)
 * [Creating a new bot](tutorials/tutorial-getting-started.md)
 * [Adding content to your bot](tutorials/tutorial-adding-content.md)
 * [Get data from an expression with contextual entities](tutorials/tutorial-getting-information-using-entities.md)
