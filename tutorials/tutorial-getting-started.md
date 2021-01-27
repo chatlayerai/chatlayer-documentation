@@ -1,4 +1,4 @@
-# Building your bot on the platform
+# Creating a new bot
 
 This tutorial will show you how to set up a new project and create a chatbot from scratch.
 

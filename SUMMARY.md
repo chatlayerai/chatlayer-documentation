@@ -5,7 +5,7 @@
 ## Getting started <a id="tutorials"></a>
 
 * [Conversation Design](tutorials/getting-started.md)
-* [Building your bot on the platform](tutorials/tutorial-getting-started.md)
+* [Creating a new bot](tutorials/tutorial-getting-started.md)
 * [Adding content to your bot](tutorials/tutorial-adding-content.md)
 * [Get data from an expression with contextual entities](tutorials/tutorial-getting-information-using-entities.md)
 * [Get data with an input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
