@@ -99,7 +99,7 @@ Chatlayer.ai supports the following system entity types:
 | `sys.amount_of_money` | "5 euro" | `sys: {amount_of money: '5', amount_of_money_currency: 'EUR'}` |
 | `sys.distance` | "5 kilometers" | `sys: {distance: '5', distance_unit: 'kilometre'}` |
 | `sys.number` | "eighty eight" | `sys: {number: '88'}` |
-| `sys.quantity` | "3 liters" | `sys: {volume: '3', volume_unit: 'litre'}` |
+| `sys.quantity` | "3 liters" | `sys: {quantity: '3', quantity_unit: 'litre'}` |
 | `sys.temperature` | "80C" | `sys: {temperature '80', temperature_unit: 'celsius'` |
 | `sys.time` | "3 pm tomorrow" | `sys: {time: '2020-12-25T15:00:00.000+00:00', time_grain: 'hour'}` |
 | `sys.url` | "[www.chatlayer.ai/jobs](https://www.chatlayer.ai/jobs)" | `sys: {url: 'www.chatlayer.ai/jobs', url_domain: 'chatlayer.ai'}` |
