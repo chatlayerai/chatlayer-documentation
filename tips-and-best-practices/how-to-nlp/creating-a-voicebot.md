@@ -2,7 +2,7 @@
 
 * Click on 'Settings' in the left menu and select 'voice'
 
-![](../../.gitbook/assets/image%20%28379%29.png)
+![](../../.gitbook/assets/image%20%28380%29.png)
 
 * Under 'Configure speech to text', select the language of your bot. You can also select the correct dialect if you'd like by clicking on the box 'Default dialect'
 * Under 'Voices', select the voice you prefer 
@@ -30,7 +30,7 @@ Here's a list of [Google's Text-to-Speech voices](https://cloud.google.com/text-
 * Change it to 'voice'
 * Now you can speak to your bot and test it!
 
-![](../../.gitbook/assets/image%20%28383%29.png)
+![](../../.gitbook/assets/image%20%28387%29.png)
 
 ## Customising your bot's voice with SSML
 
@@ -58,7 +58,7 @@ Building a Flemish bot? Then you should put &lt;speak version="1.1" xml:lang="nl
 * Add an 'Action' dialog and select 'Forward Call'
 * In the 'To' box, enter the phone number you'd wish to redirect the call to
 
-![](../../.gitbook/assets/image%20%28384%29.png)
+![](../../.gitbook/assets/image%20%28388%29.png)
 
 {% hint style="info" %}
 The phone number should contain a country code but no leading zeros or '+' sign.  
@@ -73,7 +73,7 @@ For example: 0800 55 800 becomes 32800 55 80
 
 If the user doesn't reply to the bot, or it doesn't detect an answer, you can let it repeat the question by using a 'Silence detection event'
 
-![](../../.gitbook/assets/image%20%28382%29.png)
+![](../../.gitbook/assets/image%20%28386%29.png)
 
 Find more info [here](https://docs.chatlayer.ai/bot-answers/events​)
 

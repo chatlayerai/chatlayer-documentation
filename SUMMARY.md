@@ -87,6 +87,7 @@
 * [NLP best practices](tips-and-best-practices/how-to-nlp/README.md)
   * [Creating a voicebot](tips-and-best-practices/how-to-nlp/creating-a-voicebot.md)
 * [Voice Design](tips-and-best-practices/voice-design/README.md)
+  * [Setting up Google Home](tips-and-best-practices/voice-design/setting-up-google-home.md)
   * [From chat to voice](tips-and-best-practices/voice-design/from-chat-to-voice.md)
 * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
 * [Solving bot issues](tips-and-best-practices/why-is-my-bot-not-responding-the-way-i-want-it-to.md)
