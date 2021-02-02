@@ -8,7 +8,7 @@ description: >-
 
 ### General voice setup
 
-![From STT to NLP to TTS](../../.gitbook/assets/image%20%28378%29.png)
+![From STT to NLP to TTS](../../.gitbook/assets/image%20%28379%29.png)
 
 ### Call center voice setup
 
