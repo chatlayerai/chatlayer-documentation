@@ -12,12 +12,10 @@ Never built a chatbot before? This short tutorial video explains you the key ste
 
 ## Creating a new bot
 
-For this tutorial, we’ll create a conversational interface called Choo-choo: a digital assistant to help people book train tickets. 
-
-To get started, please make sure you have valid log-in credentials to access the Chatlayer.ai platform.
+For this tutorial, we’ll create a bot called Choo-choo: a digital assistant that can help people book train tickets. 
 
 {% hint style="info" %}
-If you don't have log-in credentials yet, please request them [here](https://www.chatlayer.ai/contact).
+To get started, you need valid log-in credentials to access the Chatlayer platform. Don't have them yet? Please request them [here](https://www.chatlayer.ai/contact).
 {% endhint %}
 
 * Log in using your credentials on [https://cms.staging.chatlayer.ai/](https://cms.staging.chatlayer.ai/)
