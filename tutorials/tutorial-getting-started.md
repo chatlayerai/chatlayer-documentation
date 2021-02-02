@@ -6,8 +6,7 @@ Are you working on an existing project? Then you don't need to set up a new one.
 
 ## Getting started with chatbots
 
-Never built a chatbot before? This short tutorial video explains you the key steps to creating a chatbot   
-and the terminology used on the Chatlayer.ai platform. 
+Never built a chatbot before? This short tutorial video explains you the key steps to creating a chatbot and the terminology used on the Chatlayer.ai platform. 
 
 {% embed url="https://www.youtube.com/watch?v=QYLPu9Z1V08&list=PLDWxiKsSIVPJl0zssvGATGsib6Luj0WSH" %}
 
