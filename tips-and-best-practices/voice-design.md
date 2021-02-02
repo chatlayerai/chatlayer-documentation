@@ -6,9 +6,9 @@ description: >-
 
 # Voice Design
 
-## **1 –** From chatbot to voicebot
+## **Converting your** chatbot into a voicebot
 
-If you're thinking about converting your chatbot to a voicebot, make sure to read through these useful tips before you do so.
+If you're thinking about converting your chatbot to a voicebot, make sure to read through these useful tips before you do so. 
 
 **Convert all visible and clickable elements**
 
