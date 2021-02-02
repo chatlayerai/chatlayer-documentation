@@ -24,15 +24,15 @@ Text-to-Speech \(TTS\) technology leverages neural network techniques to deliver
 
 Here's a list of [Google's Text-to-Speech voices](https://cloud.google.com/text-to-speech/docs/voices), as wel as [Microsoft's voices](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#text-to-speech).
 
-### Testing your voicebot
+## Testing your voicebot
 
 * In the 'Bot Dialogs' menu, open the Emulator on the bottom right and click the 'debugger' button. 
 * Change it to 'voice'
 * Now you can speak to your bot and test it!
 
-![](../../.gitbook/assets/image%20%28382%29.png)
+![](../../.gitbook/assets/image%20%28383%29.png)
 
-### Customising your bot's voice with SSML
+## Customising your bot's voice with SSML
 
 You can customise your bot's responses by using Speech Synthesis Markup Language \(SSML\). With SSML, you can:
 
@@ -53,12 +53,12 @@ To enable SSML, you have to put &lt;speak&gt; …  &lt;/speak&gt; around the ent
 Building a Flemish bot? Then you should put &lt;speak version="1.1" xml:lang="nl-BE"&gt; ... &lt;/speak&gt; around your messages
 {% endhint %}
 
-### Forwarding and closing a call​
+## Forwarding and closing a call​
 
 * Add an 'Action' dialog and select 'Forward Call'
 * In the 'To' box, enter the phone number you'd wish to redirect the call to
 
-![](../../.gitbook/assets/image%20%28383%29.png)
+![](../../.gitbook/assets/image%20%28384%29.png)
 
 {% hint style="info" %}
 The phone number should contain a country code but no leading zeros or '+' sign.  
@@ -68,4 +68,12 @@ For example: 0800 55 800 becomes 32800 55 80
 * After setting up your phone number, make sure to add another action 'Close Call' to make sure your bot hangs up after forwarding the call
 
 ![](../../.gitbook/assets/image%20%28377%29.png)
+
+## Silence detection event​
+
+If the user doesn't reply to the bot, or it doesn't detect an answer, you can let it repeat the question by using a 'Silence detection event'
+
+![](../../.gitbook/assets/image%20%28382%29.png)
+
+Find more info [here](https://docs.chatlayer.ai/bot-answers/events​)
 
