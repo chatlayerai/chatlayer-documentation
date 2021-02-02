@@ -1,16 +1,23 @@
-# Adding content to your bot
+---
+description: >-
+  In the previous tutorial, we created a new bot and added a greeting. Now it's
+  time to add some more content. We will start with some basic bot responses to
+  users' frequently asked questions.
+---
 
-In the previous tutorial, we created a new bot and added a greeting. Now it's time to add some actual content. We will start with some basic bot responses to users' frequently asked questions.
+# Adding content to your bot
 
 ## The NLP engine
 
-The Natural Language Processing \(NLP\) engine is the underlying algorithm that allows the bot to understand what the user is saying. Since each language has its own words and grammar, we have a separate NLP engine for each language.
+Before we create some more dialogs, we'd like to tell you about the NLP engine first. You see, the Natural Language Processing \(NLP\) engine is the underlying algorithm that allows the bot to understand what the user is saying. And as each language has its own words and grammar, we have a separate NLP engine for each language!
 
-> Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. And computers are not that different. To train an NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in already.
+> Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. It's not so different for computers either. To train an NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in already.
 
 ## Adding an intent
 
-An **intent** is a specific question from your user, or an action they can do. For example: an intent can be a question, a statement, an answer to a question, or a greeting. Each intent can be expressed in many different ways, we call these different ways of saying the same thing **expressions**.
+An intent is a specific question from your user or an action they can do.   
+  
+For example: an intent can be a question, a statement, an answer to a question, or a greeting. Each intent can be expressed in many different ways, we call these different ways of saying the same thing **expressions**.
 
 ![](../.gitbook/assets/untitled-1.png)
 
