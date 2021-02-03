@@ -15,7 +15,14 @@ Human handover, or disabling the bot and allowing a human agent to take over can
 * User explicitly requests talking to a live agent. E.g. by typing “I want to speak to a real agent”. This can be captured in a separate intent and bot dialog, that refers to the human handover platform.
 * User reaches the ‘not understood’ bot dialog. This happens when the NLP has low confidence in the understanding of the user’s messages. This can be configured to trigger the bot to ask a question “Do you want to talk to a human agent?”
 * User reaches a point in the conversation that is not supported yet. For example, this could be at the end of the ‘send paper to a new address’ conversation flow. The bot will be used to collect the necessary information and when reaching the end of the flow will be connected to a live agent for manual input in the backend system. This is already way more efficient than having the user collect all necessary information.
-* An option “Request live agent” can be added in the hamburger \(overflow\) menu in both the web widget and Facebook messenger channel.
+
+### Best practices
+
+The perfect human handover integration has a few key characteristics that help the agent resolve the customer's problem more easily
+
+* Skill-based routing: make sure that your bot can detect the type of problem your customer is having, and route the user to the right agent immediately. You can use intents for this, but buttons also work.
+* Tags & variables: bots are great at gathering input. Need to know a customer's name, e-mail address and which products they bought? Have the bot ask those questions, and send that data to the agent when the customer is handed over.
+* Make sure the agent can see the last messages sent between bot and customer. This will give them some context about the conversation, helping identify the problem more easily.
 
 ## Configuring human handover
 
