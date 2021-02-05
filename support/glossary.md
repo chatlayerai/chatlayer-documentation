@@ -1,4 +1,4 @@
-# Glossary
+# Bot-building Glossary
 
 **Artificial intelligence \(AI\)**
 
