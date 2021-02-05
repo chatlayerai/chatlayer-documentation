@@ -1,7 +1,11 @@
 # Facebook Messenger API updates for Europe
 
 {% hint style="info" %}
-**Update 17/12:** Some features are still available, but Facebook is displaying a warning to users that some functionality is not available. In a comment to ["The Verge"](https://www.theverge.com/2020/12/17/22180119/facebook-messenger-features-disabled-instagram-europe-prompt-eu) Facebook told that the features would return "very soon".
+**Update 05/02/2021:** Facebook has [announced](https://developers.facebook.com/docs/messenger-platform/europe-updates/) they will restore all relevant functionality in Q1 and Q2 of 2021.
+{% endhint %}
+
+{% hint style="info" %}
+**Update 17/12/2020:** Some features are still available, but Facebook is displaying a warning to users that some functionality is not available. In a comment to ["The Verge"](https://www.theverge.com/2020/12/17/22180119/facebook-messenger-features-disabled-instagram-europe-prompt-eu) Facebook told that the features would return "very soon".
 {% endhint %}
 
 On December 2nd, Facebook announced they'll be [updating their Messenger API](https://developers.facebook.com/docs/messenger-platform/europe-updates/) which will impact many of the 300.000+ chatbots that are currently live on this platform.
