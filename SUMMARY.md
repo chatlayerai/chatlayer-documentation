@@ -106,6 +106,6 @@
 * [Get in touch](support/get-in-touch.md)
 * [What's new](support/whats-new.md)
 * [Frequently Asked Questions \(FAQ\)](support/frequently-asked-questions.md)
-* [Bot-building Glossary](support/glossary.md)
+* [Platform Glossary](support/glossary.md)
 * [Status](https://status.chatlayer.ai/)
 
