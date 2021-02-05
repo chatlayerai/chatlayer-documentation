@@ -1,186 +1,225 @@
 # Glossary
 
-#### **Chatbot** 
+**Artificial intelligence \(AI\)**
 
-Chatbots – also known as “conversational agents” – are software applications that mimic written or spoken human speech for the purposes of simulating a conversation or interaction with a real person. 
+Artificial intelligence is an extensive field, one I couldn’t dream of covering in this article. So I’ll keep it short and simple:
 
-#### **Voicebot** 
+AI technology makes it possible for bots to “learn” by discovering certain patterns in user data. Bots can apply these patterns to similar but different problems without needing extra training from a human. This ability gives them the “intelligence” to perform tasks, solve problems, and manage information without human intervention.
 
-Voicebots are chatbots where the mode of interaction or channel is voice. They use voice technology to be able to interact with a chatbot. Voicebots are for example deployed in call centers to automatically route the customer to the right agent \(Smart IVR\) or to answer questions of customers calling, automatically. 
+#### Bot dialogs
 
-#### **Smart IVR**  
+A bot dialog contains a bot response, which is usually connected to an intent. There are different types of bot dialogs, each with different functionalities:
 
-Smart IVR is software powered by artificial intelligence \(AI\) that allow a caller to use an interactive voice response \(IVR\) system with their voice, generally using natural language. Callers don't have to listen to menus and press corresponding numbers on their keypads. 
+* Bot Message: Any message a bot is sending to a user. It can include text messages, buttons, quick replies, video, etc
+* Go To: If you want to add rules to determine which dialog is triggered when, you can do so with a Go To dialog
+* Action: Actions allow you to configure the settings of a user session, call an API, add custom code, etc
+* Input Validation \(or User Input\): Use this bot dialog type to gather input from your users so the bot can store and use it later in the conversation
 
-#### Voice technology 
+**Channel**
 
-Voice technology allows you to use a chatbot with your voice. For example, by talking to a digital assistant on your phone or in your home. It uses speech recognition \(STT\) to turn spoken language into text so that it can be understood by the computer. Next this text is used by a chatbot to return an answer. This answer is spoken using Text-to-Speech \(TTS\) 
+The channel is where your chatbot will operate. These days, chatbots can live on almost any channel where a two-way conversation is possible, pick one where your target audience hangs out. The channel you choose for your bot depends on where its users will most likely look for help or hangs out already. The bot-building platform I use, [Chatlayer.ai](http://chatlayer.ai/), supports Facebook Messenger, WhatsApp, Google Assistant, web widget, phone & voice, SMS, and many others!
 
-#### NLP 
+**Chatbot**
 
-Natural language processing is a branch of artificial intelligence \(AI\) that helps computers understand, interpret and manipulate human language.  It is typically split in natural language understanding \(NLU\) and natural-language generation \(NLG\)            
+At the most basic level, a chatbot is a computer program that simulates a human conversation \(either written or spoken\), allowing users to interact with digital devices as if they were communicating with a real person.
 
-#### NLG 
+**Chat widget**
 
-Natural-language generation \(NLG\) is a software process that transforms structured data into natural language. It can be used to produce long form content for organizations to automate custom reports, as well as produce custom content for a web or mobile application.  Practically, this means that text, for example a weather report, is automatically generated based on some input information, for example the temperature.        
+A chat widget is a ready-to-use, fully customizable chat window that can be added to your website — you know, that little blob at the bottom of your screen — through which users can talk to your bot.
 
-#### CUX 
+![](https://cdn-images-1.medium.com/max/1600/1*K1tk14Vfh23HPMWjJe64Ww.png)
 
-Conversational User Experiences are user experiences that combine chat, voice or any other natural language-based technology to mimic a human conversation. 
+  
+**CSS** 
 
-#### STT 
+Cascading Style Sheets \(CSS\) is a style sheet language used for describing the styling of a document written in a markup language such as HTML. 
 
-Speech-to-Text \(STT\) technology turns spoken text into written text. It typically uses machine learning to turn an audio signal into text. 
+**Confidence Score**
 
-#### TTS 
+The Confidence Score indicates how certain the NLP engine is that the intent has been assigned correctly. If the intent’s matching score falls below the confidence score, the bot will trigger a fallback dialog. 
 
-Text-to-Speech \(TTS\) technology turns written text in naturally sounding spoken text. 
+**CUX**
 
-It leverages for example neural network techniques to deliver a human‑like, engaging, and personalized user experience    
+Conversational User Experiences are user experiences that combine chat, voice, or any other natural language-based technology to mimic a human conversation.
 
-#### Intent 
+**Dependency parsing**
 
-Intent refers to the motive of a chatbot user. It's the intention behind each message that the chatbot receives, what the user is ultimately trying to know or accomplish. 
+Dependency parsing is the process of splitting user sentences into their essential parts, like nouns, verbs, objects, common phrases, and punctuations. This technique helps your bot to identify phrases so it can understand what the user wants to convey.
 
-#### Entity 
+**Entities**
 
-Entities can be fields, data, or text describing just about anything — a time, place, person, item, number, etc. Using NLP, chatbots can extract entities from entries that users type in in order to turn around accurate recommendations and answers. 
+Entities are little blocks of information that can be found in a user dialog, like a phone number, location, email address, and even a person’s name. When trained, the bot can recognize this relevant information from a user's input and save it for later use.
 
-#### Expression 
+For example: in the “introduction” dialog, the bot asks for the user’s name and email address. We predefined those two pieces of information as entities \(user name, email\) so the bot can detect and store them.
 
-A way of expressing a particular intent. The intent ‘book a ticket’ can be expressed as ‘I want to book a ticket’ or ‘Get me a ticket’ or ‘How do I book a ticket’ etc. 
+Then when the conversation goes to another topic, such as “Book a meeting”, your bot will need the user’s name and email address so it can confirm the meeting via email. But instead of asking for this information again, which wouldn’t feel so natural, the bot can simply ‘remember’ because of the entities stored earlier.
 
-#### Event 
+{% hint style="info" %}
+Chatlayer.ai offers different kinds of entities, which helps bot builders extract the right kind of user information. Read more about entities [here](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/synonym-entities).
+{% endhint %}
 
-Events are used to trigger a flow based on an event that happens in a certain conversation. Multiple types of events allow for widely varying use cases. 
+**Expressions**
 
-#### Utterance 
+One and the same intent can be expressed via all sorts of expressions. For example, the intent “book a ticket” can be expressed by the user as:
 
-An utterance is really anything the user will say. The utterance can be a sentence, some instances a few sentences, or just a word or a phrase.  
+* “I want to book a ticket”
+* “Get me a ticket”
+* “How do I book a ticket?”
+* “Can you help me book a ticket”
+* “I’m traveling soon and I still need a ticket”
 
-#### SDK or iFrame 
 
-There are two ways of integrating the Chat Widget on your website: you can use either iframe or SDK. SDK stands for Software Development Kit.  
 
-Our chat widget SDK is a layer on top of an iframe, which includes some other functionalities like a button that is shown before the chat window opens, with the option to close the chatbot. 
+![A few expressions for one intent](https://cdn-images-1.medium.com/max/1600/1*OXj1rYFQF2xRENc98FYFqA.png)
 
-If you want to get the chat widget onto your website with minimal custom development, it's best to use an SDK. The only thing you need to do is include a HTML script tag as described below. 
+{% hint style="info" %}
+It’s important to feed your bot a decent amount of expressions so it can train to recognize the user’s intent more easily.
+{% endhint %}
 
-If you want more control over other elements, such as the chat button, it's best to use iframe. An iframe is a custom element that can be used to show a different web page in the chat conversation. It can also be used to communicate with the parent window using the postMessage API. 
+**Fallback message**
 
-#### Bot dialogs 
+A default dialog which is triggered when the bot doesn’t recognize a user’s input, or when a user doesn’t give any input.
 
-There are four kinds of bot dialogs, each with its own functionalities: 
+For example:
 
-* Bot message: Any message a bot is sending to a user is what we call a bot message. This includes text messages, buttons, quick replies, etc. 
-* Go to: If you want to add rules to determine where a user is guided to, based on the value of a variable, you can do it with this bot dialog type. 
-* Action: Actions allow you to configure the settings of a user session, such as the language that will be used to reply to your user, or the offloading of a user. 
-* Input validation: Use this bot dialog type to gather input from your users. 
+* “I didn’t get that. Can you please repeat?”
 
-Sometimes bot dialogs are sometimes also called dialog states. 
+**Flow**
 
-#### Flow 
+Flows are kinda like folders in which you put bot dialogs that are related to the same topic. I like to group my flows per use case/intent. For example, when building a banking bot, I would define the following flows:
 
-You can think of flows as a folder in which you can put bot dialogs that are related to the same topic. 
+* Lost/stolen card
+* Check balance
+* Find nearest branch
+* Set card limit
+* …
 
-#### Conversational flow 
+**Human handover/offloading**
 
-How your dialogues are stringed together. Conversational flows show how your conversation will or can flow. 
+When a chatbot transfers the user to a human agent, we call this human handover or offloading**.**
 
-#### API 
+**Input validation** 
 
-A computing interface which defines interactions between multiple software intermediaries. Simply put, an API sends information back and forth between a website or app and its user.  
+An input validation dialog state can be used to get information from the bot's user. It first checks if the variable specified in the 'variable' field exists. If 'variable' has a value already, the bot will go automatically to the next bot dialog specified in the 'Next bot dialog' dropdown list. If 'variable' does not have a value, the bot will ask the question as defined in the Question section. 
 
-APIs matter because your website, app or service isn’t doing anything without them. You need them to process an order and confirm payment if you are selling anything. You need them to collect data if that is the goal of your solution.  
+**Intent**
 
-#### Multi-lingual NLP 
+Users have a specific goal in mind when talking to a chatbot. This goal is called an intent because it refers to the user’s intention. When building a bot, you need to link intents to specific bot flows and dialogs, so that the bot knows what to do.
 
-A single NLP model that can handle multiple languages simultaneously. 
+A few examples of intents:
 
-#### Parsing 
+* “Can I order a pizza?”  _The user’s intent is to place an order_
+* “Where is my package?”  _The user’s intent is to find their package_
+* “Show me the financial news”  _The user’s intent is to retrieve a list of financial headlines_
 
-The process of analyzing a string of symbols, either in natural language, computer languages or data structures, conforming to the rules of a formal grammar. In practice, it comes down to extracting certain patterns from text. 
+**Introduction**
 
-#### Web widget 
+The bot introduction is a short message that welcomes the user and gets the conversation going. [A good introduction](https://tesstettelin.medium.com/creating-the-best-most-effective-chatbot-welcome-message-to-engage-your-users-from-the-start-37a80aa17c76) greets the user, introduces the bot, and informs the user of the bot’s capabilities.
 
-A web widget is a web application that is embedded as an element on a website and allows the user to chat with your chatbot. 
+![Two different kinds of introductions. One shows options, the other one asks an open question.](https://cdn-images-1.medium.com/max/1600/1*9bIK1K0yNvt2vW7COXOyIQ.png)
 
-#### Variable 
-
-Variables are used to store any information the bot knows about a user. This can be their preferred language, or the channel they're using, but also information coming from external data sources like, for example, an API. All variables are stored in what is called a user's session. 
-
-#### JSON 
+**JSON** 
 
 If your bot is published on the Webhook API channel, you can use the JSON Builder action to send messages to the conversation that don't need to result in an actual message to the user. Typically, it's used to send information about the user or bot conversation to the website the bot is published on. 
 
-#### REST 
+**Live agent** 
 
-Chatlayer.ai provides a REST JSON API to retrieve, create and manipulate data from third party applications and a webhook configuration to notify you when a variety of interactions or events happen, including when a bot sends a message. Webhook events are sent by Chatlayer.ai as POST requests to your webhook. 
+A human agent that can help the user when the chatbot is no longer able to. 
 
-#### Webhook 
+**Live Chat** 
 
-Our platform provides the following features: 
+Live chat allows the user to talk to a human agent. 
 
-* a Webhook message API endpoint to send a user message to the bot 
-* a Webhook configuration to be notified when bot messages are returned as response to a user messages sent to the webhook message API as described in this section. This API is almost real time and the purpose is to be able to trigger event-based behavior as soon as a bot message response occurs. This way you will be able to integrate the bot flow logic in your own application or message channel. 
+**Machine learning \(ML\)**
 
-The overall mechanism is loosely based on Pubsub protocol and relies on HTTP request containing the bot message response being sent to a consumer Endpoint URL. The customer webhook Endpoint URL can be configured on our platform as described in this section. 
+Machine learning is a branch of AI that refers to your bot’s ability to learn from the inputs it experiences. This means your bot is able to pull bits and pieces from previous user interactions and use them to come up with answers to future questions. These questions are part of sentence structures stated by the user that the bot was never explicitly programmed to answer.
 
-#### Production & staging 
+**Multimodal experience**
+
+Voice is great for getting quick answers to simple questions, whilst visuals are great for more complex tasks. Combine the two and you have a multimodal experience, like the Google Nest Hub.
+
+![The Google Nest Hub combines both sonic and visual information](https://cdn-images-1.medium.com/max/1600/0*ndT8DmIz2zlS1IOR)
+
+**Natural Language Generation \(NLG\)**
+
+Natural-language generation \(NLG\) is a software process that transforms structured data into natural language. For example, a written weather report can automatically be generated based on some input information, like the temperature.
+
+**Natural Language Processing \(NLP\)**
+
+Natural Language Processing is a branch of AI that helps computers to interpret human language and understand what’s being said. It is typically split into Natural Language Understanding and Natural Language Generation.
+
+**Natural Language Understanding \(NLU\)**
+
+NLU is more specific in its purpose. It helps a computer to understand what a body of text really means because if it doesn’t understand the content, it cannot process it accordingly.
+
+Some real-world examples of NLU are: issuing short commands based on comprehending text, like rerouting an email to the right person based on a basic syntax. Much more complex applications can fully comprehend news articles or shades of meaning within poetry or novels.
+
+It’s best to view NLU as a first step towards achieving NLP: before a machine can process a language, it must understand what’s being said.
+
+**Production & staging** 
 
 Our platform provides 2 environments: staging and production, to support working in parallel on a new version of your chatbot without interfering with your production version which is talking to your users in real-time. You have access to both environments. 
 
-* Staging \('Draft'\) = Used to build and test new bot versions and improve your NLP model 
-* Production \('Live'\) = The production chatbot that is already communicating with your users 
+* Staging \('Draft'\) = Used to build and test new bot versions and improve your NLP model
+* Production \('Live'\) = The production chatbot that is already communicating with your users
 * We recommend not changing data and configuration \(flows, NLP, settings\) directly in your production environment as this can break your live bot. 
 
 Once your bot is ready and tested in the staging environment, it's time to publish your bot to the production environment. 
 
-#### Expression Generator 
+**REST** 
 
-An Expression Generator makes it easy for you to quickly generate a lot of expressions by swiftly adding synonyms for different parts of an already existing expression. 
+Chatlayer.ai provides a REST JSON API to retrieve, create and manipulate data from third**-**party applications and a webhook configuration to notify you when a variety of interactions or events happen, including when a bot sends a message. Webhook events are sent by Chatlayer.ai as POST requests to your webhook. 
 
-#### Go to 
+**SDK / iFrame**
 
-Go To enables your bot to redirect the user to a bot dialog state depending on the conditions of the session variables. 
+There are usually two ways of integrating a chat widget on your website: you can use either iframe or SDK. 
 
-#### Input validation 
+If you want to get the chat widget onto your website with minimal custom development, it’s best to use an SDK. If you want more control over certain elements, such as the chat button, it’s best you use an iFrame. 
 
-An input validation dialog state can be used to get information from the bot's user. It first checks if the variable specified in the 'variable' field exists.  
+**SSML**
 
-If 'variable' has a value already, the bot will go automatically to the next bot dialog specified in the 'Next bot dialog' dropdown list. 
+[Speech Synthesis Markup Language](https://developers.google.com/assistant/conversational/df-asdk/ssml) \(SSML\) is part of TTS and allows you to change your bot’s voice responses to make them sound more natural. For example, you can add pauses, sound clips, and other nice speech effects.
 
-If 'variable' does not have a value, the bot will ask the question as defined in the Question section. 
+**STT**
 
-#### Human handover/offloading 
+Speech to Text converts spoken words into text. This way, your voice bot can understand and process what a user is saying, and trigger the correct flow.
 
-Bots are great as a first line of support. However, they are not \(yet\) as smart as human support agents. Hybrid forms of chatbots in combination with live agents offer the best user experience. When a chatbot transfers the user to a human agent, we call this human handover or offloading. 
-
-#### Live Chat 
-
-Live chat allows the user to talk to a human agent. 
-
-#### Live agent 
-
-A human agent that can help the user when the chatbot is no longer able to. 
-
-#### Token 
+**Token** 
 
 Each API request requires authentication to identify the user that is responsible for making the request. Authentication is provided by \(access\) tokens. 
 
-#### CSS 
+**TTS**
 
-Cascading Style Sheets \(CSS\) is a style sheet language used for describing the styling of a document written in a markup language such as HTML. 
+Text to Speech is a technology that converts written text to spoken words. So once your voice bot has understood the user and found the corresponding flow, it can talk to the user. TTS is pretty cool because it can bring your bot to a whole new level: it gives it a voice, and more importantly, a personality.
 
-#### White listing \(Regex\)
+![A basic overview of how a voice bot interprets the user and forms a reply](https://cdn-images-1.medium.com/max/1600/1*RlxpEWZfBcDL_40zZsafdw.png)
 
-The White List allows you to configure your Chat Widget to only display on website that you’ve allowed. To do so, you can write a Regex containing the allowed domains. This is an extra security measure to prevent third parties from including your Chatbot on their websites. 
+**Utterance**
 
-#### Threshold 
+Anything the user says to the bot. For example, when a user states “I’d like to order a pizza please”, the entire sentence is the utterance. Fun fact: [even a simple sigh can be understood as an utterance](https://tesstettelin.medium.com/is-a-sigh-just-a-sigh-the-ai-answer-is-no-cdb56f24597e?source=your_stories_page-------------------------------------).
 
-You can decide how precisely your bot interprets what your user says by using a threshold that determines what the lowest matching score acceptable to trigger an interaction is. If the matching score falls below the confidence score, the bot will trigger fallback interaction, an interaction that asks the user to repeat the query. 
+**Value**
 
-#### VUI 
+A value is a possible element of a variable. For example, the variable ‘destination’ can have the following values: Antwerp, London, Brussels, … Variables and values always appear together.
 
-Voice User Interface. VUI allows the user to interact with a system through voice or speech commands. Virtual assistants, such as Siri, Google Assistant, and Alexa, are examples of VUIs. 
+**Variables**
+
+An entity that was successfully recognized by the NLP engine will be stored as a variable. For example, say you created the entity ‘Levels’ with values ‘Beginner’, ‘Intermediate’ and ‘Expert’. When a user says ‘I think I’m an expert’, the value ‘expert’ will be saved as a variable so it can be used later when, for example, the user wants to upgrade his account and the bot needs to know his current level.
+
+**Voicebot**
+
+These bots allow its users to interact with them simply by speaking. They’re also called voice assistants, you know, like Alexa, Siri, or Ok Google. Both their input and output is voice.
+
+**Webhook** 
+
+Our platform contains the following features: 
+
+* A Webhook message API endpoint to send a user message to the bot
+* A Webhook configuration to be notified when bot messages are returned as a response to user messages sent to the webhook message API as described in this section. This API is almost real-time and the purpose is to be able to trigger event-based behavior as soon as a bot message response occurs. This way you will be able to integrate the bot flow logic in your own application or message channel. 
+
+The overall mechanism is loosely based on Pubsub protocol and relies on HTTP request containing the bot message response being sent to a consumer Endpoint URL. The customer webhook Endpoint URL can be configured on our platform as described in this section. 
+
+**White listing \(Regex\)**
+
+The White List allows you to configure your Chat Widget to only display on a website that you’ve allowed. To do so, you can write a Regex containing the allowed domains. This is an extra security measure to prevent third parties from including your Chatbot on their websites. 
 
