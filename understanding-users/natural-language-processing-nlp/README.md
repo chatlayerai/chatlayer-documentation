@@ -55,7 +55,7 @@ On every page in our tool, you will find an 'update NLP' button at the top right
 {% hint style="info" %}
 Do you want to learn how you can improve your NLP model? You can find tips and tricks in the article below.
 
-{% page-ref page="../../tips-and-best-practices/how-to-nlp/" %}
+{% page-ref page="../../tips-and-best-practices/how-to-nlp.md" %}
 {% endhint %}
 
 ## Intent pack

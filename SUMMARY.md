@@ -84,9 +84,9 @@
 ## Tips & Best practices
 
 * [Chatbot checklist](tips-and-best-practices/chatbot-checklist.md)
-* [NLP best practices](tips-and-best-practices/how-to-nlp/README.md)
-  * [STT & TTS](tips-and-best-practices/how-to-nlp/creating-a-voicebot.md)
+* [NLP best practices](tips-and-best-practices/how-to-nlp.md)
 * [Voice Design](tips-and-best-practices/voice-design/README.md)
+  * [STT & TTS](tips-and-best-practices/voice-design/creating-a-voicebot.md)
   * [From chat to voice](tips-and-best-practices/voice-design/from-chat-to-voice.md)
   * [Setting up Google Home](tips-and-best-practices/voice-design/setting-up-google-home.md)
 * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
