@@ -1,58 +1,117 @@
+---
+description: >-
+  Follow these step-by-step instructions on how to set up the phone and voice
+  channel.
+---
+
 # Phone & voice
 
-A voice bot is an extra layer on top of your chatbot. You can reuse your existing chatbot, and we will handle speech-to-text \(STT\) and text-to-speech \(TTS\). Configuring voice using our platform is a matter of minutes and we've created some custom components to make the configuration even easier.
+## Activating the phone channel
 
-Activate your phone channel by going to the Channels tab and clicking the '+' button next to 'Phone'.
+* Go to the 'Channels' tab on the left and click on the '+' button next to 'Phone'.
 
-![](../.gitbook/assets/image%20%28179%29.png)
+![Click the &apos;+&apos; button to add a phone connection](../.gitbook/assets/image%20%28179%29.png)
 
-## Architecture
+* Click on 'create' if you see this pop-up:
 
-### Testing
+![](../.gitbook/assets/image%20%28390%29.png)
 
-If you want to test a first version of your voice bot before going into production, you can do so in two ways:
+## Setting up a phone configuration
 
-1 – Use the 'test your bot' feature by clicking on 'debugger' and then selecting voice. After you give your browser permission to use your microphone, you can now talk to your bot.
+* Click on the blue button 'Create configuration' to set up a test caller
 
-![click on &apos;default&apos; and select &apos;voice&apos; to test your voice bot](../.gitbook/assets/image%20%28376%29.png)
+![](../.gitbook/assets/image%20%28389%29.png)
 
-2 – If you want to enact the real experience, you can call a test number. Before you can use a test number to call your bot, you have to add your number to the bot so we know which bot you're trying to talk to.
+* You will see the following pop-up:
 
-**Adding your number:**  
-Click the blue 'Create Configuration' button to set up the phone configuration. The Chatlayer.ai test number will be shown at the top of the Phone configuration screen.
+![You can keep the Chatlayer test number for now](../.gitbook/assets/image%20%28391%29.png)
 
-![](../.gitbook/assets/image%20%2860%29.png)
+* Under 'Caller' you can fill out the phone number of the **person who will test the bot**
+* Under 'Languages' you can select the languages of your bot
+* Under 'Description' you can fill out the name of the **person who will test the bot**
 
-### Production
+## Testing your voicebot
+
+There are two ways to test your bot before publishing it:
+
+**1 – Testing whilst building**
+
+* In the 'Bot Dialogs' menu, open the Emulator on the bottom right and click the 'debugger' button. 
+* Change it to 'voice'
+* Now you can speak to your bot and test it!
+
+![](../.gitbook/assets/image%20%28387%29.png)
+
+**2 – Testing the real experience**
+
+You can also enact the real experience by calling the Chatlayer test number: +3238081698. 
+
+{% hint style="info" %}
+Only the people whose phone numbers were added in the phone configuration tab will be able to call the test number and test the bot.
+{% endhint %}
+
+## **Choosing a voice for your bot**
+
+* Click on 'Settings' in the left menu and select 'voice'
+
+![](../.gitbook/assets/image%20%28380%29.png)
+
+* Under 'Configure speech to text', select the language of your bot. You can also select the correct dialect if you'd like by clicking on the box 'Default dialect'
+* Under 'Voices', select the voice you prefer 
+* If you'd like to hear a sample of that voice, enter an example sentence in the box 'Text to try out' and click on the speaker that appears next to the voice to hear it read aloud
+
+## Customizing your bot's voice with SSML
+
+You can customize your bot's responses by using Speech Synthesis Markup Language \(SSML\). With SSML, you can:
+
+* Change certain pronunciation​s
+* Change the speed​ of your bot's voice
+* Play audio file​s
+* Add pauses
+* Pronounce words as characters
+* Pronounce dates
+
+And much more! See all options here: [https://cloud.google.com/text-to-speech/docs/ssml](https://cloud.google.com/text-to-speech/docs/ssml)
+
+{% hint style="info" %}
+To enable SSML, you have to put &lt;speak&gt; …  &lt;/speak&gt; around the entire bot response. 
+{% endhint %}
+
+{% hint style="info" %}
+Building a Flemish bot? Then you should put &lt;speak version="1.1" xml:lang="nl-BE"&gt; ... &lt;/speak&gt; around your messages
+{% endhint %}
+
+## Forwarding and closing a call​
+
+* Add an 'Action' dialog and select 'Forward Call'
+* In the 'To' box, enter the phone number you'd wish to redirect the call to
+
+![](../.gitbook/assets/image%20%28388%29.png)
+
+{% hint style="info" %}
+The phone number should contain a country code but no leading zeros or '+' sign.  
+For example: 0800 55 800 becomes 32800 55 80
+{% endhint %}
+
+* After setting up your phone number, make sure to add another action 'Close Call' to make sure your bot hangs up after forwarding the call
+
+![](../.gitbook/assets/image%20%28377%29.png)
+
+## Silence detection event​
+
+If the user doesn't reply to the bot, or it doesn't detect an answer, you can let it repeat the question by using a 'Silence detection event' – Described [here](../bot-answers/events.md#silence-detected-event).
+
+![](../.gitbook/assets/image%20%28386%29.png)
+
+## Putting your voice bot into production
 
 When you're ready to move your bot into production, please [get in touch](../support/get-in-touch.md). We will set up a specific phone number for your bot which can be used to call directly or forward calls to. A typical phone architecture looks like this:
 
 ![](../.gitbook/assets/image%20%28373%29.png)
 
-## Voice-specific Chatlayer.ai components
-
-### Silence detected event
-
-If you want to trigger a certain flow when the user is silent for a set time, use the event which we describe [here](../bot-answers/events.md#silence-detected-event).
-
-### Voice message format type for input validation
+## Voice message format type for input validation
 
 You can save anything the user is saying as a variable by using the voice message format type in an input validation. Read more [here](../bot-answers/dialog-state/user-input-bot-dialog.md#voice-message).
-
-### Actions: forward call & close call
-
-These actions are available when you configure the voice channel and will allow you to:
-
-* Forward a call to a number of your choosing, often used to handover a customer from the bot to a live agent
-* End the call by hanging up
-
-### SSML & external audio files
-
-Speech Synthesis Markup Language \(SSML\) is a markup language designed to give instructions to a text-to-speech engine. You can read more about SSML [here](https://cloud.google.com/text-to-speech/docs/ssml). 
-
-Chatlayer.ai supports the use of SSML in text messages which will be used by the TTS engine.
-
-SSML can also be used to play external audio files in a text message. Alternatively, you can use the "[media](../bot-answers/dialog-state/message-components.md#audio)" template to achieve the same functionality.
 
 
 
