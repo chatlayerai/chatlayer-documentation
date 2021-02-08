@@ -1,4 +1,4 @@
-# Sparkcentral \(beta\)
+# Sparkcentral
 
 Sparkcentral allows you to manage all your asynchronous messaging channels with human and virtual customer service agents.
 
