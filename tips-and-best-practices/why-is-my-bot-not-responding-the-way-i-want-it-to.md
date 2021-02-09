@@ -24,7 +24,7 @@ There are a couple of problems you might encounter as a starting bot developer. 
 * If no, create a new intent, add the expression and a few others like it to the new intent and update your NLP model
 
 {% hint style="info" %}
-Make sure you follow our [NLP training best practices](how-to-nlp.md) when creating new intents and expressions.
+Make sure you follow our [NLP training best practices](how-to-nlp/) when creating new intents and expressions.
 {% endhint %}
 
 * Create a new bot dialog, link the intent to that bot dialog, and define an answer the bot should give as a reply to your new intent
