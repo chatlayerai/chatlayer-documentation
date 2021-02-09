@@ -115,7 +115,7 @@ For example: "**Two** **fries** please": _@order_ \(composite entity\) consists 
 
 ## The difference between entities, variables, and values
 
-**A value is a possible element of a variable.** For example, the variable 'destination' can have the following values: Antwerp, London, Brussels, ...
+**A value is a possible element of a variable or entity.** For example, the variable 'destination' can have the following values: Antwerp, London, Brussels, ...
 
 **An entity that was successfully recognized by the NLP engine will be stored as a variable.** For example, say you created the match text entity 'Levels' with values 'Beginner', 'Intermediate' and 'Expert'. When the user says 'I think I'm an expert', the value 'expert' will be saved as a variable. So a variable is an entity that was successfully recognized and stored by the chatbot.
 
