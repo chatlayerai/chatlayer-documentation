@@ -4,7 +4,15 @@ description: Read more about Speech-To-Text and Text-to-Speech on this page.
 
 # STT & TTS
 
-### Speech-To-Text
+### General voice setup
+
+![From STT to NLP to TTS](../../.gitbook/assets/image%20%28381%29.png)
+
+### Call center voice setup
+
+![How voice is set up for a call center on the Chatlayer platform](../../.gitbook/assets/image%20%28379%29.png)
+
+## Speech-To-Text
 
 Google offers +/- 125 languages and variants. Check their page to see all languages supported by Cloud Speech-to-Text: [https://cloud.google.com/speech-to-text/docs/languages/](https://cloud.google.com/speech-to-text/docs/languages/).
 
