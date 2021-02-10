@@ -11,7 +11,7 @@
 * [Get data with an input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
 * [Reusing intents with context](tutorials/tutorial-using-context-for-intent-reuse.md)
 * [Flow navigation with variables](tutorials/tutorial-conditional-flow-navigation.md)
-* [Adding team members](tutorials/user-management.md)
+* [Team members, roles & bot access](tutorials/user-management.md)
 
 ## Understanding users
 

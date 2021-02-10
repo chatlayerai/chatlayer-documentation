@@ -33,6 +33,7 @@ Within this 'Go To', guide the user based on the botType variable, which contain
 The values for botType correspond to the channel names:
 
 * Facebook Messenger: facebook
+* Webhook: webHook
 * Google Home: google
 * Chat widget: web
 * Facebook Workplace: facebookWorkplace

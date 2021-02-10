@@ -1,5 +1,31 @@
 # What's new
 
+## February 2021 Release
+
+### New bot dialog components
+
+We introduced a new style for the bot dialog components. Beautiful right?
+
+![](../.gitbook/assets/image%20%28399%29.png)
+
+This update also makes it easier to see which type of button you're creating.
+
+![](../.gitbook/assets/screenshot-2021-02-09-at-15.07.07.png)
+
+### Better performance
+
+In the background, we have switched from one database type to another, making the bots and the platform a lot faster. We will gradually move bots to this new database, so it might take a few weeks for your bot to enjoy the performance benefits.
+
+### Team member roles & bot access
+
+A lot of customers use bots in different parts of their organization. They have both a bot to help support their customers, as well as an internal HR bot. Often, these bots process sensitive information that should only be accessible by the team building that specific bot. That's why we have introduced team member roles & bot access.
+
+Enterprise customers can now restrict bots to only be accessible by certain team members. Furthermore, you can set a team member as "read-only" so they can see how the bot is configured, but not change anything.
+
+Read all about how to use team member roles & bot access:
+
+{% page-ref page="../tutorials/user-management.md" %}
+
 ## December 2020 Release
 
 We released new types of entities. You can find all information about them here:
