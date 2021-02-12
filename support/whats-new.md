@@ -4,7 +4,7 @@
 
 ### New bot dialog components
 
-We introduced a new style for the bot dialog components. Beautiful right?
+We introduced a new style for the bot dialog components. Looks good, right?
 
 ![](../.gitbook/assets/image%20%28399%29.png)
 
