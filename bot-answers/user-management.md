@@ -1,6 +1,12 @@
+---
+description: >-
+  Starting from the February 2021 release, user management has been added to the
+  Chatlayer platform.
+---
+
 # Team members, roles & bot access
 
-In the platform users module you can add or remove users from your Chatlayer.ai account. 
+In the ''Platform users' module you can add or remove users from your Chatlayer.ai account. 
 
 
 
