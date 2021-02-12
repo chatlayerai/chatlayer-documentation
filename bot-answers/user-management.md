@@ -1,7 +1,7 @@
 ---
 description: >-
-  Starting from the February 2021 release, user management has been added to the
-  Chatlayer platform.
+  Starting from February 2021, user management has been added to the Chatlayer
+  platform.
 ---
 
 # Team members, roles & bot access
