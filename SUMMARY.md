@@ -11,7 +11,6 @@
 * [Get data with an input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
 * [Reusing intents with context](tutorials/tutorial-using-context-for-intent-reuse.md)
 * [Flow navigation with variables](tutorials/tutorial-conditional-flow-navigation.md)
-* [Team members, roles & bot access](tutorials/user-management.md)
 
 ## Understanding users
 
@@ -26,7 +25,7 @@
 * [Context](understanding-users/using-context.md)
 * [Multilingual bots](understanding-users/multilanguage-bots.md)
 
-## Bot answers
+## Bot management <a id="bot-answers"></a>
 
 * [Bot dialogs](bot-answers/dialog-state/README.md)
   * [Bot message](bot-answers/dialog-state/message-components.md)
@@ -39,6 +38,7 @@
   * [User flow](bot-answers/analytics/user-flow.md)
 * [Publishing your bot](bot-answers/publishing-your-bot.md)
 * [Events](bot-answers/events.md)
+* [Team members, roles & bot access](bot-answers/user-management.md)
 * [Settings](bot-answers/settings/README.md)
   * [Variables](bot-answers/settings/secure-variables-gdpr.md)
 

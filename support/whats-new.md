@@ -24,7 +24,7 @@ Enterprise customers can now restrict bots to only be accessible by certain team
 
 Read all about how to use team member roles & bot access:
 
-{% page-ref page="../tutorials/user-management.md" %}
+{% page-ref page="../bot-answers/user-management.md" %}
 
 ## December 2020 Release
 
