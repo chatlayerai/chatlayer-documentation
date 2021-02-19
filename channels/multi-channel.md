@@ -24,6 +24,8 @@ Publishing your bot on a channel is quite easy if you follow our channel guides:
 
 ## Multi-channel
 
+Chatlayer.ai allows you to connect one bot to multiple channels at the same time.
+
 If you want your users to follow a different flow based on the channel they are using, you can use our multi-channel functionality. To do this, add a [Go To](../bot-answers/dialog-state/plugins.md) to the point in your flow where you wish to diverge, based on the channel.
 
 Within this 'Go To', guide the user based on the botType variable, which contains the channel variable. For example:
@@ -48,13 +50,19 @@ The table below gives an overview of which features are available in which chann
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Text messages | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Buttons | ✅ | ✅ | ✅ |  | ✅ | ✅ |
-| Quick replies | ✅ | ✅ | ✅ |  | ✅ | ✅ |
+| Quick replies | ✅ | ✅ | ✅ | ✅\*2 | ✅ | ✅ |
 | Carousel | ✅ | ✅ | ✅ |  | ✅ | ✅ |
 | List | ✅ | ✅ | ✅ |  | ✅ | ✅ |
 | Media | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | File upload | ✅ |  |  |  |  |  |
 | Rich text | ✅ |  |  |  |  |  |
-| Branding customization | ✅ | \(✅\) | \(✅\) | \(✅\) | ✅ | ✅ |
+| Branding customization | ✅ | ✅\*1 | ✅ |  | ✅ | ✅ |
 | iframe | ✅ |  |  |  |  |  |
-| Webview | ✅ | ✅ | \(✅\) |  |  |  |
+| Webview |  | ✅ | ✅ |  |  |  |
+
+\*1: Only possible to change the color scheme
+
+\*2: Only through [WhatsApp message templates](https://developers.facebook.com/docs/whatsapp/message-templates/creation) approved by Facebook.
+
+
 
