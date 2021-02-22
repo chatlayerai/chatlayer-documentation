@@ -86,6 +86,8 @@
 * [Chatbot checklist](tips-and-best-practices/chatbot-checklist.md)
 * [NLP best practices](tips-and-best-practices/how-to-nlp/README.md)
   * [STT & TTS](tips-and-best-practices/how-to-nlp/creating-a-voicebot.md)
+* [Voice design](tips-and-best-practices/voice-design/README.md)
+  * [From chat to voice](tips-and-best-practices/voice-design/from-chat-to-voice.md)
 * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
 * [Solving bot issues](tips-and-best-practices/why-is-my-bot-not-responding-the-way-i-want-it-to.md)
 * [Creating a good chatbot](tips-and-best-practices/what-makes-a-good-chatbot.md)
