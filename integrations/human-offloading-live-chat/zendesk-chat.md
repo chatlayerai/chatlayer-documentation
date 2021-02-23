@@ -4,6 +4,10 @@ description: Learn how to configure and use Zendesk Chat on Chatlayer
 
 # Zendesk Chat
 
+{% hint style="danger" %}
+Zendesk only allows users on their "Enterprise" pack to use 3rd party bot platforms such as Chatlayer. Make sure to upgrade to the "Enterprise" tier of Zendesk to use this integration.
+{% endhint %}
+
 Zendesk is a service-first CRM company that builds software designed to improve customer relationships.
 
 ## Configure Zendesk 
