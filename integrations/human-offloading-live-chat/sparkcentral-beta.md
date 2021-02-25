@@ -2,10 +2,6 @@
 
 Sparkcentral allows you to manage all your asynchronous messaging channels with human and virtual customer service agents.
 
-{% hint style="warning" %}
-The Sparkcentral integration doesn't support the use of buttons yet.
-{% endhint %}
-
 ## Retrieving Sparkcentral API credentials
 
 The first step to integrate Sparkcentral with Chatlayer.ai is to retrieve API Credentials from Sparkcentral. 
