@@ -62,6 +62,10 @@ This is the ID associated with the dialog state. You can use this to debug your 
 
 The name for a specific dialog state. This is also the label that is shown in the tree view, the list view or the translations module. You can enter any name you want and change it as often as you like.
 
+###  Bot Dialog Label
+
+You may use this field as a custom identifier for your bot dialog when integrating solutions through the Webhook Channel API .
+
 ### Flow
 
 The bot dialog flow determines in which flow the bot dialog you are editing \(or creating\) will be stored.
