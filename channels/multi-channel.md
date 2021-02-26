@@ -40,7 +40,7 @@ The values for botType correspond to the channel names:
 * Chat widget: web
 * Facebook Workplace: facebookWorkplace
 * Phone: voice
-* All channels managed through the Sinch Conversation API: sinchConversationAPI
+* All channels managed through the Sinch Conversation API \(SMS, RCS, WhatsApp, Viber\): sinchConversationAPI
 
 ## Channel comparison
 
