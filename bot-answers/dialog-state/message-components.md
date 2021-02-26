@@ -164,7 +164,11 @@ The URL where the uploaded file is stored can be found under the `{uploadedFileU
 
 ## Rich text
 
-Rich text allows you to go beyond text messages and style your text the way you want it. This message type is only available if you're using the Chat Widget as a channel.
+Rich text allows you to go beyond text messages and style your text the way you want it. 
+
+{% hint style="warning" %}
+Rich text is only visible in the Chat Widget channel. The other channels do not support this type of text.
+{% endhint %}
 
 ![](../../.gitbook/assets/image%20%28323%29.png)
 
