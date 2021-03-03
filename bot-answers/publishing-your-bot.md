@@ -15,7 +15,7 @@ Once your bot is ready and tested in the staging environment, it's time to publi
 If you want to run your bot within Facebook Messenger, we advise you to set up a separate Facebook page and app for your staging version of the bot.
 
 {% hint style="info" %}
-Each day your production user messages are added to the staging environment so that you can train your NLP models every day, based on real user data.
+The user messages from your live bot are added to the [Train tab](../understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages.md) of both the live and draft versions of your bot. You can use this real user data to optimize your NLP models.
 {% endhint %}
 
 To publish your bot, go to the 'Versioning' module in the staging environment.
