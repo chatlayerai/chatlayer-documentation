@@ -58,6 +58,24 @@ A shorter regular expression which will match the same domains is:
 
 An easy way to validate your regular expression is by using online tools like [https://regex101.com/](https://regex101.com/)
 
+#### Whitelisting with an iframe
+
+Some browsers have a default `referrerpolicy` of `strict-origin-when-cross-origin`. This will enforce the browser to only include the origin of your webpage when it requests the content of an iframe.
+
+If your iframe widget is hosted at `https://example.com/chat_widget.html`, requests will only contain the `https://example.com/` portion of that path. This could cause issues if you use a whitelisting regex that matches the full path of your webpage, for example:
+
+```markup
+^https:\/\/example\.com\/chat_widget.html
+```
+
+If you want to use the full path of your webpage in the whitelisting configuration of your widget, you can override the `referrerpolicy` of the iframe that contains the link to your widget to be `no-referrer-when-downgrade`
+
+```markup
+<iframe referrerpolicy="no-referrer-when-downgrade" src="<CHATBOX_URL>"/>
+```
+
+More information about referrer policies can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy).
+
 ## Embedding the web widget on your website
 
 To embed the bot on your website, start by clicking the Embed button in the top right of the Custom Chat Widget page.
