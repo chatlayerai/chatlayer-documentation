@@ -58,5 +58,7 @@ In this action, add a new plugin "Send to offload provider". Select "Salesforce"
 
 ![](../../.gitbook/assets/image%20%28409%29.png)
 
+When a user reaches that part of the flow, they will be transferred to a Salesforce agent.
+
 Your Salesforce integration is ready to go!
 
