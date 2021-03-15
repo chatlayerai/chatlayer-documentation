@@ -151,5 +151,5 @@ These tips can help you elevate your bot from being alright to being awesome:
   </tbody>
 </table>
 
-Want to learn more about Conversation Design and its best practices? [**Head over to Medium**](https://tesstettelin.medium.com/) for new content and articles!
+Want to learn more about Conversation Design and its best practices? [**Head over to Medium**](https://tesstettelin.medium.com/) for more content and articles!
 
