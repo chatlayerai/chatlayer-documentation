@@ -1,10 +1,14 @@
 # Chatbot checklist
 
-Building a bot isn't so hard, but building a **great bot** takes a bit more effort. Here are some points to keep in mind when designing your bot, so that it can help your users in the best way possible.
+Anyone can build a bot, but it takes a whole lot more to build a **great bot**. Here are some tips and tricks to keep in mind when building your bot, so that you can offer your users the best possible user experience.
 
-Some of these points are important must haves, others are nice-to-haves. These are not key when designing a bot, but nevertheless important if you want to create a great user experience \(which of course, you want to\).
+Dazzle them!
 
-## ✅ Bot must haves 
+Some of the things listed below are important must-haves, others are nice-to-haves. These are not key to designing a bot, but definitely important if you want to create a great user experience \(which of course, you want to!\)
+
+## ✅ Bot necessities
+
+Make sure the tips below are part of your bot experience:
 
 <table>
   <thead>
@@ -77,7 +81,9 @@ Some of these points are important must haves, others are nice-to-haves. These a
   </tbody>
 </table>
 
-## 👏 Nice-to-haves 
+## 👏 Very nice-to-haves 
+
+These tips can help you elevate your bot from being alright to being awesome:
 
 <table>
   <thead>
