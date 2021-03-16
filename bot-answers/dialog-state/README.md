@@ -66,6 +66,12 @@ The name for a specific dialog state. This is also the label that is shown in th
 
 You may use this field as a custom identifier for your bot dialog when integrating solutions through the Webhook Channel API .
 
+Let us assume a situation where you do something like store the number of times some specific dialogstate \( eg. `Greeting Message` \) has been triggered. And say you have custom label \( eg. `messages_greeting`\) added to that.
+
+Now If you delete the `Greeting Message` and recreate it, its unique identifier on our end will change, but you could still add `messages_greeting` as the custom label again.
+
+If you use this custom label in your system to check if the dialogstate has been triggered then nothing on your side needs to be changed even though you deleted a dialogstate and recreated it in Chatlayer platform.
+
 ### Flow
 
 The bot dialog flow determines in which flow the bot dialog you are editing \(or creating\) will be stored.
