@@ -68,9 +68,9 @@ You may use this field as a custom identifier for your bot dialog when integrati
 
 For example: say you want to store the number of times some specific bot dialog \( eg. `Greeting Message` \) has been triggered. You have added a custom label to that bot dialog \( eg. `messages_greeting`\).
 
-Now if you delete the `Greeting Message` and recreate it, its unique identifier on the Chatlayer side will change, but you could still add `messages_greeting` as the custom label again.
+Now if you delete the `Greeting Message` and recreate it, its unique identifier on our side will change, but you could still add `messages_greeting` as the custom label again.
 
-If you use this custom label in your system to check if the bot dialog has been triggered then nothing on your side needs to be changed even though you deleted a bot dialog and recreated it in Chatlayer platform.
+If you use this custom label in your system to check if the bot dialog has been triggered then nothing on your side needs to be changed, just make sure the label of the recreated bot dialog is the same as the label of the bot dialog you deleted.
 
 ### Flow
 
