@@ -41,6 +41,7 @@
 * [Team members, roles & bot access](bot-answers/user-management.md)
 * [Settings](bot-answers/settings/README.md)
   * [Variables](bot-answers/settings/secure-variables-gdpr.md)
+  * [SaaS Regions & IP Ranges](bot-answers/settings/saas-regions-and-ip-ranges.md)
 
 ## Integrations
 
