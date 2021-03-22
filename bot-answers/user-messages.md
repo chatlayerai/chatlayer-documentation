@@ -2,6 +2,10 @@
 
 Here you can see all users shown in a user table. By starting to type in the Filter text boxes, you can filter conversations based on first name, last name or language.
 
+{% hint style="info" %}
+In the conversation history tab, each row corresponds to a conversation. It is possible for one user to have multiple conversations, and thus multiple rows in that table.
+{% endhint %}
+
 ![](../.gitbook/assets/image%20%28205%29.png)
 
 {% hint style="info" %}
