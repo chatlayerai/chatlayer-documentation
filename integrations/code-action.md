@@ -121,28 +121,28 @@ Just like the example above, Quick Replies can also be created in the code edito
 
 ```javascript
 const quickReplies = [
-    {
-        title: 'Option 1',
-        payload: {
-            nextDialogstateId: args.setNextDialogstateDs
-        },
-        params: [
-            // This will be set on the session.
-            { key: 'choice', value: 'option1' }
-        ]
-}
+[
+  {
+    title: "Option 1",
+    payload: {
+      nextDialogstateId: args.setNextDialogstateDs,
+      params: [
+        // This will be set on the session.0
+        { key: "choice", value: "option1" },
+      ],
     },
-        {
-        title: 'Option 2',
-        payload: {
-            nextDialogstateId: args.addHtmlDs
-        },
-        params: [
-            // This will be set on the session.
-            { key: 'choice', value: 'option1' }
-        ]}
+  },
+  {
+    title: "Option 2",
+    payload: {
+      nextDialogstateId: args.addHtmlDs,
+      params: [
+        // This will be set on the session.
+        { key: "choice", value: "option1" },
+      ],
     },
-]
+  },
+];
 
 ChatlayerResponseBuilder()
     .addQuickReplies({
