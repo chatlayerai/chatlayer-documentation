@@ -130,6 +130,7 @@ const quickReplies = [
             // This will be set on the session.
             { key: 'choice', value: 'option1' }
         ]
+}
     },
         {
         title: 'Option 2',
@@ -139,7 +140,7 @@ const quickReplies = [
         params: [
             // This will be set on the session.
             { key: 'choice', value: 'option1' }
-        ]
+        ]}
     },
 ]
 
