@@ -100,6 +100,7 @@
 * [Gathering user feedback](tutorials-1/gathering-user-feedback.md)
 * [Using time in your chatbot](tutorials-1/using-time-in-your-chatbot.md)
 * [Reuse flows](tutorials-1/reuse-flows.md)
+* [Web widget demo page](tutorials-1/web-widget-demo-page.md)
 
 ## Support
 
