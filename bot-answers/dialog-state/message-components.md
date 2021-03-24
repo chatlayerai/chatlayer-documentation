@@ -164,7 +164,7 @@ The URL where the uploaded file is stored can be found under the `{uploadedFileU
 
 ## Rich text
 
-Rich text allows you to go beyond text messages and style your text the way you want it. 
+Rich text allows you to go beyond text messages and style your text the way you want it. You can also add weblinks using the rich text editor.
 
 {% hint style="warning" %}
 Rich text is only visible in the Chat Widget channel. The other channels do not support this type of text.
@@ -188,9 +188,11 @@ And format the text in the following ways:
 * _Italic_
 * Underline
 
-You can also add hyperlinks that either go to an external page or to a specific place in your conversation.
+You can also add hyperlinks \(weblinks\) that either go to an external page or to a specific place in your conversation.
 
-![](../../.gitbook/assets/image%20%28321%29.png)
+![Inserting a link using rich text](../../.gitbook/assets/image%20%28412%29.png)
+
+To hyperlink a word or sentence, select it and then click the chain icon on the right below. A popup will appear where you can put in the link address. Then click 'save'.
 
 
 
