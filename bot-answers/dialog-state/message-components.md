@@ -1,6 +1,6 @@
 # Bot message
 
-To design your conversational flow, you can use multiple components, like text messages, buttons and carousels. Depending on the channel you publish the bot to \(Facebook Messenger, web, Slack, Telegram, ...\), these will be shown slightly different.
+To design your conversational flow, you can use multiple components, like text messages, buttons and carousels. Depending on the channel you publish the bot to \(Facebook Messenger, web, Slack, Telegram, ...\), these will be shown slightly differently.
 
 {% hint style="info" %}
 **Character limits**
