@@ -1,5 +1,11 @@
 # What's new
 
+## March 2021 Release
+
+* New role: you can add a member to a RESTRICTED bot as NLP-only now. Read more [here](../bot-answers/user-management.md#bot-access).
+* Credit card payments: you can now pay for your Chatlayer subscription using a credit card.
+* Various minor bug fixes.
+
 ## February 2021 Release
 
 ### New bot dialog components

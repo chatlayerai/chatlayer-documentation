@@ -1,9 +1,3 @@
----
-description: >-
-  Starting from February 2021, user management has been added to the Chatlayer
-  platform.
----
-
 # Team members, roles & bot access
 
 In the module ''Platform users' you can add or remove users from your account. 
