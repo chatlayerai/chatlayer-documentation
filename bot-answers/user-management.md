@@ -49,12 +49,13 @@ A RESTRICTED bot will have a "Bot access" tab in the settings. On this page you 
 
 ![](../.gitbook/assets/image%20%28398%29.png)
 
-A member can have two types permissions to a RESTRICTED bot:
+A member can have three types permissions to a RESTRICTED bot:
 
 * **Edit:** the member can change all intents, bot dialogs and settings
 * **Read-only:** the member can view the bot, but cannot change anything
+* **NLP-only:** the member can change intents, expressions, entities, etc, but not bot dialogs or settings.
 
-![](../.gitbook/assets/image%20%28400%29.png)
+![](../.gitbook/assets/image%20%28411%29.png)
 
 Your access level to a bot can be seen on the "My Bots" overview page:
 
