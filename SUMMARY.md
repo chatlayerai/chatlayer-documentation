@@ -48,7 +48,7 @@
 * [API integration](integrations/custom-back-end-integrations/README.md)
   * [Advanced API integrations](integrations/custom-back-end-integrations/advanced-api-integrations.md)
 * [Code Editor](integrations/code-action.md)
-* [Chat message structure for API's](integrations/chat-message-structure-for-apis.md)
+* [Message objects for API's](integrations/chat-message-structure-for-apis.md)
 * [Retrieving data from Airtable \(GET\)](integrations/retrieving-data-from-airtable-get.md)
 * [Sending data to Airtable \(POST\)](integrations/airtable.md)
 * [Human handover & live chat](integrations/human-offloading-live-chat/README.md)
