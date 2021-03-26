@@ -217,10 +217,5 @@ You  should now be familiar with:
 
 If any of these topics are difficult for you, revisit them in the tutorial or search on the page in the top right search bar to learn more about a topic.
 
-
-
-{% hint style="info" %}
-The [next tutorial](tutorial-getting-information-using-entities.md) is about getting user input.   
-We will ask the user for input that is needed for booking a train ticket.
-{% endhint %}
+The next tutorial is about getting user input. We will ask the user for input that is needed for booking a train ticket.
 
