@@ -17,6 +17,12 @@ Some examples of intents:
 * Thank you
 * I want to speak to a human
 
+Tip: if two of your intents are very similar in terms of expressions’ syntax or content, you might want to merge them. For example, let's look at our bot responsible for booking train tickets. Imagine you'd also like to offer bus tickets. You could create an extra intent for booking bus tickets, but the expressions in each intent would be very similar, with only the transportation mode changing from time to time. It would be better to only have one intent handling reservations, and an **entity** to catch the requested vehicle type. 
+
+{% hint style="info" %}
+It’s important to have a roughly equal number of expressions for each intent. Even if it usually takes more examples to train your most important intent than your second-order ones, strive to keep their number of expressions around the same amount. This helps avoid a bias towards intents with a large expression count.
+{% endhint %}
+
 ## Expressions
 
 Expressions are example sentences for a specific Intent. In industry literature, they are sometimes called 'utterances'. The more Expression you add to an Intent, the more accurately it will be recognized. It is crucial for an Intent to have a wide variety of expressions to give accurate results. The more expression you can think of, the better the result of the NLP and the 'smarter' your bot will appear.

@@ -40,27 +40,31 @@ Flows are a way to group your bot dialogs. You will learn more about them later.
 
 * In the general flow, you will see an overview of all the dialogs that are part of this flow. When creating a new bot, you'll start with the standard predefined dialog states, which should look something like this:
 
-![](../.gitbook/assets/image%20%28246%29.png)
+![](../.gitbook/assets/image%20%28457%29.png)
 
 {% hint style="info" %}
 To navigate the screen, you can zoom in or out by using the scrolling wheel, or by zooming with your laptop's trackpad. You can also click and drag to move through the dialog tree.
 {% endhint %}
 
-### Step 1: Adding an introduction
+## Step 1: Adding an introduction
 
-The first thing you'll need to do is create an introduction. This is the dialog your bot will use to introduce itself and help users understand its functionalities. Introductions are an important way to set the proper expectations of a bot.
+The first thing you'll need to do is create an introduction. This is the first message your users will  see, the dialog your bot will use to introduce itself and help users understand its functionalities. Introductions are an important way to set the proper expectations of a bot.
 
 * You can edit the introduction by clicking the `introduction` bot dialog.
 
 {% hint style="info" %}
-**What is a bot dialog?** A bot dialog is a something that the bot will say or do when triggered by a user intent. This can be anything: from a message to a user to connecting to an external system and jumping to a different dialog in the flow.
+**What is a bot dialog?** A bot dialog is a something that the bot will say or do when triggered by a user [intent](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp#intent) or user message. This can be anything: from a message to a user to connecting to an external system, giving a message back and jumping to a different dialog in the flow. We will come back to the [four different types ](https://docs.chatlayer.ai/bot-answers/dialog-state)of bot dialogs. 
 {% endhint %}
 
-![](../.gitbook/assets/image%20%28143%29.png)
+![](../.gitbook/assets/image%20%28459%29.png)
 
-Chatlayer.ai supports multiple media types. Depending on the channel your bot will use \(Facebook, Slack, Skype, Google Home, ...\) these will be rendered slightly differently. Since this is our first bot and our first message, let's start with a simple text message:
+{% hint style="warning" %}
+Chatlayer.ai supports multiple media types. Depending on the channel your bot will use \(Facebook, Slack, Skype, Google Home, ...\) these will be rendered slightly differently.  For now that is not a problem, but check out [this ](https://docs.chatlayer.ai/channels/multi-channel)page when you start building on your 'real' bot.
+{% endhint %}
 
-* Delete the predefined greeting message by clicking the Trash icon.
+Since this is our first bot and our first message, let's start with a simple text message:
+
+* Delete the predefined greeting message by selecting the following text:
 
 > Hello. Please configure the introduction dialog state with a meaningful message.
 
@@ -74,23 +78,23 @@ Chatlayer.ai supports multiple media types. Depending on the channel your bot wi
 
 The result will be:
 
-![](../.gitbook/assets/bot-message.png)
+![](../.gitbook/assets/image%20%28427%29.png)
 
-Just like in normal conversations, your users will find it weird if your bot always replies with the exact same message. That's why we support random messages. 
+Just like in normal conversations, your users will find it weird if your bot always replies with the exact same message. That's why we support random messages. A random message means that the different messages will be alternated, so sometimes the first message will show, sometimes the second one.
 
 In the Text Message block, you can add multiple versions of the same message. The bot will randomly pick one of these messages to show to the user, making your dialogue more natural and human-like.
 
-* To add a random message, click on  `Add random message` and enter the following text: _"How can I help you today?"_
+* To add a random message, click on  `+ Add random message` and enter the following text: _"What can I do for you?"_
 
 Tip: you can add as many random messages as you like. 
 
-![](../.gitbook/assets/image%20%2891%29.png)
+![](../.gitbook/assets/image%20%28451%29.png)
 
 * Click on `Save` to save your `introduction` bot dialog.
 
-### Testing your greeting
+## Step 2: Testing your greeting
 
-Time to check if we configured everything correctly. To do so, it's not necessary to publish your bot already. You can test your bot by using our built-in emulator.
+Time to check if we configured everything correctly. You can test your bot by using our built-in emulator.
 
 * Click on the Emulator icon in the lower right corner to test your bot:
 
@@ -103,6 +107,19 @@ _PS: You can ignore the debug button on the left for now, though this will be us
 ![](../.gitbook/assets/image%20%28228%29.png)
 
 Congrats, you just created your first bot dialog! 🥳
+
+## Lesson recap
+
+You now have the done the following:
+
+* Created your own tutorial bot
+* Changed the introduction message
+  * Added a new message and a random message
+
+You should now know:
+
+* How to change a bot message
+* What the emulator is, and how to check your bot message in the emulator
 
 {% hint style="info" %}
 In the [next tutorial](tutorial-adding-content.md), you will learn to set up questions which the user may ask the bot, and how to create a bot response.

@@ -1,11 +1,10 @@
----
-description: >-
-  In the previous tutorial, we created a new bot and added a greeting. Now it's
-  time to add some more content. We will start with some basic bot responses to
-  users' frequently asked questions.
----
-
 # Adding content to your bot
+
+In the previous tutorial, we created a new bot and added a greeting. Now it's time to add some more content. We will start with some basic bot responses to users' frequently asked questions.
+
+## The basics of bot building
+
+In this lesson, we are going to add intents to the Choo Choo bot. We will learn more about the NLP engine and how to update the NLP in your bot, and also how to link intents and messages. 
 
 ## The NLP engine
 
@@ -13,9 +12,9 @@ Before we create some more dialogs, we'd like to tell you about the NLP engine f
 
 > Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. It's not so different for computers either. To train an NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in already.
 
-## Adding an intent
+## Step 3: Adding an intent
 
-An intent is a specific question from your user or an action they can do.   
+An intent is a specific question from your user or an action they can do. Users will type their question in the bot, which can be recognised by the NLP engine and linked to an intent.  
   
 For example: an intent can be a question, a statement, an answer to a question, or a greeting. Each intent can be expressed in many different ways, we call these different ways of saying the same thing **expressions**.
 
@@ -46,15 +45,22 @@ For this tutorial, we want to give Choo Choo the ability to answer basic questio
 
 * On the left side of the screen in the navigation menu, click on `NLP` to navigate to the NLP module. Click the `Intents` submenu.
 
-![](../.gitbook/assets/image%20%28164%29.png)
+![](../.gitbook/assets/image%20%28437%29.png)
 
-* Click on `+ Add Intent` and name it `who are you`
 
-![](../.gitbook/assets/screenshot-2019-04-02-at-13.25.38.png)
 
-### Adding expressions
+* Click on `Add Intent` and name it `who are you`
 
-Now we have to train the NLP to recognise this Intent. We do this by adding Expressions. Expressions are different ways your users will express one Intent. 
+![](../.gitbook/assets/image%20%28454%29.png)
+
+* Click on `Create`
+* Now you see that the intent is successfully created, without any expressions added to it \(that is what the '0' means below the language\)
+
+![](../.gitbook/assets/image%20%28447%29.png)
+
+## Step 4: Adding expressions
+
+Now we have to make sure the NLP recognises this Intent. We do this by adding Expressions. Expressions are different ways your users will express one Intent. Just like in real life, there are more ways how you can say a certain thing or ask a question. This is the same in botbuilding.
 
 {% hint style="info" %}
 Expressions are another word for what is sometimes called 'Utterances'
@@ -62,8 +68,8 @@ Expressions are another word for what is sometimes called 'Utterances'
 
 The more Expressions you add to an Intent, the more accurately it will be recognised. It is crucial for an Intent to have a wide variety of expressions to give accurate results. The more expression you can think of, the better the result of the NLP will be and the 'smarter' your bot will appear.
 
-* Select the `who are you` intent in the **Intents** pane
-* Click on `+ Add Expression` in the **Expressions** pane
+* Select the `who are you` intent in the **Intents** pane on the left hand side
+* The **Expressions** pane will open in the right. Click on `Add Expression` 
 * Enter `Who are you?` in the open text field
 * Click on `Create`
 
@@ -73,7 +79,7 @@ Your screen should look like this:
 
 ![](../.gitbook/assets/image%20%28333%29.png)
 
-Add some more expressions:
+Add some more expressions by clicking `Add Expression`:
 
 * What is your name?
 * Can I know your name?
@@ -87,13 +93,17 @@ Add some more expressions:
 * Are you a train?
 * Do you have a name?
 
-Again, the more expression you have, the more accurate your bot will be able to respond. Later on, we will see how we can make sure that our bot gets smarter over time, by looking at actual user input once the bot is made public.
-
 {% hint style="info" %}
-It’s important to have a roughly equal number of expressions for each intent. Even if it usually takes more examples to train your most important intent than your second-order ones, strive to keep their number of expressions around the same amount. This helps avoid a bias towards intents with a large expression count.
+After you have finished an expression, press Shift + Enter to save that Expression and add a new one.
 {% endhint %}
 
-### Training the model
+This will result in the following:
+
+![](../.gitbook/assets/image%20%28450%29.png)
+
+Again, the more expressions you have, the more accurate your bot will be able to respond. Later on, we will see how we can make sure that our bot gets smarter over time, by looking at actual user input once the bot is made public.
+
+Let's try adding another intent and expressions:
 
 Add another intent, like `Greeting` and add some expressions:
 
@@ -103,14 +113,15 @@ Add another intent, like `Greeting` and add some expressions:
 * Hi there
 * Good morning
 
-Tip: if two of your intents are very similar in terms of expressions’ syntax or content, you might want to merge them. For example, let's look at our bot responsible for booking train tickets. Imagine you'd also like to offer bus tickets. You could create an extra intent for booking bus tickets, but the expressions in each intent would be very similar, with only the transportation mode changing from time to time. It would be better to only have one intent handling reservations, and an **entity** to catch the requested vehicle type.   
-We will look at entities in the next tutorial.
-
 We have defined two intents now: who are you & greeting.
 
 ![](../.gitbook/assets/intents%20%281%29.png)
 
-To update the bot, we now need to re-train the NLP.
+However, if we were now to say 'Good morning' to the bot emulator, nothing will happen. That is because the NLP is not trained yet, and the intent is not yet linked to a bot dialog. We will work on that in the next steps.
+
+## Step 5: Training the model
+
+To update the bot, we now need to re-train the NLP. Updating the NLP means that the newly added intents and expressions will be recognised by the bot so we can use them in a conversation.
 
 {% hint style="info" %}
 To successfully train the NLP, you need to have at least two intents with a minimum of 5 expressions each.
@@ -128,16 +139,18 @@ Click on `Update` to start the training. This can take a couple of minutes to on
 
 ![](../.gitbook/assets/updatenlp.png)
 
-### Linking the intent and defining a response <a id="defineresponse"></a>
+That was a great first step to use the 'Greeting' and 'How are you' intent. The next step is to link these intents in the bot dialogs. 
 
-You have now taught the NLP to understand your query, congrats! The only thing left to do is teaching Choo Choo how to respond. You can do this by adding a new Bot dialog.
+## Step 6: Linking the intent and defining a response
+
+You have now taught the NLP to understand your intents and expressions, congrats! The only thing left to do is teaching Choo Choo how to respond. This means we are going to choose what the response \(or flow\) should be for each intent. You can do this by adding a new Bot dialog.
 
 * Click on Bot dialogs menu item in the navigation pane
 * Open the General flow
-* Click on `+ Bot message`
+* Click on the grey button on top  `+ Bot message`
 * Enter `who are you` as the name
 * Choose the `introduction` dialog state as the parent
-* Link the intent to the bot dialog in the bot dialog NLP tab
+* Link the intent to the bot dialog in the bot dialog NLP tab as follows:
 
 ![](../.gitbook/assets/image%20%2822%29.png)
 
@@ -147,34 +160,37 @@ You have now taught the NLP to understand your query, congrats! The only thing l
 
 Your screen should look like this:
 
-![](../.gitbook/assets/image%20%28116%29.png)
-
-{% hint style="info" %}
-You can view the intents linked to a bot dialog, along with input and output context in the bot dialog box.
-
-![](../.gitbook/assets/image%20%28231%29.png)
-{% endhint %}
+![](../.gitbook/assets/image%20%28423%29.png)
 
 * Click on `Create`
+* This will result in the folowing overview in the flow:
 
 ![](../.gitbook/assets/image%20%28342%29.png)
 
-We have defined the `introduction` bot dialog as the parent dialog state here. Parent bot dialogs do not limit or define the possible flow of the dialogue, they are a visual tool to structure the conversational flow and keep the overview. They make it easier to create complex conversational flows. Bot dialogs can be reached from any point in the conversation by linking a bot dialog to an intent, although you can restrict them too by using Contexts. This mimics the way humans talk, jumping from one subject to another.
+The image below means that a certain intent is linked to that bot dialog. 
 
-### Adding multiple messages
+![](../.gitbook/assets/image%20%28455%29.png)
 
-As an exercise, you can now add multiple messages to the `who are you` bot message.  You can do this via Bot Dialogs &gt; Flow &gt; Edit 'Who are you' Bot Message.
+If you now say 'Who are you' in the emulator, you immediately get the response that is typed in the 'Who are you' bot dialog.
 
-Update the single message to show multiple messages:
+![](../.gitbook/assets/image%20%28460%29.png)
+
+We have defined the `introduction` bot dialog as the parent dialog state in the `who are you` bot dialog. Parent bot dialogs do not limit or define the possible flow of the dialogue, they are a visual tool to structure the conversational flow and keep the overview. They make it easier to create complex conversational flows. Bot dialogs can be reached from any point in the conversation by linking a bot dialog to an intent, although you can restrict them too by using Contexts. This mimics the way humans talk, jumping from one subject to another.
+
+## Step 7: Adding multiple messages
+
+As an exercise, you can now add multiple messages to the `who are you` bot message. Open the `who are you` bot message again and update the single message to show multiple messages:
 
 * `I'am Choo Choo.`
 * `Your train traveling assistant.`
 * `You can book a train ticket or ask my support.`
 * `After your booking I'll keep you updated about train details so you don't have to worry about your journey.`
 
-This makes your bot more user-friendly and human.
+This makes your bot more user-friendly and human. This will result in the following:
 
-### Testing your bot
+![](../.gitbook/assets/image%20%28430%29.png)
+
+## Step 8: Testing your bot
 
 Time to test your bot! Click on `Test your bot` at the bottom right to test your conversational flow. To get a feel of your bot's performance, ask the same question a couple times, including different ways of asking the question that are different to the expression you used to train. If a question is not recognized correctly when it should be, you'll have to go back to the `NLP` tab, add the questions as an expression, and retrain the NLP model. You can do this as many times as needed, the model will just keep on improving.
 
@@ -184,17 +200,24 @@ Time to test your bot! Click on `Test your bot` at the bottom right to test your
 This 'Test your bot' is also referred to as the emulator.
 {% endhint %}
 
-Open the Debugger and select a user message in the `Messages` list to retrieve detailed information about the bot's response message, the user funnel and context, Natural Language Processing results and user session data. 
+## Lesson recap
 
-### Using multiple languages
+Now, you have a bot with the following configuration:
 
-To configure the translations of the secondary language message and other text, go to the `Translations` module under the `Bot dialogs` tab. For more information, see the [Translations](../bot-answers/dialog-state/translations.md) module in this documentation.
+* 2 intents \('Greeting' and 'Who are you'\) and their expressions
+* A bot message 'Who are you', with the intent 'Who are you' and four text messages in it. 
 
-When you have created a multilingual bot, you will notice that you can switch the active language in quite a few pages in the menu bar at the top, upper right. You can add expressions for all intents in the secondary language \(if you have one\) in the NLP tab.
+You  should now be familiar with:
 
-![](../.gitbook/assets/image%20%28176%29.png)
+* Adding an intent to a bot dialog
+* Creating intents and expressions
+* Training the NLP to use these intents and expressions
+* Adding multiple text messages in one bot message
+* Testing your intent and messages in the emulator
 
-For more information on how to retrieve the user's preferred language, head to [Multi-language bots](../understanding-users/multilanguage-bots.md).
+If any of these topics are difficult for you, revisit them in the tutorial or search on the page in the top right search bar to learn more about a topic.
+
+
 
 {% hint style="info" %}
 The [next tutorial](tutorial-getting-information-using-entities.md) is about getting user input.   

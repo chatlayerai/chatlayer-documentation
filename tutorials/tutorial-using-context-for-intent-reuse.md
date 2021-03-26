@@ -1,7 +1,7 @@
 # Reusing intents with context
 
 {% hint style="info" %}
-Context can be used to reuse intents across several bot dialogs. Learn more about the concept of context [here](https://app.gitbook.com/@chatlayer/s/chatlayer-documentation/~/drafts/-MIZHNX0kLbXdbSP80Xb/understanding-users/using-context).
+Context can be used to reuse intents across several bot dialogs. Learn more about the concept of context [here](https://docs.chatlayer.ai/understanding-users/using-context).
 {% endhint %}
 
 So, you've created the following two intents:
