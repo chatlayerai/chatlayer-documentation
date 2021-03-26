@@ -103,7 +103,8 @@
 ## Support
 
 * [Get in touch](support/get-in-touch.md)
-* [What's new](support/whats-new.md)
+* [What's new](support/whats-new/README.md)
+  * [Documentation](support/whats-new/documentation.md)
 * [Frequently Asked Questions \(FAQ\)](support/frequently-asked-questions.md)
 * [Platform Glossary](support/glossary.md)
 * [Status](https://status.chatlayer.ai/)
