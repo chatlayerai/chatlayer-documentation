@@ -1,21 +1,19 @@
 # Context
 
-{% hint style="info" %}
-Context is used to reuse intents across several bot dialogs. Learn more about how to use context in [this tutorial](https://app.gitbook.com/@chatlayer/s/chatlayer-documentation/~/drafts/-MIZHNX0kLbXdbSP80Xb/understanding-users/using-context).
-{% endhint %}
+Contexts can be used to reuse intents across several bot dialogs. In a bot you need the same intents, for example 'yes', multiple times. But how would the bot recognize which 'yes' intent the user means? That is what contexts are for.
 
-## Example
+
 
 Consider the following dialog tree:
 
 * Bot dialog `ask confirmation of pizza order`
 
-  * Bot dialog `confirm order` - Intent: positive \(yes\)
-  * Bot dialog `change order` - Intent: negative \(no\)
+  * Bot dialog `confirm order` - Intent: **yes**
+  * Bot dialog `change order` - Intent: **no**
 
 * Bot dialog `another joke?`
-  * Bot dialog `second joke` - Intent: positive \(yes\)
-  * Bot dialog `no more jokes` - Intent: negative \(no\)
+  * Bot dialog `second joke` - Intent: **yes**
+  * Bot dialog `no more jokes` - Intent: **no**
 
 We have two separate conversations in this tree. The first one orders a pizza and ends by asking the user to confirm the order. The second conversation tells our user a joke and asks if they would like to hear another one.
 
@@ -26,7 +24,13 @@ To make that happen, we need to reuse the '_Yes'_ intent for both bot dialogs. H
 * Set the output context of the `ask confirmation of pizza order` bot dialog to **confirmingpizza.** The default value of the lifespan will be 1, you can leave that for now
 * Next, in the bot dialog `confirm order`, specify that **confirmingpizza** needs to be the input context
 
+![](../.gitbook/assets/image%20%28466%29.png)
+
 ![](../.gitbook/assets/image%20%2857%29.png)
+
+![](../.gitbook/assets/image%20%28467%29.png)
+
+![](../.gitbook/assets/image%20%28465%29.png)
 
 Similarly, you can specify the output context of the `another joke?` bot dialog to **joking** and require **joking** as a required context for the bot dialog `second joke`.
 
@@ -46,6 +50,10 @@ You can repeat this configuration for the 'no' intent as well. In the end, you w
 Of course, you don't want the user to be limited to this context for the rest of the conversation. After saying 'yes' to the initial question, every other expression similar to 'yes' can be an answer to a different question.
 
 To configure this, you can define the **lifespan** of the output context. Each time the user enters a dialog state with an output configured, this context is added to his session with an initial lifespan value as defined in the bot dialog settings. For each user message, the lifespan of a context is decreased by one. When the value is 0, the context is removed from the session.
+
+{% hint style="info" %}
+For each user message, the lifespan of a context is decreased by one. A user can have multiple contexts with different lifespan values.
+{% endhint %}
 
 ![](../.gitbook/assets/image%20%28190%29.png)
 

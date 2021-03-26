@@ -9,7 +9,6 @@
 * [Adding content to your bot](tutorials/tutorial-adding-content.md)
 * [Get data from an expression with contextual entities](tutorials/tutorial-getting-information-using-entities.md)
 * [Get data with an input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
-* [Reusing intents with context](tutorials/tutorial-using-context-for-intent-reuse.md)
 * [Flow navigation with variables](tutorials/tutorial-conditional-flow-navigation.md)
 
 ## Understanding users
