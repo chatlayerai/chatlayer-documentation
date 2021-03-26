@@ -58,6 +58,10 @@ Here are some tips & tricks for creating good expressions:
 
 Entities are words or small groups of words that are particularly relevant for your bot flow. They can be names of people or organisations, cities, products, brands, companies, street names and so on. 
 
+{% hint style="info" %}
+We recommends adding at least 30 expressions per entity, to guarantee the quality of the entity detection.
+{% endhint %}
+
 Entities should only be used if their value is needed in the bot flow. For instance, if your bot allows for asking information about a certain product and you need to recover the name of that product to look up the necessary information in a database, you can use entities. If your bot simply redirects to a web page with an overview of all products, you do not need entities. 
 
 When adding entities to your training data, take the following things into account:
