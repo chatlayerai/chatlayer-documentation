@@ -1,6 +1,6 @@
-# Sparkcentral
+# Sparkcentral by Hootsuite
 
-Sparkcentral allows you to manage all your asynchronous messaging channels with human and virtual customer service agents.
+[Sparkcentral by Hootsuite](https://sparkcentral.com/) allows you to manage all your asynchronous messaging channels with human and virtual customer service agents.
 
 ## Retrieving Sparkcentral API credentials
 

@@ -58,7 +58,7 @@
   * [Help Scout](integrations/human-offloading-live-chat/helpscout.md)
   * [Zendesk Chat](integrations/human-offloading-live-chat/zendesk-chat.md)
   * [Intercom](integrations/human-offloading-live-chat/intercom-integration.md)
-  * [Sparkcentral](integrations/human-offloading-live-chat/sparkcentral-beta.md)
+  * [Sparkcentral by Hootsuite](integrations/human-offloading-live-chat/sparkcentral-beta.md)
   * [Creating a Zendesk Support Ticket](integrations/human-offloading-live-chat/creating-a-zendesk-support-ticket.md)
   * [Salesforce Service Cloud](integrations/human-offloading-live-chat/salesforce-service-cloud.md)
 
