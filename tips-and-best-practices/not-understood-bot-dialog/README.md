@@ -5,7 +5,7 @@ Whenever an intent is not recognized above your [threshold](https://docs.chatlay
 There are several ways on how to improve your user experience for the 'not understood' bot dialog:
 
 * Create a [counter ](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog/not-understood-counter)where, after a certain amount of times the user sees a different 'not understood' message than the first message
-* Create a [google search](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog/not-understood-google-search) for 'not understood' messages
+* Create a [google search](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog/not-understood-google-search) for 'not understood' messages 
 
 
 
