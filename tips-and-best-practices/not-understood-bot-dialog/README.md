@@ -4,9 +4,13 @@ Whenever an intent is not recognized above your [threshold](https://docs.chatlay
 
 There are several ways on how to improve your user experience for the 'not understood' bot dialog:
 
-{% page-ref page="./" %}
+
 
 {% page-ref page="./" %}
+
+
+
+
 
 
 
