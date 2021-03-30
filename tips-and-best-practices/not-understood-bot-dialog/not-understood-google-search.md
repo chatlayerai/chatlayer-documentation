@@ -1,4 +1,4 @@
-# 'Not understood' Google search
+# Not understood Google search
 
 What if a user asks a question that is outside of the bot's scope? Or what if your bot can't understand the user input? One of the things you can do is show a 'not understood' bot dialog message, which usually leads to an offloading action. It works well, but what if there's a more user-friendly way for the user to still get the answer to their question without offloading or leaving the bot?  
 
