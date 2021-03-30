@@ -92,6 +92,7 @@
 * [Creating a good chatbot](tips-and-best-practices/what-makes-a-good-chatbot.md)
 * [Not understood bot dialog](tips-and-best-practices/not-understood-bot-dialog/README.md)
   * [Not understood counter](tips-and-best-practices/not-understood-bot-dialog/not-understood-counter.md)
+  * [Go to previous bot dialog](tips-and-best-practices/not-understood-bot-dialog/go-to-previous-bot-dialog.md)
   * [Not understood Google search](tips-and-best-practices/not-understood-bot-dialog/not-understood-google-search.md)
 
 ## Tutorials <a id="tutorials-1"></a>
