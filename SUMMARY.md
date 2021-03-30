@@ -90,10 +90,12 @@
 * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
 * [Solving bot issues](tips-and-best-practices/why-is-my-bot-not-responding-the-way-i-want-it-to.md)
 * [Creating a good chatbot](tips-and-best-practices/what-makes-a-good-chatbot.md)
+* [Not understood bot dialog](tips-and-best-practices/not-understood-bot-dialog/README.md)
+  * [Not understood counter](tips-and-best-practices/not-understood-bot-dialog/not-understood-counter.md)
+  * ['Not understood' Google search](tips-and-best-practices/not-understood-bot-dialog/not-understood-google-search.md)
 
 ## Tutorials <a id="tutorials-1"></a>
 
-* ['Not understood' Google search](tutorials-1/not-understood-google-search.md)
 * [Recognizing a returning user](tutorials-1/how-to-recognize-a-returning-bot-user.md)
 * [Gathering user feedback](tutorials-1/gathering-user-feedback.md)
 * [Using time in your chatbot](tutorials-1/using-time-in-your-chatbot.md)
