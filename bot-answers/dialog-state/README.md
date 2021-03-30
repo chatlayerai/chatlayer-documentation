@@ -22,7 +22,7 @@ Some tips on choosing how to group flows:
 
 ### Bot dialog types
 
-There are 4 kinds of bot dialogs, each with its own color and functionalities:
+There are 4 kinds of bot dialogs, each with its own colour and functionalities:
 
 ![](../../.gitbook/assets/image%20%28152%29.png)
 
@@ -101,13 +101,23 @@ To set a required context for a certain bot dialog, type the name of your contex
 
 To learn more about using context, see our [Context concepts documentation](../../understanding-users/using-context.md).
 
-![](../../.gitbook/assets/image%20%28245%29.png)
+## Default bot dialogs
 
-### Output contexts
+Every bot, when created, has a set of standard bot dialogs.
 
-To set an output context for a certain bot dialog, type the name of your context in the `Search or create output context` field. If it doesn't exist, a new context will be created. An existing context will be reused. You can also click on the available contexts to select a specific one.  
-  
-The number on the left of the context name is the **lifetime** of that context. For example: if you specify a lifetime of 3, this context will remain active for 3 user messages in a row. After the user has entered three messages, this context will not be active anymore. Combine multiple input contexts for sub flows in flows.
+### Bot Disabled
 
-![](../../.gitbook/assets/image%20%2829%29.png)
+The Bot Disabled bot dialog will only be triggered if you explicitly disable your bot. You can do this in the 'Settings &gt; Bot' page. Let's say you want to disable the bot for 1 day, then you can show a message like 'At this moment I can not help you further, please contact our support service through &lt;email&gt; or call us on &lt;phone&gt; if you have any questions' in that bot dialog.
+
+### Error occurred
+
+The error occurred bot dialog will be triggered if an API integration fails to complete a certain request. For example, let's say you perform an API call to an external system from an API Action bot dialog to retrieve details about a product. If the external API throws an error, the conversation will automatically be redirected to the Error Occurred bot dialog.
+
+### Not understood
+
+Whenever an intent is not recognized above your [threshold](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/settings), the bot will refer to 'not understood'. Please find more information on how to configure different 'not understood' options [here](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog).
+
+
+
+The other system bot dialogs are specifically related to our Offloading feature \(redirecting your users from the bot to a human\). You can find more information about them in our documentation: [https://docs.chatlayer.ai/integrations/human-offloading-live-chat\#human-handover-bot-dialogs](https://docs.chatlayer.ai/integrations/human-offloading-live-chat#human-handover-bot-dialogs).
 
