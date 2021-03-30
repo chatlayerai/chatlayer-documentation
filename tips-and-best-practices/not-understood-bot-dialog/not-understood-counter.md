@@ -2,7 +2,7 @@
 
 You can create a counter for the 'not understood' bot dialog. For example, you can initiate a human offloading whenever the bot has returned 'not understood' three times in a row. This article will explain on how to configure such a counter.
 
-## 1: Change bot dialog type
+## 1. Change bot dialog type
 
 Go to your 'not understood' bot dialog and change the type to 'Go To' 
 
