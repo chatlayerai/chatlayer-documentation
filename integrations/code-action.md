@@ -248,5 +248,18 @@ chatlayer.setSessionVariable('profile', userProfile)
 chatlayer.send()
 ```
 
+### Creating a slight delay between bot messages
 
+Sometimes you want to create a slight delay between bot messages, either to create a natural pauze between them or because you need a few seconds to make an API call and don't want the bot to just be silent. Either way, slight pauzes can improve the user experience a lot. 
+
+To create a short delay of two seconds, add an 'Action' dialog and paste the following code:
+
+```javascript
+const builder = ChatlayerResponseBuilder();
+
+await new Promise((resolve)=>{_.delay(resolve,2000)});
+builder.send()
+```
+
+_You can adjust the length of the delay by replacing the 2000 with 3000 \(3 seconds\) etc._
 
