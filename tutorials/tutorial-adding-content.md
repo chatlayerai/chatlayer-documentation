@@ -149,7 +149,7 @@ You have now taught the NLP to understand your intents and expressions, congrats
 * Open the General flow
 * Click on the grey button on top  `+ Bot message`
 * Enter `who are you` as the name
-* Choose the `introduction` dialog state as the parent
+* Choose the `introduction` dialog state as the parent \(in the Settings tab\)
 * Link the intent to the bot dialog in the bot dialog NLP tab as follows:
 
 ![](../.gitbook/assets/image%20%2822%29.png)
