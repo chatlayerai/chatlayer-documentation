@@ -4,6 +4,10 @@ The Natural Language Processing \(NLP\) engine is the underlying code that's use
 
 Understanding language isn't easy: it takes us humans about 12 years and hundreds of examples to understand the most common 20,000 words. And computers are not so different. To train an NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in. Our NLP engine will take care of spelling mistakes, synonyms, slang, varying word order, etc ...
 
+{% hint style="warning" %}
+Please note that our NLP engine has a limit of 1000 characters. That means, messages with &gt; 1000 characters will always go to 'not understood'. 
+{% endhint %}
+
 ## Intent
 
 An intent is a joint name for a specific action your user can take. Intents are single blocks of meaning that the NLP can recognise. For example, an intent can be a question, a statement, an answer to a question or a greeting.
