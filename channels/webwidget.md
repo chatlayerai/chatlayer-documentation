@@ -31,7 +31,7 @@ On the Chat Widget page you can customize a number of key chat widget components
 * **Translations tab**
   * Translations for the default chat widget messages such as "Write reply..."
 
-## Custom CSS test
+### Custom CSS test
 
 To make your Chat Widget look customized as per your need, you can upload your own CSS. Please see the following list of CSS classes that you can use to customize your Chat Widget:
 
