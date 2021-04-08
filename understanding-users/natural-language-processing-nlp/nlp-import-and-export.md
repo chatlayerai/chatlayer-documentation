@@ -16,9 +16,11 @@ The second step lets you choose between **adding** to or **replacing** your exis
 
 ![](../../.gitbook/assets/image%20%28252%29.png)
 
-Chatlayer's NLP engine will recognize each expression and will not accept duplicate expressions, so be careful while adding expressions while importing a large number of expressions at a time. When you add expressions manually, there is a check if that expression already exists. This also happens when adding a new import file, but it can be difficult to find which expression is a duplicate. Try these steps to see which expression in a duplicate:
+Chatlayer's NLP engine will recognize each expression and will not accept duplicate expressions, so be careful while adding expressions when importing a large number of expressions at a time. When you add expressions manually, there is a check if that expression already exists. This also happens when adding a new import file, but it can be difficult to find which expression is a duplicate. Try these steps to see which expression in a duplicate:
 
+{% hint style="danger" %}
 Please make sure to **backup your data** before you do these steps because these steps cannot be reversed.
+{% endhint %}
 
 1. Make sure you export your current expressions. 
 2. Now add your new expressions with the one that you just exported. \(Make sure you don't replace your backup that you just downloaded\).
