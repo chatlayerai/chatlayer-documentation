@@ -31,6 +31,53 @@ On the Chat Widget page you can customize a number of key chat widget components
 * **Translations tab**
   * Translations for the default chat widget messages such as "Write reply..."
 
+## Custom CSS
+
+To make your Chat Widget look customized as per your need, You can upload your own CSS. We provide following  list of CSS classes that you can make change to to customize your Chat Widget:
+
+* ChatTitle
+* ChatTitleBar
+* ChatTitleImage
+* wrapper
+* BotImage
+* userImage
+* container
+* chatBalloon-default
+* chatBalloon-user
+* chatBalloon-bot
+* chatBalloon-agent
+* ChatInputContainer
+* ChatInputText-container
+* ChatInputText-textarea
+* chatQuickReplies-container
+* buttons-image
+* buttons-textimage
+* buttons-default
+* chatTemplate-buttonTemplate-container
+* chatTemplate-buttonTemplate-buttons-default
+* chatTemplate-buttonTemplate-buttons-unknown
+* chatTemplate-buttonTemplate-buttons-header
+* chatTemplate-listTemplate-button
+* chatTemplate-listTemplate-container
+* chatTemplate-element-container
+* chatTemplate-element-column
+* chatTemplate-element-image
+* chatTemplate-element-title
+* chatTemplate-element-subtitle
+* chatTemplate-element-button
+* chatTemplate-chatImage-container
+* chatTemplate-chatVideo-container
+* chatTemplate-chatAudio-container
+* chatTemplate-chatClarousel-element-container
+* chatTemplate-chatCarousel-element-image
+* chatTemplate-chatCarousel-element-title
+* chatTemplate-chatCarousel-element-subtitle
+* chatTemplate-chatCarousel-element-button
+* chatTemplate-chatCarousel-element-prevButton
+* chatTemplate-chatCarousel-element-prevButtonIcon
+* chatTemplate-chatCarousel-element-nextButton
+* chatTemplate-chatCarousel-element-nextButtonIcon
+
 ### Whitelisting
 
 To make sure your bot can only be activated on your website, all your chat widgets must be whitelisted before you can use them. To do this, go to the config tab of the Chat Widget builder and add a regular expression that matches the domain names that you wish to whitelist. 
