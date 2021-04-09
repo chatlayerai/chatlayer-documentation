@@ -36,7 +36,25 @@ Depending on the size of your bot, the export could take up to 30 minutes to fin
 
 ![](../../.gitbook/assets/image%20%28322%29.png)
 
-Importing a bot can take up to 30 minutes. The uploaded file will be imported to the DRAFT version of the bot. Read what is included in this import / export [here](https://docs.chatlayer.ai/support/whats-new#bot-import-export-in-beta).
+Importing a bot can take up to 30 minutes. The uploaded file will be imported to the DRAFT version of the bot.
+
+The export contains:
+
+* NLP
+  * Intents
+  * Expressions
+  * Entities
+* Bot dialogs
+  * Flows
+  * Messages and translations
+  * Variables
+
+The export does not contain:
+
+* Conversation history
+* Analytics
+* Channel settings
+* Bot settings
 
 {% hint style="warning" %}
 Importing a bot will overwrite the current version of your bot. There is no way to recover a previous version of the bot

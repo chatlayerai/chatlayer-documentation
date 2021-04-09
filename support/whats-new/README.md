@@ -44,27 +44,11 @@ We released new types of entities. You can find all information about them here:
 
 ### Bot import/export \(in beta\)
 
-Save a copy of your bot in an export. The export contains:
+Save a copy of your bot in an export. Exporting a bot will result in a JSON file that you can download to your computer.
 
-* NLP
-  * Intents
-  * Expressions
-  * Entities
-* Bot dialogs
-  * Flows
-  * Messages and translations
-  * Variables
+This JSON file can be imported again to overwrite a bot with the data that is in the JSON file. Read more here:
 
-The export does not contain:
-
-* Conversation history
-* Analytics
-* Channel settings
-* Bot settings
-
-Exporting a bot will result in a JSON file that you can download to your computer.
-
-This JSON file can be imported again to overwrite a bot with the data that is in the JSON file.
+{% page-ref page="../../bot-answers/settings/" %}
 
 ### Sorting
 
