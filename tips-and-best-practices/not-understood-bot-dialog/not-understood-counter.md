@@ -28,6 +28,8 @@ The second condition is to check if there is already 2 times in a row a 'Not und
 
 The final condition is to add an [increment ](https://docs.chatlayer.ai/bot-answers/settings/secure-variables-gdpr#incrementing-variable-counter)for the variable. This means that automatically the bot will add one to the variable of `not_understood_counter`
 
+Add the following in the value field: `{not_understood_counter|increment}`
+
 ![](../../.gitbook/assets/image%20%28474%29.png)
 
 ## 4. Fill in bot messages
@@ -36,13 +38,13 @@ This is now the result when the Go To is saved:
 
 ![](../../.gitbook/assets/image%20%28476%29.png)
 
-The 'Not understood message' is the message users will snot unee when there is one or two times in a row a 'Not understood'. Add a message such as 'I did not understand that, can you please repeat?'
+The 'Not understood message' is the message users will now see when there is one or two times in a row a 'Not understood'. Add a message such as 'I did not understand that, can you please repeat?'
 
 The 'Not understood 3 times in a row' bot message will be shown when there is 3 times in a row a not understood. Add, for example, buttons asking is the user would like an offloading to a human agent.
 
 ## 5. Fill in the bot id 
 
-Let's go back to the 'Not understood message'. Open this and copy the bot id in the URL bar:
+Let's go back to the 'Not understood message' bot message. Open this and copy the bot id in the URL bar:
 
 ![](../../.gitbook/assets/image%20%28468%29.png)
 
