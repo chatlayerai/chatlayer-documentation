@@ -8,7 +8,9 @@ Here you can find an overview of new articles in our documentation system. We tr
 
 ## April 2021
 
-* 
+* How to [debug ](https://docs.chatlayer.ai/tips-and-best-practices/solving-bot-issues)and solve common issues
+* An article on how to create specific ['not understood' messages](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog/intent-recognition-below-threshold) for intents below the threshold
+
 ## March 2021
 
 * Complete redesign of Choo Choo after our latest release 
