@@ -13,6 +13,9 @@
 
 ## Understanding users
 
+* [Context](understanding-users/using-context.md)
+* [Expression generator](understanding-users/expression-generator.md)
+* [Multilingual bots](understanding-users/multilanguage-bots.md)
 * [Natural Language Processing \(NLP\)](understanding-users/natural-language-processing-nlp/README.md)
   * [NLP threshold](understanding-users/natural-language-processing-nlp/settings.md)
   * [NLP import & export](understanding-users/natural-language-processing-nlp/nlp-import-and-export.md)
@@ -20,9 +23,6 @@
   * [NLP Dashboard & NLP Improve](understanding-users/natural-language-processing-nlp/nlp-dashboard-and-nlp-improve.md)
   * [Entities](understanding-users/natural-language-processing-nlp/synonym-entities.md)
   * [Supported languages](understanding-users/natural-language-processing-nlp/supported-languages.md)
-* [Expression generator](understanding-users/expression-generator.md)
-* [Context](understanding-users/using-context.md)
-* [Multilingual bots](understanding-users/multilanguage-bots.md)
 
 ## Bot management <a id="bot-answers"></a>
 
