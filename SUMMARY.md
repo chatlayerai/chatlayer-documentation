@@ -84,17 +84,19 @@
 ## Tips & Best practices
 
 * [Chatbot checklist](tips-and-best-practices/chatbot-checklist.md)
-* [NLP best practices](tips-and-best-practices/how-to-nlp.md)
-* [Voice design](tips-and-best-practices/voice-design/README.md)
-  * [From chat to voice](tips-and-best-practices/voice-design/from-chat-to-voice.md)
-* [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
-* [Solving bot issues](tips-and-best-practices/why-is-my-bot-not-responding-the-way-i-want-it-to.md)
 * [Creating a good chatbot](tips-and-best-practices/what-makes-a-good-chatbot.md)
+* [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
+* [NLP best practices](tips-and-best-practices/how-to-nlp.md)
 * [Not understood bot dialog](tips-and-best-practices/not-understood-bot-dialog/README.md)
   * [Not understood counter](tips-and-best-practices/not-understood-bot-dialog/not-understood-counter.md)
   * [Go to previous bot dialog](tips-and-best-practices/not-understood-bot-dialog/go-to-previous-bot-dialog.md)
   * [Intent recognition below threshold](tips-and-best-practices/not-understood-bot-dialog/intent-recognition-below-threshold.md)
   * [Not understood Google search](tips-and-best-practices/not-understood-bot-dialog/not-understood-google-search.md)
+* [Solving bot issues](tips-and-best-practices/why-is-my-bot-not-responding-the-way-i-want-it-to/README.md)
+  * [1. No correct response](tips-and-best-practices/why-is-my-bot-not-responding-the-way-i-want-it-to/1.-no-correct-response.md)
+  * [2. Input validation not working](tips-and-best-practices/why-is-my-bot-not-responding-the-way-i-want-it-to/2.-input-validation-not-working.md)
+* [Voice design](tips-and-best-practices/voice-design/README.md)
+  * [From chat to voice](tips-and-best-practices/voice-design/from-chat-to-voice.md)
 
 ## Tutorials <a id="tutorials-1"></a>
 
