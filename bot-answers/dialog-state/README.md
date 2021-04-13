@@ -119,5 +119,5 @@ Whenever an intent is not recognized above your [threshold](https://docs.chatlay
 
 
 
-The other system bot dialogs are specifically related to our Offloading feature \(redirecting your users from the bot to a human\). You can find more information about them in our documentation: [https://docs.chatlayer.ai/integrations/human-offloading-live-chat\#human-handover-bot-dialogs](https://docs.chatlayer.ai/integrations/human-offloading-live-chat#human-handover-bot-dialogs).
+The other system bot dialogs are specifically related to our Offloading feature \(redirecting your users from the bot to a human\). You can find more information about them in our [documentation](https://docs.chatlayer.ai/integrations/human-offloading-live-chat#human-handover-bot-dialogs.).
 

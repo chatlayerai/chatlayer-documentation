@@ -26,6 +26,8 @@
 
 ## Bot management <a id="bot-answers"></a>
 
+* [Analytics](bot-answers/analytics/README.md)
+  * [User flow](bot-answers/analytics/user-flow.md)
 * [Bot dialogs](bot-answers/dialog-state/README.md)
   * [Bot message](bot-answers/dialog-state/message-components.md)
   * [Go To](bot-answers/dialog-state/plugins.md)
@@ -33,14 +35,12 @@
   * [Action](bot-answers/dialog-state/action-bot-dialog.md)
   * [Translations](bot-answers/dialog-state/translations.md)
 * [Conversations](bot-answers/user-messages.md)
-* [Analytics](bot-answers/analytics/README.md)
-  * [User flow](bot-answers/analytics/user-flow.md)
-* [Publishing your bot](bot-answers/publishing-your-bot.md)
 * [Events](bot-answers/events.md)
-* [Team members, roles & bot access](bot-answers/user-management.md)
+* [Publishing your bot](bot-answers/publishing-your-bot.md)
 * [Settings](bot-answers/settings/README.md)
   * [Variables](bot-answers/settings/secure-variables-gdpr.md)
   * [SaaS Regions & IP Ranges](bot-answers/settings/saas-regions-and-ip-ranges.md)
+* [Team members, roles & bot access](bot-answers/user-management.md)
 
 ## Integrations
 
