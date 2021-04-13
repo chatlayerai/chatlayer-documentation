@@ -2,7 +2,7 @@
 
 Whenever an intent is recognized below the NLP threshold score, this will give the 'not understood' bot dialog:
 
-![](../../.gitbook/assets/image%20%28484%29.png)
+![](../../.gitbook/assets/image%20%28497%29.png)
 
 In the example above, we have a bot to check where ordered packages are. This is what the user would like to know, but a 'not understood' is returned because the Intent is recognized below 80% - the NLP threshold. This is not a great user experience, even though we are 60% sure of the question the user is asking.
 
@@ -16,7 +16,7 @@ In NLP &gt; NLP Threshold you can check what the current configuration is of you
 
 In the debugger, we need to get the variable for the intent recognition. Open de debugger after using an expression of choice, and find the `NLP` part:
 
-![](../../.gitbook/assets/image%20%28483%29.png)
+![](../../.gitbook/assets/image%20%28490%29.png)
 
 The variable we need for the score \(of 60,32% just like in the first image\) and for the name are:
 
@@ -28,11 +28,11 @@ The variable we need for the score \(of 60,32% just like in the first image\) an
 
 Now we need to change the 'not understood' bot message to a Go-To. 
 
-![](../../.gitbook/assets/image%20%28486%29.png)
+![](../../.gitbook/assets/image%20%28503%29.png)
 
 We need to create a condition for a specific intent. Let's configure that for the 'lost package' intent:
 
-![](../../.gitbook/assets/image%20%28482%29.png)
+![](../../.gitbook/assets/image%20%28487%29.png)
 
 Here, we will create two new bot messages: One specifically for lost packages expressions and a general one, for other intents.
 
@@ -47,7 +47,7 @@ Fill in the bot messages, in this example, we will do the following:
 
 Let's try again the sentence we used in the beginning of this tutorial:
 
-![](../../.gitbook/assets/image%20%28485%29.png)
+![](../../.gitbook/assets/image%20%28500%29.png)
 
 Voila! As you can see, the intent is still not recognized above 80%, but the user feels more understood this way. They can immediately correctly start their 'lost package' flow, without having to rephrase their question. A better user experience than what we started with in the beginning of this tutorial! 
 
