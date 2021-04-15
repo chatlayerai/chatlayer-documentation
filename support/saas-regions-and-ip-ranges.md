@@ -14,7 +14,7 @@ The Chatlayer SaaS application is deployed in the following locations:
   <tbody>
     <tr>
       <td style="text-align:left">EMEA</td>
-      <td style="text-align:left">St. Ghislain, Belgium</td>
+      <td style="text-align:left">Belgium</td>
       <td style="text-align:left">Live</td>
       <td style="text-align:left">
         <p>Staging: <a href="https://cms.staging.chatlayer.ai/">https://cms.staging.chatlayer.ai/</a>
@@ -27,7 +27,7 @@ The Chatlayer SaaS application is deployed in the following locations:
     </tr>
     <tr>
       <td style="text-align:left">NA + LATAM</td>
-      <td style="text-align:left">Virginia, USA</td>
+      <td style="text-align:left">East Coast USA</td>
       <td style="text-align:left">Live</td>
       <td style="text-align:left">
         <p>Staging: <a href="https://cms.staging.us-east4.gcp.chatlayer.ai/">https://cms.staging.us-east4.gcp.chatlayer.ai/</a>
@@ -37,16 +37,16 @@ The Chatlayer SaaS application is deployed in the following locations:
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">APAC</td>
-      <td style="text-align:left">Mumbai, India</td>
+      <td style="text-align:left">India</td>
+      <td style="text-align:left">India</td>
       <td style="text-align:left">Forthcoming</td>
-      <td style="text-align:left">Forthcoming</td>
+      <td style="text-align:left">Planned for Q2 2021</td>
     </tr>
   </tbody>
 </table>
 
 {% hint style="info" %}
-If you would like to switch your bots from one location to another, please [Get in Touch](../../support/get-in-touch.md) with us.
+If you would like to switch your bots from one location to another, please [Get in Touch](get-in-touch.md) with us.
 {% endhint %}
 
 ### IP's to be whitelisted <a id="To-be-whitelisted-by-customers"></a>

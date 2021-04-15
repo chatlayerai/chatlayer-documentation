@@ -39,7 +39,6 @@
 * [Publishing your bot](bot-answers/publishing-your-bot.md)
 * [Settings](bot-answers/settings/README.md)
   * [Variables](bot-answers/settings/secure-variables-gdpr.md)
-  * [SaaS Regions & IP Ranges](bot-answers/settings/saas-regions-and-ip-ranges.md)
 * [Team members, roles & bot access](bot-answers/user-management.md)
 
 ## Integrations
@@ -112,6 +111,8 @@
 * [What's new](support/whats-new/README.md)
   * [Documentation](support/whats-new/documentation.md)
 * [Frequently Asked Questions \(FAQ\)](support/frequently-asked-questions.md)
+* [SaaS Regions & IP Ranges](support/saas-regions-and-ip-ranges.md)
+* [Billing & subscription](support/billing-and-subscription.md)
 * [Platform Glossary](support/glossary.md)
 * [Status](https://status.chatlayer.ai/)
 
