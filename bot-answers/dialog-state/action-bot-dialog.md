@@ -17,7 +17,7 @@ Depending on your selected offloading provider, additional configuration may be 
 ## API
 
 This action can be used to integrate back-end services into your bot.   
-More details can be found in [our tutorial](https://app.gitbook.com/@chatlayer/s/chatlayer-documentation/~/drafts/-MIrr7mtVp_aqyzM-udL/integrations/custom-back-end-integrations).
+More details can be found in [our tutorial](https://docs.chatlayer.ai/integrations/custom-back-end-integrations).
 
 ## Code
 
