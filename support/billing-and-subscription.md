@@ -19,9 +19,3 @@ Some features are only included in some packs. For example, the following featur
 * [Salesforce Service Cloud integration](../integrations/human-offloading-live-chat/salesforce-service-cloud.md)
 * [Offloading webhook](../integrations/human-offloading-live-chat/offloading-webhook.md)
 
-## User messages
-
-Some legacy pricing plans are based on user messages. 
-
-A user message is every interaction from the user towards the bot. This can be a typed expression, but also a button click, a file upload, etc.
-
