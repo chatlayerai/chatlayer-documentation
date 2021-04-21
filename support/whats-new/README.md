@@ -8,6 +8,8 @@
 
 ![](../../.gitbook/assets/image%20%28413%29.png)
 
+* We have reworked out Translations table to be a lot faster, and more convenient to use.
+
 ## February 2021 Release
 
 ### New bot dialog components
