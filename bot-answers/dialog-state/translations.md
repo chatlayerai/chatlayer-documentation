@@ -8,7 +8,21 @@ This module automatically gathers all the strings that have to be translated or 
 
 You can filter on each column and combine filters.
 
-To edit a translation, first click the Edit button of a row. The displayed text will change into editable text boxes. Now enter the proper translation. To save the translation, click on the Save button.
+![](../../.gitbook/assets/image%20%28513%29.png)
 
-![](../../.gitbook/assets/image%20%2839%29.png)
+### Translations import & export
+
+By clicking the export button in the top right, you will receive an email containing a csv file of your translations. In this csv, you will find:
+
+* Flow id
+* Dialog id
+* Dialog name
+* The translation for each of the languages of your bot
+
+{% hint style="warning" %}
+Two things to take into account:
+
+* Don't use this export to create new messages, just to change the translations of existing messages. 
+* The translations of rich text messages will not be included in the export, use the interface to edit those.
+{% endhint %}
 

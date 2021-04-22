@@ -1,6 +1,13 @@
 # What's new
 
-## March 2021 Release
+## April 2021
+
+* Bot templates! You don't have to start from scratch 
+  * We will add more documentation on this soon.
+  * If you have ideas for new bot templates, [get in touch](../get-in-touch.md) with us.
+* Export/import of translations table: you can now edit the translations in an exported csv, and import them once you're done. Read more [here](../../bot-answers/dialog-state/translations.md).
+
+## March 2021
 
 * New role: you can add a member to a RESTRICTED bot as NLP-only now. Read more [here](../../bot-answers/user-management.md#bot-access).
 * Credit card payments: you can now pay for your Chatlayer subscription using a credit card.
@@ -10,7 +17,7 @@
 
 * We have reworked out Translations table to be a lot faster, and more convenient to use.
 
-## February 2021 Release
+## February 2021
 
 ### New bot dialog components
 
@@ -36,13 +43,13 @@ Read all about how to use team member roles & bot access:
 
 {% page-ref page="../../bot-answers/user-management.md" %}
 
-## December 2020 Release
+## December 2020
 
 We released new types of entities. You can find all information about them here:
 
 {% page-ref page="../../understanding-users/natural-language-processing-nlp/synonym-entities.md" %}
 
-## October 2020 Release
+## October 2020
 
 ### Bot import/export \(in beta\)
 
