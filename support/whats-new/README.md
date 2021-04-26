@@ -5,7 +5,7 @@
 * Bot templates! You don't have to start from scratch 
   * We will add more documentation on this soon.
   * If you have ideas for new bot templates, [get in touch](../get-in-touch.md) with us.
-* Export/import of translations table: you can now edit the translations in an exported csv, and import them once you're done. Read more [here](../../bot-answers/dialog-state/translations.md).
+* Export/import of translations table: you can now edit the translations in an exported csv, and import them once you're done. Read more [here](../../understanding-users/multilanguage-bots/translations.md).
 
 ## March 2021
 

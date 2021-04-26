@@ -1,4 +1,4 @@
-# Message objects for API's
+# Message objects for APIs
 
 Chatlayer.ai supports different types of chat messages, each with his own object structure. Chat messages can be sent:
 

@@ -15,7 +15,8 @@
 
 * [Context](understanding-users/using-context.md)
 * [Expression generator](understanding-users/expression-generator.md)
-* [Multilingual bots](understanding-users/multilanguage-bots.md)
+* [Multilingual bots](understanding-users/multilanguage-bots/README.md)
+  * [Translations](understanding-users/multilanguage-bots/translations.md)
 * [Natural Language Processing \(NLP\)](understanding-users/natural-language-processing-nlp/README.md)
   * [NLP threshold](understanding-users/natural-language-processing-nlp/settings.md)
   * [NLP import & export](understanding-users/natural-language-processing-nlp/nlp-import-and-export.md)
@@ -33,7 +34,6 @@
   * [Go To](bot-answers/dialog-state/plugins.md)
   * [Input Validation](bot-answers/dialog-state/user-input-bot-dialog.md)
   * [Action](bot-answers/dialog-state/action-bot-dialog.md)
-  * [Translations](bot-answers/dialog-state/translations.md)
 * [Conversations](bot-answers/user-messages.md)
 * [Events](bot-answers/events.md)
 * [Publishing your bot](bot-answers/publishing-your-bot.md)
@@ -46,9 +46,6 @@
 * [API integration](integrations/custom-back-end-integrations/README.md)
   * [Advanced API integrations](integrations/custom-back-end-integrations/advanced-api-integrations.md)
 * [Code Editor](integrations/code-action.md)
-* [Message objects for API's](integrations/chat-message-structure-for-apis.md)
-* [Retrieving data from Airtable \(GET\)](integrations/retrieving-data-from-airtable-get.md)
-* [Sending data to Airtable \(POST\)](integrations/airtable.md)
 * [Human handover & live chat](integrations/human-offloading-live-chat/README.md)
   * [Offloading Webhook](integrations/human-offloading-live-chat/offloading-webhook.md)
   * [\#Interact](integrations/human-offloading-live-chat/interact.md)
@@ -60,6 +57,9 @@
   * [Sparkcentral by Hootsuite](integrations/human-offloading-live-chat/sparkcentral-beta.md)
   * [Creating a Zendesk Support Ticket](integrations/human-offloading-live-chat/creating-a-zendesk-support-ticket.md)
   * [Salesforce Service Cloud](integrations/human-offloading-live-chat/salesforce-service-cloud.md)
+* [Message objects for APIs](integrations/chat-message-structure-for-apis.md)
+* [Retrieving data from Airtable \(GET\)](integrations/retrieving-data-from-airtable-get.md)
+* [Sending data to Airtable \(POST\)](integrations/airtable.md)
 
 ## Channels
 
@@ -68,13 +68,13 @@
   * [Facebook Admin Removal](channels/facebook/facebook-admin-removal.md)
   * [Facebook Webview Whitelisting](channels/facebook/facebook-webview-whitelisting.md)
   * [Facebook Messenger API updates for Europe](channels/facebook/facebook-messenger-api-updates-for-europe.md)
-* [WhatsApp Business API](channels/whatsapp.md)
-* [Webhook Channel](channels/webhook-api.md)
 * [Google Assistant](channels/google-assistant.md)
-* [Web chat widget](channels/webwidget.md)
 * [Phone & voice](channels/phone-and-voice.md)
-* [Workplace from Facebook](channels/workplace-from-facebook.md)
 * [Sinch Conversation API](channels/sinch-conversation-api-beta.md)
+* [Web chat widget](channels/webwidget.md)
+* [Webhook Channel](channels/webhook-api.md)
+* [WhatsApp Business API](channels/whatsapp.md)
+* [Workplace from Facebook](channels/workplace-from-facebook.md)
 
 ## Chatlayer API
 
@@ -99,20 +99,20 @@
 
 ## Tutorials <a id="tutorials-1"></a>
 
-* [Recognizing a returning user](tutorials-1/how-to-recognize-a-returning-bot-user.md)
 * [Gathering user feedback](tutorials-1/gathering-user-feedback.md)
-* [Using time in your chatbot](tutorials-1/using-time-in-your-chatbot.md)
+* [Recognizing a returning user](tutorials-1/how-to-recognize-a-returning-bot-user.md)
 * [Reuse flows](tutorials-1/reuse-flows.md)
+* [Using time in your chatbot](tutorials-1/using-time-in-your-chatbot.md)
 * [Web widget demo page](tutorials-1/web-widget-demo-page.md)
 
 ## Support
 
+* [Billing & subscription](support/billing-and-subscription.md)
+* [Frequently Asked Questions \(FAQ\)](support/frequently-asked-questions.md)
 * [Get in touch](support/get-in-touch.md)
+* [Platform Glossary](support/glossary.md)
+* [SaaS Regions & IP Ranges](support/saas-regions-and-ip-ranges.md)
+* [Status](https://status.chatlayer.ai/)
 * [What's new](support/whats-new/README.md)
   * [Documentation](support/whats-new/documentation.md)
-* [Frequently Asked Questions \(FAQ\)](support/frequently-asked-questions.md)
-* [SaaS Regions & IP Ranges](support/saas-regions-and-ip-ranges.md)
-* [Billing & subscription](support/billing-and-subscription.md)
-* [Platform Glossary](support/glossary.md)
-* [Status](https://status.chatlayer.ai/)
 

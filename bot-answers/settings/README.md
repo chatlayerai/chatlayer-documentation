@@ -18,7 +18,7 @@ Use this to change the name of your bot.
 
 ## Language detection
 
-This setting allows you to enable the language detection flow when a user's locale isn't automatically detected or supported. Read more about this feature [here](../../understanding-users/multilanguage-bots.md#language-detection-flow).
+This setting allows you to enable the language detection flow when a user's locale isn't automatically detected or supported. Read more about this feature [here](../../understanding-users/multilanguage-bots/#language-detection-flow).
 
 ## API
 

@@ -79,7 +79,7 @@ Facebook's policy doesn't seem to be set in stone, they are still adapting their
 {% endhint %}
 
 * Remove all Buttons and Carousels from your bot
-  * You can filter on bot dialogs containing buttons or quick replies using the [translations](../../bot-answers/dialog-state/translations.md) table
+  * You can filter on bot dialogs containing buttons or quick replies using the [translations](../../understanding-users/multilanguage-bots/translations.md) table
   * You can use a combination of [context](../../understanding-users/using-context.md) and intents to replace any buttons
   * You can use quick replies to replace some of the functionalities of buttons
 * Facebook recommends URL buttons to be converted into a message containing a URL. Users can click that URL to get to the same place.
