@@ -33,8 +33,12 @@ Use the **Language detection** option to check if the user's language is support
 
 ![](../../.gitbook/assets/image%20%28244%29.png)
 
-* If the user's language is supported, they will be routed to the 'Get Started' bot dialog
+* If the user's language is supported, they will be routed to the 'Introduction' bot dialog
 * If the language is not supported by the bot, the user will be routed to a bot dialog of your choosing
+
+{% hint style="warning" %}
+Whenever the user types an expression in a language other than the preferredLanguage at that moment, the bot will not automatically switch to that language. If the expression is in a language that the bot knows, the expression will be processed and the bot will answer in the original preferredLanguage.
+{% endhint %}
 
 In the `Choose language` bot dialog, create an input validation that requests a language from the user and saves it as the `preferredLanguage` variable.
 
