@@ -1,44 +1,56 @@
-# Creating a new bot
+# Create a new project
 
-This tutorial will show you how to set up a new project and create a chatbot from scratch.
+This tutorial will show you how to set up a new project and create a bot from scratch.
 
-Are you working on an existing project? Then you don't need to set up a new one. Feel free to skip ahead to the next tutorial.
+Are you working on an existing project? Then you don't need to set up a new one. Feel free to skip ahead to the next tutorial:
 
-## Getting started with chatbots
+{% page-ref page="tutorial-adding-content.md" %}
 
-Never built a chatbot before? This short tutorial video explains you the key steps to creating a chatbot and the terminology used on the Chatlayer.ai platform. 
+## Getting started with bots
 
-{% embed url="https://www.youtube.com/watch?v=QYLPu9Z1V08&list=PLDWxiKsSIVPJl0zssvGATGsib6Luj0WSH" %}
+Never built a chatbot before? This short tutorial video explains you the key steps to creating a chatbot and the terminology used on our platform. 
 
 ## Creating a new bot
 
-For this tutorial, we’ll create a bot called Choo-choo: a digital assistant that can help people book train tickets. 
+What better way to learn how to build a bot than, well, build one! To help yo get started, we'll go through a bot tutorial together. In this tutorial, we’ll create a bot called Choo Choo: a digital assistant that can help people book train tickets. 
 
-{% hint style="info" %}
+{% hint style="warning" %}
 To get started, you need valid log-in credentials to access the Chatlayer platform. Don't have them yet? Please request them [here](https://www.chatlayer.ai/contact).
 {% endhint %}
 
-* Go to [https://cms.staging.chatlayer.ai/](https://cms.staging.chatlayer.ai/) and log in using your credentials
-* To build a new bot, click the `+ Add bot` button
+1. Go to [https://cms.staging.chatlayer.ai/](https://cms.staging.chatlayer.ai/) and log in using your credentials
+2. To build a new bot, click the blue `+ Add bot` button:
 
 ![](../.gitbook/assets/image%20%28196%29.png)
 
-* Enter `Choo Choo + your first name` as the name of the bot
-* Select your primary language. This is the language your bot will use. If you'd like to create a multilingual bot, you can add extra languages.
-* Now click `Create` to create your new bot
+3. Now enter `Choo Choo + your first name` as the name of the bot, so you can easily find it again after
+
+4. Then select your primary language. This is the language that your bot will use. If you'd like to create a multilingual bot, you can add extra languages.
+
+5. Now click `Create` to create your new bot!
 
 ![](../.gitbook/assets/createbot.png)
 
-* In the menu on the left, click on `Bot dialogs`. 
-* Then go to the `General`flow by clicking the blue flow icon.
+## Creating bot dialogs
+
+1. In the menu on the left, click on `Bot dialogs`
+2. Then go to the `General`flow by clicking the blue flow icon:
 
 ![](../.gitbook/assets/image%20%28186%29.png)
 
 {% hint style="info" %}
-Flows are a way to group your bot dialogs. You will learn more about them later.
+**Flows** are a way to group bot dialogs that are about the same topic or use case. You will learn more about them later.
 {% endhint %}
 
-* In the general flow, you will see an overview of all the dialogs that are part of this flow. When creating a new bot, you'll start with the standard predefined dialog states, which should look something like this:
+3. In the 'general' flow, you will see an overview of all the bot dialogs that are part of this flow. When creating a new bot, you always start with a few predefined dialogs:
+
+* Not understood
+* Introduction
+* Offloading open
+* Offloading closed
+* Bot disabled
+* Error occurred
+* ...
 
 ![](../.gitbook/assets/image%20%28457%29.png)
 

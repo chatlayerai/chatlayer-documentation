@@ -1,4 +1,4 @@
-# Planning your bot
+# Plan your bot
 
 Before you can start building your bot on the Chatlayer platform, there are a few strategic steps to take. From defining the use cases to crafting a bot personality – here's how to build a bot that's just right for your business.
 
