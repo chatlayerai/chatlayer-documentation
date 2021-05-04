@@ -103,7 +103,7 @@
 * [Recognizing a returning user](tutorials-1/how-to-recognize-a-returning-bot-user.md)
 * [Reuse flows](tutorials-1/reuse-flows.md)
 * [Using time in your chatbot](tutorials-1/using-time-in-your-chatbot.md)
-* [Web widget demo page](tutorials-1/web-widget-demo-page.md)
+* [Creating a web widget demo page](tutorials-1/web-widget-demo-page.md)
 
 ## Support
 

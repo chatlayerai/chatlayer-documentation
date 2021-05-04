@@ -1,4 +1,4 @@
-# Web widget demo page
+# Creating a web widget demo page
 
 This guide will explain to you how to set up a custom demo page to showcase your chatbot as seen in this example: [https://banking-bot-demo.glitch.me/](https://banking-bot-demo.glitch.me/). This can be done using Glitch, where you can create apps in your browser for free.
 
