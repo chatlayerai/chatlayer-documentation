@@ -4,7 +4,7 @@
 
 ## Getting started <a id="tutorials"></a>
 
-* [Scoping & scripting](tutorials/getting-started.md)
+* [Planning your bot](tutorials/getting-started.md)
 * [Creating a new bot](tutorials/tutorial-getting-started.md)
 * [Adding content to your bot](tutorials/tutorial-adding-content.md)
 * [Get data from an expression with contextual entities](tutorials/tutorial-getting-information-using-entities.md)
@@ -101,7 +101,7 @@
 
 * [Gathering user feedback](tutorials-1/gathering-user-feedback.md)
 * [Recognizing a returning user](tutorials-1/how-to-recognize-a-returning-bot-user.md)
-* [Reuse flows](tutorials-1/reuse-flows.md)
+* [Reusing flows](tutorials-1/reuse-flows.md)
 * [Using time in your chatbot](tutorials-1/using-time-in-your-chatbot.md)
 * [Creating a web widget demo page](tutorials-1/web-widget-demo-page.md)
 
