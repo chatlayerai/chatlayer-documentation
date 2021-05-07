@@ -7,7 +7,7 @@ Happy building!
 ![](.gitbook/assets/platform-screenshot.png)
 
   
-Head straight to our most popular popular pages:
+Get started with these topics:
 
 {% page-ref page="tutorials/getting-started.md" %}
 
