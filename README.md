@@ -4,7 +4,7 @@ This documentation explains you how to get started on our platform, using easy-t
 
 Happy building!
 
-![](.gitbook/assets/image%20%28160%29.png)
+![](.gitbook/assets/platform-screenshot.png)
 
   
 Head straight to our most popular popular pages:
