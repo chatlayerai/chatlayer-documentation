@@ -5,7 +5,7 @@ description: >-
   expressions, using input validation.
 ---
 
-# Asking user info using input validation
+# Asking user info through input validation
 
 To complete our Choo Choo bot, we need to ask the following information from the user:
 
