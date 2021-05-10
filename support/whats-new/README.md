@@ -5,6 +5,7 @@
 * The bot name can now be seen in the tab title in your browser. Helps if you're managing multiple bots!
 * New analytics - more details will follow soon.
 * New way to access the platform & publish bots. Read more [here](../../bot-answers/publishing-your-bot/publishing-new.md).
+* Integration with Sinch Contact to transfer a conversation from the bot to an agent.
 
 ## April 2021
 
@@ -12,6 +13,7 @@
   * We will add more documentation on this soon.
   * If you have ideas for new bot templates, [get in touch](../get-in-touch.md) with us.
 * Export/import of translations table: you can now edit the translations in an exported csv, and import them once you're done. Read more [here](../../understanding-users/multilanguage-bots/translations.md).
+* Integration with Salesforce Service Cloud to transfer a conversation from the bot to an agent. Read more [here](../../integrations/human-offloading-live-chat/salesforce-service-cloud.md).
 
 ## March 2021
 
