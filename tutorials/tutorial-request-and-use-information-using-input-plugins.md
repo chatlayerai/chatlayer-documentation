@@ -1,6 +1,13 @@
-# Get data with an input validation
+---
+description: >-
+  You have now built the basic version of the Choo Choo bot, great! Next up is
+  working with input validation. Often, the bot can grab information from
+  expressions, using input validation.
+---
 
-We have now built the basics of our Choo Choo bot, great! We have expressions where the NLP engine can read out the information that the user gives in the user input. To complete our fictional train booking tool, we need the following information from the user:
+# Asking user info using input validation
+
+To complete our Choo Choo bot, we need to ask the following information from the user:
 
 1. Origin
 2. Destination
@@ -8,13 +15,13 @@ We have now built the basics of our Choo Choo bot, great! We have expressions wh
 4. Departure time
 5. Class
 
-This works great when the users says:
+This works great when the users says, for example:
 
 * **Tomorrow**, I need to go from **Amsterdam** to **Brussels** at **2pm** in **second** class
 
-But, our current bot only works correctly when the user will give all this information in once sentence. In a lot of cases, that will not happen and we need to specifically ask information from the user. We will learn in this lesson how to ask input from the user to fully fulfil the flow. That input can then be used later in the flow, or you can send it to the database using the API plugin.
+But right now, our bot can only detect this information when the user gives all this information in once single sentence. Of course, in a lot of cases, this will not be the case, so we need to ask this information from the user. The dialog to ask for this info is called the Input Validation dialog.
 
-## Step 15: Input validations
+## Step 15: working with input validation
 
 Until now, we have only worked with the bot dialog type `Bot Message`. One of the other [four bot dialogs](https://docs.chatlayer.ai/bot-answers/dialog-state) types is `Input validation`. With an input validation, you can specifically ask information from a user and save the answer directly in a variable. Let's start with origin and destination. 
 
