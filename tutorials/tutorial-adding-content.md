@@ -1,10 +1,15 @@
-# Adding content to your bot
+---
+description: >-
+  In the previous tutorial, we created a new bot and added a greeting. Now it's
+  time to add some more content. We will start with some basic bot responses to
+  users' frequently asked questions.
+---
 
-In the previous tutorial, we created a new bot and added a greeting. Now it's time to add some more content. We will start with some basic bot responses to users' frequently asked questions.
+# Adding content to your bot
 
 ## The basics of bot building
 
-In this lesson, we are going to add intents to the Choo Choo bot. We will learn more about the NLP engine and how to update the NLP in your bot, and also how to link intents and messages. 
+In this lesson, we are going to add intents to our Choo Choo bot. We will learn more about the NLP engine and how to update the NLP in your bot, and also how to link intents and messages. 
 
 ## The NLP engine
 
