@@ -1,8 +1,12 @@
+---
+description: >-
+  In this final tutorial, we will look at how you can use user information and
+  base different conversational flows on that.
+---
+
 # Flow navigation with variables
 
-We now already have a very complete train-ticket flow. In this final tutorial we will take a look how you can use known information from the user and show different paths in a conversation based on that. 
-
-## Step 19: Go To bot dialog
+## Step 19: Go to bot dialog
 
 The `Go To` bot dialog enables the bot to redirect the user to a bot dialog, depending on conditions of the session variables. You can define conditions with operators like `equals`, `greater than`, `smaller than`, etc. You can also combine multiple conditions with `AND` and `OR`.
 
