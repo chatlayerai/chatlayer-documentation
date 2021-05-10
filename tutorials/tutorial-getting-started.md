@@ -1,8 +1,12 @@
-# Create a new project
+---
+description: >-
+  This tutorial will show you how to set up a new project and create a bot from
+  scratch.
+---
 
-This tutorial will show you how to set up a new project and create a bot from scratch.
+# Creating a new project
 
-Are you working on an existing project? Then you don't need to set up a new one. Feel free to skip ahead to the next tutorial:
+_Are you working on an existing project? Then you don't need to set up a new one. Feel free to skip ahead to the next tutorial:_
 
 {% page-ref page="tutorial-adding-content.md" %}
 
