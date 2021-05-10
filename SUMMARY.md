@@ -37,7 +37,7 @@
 * [Conversations](bot-answers/user-messages.md)
 * [Events](bot-answers/events.md)
 * [Publishing your bot](bot-answers/publishing-your-bot/README.md)
-  * [Publishing \(new\)](bot-answers/publishing-your-bot/publishing-new.md)
+  * [Publishing & platform URLs \(new\)](bot-answers/publishing-your-bot/publishing-new.md)
 * [Settings](bot-answers/settings/README.md)
   * [Variables](bot-answers/settings/secure-variables-gdpr.md)
 * [Team members, roles & bot access](bot-answers/user-management.md)

@@ -1,4 +1,4 @@
-# Publishing \(new\)
+# Publishing & platform URLs \(new\)
 
   
 Soon, we will release a new version of [Chatlayer](http://chatlayer.ai/) that will make handling the live and draft versions of your bot much easier. We’re introducing the [app.chatlayer.ai](http://app.chatlayer.ai/) URL that unifies everything that’s currently on the [cms.staging.chatlayer.ai](http://cms.staging.chatlayer.ai/) and the [cms.chatlayer.ai](http://cms.chatlayer.ai/) URLs.
@@ -25,11 +25,15 @@ We’ve renamed the “Versioning” tab to “Publish”. When you’re ready t
 
 ### Editing the LIVE bot
 
-We recommend against changing the LIVE version of the bot directly. However, in some cases, if you need to make some quick changes without publishing an entirely new version, it can be useful. To change the LIVE version of the bot, go to the “Publish” page. On this page, look for the LIVE version of the bot on the right and click the “Open live mode” button.![](blob:https://chatlayer.atlassian.net/5d962742-1bbd-49ad-b4a3-c213b6812aac#media-blob-url=true&id=f2bc3a07-dd14-46ee-b234-7212c6568218&collection=contentId-1293254717&contextId=1293254717&mimeType=image%2Fpng&name=image-20210510-071613.png&size=214680&width=2213&height=422)
+We recommend against changing the LIVE version of the bot directly. However, in some cases, if you need to make some quick changes without publishing an entirely new version, it can be useful. To change the LIVE version of the bot, go to the “Publish” page. On this page, look for the LIVE version of the bot on the right and click the “Open live mode” button.
+
+![](../../.gitbook/assets/image%20%28517%29.png)
 
 ### Channels
 
-Your bot can still connect to draft and live channels separately, exactly like you’re doing now in the Staging and Production environments. However, we want to give a better overview, so we’re consolidating all your channels into one single table.![](blob:https://chatlayer.atlassian.net/56370ca8-8c08-4a14-bb38-54f5242987ed#media-blob-url=true&id=83cef4ba-85ce-4347-9631-db96c4ac31a0&collection=contentId-1293254717&contextId=1293254717&mimeType=image%2Fpng&name=image-20210506-072935.png&size=60922&width=1350&height=258)
+Your bot can still connect to draft and live channels separately, exactly like you’re doing now in the Staging and Production environments. However, we want to give a better overview, so we’re consolidating all your channels into one single table.
+
+![](../../.gitbook/assets/image%20%28516%29.png)
 
 ### Conversations
 
