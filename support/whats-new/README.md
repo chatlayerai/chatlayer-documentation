@@ -1,5 +1,11 @@
 # What's new
 
+## May 2021
+
+* The bot name can now be seen in the tab title in your browser. Helps if you're managing multiple bots!
+* New analytics - more details will follow soon.
+* New way to access the platform & publish bots. Read more [here](../../bot-answers/publishing-your-bot/publishing-new.md).
+
 ## April 2021
 
 * Bot templates! You don't have to start from scratch 

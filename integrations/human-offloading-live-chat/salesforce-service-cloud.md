@@ -38,7 +38,7 @@ Copy paste your Access Token into the Salesforce new configuration window.
 
 You can choose to connect the Draft or Live version of your bot to Salesforce. Typically, the Draft version is used for testing, and the Live version is used by your actual customers. Learn more about bot versions here:
 
-{% page-ref page="../../bot-answers/publishing-your-bot.md" %}
+{% page-ref page="../../bot-answers/publishing-your-bot/" %}
 
 ### Configuring your bot to go to hand over the conversation
 
