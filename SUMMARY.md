@@ -7,7 +7,7 @@
 * [Planning your bot](tutorials/getting-started.md)
 * [Creating a new project](tutorials/tutorial-getting-started.md)
 * [Adding content to your bot](tutorials/tutorial-adding-content.md)
-* [Get data from an expression with contextual entities](tutorials/tutorial-getting-information-using-entities.md)
+* [Getting user data](tutorials/tutorial-getting-information-using-entities.md)
 * [Get data with an input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
 * [Flow navigation with variables](tutorials/tutorial-conditional-flow-navigation.md)
 

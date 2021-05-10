@@ -1,8 +1,12 @@
-# Get data from an expression with contextual entities
+---
+description: >-
+  In the previous tutorial, you learned about intents and expressions. In this
+  section, we'll cover another important part of bot building: entities.
+---
 
-In the previous tutorial you learned about intents, the main question why the user addresses the bot, and expressions, how the user asks that question. Another important part of botbuilding are entities.  
+# Getting user data
 
-In this tutorial, you will learn how to save valuable information that was mentioned in intents, using **contextual entities**. Entities are important pieces of information that are extracted from an expression. There are four types of entities. You can find more information about them here:
+You will learn how to detect valuable information that a user mentions in an intent, using **contextual entities**. Entities are important pieces of information that are extracted from an expression. There are four types of entities. You can find more information about them here:
 
 {% page-ref page="../understanding-users/natural-language-processing-nlp/synonym-entities.md" %}
 
