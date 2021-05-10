@@ -4,7 +4,7 @@ description: >-
   section, we'll cover another important part of bot building: entities.
 ---
 
-# Getting user data
+# Detecting information in expressions
 
 You will learn how to detect valuable information that a user mentions in an intent, using **contextual entities**. Entities are important pieces of information that are extracted from an expression. There are four types of entities. You can find more information about them here:
 
