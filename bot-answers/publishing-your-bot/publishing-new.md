@@ -1,29 +1,31 @@
 # Publishing & platform URLs \(new\)
 
   
-Soon, we will release a new version of [Chatlayer](http://chatlayer.ai/) that will make handling the live and draft versions of your bot much easier. We’re introducing the [app.chatlayer.ai](http://app.chatlayer.ai/) URL that unifies everything that’s currently on the [cms.staging.chatlayer.ai](http://cms.staging.chatlayer.ai/) and the [cms.chatlayer.ai](http://cms.chatlayer.ai/) URLs.
+In our next platform update, we are releasing a new version of Chatlayer that makes handling the live and draft versions of your bot much easier. We’re introducing the [app.chatlayer.ai](http://app.chatlayer.ai/) URL that unifies everything that’s currently on the [cms.staging.chatlayer.ai](http://cms.staging.chatlayer.ai/) and the [cms.chatlayer.ai](http://cms.chatlayer.ai/) URLs.
 
 ## Current way of managing bot versions
 
-Currently, there are two customer-facing environments: Staging and Production. Customers build their bot on the Staging environment which is accessed through [cms.staging.chatlayer.ai](http://cms.staging.chatlayer.ai/). Once a first version is ready, the bot is published to the Production environment on [cms.chatlayer.ai](http://cms.chatlayer.ai/). Updates to the NLP or bot dialogs of the bot happen on the Staging environment again, until it’s ready for a new publish to the Production environment.
+Currently, there are 2 customer-facing platform environments: Staging and Production. Customers first build their bot on the Staging environment, which is accessed at [cms.staging.chatlayer.ai](http://cms.staging.chatlayer.ai/). Later, when a first version of the bot is ready to go live, the bot is published to the Production environment at [cms.chatlayer.ai](http://cms.chatlayer.ai/). Updates to the NLP or bot dialogs of the bot happen on the Staging environment again, until it’s ready for a new publish to the Production environment.
 
 ## Why are we changing this? 
 
-We’ve seen support tickets come in of customers accidentally making changes to their Production bots: it’s very easy to make mistakes in a URL! Furthermore, it’s a hassle to remember which URLs you have to go to for what, especially if you’re a new Chatlayer user.
+We’ve received a few support tickets by customers accidentally making changes to their live bots when they wanted to do so in the staging environment. And we get it, it’s too easy to make mistakes in a URL! We also think it’s quite a hassle to remember which URL hosts which environment, especially if you’re a new Chatlayer user.
 
-## What is changing?
+## So, what is changing?
 
 ### Chatlayer URL
 
-Instead of having a separate URL for Staging & Production, we will now have 1 URL for everything: [app.chatlayer.ai](http://app.chatlayer.ai/). You can manage both the live & draft versions of your bot on this URL.
+Instead of having a separate URL for Staging & Production, we now have 1 URL for everything: [app.chatlayer.ai](http://app.chatlayer.ai/). You can manage both the live & draft versions of your bot through this URL.
 
-By default, when you open a bot on [app.chatlayer.ai](http://app.chatlayer.ai/) it will open the DRAFT version of that bot.
+{% hint style="info" %}
+Now when you open a bot on [app.chatlayer.ai](http://app.chatlayer.ai/), it will open the DRAFT version of that bot. Go to the 'publish' tab to, well, publish your bot.
+{% endhint %}
 
 ### Publishing a bot
 
-We’ve renamed the “Versioning” tab to “Publish”. When you’re ready to publish a new version of the bot, just click the “Publish” button and follow the steps in the platform.
+We’ve renamed the “Versioning” tab to “Publish”. When you’re ready to publish a newer version of the bot, just click the “Publish” button and follow the steps in the platform.
 
-### Editing the LIVE bot
+### Editing your LIVE bot
 
 We recommend against changing the LIVE version of the bot directly. However, in some cases, if you need to make some quick changes without publishing an entirely new version, it can be useful. To change the LIVE version of the bot, go to the “Publish” page. On this page, look for the LIVE version of the bot on the right and click the “Open live mode” button.
 

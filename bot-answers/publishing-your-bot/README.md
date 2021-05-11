@@ -1,13 +1,18 @@
 # Publishing your bot
 
-Our platform provides 2 environments: staging and production, to support working in parallel on a new version of your chatbot without interfering with your production version which is talking to your users in real-time. You have access to both environments.
+Our platform provides 2 environments: staging and production, to support working in parallel on a new version of your chatbot without interfering with your live version that's being used by your users in real-time. 
 
-* Staging \('Draft'\)
-  * [https://cms.staging.chatlayer.ai](https://cms.staging.chatlayer.ai)
-  * Used to build and test new bot versions and improve your NLP model
-* Production \('Live'\)
-  * [https://cms.chatlayer.ai](https://cms.chatlayer.ai)
-  * The production chatbot that is already communicating with your users
+You have access to both environments:
+
+1. **Staging \('Draft'\)**
+
+* [https://cms.staging.chatlayer.ai](https://cms.staging.chatlayer.ai)
+* Used to build and test new bot versions and improve your NLP model
+
+2. **Production \('Live'\)**
+
+* [https://cms.chatlayer.ai](https://cms.chatlayer.ai)
+* The production chatbot that is already communicating with your users
 * **We recommend not changing data and configuration \(flows, NLP, settings\) directly in your production environment as this can break your live bot.**
 
 Once your bot is ready and tested in the staging environment, it's time to publish your bot to the production environment.
