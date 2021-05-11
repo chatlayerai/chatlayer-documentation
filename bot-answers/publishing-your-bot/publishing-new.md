@@ -39,7 +39,7 @@ Your bot can still connect to draft and live channels separately, exactly like y
 
 ### Conversations
 
-Only one small change on the conversations page: both LIVE and DRAFT conversations are now visible within the same table. You can filter in this table to only show either.
+Only one small change on the conversations page: both LIVE and DRAFT conversations are now visible within the same table. You can filter in this table to show either one.
 
 ### Bot export
 
