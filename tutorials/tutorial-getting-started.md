@@ -1,10 +1,8 @@
 ---
-description: >-
-  This tutorial will show you how to set up a new project and create a bot from
-  scratch.
+description: This tutorial will show you how to create a bot from scratch.
 ---
 
-# Creating a new project
+# Creating a new bot
 
 _Are you working on an existing project? Then you don't need to set up a new one. Feel free to skip ahead to the next tutorial:_
 
@@ -22,22 +20,28 @@ What better way to learn how to build a bot than, well, build one! To help yo ge
 To get started, you need valid log-in credentials to access the Chatlayer platform. Don't have them yet? Please request them [here](https://www.chatlayer.ai/contact).
 {% endhint %}
 
-1. Go to [https://cms.staging.chatlayer.ai/](https://cms.staging.chatlayer.ai/) and log in using your credentials
+1.Go to [https://cms.staging.chatlayer.ai/](https://cms.staging.chatlayer.ai/) and log in using your credentials
+
 2. To build a new bot, click the blue `+ Add bot` button:
 
 ![](../.gitbook/assets/image%20%28196%29.png)
 
-3. Now enter `Choo Choo + your first name` as the name of the bot, so you can easily find it again after
+3. Choose "Start from scratch". You can add template bots to your account later.
 
-4. Then select your primary language. This is the language that your bot will use. If you'd like to create a multilingual bot, you can add extra languages.
+![](../.gitbook/assets/image%20%28518%29.png)
 
-5. Now click `Create` to create your new bot!
+4. Now enter `Choo Choo + your first name` as the name of the bot, so you can easily find it again after
+
+5. Then select your primary language. This is the language that your bot will use. If you'd like to create a multilingual bot, you can add extra languages.
+
+6. Now click `Create` to create your new bot!
 
 ![](../.gitbook/assets/createbot.png)
 
 ## Creating bot dialogs
 
-1. In the menu on the left, click on `Bot dialogs`
+1.In the menu on the left, click on `Bot dialogs`
+
 2. Then go to the `General`flow by clicking the blue flow icon:
 
 ![](../.gitbook/assets/image%20%28186%29.png)

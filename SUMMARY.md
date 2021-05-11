@@ -5,7 +5,7 @@
 ## Getting started <a id="tutorials"></a>
 
 * [Planning your bot](tutorials/getting-started.md)
-* [Creating a new project](tutorials/tutorial-getting-started.md)
+* [Creating a new bot](tutorials/tutorial-getting-started.md)
 * [Adding content to your bot](tutorials/tutorial-adding-content.md)
 * [Detecting information in expressions](tutorials/tutorial-getting-information-using-entities.md)
 * [Asking user info through input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
@@ -29,6 +29,7 @@
 
 * [Analytics](bot-answers/analytics/README.md)
   * [User flow](bot-answers/analytics/user-flow.md)
+* [Bot templates](bot-answers/bot-templates.md)
 * [Bot dialogs](bot-answers/dialog-state/README.md)
   * [Bot message](bot-answers/dialog-state/message-components.md)
   * [Go To](bot-answers/dialog-state/plugins.md)
