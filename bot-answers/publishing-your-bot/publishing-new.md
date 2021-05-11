@@ -49,6 +49,10 @@ Your workflow will remain the same: you can publish a new version of the bot fro
 
 The Chatlayer API URLs will not change.
 
+## When will the release take place?
+
+The release is planned for 18/5. You can read more about the release window [here](https://status.chatlayer.ai/incidents/42dplxqgz7bc).
+
 ## FAQ
 
 * Am I losing my staging environment?
