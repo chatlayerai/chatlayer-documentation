@@ -70,7 +70,7 @@ If you're connecting your bot to internal systems that require whitelisting, ple
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">Staging EU</td>
+      <td style="text-align:left">DRAFT EU</td>
       <td style="text-align:left">
         <p>35.187.113.2/32</p>
         <p>51.124.69.196/31</p>
@@ -83,7 +83,7 @@ If you're connecting your bot to internal systems that require whitelisting, ple
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">Production EU</td>
+      <td style="text-align:left">LIVE EU</td>
       <td style="text-align:left">
         <p>35.205.75.142/32</p>
         <p>52.155.165.92/30</p>
@@ -98,7 +98,7 @@ If you're connecting your bot to internal systems that require whitelisting, ple
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">Staging US</td>
+      <td style="text-align:left">DRAFT US</td>
       <td style="text-align:left">
         <p>34.86.117.221/32</p>
         <p>35.245.65.209/32</p>
@@ -109,7 +109,7 @@ If you're connecting your bot to internal systems that require whitelisting, ple
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">Production US</td>
+      <td style="text-align:left">LIVE US</td>
       <td style="text-align:left">
         <p>34.86.117.221/32</p>
         <p>35.245.65.209/32</p>
