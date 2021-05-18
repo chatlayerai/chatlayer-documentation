@@ -37,7 +37,7 @@ The Chatlayer SaaS application is deployed in the following locations:
         <p>(us-east4-a)</p>
       </td>
       <td style="text-align:left">Live</td>
-      <td style="text-align:left"><a href="https://app.chatlayer.ai/">https://app.us.chatlayer.ai/</a>
+      <td style="text-align:left"><a href="https://app.us-east4.gcp.chatlayer.ai">https://app.us-east4.gcp.chatlayer.ai/</a>
       </td>
     </tr>
     <tr>
