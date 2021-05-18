@@ -7,38 +7,45 @@ The Chatlayer SaaS application is deployed in the following locations:
     <tr>
       <th style="text-align:left">Region</th>
       <th style="text-align:left">Location</th>
+      <th style="text-align:left">Cloud Provider</th>
       <th style="text-align:left">Status</th>
-      <th style="text-align:left">CMS URL</th>
+      <th style="text-align:left">App URL</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">EMEA</td>
-      <td style="text-align:left">Belgium</td>
-      <td style="text-align:left">Live</td>
+      <td style="text-align:left">EU</td>
       <td style="text-align:left">
-        <p>Staging: <a href="https://cms.staging.chatlayer.ai/">https://cms.staging.chatlayer.ai/</a>
-        </p>
-        <p>Production: <a href="https://cms.chatlayer.ai
-
-">https://cms.chatlayer.ai</a>
-        </p>
+        <p></p>
+        <p>St. Ghislain, Belgium, Europe</p>
+      </td>
+      <td style="text-align:left">
+        <p>GCP</p>
+        <p>(eu-west1)</p>
+      </td>
+      <td style="text-align:left">Live</td>
+      <td style="text-align:left"><a href="https://app.chatlayer.ai/">https://app.chatlayer.ai/</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">NA + LATAM</td>
-      <td style="text-align:left">East Coast USA</td>
-      <td style="text-align:left">Live</td>
+      <td style="text-align:left">US</td>
+      <td style="text-align:left">Ashburn, Virginia, North America</td>
       <td style="text-align:left">
-        <p>Staging: <a href="https://cms.staging.us-east4.gcp.chatlayer.ai/">https://cms.staging.us-east4.gcp.chatlayer.ai/</a>
-        </p>
-        <p>Production: <a href="https://cms.prod.us-east4.gcp.chatlayer.ai/">https://cms.prod.us-east4.gcp.chatlayer.ai/</a>
-        </p>
+        <p>GCP</p>
+        <p>(us-east4-a)</p>
+      </td>
+      <td style="text-align:left">Live</td>
+      <td style="text-align:left"><a href="https://app.chatlayer.ai/">https://app.us.chatlayer.ai/</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">India</td>
-      <td style="text-align:left">India</td>
+      <td style="text-align:left">Mumbai, India APAC</td>
+      <td style="text-align:left">
+        <p>GCP
+          <br />(asia-south1)</p>
+        <p></p>
+      </td>
       <td style="text-align:left">Forthcoming</td>
       <td style="text-align:left">Planned for Q2 2021</td>
     </tr>
