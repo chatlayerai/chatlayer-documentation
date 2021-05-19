@@ -42,7 +42,7 @@ Analytics for every channel directly connected to Chatlayer can be shown separat
 
 Analytics for every bot language can be shown separately.
 
-### Calls
+### Call
 
 A call is every time a user triggers a certain intent. The total number of calls per intent is the amount of times a specific intent was triggered during a given time range.
 
