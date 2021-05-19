@@ -1,4 +1,4 @@
-# Welcome
+# Welcome to Chatlayer 👋
 
 This documentation explains you how to get started on our platform, using easy-to-follow tutorials and visual guides. Within minutes, you'll be able to build a conversational bot and create advanced dialogues for personalised conversations.
 

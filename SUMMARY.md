@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Welcome to Chatlayer 👋](README.md)
 
 ## Getting started <a id="tutorials"></a>
 
