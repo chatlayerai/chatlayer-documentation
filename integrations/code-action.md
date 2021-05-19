@@ -217,6 +217,36 @@ ChatlayerResponseBuilder()
     .send();
 ```
 
+### Add media
+
+The `addMediaMessage` method supports sending images, audio & video files through code actions.
+
+```javascript
+// Send an image
+ChatlayerResponseBuilder()
+    .addMediaMessage({
+        type: "image",
+        url: "<IMAGE_URL>"
+    })
+    .send();
+
+// Send an audio file
+ChatlayerResponseBuilder()
+    .addMediaMessage({
+        type: "audio",
+        url: "<AUDIO_URL>"
+    })
+    .send();
+
+// Send a video
+ChatlayerResponseBuilder()
+    .addMediaMessage({
+        type: "video",
+        url: "<VIDEO_URL>"
+    })
+    .send();
+```
+
 ### Utility library and API calls
 
 The following functionality exists inside the Code action's scope:
