@@ -1,57 +1,63 @@
 # Recognizing a returning user
 
-A good bot can make users feel like they're talking to real AI \(artificial intelligence\) that has a distinct personality. However, when your bot starts the next conversation as if he never met that same user before, that personal connection is gone. That is why our platform enables you to treat returning users differently, by using saved variables from previous sessions.
+A good bot makes users feel as if they're talking to another human. So when a user already talked to the bot, and your bot starts the next conversation as if it never met that same user before, the conversation feels a lot less natural and the bot appears dumb for not remembering this user. 
+
+That is why our platform allows you to recognise and greet returning users differently, by using saved variables from previous sessions.
 
 {% hint style="info" %}
-Know that not all channels save variables the same way.
+Not all channels save variables the same way.
 
-Facebook Messenger saves them indefinitely, but by default, the Webwidget only keeps variables for the duration of the session – unless authentication of unique users is built in.
+Facebook Messenger saves them indefinitely, but by default, the Web Widget only saves variables for the duration of the session \(unless authentication of unique users is built in\).
 {% endhint %}
 
-## Change the introduction to a _Go to_
+## Step 1: How to convert your introduction into a go-to dialog
 
-Every conversation starts with an _introduction_ dialog:
+By know you should know that every conversation starts with the introduction __dialog:
 
-![](../.gitbook/assets/schermafbeelding-2019-01-24-om-10.56.45.png)
+![The introduction dialog kicks off every conversation](../.gitbook/assets/image%20%28523%29.png)
 
-By default, this is a `Bot message`:
+By default, the introduction dialog is a `Bot message` where you can greet the user and start the conversation:
 
 ![](../.gitbook/assets/schermafbeelding-2019-01-24-om-10.56.17-kopie.png)
 
-However, instead of greeting the user right away, we can first check whether the bot has talked to them before by converting the _introduction_ into a `Go to`:
+However, instead of greeting the user right away, you can use this dialog to first check if the bot has talked to this specific user before. To do so, you can the introduction bot message into a go-to message:
 
-![](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.17.12.png)
+![Under &apos;Type&apos;, select &apos;go to&apos; to convert the dialog into a go-to message](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.17.12.png)
 
-## Identify returning users with a 'known\_user\_flag' variable
+{% hint style="info" %}
+If you already wrote some text in the introduction dialog, you will lose it when converting the message into a go-to. We recommend creating a new bot message where you copy the text into, so you don't lose it.
+{% endhint %}
 
-Using a variable 'known\_user\_flag' \(feel free to rename this\), the bot can check whether it has talked to the user before, and redirect them to the right dialog accordingly. 
+## Step 2: How to identify a returning user
 
-How to build an If-statement:
+By using the variable `known_user_flag`, the bot can check whether it has talked to this specific user before, and redirect them to a personalised introduction.
 
-* If 'known\_user\_flag' is equal to 1, we know for certain that there has been a conversation before, otherwise this variable would be empty, so the user can be directed to an introduction dialog appropriate for returning users.
-* Else, if 'known\_user\_flag' is not defined, the user must be new and can be redirected to an introduction for new users. At the same time, you can already set the 'known\_user\_flag' to 1, as the user is not new anymore. Alternatively, you can only change this value later on in the conversation, but changing it here is the most simple option.
+To do so, you'll need to create an 'if-statement':
 
-![](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.24.35.png)
+* If `known_user_flag` equals `1`, the bot knows that there has been a conversation with this user before, otherwise this variable would be empty. Now the user can be redirected to an introduction message for returning users.
+* Else if `known_user_flag` does not exist, the user is a new user and should be redirected to an introduction for new users. At the same time, you should set the `known_user_flag` to `1` because now, the user is not new anymore. 
 
-![](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.39.38.png)
+![Setting the &apos;known\_user\_flag&apos; variables to recognise a returning user](../.gitbook/assets/image%20%28525%29.png)
 
-## Modify flow for returning users, leveraging saved variables
+![Creating 2 different introductions: one for new, and one for returning users](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.39.38.png)
 
-Simply having a modified introduction for returning users is already of great value:
+## Step 3: How to create a personalised flow, using known variables
 
-![](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.49.51.png)
+Using a personalised introduction for returning users already creates a great user experience:
 
-However, you can really take the bot to the next level by also using other saved variables from previous encounters.
+![The bot seems smart because it recognises the user](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.49.51.png)
 
-For example, our Choo-choo bot can reuse the values 'origin' and 'destination' from its previous user conversation to suggest a new journey.
+However, you can take the conversation to the next level by using other known variables from previous sessions.
 
-You'll first want to check whether any values have been saved:
+For example, the Choo Choo bot can reuse the values 'origin' and 'destination' from previous user conversations to suggest a new and personalised journey.
 
-![](../.gitbook/assets/schermafbeelding-2019-01-24-om-12.06.50.png)
+Before you can use any values, you'll first need to check whether any have been saved already:
 
-...and if so, direct to a dialog using these variables:
+![Setting up a go-to to recognise previously saved values](../.gitbook/assets/schermafbeelding-2019-01-24-om-12.06.50.png)
 
-![](../.gitbook/assets/schermafbeelding-2019-01-24-om-12.03.20.png)
+...and if these values indeed exist, the bot needs to redirect to a specific dialog, using these known variables:
 
-This way, saved variables can provide returning users are more personalized experience.
+![What a great experience, this bot knows what I did last time!](../.gitbook/assets/schermafbeelding-2019-01-24-om-12.03.20.png)
+
+This way, previously saved variables can create a truly personalised experience for returning users and make your bot look super duper smart 🤓
 
