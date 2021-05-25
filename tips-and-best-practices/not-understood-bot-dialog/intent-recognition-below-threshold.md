@@ -1,59 +1,63 @@
 # Intent recognition below threshold
 
-Whenever an intent is recognized below the NLP threshold score, this will give the 'not understood' bot dialog:
+Whenever an expression is recognised, but falls below the NLP confidence score, the bot will display a 'not understood' bot dialog. 
 
-![](../../.gitbook/assets/image%20%28484%29.png)
+See the example below: the expression "Can you check where my ordered parcel is?" could be linked to the 'lost package' intent, or the 'general.no' intent. Since neither of them meet the 80% confidence score, it results in a 'not understood' dialog.
 
-In the example above, we have a bot to check where ordered packages are. This is what the user would like to know, but a 'not understood' is returned because the Intent is recognized below 80% - the NLP threshold. This is not a great user experience, even though we are 60% sure of the question the user is asking.
+![The confidence score is too low for the bot to recognise this expression correctly](../../.gitbook/assets/image%20%28484%29.png)
 
-This tutorial will show how to configure specific 'not understood' messages, whenever the expression is not above the NLP threshold. This will have the added value that the user feels more understood by the bot, and will find their answer more quickly.
+In the tutorial below, we will show you how to configure a specific 'not understood' message for whenever an expression doesn't meet the NLP threshold. This message will try and figure out what the user meant, making the bot look smarter and helping the user find their answer faster.
 
-## 1. Check your NLP Threshold score
+## Step 1: Check your NLP Threshold score
 
-In NLP &gt; NLP Threshold you can check what the current configuration is of your [threshold](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/settings). For this example, let's say we have a threshold for intents at 80%, and we would like to give a specific error message for all intent recognition between 60% and 80%.
+In the left column, under `NLP`, click on `NLP Threshold`. There you can check what the current confidence score is of your NLP [threshold](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/settings). In this example, let's say we have a threshold for intents at 80%, and we would like to give a specific error message for all intent recognition between 60% and 80%.
 
-## 2. Get intent variables
+## Step 2: Get intent variables
 
-In the debugger, we need to get the variable for the intent recognition. Open de debugger after using an expression of choice, and find the `NLP` part:
+In the bot's debugger, we need to get the variable so we can do intent recognition. Open the debugger after using an expression of your choice, and go the `NLP` part:
 
 ![](../../.gitbook/assets/image%20%28483%29.png)
 
-The variable we need for the score \(of 60,32% just like in the first image\) and for the name are:
+The variable we need for a confidence score &gt; 60% and for the name are:
 
 `internal.nlp.intent.score`
 
 `internal.nlp.intent.name`
 
-## 3. Configure Not Understood
+## Step 3: Configure the 'Not Understood' dialog
 
-Now we need to change the 'not understood' bot message to a Go-To. 
+Now we need to change the 'not understood' bot dialog into a go-to dialog:
 
-![](../../.gitbook/assets/image%20%28486%29.png)
+![Click on Go To to convert this dialog into a go-to dialog](../../.gitbook/assets/image%20%28486%29.png)
 
-We need to create a condition for a specific intent. Let's configure that for the 'lost package' intent:
+Then we need to create a rule for the specific intent. Let's create a rule for the 'lost package' intent:
 
 ![](../../.gitbook/assets/image%20%28482%29.png)
 
-Here, we will create two new bot messages: One specifically for lost packages expressions and a general one, for other intents.
+Here, we will create two new bot messages: One specifically for expressions related to lost packages, and a general one, for all other intents that were not understood correctly.
 
-## 4. Fill in bot messages
+## Step 4: Fill in the bot messages
 
-Fill in the bot messages, in this example, we will do the following:
+Write some text in the bot messages, such as:
 
-* Do I understand correctly that you have a question about your lost package? \(specific not understood message\)
-* Sorry I did not understand, can you rephrase? \(general not understood message\)
+* Specific not understood message: "Do I understand correctly that you have a question about your lost package?"
+* General not understood message: "Sorry, I did not understand. Can you please rephrase?"
 
-## 5. Try it out!
+## Step 5: Test your bot
 
-Let's try again the sentence we used in the beginning of this tutorial:
+Let's try again the sentence we used at the beginning of this tutorial:
 
 ![](../../.gitbook/assets/image%20%28485%29.png)
 
-Voila! As you can see, the intent is still not recognized above 80%, but the user feels more understood this way. They can immediately correctly start their 'lost package' flow, without having to rephrase their question. A better user experience than what we started with in the beginning of this tutorial! 
+It works! As you can see, the intent is still not recognised correctly \(above 80% confidence score\) but the user feels better understood this way. When they reply 'yes' to this message \(use context!\) they can immediately start the 'lost package' flow, without having to rephrase their question. 
 
-## Future use
+This creates a much better user experience than before you applied the steps in this tutorial! 
 
-This tutorial is a great alternative if you do not want to lower your overall NLP threshold score, or for bots that do not have a big range of expressions \(yet\). Be aware, that this needs to be implemented for separately for multiple intents in order to create specific 'not understood' messages. To check which intent is recognized and with the score, check out the NLP &gt; Train tab. There you can see which intents are most often used by users and give you an indication which intents need extra expressions or a specific 'not understood' message.
+## Scaling this set-up
+
+This tutorial is a great alternative for when you don't want to lower your overall NLP confidence score, or for when bots do not have a big range of expressions \(yet\). But be aware that these steps need to be implemented separately for each intent in order to create specific 'not understood' dialogs. 
+
+To check which intent is recognized under what score, check out the `Train tab` under the `NLP` section. There you can see which intents are used most by users, which gives you an indication which intents need extra expressions, or a specific 'not understood' message.
 
 
 
