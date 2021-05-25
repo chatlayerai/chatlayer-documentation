@@ -1,4 +1,11 @@
-# Intent recognition below threshold
+---
+description: >-
+  By creating specific not understood messages, you can manage intent
+  recognition below the overall threshold and give users a much better
+  experience.
+---
+
+# Create specific not understood messages
 
 Whenever an expression is recognised, but falls below the NLP confidence score, the bot will display a 'not understood' bot dialog. 
 
