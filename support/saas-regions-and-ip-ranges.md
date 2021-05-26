@@ -4,8 +4,6 @@
 
 The Chatlayer SaaS application is deployed in the following locations:
 
-![](../.gitbook/assets/image%20%28526%29.png)
-
 <table>
   <thead>
     <tr>
