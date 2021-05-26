@@ -1,8 +1,10 @@
 # SaaS Regions & IP Ranges
 
-![](../.gitbook/assets/image%20%28522%29.png)
+![](../.gitbook/assets/image%20%28526%29.png)
 
 The Chatlayer SaaS application is deployed in the following locations:
+
+![](../.gitbook/assets/image%20%28526%29.png)
 
 <table>
   <thead>
