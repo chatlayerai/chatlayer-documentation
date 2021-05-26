@@ -48,8 +48,9 @@ The Chatlayer SaaS application is deployed in the following locations:
           <br />(asia-south1)</p>
         <p></p>
       </td>
-      <td style="text-align:left">Forthcoming</td>
-      <td style="text-align:left">Planned for Q2 2021</td>
+      <td style="text-align:left">Live</td>
+      <td style="text-align:left"><a href="https://app.asia-south1.gcp.chatlayer.ai/">https://app.asia-south1.gcp.chatlayer.ai/</a>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -119,6 +120,28 @@ If you're connecting your bot to internal systems that require whitelisting, ple
       <td style="text-align:left">
         <p>35.236.193.49/32</p>
         <p>35.245.212.205/32</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">DRAFT AS</td>
+      <td style="text-align:left">
+        <p>35.200.129.64/32</p>
+        <p>35.200.132.180/32</p>
+      </td>
+      <td style="text-align:left">
+        <p>35.244.41.108/32</p>
+        <p>34.93.181.152/32</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">LIVE AS</td>
+      <td style="text-align:left">
+        <p>35.200.129.64/32</p>
+        <p>35.200.132.180/32</p>
+      </td>
+      <td style="text-align:left">
+        <p>35.244.41.108/32</p>
+        <p>34.93.181.152/32</p>
       </td>
     </tr>
   </tbody>
