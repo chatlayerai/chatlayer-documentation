@@ -54,7 +54,7 @@ Entities are important pieces of information that are extracted from an expressi
 
 Find out more about entities here:
 
-{% page-ref page="synonym-entities.md" %}
+{% page-ref page="synonym-entities/" %}
 
 ## Updating the NLP
 

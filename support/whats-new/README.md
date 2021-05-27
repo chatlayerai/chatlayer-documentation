@@ -53,7 +53,7 @@ Read all about how to use team member roles & bot access:
 
 We released new types of entities. You can find all information about them here:
 
-{% page-ref page="../../understanding-users/natural-language-processing-nlp/synonym-entities.md" %}
+{% page-ref page="../../understanding-users/natural-language-processing-nlp/synonym-entities/" %}
 
 ## October 2020
 

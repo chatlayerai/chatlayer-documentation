@@ -8,7 +8,7 @@ description: >-
 
 You will learn how to detect valuable information that a user mentions in an intent, using **contextual entities**. Entities are important pieces of information that are extracted from an expression. There are four types of entities. You can find more information about them here:
 
-{% page-ref page="../understanding-users/natural-language-processing-nlp/synonym-entities.md" %}
+{% page-ref page="../understanding-users/natural-language-processing-nlp/synonym-entities/" %}
 
 In this tutorial we will focus on one entity type: contextual entities \(the other types of entities are not important for now\). Contextual entities use machine learning to identify entities in sentences by learning which type of word your entity is, where it's placed in the sentence, and what the specific context is.
 
