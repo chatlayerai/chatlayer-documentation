@@ -1,6 +1,11 @@
-# Entities
+---
+description: >-
+  Entities are important pieces of information that can be extracted from an
+  expression. You want to store these entities as variables so you can re-use
+  them later on.
+---
 
-Entities are important pieces of information that can be extracted from an expression. You want to store these entities as variables so you can re-use them later on.
+# Entities
 
 ## Types of entities
 
@@ -15,7 +20,7 @@ There are four types of entities:
 
 Use this handy flowchart so you can find out which type of entity best fits your use case:
 
-![](../../../.gitbook/assets/untitled-document.png)
+![Click the image to enlarge it](../../../.gitbook/assets/untitled-document.png)
 
 {% hint style="warning" %}
 All entities will only be detected after you've **updated the NLP** at least once

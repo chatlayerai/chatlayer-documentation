@@ -10,7 +10,7 @@ You will learn how to detect valuable information that a user mentions in an int
 
 {% page-ref page="../understanding-users/natural-language-processing-nlp/synonym-entities/" %}
 
-In this tutorial we will focus on one entity type: contextual entities \(the other types of entities are not important for now\). Contextual entities use machine learning to identify entities in sentences by learning which type of word your entity is, where it's placed in the sentence, and what the specific context is.
+In this tutorial we will focus on one entity type: contextual entities. Contextual entities use machine learning to identify entities in sentences by learning what type of word your entity is, where it's placed in the sentence, and what the specific context is.
 
 You want to store these contextual entities in a separate variable so you can re-use them later on. Read more about the difference between entities and variables [here](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/synonym-entities#the-difference-between-entities-variables-and-values). In the next tutorial, you will learn how you can ask explicitly for missing information.
 
