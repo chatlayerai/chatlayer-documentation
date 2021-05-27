@@ -4,7 +4,7 @@ description: >-
   overal bot experience for your user.
 ---
 
-# How to use match entities
+# Example of how to use match entities
 
 On this page, we will show you a concrete example of how you can use match entities to detect information given by a user without explicitly asking for it. 
 
