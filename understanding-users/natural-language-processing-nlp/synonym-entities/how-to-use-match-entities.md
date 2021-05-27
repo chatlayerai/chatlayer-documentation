@@ -4,17 +4,15 @@ description: >-
   overal bot experience for your user.
 ---
 
-# Example of how to use match entities
+# Detecting information with match entities
 
 On this page, we will show you a concrete example of how you can use match entities to detect information given by a user without explicitly asking for it. 
 
 Let's get started! 
 
-## 1 – Detecting information using match entities
+Imagine you're building an FAQ bot. One of the things it can do for the user, is trace a lost package. For the bot to be able to find the lost package, it needs the package number. To get this number, the conversation would look like this: 
 
-Imagine you're building an FAQ bot. One of the things it can do, is trace a lost package. For the bot to be able to track the lost package, it needs the package number. To get this number, the conversation would look like this: 
-
-![On the left you can see the bot dialogs. On the right, the bot conversation](../../../.gitbook/assets/packie.png)
+![On the left you can see the bot dialog flow. On the right, the actual conversation](../../../.gitbook/assets/packie.png)
 
 After the bot has recognised the `Lost.Package` intent, it displays the message in that dialog. Using a go-to in the same dialog, it automatically shows the second dialog, which is an input validation. In this dialog, it asks the user for their package number:
 

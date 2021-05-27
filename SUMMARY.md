@@ -23,7 +23,7 @@
   * [Training your bot with actual user input](understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages.md)
   * [NLP Dashboard & NLP Improve](understanding-users/natural-language-processing-nlp/nlp-dashboard-and-nlp-improve.md)
   * [Entities](understanding-users/natural-language-processing-nlp/synonym-entities/README.md)
-    * [Example of how to use match entities](understanding-users/natural-language-processing-nlp/synonym-entities/how-to-use-match-entities.md)
+    * [Detecting information with match entities](understanding-users/natural-language-processing-nlp/synonym-entities/how-to-use-match-entities.md)
   * [Supported languages](understanding-users/natural-language-processing-nlp/supported-languages.md)
 
 ## Bot management <a id="bot-answers"></a>
