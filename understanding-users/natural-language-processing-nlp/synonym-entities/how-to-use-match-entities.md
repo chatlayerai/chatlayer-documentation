@@ -10,7 +10,7 @@ On this page, we will show you a concrete example of how you can use match entit
 
 Let's get started! 
 
-## 1 – Detecting information using entities
+## 1 – Detecting information using match entities
 
 Imagine you're building an FAQ bot. One of the things it can do, is trace a lost package. For the bot to be able to track the lost package, it needs the package number. To get this number, the conversation would look like this: 
 
