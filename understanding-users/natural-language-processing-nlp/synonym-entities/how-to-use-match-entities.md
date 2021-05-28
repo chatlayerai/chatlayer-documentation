@@ -1,14 +1,11 @@
 ---
 description: >-
-  Match entities are a great way to make your bot look smarter and enhance the
-  overal bot experience for your user.
+  On this page, we will show you a concrete example of how you can use match
+  entities to detect information given by a user without explicitly asking for
+  it.
 ---
 
 # Detecting information with match entities
-
-On this page, we will show you a concrete example of how you can use match entities to detect information given by a user without explicitly asking for it. 
-
-Let's get started! 
 
 Imagine you're building an FAQ bot. One of the things it can do for the user, is trace a lost package. For the bot to be able to find the lost package, it needs the package number. To get this number, the conversation would look like this: 
 
