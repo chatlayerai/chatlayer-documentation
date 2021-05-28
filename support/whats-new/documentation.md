@@ -6,6 +6,11 @@ description: What's new in our documentation?
 
 Here you can find an overview of new articles in our documentation system. We try to add new tutorials, tips and tricks on a monthly basis, so make sure to come back regularly! 
 
+## May 2021
+
+* A new article on how you can use [match entities](../../understanding-users/natural-language-processing-nlp/synonym-entities/how-to-use-match-entities.md)
+* An article on how to create specific ['not understood' messages](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog/intent-recognition-below-threshold) for intents below the threshold
+
 ## April 2021
 
 * How to [debug ](https://docs.chatlayer.ai/tips-and-best-practices/solving-bot-issues)and solve common issues
