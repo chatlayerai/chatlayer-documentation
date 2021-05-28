@@ -2,26 +2,27 @@
 
 ## May 2021
 
+* An example of [how to use match entities](../../understanding-users/natural-language-processing-nlp/synonym-entities/how-to-use-match-entities.md)
 * The bot name can now be seen in the tab title in your browser. Helps if you're managing multiple bots!
-* New analytics - more details will follow soon.
-* New way to access the platform & publish bots. Read more [here](../../bot-answers/publishing-your-bot/publishing-new.md).
-* Integration with Sinch Contact to transfer a conversation from the bot to an agent.
+* New analytics - more details will follow soon
+* New way to access the platform & publish bots. Read more [here](../../bot-answers/publishing-your-bot/publishing-new.md)
+* Integration with Sinch Contact to transfer a conversation from the bot to an agent
 
 ## April 2021
 
-* Bot templates! You don't have to start from scratch anymore. Read more [here](../../bot-answers/bot-templates.md). If you have ideas for new bot templates, [get in touch](../get-in-touch.md) with us.
-* Export/import of translations table: you can now edit the translations in an exported csv, and import them once you're done. Read more [here](../../understanding-users/multilanguage-bots/translations.md).
-* Integration with Salesforce Service Cloud to transfer a conversation from the bot to an agent. Read more [here](../../integrations/human-offloading-live-chat/salesforce-service-cloud.md).
+* Bot templates! You don't have to start from scratch anymore. Read more [here](../../bot-answers/bot-templates.md). If you have ideas for new bot templates, [get in touch](../get-in-touch.md) with us
+* Export/import of translations table: you can now edit the translations in an exported csv, and import them once you're done. Read more [here](../../understanding-users/multilanguage-bots/translations.md)
+* Integration with Salesforce Service Cloud to transfer a conversation from the bot to an agent. Read more [here](../../integrations/human-offloading-live-chat/salesforce-service-cloud.md)
 
 ## March 2021
 
-* New role: you can add a member to a RESTRICTED bot as NLP-only now. Read more [here](../../bot-answers/user-management.md#bot-access).
-* Credit card payments: you can now pay for your Chatlayer subscription using a credit card.
+* New role: you can add a member to a RESTRICTED bot as NLP-only now. Read more [here](../../bot-answers/user-management.md#bot-access)
+* Credit card payments: you can now pay for your Chatlayer subscription using a credit card
 * Zoom controls in the Flows view
 
 ![](../../.gitbook/assets/image%20%28413%29.png)
 
-* We have reworked out Translations table to be a lot faster, and more convenient to use.
+* We have reworked out Translations table to be a lot faster, and more convenient to use
 
 ## February 2021
 
@@ -31,7 +32,7 @@ We introduced a new style for the bot dialog components. Looks good, right?
 
 ![](../../.gitbook/assets/image%20%28399%29.png)
 
-This update also makes it easier to see which type of button you're creating.
+This update also makes it easier to see which type of button you're creating
 
 ![](../../.gitbook/assets/screenshot-2021-02-09-at-15.07.07.png)
 
