@@ -117,5 +117,5 @@
 * [SaaS Regions & IP Ranges](support/saas-regions-and-ip-ranges.md)
 * [Status](https://status.chatlayer.ai/)
 * [What's new](support/whats-new/README.md)
-  * [Documentation](support/whats-new/documentation.md)
+  * [New documentation](support/whats-new/documentation.md)
 

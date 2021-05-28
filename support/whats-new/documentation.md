@@ -1,10 +1,11 @@
 ---
-description: What's new in our documentation?
+description: >-
+  Here you can find an overview of new articles in our documentation. We try to
+  add new tutorials, tips and tricks on a monthly basis, so make sure to come
+  back soon!
 ---
 
-# Documentation
-
-Here you can find an overview of new articles in our documentation system. We try to add new tutorials, tips and tricks on a monthly basis, so make sure to come back regularly! 
+# New documentation
 
 ## May 2021
 
