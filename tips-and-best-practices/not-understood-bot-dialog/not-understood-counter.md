@@ -8,7 +8,7 @@ description: >-
 
 Instead of displaying the same `not understood` message over and over to the user, you can create a counter to show different kinds of messages. For example, when the bot doesn't understand the user for the first time, it displays the following:
 
-"Sorry, I didn't get that. Can you please rephrase?"
+"Sorry, I didn't get that. Can you please rephrase?" 
 
 When it still doesn't understand the second time, it shows this message:
 
