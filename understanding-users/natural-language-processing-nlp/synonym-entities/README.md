@@ -62,6 +62,10 @@ For example: you have defined @customerID as a match entity, and have provided t
 
 ![](../../../.gitbook/assets/image%20%28356%29.png)
 
+Find a concrete example of how to use match entities below 👇
+
+{% page-ref page="how-to-use-match-entities.md" %}
+
 ## 2 – Contextual entities
 
 Contextual entities use machine learning to identify entities in sentences by learning which type of word your entity is, where it's placed in the sentence, and what the specific context is.
