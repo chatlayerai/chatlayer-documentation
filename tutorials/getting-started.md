@@ -52,7 +52,7 @@ If you can, use your company branding as a starting point and build on it. You c
 
 Now that you have a clear picture of who’s communicating \(your bot persona and your user ID\) and what they’re talking about \(your use cases\), it’s time to write the **dialogues**.
 
-**A ‘happy flow’ is** **a dialogue where everything everything runs the way it’s supposed to run**. The conversation is natural and smooth, and the user reaches their goal in as little steps as possible. Many conversation designers start with the happy flow because it’s the flow of least resistance. It takes the least amount of effort to script because it doesn’t include many of the inconvenient complexities that can occur.
+**A ‘happy flow’ is** **a dialogue where everything runs the way it’s supposed to run**. The conversation is natural and smooth, and the user reaches their goal in as little steps as possible. Many conversation designers start with the happy flow because it’s the flow of least resistance. It takes the least amount of effort to script because it doesn’t include many of the inconvenient complexities that can occur.
 
 But they will, and you need to be ready for when they do.
 
