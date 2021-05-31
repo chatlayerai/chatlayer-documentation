@@ -1,5 +1,7 @@
 ---
-description: This tutorial will show you how to create a bot from scratch.
+description: >-
+  Never built a bot before? This short tutorial video explains you the key steps
+  to creating a chatbot and the terminology used on our platform.
 ---
 
 # Creating a new bot
@@ -8,13 +10,9 @@ _Are you working on an existing project? Then you don't need to set up a new one
 
 {% page-ref page="tutorial-adding-content.md" %}
 
-## Getting started with bots
-
-Never built a chatbot before? This short tutorial video explains you the key steps to creating a chatbot and the terminology used on our platform. 
-
 ## Creating a new bot
 
-What better way to learn how to build a bot than, well, build one! To help yo get started, we'll go through a bot tutorial together. In this tutorial, we’ll create a bot called Choo Choo: a digital assistant that can help people book train tickets. 
+What better way to learn how to build a bot than building one! To help you get started, we'll go through a bot-building tutorial together. In this tutorial, you will create a bot called Choo Choo: a digital assistant that can help people book train tickets. 
 
 {% hint style="warning" %}
 To get started, you need valid log-in credentials to access the Chatlayer platform. Don't have them yet? Please request them [here](https://www.chatlayer.ai/contact).
