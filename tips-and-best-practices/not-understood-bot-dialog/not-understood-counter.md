@@ -16,7 +16,7 @@ When it still doesn't understand the second time, it shows this message:
 
 Finally, if the bot can't understand again, it can provide the user with an alternative way to get help:
 
-"Sorry, I can't understand. Perhaps you'd like to my colleague instead?"
+"Sorry, I can't understand. Perhaps you'd like to talk to my colleague instead?"
 
 Or 
 
@@ -40,7 +40,7 @@ Create a new `bot message` in the `Go To` section, and name it 'not understood m
 
 ![](../../.gitbook/assets/image%20%28475%29.png)
 
-Make sure you add the following variable here to make sure that the counter starts when the bot does not understand for the first time.
+Make sure you add the variable `not_understood_counter` here to make sure that the counter starts when the bot does not understand for the first time:
 
 ![](../../.gitbook/assets/image%20%28473%29.png)
 
@@ -48,7 +48,7 @@ For the second condition, you want to check if the `not understood` was already 
 
 ![](../../.gitbook/assets/image%20%28471%29.png)
 
-The final condition is to add an [increment ](https://docs.chatlayer.ai/bot-answers/settings/secure-variables-gdpr#incrementing-variable-counter)for the variable. This means that the bot will automatically add a plus one to the variable `not_understood_counter`
+The final condition \(Else\) is where you need to add an [increment ](https://docs.chatlayer.ai/bot-answers/settings/secure-variables-gdpr#incrementing-variable-counter)for the `not_understood_counter` variable. This way, the bot will automatically increase the counter with one.
 
 Add the following text in the value field: `{not_understood_counter|increment}`
 
@@ -56,13 +56,21 @@ Add the following text in the value field: `{not_understood_counter|increment}`
 
 ## 4. Write the bot messages
 
-This is now the result after you have saved the `Go To` dialog:
+This is what you'll see after you have saved the `Go To` dialog:
 
 ![](../../.gitbook/assets/image%20%28476%29.png)
 
-The dialog named `Not understood message` is the first message users will see when the bot doesn't understand. 
+Keep in mind: the dialog named `Not understood message` is the first message users will see when the bot doesn't understand. The dialog named `Not understood 3 times in a row` will be shown when the bot didn't understand for the 3rd time. 
 
-The dialog named `Not understood 3 times in a row` will be shown when the bot didn't understand for the 3rd time. 
+Fill in text for both dialogs. Here's some inspiration:
+
+`Not understood message`"Sorry, I didn't get that. Can you please rephrase?" 
+
+`Not understood 3 times in a row` "Sorry, I can't understand. Perhaps you'd like to talk to my colleague instead?"
+
+
+
+
 
 ## 5. Fill in the bot id 
 
