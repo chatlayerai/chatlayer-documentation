@@ -97,7 +97,7 @@
 * [Solving bot issues](tips-and-best-practices/solving-bot-issues/README.md)
   * [1. No correct response](tips-and-best-practices/solving-bot-issues/1.-no-correct-response.md)
   * [2. Input validation not working](tips-and-best-practices/solving-bot-issues/2.-input-validation-not-working.md)
-  * [3. Media upload is not working](tips-and-best-practices/solving-bot-issues/3.-media-upload-not-working.md)
+  * [3. Video isn't working](tips-and-best-practices/solving-bot-issues/3.-media-upload-not-working.md)
 * [Voice design](tips-and-best-practices/voice-design/README.md)
   * [From chat to voice](tips-and-best-practices/voice-design/from-chat-to-voice.md)
 
