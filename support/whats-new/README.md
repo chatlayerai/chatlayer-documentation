@@ -2,7 +2,6 @@
 
 ## May 2021
 
-* An example of [how to use match entities](../../understanding-users/natural-language-processing-nlp/synonym-entities/how-to-use-match-entities.md)
 * The bot name can now be seen in the tab title in your browser. Helps if you're managing multiple bots!
 * New analytics - more details will follow soon
 * New way to access the platform & publish bots. Read more [here](../../bot-answers/publishing-your-bot/publishing-new.md)

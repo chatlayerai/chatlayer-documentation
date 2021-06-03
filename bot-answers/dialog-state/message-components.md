@@ -67,7 +67,7 @@ A nice feature of Facebook Messenger is that people can share a video with their
 ![](../../.gitbook/assets/video-messenger.png)
 
 {% hint style="warning" %}
-
+Are you having trouble adding an external video to your bot? Check out [this ](https://docs.chatlayer.ai/tips-and-best-practices/solving-bot-issues/3.-media-upload-not-working)article.
 {% endhint %}
 
 #### Audio
