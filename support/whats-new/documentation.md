@@ -7,8 +7,6 @@ description: >-
 
 # New documentation
 
-## 
-
 ## June 2021
 
 * A new tutorial on how to [add external videos](https://docs.chatlayer.ai/tips-and-best-practices/solving-bot-issues/3.-media-upload-not-working) to your bot.
