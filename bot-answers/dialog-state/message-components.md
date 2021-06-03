@@ -66,6 +66,10 @@ A nice feature of Facebook Messenger is that people can share a video with their
 
 ![](../../.gitbook/assets/video-messenger.png)
 
+{% hint style="warning" %}
+
+{% endhint %}
+
 #### Audio
 
 The audio widget is available in the Emulator, the web widget and Facebook Messenger. Currently we only support MP3 as an audio format.
