@@ -1,17 +1,17 @@
 ---
 description: >-
-  Before you can start building your bot on the Chatlayer platform, there are a
-  few strategic steps to take. From defining the use cases to crafting a bot
-  personality – here's how to get started.
+  Before you start building your bot on our platform, there are a few strategic
+  steps to consider. From defining the use cases to crafting a bot personality –
+  here's how to get started.
 ---
 
 # Planning your bot
 
 ## **1. Define the bot's goal** <a id="6f63"></a>
 
-Before you can start building your chatbot, you need to know **why** **you are building it**. What is the goal here? If you want to automate an existing service, what is the current experience like, and how could a bot help you improve it? 
+Before you can start building your bot, you need to know **why** **you are building it**. What is the goal here? If you want to automate an existing service, what is the current experience like, and how could a bot help you improve it? 
 
-Make sure to look at your business and marketing goals: if one of your goals is to increase customer satisfaction, you may want to add a chatbot to your customer support team and let it handle the most common FAQs, so your team has more time to focus on the complex cases.
+Make sure to look at your business and marketing goals: if one of your goals is to increase customer satisfaction, you may want to add a bot to your customer support team and let it handle the most common FAQs, so your team has more time to focus on the complex cases.
 
 ## 2. Define the bot use cases <a id="9f38"></a>
 
@@ -42,11 +42,9 @@ In order to design an experience that feels personal, you need to make it person
 
 ## 5. Craft your bot personality <a id="eb7b"></a>
 
-A chatbot without personality is like a bad Tinder date: they looked great online, but as soon as you start talking to them, you want to end the date as soon as possible. There just wasn’t a connection…
+How can you make sure that your users connect with your bot and that the conversation is engaging and representative of real human interaction? By giving your bot a **clear** **personality**.
 
-So how can you make sure that your users connect with your chatbot and that the conversation is engaging and representative of real human interaction? By giving your chatbot a **clear** **personality**.
-
-If you can, use your company branding as a starting point and build on it. You can read more about how to design your chatbot’s personality [**here**](https://chatbotslife.com/how-to-design-your-chatbots-personality-free-download-dd9eeccffbb9).
+If you can, use your company branding as a starting point and build on it. You can read more about how to design your bot’s personality [**here**](https://chatbotslife.com/how-to-design-your-chatbots-personality-free-download-dd9eeccffbb9).
 
 ## 6. Script your happy flow <a id="d5fb"></a>
 
@@ -56,7 +54,7 @@ Now that you have a clear picture of who’s communicating \(your bot persona an
 
 But they will, and you need to be ready for when they do.
 
-> **A great way to script a natural conversation is by having a sample dialog**. Have two people sit back-to-back and improvise a conversation around a use case, with one person playing the user and the other playing the chatbot. Record their conversation or take notes to see which parts of the dialog still need a bit more work.
+> **A great way to script a natural conversation is by creating a sample dialog**. Have two people sit back-to-back and improvise a conversation around a use case, with one person playing the user and the other playing the bot. Record their conversation or take notes to see which parts of the dialog still need a bit more work.
 
 ## 7. Script for edge cases <a id="06e9"></a>
 
