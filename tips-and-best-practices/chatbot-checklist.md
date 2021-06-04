@@ -1,4 +1,4 @@
-# Chatbot checklist
+# Bot checklist
 
 Anyone can build a bot, but it takes a whole lot more to build a **great bot**. Here are some tips and tricks to keep in mind when building your bot, so that you can offer your users the best possible user experience.
 
