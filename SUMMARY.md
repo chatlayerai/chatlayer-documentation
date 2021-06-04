@@ -5,8 +5,7 @@
 ## Getting started <a id="tutorials"></a>
 
 * [Planning your bot](tutorials/getting-started.md)
-* [Creating a new bot](tutorials/tutorial-getting-started/README.md)
-  * [Bot templates](tutorials/tutorial-getting-started/bot-templates.md)
+* [Creating a new bot](tutorials/tutorial-getting-started.md)
 * [Adding content to your bot](tutorials/tutorial-adding-content.md)
 * [Detecting information in expressions](tutorials/tutorial-getting-information-using-entities.md)
 * [Asking user info through input validation](tutorials/tutorial-request-and-use-information-using-input-plugins.md)
@@ -85,7 +84,8 @@
 
 ## Tips & Best practices
 
-* [Bot checklist](tips-and-best-practices/chatbot-checklist.md)
+* [Bot templates](tips-and-best-practices/bot-templates.md)
+* [Bot-building checklist](tips-and-best-practices/chatbot-checklist.md)
 * [Guidelines for building a good bot](tips-and-best-practices/what-makes-a-good-chatbot.md)
 * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
 * [NLP best practices](tips-and-best-practices/how-to-nlp.md)
