@@ -86,7 +86,7 @@
 ## Tips & Best practices
 
 * [Bot checklist](tips-and-best-practices/chatbot-checklist.md)
-* [Creating a good chatbot](tips-and-best-practices/what-makes-a-good-chatbot.md)
+* [Guidelines for building a good bot](tips-and-best-practices/what-makes-a-good-chatbot.md)
 * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
 * [NLP best practices](tips-and-best-practices/how-to-nlp.md)
 * [Not understood bot dialog](tips-and-best-practices/not-understood-bot-dialog/README.md)

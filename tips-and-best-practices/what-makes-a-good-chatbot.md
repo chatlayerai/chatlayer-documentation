@@ -1,4 +1,4 @@
-# Creating a good chatbot
+# Guidelines for building a good bot
 
 Building a chatbot is easy. Building a **good** chatbot requires some skill. Having built dozens of chatbots, we offer some tips on how to make your chatbot a clever success.
 
@@ -53,7 +53,7 @@ That being said, don't overdo the personality. Sometimes a user just wants a qui
 
 A good rule of thumb is to make the introduction greeting and thank you message at the end of a conversation fun, but keep it serious in all other messages in between. Optionally, you can add some personality that is available only on request, for example when the users asks "who are you?"
 
-## Do I really need a chatbot? Or does a link suffice?
+## Do I really need a bot? Or does a link suffice?
 
 Chatbots are not the magical answer to every question. A link to a well designed information page can sometimes be a faster solution, and more intuitive than a conversation flow. Chatbots are good to provide less friction and make information more approachable. In some cases they work super duper well, but not in all.
 
