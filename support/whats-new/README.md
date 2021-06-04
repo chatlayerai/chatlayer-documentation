@@ -9,7 +9,7 @@
 
 ## April 2021
 
-* Bot templates! You don't have to start from scratch anymore. Read more [here](../../bot-answers/bot-templates.md). If you have ideas for new bot templates, [get in touch](../get-in-touch.md) with us
+* Bot templates! You don't have to start from scratch anymore. Read more [here](../../tutorials/tutorial-getting-started/bot-templates.md). If you have ideas for new bot templates, [get in touch](../get-in-touch.md) with us
 * Export/import of translations table: you can now edit the translations in an exported csv, and import them once you're done. Read more [here](../../understanding-users/multilanguage-bots/translations.md)
 * Integration with Salesforce Service Cloud to transfer a conversation from the bot to an agent. Read more [here](../../integrations/human-offloading-live-chat/salesforce-service-cloud.md)
 

@@ -74,7 +74,7 @@ Always make to strategically guide the user back to an existing flow, like in th
 
 Now that you've done all the groundwork, it's time to build your bot on the Chatlayer.ai platform. Continue to our next tutorial:
 
-{% page-ref page="tutorial-getting-started.md" %}
+{% page-ref page="tutorial-getting-started/" %}
 
 
 

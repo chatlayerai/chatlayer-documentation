@@ -1,73 +1,88 @@
-# Getting started
+---
+description: >-
+  Never built a bot before? This short tutorial video explains you the key steps
+  to creating a chatbot and the terminology used on our platform.
+---
 
-This tutorial will show you how to set up a new project and create a chatbot from scratch.
+# Creating a new bot
 
-Are you working on an existing project? Then you don't need to set up a new one. Feel free to skip ahead to the next tutorial.
+_Are you working on an existing project? Then you don't need to set up a new one. Feel free to skip ahead to the next tutorial:_
 
-## Getting started with chatbots
-
-Never built a chatbot before? This short tutorial video explains you the key steps to creating a chatbot   
-and the terminology used on the Chatlayer.ai platform. 
-
-{% embed url="https://www.youtube.com/watch?v=QYLPu9Z1V08&list=PLDWxiKsSIVPJl0zssvGATGsib6Luj0WSH" %}
+{% page-ref page="../tutorial-adding-content.md" %}
 
 ## Creating a new bot
 
-For this tutorial, we’ll create a conversational interface called Choo-choo: a digital assistant to help people book train tickets. 
+What better way to learn how to build a bot than building one! To help you get started, we'll go through a bot-building tutorial together. In this tutorial, you will create a bot called Choo Choo: a digital assistant that can help people book train tickets. 
 
-To get started, please make sure you have valid log-in credentials to access the Chatlayer.ai platform.
-
-{% hint style="info" %}
-If you don't have log-in credentials yet, please request them [here](https://www.chatlayer.ai/contact).
+{% hint style="warning" %}
+To get started, you need valid log-in credentials to access the Chatlayer platform. Don't have them yet? Please request them [here](https://www.chatlayer.ai/contact).
 {% endhint %}
 
-* Log in using your credentials on [https://cms.staging.chatlayer.ai/](https://cms.staging.chatlayer.ai/)
-* To start, click the `+ Add bot` button to create a new bot
+1.Go to [https://cms.staging.chatlayer.ai/](https://cms.staging.chatlayer.ai/) and log in using your credentials
+
+2. To build a new bot, click the blue `+ Add bot` button:
 
 ![](../../.gitbook/assets/image%20%28196%29.png)
 
-* Enter `Choo Choo (your first name)` as the name of your bot
-* Choose `English` as the primary language. This is the language your bot will use
-* \(Optional: you can add other languages if you want a multilingual bot\)
-* Click `Create` to create your new bot
+3. Choose "Start from scratch". You can add template bots to your account later.
+
+![](../../.gitbook/assets/image%20%28518%29.png)
+
+4. Now enter `Choo Choo + your first name` as the name of the bot, so you can easily find it again after
+
+5. Then select your primary language. This is the language that your bot will use. If you'd like to create a multilingual bot, you can add extra languages.
+
+6. Now click `Create` to create your new bot!
 
 ![](../../.gitbook/assets/createbot.png)
 
-{% hint style="warning" %}
-Be aware that you can't add additional languages once the bot is created.   
-Contact our support team [here](https://chatlayer.zendesk.com/hc/en-us) if you want to add an additional language to an existing bot.
-{% endhint %}
+## Creating bot dialogs
 
-In the menu on the left, click on `Bot dialogs`. Enter the `General` flow by clicking the flow icon 
+1.In the menu on the left, click on `Bot dialogs`
 
-{% hint style="info" %}
-Flows are a way to group your bot dialogs. You will learn more about this in a later tutorial.
-{% endhint %}
+2. Then go to the `General`flow by clicking the blue flow icon:
 
 ![](../../.gitbook/assets/image%20%28186%29.png)
 
-After entering the flow, you will see an empty chatbot flow containing only the standard predefined dialog states. Your screen should look something like this:
-
-![](../../.gitbook/assets/image%20%28246%29.png)
-
-### Adding a greeting
-
-The first thing we need to do is create a greeting. Greetings allow your bot to introduce itself and help users understand its functionalities and personality. Greetings are an important way to set the proper expectations of a bot.
-
-Our Choo Choo bot will start each conversation. You can edit this greeting in the `introduction` bot dialog.
-
 {% hint style="info" %}
-**What is a bot dialog?** A bot dialog is a something that the bot will do or say when triggered by a user. This can be anything from a message to a user, to making a connection to an external system, to jumping to another part of the conversation.
+**Flows** are a way to group bot dialogs that are about the same topic or use case. You will learn more about them later.
 {% endhint %}
 
-* Zoom in \(or out\) by use the scrolling wheel. Click and drag to move through the dialog tree.
-* Click on the edit icon of the`introduction` bot dialog
+3. In the 'general' flow, you will see an overview of all the bot dialogs that are part of this flow. When creating a new bot, you always start with a few predefined dialogs:
 
-![](../../.gitbook/assets/image%20%28143%29.png)
+* Not understood
+* Introduction
+* Offloading open
+* Offloading closed
+* Bot disabled
+* Error occurred
+* ...
 
-Chatlayer.ai supports multiple content types. Depending on the channel your bot will use \(Facebook, Slack, Skype, Google Home, ...\) these will be rendered slightly differently. Since this is our first bot and our first message, let's start with a simple text message:
+![](../../.gitbook/assets/image%20%28457%29.png)
 
-* Delete the predefined greeting message by clicking on the Trash icon.
+{% hint style="info" %}
+To navigate the screen, you can zoom in or out by using the scrolling wheel, or by zooming with your laptop's trackpad. You can also click and drag to move through the dialog tree.
+{% endhint %}
+
+## Step 1: Adding an introduction
+
+The first thing you'll need to do is create an introduction. This is the first message your users will  see, the dialog your bot will use to introduce itself and help users understand its functionalities. Introductions are an important way to set the proper expectations of a bot.
+
+* You can edit the introduction by clicking the `introduction` bot dialog.
+
+{% hint style="info" %}
+**What is a bot dialog?** A bot dialog is a something that the bot will say or do when triggered by a user [intent](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp#intent) or user message. This can be anything: from a message to a user to connecting to an external system, giving a message back and jumping to a different dialog in the flow. We will come back to the [four different types ](https://docs.chatlayer.ai/bot-answers/dialog-state)of bot dialogs. 
+{% endhint %}
+
+![](../../.gitbook/assets/image%20%28459%29.png)
+
+{% hint style="warning" %}
+Chatlayer.ai supports multiple media types. Depending on the channel your bot will use \(Facebook, Slack, Skype, Google Home, ...\) these will be rendered slightly differently.  For now that is not a problem, but check out [this ](https://docs.chatlayer.ai/channels/multi-channel)page when you start building on your 'real' bot.
+{% endhint %}
+
+Since this is our first bot and our first message, let's start with a simple text message:
+
+* Delete the predefined greeting message by selecting the following text:
 
 > Hello. Please configure the introduction dialog state with a meaningful message.
 
@@ -81,33 +96,50 @@ Chatlayer.ai supports multiple content types. Depending on the channel your bot 
 
 The result will be:
 
-![](../../.gitbook/assets/bot-message.png)
+![](../../.gitbook/assets/image%20%28427%29.png)
 
-Just like in normal conversations, your users won't like it when your bot always replies with the exact same messages. That's why Chatlayer.ai supports random messages. In a Text Message block, you can add multiple alternatives to the same message. Chatlayer.ai will randomly pick one of these messages, making your dialogue feel more natural and human.
+Just like in normal conversations, your users will find it weird if your bot always replies with the exact same message. That's why we support random messages. A random message means that the different messages will be alternated, so sometimes the first message will show, sometimes the second one.
 
-* Just below 'How can I help you today?', click on  `Add random message` and enter the following text:
+In the Text Message block, you can add multiple versions of the same message. The bot will randomly pick one of these messages to show to the user, making your dialogue more natural and human-like.
 
-> What can I do for you?
+* To add a random message, click on  `+ Add random message` and enter the following text: _"What can I do for you?"_
 
 Tip: you can add as many random messages as you like. 
 
-![](../../.gitbook/assets/image%20%2891%29.png)
+![](../../.gitbook/assets/image%20%28451%29.png)
 
-Click on `Save` to save all the changes you made in the `introduction` bot dialog.
+* Click on `Save` to save your `introduction` bot dialog.
 
-### Testing your greeting
+## Step 2: Testing your greeting
 
-Time to check if we configured everything correctly. To do so, it's not necessary to publish your bot to a channel like Facebook Messenger or Slack. You can see how your bot replies by using our built-in emulator.
+Time to check if we configured everything correctly. You can test your bot by using our built-in emulator.
 
-* Click on the Emulator icon in the lower right corner to test your bot.
+* Click on the Emulator icon in the lower right corner to test your bot:
 
 ![](../../.gitbook/assets/image%20%2876%29.png)
 
-If you have configured everything correctly, Choo Choo will now reply with the right messages. You can ignore the debug button for now, but this will be useful later when you want to debug more complicated flows.
+If you have configured everything correctly, Choo Choo will now start the conversation with the introduction you just created.   
+  
+_PS: You can ignore the debug button on the left for now, though this will be useful a little later, when you want to debug more complicated flows._
 
 ![](../../.gitbook/assets/image%20%28228%29.png)
 
+Congrats, you just created your first bot dialog! 🥳
+
+## Lesson recap
+
+You now have the done the following:
+
+* Created your own tutorial bot
+* Changed the introduction message
+  * Added a new message and a random message
+
+You should now know:
+
+* How to change a bot message
+* What the emulator is, and how to check your bot message in the emulator
+
 {% hint style="info" %}
-In the [next tutorial](../tutorial-adding-content.md), you will learn how to configure some questions the user can ask the bot.
+In the [next tutorial](../tutorial-adding-content.md), you will learn to set up questions which the user may ask the bot, and how to create a bot response.
 {% endhint %}
 
