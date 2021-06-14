@@ -8,8 +8,11 @@ In the conversation history tab, each row corresponds to a conversation. It is p
 
 ![](../.gitbook/assets/image%20%28205%29.png)
 
-{% hint style="info" %}
-The test conversations you had with your bot in the emulator will not be shown in the conversations tab.
+{% hint style="warning" %}
+**Conversations that will not be shown in this table:**
+
+* The test conversations you had with your bot in the "**test your bot**" window will not be shown in the conversations tab. These conversations also don't count towards the number of conversations used in the pricing
+* **Empty conversations** that do not contain any message from the user to the bot will not be shown in the conversations tab. These conversations do count towards the number of conversations used in the pricing.
 {% endhint %}
 
 Select a user row to see the conversation that took place between this user and your bot. You will see a timestamp for each message and in which bot dialog the message was sent.
