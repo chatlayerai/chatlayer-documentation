@@ -10,6 +10,8 @@ A conversation starts with a first message being sent, either by the bot or by t
 
 If the user continues the conversation on another channel, this is considered a new conversation.
 
+Conversations where the bot sends a message, but the user does not send a message are counted. These conversations will be included in the Analytics dashboards, but not in the [Conversations](../bot-answers/user-messages.md) table.
+
 ## Features
 
 Some features are only included in some packs. For example, the following features are only in the Enterprise & Corporate plans:
