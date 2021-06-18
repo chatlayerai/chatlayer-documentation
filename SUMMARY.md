@@ -120,3 +120,7 @@
 * [What's new](support/whats-new/README.md)
   * [New documentation](support/whats-new/documentation.md)
 
+## Organization Management
+
+* [Single Sign-On \(SAML SSO\)](organization-management/single-sign-on-sso-saml.md)
+
