@@ -4,10 +4,6 @@ The Natural Language Processing \(NLP\) engine is the underlying code that's use
 
 Understanding language isn't easy: it takes us humans about 12 years and hundreds of examples to understand the most common 20,000 words. And computers are not so different. To train an NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in. Our NLP engine will take care of spelling mistakes, synonyms, slang, varying word order, etc ...
 
-{% hint style="warning" %}
-Please note that our NLP engine has a limit of 1000 characters. That means, messages with &gt; 1000 characters will always go to 'not understood'. You can configure a customized 'not understood' message for long user input in the settings, as described [here](https://docs.chatlayer.ai/bot-answers/settings#maximum-message-length). 
-{% endhint %}
-
 ## Intent
 
 An intent is a joint name for a specific action your user can take. Intents are single blocks of meaning that the NLP can recognise. For example, an intent can be a question, a statement, an answer to a question or a greeting.
@@ -28,6 +24,10 @@ It’s important to have a roughly equal number of expressions for each intent. 
 {% endhint %}
 
 ## Expressions
+
+{% hint style="info" %}
+Please note that our NLP engine has a limit of 1000 characters. That means, messages with more than 1000 characters will always go to 'not understood'. You can configure a customized 'not understood' message for long user input in the settings, as described [here](https://docs.chatlayer.ai/bot-answers/settings#maximum-message-length). 
+{% endhint %}
 
 Expressions are example sentences for a specific Intent. In industry literature, they are sometimes called 'utterances'. The more Expression you add to an Intent, the more accurately it will be recognized. It is crucial for an Intent to have a wide variety of expressions to give accurate results. The more expression you can think of, the better the result of the NLP and the 'smarter' your bot will appear.
 
