@@ -1,6 +1,6 @@
 # SaaS Regions & IP Ranges
 
-![](../.gitbook/assets/image%20%28526%29.png)
+![](../.gitbook/assets/worldmap-datacenters-updated.png)
 
 The Chatlayer SaaS application is deployed in the following locations:
 
