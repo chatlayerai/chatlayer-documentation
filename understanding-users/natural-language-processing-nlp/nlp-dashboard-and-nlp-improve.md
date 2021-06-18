@@ -1,5 +1,9 @@
 # NLP Dashboard & NLP Improve
 
+{% hint style="info" %}
+The NLP Dashboard & NLP Improve is only available on the Enterprise plan or higher. Want to upgrade? [Get in touch](../../support/get-in-touch.md).
+{% endhint %}
+
 The NLP dashboard \(and the tab 'improve'\) give you an overview of the quality of your NLP model. It automatically detects any overlap between intents, which is especially useful if you are building a larger NLP model, or if multiple team members work on it.
 
 ## **NLP Dashboard**

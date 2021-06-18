@@ -11,7 +11,7 @@ Users who don't have an account yet will receive an activation email. Users that
 ## Team roles & bot access
 
 {% hint style="info" %}
-Team roles & bot access is only available to enterprise users. Want to upgrade?   
+Team roles & bot access is only available in the Enterprise pack or higher. Want to upgrade?   
 [Get in touch](../support/get-in-touch.md).
 {% endhint %}
 

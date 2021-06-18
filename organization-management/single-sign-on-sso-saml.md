@@ -1,5 +1,10 @@
 # Single Sign-On \(SAML SSO\)
 
+{% hint style="info" %}
+Single Sign-On \(SAML SSO\) is only available in the Enterprise pack or higher. Want to upgrade?   
+[Get in touch](../support/get-in-touch.md).
+{% endhint %}
+
 By configuring Single Sign-On \(SSO\), your users can access Chatlayer through your organization's identity and access management \(IAM\) system. This is a secure and user-friendly way of accessing Chatlayer.
 
 Chatlayer's SSO solution is compliant with SAML 2.0. This allows you to configure a wide range of IAM systems like:
