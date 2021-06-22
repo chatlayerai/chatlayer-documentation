@@ -16,7 +16,7 @@ Conversations where the bot sends a message, but the user does not send a messag
 
 Some features are only included in some packs. For example, the following features are only in the Enterprise & Corporate plans:
 
-* [Team roles & bot access](../organization-management/user-management.md)
+* [Team roles & bot access](../organization-management/user-management/)
 * [NLP Improve](../understanding-users/natural-language-processing-nlp/nlp-dashboard-and-nlp-improve.md)
 * [Salesforce Service Cloud integration](../integrations/human-offloading-live-chat/salesforce-service-cloud.md)
 * [Offloading webhook](../integrations/human-offloading-live-chat/offloading-webhook.md)
