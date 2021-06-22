@@ -44,7 +44,7 @@
 
 ## Organization Management
 
-* [Team members, roles & bot access](organization-management/user-management.md)
+* [Access Control](organization-management/user-management.md)
 * [Single Sign-On \(SAML SSO\)](organization-management/single-sign-on-sso-saml.md)
 
 ## Integrations
