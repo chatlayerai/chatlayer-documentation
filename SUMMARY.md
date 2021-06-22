@@ -41,7 +41,11 @@
   * [Publishing & platform URLs \(new\)](bot-answers/publishing-your-bot/publishing-new.md)
 * [Settings](bot-answers/settings/README.md)
   * [Variables](bot-answers/settings/secure-variables-gdpr.md)
-* [Team members, roles & bot access](bot-answers/user-management.md)
+
+## Organization Management
+
+* [Team members, roles & bot access](organization-management/user-management.md)
+* [Single Sign-On \(SAML SSO\)](organization-management/single-sign-on-sso-saml.md)
 
 ## Integrations
 
@@ -119,8 +123,4 @@
 * [Status](https://status.chatlayer.ai/)
 * [What's new](support/whats-new/README.md)
   * [New documentation](support/whats-new/documentation.md)
-
-## Organization Management
-
-* [Single Sign-On \(SAML SSO\)](organization-management/single-sign-on-sso-saml.md)
 
