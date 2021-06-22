@@ -4,7 +4,7 @@ In the module ''Platform users' you can add or remove users from your account.
 
 ![](../.gitbook/assets/image%20%28403%29.png)
 
-Users who don't have an account yet will receive an activation email. Users that already belong to another Chatlayer.ai account will be able to switch between accounts, using the icon on the top right in the platform.
+Users who don't have an account yet will receive an activation email. Users that already belong to another Chatlayer.ai account will be able to switch between accounts, using the icon on the top right in the platform.é
 
 ![](../.gitbook/assets/image%20%28397%29.png)
 
