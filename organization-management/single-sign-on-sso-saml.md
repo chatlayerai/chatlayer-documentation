@@ -46,7 +46,7 @@ Next we'll set up Single sign-on. Select the Single sign-on menu entry and selec
 Edit the configuration and fill in the following fields:
 
 * **Identifier \(Entity ID\):** `https://auth.chatlayer.ai/auth/realms/Chatlayer`
-* **Reply URL \(Assertion Consumer Service URL\):**  Copy this value from the SAML SSO configuration screen in Chatlayer.
+* **Reply URL \(Assertion Consumer Service URL\):**  Copy this value from the SAML SSO configuration screen in our platform.
 
 ![](../.gitbook/assets/image%20%28550%29.png)
 
