@@ -48,7 +48,7 @@ Edit the configuration and fill in the following fields:
 * **Identifier \(Entity ID\):** `https://auth.chatlayer.ai/auth/realms/Chatlayer`
 * **Reply URL \(Assertion Consumer Service URL\):**  Copy this value from the SAML SSO configuration screen in Chatlayer.
 
-![](../.gitbook/assets/image%20%28539%29.png)
+![](../.gitbook/assets/image%20%28550%29.png)
 
 **2. User Attributes & Claims** - Default values
 
