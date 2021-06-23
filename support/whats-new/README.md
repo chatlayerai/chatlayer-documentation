@@ -15,7 +15,7 @@
 
 ## March 2021
 
-* New role: you can add a member to a RESTRICTED bot as NLP-only now. Read more [here](../../organization-management/user-management/#bot-access)
+* New role: you can add a member to a RESTRICTED bot as NLP-only now. Read more [here](../../organization-management/access-control/#bot-access)
 * Credit card payments: you can now pay for your Chatlayer subscription using a credit card
 * Zoom controls in the Flows view
 
@@ -47,7 +47,7 @@ Enterprise customers can now restrict bots to only be accessible by certain team
 
 Read all about how to use team member roles & bot access:
 
-{% page-ref page="../../organization-management/user-management/" %}
+{% page-ref page="../../organization-management/access-control/" %}
 
 ## December 2020
 

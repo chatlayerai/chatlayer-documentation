@@ -1,3 +1,9 @@
+---
+description: >-
+  Explore the offered possibilities for role based access control and identity
+  management in our platform.
+---
+
 # Access Control
 
 In the module ''Platform users' you can add or remove users from your account. 

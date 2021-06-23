@@ -44,8 +44,8 @@
 
 ## Organization Management
 
-* [Access Control](organization-management/user-management/README.md)
-  * [Single Sign-On \(SAML SSO\)](organization-management/user-management/single-sign-on-sso-saml.md)
+* [Access Control](organization-management/access-control/README.md)
+  * [Single Sign-On \(SAML SSO\)](organization-management/access-control/single-sign-on-sso-saml.md)
 
 ## Integrations
 
