@@ -1,8 +1,8 @@
 ---
 description: >-
-  Our analytics are better than ever! This page will walk you through the
-  different components and sections of our Analytics page, which you can use to
-  analyse and optimise your bot in the future!
+  This page will walk you through the different components and sections of our
+  Analytics page, which you can use to analyse and optimise your bot in the
+  future.
 ---
 
 # Analytics
@@ -64,7 +64,7 @@ The first 'Conversations' component shows the distribution of bot conversations 
 Switching from 'Languages' to 'Channels' will show the use of the bot over different channels \(if these are used of course\).
 
 {% hint style="warning" %}
-Is the number of conversations in the Analytics overview different from the number of conversations in the conversation history? That's because in Analytics, we show all conversations, whereas in the history overview, we only include conversations in which the user actually replied.
+Is the number of conversations in the Analytics overview different from the number of conversations in the conversation history? That's because in Analytics, we show all conversations, whereas in the history overview, we only include conversations where the user actually replied.
 {% endhint %}
 
 ![](../../.gitbook/assets/image%20%28551%29.png)
