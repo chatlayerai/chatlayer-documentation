@@ -22,7 +22,7 @@ Use this information to see trends overtime. That you are missing some users on 
 
 ![](../../.gitbook/assets/image%20%28562%29.png)
 
-Activity shows, per hour, when your users are most active. This can be helpful to discover trends and act accordingly.
+Activity shows, per hour, when your users are most active. This can be helpful to discover trends and act accordingly, for example with planning more Support staff on busy days to account for more offloading requests.
 
 
 
