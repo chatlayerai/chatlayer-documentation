@@ -34,10 +34,10 @@ Not seeing any data in the overview? Then you might be looking at the 'DRAFT'  d
 The 'User Messages' section shows an overview of how many messages are:
 
 * Understood: the user expression is recognized correctly and the corresponding intent was triggered
-* Button clicks: this shows how often users clicked on a button, carousel, quick reply etc.
-* Not understood: the user expression is not understood, meaning it is below the NLP threshold, so the user saw the 'not understood message'
+* [Button clicks](https://docs.chatlayer.ai/bot-answers/analytics/intents): this shows how often users clicked on a button, carousel, quick reply etc.
+* [Not understood](https://docs.chatlayer.ai/bot-answers/analytics/intents): the user expression is not understood, meaning it is below the NLP threshold, so the user saw the 'not understood message'
 
-Clicking on 'Details' in the right upper corner will bring you to the 'Conversations' page. 
+Clicking on 'Details' in the right upper corner will bring you to the [Conversations ](https://docs.chatlayer.ai/bot-answers/analytics/conversations)page. 
 
 {% hint style="info" %}
 Seeing a 'not understood' percentage of &gt; 15%? You should look into which intents are not understood correctly and improve your NLP by using the [Train tab](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages). Creating better[ 'not understood' messages](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog) will also create a better user experience.
@@ -47,9 +47,9 @@ Seeing a 'not understood' percentage of &gt; 15%? You should look into which int
 
 ![](../../.gitbook/assets/image%20%28557%29.png)
 
-The 'Users' section gives information about how many users have interacted with your bot during that period. A user is someone who sends at least one message to the bot, while a returning user is someone who has had multiple conversations with the bot in this time period.
+The 'Users' section gives information about how many users have interacted with your bot during that period. A [user ](https://docs.chatlayer.ai/bot-answers/analytics/definitions#user)is someone who sends at least one message to the bot, while a [returning user](https://docs.chatlayer.ai/bot-answers/analytics/definitions#returning-user) is someone who has had multiple conversations with the bot in this time period.
 
-Clicking on 'Details' in the right upper corner will bring you to the 'Users' page. 
+Clicking on 'Details' in the right upper corner will bring you to the [Users](https://docs.chatlayer.ai/bot-answers/analytics/users) page. 
 
 {% hint style="info" %}
 Seeing a lot of returning users? That's not a bad thing! It could be that the user finds their answer quickly and doesn't have to return within the filtered time period. It's more telling to see if the usage of your bot does not decrease significantly over time, because that would mean users are not using the bot as much any more.
@@ -81,7 +81,7 @@ Let's say, you made some significant changes to decrease human offloading on Apr
 Did the offloading rate indeed decrease? Compare these stats over the same amount of time for the best comparison, so the entire month of March and the entire month of May for example.
 {% endhint %}
 
-Clicking on 'Details' in the right upper corner will bring you to the 'Conversations' page. 
+Clicking on 'Details' in the right upper corner will bring you to the [Conversations ](https://docs.chatlayer.ai/bot-answers/analytics/conversations)page. 
 
 ### Most triggered intents
 
@@ -95,7 +95,7 @@ The example above shows that 50% of intents triggered were for an offload reques
 If this happens for your bot too, try to decrease offloading by setting the[ correct expectations](https://docs.chatlayer.ai/tips-and-best-practices/what-makes-a-good-chatbot#2-set-the-right-expectations) and [guiding the user](https://docs.chatlayer.ai/tips-and-best-practices/what-makes-a-good-chatbot#3-guide-the-user) to their answer via the bot instead of asking for a human agent. 
 {% endhint %}
 
-Clicking on 'Details' in the right upper corner will bring you to the 'Intents' page. 
+Clicking on 'Details' in the right upper corner will bring you to the [Intents ](https://docs.chatlayer.ai/bot-answers/analytics/intents)page. 
 
 ### Active customers
 
@@ -103,7 +103,7 @@ Clicking on 'Details' in the right upper corner will bring you to the 'Intents' 
 
 'Active customers' shows when your users are most active and interact with the bot.
 
-Clicking on 'Details' in the right upper corner will bring you to the 'Users - Activity' page where you can see the user activity per hour. 
+Clicking on 'Details' in the right upper corner will bring you to the [Users - Activity](https://docs.chatlayer.ai/bot-answers/analytics/users) page where you can see the user activity per hour. 
 
 {% hint style="info" %}
 Use the knowledge of when your customers are most active to your advantage. Do you see an increase on a specific day? Make sure you have extra staff available that day to account for the extra offloading requests that could occur.
@@ -129,5 +129,5 @@ The example above shows that 63.6% of users immediately create an incident. If t
 This example shows that 73.7% of users immediately see a 'not understood' after the introduction. Use information like this to optimize your bot. Check in the [Train tab](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages) which expressions are not understood, and improve your NLP model accordingly. Also, [manage expectations](https://docs.chatlayer.ai/tips-and-best-practices/what-makes-a-good-chatbot#2-set-the-right-expectations) in your introduction. If a user doesn't know what your bot can do for them, they'll ask anything, increasing the chance of getting a 'not understood' message because they're asking questions outside of the bot scope.
 {% endhint %}
 
-Clicking on 'Details' in the right upper corner will bring you to the 'User Flow' page. 
+Clicking on 'Details' in the right upper corner will bring you to the [User Flow](https://docs.chatlayer.ai/bot-answers/analytics/user-flow) page. 
 
