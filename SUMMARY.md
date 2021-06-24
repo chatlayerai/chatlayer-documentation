@@ -29,13 +29,17 @@
 ## Bot management <a id="bot-answers"></a>
 
 * [Analytics](bot-answers/analytics/README.md)
+  * [Definitions](bot-answers/analytics/definitions.md)
+  * [Users](bot-answers/analytics/users.md)
+  * [Conversations](bot-answers/analytics/conversations.md)
   * [User flow](bot-answers/analytics/user-flow.md)
+  * [Intents](bot-answers/analytics/intents.md)
 * [Bot dialogs](bot-answers/dialog-state/README.md)
   * [Bot message](bot-answers/dialog-state/message-components.md)
   * [Go To](bot-answers/dialog-state/plugins.md)
   * [Input Validation](bot-answers/dialog-state/user-input-bot-dialog.md)
   * [Action](bot-answers/dialog-state/action-bot-dialog.md)
-* [Conversations](bot-answers/user-messages.md)
+* [Conversation history](bot-answers/user-messages.md)
 * [Events](bot-answers/events.md)
 * [Publishing your bot](bot-answers/publishing-your-bot/README.md)
   * [Publishing & platform URLs \(new\)](bot-answers/publishing-your-bot/publishing-new.md)

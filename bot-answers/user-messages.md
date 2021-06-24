@@ -1,4 +1,4 @@
-# Conversations
+# Conversation history
 
 Here you can see all users shown in a user table. By starting to type in the Filter text boxes, you can filter conversations based on first name, last name or language.
 

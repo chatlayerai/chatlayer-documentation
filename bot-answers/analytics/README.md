@@ -1,50 +1,133 @@
+---
+description: >-
+  Our analytics are better than ever! This page will walk you through the
+  different components and sections of our Analytics page, which you can use to
+  analyse and optimise your bot in the future!
+---
+
 # Analytics
 
-## Definitions
+## Dashboard
 
-Throughout our analytics we use several key terms. In order to fully understand our analytics, it's important to know the exact definition of these term.
+The dashboard is the main page in our Analytics. It shows a lot of important information about your bot in a quick and simple overview:
 
-### Conversation
+![](../../.gitbook/assets/image%20%28560%29.png)
 
-A conversation starts with a first message being sent, either by the bot or by the user. ​
+Let's go through all the components one by one, and see what they exactly mean for your bot. Each section also includes detailed information about how that specific component can be interpreted and used to improve your bot.
 
-We start counting a new conversation when there is no interaction between your bot and a user for at least 15 minutes.​
+### Filtering
 
-### User
+![](../../.gitbook/assets/image%20%28555%29.png)
 
-A user is anyone who sends at least one message to the bot. 
+With these filters you can adjust the information shown on the dashboard, and create specific views for your bot. This provides valuable information to see how your bot progresses over time.
 
-If you're on an asynchronous channel like Facebook or WhatsApp, the user will be the same throughout their entire lifecycle with the bot. This means that every Facebook user talking to the bot will only count as one user in the analytics.
+'All Channels' allows you to filter on specific channels, and 'All languages' shows information about your bot in different languages.
 
-If you're exposing the bot through a web widget or custom implementation, by default every time somebody refreshes their web page and starts talking to the bot again, they are counted as a new user. However, some clients configure their web widgets in a way that recognizes a returning user with a Sender ID. This way, returning users are only counted once.
+{% hint style="warning" %}
+Not seeing any data in the overview? Then you might be looking at the 'DRAFT'  data, aka your unpublished bot, while your customers are communicating with your 'LIVE' \(= published\) bot. Switch to 'LIVE' with your filtering to see the actual customer data.  
+{% endhint %}
 
-#### Returning user
+### User Messages
 
-Every user that has more than one [conversation](./#conversation) is counted as a returning user.
+![](../../.gitbook/assets/image%20%28559%29.png)
 
-### Message
+The 'User Messages' section shows an overview of how many messages are:
 
-A message is every interaction by the user with the bot. This can be a typed expression, but also a button click, a file upload, etc.
+* Understood: the user expression is recognized correctly and the corresponding intent was triggered
+* Button clicks: this shows how often users clicked on a button, carousel, quick reply etc.
+* Not understood: the user expression is not understood, meaning it is below the NLP threshold, so the user saw the 'not understood message'
 
-#### 'Not understood' message
+Clicking on 'Details' in the right upper corner will bring you to the 'Conversations' page. 
 
-A message is not understood if it's an expression that is not an exact match for one of the trained expressions and the NLP confidence of this expression is under the defined [NLP threshold](../../understanding-users/natural-language-processing-nlp/settings.md).
+{% hint style="info" %}
+Seeing a 'not understood' percentage of &gt; 15%? You should look into which intents are not understood correctly and improve your NLP by using the [Train tab](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages). Creating better[ 'not understood' messages](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog) will also create a better user experience.
+{% endhint %}
 
-#### Button clicks
+### Users
 
-Some messages will consist of the user clicking a button. This button can appear in a Button template, Quick Replies, Carousel, List, ...
+![](../../.gitbook/assets/image%20%28557%29.png)
 
-### Channel
+The 'Users' section gives information about how many users have interacted with your bot during that period. A user is someone who sends at least one message to the bot, while a returning user is someone who has had multiple conversations with the bot in this time period.
 
-Analytics for every channel directly connected to Chatlayer can be shown separately
+Clicking on 'Details' in the right upper corner will bring you to the 'Users' page. 
 
-### Language
+{% hint style="info" %}
+Seeing a lot of returning users? That's not a bad thing! It could be that the user finds their answer quickly and doesn't have to return within the filtered time period. It's more telling to see if the usage of your bot does not decrease significantly over time, because that would mean users are not using the bot as much any more.
+{% endhint %}
 
-Analytics for every bot language can be shown separately.
+### Conversations
 
-### Call
+![](../../.gitbook/assets/image%20%28558%29.png)
 
-A call is every time a user triggers a certain intent. The total number of calls per intent is the amount of times a specific intent was triggered during a given time range.
+The first 'Conversations' component shows the distribution of bot conversations in all available languages. 
 
+Switching from 'Languages' to 'Channels' will show the use of the bot over different channels \(if these are used of course\).
 
+{% hint style="warning" %}
+Is the number of conversations in the Analytics overview different from the number of conversations in the conversation history? That's because in Analytics, we show all conversations, whereas in the history overview, we only include conversations in which the user actually replied.
+{% endhint %}
+
+![](../../.gitbook/assets/image%20%28551%29.png)
+
+The second 'Conversations' component shows the human offloading, average messages per conversation, and the average length of conversations:
+
+* Human agent takes over: a conversation is marked as a human handover when it includes a triggered "Send to offload provider" action
+* Messages per conversation: this category represents the most occurring length of a conversation in number of messages for interactions between your bot and its users.
+* Conversation duration: this category represents the most occurring length of a conversation in number of minutes for interactions between your bot and its users
+
+{% hint style="success" %}
+Let's say, you made some significant changes to decrease human offloading on April 1st. The analytics can help to see what the offloading rate before and after April 1st was, so you can see the effect these changes had.   
+  
+Did the offloading rate indeed decrease? Compare these stats over the same amount of time for the best comparison, so the entire month of March and the entire month of May for example.
+{% endhint %}
+
+Clicking on 'Details' in the right upper corner will bring you to the 'Conversations' page. 
+
+### Most triggered intents
+
+![](../../.gitbook/assets/image%20%28561%29.png)
+
+'Most triggered intents' shows the top 5 intents that were triggered most often, including the number of calls and their percentages.
+
+{% hint style="success" %}
+The example above shows that 50% of intents triggered were for an offload request. Some customers mention offloading immediately in their introduction, making it very easy for the user to ask for human assistance right away \(instead of using the bot to get their answer\). This defeats the purpose of a good chatbot.
+
+If this happens for your bot too, try to decrease offloading by setting the[ correct expectations](https://docs.chatlayer.ai/tips-and-best-practices/what-makes-a-good-chatbot#2-set-the-right-expectations) and [guiding the user](https://docs.chatlayer.ai/tips-and-best-practices/what-makes-a-good-chatbot#3-guide-the-user) to their answer via the bot instead of asking for a human agent. 
+{% endhint %}
+
+Clicking on 'Details' in the right upper corner will bring you to the 'Intents' page. 
+
+### Active customers
+
+![](../../.gitbook/assets/image%20%28552%29.png)
+
+'Active customers' shows when your users are most active and interact with the bot.
+
+Clicking on 'Details' in the right upper corner will bring you to the 'Users - Activity' page where you can see the user activity per hour. 
+
+{% hint style="info" %}
+Use the knowledge of when your customers are most active to your advantage. Do you see an increase on a specific day? Make sure you have extra staff available that day to account for the extra offloading requests that could occur.
+{% endhint %}
+
+### Flows
+
+![](../../.gitbook/assets/image%20%28556%29.png)
+
+'Flow - Most popular bot dialogs' shows which route most users take in your bot. In the example above, 15.9% of users first go to the website router, and the same amount of users first go to the introduction or to the 'Intro Hello' intent. 3.5% immediately goes to offloading and 3.5% got a 'not understood' message.
+
+Hover over one of the specific bot dialogs to show the option 'Open'. Now click again to see a detailed overview of the exact flow the user is following:
+
+![](../../.gitbook/assets/image%20%28554%29.png)
+
+{% hint style="success" %}
+The example above shows that 63.6% of users immediately create an incident. If this doesn't fit the bot scope, make sure that creating an incident is more 'hidden' in the conversation and guide the user to search for their answer first.
+{% endhint %}
+
+![](../../.gitbook/assets/image%20%28553%29.png)
+
+{% hint style="success" %}
+This example shows that 73.7% of users immediately see a 'not understood' after the introduction. Use information like this to optimize your bot. Check in the [Train tab](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages) which expressions are not understood, and improve your NLP model accordingly. Also, [manage expectations](https://docs.chatlayer.ai/tips-and-best-practices/what-makes-a-good-chatbot#2-set-the-right-expectations) in your introduction. If a user doesn't know what your bot can do for them, they'll ask anything, increasing the chance of getting a 'not understood' message because they're asking questions outside of the bot scope.
+{% endhint %}
+
+Clicking on 'Details' in the right upper corner will bring you to the 'User Flow' page. 
 
