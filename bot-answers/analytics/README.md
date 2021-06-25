@@ -52,7 +52,7 @@ The 'Users' section gives information about how many users have interacted with 
 Clicking on 'Details' in the right upper corner will bring you to the [Users](https://docs.chatlayer.ai/bot-answers/analytics/users) page. 
 
 {% hint style="info" %}
-Seeing a lot of returning users? That's not a bad thing! It could be that the user finds their answer quickly and doesn't have to return within the filtered time period. It's more telling to see if the usage of your bot does not decrease significantly over time, because that would mean users are not using the bot as much any more.
+Seeing a lot of new users? That's not a bad thing! It could be that the user finds their answer quickly and doesn't have to return within the filtered time period. It's more telling to see if the usage of your bot does not decrease significantly over time, because that would mean users are not using the bot as much any more.
 {% endhint %}
 
 ### Conversations
