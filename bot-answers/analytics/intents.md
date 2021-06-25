@@ -1,5 +1,5 @@
 ---
-description: The Intents page gives detailed information about the triggered intents
+description: The Intents page gives detailed information about the triggered intents.
 ---
 
 # Intents
