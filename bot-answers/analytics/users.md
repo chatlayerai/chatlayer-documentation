@@ -1,5 +1,5 @@
 ---
-description: The Users page is one of the detailed pages of Analytics.
+description: The Users page gives detailed information about your users and their activity.
 ---
 
 # Users
