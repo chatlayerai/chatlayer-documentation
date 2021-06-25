@@ -12,7 +12,7 @@ The User flow page contains two different views:
 
 
 
-![](../../.gitbook/assets/image%20%28569%29.png)
+![](../../.gitbook/assets/image%20%28570%29.png)
 
 
 
