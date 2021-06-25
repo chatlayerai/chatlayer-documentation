@@ -147,5 +147,9 @@ If you're connecting your bot to internal systems that require whitelisting, ple
   </tbody>
 </table>
 
+### Security & certification
 
+Chatlayer is ISO 27001 certified. You can read more about our security policies on [this page](https://chatlayer.ai/security/).
+
+![](../.gitbook/assets/image%20%28572%29.png)
 
