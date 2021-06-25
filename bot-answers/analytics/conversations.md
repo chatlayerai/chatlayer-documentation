@@ -10,7 +10,7 @@ The Conversations page contains two tabs: Overview and User Messages.
 
 ### Overview
 
-![](../../.gitbook/assets/image%20%28565%29.png)
+![](../../.gitbook/assets/image%20%28566%29.png)
 
 This tab contains a lot of valuable information, such as detailed statistics on the number of conversations, and the percentage of handover.
 
@@ -24,7 +24,7 @@ Keep a close eye on the average messages per conversation and the conversation d
 
 ### User messages
 
-![](../../.gitbook/assets/image%20%28566%29.png)
+![](../../.gitbook/assets/image%20%28568%29.png)
 
 The tab 'User messages' gives very detailed information about the amount of messages that are understood, [not understood](https://docs.chatlayer.ai/bot-answers/analytics/definitions#not-understood-message), and the [button clicks.](https://docs.chatlayer.ai/bot-answers/analytics/definitions#button-clicks)
 
