@@ -39,8 +39,6 @@ This article will explain how to set this up:
 
 ![](../../.gitbook/assets/image%20%28574%29.png)
 
-* Toggle 'Is On Premise' when your Sinch Contact environment is on Premise. Fill in 
-
 Looking at the URL you copied before, you can identify _Region_ and _Tenant Name:_
 
 https://prod-_region_._domain_**.**com/_tenantname_/visitor/ecfs
@@ -53,6 +51,14 @@ The other fields can be found back in Sinch Contact:
 
 * Username and password: fill these fields in from the newly created virtual agent 
 * Now click 'Continue' to save your configuration 
+
+{% hint style="info" %}
+Do you have an On Premise environment of Sinch Contact? Toggle 'Is On Premise' and fill out the following: If your URL is
+
+[https://mywebsite.com/integrations/sinch-contact/tenantname](https://mywebsite.com/integrations/sinch-contact/<tenantname>)
+
+ Your host is 'mywebsite.com', and the tenant name will be 'integrations/sinch-contact/tenantname'
+{% endhint %}
 
 ### Setting up offload action
 
