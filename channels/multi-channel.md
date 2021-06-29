@@ -12,7 +12,7 @@ Publishing your bot on a channel is quite easy if you follow our channel guides:
 
 {% page-ref page="google-assistant.md" %}
 
-{% page-ref page="webwidget.md" %}
+{% page-ref page="webwidget/" %}
 
 {% page-ref page="phone-and-voice.md" %}
 

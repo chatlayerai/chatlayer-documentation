@@ -12,7 +12,7 @@ Facebook Messenger saves them indefinitely, but by default, the Web Widget only 
 
 ## Step 1: How to convert your introduction into a go-to dialog
 
-By know you should know that every conversation starts with the introduction __dialog:
+By now you should know that every conversation starts with the introduction __dialog:
 
 ![The introduction dialog kicks off every conversation](../.gitbook/assets/image%20%28523%29.png)
 

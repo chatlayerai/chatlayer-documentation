@@ -57,16 +57,17 @@
   * [Advanced API integrations](integrations/custom-back-end-integrations/advanced-api-integrations.md)
 * [Code Editor](integrations/code-action.md)
 * [Human handover & live chat](integrations/human-offloading-live-chat/README.md)
-  * [Offloading Webhook](integrations/human-offloading-live-chat/offloading-webhook.md)
   * [\#Interact](integrations/human-offloading-live-chat/interact.md)
-  * [RingCentral Engage Digital](integrations/human-offloading-live-chat/ringcentral-engage-digital.md)
   * [Genesys Cloud](integrations/human-offloading-live-chat/genesys-purecloud.md)
   * [Help Scout](integrations/human-offloading-live-chat/helpscout.md)
-  * [Zendesk Chat](integrations/human-offloading-live-chat/zendesk-chat.md)
   * [Intercom](integrations/human-offloading-live-chat/intercom-integration.md)
-  * [Sparkcentral by Hootsuite](integrations/human-offloading-live-chat/sparkcentral-beta.md)
-  * [Creating a Zendesk Support Ticket](integrations/human-offloading-live-chat/creating-a-zendesk-support-ticket.md)
+  * [Offloading Webhook](integrations/human-offloading-live-chat/offloading-webhook.md)
+  * [RingCentral Engage Digital](integrations/human-offloading-live-chat/ringcentral-engage-digital.md)
   * [Salesforce Service Cloud](integrations/human-offloading-live-chat/salesforce-service-cloud.md)
+  * [Sinch Contact](integrations/human-offloading-live-chat/sinch-contact.md)
+  * [Sparkcentral by Hootsuite](integrations/human-offloading-live-chat/sparkcentral-beta.md)
+  * [Zendesk Chat](integrations/human-offloading-live-chat/zendesk-chat.md)
+  * [Zendesk Support Ticket](integrations/human-offloading-live-chat/creating-a-zendesk-support-ticket.md)
 * [Message objects for APIs](integrations/chat-message-structure-for-apis.md)
 * [Retrieving data from Airtable \(GET\)](integrations/retrieving-data-from-airtable-get.md)
 * [Sending data to Airtable \(POST\)](integrations/airtable.md)
@@ -81,7 +82,9 @@
 * [Google Assistant](channels/google-assistant.md)
 * [Phone & voice](channels/phone-and-voice.md)
 * [Sinch Conversation API](channels/sinch-conversation-api-beta.md)
-* [Web chat widget](channels/webwidget.md)
+* [Web chat widget](channels/webwidget/README.md)
+  * [Customize web widget](channels/webwidget/customize-web-widget.md)
+  * [Live example web widget](channels/webwidget/live-example-web-widget.md)
 * [Webhook Channel](channels/webhook-api.md)
 * [WhatsApp Business API](channels/whatsapp.md)
 * [Workplace from Facebook](channels/workplace-from-facebook.md)
@@ -111,11 +114,11 @@
 
 ## Tutorials <a id="tutorials-1"></a>
 
+* [Create a web widget demo page](tutorials-1/web-widget-demo-page.md)
 * [Gathering user feedback](tutorials-1/gathering-user-feedback.md)
 * [Recognizing a returning user](tutorials-1/how-to-recognize-a-returning-bot-user.md)
 * [Reusing flows](tutorials-1/reuse-flows.md)
 * [Using time in your chatbot](tutorials-1/using-time-in-your-chatbot.md)
-* [Creating a web widget demo page](tutorials-1/web-widget-demo-page.md)
 
 ## Support
 

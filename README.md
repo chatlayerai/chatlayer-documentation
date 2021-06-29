@@ -13,7 +13,7 @@ Get started with these topics:
 
 {% page-ref page="tutorials/tutorial-getting-started.md" %}
 
-{% page-ref page="channels/webwidget.md" %}
+{% page-ref page="channels/webwidget/" %}
 
 
 

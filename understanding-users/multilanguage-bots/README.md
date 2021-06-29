@@ -55,7 +55,7 @@ If you want to create an intent that allows a user to change their current langu
 
 #### Web widget
 
-In the web widget you can trigger a specific bot language based on the language of the page the user is looking at. Learn more [here](../../channels/webwidget.md#default-locale).
+In the web widget you can trigger a specific bot language based on the language of the page the user is looking at. Learn more [here](../../channels/webwidget/#default-locale).
 
 #### Voice
 

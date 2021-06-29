@@ -1,4 +1,4 @@
-# Creating a Zendesk Support Ticket
+# Zendesk Support Ticket
 
 If your organisation doesn't have any live chat agents available, you can also have the bot create Zendesk Support Tickets. This tutorial will show you how. Because of all the code it looks quite technical, but in fact it's pretty easy.
 
