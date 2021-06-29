@@ -53,11 +53,11 @@ The other fields can be found back in Sinch Contact:
 * Now click 'Continue' to save your configuration 
 
 {% hint style="info" %}
-Do you have an On Premise environment of Sinch Contact? Toggle 'Is On Premise' and fill out the following: If your URL is
+Do you have an On Premise environment of Sinch Contact? Toggle 'Is On Premise' and fill out the following: For the URL
 
-[https://mywebsite.com/integrations/sinch-contact/tenantname](https://mywebsite.com/integrations/sinch-contact/<tenantname>)
+[_https://mywebsite.com/integrations/sinch-contact/tenantname_](https://mywebsite.com/integrations/sinch-contact/<tenantname>)\_\_
 
- Your host is 'mywebsite.com', and the tenant name will be 'integrations/sinch-contact/tenantname'
+ The **host** is 'mywebsite.com', and the **tenant name** will be 'integrations/sinch-contact/tenantname'
 {% endhint %}
 
 ### Setting up offload action
