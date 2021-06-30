@@ -25,7 +25,9 @@ If you're showing the bot through a web widget or custom implementation, by defa
 
 ### Returning user
 
-Every user that has more than one [conversation](./#conversation) with the bot is counted as a returning user.
+Users that have a conversation during and before the selected time range in the analytics dashboards are counted as a returning user.
+
+If a user had multiple conversations during the selected time range, but no conversations before that range, they will not be counted as a returning user.
 
 ### Message
 
