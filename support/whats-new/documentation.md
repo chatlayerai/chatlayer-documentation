@@ -10,6 +10,8 @@ description: >-
 ## June 2021
 
 * A new tutorial on how to [add external videos](https://docs.chatlayer.ai/tips-and-best-practices/solving-bot-issues/3.-media-upload-not-working) to your bot.
+* All new and improved [Analytics documentation](https://docs.chatlayer.ai/bot-answers/analytics), including tips & tricks how to interpret the data and improve your bot
+* An [article ](https://docs.chatlayer.ai/channels/webwidget/customize-web-widget)with code snippets how to customize your web widget
 
 ## May 2021
 
