@@ -100,5 +100,5 @@ Once this Action is triggered and the chosen department has at least one agent o
 
 ## Going Live
 
-To go live, you should configure a Zendesk channel for the Live environment on [cms.chatlayer.ai](https://cms.chatlayer.ai). We recommend creating a seperate Bot Agent, Department and Widget connected to that Department for both your Draft and Live environments. This assures no collisions will happen between your bot's versions.
+To go live, you should configure a Zendesk channel for the Live environment on [app.chatlayer.ai](https://app.chatlayer.ai). We recommend creating a seperate Bot Agent, Department and Widget connected to that Department for both your Draft and Live environments. This assures no collisions will happen between your bot's versions.
 
