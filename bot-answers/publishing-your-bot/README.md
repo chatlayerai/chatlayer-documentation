@@ -6,14 +6,8 @@ Publishing your bot is easier than you think! This article will guide you how to
 
 First, you need to create a draft version of your bot. You can do this by going to [app.chatlayer.ai](http://app.chatlayer.ai/) and start building your awesome bot!
 
-* https://app.chatlayer.ai/bots/&lt;botId&gt;/DRAFT
-* Used to build and test new bot versions and improve your NLP model
-
 Once you have your flow, a channel, and fully tested your bot, it is ready to go live so real users can use your bot.
 
-* https://app.chatlayer.ai/bots/&lt;botId&gt;/LIVE
-* The production chatbot that is already communicating with your users
-* **We recommend not changing data and configuration \(flows, NLP, settings\) directly in your production environment as this can break your live bot.**
 * Go to  the 'Publish' menu on the left hand side. You should see the following if you have not published your bot before:
 
 ![](../../.gitbook/assets/image%20%28583%29.png)
