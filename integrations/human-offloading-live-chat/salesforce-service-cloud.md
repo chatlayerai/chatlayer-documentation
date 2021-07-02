@@ -20,7 +20,7 @@ In the final step, you will be requested to fill in the bot id, access token and
 
 To find the bot id, navigate to the bot you want to connect into Salesforce. You can find your bot id in the URL of your bot.
 
-`https://cms.chatlayer.ai/bots/`**`thisIsYourBotId`**`/analytics/dashboard`
+`https://app.chatlayer.ai/bots/`**`thisIsYourBotId`**`/analytics/dashboard`
 
 Copy paste your bot id into the Salesforce new configuration window.
 
