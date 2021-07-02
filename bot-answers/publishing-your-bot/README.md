@@ -1,35 +1,44 @@
 # Publishing your bot
 
-Our platform provides 2 environments: staging and production, to support working in parallel on a new version of your chatbot without interfering with your live version that's being used by your users in real-time. 
+Publishing your bot is easier than you think! This article will guide you how to publish your bot so your users can enjoy the bot.
 
-You have access to both environments:
+## Draft version
 
-1. **Staging \('Draft'\)**
+First, you need to create a draft version of your bot. You can do this by going to [app.chatlayer.ai](http://app.chatlayer.ai/) and start building your awesome bot!
 
-* [https://cms.staging.chatlayer.ai](https://cms.staging.chatlayer.ai)
-* Used to build and test new bot versions and improve your NLP model
+Once you have your flow, a channel, and fully tested your bot, it is ready to go live so real users can use your bot.
 
-2. **Production \('Live'\)**
+* Go to  the 'Publish' menu on the left hand side. You should see the following if you have not published your bot before:
 
-* [https://cms.chatlayer.ai](https://cms.chatlayer.ai)
-* The production chatbot that is already communicating with your users
-* **We recommend not changing data and configuration \(flows, NLP, settings\) directly in your production environment as this can break your live bot.**
+![](../../.gitbook/assets/image%20%28583%29.png)
 
-Once your bot is ready and tested in the staging environment, it's time to publish your bot to the production environment.
+* Click 'Publish' to start publishing your bot:
 
-If you want to run your bot within Facebook Messenger, we advise you to set up a separate Facebook page and app for your staging version of the bot.
+![](../../.gitbook/assets/image%20%28584%29.png)
+
+* Add release notes to keep track of your changes in that specific version, and click 'Publish'
 
 {% hint style="info" %}
-The user messages from your live bot are added to the [Train tab](../../understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages.md) of both the live and draft versions of your bot. You can use this real user data to optimize your NLP models.
+Depending on the size of your bot, publishing could take a while.
 {% endhint %}
 
-To publish your bot, go to the 'Versioning' module in the staging environment.
+## Live version
 
-![](../../.gitbook/assets/image%20%28370%29.png)
+Once you have published your bot, you will see the following:
 
-Enter a description for the new version of your bot and publish it by clicking the button.
+![](../../.gitbook/assets/image%20%28586%29.png)
 
-![](../../.gitbook/assets/image%20%28369%29.png)
+Clicking on 'Open live mode' will take you to the live version of your bot. This is the version that users will interact with. Once you are in the live environment, you will see a red banner to visualize you are in the LIVE environment:
+
+![](../../.gitbook/assets/image%20%28585%29.png)
+
+
+
+{% hint style="warning" %}
+We recommend not changing data and configuration \(flows, NLP, settings\) directly in your production environment as this can break your live bot which your customers are actively using. 
+{% endhint %}
+
+## Publishing your NLP
 
 Take into account that:
 
@@ -39,5 +48,13 @@ Take into account that:
 
 {% hint style="info" %}
 Different NLP models in different environments will never be 100% identical. There are random factors inherent to this kind of machine learning that create different results, even with the same data. These differences are usually small, but in some cases where intents are very similar, the differences can be more apparent and lead to significant differences in confidence or entirely different classifications. 
+{% endhint %}
+
+## Maintaining the bot
+
+Once your bot is live and customers are using it, you can keep making changes to your bot in the DRAFT environment of [app.chatlayer.ai](http://app.chatlayer.ai/) . Once your changes are finished, you can again publish your bot. This will overwrite the existing version of your LIVE bot with the state of your DRAFT bot.
+
+{% hint style="warning" %}
+More questions about publishing your bot? Check out the[ FAQ page](https://docs.chatlayer.ai/bot-answers/publishing-your-bot/publishing-new) or [contact us](http://support.chatlayer.ai). 
 {% endhint %}
 

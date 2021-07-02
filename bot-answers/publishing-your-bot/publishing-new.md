@@ -1,17 +1,14 @@
-# Publishing & platform URLs \(new\)
+# Publishing & platform URLs FAQ
 
-  
-In our next platform update, we are releasing a new version of Chatlayer that makes handling the live and draft versions of your bot much easier. We’re introducing the [app.chatlayer.ai](http://app.chatlayer.ai/) URL that unifies everything that’s currently on the [cms.staging.chatlayer.ai](http://cms.staging.chatlayer.ai/) and the [cms.chatlayer.ai](http://cms.chatlayer.ai/) URLs.
+In one of our previous platform updates, we have released a new version of Chatlayer that makes handling the live and draft versions of your bot much easier. Older customers may still know [cms.staging.chatlayer.ai](http://cms.staging.chatlayer.ai/) instead of [app.chatlayer.ai](http://app.chatlayer.ai/).
 
-## Current way of managing bot versions
-
-Currently, there are 2 customer-facing platform environments: Staging and Production. Customers first build their bot on the Staging environment, which is accessed at [cms.staging.chatlayer.ai](http://cms.staging.chatlayer.ai/). Later, when a first version of the bot is ready to go live, the bot is published to the Production environment at [cms.chatlayer.ai](http://cms.chatlayer.ai/). Updates to the NLP or bot dialogs of the bot happen on the Staging environment again, until it’s ready for a new publish to the Production environment.
+We’re introducing the [app.chatlayer.ai](http://app.chatlayer.ai/) URL that unifies everything that’s used to be on the [cms.staging.chatlayer.ai](http://cms.staging.chatlayer.ai/) and the [cms.chatlayer.ai](http://cms.chatlayer.ai/) URLs.
 
 ## Why are we changing this? 
 
 We’ve received a few support tickets by customers accidentally making changes to their live bots when they wanted to do so in the staging environment. And we get it, it’s too easy to make mistakes in a URL! We also think it’s quite a hassle to remember which URL hosts which environment, especially if you’re a new Chatlayer user.
 
-## So, what is changing?
+## So, what has changed?
 
 ### Chatlayer URL
 
@@ -50,10 +47,6 @@ When you export a bot, you can now choose between exporting the LIVE or DRAFT ve
 Your workflow will remain the same: you can publish a new version of the bot from draft to live whenever it’s ready.
 
 The Chatlayer API URLs will not change.
-
-## When will the release take place?
-
-The release is planned for 18/5. You can read more about the release window [here](https://status.chatlayer.ai/incidents/42dplxqgz7bc).
 
 ## FAQ
 
