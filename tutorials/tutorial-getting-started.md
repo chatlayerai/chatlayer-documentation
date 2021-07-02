@@ -18,7 +18,7 @@ What better way to learn how to build a bot than building one! To help you get s
 To get started, you need valid log-in credentials to access the Chatlayer platform. Don't have them yet? Please request them [here](https://www.chatlayer.ai/contact).
 {% endhint %}
 
-1.Go to [https://cms.staging.chatlayer.ai/](https://cms.staging.chatlayer.ai/) and log in using your credentials
+1.Go to [https://app.chatlayer.ai/](https://app.chatlayer.ai/) and log in using your credentials
 
 2. To build a new bot, click the blue `+ Add bot` button:
 
