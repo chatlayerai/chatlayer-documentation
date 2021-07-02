@@ -52,7 +52,7 @@ The Chatlayer API URLs will not change.
 
 * Am I losing my staging environment?
 
-No, the databased and infrastructure between the staging and production environments has been the same for over a year already. We are just merging the URLs. Your workflow remains the same: you can publish a new version from draft to live whenever it’s ready.
+No, the databases and infrastructure between the staging and production environments have been the same for over a year already. We are just merging the URLs. Your workflow remains the same: you can publish a new version from draft to live whenever it’s ready.
 
 * Will the old URLs \(using ‘cms’\) still work?
 
