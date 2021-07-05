@@ -2,7 +2,7 @@
 
 ![](../.gitbook/assets/worldmap-datacenters-updated.png)
 
-The Chatlayer SaaS application is deployed in the following locations:
+The Chatlayer SaaS application has environments deployed in the following locations:
 
 <table>
   <thead>
