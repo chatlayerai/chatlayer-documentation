@@ -43,6 +43,7 @@ const zendeskResult = await fetch('https://{subdomain}.zendesk.com/api/v2/ticket
 }).then(r => r.json())
 
 ChatlayerResponseBuilder()
+    .setSessionVariable("apiResponse", zendeskResult)
     .setNextDialogState(args.nextDialogState)
     .send()
 ```
@@ -58,5 +59,9 @@ ChatlayerResponseBuilder()
 Want to learn more about the Zendesk Create Ticket API that we're using? Read more [here](https://developer.zendesk.com/rest_api/docs/support/tickets#create-ticket).
 {% endhint %}
 
-* If there are any errors with your connection to Zendesk, you can find them in the Error logs tab under History.
+* If there are any errors with your connection to Zendesk, you can find these in your debugger tab:
+
+![You will see this as a response from the Zendesk API, useful for debugging or checking response codes](../../.gitbook/assets/image%20%28588%29.png)
+
+
 
