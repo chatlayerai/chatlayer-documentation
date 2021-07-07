@@ -1,6 +1,10 @@
-# Sinch Contact
+# Sinch Contact & Contact Pro
 
-It is now also possible to connect your bot with Sinch Contact, ensuring a seamless offloading experience from bot to human agent.
+It is now possible to connect your bot with Sinch Contact and Sinch Contact Pro, ensuring a seamless offloading experience from bot to human agent.
+
+{% hint style="info" %}
+Throughout this guide and the platform, we talk about the product "Sinch Contact". If you want to integrate "Sinch Contact Pro", you can follow the same instructions.
+{% endhint %}
 
 This article will explain how to set this up:
 

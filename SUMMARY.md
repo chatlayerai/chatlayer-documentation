@@ -64,7 +64,7 @@
   * [Offloading Webhook](integrations/human-offloading-live-chat/offloading-webhook.md)
   * [RingCentral Engage Digital](integrations/human-offloading-live-chat/ringcentral-engage-digital.md)
   * [Salesforce Service Cloud](integrations/human-offloading-live-chat/salesforce-service-cloud.md)
-  * [Sinch Contact](integrations/human-offloading-live-chat/sinch-contact.md)
+  * [Sinch Contact & Contact Pro](integrations/human-offloading-live-chat/sinch-contact.md)
   * [Sparkcentral by Hootsuite](integrations/human-offloading-live-chat/sparkcentral-beta.md)
   * [Zendesk Chat](integrations/human-offloading-live-chat/zendesk-chat.md)
   * [Zendesk Support Ticket](integrations/human-offloading-live-chat/creating-a-zendesk-support-ticket.md)
