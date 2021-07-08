@@ -12,7 +12,7 @@ We are constantly building new template bots, covering different industries and 
 
 Here's an overview of all available bot templates, ready to use!
 
-## 1 – Restaurant template bot
+## 1 – Restaurant Template bot
 
 This bot can help users book a table, place an online order, and show them the latest menu. If a topic isn’t supported yet, the bot encourages users to contact the restaurant directly to make sure they can always get help.
 
@@ -67,4 +67,14 @@ Wanna know more about your users, clients, and customers? Use our Net Promoter S
 * Collect valuable feedback in a conversational way
 * Deploy this bot on any channel, in any language
 * Make frustrated customers feel heard
+
+## 6 – Travel Template bot
+
+Grab your bags because you’re going on a virtual trip! This bot can look up flight details, such as airports or travel dates, and provide you with a link to book a ticket using the Skyscanner API.
+
+**Why use this template?**
+
+* Implement a bot with a more technical setup
+* Create a connection with the Skyscanner API
+* Learn how to change information from the bot to match the API calls
 
