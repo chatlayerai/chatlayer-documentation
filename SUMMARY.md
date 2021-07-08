@@ -95,7 +95,8 @@
 
 ## Tips & Best practices
 
-* [Bot templates](tips-and-best-practices/bot-templates.md)
+* [Bot templates](tips-and-best-practices/bot-templates/README.md)
+  * [Bot flows](tips-and-best-practices/bot-templates/bot-flows.md)
 * [Bot-building checklist](tips-and-best-practices/chatbot-checklist.md)
 * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
 * [Guidelines for building a good bot](tips-and-best-practices/what-makes-a-good-chatbot.md)
