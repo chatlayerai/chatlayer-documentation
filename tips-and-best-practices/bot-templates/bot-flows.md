@@ -1,18 +1,18 @@
 ---
-description: Add specific use cases to an existing bot and grow it fast and efficiently
+description: >-
+  Use bot flows to add specific use cases to an existing bot in just a few
+  clicks!
 ---
 
 # Bot flows
 
 ## What are bot flows?
 
-Unlike bot templates \(complete bots with an updated NLP and several use cases\) our bot flows are small components, designed for a specific use case. You can add such a bot flow to an existing bot to quickly add a new use case. 
-
-These bot flows are use cases that our customers use a lot, so we wanted to to make it easy for you by having these flows ready to go! All you have to do is copy and past the bot dialogs in your own bot – easy peasy!
+Unlike our bot templates, which are complete bots with an updated NLP and several use cases, our bot flows are small components, designed for a specific use case. You can add these bot flows to an existing bot to quickly add a new use case or functionality. All you have to do is copy and past the bot dialogs in your own bot – easy peasy!
 
 ## Which bot flows are there?
 
-We're adding new bot flows regularly, so make sure to come back often. Below are the bot flows that you can already copy:
+We're adding new bot flows quite regularly, so make sure to keep an eye on this page. Below are the bot flows that you can already use in the platform today:
 
 ### Zendesk ticket creation flow
 
