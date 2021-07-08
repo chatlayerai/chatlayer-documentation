@@ -2,7 +2,7 @@
 
 When you create a new bot, you can choose between building one from scratch, or starting with a template bot. These template bots are bots built by our team and contain an example conversation on a specific use case or industry. You can add these bots to your account to get inspiration or learn more about the Chatlayer features!
 
-Next to templates, we also have ready to go bot flows. Read more about that here.
+Next to templates, we also have ready to go bot flows. Read more about that [here](https://docs.chatlayer.ai/tips-and-best-practices/bot-templates/bot-flows).
 
 ![](../../.gitbook/assets/image%20%28520%29.png)
 
