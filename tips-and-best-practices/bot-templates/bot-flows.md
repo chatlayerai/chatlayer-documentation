@@ -18,7 +18,7 @@ We're adding new bot flows quite regularly, so make sure to keep an eye on this 
 
 We wrote a [great article](https://docs.chatlayer.ai/integrations/human-offloading-live-chat/creating-a-zendesk-support-ticket) on how to create a Zendesk ticket integration, but how do you set up your bot so it can collect all those user details to create a ticket? Easy, just download the Zendesk ticket creation flow!
 
-This flow allows your bot to collect user info needed to create a ticket using [input validation dialogs](https://docs.chatlayer.ai/bot-answers/dialog-state/user-input-bot-dialog), then confirms with the user if the information is correct before sending it to Zendesk. Just fill in your own Zendesk login details and off you go!
+This bot flow allows your bot to collect the user info needed to create a ticket using [input validation dialogs](https://docs.chatlayer.ai/bot-answers/dialog-state/user-input-bot-dialog), then confirms with the user if the information is correct before sending it to Zendesk. All you have to do is fill in your own Zendesk login details and off you go!
 
 
 
