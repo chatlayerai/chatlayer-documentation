@@ -9,7 +9,7 @@ description: >-
 
 ## The basics of bot building
 
-In this lesson, we are going to add intents to our Choo Choo bot. We will learn more about the NLP engine and how to update the NLP in your bot, and also how to link intents and messages. 
+In this lesson, we are going to add intents to our Choo Choo bot. We will learn more about the NLP engine and how to update the NLP in your bot, and also how to link intents and messages.
 
 ## The NLP engine
 
