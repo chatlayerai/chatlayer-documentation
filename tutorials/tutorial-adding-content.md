@@ -2,14 +2,14 @@
 description: >-
   In the previous tutorial, we created a new bot and added a greeting. Now it's
   time to add some more content. We will start with some basic bot responses to
-  users' frequently asked questions.
+  frequently asked questions from users.
 ---
 
 # Adding content to your bot
 
 ## The basics of bot building
 
-In this lesson, we are going to add intents to our Choo Choo bot. We will learn more about the NLP engine and how to update the NLP in your bot, and also how to link intents and messages.
+In this lesson, we are going to add intents to our Choo Choo bot. We will learn about the NLP engine, how to update the NLP in your bot, and how to link intents and messages.
 
 ## The NLP engine
 
@@ -21,7 +21,7 @@ Before we create some more dialogs, we'd like to tell you about the NLP engine f
 
 An intent is a specific question from your user or an action they can do. Users will type their question in the bot, which can be recognised by the NLP engine and linked to an intent.  
   
-For example: an intent can be a question, a statement, an answer to a question, or a greeting. Each intent can be expressed in many different ways, we call these different ways of saying the same thing **expressions**.
+For example: an intent can be a question, a statement, an answer to a question, or a greeting. Each intent can be expressed in many different ways, which is why we call them **expressions**.
 
 ![](../.gitbook/assets/untitled-1.png)
 
@@ -42,7 +42,7 @@ Here are some more examples of intents and expressions:
   * Yes
   * Ok, confirm
 * **Intent: I want to speak to a human** Expressions:
-  * Can i speak to a real person?
+  * Can I speak to a real person?
   * human please
   * I want to talk to a human
 
@@ -65,13 +65,13 @@ For this tutorial, we want to give Choo Choo the ability to answer basic questio
 
 ## Step 4: Adding expressions
 
-Now we have to make sure the NLP recognises this Intent. We do this by adding Expressions. Expressions are different ways your users will express one Intent. Just like in real life, there are more ways how you can say a certain thing or ask a question. This is the same in botbuilding.
+Now we have to make sure the NLP recognises this intent. We do this by adding expressions. Expressions are different ways your users will express one intent. In botbuilding, as in real life, there are more ways to say something or ask a question.
 
 {% hint style="info" %}
 Expressions are another word for what is sometimes called 'Utterances'
 {% endhint %}
 
-The more Expressions you add to an Intent, the more accurately it will be recognised. It is crucial for an Intent to have a wide variety of expressions to give accurate results. The more expression you can think of, the better the result of the NLP will be and the 'smarter' your bot will appear.
+The more expressions you add to an Intent, the more accurately it will be recognised. It is crucial for an intent to have a wide variety of expressions to give accurate results. The more expression you can think of, the better the result of the NLP will be and the 'smarter' your bot will appear.
 
 * Select the `who are you` intent in the **Intents** pane on the left hand side
 * The **Expressions** pane will open in the right. Click on `Add Expression` 
@@ -106,7 +106,7 @@ This will result in the following:
 
 ![](../.gitbook/assets/image%20%28450%29.png)
 
-Again, the more expressions you have, the more accurate your bot will be able to respond. Later on, we will see how we can make sure that our bot gets smarter over time, by looking at actual user input once the bot is made public.
+Again, the more expressions you have, the more accurate your bot will be able to respond. Later on we'll see how we can make sure that our bot gets smarter over time; by looking at actual user input once the bot has been made public.
 
 Let's try adding another intent and expressions:
 
@@ -150,7 +150,7 @@ That was a great first step to use the 'Greeting' and 'How are you' intent. The 
 
 You have now taught the NLP to understand your intents and expressions, congrats! The only thing left to do is teaching Choo Choo how to respond. This means we are going to choose what the response \(or flow\) should be for each intent. You can do this by adding a new Bot dialog.
 
-* Click on Bot dialogs menu item in the navigation pane
+* Click on Bot Dialogs menu item in the navigation pane
 * Open the General flow
 * Click on the grey button on top  `+ Bot message`
 * Enter `who are you` as the name
@@ -180,15 +180,15 @@ If you now say 'Who are you' in the emulator, you immediately get the response t
 
 ![](../.gitbook/assets/image%20%28460%29.png)
 
-We have defined the `introduction` bot dialog as the parent dialog state in the `who are you` bot dialog. Parent bot dialogs do not limit or define the possible flow of the dialogue, they are a visual tool to structure the conversational flow and keep the overview. They make it easier to create complex conversational flows. Bot dialogs can be reached from any point in the conversation by linking a bot dialog to an intent, although you can restrict them too by using Contexts. This mimics the way humans talk, jumping from one subject to another.
+We have defined the `introduction` bot dialog as the parent dialog state in the `who are you` bot dialog. Parent bot dialogs do not limit or define the possible flow of the dialogue. They are a visual tool to structure the conversational flow and keep an overview, which makes it easier to create complex conversational flows. Bot dialogs can be reached from any point in the conversation by linking a bot dialog to an intent, although you can restrict them too by using Contexts. This mimics the way humans talk, jumping from one subject to another.
 
 ## Step 7: Adding multiple messages
 
 As an exercise, you can now add multiple messages to the `who are you` bot message. Open the `who are you` bot message again and update the single message to show multiple messages:
 
-* `I'am Choo Choo.`
+* `I'm Choo Choo.`
 * `Your train traveling assistant.`
-* `You can book a train ticket or ask my support.`
+* `You can book a train ticket or ask for my help.`
 * `After your booking I'll keep you updated about train details so you don't have to worry about your journey.`
 
 This makes your bot more user-friendly and human. This will result in the following:
@@ -197,7 +197,7 @@ This makes your bot more user-friendly and human. This will result in the follow
 
 ## Step 8: Testing your bot
 
-Time to test your bot! Click on `Test your bot` at the bottom right to test your conversational flow. To get a feel of your bot's performance, ask the same question a couple times, including different ways of asking the question that are different to the expression you used to train. If a question is not recognized correctly when it should be, you'll have to go back to the `NLP` tab, add the questions as an expression, and retrain the NLP model. You can do this as many times as needed, the model will just keep on improving.
+Time to Choo Choo! Click on `Test your bot` at the bottom right to test your conversational flow. To get a feel of your bot's performance, ask the same question a couple times, including different ways of asking the question that are different to the expression you used to train. If a question is not correctly recognized, you'll have to go back to the `NLP` tab, add the questions as an expression, and retrain the NLP model. You can do this as many times as needed, the model will just keep on improving.
 
 ![](../.gitbook/assets/image%20%28184%29.png)
 
@@ -222,5 +222,5 @@ You  should now be familiar with:
 
 If any of these topics are difficult for you, revisit them in the tutorial or search on the page in the top right search bar to learn more about a topic.
 
-The next tutorial is about getting user input. We will ask the user for input that is needed for booking a train ticket.
+In the next tutorial we'll be gathering user input. Choo Choo will ask the user for input,  needed for booking a train ticket.
 

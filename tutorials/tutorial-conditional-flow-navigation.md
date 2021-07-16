@@ -1,7 +1,7 @@
 ---
 description: >-
-  In this final tutorial, we will look at how you can use user information and
-  base different conversational flows on that.
+  In this final tutorial we will look at how to use user information and base
+  different conversational flows on that.
 ---
 
 # Flow navigation with variables
@@ -17,7 +17,7 @@ Consider the following scenario where the user asks the bot the following:
 We already have a lot of information in this expression. Let's say we now want to show a different message for first class tickets, seeing there are more facilities in first than in second class.
 
 * Create a `Go To` bot dialog with the name `class redirect`
-* Add a condition with the '+' sign
+* Add a condition with the '+' sign next to 'If'
 * Choose a Go To condition saying 'if class equals first' &gt; go to `selected first class` bot message
 
 ![](../.gitbook/assets/image%20%28444%29.png)

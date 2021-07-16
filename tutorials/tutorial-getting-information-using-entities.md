@@ -6,7 +6,7 @@ description: >-
 
 # Detecting information in expressions
 
-You will learn how to detect valuable information that a user mentions in an intent, using **contextual entities**. Entities are important pieces of information that are extracted from an expression. There are four types of entities. You can find more information about them here:
+You will learn how to detect valuable information, mentioned by a user in an intent, using **contextual entities**. Entities are important pieces of information that are extracted from an expression. There are four types of entities. You can find more information about them here:
 
 {% page-ref page="../understanding-users/natural-language-processing-nlp/synonym-entities/" %}
 
@@ -20,9 +20,9 @@ Let's say we have an intent that tells us the user wants to book a train ticket.
 * I need a ticket
 * Can I book a train ticket here?
 
-So, when the user would say any of these expressions, the bot dialog where you have linked the corresponding intent would trigger.
+This assures the bot dialog, linked to the corresponding intent, to be triggered when the user says one of these expressions.
 
-But what happens when the user says something like:
+But what would happen if the user says:
 
 * I want a train ticket to **Amsterdam**
 * I need to go to **Antwerp tomorrow**
@@ -124,7 +124,7 @@ Make sure you retrain the NLP model before testing newly added expressions.
 
 ![](../.gitbook/assets/image%20%28414%29.png)
 
-Now we know how to add intents, create expressions and entities. That is already a great step for building our Choo Choo bot. Now, we need to create a conversation so the user can talk to the bot and the bot will  respond. Let's add some bot messages in the next step.
+Now we know how to add intents, create expressions and entities, however we still need to create a conversation so the user can talk to Choo Choo and our bot replies accordingly. Let's add some bot messages in the next step.
 
 ## Step 11: Using variables in messages
 
@@ -265,12 +265,12 @@ Your bot now has the following configuration:
 * 5 contextual entities
 * A bot message, linked to the `Book train ticket` intent, confirming the user input in the message
 
-You now know how to do:
+You now know how to:
 
-* Creating contextual entities and entity values
-* Using variables in a bot message 
+* Create contextual entities and entity values
+* Use variables in a bot message 
 * Use multiple contextual entities in an expression
-* Testing your input in the debugger
+* Test your input in the debugger
 
 Not every user will give all the entities you need. In the [next tutorial](tutorial-request-and-use-information-using-input-plugins.md), you will learn how to check if a user has already provided certain information, and ask for what's missing.
 

@@ -19,11 +19,11 @@ This works great when the users says, for example:
 
 * **Tomorrow**, I need to go from **Amsterdam** to **Brussels** at **2pm** in **second** class
 
-But right now, our bot can only detect this information when the user gives all this information in once single sentence. Of course, in a lot of cases, this will not be the case, so we need to ask this information from the user. The dialog to ask for this info is called the Input Validation dialog.
+But right now, our bot can only detect this information when the user gives all this information at once. Of course this will not always be the case, so we'll need to ask this information from the user. This dialog is called the Input Validation dialog.
 
 ## Step 15: working with input validation
 
-Until now, we have only worked with the bot dialog type `Bot Message`. One of the other [four bot dialogs](https://docs.chatlayer.ai/bot-answers/dialog-state) types is `Input validation`. With an input validation, you can specifically ask information from a user and save the answer directly in a variable. Let's start with origin and destination. 
+Until now, we have only worked with the bot dialog type `Bot Message`. One of the other [four bot dialogs](https://docs.chatlayer.ai/bot-answers/dialog-state) types is `Input validation`. With an input validation, you can ask specific information from a user and save the answer directly in a variable. Let's start with origin and destination. 
 
 #### Text input 
 
@@ -98,7 +98,7 @@ Time for a test!
 If you forget to define the 'Go to' and you test your conversation flow, the flow will just stop. The conversation will only continue if you correctly set the 'Go to' for each dialog state.
 {% endhint %}
 
-That looks great! If you are getting a message with empty  in the first bot message \('So I have a request for a train ticket'\), make sure you have changed that bot message accordingly for our newest set-up. If the destination is not captured correctly, make sure that you save the variable as 'destination' in the Input validation and you use '{destination}' in the bot message.
+That looks great! If you are getting a message with empty spaces in the first bot message \('So I have a request for a train ticket'\), make sure you have changed that bot message accordingly for our newest set-up. If the destination is not captured correctly, make sure that you save the variable as 'destination' in the Input validation and you use '{destination}' in the bot message.
 
 ## Step 16: Completing the booking flow with the remaining input validations
 
@@ -106,7 +106,7 @@ Repeat the previous steps for the the other pieces of information you'd like to 
 
 * Origin: Where are you leaving from?
 * Departure time: At what time do you want to leave?
-* Departure date: Which day do you want to take the train?
+* Departure date: Which day would you like to take the train?
 
 This means you need to create three extra Input Validations, just like the `destination`Input Validation. You can change the current `destination`Input Validation to make sure the `origin` is asked next:
 
@@ -198,10 +198,10 @@ If you run into any issues,
 
 ## Lesson recap
 
-Now, you have a bot with the following configuration:
+Now, you have a bot with:
 
 * A flow to book a train ticket with 2 bot messages and 5 input validations 
-* A bot that recognizes both variables given in expressions or via input validations
+* The ability to recognize both variables given in expressions or via input validations
 * A final bot message summarizing all variables given by the user
 
 You  should now be familiar with:
@@ -210,7 +210,7 @@ You  should now be familiar with:
 * Creating a button and storing the input from the button click in a variable
 * Linking bot dialogs to each other with the go to option in a bot dialog, and creating a new bot dialog from the go to option
 * Changing the parent of a bot dialog 
-* Use the debugger tab to see how user input is stored 
+* Using the debugger tab to see how user input is stored 
 
 In the [next tutorial](https://docs.chatlayer.ai/tutorials/tutorial-conditional-flow-navigation), you will learn how you can steer the conversation in a certain direction based on known variables.
 
