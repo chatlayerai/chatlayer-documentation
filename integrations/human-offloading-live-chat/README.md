@@ -38,15 +38,15 @@ If you want to connect to a platform that's not in this list, try our [Offloadin
 
 Different live chat platforms support different feature sets. Below you can find a list of what's supported by which provider.
 
-|  | Zendesk | Sparkcentral | Genesys Cloud | \#Interact | Help Scout | Intercom | Salesforce | Webhook |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Chatlayer.ai widget & channel configuration |  |  | ✅ |  | ✅ |  | ✅ | ✅ |
-| Provider widget & channel configuration | ✅ | ✅ |  | ✅ |  | ✅ |  | ✅ |
-| Rich templates \(buttons, carousels, ...\) | ✅ |  | ✅ | ✅ | ✅ |  | ✅ | ✅ |
-| Bot history visible to agent | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Agent conversations in Chatlayer.ai history |  |  | ✅ |  | ✅ |  | ✅ | ✅ |
-| Skill & language based routing | ✅ |  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Tags & variables | ✅ |  | ✅ |  |  |  | ✅ | ✅ |
+|  | Sinch Contact | Zendesk | Sparkcentral | Genesys Cloud | \#Interact | Help Scout | Intercom | Salesforce | Webhook |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Chatlayer.ai widget & channel configuration |  |  |  | ✅ |  | ✅ |  | ✅ | ✅ |
+| Provider widget & channel configuration | ✅ | ✅ | ✅ |  | ✅ |  | ✅ |  | ✅ |
+| Rich templates \(buttons, carousels, ...\) | ✅ | ✅ |  | ✅ | ✅ | ✅ |  | ✅ | ✅ |
+| Bot history visible to agent | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Agent conversations in Chatlayer.ai history |  |  |  | ✅ |  | ✅ |  | ✅ | ✅ |
+| Skill & language based routing | ✅ | ✅ |  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Tags & variables |  | ✅ |  | ✅ |  |  |  | ✅ | ✅ |
 
 ## Human handover bot dialogs
 
