@@ -1,12 +1,12 @@
 # Natural Language Processing \(NLP\)
 
-The Natural Language Processing \(NLP\) engine is the underlying code that's used to understand the natural language that is used by the user.
+The Natural Language Processing \(NLP\) engine is the underlying code that enables your bot to understand the natural language used by the user.
 
-Understanding language isn't easy: it takes us humans about 12 years and hundreds of examples to understand the most common 20,000 words. And computers are not so different. To train an NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in. Our NLP engine will take care of spelling mistakes, synonyms, slang, varying word order, etc ...
+Understanding natural language isn't easy: it takes us humans about 12 years and hundreds of examples to understand the 20,000 most common words and computers are not so different. To train the NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in. Our NLP engine will take care of spelling mistakes, synonyms, slang, varying word order, etc ...
 
 ## Intent
 
-An intent is a joint name for a specific action your user can take. Intents are single blocks of meaning that the NLP can recognise. For example, an intent can be a question, a statement, an answer to a question or a greeting.
+An intent is a joint name for a specific action a user can take. They're single blocks of meaning that the NLP can recognise. For example, an intent can be a question, a statement, an answer to a question or a greeting.
 
 Some examples of intents:
 
@@ -17,11 +17,15 @@ Some examples of intents:
 * Thank you
 * I want to speak to a human
 
-Tip: if two of your intents are very similar in terms of expressions’ syntax or content, you might want to merge them. For example, let's look at our bot responsible for booking train tickets. Imagine you'd also like to offer bus tickets. You could create an extra intent for booking bus tickets, but the expressions in each intent would be very similar, with only the transportation mode changing from time to time. It would be better to only have one intent handling reservations, and an **entity** to catch the requested vehicle type. 
-
 {% hint style="info" %}
-It’s important to roughly have an equal number of expressions for each intent. Even if it usually takes more examples to train your most important intent compared to the others, do strive to keep the number of expressions consistent over intents. This will help avoid creating a bias towards intents with a large expression count.
+It’s important to roughly have an equal number of expressions for each intent. Even if it usually takes more examples to train your most important intent compared to the others, do strive to keep the number of expressions consistent over intents. This will help avoid creating a bias towards intents with a large expression count
 {% endhint %}
+
+### Intent scoping
+
+If two of your intents are very similar in terms of meaning and/or use case, you should merge them to avoid confusing the NLP engine.
+
+For example, let's look at our bot responsible for booking train tickets. Imagine that, besides train tickets, you'd also like to offer bus tickets. You could create an extra intent for booking bus tickets, but the expressions would be very similar to the intent for booking train tickets, with only the transportation mode changing from time to time. In this case, it would be better to only have one intent for booking tickets, and an [**entity**](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/synonym-entities) to catch the requested vehicle type.
 
 ## Expressions
 
@@ -29,7 +33,7 @@ It’s important to roughly have an equal number of expressions for each intent.
 Please note that our NLP engine has a limit of 1000 characters. That means, messages with more than 1000 characters will always go to 'not understood'. You can configure a customized 'not understood' message for long user input in the settings, as described [here](https://docs.chatlayer.ai/bot-answers/settings#maximum-message-length). 
 {% endhint %}
 
-Expressions are example sentences for a specific Intent. In industry literature, they are sometimes called 'utterances'. It is crucial for an Intent to have a wide variety of expressions so that the NLP can give more accurate results and your bot will appear smarter.
+Expressions are example sentences for a specific intent: all the different ways for a user to express the intent. In industry literature, they are sometimes also called 'utterances'. It is crucial for an intent to have a wide variety of expressions so that the NLP can give more accurate results and your bot will appear smarter.
 
 Here are some examples of expressions for the intent 'who are you'
 
@@ -48,7 +52,7 @@ Here are some examples of expressions for the intent 'who are you'
 
 ## Entities
 
-Entities contain important information, extracted from an expression. Often, you'll want to store them in a variable so you can re-use them later. 
+Entities are important pieces of information which can be found in an expression. Often, you'll want to save them as a variable so you can re-use them later. 
 
 Find out more about entities by clicking the link below:
 
@@ -56,7 +60,7 @@ Find out more about entities by clicking the link below:
 
 ## Updating the NLP
 
-On every page in our tool, you will find an 'update NLP' button at the top right of the screen. When you see a spinner instead of a brain symbol, your NLP model is still training.
+On every screen in our platform, you will find an 'update NLP' button at the top right of the screen. When you see a spinner icon instead of a brain symbol, your NLP model is \(still\) training.
 
 ![](../../.gitbook/assets/image%20%28162%29.png)
 
@@ -68,7 +72,9 @@ Do you want to learn how you can improve your NLP model? You can find tips and t
 
 ## Intent pack
 
-We've created a small intent pack in the most frequently used languages allowing you to quickly get started with your NLP model. This pack contains intents such as "yes", "no", "thank you", "who are you", and chit chat intents such as "tell me a joke". Download them below:
+We've created a small intent pack in the most frequently used languages allowing you to quickly get started with your NLP model. This pack contains intents such as "yes", "no", "thank you", "who are you", and chit chat intents such as "tell me a joke". 
+
+You can add these pre-built intents directly in the platform, or by downloading them below:
 
 {% file src="../../.gitbook/assets/default-intents-chit-chat-en.csv" caption="Basic intent pack EN" %}
 
