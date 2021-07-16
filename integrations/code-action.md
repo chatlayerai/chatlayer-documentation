@@ -268,7 +268,16 @@ chatlayer.send()
 Fetch allows you to perform API calls. You can find more info [here](https://github.com/node-fetch/node-fetch).
 
 ```javascript
-const response = await fetch('https://randomuser.me/api/');
+const url = 'https://gorest.co.in/public/v1/users';
+const response = await fetch(url).then((res) => {
+    // res.status >= 200 && res.status < 300
+    if (res.ok) {
+        return res;
+    } else {
+        throw new Error(res.statusText);
+    }
+});
+
 const json = await response.json();
 
 const person = _.get(json, 'results[0]')  
