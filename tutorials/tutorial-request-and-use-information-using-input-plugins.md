@@ -19,7 +19,7 @@ This works great when the users says, for example:
 
 * **Tomorrow**, I need to go from **Amsterdam** to **Brussels** at **2pm** in **second** class
 
-But right now, our bot can only detect this information when the user gives all this information at once. Of course this will not always be the case, so we'll need to ask this information from the user. This dialog is called the Input Validation dialog.
+But right now, our bot can only detect this information when the user gives all this information in a single sentence. Of  course, in  a lot of cases, this will  not  always be the  case, so  we 'll need  to  ask  this  information  from  the  user. The dialog  to ask for this info is called  the  **Input Validation dialog**.
 
 ## Step 15: working with input validation
 
