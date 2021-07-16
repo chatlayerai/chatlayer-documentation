@@ -20,7 +20,7 @@ Some examples of intents:
 Tip: if two of your intents are very similar in terms of expressions’ syntax or content, you might want to merge them. For example, let's look at our bot responsible for booking train tickets. Imagine you'd also like to offer bus tickets. You could create an extra intent for booking bus tickets, but the expressions in each intent would be very similar, with only the transportation mode changing from time to time. It would be better to only have one intent handling reservations, and an **entity** to catch the requested vehicle type. 
 
 {% hint style="info" %}
-It’s important to have a roughly equal number of expressions for each intent. Even if it usually takes more examples to train your most important intent than your second-order ones, strive to keep their number of expressions around the same amount. This helps avoid a bias towards intents with a large expression count.
+It’s important to roughly have an equal number of expressions for each intent. Even if it usually takes more examples to train your most important intent compared to the others, do strive to keep the number of expressions consistent over intents. This will help avoid creating a bias towards intents with a large expression count.
 {% endhint %}
 
 ## Expressions
@@ -29,7 +29,7 @@ It’s important to have a roughly equal number of expressions for each intent. 
 Please note that our NLP engine has a limit of 1000 characters. That means, messages with more than 1000 characters will always go to 'not understood'. You can configure a customized 'not understood' message for long user input in the settings, as described [here](https://docs.chatlayer.ai/bot-answers/settings#maximum-message-length). 
 {% endhint %}
 
-Expressions are example sentences for a specific Intent. In industry literature, they are sometimes called 'utterances'. The more Expression you add to an Intent, the more accurately it will be recognized. It is crucial for an Intent to have a wide variety of expressions to give accurate results. The more expression you can think of, the better the result of the NLP and the 'smarter' your bot will appear.
+Expressions are example sentences for a specific Intent. In industry literature, they are sometimes called 'utterances'. It is crucial for an Intent to have a wide variety of expressions so that the NLP can give more accurate results and your bot will appear smarter.
 
 Here are some examples of expressions for the intent 'who are you'
 
@@ -46,13 +46,11 @@ Here are some examples of expressions for the intent 'who are you'
 * Are you a robot?
 * Do you have a name?
 
-The more expression you have, and the more varied, the more accurate your bot will respond.
-
 ## Entities
 
-Entities are important pieces of information that are extracted from an expression. Often, you want to store these in a separate variable so you can re-use them later. 
+Entities contain important information, extracted from an expression. Often, you'll want to store them in a variable so you can re-use them later. 
 
-Find out more about entities here:
+Find out more about entities by clicking the link below:
 
 {% page-ref page="synonym-entities/" %}
 
@@ -70,7 +68,7 @@ Do you want to learn how you can improve your NLP model? You can find tips and t
 
 ## Intent pack
 
-We've created a small intent pack in the most frequently used languages to allow you to quickly get started with your NLP model. This pack contains intents such as "yes", "no", "thank you", "who are you", and chit chat intents such as "tell me a joke". Download them here:
+We've created a small intent pack in the most frequently used languages allowing you to quickly get started with your NLP model. This pack contains intents such as "yes", "no", "thank you", "who are you", and chit chat intents such as "tell me a joke". Download them below:
 
 {% file src="../../.gitbook/assets/default-intents-chit-chat-en.csv" caption="Basic intent pack EN" %}
 
