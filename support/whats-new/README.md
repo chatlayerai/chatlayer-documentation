@@ -1,5 +1,9 @@
 # What's new
 
+## June 2021
+
+* Support for managing team members through Single Sign On \(SAML SSO\). Read more [here](../../organization-management/access-control/single-sign-on-sso-saml.md).
+
 ## May 2021
 
 * The bot name can now be seen in the tab title in your browser. Helps if you're managing multiple bots!
