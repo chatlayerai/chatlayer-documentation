@@ -80,15 +80,59 @@ You can now talk to your bot through the Zendesk Chat widget. Every incoming mes
 
 ### Synchronized session variables
 
-It's possible for the chatbot to collect information about the user. The following session variables will automatically be synchronized to your visitor info in Zendesk:
+You can easily keep the information about your users in sync between your bot and Zendesk Chat. The following session variables will automatically be synchronized to your visitor's info in Zendesk Chat:
 
-* zendeskChat.email
-* zendeskChat.displayName
-* zendeskChat.phone
-* zendeskChat.notes
-* zendeskChat.tags\[0\] \(array\)
+* `zendeskChat.email`
+* `zendeskChat.displayName`
+* `zendeskChat.phone`
+* `zendeskChat.notes`
+* `zendeskChat.tags` \(array\)
+* `zendeskChat.visitor_tags` \(array, read-only\)
 
-![](../../.gitbook/assets/image%20%28271%29.png)
+![Ask a user for their email address and automatically synchronize it to Zendesk Chat](../../.gitbook/assets/image%20%28271%29.png)
+
+#### Chat Tags \(`zendeskChat.tags`\)
+
+{% hint style="warning" %}
+Chat tags can only contain alphanumeric characters, hyphens \(-\) or underscores \(\_\). The maximum length of a chat tag is 140 characters
+{% endhint %}
+
+As Zendesk mentions [on their support forum](https://support.zendesk.com/hc/en-us/articles/360022366013-Understanding-different-types-of-tags-in-Chat), there are two different types of tags in Zendesk Chat:
+
+> Zendesk Chat offers two different types of tags to categorize your visitors and chat sessions:
+>
+> * **Chat tags** contain information about the specific content of a chat session.
+> * **Javascript API and trigger tags** contain more general information about the visitor.
+
+You can use both types of tags in your flow by using the Zendesk session variables. Chat tags can be accessed through the `zendeskChat.tags` variable, you can add more chat tags to a conversation by pushing values to that variable.
+
+#### Javascript API and trigger tags \(`zendeskChat.visitor_tags`\)
+
+{% hint style="warning" %}
+Javascript API and trigger tags are read-only, use Chat Tags if you want to add tags dynamically through the flow.
+{% endhint %}
+
+Visitor tags can be used to pass metadata about your users to the bot when a user starts a conversation. Let's say you have a website with a Zendesk Chat widget and you want to give a hint to the bot from which page on your website the user started chatting. You can pass these tags to the bot from within your website's code by calling Zendesk's JavaScript SDK:
+
+```markup
+<script id="ze-snippet" src="<ZENDESK_SNIPPET_URL>"> </script>
+<script>
+  window.zESettings = {
+    webWidget: {
+      chat: {
+        departments: {
+          select: "Chatbot"
+        }
+      }
+    }
+  };
+  zE('webWidget', 'chat:addTags', ['change_password']);
+</script>
+```
+
+If you import this script on a page, every user that starts a conversation will be routed to the bot with the `change_password` tag. You could then use this tag in your flow configuration to route this user to the right part in the conversation immediately:
+
+![Use visitor tags to guide the user to a specific part in your flow](../../.gitbook/assets/screenshot-2021-07-21-at-19.11.08.png)
 
 ## Configure offloading
 
@@ -100,5 +144,5 @@ Once this Action is triggered and the chosen department has at least one agent o
 
 ## Going Live
 
-To go live, you should configure a Zendesk channel for the Live environment on [app.chatlayer.ai](https://app.chatlayer.ai). We recommend creating a seperate Bot Agent, Department and Widget connected to that Department for both your Draft and Live environments. This assures no collisions will happen between your bot's versions.
+To go live, you should configure a Zendesk channel for the Live environment on [app.chatlayer.ai](https://app.chatlayer.ai). We recommend creating a separate Bot Agent, Department and Widget connected to that Department for both your Draft and Live environments. This assures no collisions will happen between your bot's versions.
 
