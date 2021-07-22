@@ -52,7 +52,7 @@ Of course, you don't want the user to be limited to this context for the rest of
 To configure this, you can define the **lifespan** of the output context. Each time the user enters a dialog state with an output configured, this context is added to his session with an initial lifespan value as defined in the bot dialog settings. For each user message, the lifespan of a context is decreased by one. When the value is 0, the context is removed from the session.
 
 {% hint style="info" %}
-For each user message, the lifespan of a context is decreased by one. A user can have multiple contexts with different lifespan values.
+ A user can have multiple contexts with different lifespan values.
 {% endhint %}
 
 ![](../.gitbook/assets/image%20%28190%29.png)
