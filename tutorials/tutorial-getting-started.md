@@ -77,7 +77,7 @@ The first thing you'll need to do is create an introduction. This is the first m
 ![](../.gitbook/assets/image%20%28459%29.png)
 
 {% hint style="warning" %}
-Chatlayer.ai supports multiple media types. Depending on the channel your bot will use \(Facebook, Slack, Skype, Google Home, ...\) these will be rendered slightly differently.  For now that is not a problem, but check out [this ](https://docs.chatlayer.ai/channels/multi-channel)page when you start building on your 'real' bot.
+Chatlayer.ai supports multiple media types. Depending on the channel your bot will use \(Facebook, Slack, Skype, Google Home, ...\) these will be rendered slightly differently.  For now that is not a problem, but check out [this page](https://docs.chatlayer.ai/channels/multi-channel/) when you start building your 'real' bot.
 {% endhint %}
 
 Since this is our first bot and our first message, let's start with a simple text message:
