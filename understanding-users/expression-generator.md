@@ -1,10 +1,10 @@
 # Expression generator
 
-We want to make it easy for you to quickly generate a lot of expressions by swiftly adding synonyms for  different parts of the expression. To access the Expression generator you will need to navigate to the NLP on the left hand pane and click on "Generator".
+We want to make it easy for you to quickly generate a lot of expressions by swiftly adding synonyms for  different parts of the expression. To access the Expression generator you will need to navigate to the NLP menu on the left hand pane and click on "Generator".
 
 ![](../.gitbook/assets/image%20%28233%29.png)
 
-You can use the expression generator by adding an expression in the input field. Select one \(or several words\) and choose en entity type if they're entities, or add alternatives by clicking the `Add Synonym` button. 
+You can use the expression generator by adding an expression in the input field. Select one \(or several words\) and choose an entity if needed, or add alternatives by clicking the `Add Synonym` button. 
 
 Make sure you choose the intent you'd like to add the new expressions to in the top right of the screen.
 
