@@ -7,7 +7,7 @@ description: >-
 
 # Detecting information with match entities
 
-Imagine you're building an FAQ bot. One of the things it can do for the user, is trace a lost package. For the bot to be able to find the lost package, it needs the package number. To get this number, the conversation would look like this: 
+Imagine building an FAQ bot. One of the things it can do for the user, is trace their lost package. For the bot to be able to find this lost package, it needs the package number. To get this number, the conversation would look like this: 
 
 ![On the left you can see the bot dialog flow. On the right, the actual conversation](../../../.gitbook/assets/packie.png)
 
