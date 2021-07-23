@@ -2,7 +2,7 @@
 
 ## Importing and exporting expressions
 
-In the tab 'Expressions' you can import and export your NLP model easily.
+In the tab 'Expressions' you can import and export your NLP model.
 
 ![](../../.gitbook/assets/image%20%2896%29.png)
 
