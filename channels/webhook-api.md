@@ -56,7 +56,7 @@ When a user message is sent to the webhook message API, the bot response\(s\) wi
 
 ## Message objects
 
-A bot message sent to the customer webhook endpoint URL and returned as response of a user messages can have different object structures, depending on the message type. Want to learn how to build these message objects? Read about it here:
+A bot message sent to the customer webhook endpoint URL and returned as response to a user messages can have different object structures, depending on the message type. Want to learn how to build these message objects? Read about it here:
 
 {% page-ref page="../integrations/chat-message-structure-for-apis.md" %}
 

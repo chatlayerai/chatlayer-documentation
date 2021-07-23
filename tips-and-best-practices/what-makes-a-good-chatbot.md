@@ -55,11 +55,11 @@ A good rule of thumb is to make the introduction greeting and thank you message 
 
 ## Do I really need a bot? Or does a link suffice?
 
-Chatbots are not the magical answer to every question. A link to a well designed information page can sometimes be a faster solution, and more intuitive than a conversation flow. Chatbots are good to provide less friction and make information more approachable. In some cases they work super duper well, but not in all.
+Chatbots are not the magical answer to every question. A link to a well designed information page can sometimes be a faster solution, and more intuitive than a conversation flow. Chatbots are good to provide less friction and make information more approachable. In some cases they work super duper well, but not in every case.
 
 ## UX Guidelines for Designing Chatbots
 
-The Nielsen Normal Group published a [great article](https://www.nngroup.com/articles/chatbots/) about the research they did to create UX Guidelines for chatbots. Make sure you follow these while designing your bot! 
+The Nielsen Normal Group published a [great article](https://www.nngroup.com/articles/chatbots/) about the research they did to create UX Guidelines for chatbots. Make sure you follow them while designing your bot! 
 
 * Tell the user they are talking to a bot and not an actual human.
 * Clearly tell people what tasks the bot can do, and what it cannot do. This way you don’t create false expectations.

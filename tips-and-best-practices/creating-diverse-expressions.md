@@ -27,7 +27,7 @@ In the following 2 sections, we will explain how our machine learning models wor
 
 To make sure machine learning algorithms can use words as input data they are converted into a set of numbers. For those who remember bits of their math classes in school, this is comparable to x- and y-coordinates. For example, the point \(3,2\) is the point where x = 3 and y = 2. Instead of using just 2 dimensions like x and y, word vectors use hundreds, if not thousands of dimensions.
 
-The good thing about this approach is that it makes sure that words with very similar meanings end up close to each other, because they're similar. For example, the words 'boat' and 'ship' will be closely related. 
+The upside to this approach is that it makes sure that words with very similar meanings end up close to each other, because they're similar. For example, the words 'boat' and 'ship' will be closely related. 
 
 If you use the right techniques to create these word vectors, you can add even more interesting features. Since 'cars' and 'planes' are both means of transportation, you can make sure they are closely related. But they do differ of course. Boats travel on water, cars on streets, and planes move in the air. Ships are bigger than boats, and trucks can transport more than a bike.
 
@@ -39,9 +39,9 @@ So if you create a chatbot to arrange transportation over land, you will have to
 
 ![](../.gitbook/assets/image%20%28314%29.png)
 
-But the opposite case can also occur. Imagine you want to transport something big, and you don’t care if it is over land, water or in the air. In this case, a car and a bike won't be good options. But a boat, a train or a plane are. So in this case, you might want to allow some diversity in the horizontal axis, but not so much in the vertical axis. This can be illustrated by the blue box on the image above.
+But the opposite case can also occur. Imagine you want to transport something big, and you don’t care if it is over land, water or in the air. then a car and a bike won't be good options, but a boat, train or plane are. So in that case you might want to allow some variety in the horizontal axis, but not that much in the vertical axis. This can be illustrated by the blue box on the image above.
 
-The above illustration can give you a general idea on how machine learning models handle words. To make sure your chatbot understands what is good and what is bad, you should make sure that you use words that are diverse in each direction that is relevant for the use case. But for cases that are not allowed, you should be very strict about which words to not include.
+The above illustration gives you a general idea on how machine learning models handle words. To make sure your chatbot understands what is good and what is bad, you should make sure that you use words that are diverse in each direction relevant for the use case. But for cases that are not allowed, you should be very strict about which words not to include.
 
 ## **Word Order and Syntactic Structure in Machine Learning Models**
 
@@ -53,7 +53,7 @@ So if you're generating expressions for your chatbot, it's very important to inc
 2. To Paris I want to take the train
 3. I want to go to Paris by train
 
-With some imagination, you can see that each of these sentences contain more or less the same three blocks, but the order is completely different.
+You can see that each of these sentences contains more or less the same three blocks, the order however is completely different.
 
 Native English speakers will notice that a sentence like “To Paris I want to take the train” are not syntactically correct. However, don’t expect your customers to be always syntactically \(or even grammatically\) correct. Not all your customers will be native speakers either. 
 
@@ -104,9 +104,9 @@ Repeat this for every word or set of words. In our Expression Generator tool thi
 
 | I want to  | go  | to  | Paris  | by  | train  |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| I would like to  | travel  | in the direction of  | London  | with the  | rail  |
-| I must  | transport  | with as destination  | Brussels  |  | railway  |
-| I should  |  |  | Berlin  |  |  |
+| I would like to  | travel  | in the direction of  | Parijs  | with the  | rail  |
+| I must  | transport  | with as destination  |  |  | railway  |
+| I should  |  |  |  |  |  |
 | I prefer to  |  |  |  |  |  |
 | Let me  |  |  |  |  |  |
 
@@ -114,7 +114,7 @@ And now you can repeat this process for all of the sentences from step 1. The ni
 
 If later you come up with an additional synonym, you can just add it to the list of alternatives. That way you don’t have to check all your expressions again to see if you missed anything.
 
-Following this approach you can quickly generate a large amount of expressions. If you look at the example above for “I want to go to Paris by train”, all possible combinations for this sentence amounts up to 6 x 3 x 3 x 4 x 2 x 3 = 1.296 expressions! So if you repeat this for all of the 5 sentences above, you'll end up with almost 10.000 expressions and you only had to come up with 5 or 6 sentences. Easy does it.
+Following this approach you can quickly generate a large amount of expressions. If you look at the example above for “I want to go to Paris by train”, all possible combinations for this sentence amounts up to 6 x 3 x 3 x 2 x 2 x 3 = 648 expressions! So if you repeat this for all of the 5 sentences above, you'll end up with more than 3.000 expressions and you only had to come up with 5 or 6 sentences. Easy does it.
 
 Since our NLU doesn’t need such a high number of expressions to do its job well, our system selects the 50 most diverse sentences to train on. So per sentence you will only see up to 50 expressions show up in our platform.
 
