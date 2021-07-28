@@ -1,6 +1,10 @@
 # Settings
 
-## Status
+## Bot Details
+
+In Bot Details you'll be able to see the name of your of bot as well as the primary and secondary languages you've added. Through Bot Details you can also change the amount of people who have access to the configuration of you bot through 'Bot Access'. To learn more about Bot Access click [here](https://docs.chatlayer.ai/organization-management/access-control).
+
+## Bot Status
 
 Click the status slider to temporarily disable the bot. The message configured under the `bot disabled` bot dialog will be shown. Read more about the `bot disabled` bot dialog [here](https://docs.chatlayer.ai/bot-answers/dialog-state#bot-disabled). 
 
@@ -8,13 +12,9 @@ Click the status slider to temporarily disable the bot. The message configured u
 
 Chatbots work best with short and concise messages. To avoid that messages that are too long are not understood, a maximum message length can be configured. Whenever a message is &gt; the characters stated in these settings, the bot will automatically go to a bot dialog of your choice. A bot message with text like: 'I am sorry, I work best with shorter messages. Could you please rephrase that?' is recommended for a good user experience. 
 
-## Botflow URL
+## Bot behaviour
 
-The Botflow URL is displayed for information and development purposes only. 
-
-## Bot name
-
-Use this to change the name of your bot.
+The typing speed is how fast the bot answers to the user. The higher the typing speed, the longer the user will see that the bot is 'typing' before they receive an answer. The right typing speed can create a positive, more humanlike experience for the user. The default typing speed is 1500ms, but try out different speeds to see what is best for your bot.
 
 ## Language detection
 

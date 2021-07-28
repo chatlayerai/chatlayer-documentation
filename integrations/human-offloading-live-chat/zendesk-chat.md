@@ -5,20 +5,24 @@ description: Learn how to configure and use Zendesk Chat on Chatlayer
 # Zendesk Chat
 
 {% hint style="danger" %}
-Zendesk only allows users on their "Enterprise" pack to use 3rd party bot platforms such as Chatlayer. Make sure to upgrade to the "Enterprise" tier of Zendesk to use this integration.
+Zendesk only allows users on their "Enterprise" pack to use third party bot platforms such as Chatlayer. Make sure to upgrade to the "Enterprise" tier of Zendesk to use this integration.
 {% endhint %}
 
 Zendesk is a service-first CRM company that builds software designed to improve customer relationships.
 
 ## Configure Zendesk 
 
-In Zendesk, your Chatlayer.ai bot will be a separate agent that will handle incoming messages for its own  department. The Agent account should not be accessed by live agents, as this may disrupt the chatbot. We provide the necessary action dialogs to transfer the conversation to a department with live agents of your choosing.
+In Zendesk, your Chatlayer bot will be a separate agent that will handle incoming messages for its own  department. Chatlayer provides the necessary action dialogs to transfer the conversation to a department with live agents of your choosing.
+
+{% hint style="warning" %}
+The Agent account should not be accessed by live agents, as this may disrupt the chatbot. 
+{% endhint %}
 
 ### Create a new agent for the chatbot
 
 First off, create the chatbot agent in Zendesk Chat by going to Settings &gt; Agents &gt; Add Agent. 
 
-![](../../.gitbook/assets/image%20%28277%29.png)
+![](../../.gitbook/assets/image%20%28590%29.png)
 
 ### Create a department for the chatbot
 
@@ -28,7 +32,7 @@ Create a new department for the chatbot by going to Settings &gt; Departments &g
 
 ### Configure your Zendesk Chat Widget
 
-You should now create or adjust your Zendesk Chat Widget to automatically connect to your newly configured Chatbot department. To do so, in Zendesk Chat, go to Settings &gt; Widget and copy the code under "Embed Web Widget".
+You should now create or adjust your Zendesk Chat Widget to automatically connect to your newly configured Chatbot department. To do so, in Zendesk Chat, go to Settings &gt; Widget and copy the code below in "Embed Web Widget".
 
 ![](../../.gitbook/assets/image%20%28280%29.png)
 
@@ -54,11 +58,11 @@ Here's an example of how you could adjust the Widget to automatically connect to
 <!-- End of chatlayerai Zendesk Widget script -->
 ```
 
-More information on this topic can be found in the [Zendesk Chat documentation](https://developer.zendesk.com/embeddables/docs/widget/settings#departments).
+Make sure to add your own key and name of the department in the code. More information on this topic can be found in the [Zendesk Chat documentation](https://developer.zendesk.com/embeddables/docs/widget/settings#departments).
 
 ## Configure your Zendesk Chat channel
 
-In Chatlayer.ai, go to the Channels overview to start setting up your Zendesk Chat integration. Start the channel creation by clicking the + icon.
+In Chatlayer, go to the Channels overview to start setting up your Zendesk Chat integration. Go to the 'Channels' menu, choose Zendesk Chat and start the channel creation by clicking the + icon.
 
 #### Finding your subdomain
 
@@ -76,7 +80,7 @@ When prompted to authorize Zendesk, log in to the Zendesk Agent account that sho
 
 ### Start using your bot
 
-You can now talk to your bot through the Zendesk Chat widget. Every incoming message from a visitor will be answered by the bot. 
+You can now talk to your bot through the Zendesk Chat widget. Every incoming message from a user will be answered by the bot. 
 
 ### Synchronized session variables
 
@@ -91,11 +95,7 @@ You can easily keep the information about your users in sync between your bot an
 
 ![Ask a user for their email address and automatically synchronize it to Zendesk Chat](../../.gitbook/assets/image%20%28271%29.png)
 
-#### Chat Tags \(`zendeskChat.tags`\)
-
-{% hint style="warning" %}
-Chat tags can only contain alphanumeric characters, hyphens \(-\) or underscores \(\_\). The maximum length of a chat tag is 140 characters
-{% endhint %}
+### Zendesk Tags
 
 As Zendesk mentions [on their support forum](https://support.zendesk.com/hc/en-us/articles/360022366013-Understanding-different-types-of-tags-in-Chat), there are two different types of tags in Zendesk Chat:
 
@@ -103,6 +103,14 @@ As Zendesk mentions [on their support forum](https://support.zendesk.com/hc/en-u
 >
 > * **Chat tags** contain information about the specific content of a chat session.
 > * **Javascript API and trigger tags** contain more general information about the visitor.
+
+
+
+{% hint style="warning" %}
+Chat tags can only contain alphanumeric characters, hyphens \(-\) or underscores \(\_\). The maximum length of a chat tag is 140 characters
+{% endhint %}
+
+#### Chat Tags \(`zendeskChat.tags`\)
 
 You can use both types of tags in your flow by using the Zendesk session variables. Chat tags can be accessed through the `zendeskChat.tags` variable, you can add more chat tags to a conversation by pushing values to that variable.
 
@@ -112,7 +120,7 @@ You can use both types of tags in your flow by using the Zendesk session variabl
 Javascript API and trigger tags are read-only, use Chat Tags if you want to add tags dynamically through the flow.
 {% endhint %}
 
-Visitor tags can be used to pass metadata about your users to the bot when a user starts a conversation. Let's say you have a website with a Zendesk Chat widget and you want to give a hint to the bot from which page on your website the user started chatting. You can pass these tags to the bot from within your website's code by calling Zendesk's JavaScript SDK:
+Visitor tags can be used to pass metadata about your users' request to the bot when a user starts a conversation. Let's say you have a website with a Zendesk Chat widget and you want to start the bot from a certain intent, because the user was on that specific FAQ page. You can pass these tags to the bot from within your website's code by calling Zendesk's JavaScript SDK:
 
 ```markup
 <script id="ze-snippet" src="<ZENDESK_SNIPPET_URL>"> </script>
@@ -145,4 +153,6 @@ Once this Action is triggered and the chosen department has at least one agent o
 ## Going Live
 
 To go live, you should configure a Zendesk channel for the Live environment on [app.chatlayer.ai](https://app.chatlayer.ai). We recommend creating a separate Bot Agent, Department and Widget connected to that Department for both your Draft and Live environments. This assures no collisions will happen between your bot's versions.
+
+Got more questions about configuring Zendesk Live chat in your bot? Do not hesitate to contact [our Support department](https://support.chatlayer.ai/)! 
 
