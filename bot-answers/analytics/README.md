@@ -27,6 +27,8 @@ With these filters you can adjust the information shown on the dashboard, and cr
 Not seeing any data in the overview? Then you might be looking at the 'DRAFT'  data, aka your unpublished bot, while your customers are communicating with your 'LIVE' \(= published\) bot. Switch to 'LIVE' with your filtering to see the actual customer data.  
 {% endhint %}
 
+The timestamp of the data you see in the analytics dashboard is based on the timezone of your browser.
+
 ### User Messages
 
 ![](../../.gitbook/assets/image%20%28559%29.png)

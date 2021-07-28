@@ -53,5 +53,7 @@ Analytics for every bot language can be shown separately.
 
 A call is every time a user triggers a certain intent. The total number of calls per intent is the amount of times a specific intent was triggered during a given time range.
 
+### Timestamp
 
+The timestamp of the data you see in the analytics dashboards is based on the timezone of your browser.
 
