@@ -42,6 +42,10 @@ It is recommend to use this export file as a basis for importing the translation
 
 You can choose to import one language at a time, and you do not need to do all translations at once. 
 
+{% hint style="danger" %}
+Importing / exporting translations will only work in the same bot. To get translations from bot A to bot B, look into importing and exporting [the entire bot](https://docs.chatlayer.ai/bot-answers/settings#bot-import-export).
+{% endhint %}
+
 
 
 
