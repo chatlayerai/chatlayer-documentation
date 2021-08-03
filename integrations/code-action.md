@@ -265,7 +265,7 @@ chatlayer.send()
 
 #### fetch
 
-Fetch allows you to perform API calls. You can find more info [here](https://github.com/node-fetch/node-fetch).
+Fetch allows you to perform API calls. We use [**node-fetch**](https://github.com/node-fetch/node-fetch) ****as the default fetch library.
 
 ```javascript
 const url = 'https://gorest.co.in/public/v1/users';
