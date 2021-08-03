@@ -25,13 +25,13 @@ The code editor allows developers to quickly build custom logic on top of the bo
 
 You can find more information about the code editor here:
 
-{% page-ref page="../../integrations/code-action.md" %}
+{% page-ref page="../../integrations/code-action/" %}
 
 There are also two tutorials in which we show you how the code editor can be used:
 
-{% page-ref page="../../integrations/retrieving-data-from-airtable-get.md" %}
+{% page-ref page="../../integrations/code-action/retrieving-data-from-airtable-get.md" %}
 
-{% page-ref page="../../integrations/airtable.md" %}
+{% page-ref page="../../integrations/code-action/airtable.md" %}
 
 ## iframe
 

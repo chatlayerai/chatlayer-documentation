@@ -55,7 +55,10 @@
 
 * [API integration](integrations/custom-back-end-integrations/README.md)
   * [Advanced API integrations](integrations/custom-back-end-integrations/advanced-api-integrations.md)
-* [Code Editor](integrations/code-action.md)
+* [Code Editor](integrations/code-action/README.md)
+  * [Sending data to Airtable \(POST\)](integrations/code-action/airtable.md)
+  * [Retrieving data from Airtable \(GET\)](integrations/code-action/retrieving-data-from-airtable-get.md)
+  * [Making SOAP requests](integrations/code-action/making-soap-requests.md)
 * [Human handover & live chat](integrations/human-offloading-live-chat/README.md)
   * [\#Interact](integrations/human-offloading-live-chat/interact.md)
   * [Genesys Cloud](integrations/human-offloading-live-chat/genesys-purecloud.md)
@@ -69,8 +72,6 @@
   * [Zendesk Chat](integrations/human-offloading-live-chat/zendesk-chat.md)
   * [Zendesk Support Ticket](integrations/human-offloading-live-chat/creating-a-zendesk-support-ticket.md)
 * [Message objects for APIs](integrations/chat-message-structure-for-apis.md)
-* [Retrieving data from Airtable \(GET\)](integrations/retrieving-data-from-airtable-get.md)
-* [Sending data to Airtable \(POST\)](integrations/airtable.md)
 
 ## Channels
 
