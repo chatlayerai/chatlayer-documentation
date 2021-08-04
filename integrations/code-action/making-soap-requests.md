@@ -4,7 +4,7 @@ You can use the [API Action](../custom-back-end-integrations/#api-plugin) to mak
 
 ### Example
 
-The following is an example of how you can leverage the [fetch ](./#fetch)library embedded in the Code Editor runtime to perform SOAP requests. The example uses an open API that 
+The following is an example of how you can leverage the [fetch ](./#fetch)library embedded in the Code Editor runtime to perform SOAP requests. 
 
 The `input`  variable should contain any stringified number, like "500". We build the XML body through a [template literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals?retiredLocale=nl) and substitute the input value. We then extract the response value through Regex. The output message in the chat will then contain the number as words, "five hundred" in the case of our example.
 
