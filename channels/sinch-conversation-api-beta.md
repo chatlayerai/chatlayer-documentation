@@ -3,10 +3,13 @@
 The [Sinch Conversation API](https://www.sinch.com/products/apis/messaging/conversation-api/) allows you to connect Chatlayer.ai to multiple channels at the same time, without any additional configuration. The Sinch Conversation API currently supports:
 
 * SMS
+* MMS
 * RCS
 * Viber
 * Facebook Messenger
 * WhatsApp
+* Telegram
+* Instagram
 
 You don't have to think about which type of message works with which channel – the Conversation API transcodes the messages automatically to match the target channel. Easy peasy! 
 
