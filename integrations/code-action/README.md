@@ -28,7 +28,7 @@ To start manipulating conversation data in your code action, simply call the fun
 
 ```javascript
 ChatlayerResponseBuilder()
-    .setSessionVariable("user", { address: { ... } })
+    .addSessionVariable("user", { address: { ... } })
     .addMessage("Thank you for sharing your address!")
     .send();
 ```
@@ -38,7 +38,7 @@ Another way to accomplish the same result:
 ```javascript
 const builder = ChatlayerResponseBuilder();
 
-builder.setSessionVariable("user", { address: { ... } })
+builder.addSessionVariable("user", { address: { ... } })
 builder.addMessage("Thank you for sharing your address!")
 builder.send();
 ```
@@ -47,14 +47,14 @@ builder.send();
 
 The `ChatlayerResponseBuilder` has the ability to set variables or adding messages to the chatbot. Both are shown in the example below:
 
-_`setSessionVariable(namespace: string, data: any)`:_  Insert a variable on a certain namespace within the session. 
+_`addSessionVariable(namespace: string, data: any)`:_  Insert a variable on a certain namespace within the session. 
 
 _`addMessage(message: string)`:_ Adds a text message to be sent by the bot.
 
 ```javascript
 ChatlayerResponseBuilder()
-    .setSessionVariable("user", 'Joachim')
-    .addMessage("setSessionVariable done.")
+    .addSessionVariable("user", 'Joachim')
+    .addMessage("addSessionVariable done.")
     .send();
 ```
 
@@ -62,7 +62,7 @@ To enhance your variables even more, you can store multiple variables about the 
 
 ```javascript
 ChatlayerResponseBuilder()
-    .setSessionVariable("user", { firstName: "Joachim", lastName: "Chatbot" })
+    .addSessionVariable("user", { firstName: "Joachim", lastName: "Chatbot" })
     .send();
 ```
 
@@ -283,7 +283,7 @@ const json = await response.json();
 const person = _.get(json, 'results[0]')  
 
 const chatlayer = ChatlayerResponseBuilder()
-chatlayer.setSessionVariable('profile', userProfile)
+chatlayer.addSessionVariable('profile', userProfile)
 chatlayer.send()
 ```
 

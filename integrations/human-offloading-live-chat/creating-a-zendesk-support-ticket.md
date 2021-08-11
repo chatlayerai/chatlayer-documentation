@@ -43,7 +43,7 @@ const zendeskResult = await fetch('https://{subdomain}.zendesk.com/api/v2/ticket
 }).then(r => r.json())
 
 ChatlayerResponseBuilder()
-    .setSessionVariable("apiResponse", zendeskResult)
+    .addSessionVariable("apiResponse", zendeskResult)
     .setNextDialogState(args.nextDialogState)
     .send()
 ```

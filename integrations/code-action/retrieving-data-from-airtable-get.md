@@ -50,9 +50,9 @@ const found = records.filter((rec) => rec.fields.Month === month.toLowerCase());
 const builder = ChatlayerResponseBuilder();
 
 if (found.length) {
-  builder.setSessionVariable("meetups", found);
+  builder.addSessionVariable("meetups", found);
 } else {
-  builder.setSessionVariable("nomeetups", found);
+  builder.addSessionVariable("nomeetups", found);
 }
 
 builder.send();
