@@ -5,7 +5,7 @@
 * A brand new color scheme that fits our new logo.
 * Data retention: enterprise customers can set a custom retention time for their conversations, sessions and training expressions. More info will follow soon.
 * Configurable typing indicator. More info will follow soon.
-* Another new channel: [Telegram](../../channels/sinch-conversation-api-beta.md).
+* Another new channel: talk to your bots on [Telegram](../../channels/sinch-conversation-api-beta.md).
 * Using entities as a format type for input validations. More info will follow soon.
 
 ## June 2021
