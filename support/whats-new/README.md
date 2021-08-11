@@ -1,5 +1,13 @@
 # What's new
 
+## August 2021
+
+* A brand new color scheme that fits our new logo.
+* Data retention: enterprise customers can set a custom retention time for their conversations, sessions and training expressions. More info will follow soon.
+* Configurable typing indicator. More info will follow soon.
+* Another new channel: [Telegram](../../channels/sinch-conversation-api-beta.md).
+* Using entities as a format type for input validations. More info will follow soon.
+
 ## June 2021
 
 * Support for managing team members through Single Sign On \(SAML SSO\). Read more [here](../../organization-management/access-control/single-sign-on-sso-saml.md).
