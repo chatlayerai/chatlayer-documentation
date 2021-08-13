@@ -10,7 +10,7 @@ As long as a live agent has not taken over the chat session, the bot will remain
 
 ### Typical patterns that lead to a handover
 
-Human handover, or disabling the bot and allowing a human agent to take over can happen in four situations:
+Human handover, or disabling the bot and allowing a human agent to take over can happen in three situations:
 
 * User explicitly requests talking to a live agent. E.g. by typing “I want to speak to a real agent”. This can be captured in a separate intent and bot dialog, that refers to the human handover platform.
 * User reaches the ‘not understood’ bot dialog. This happens when the NLP has low confidence in the understanding of the user’s messages. This can be configured to trigger the bot to ask a question “Do you want to talk to a human agent?”
