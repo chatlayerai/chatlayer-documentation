@@ -24,6 +24,32 @@ The perfect human handover integration has a few key characteristics that help t
 * Tags & variables: bots are great at gathering input. Need to know a customer's name, e-mail address and which products they bought? Have the bot ask those questions, and send that data to the agent when the customer is handed over.
 * Make sure the agent can see the last messages sent between bot and customer. This will give them some context about the conversation, helping identify the problem more easily.
 
+### Types of live chat platform integrations
+
+There are two basic types of live chat integrations. The main difference lies in how they manage channels.
+
+#### Chatlayer controls the channels
+
+* The channels are directly linked to Chatlayer \(in the [Channels](../../channels/multi-channel.md) tab\)
+* When the handover is triggered, the live chat platform is notified about a new conversation
+* The agent takes over the conversation. The bot is put on hold.
+* All messages will continue to be sent through Chatlayer, so they can end up at the right channel.
+* _Examples:_ Genesys PureCloud, HelpScout, Salesforce ServiceCloud
+
+![](../../.gitbook/assets/jjs-wireframes-2x-9-.png)
+
+#### Live chat platform controls the channels
+
+* The channels are linked to the live chat platform itself
+* Chatlayer is linked to the live chat platform. From the Chatlayer perspective, the only channel for this bot is the live chat platform itself.
+* When a user starts talking to a channel, the conversation is sent to Chatlayer by the live chat platform.
+* The Chatlayer bot sends messages back to the live chat platform, which sends the messages to the channel.
+* When a conversation is handed over, Chatlayer notifies the live chat platform.
+* When an agent takes over the conversation, the live chat platform stops sending messages to Chatlayer.
+* _Examples:_ Zendesk Chat, Intercom, Sparkcentral by Hootsuite
+
+![](../../.gitbook/assets/jjs-wireframes-2x-10-.png)
+
 ## Configuring human handover
 
 In the Settings menu under Offloading you can set-up a new offloading provider. Chatlayer supports multiple market-leading offloading providers.
