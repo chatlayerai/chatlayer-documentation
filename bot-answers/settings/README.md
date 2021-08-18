@@ -14,7 +14,7 @@ Chatbots work best with short and concise messages. To avoid that messages that 
 
 ## Bot behaviour
 
-The typing speed is how fast the bot answers to the user. The higher the typing speed, the longer the user will see that the bot is 'typing' before they receive an answer. The right typing speed can create a positive, more humanlike experience for the user. The default typing speed is 1500ms, but try out different speeds to see what is best for your bot.
+The typing speed, or typing duration, is how fast the bot answers to the user. The higher the typing speed, the longer the user will see that the bot is 'typing' before they receive an answer. The right typing speed can create a positive, more humanlike experience for the user. The default typing speed is 1500ms, but try out different speeds to see what is best for your bot.
 
 ## Language detection
 
