@@ -1,68 +1,57 @@
+---
+description: Need to reuse the same intent twice or more? Context is your friend.
+---
+
 # Context
 
-Contexts can be used to reuse intents across several bot dialogs. In a bot you need the same intents, for example 'yes', multiple times. But how would the bot recognize which 'yes' intent the user means? That is what contexts are for.
+Context makes it possible to reuse the same intent in several bot dialogs, an important feature in bot building! Let's learn how to use context with this short example:
 
+So, we've built a bot that can help users place a food order. At one point in the conversation, the bot will ask the user if they'd like a free dessert. The user can reply with 'yes' or 'no'. A bit later in the conversation, the bot will ask the user if they're ready to place their order. Again, the user can reply with 'yes' or 'no'. 
 
+## Step 1: Helping the bot understand the user's reply
 
-Consider the following dialog tree:
+First, for the bot to understand the user's 'yes' or 'no', we need to create two bot dialogs and link each one to one of the following intents: 
 
-* Bot dialog `ask confirmation of pizza order`
+* general.yes
+* general.no
 
-  * Bot dialog `confirm order` - Intent: **yes**
-  * Bot dialog `change order` - Intent: **no**
+![Two bot dialogs, one for each possible user response](../.gitbook/assets/image%20%28593%29.png)
 
-* Bot dialog `another joke?`
-  * Bot dialog `second joke` - Intent: **yes**
-  * Bot dialog `no more jokes` - Intent: **no**
+## Step 2: Linking intents through context
 
-We have two separate conversations in this tree. The first one orders a pizza and ends by asking the user to confirm the order. The second conversation tells our user a joke and asks if they would like to hear another one.
+![](../.gitbook/assets/dessert%20%282%29.png)
 
-When in the `ask confirmation of pizza order` bot dialog, you want the user to be able to answer with something like _yes, confirm_ or _that looks good_. On the other hand when you are in the`another joke?` bot dialog, you also want the user to be able to answer with _yeah sure_ or _looks good_ or a similarly positive expression.
+In the screenshot above, we added the `general.yes` intent to a bot dialog. We also added the `general.no` intent to another bot dialog. Now all we have to do is connect these dialogs to the question above, so the bot knows which question is being answered. 
 
-To make that happen, we need to reuse the '_Yes'_ intent for both bot dialogs. However, we need to give the bot a hand in understanding where the user wants to go by saying that intent at that point in the flow. For that, you can help the bot using **context**.
+We can do this by creating `output context` for the bot dialog containing the question. Open the `Want free dessert` dialog and go to the `NLP` section. Create an `output context` that you will later link to the dialogs containing the `general.yes` and `general.no` intents:
 
-* Set the output context of the `ask confirmation of pizza order` bot dialog to **confirmingpizza.** The default value of the lifespan will be 1, you can leave that for now
-* Next, in the bot dialog `confirm order`, specify that **confirmingpizza** needs to be the input context
-
-![](../.gitbook/assets/image%20%28466%29.png)
-
-![](../.gitbook/assets/image%20%2857%29.png)
-
-![](../.gitbook/assets/image%20%28467%29.png)
-
-![](../.gitbook/assets/image%20%28465%29.png)
-
-Similarly, you can specify the output context of the `another joke?` bot dialog to **joking** and require **joking** as a required context for the bot dialog `second joke`.
-
-Now, when the 'yes' intent is recognized, the bot will check which context is active. Depending on the context, a user will be directed to either the `confirm order` bot dialog \(when the **confirmingpizza** context is active\) or to the `second joke` bot dialog \(if the **joking** context was active\)
-
-You can repeat this configuration for the 'no' intent as well. In the end, you would get a configuration like this:
-
-* Bot dialog `ask confirmation of pizza order`- Output context: **confirmingpizza**
-
-  * Bot dialog `confirm order` - Required context: **confirmingpizza,** Intent: positive
-  * Bot dialog `change order` - Required context: **confirmingpizza**, Intent: negative
-
-* Bot dialog `another joke?` - Output context: **joking**
-  * Bot dialog `second joke` - Required context: **joking**, Intent: positive
-  * Bot dialog `no more jokes` - Required context: **joking**, Intent: negative
-
-Of course, you don't want the user to be limited to this context for the rest of the conversation. After saying 'yes' to the initial question, every other expression similar to 'yes' can be an answer to a different question.
-
-To configure this, you can define the **lifespan** of the output context. Each time the user enters a dialog state with an output configured, this context is added to his session with an initial lifespan value as defined in the bot dialog settings. For each user message, the lifespan of a context is decreased by one. When the value is 0, the context is removed from the session.
+![Adding output context to a bot dialog](../.gitbook/assets/image%20%28592%29.png)
 
 {% hint style="info" %}
-For each user message, the lifespan of a context is decreased by one. A user can have multiple contexts with different lifespan values.
+You can tell the bot how often this context can be repeated throughout the entire bot conversation. For example: If the bot offers free dessert twice in one conversation, we should put the `lifespan` at 2 because the user can say 'yes' or 'no' twice to this question. In this example, we'll only offer free dessert once, so we'll keep the `lifespan` at 1.
 {% endhint %}
 
-![](../.gitbook/assets/image%20%28190%29.png)
+The last thing to do is make sure that the two bot dialogs containing the `general.yes` and `general.no` intents are linked correctly to the dialog containing the question. To do so, we have to open each dialog, go to the NLP section, and add the `output context` we defined earlier as `required context` :
 
-All of this means that a user is redirected to a bot dialog when:
+![Adding required context to a bot dialog](../.gitbook/assets/image%20%28591%29.png)
 
-1. The NLP model result has a top scoring intent with a value higher than the NLP intent recognition threshold value, and
-2. This intent is linked to a bot dialog and the optional context linked to this bot dialog is available in the user session
+Once you click 'save', the bot can understand a 'yes' or 'no' response to the question of free dessert. 
+
+Step 1 completed ☑️
+
+## Step 3: Reusing intents in the same conversation
+
+Later in the conversation, the bot will again ask a 'yes' or 'no' question to its user: 
+
+_"Would you like to place your order?"_
+
+To make sure the user can reply 'yes' or 'no' to this question as well, we'll need to use `output context` again:
+
+![Using a different output context so we can use the yes/no intents again](../.gitbook/assets/image%20%28594%29.png)
+
+Now, when the `general.yes` intent is recognized, the bot will know which question this answer belongs to checking the `output context`. Depending on this context, a user will be directed to either the `Yes place order` bot dialog \(when the **place\_order** context is active\) or to the `Yes to free dessert` bot dialog \(if the **free\_dessert** context is active\).
 
 {% hint style="info" %}
-A user can have multiple contexts when navigating between different conversation flows. When multiple intent and input context combinations are found, the user's context with the highest lifespan value is taken.
+A user can have multiple contexts when navigating between different conversation flows. When multiple intents and input context combinations are found, the user's context with the highest lifespan value is taken.
 {% endhint %}
 
