@@ -1,5 +1,5 @@
 ---
-description: Need to reuse the same intent twice or more? Context is your friend.
+description: Need to reuse the same intent twice or more? The answer is context.
 ---
 
 # Context
