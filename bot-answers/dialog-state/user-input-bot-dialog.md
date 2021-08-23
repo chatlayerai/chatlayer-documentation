@@ -1,20 +1,20 @@
 # Input Validation
 
-An input validation dialog state can be used to get information from the bot's user. It first checks if the variable specified in the 'variable' field exists. 
-
-If 'variable' has a value already, the bot will go automatically to the next bot dialog specified in the 'Next bot dialog' dropdown list.
-
-If 'variable' does not have a value, the bot will ask the question as defined in the Question section.
-
-Session variables can already be known for a number of reasons:
+An `input validation` dialog state can be used to get information from the user. When the user gives information, the bot will first check if the info corresponds to an already known variable. Variables can be known already for various reasons:
 
 * The user has answered this question before
-* An entity was extracted with the same variable name
+* A previous entity was detected with the same variable name
 * The user is authenticated and the variable was automatically set
+
+If the `variable` has a `value` already, the bot will automatically go to the next bot dialog specified in the `Next bot dialog` dropdown list.
+
+If the `variable` does not have a `value` yet, the bot will ask the question written in the input validation dialog.
 
 ## Invalid input
 
-The input is invalid? You can specify the message to be displayed when input validation fails, or fails 3 times. For example: the first time a message might simply be "Can you try again?" or "Can you try DD-MM-YYYY format?" but after 3 fails, the message might be "Please contact our support at \[tel number\]" or your bot can redirect the user to a live agent.
+When a user gives an answer that's invalid \(for example, when the bot asks for an email address and the user replies with 'chicken'\) the bot needs to let the user know their answer was invalid. To do so, you can create a message to be displayed for when input validation fails once, and another message for when the input fails 3 times. 
+
+For example: the first time an input fails, the error message could simply be "Sorry, I didn't get that. Can you try again?" or "Sorry, that doesn't seem to be a valid date. Can you try the DD-MM-YYYY format?". When the user fails to give valid input 3 times in a row, the error message could be "Sorry, I can't seem to understand. Please contact our support team at \[tel number\]". Another option is for your bot to redirect the user to a live agent.
 
 ## Settings
 
