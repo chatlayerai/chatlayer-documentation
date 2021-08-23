@@ -24,7 +24,15 @@ You can pass arguments to your Code actions by assigning them keys. Your keys wi
 
 The `ChatlayerResponseBuilder` function returns a helper instance that allows you to steer your conversation by sending messages as a bot, navigating to bot dialogs, or even creating session data.
 
-To start manipulating conversation data in your code action, simply call the function `ChatlayerResponseBuilder()` which will return a `ChatlayerResponseBuilder` instance. The response builder has a fluent interface, this means that every function you call will return the same instance. This makes it easy to chain multiple function calls when, for example, you want to show a message and manipulate session data at the same time. Whenever you want to publish your changes to the conversation, you can call the `send()` function. If you don't call the `send()` function anywhere in your Code Action, users will not see any of your results after the code has executed.
+To start manipulating conversation data in your code action, simply call the function `ChatlayerResponseBuilder()` which will return a `ChatlayerResponseBuilder` instance. 
+
+The `ChatlayerResponseBuilder` has a fluent interface, this means that every function you call will return the same instance. This makes it easy to chain multiple function calls when, for example, you want to show a message and manipulate session data at the same time. 
+
+Whenever you want to publish your changes to the conversation, you must call the `send()` function. 
+
+{% hint style="warning" %}
+If you don't call the `send()` function anywhere in your Code Action, users will not see any of your results after the code has executed.
+{% endhint %}
 
 ```javascript
 ChatlayerResponseBuilder()
