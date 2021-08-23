@@ -37,11 +37,12 @@ Another way to accomplish the same result:
 
 ```javascript
 const builder = ChatlayerResponseBuilder();
-
-builder.addSessionVariable("user", { address: { ... } })
-builder.addMessage("Thank you for sharing your address!")
+builder.addSessionVariable("user", { address: { ... } });
+builder.addMessage("Thank you for sharing your address!");
 builder.send();
 ```
+
+
 
 #### Set variables or send messages
 
@@ -77,11 +78,11 @@ Based on code, variables or other input, you can steer the conversation to other
 Route the conversation to the given dialogstate ID. 
 
 ```javascript
-const { introductionDialogstate } = args
+const { introductionDialogstate } = args;
 
-const chatlayer = ChatlayerResponseBuilder()
-chatlayer.setNextDialogState(introductionDialogstate)
-chatlayer.send()
+const chatlayer = ChatlayerResponseBuilder();
+chatlayer.setNextDialogState(introductionDialogstate);
+chatlayer.send();
 ```
 
 ### Bot Message functionalities
@@ -112,7 +113,7 @@ ChatlayerResponseBuilder().addCarousel([
             { type: 'web_url', url: 'https://docs.chatlayer.ai', title: 'Docs' }
         ]
     }
-]).send()
+]).send();
 ```
 
 #### addQuickReplies
@@ -149,7 +150,7 @@ ChatlayerResponseBuilder()
         title: 'How can we help you?', // this is the title of the Quick Replies
         quickReplies,
     })
-    .send()
+    .send();
 ```
 
 #### addButtonGroup
@@ -188,7 +189,7 @@ ChatlayerResponseBuilder()
             { type: 'phone_number', title: 'Call 1207', payload: '1207'}
         ]
     })
-    .send()
+    .send();
 ```
 
 Here, the 'invoices' are the different button options displayed. With the `.addButtonGroup` you can add these buttons or create URL buttons. 
@@ -203,7 +204,7 @@ ChatlayerResponseBuilder()
         <h1>This is a header</h1>
         <p>Unfortunately, html messages will only work on the web widget.</p>
     `, { withBalloon: true })
-    .send()
+    .send();
 ```
 
 Iframes can be used to embed other pages in the chatbot. A perfect example of why you would need an iframe is embedding Youtube videos.
@@ -256,11 +257,11 @@ The following functionality exists inside the Code action's scope:
 Lodash is a JavaScript utility library. You can find more info [here](https://lodash.com/docs/4.17.15). 
 
 ```javascript
-const introductionDialogstate = _.get(args, 'introductionDialogstate')
+const introductionDialogstate = _.get(args, 'introductionDialogstate');
 
-const chatlayer = ChatlayerResponseBuilder()
-chatlayer.setNextDialogState(introductionDialogstate)
-chatlayer.send()
+const chatlayer = ChatlayerResponseBuilder();
+chatlayer.setNextDialogState(introductionDialogstate);
+chatlayer.send();
 ```
 
 #### fetch
@@ -280,11 +281,11 @@ const response = await fetch(url).then((res) => {
 
 const json = await response.json();
 
-const person = _.get(json, 'results[0]')  
+const person = _.get(json, 'results[0]');
 
-const chatlayer = ChatlayerResponseBuilder()
-chatlayer.addSessionVariable('profile', userProfile)
-chatlayer.send()
+const chatlayer = ChatlayerResponseBuilder();
+chatlayer.addSessionVariable('profile', userProfile);
+chatlayer.send();
 ```
 
 ### Creating a slight delay between bot messages
@@ -297,7 +298,7 @@ To create a short delay of two seconds, add an 'Action' dialog and paste the fol
 const builder = ChatlayerResponseBuilder();
 
 await new Promise((resolve)=>{_.delay(resolve,2000)});
-builder.send()
+builder.send();
 ```
 
 _You can adjust the length of the delay by replacing the 2000 with 3000 \(3 seconds\) etc._
