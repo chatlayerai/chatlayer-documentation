@@ -61,11 +61,13 @@ The Date input parser type will try to parse the response as a date. Sentences l
 
 #### Location
 
-The location parser will send the user's input sentence to a Google Geocoding API service. When a correct address or location is recognized, our platform will automatically create a variable with all relevant geo-data.
+The location parser will send the user's input to a Google Geocoding API service. When a correct address or location is recognized, the Chatlayer platform will automatically create an object that contains all relevant geo-data. 
 
-![An example for a location input validation](../../.gitbook/assets/screenshot-2020-09-17-at-12.25.45.png)
+![An example of an input validation dialog f](../../.gitbook/assets/screenshot-2020-09-17-at-12.25.45.png)
 
-Look at the bot dialog below, where we ask the user "Where do you work?" When the user answers that question, an object containing information about the location will be stored as a `user_work_location` variable. Below is an example that shows how the `user_work_location` variable would be stored when the user responds with 'Chatlayer.ai':
+Look at the bot dialog above. When the user answers the question "Where do you work?" with a valid location, this information will be stored as a `user_work_location` variable \(you can rename this variable if needed\). 
+
+Below is an example that shows how the `user_work_location` variable would be stored when the user responds with 'Chatlayer.ai':
 
 ```javascript
 {
@@ -80,13 +82,19 @@ Look at the bot dialog below, where we ask the user "Where do you work?" When th
 }
 ```
 
-A bot message configured as:
+{% hint style="info" %}
+To show the address as a full address \(street, street number, zipcode and city\) you need to add some extra information to the variable: `.fullAddress`
 
-`Thank you, shall I send your package to {user_work_location.fullAddress} then?`
+So in the example above, the bot can display the entire location by using the following variable:`{user_work_location.fullAddress}`
+{% endhint %}
 
-Will show the following message to the user:
+A bot message containing the following info:
 
-`Thank you, shall I send your package to Oudeleeuwenrui 39, 2000 Antwerpen, Belgium then?`
+`Thank you, shall I send your package to {user_work_location.fullAddress}?`
+
+Will display the following message to the user:
+
+`Thank you, shall I send your package to Oudeleeuwenrui 39, 2000 Antwerpen, Belgium?`
 
 #### Number
 
