@@ -15,6 +15,12 @@ A conversation starts with a first message being sent, either by the bot or by t
 We start counting a new conversation when there is no interaction between your bot and a user for at least 15 minutes.​
 {% endhint %}
 
+You can try out your bot in the "test your bot" window within the platform. These conversations are not counted in your analytics or your billing.
+
+In the **analytics dashboard** you can choose if you want to see the metrics for your DRAFT or LIVE conversations \(learn more about DRAFT and LIVE [here](../publishing-your-bot/)\). In your **billing**, both DRAFT and LIVE conversations will be counted.
+
+One conversation happens in at most one channel. If the same user uses multiple channels to talk to the bot, all of these conversations will be counted separately in billing and analytics.
+
 ### User
 
 A user is anyone who sends at least one message to the bot. 
