@@ -12,10 +12,6 @@ The offloading webhook allows you to integrate any human handover live chat plat
 * Receive outgoing bot messages
 * Act upon offloading requests from a user
 
-{% hint style="info" %}
-This feature is currently in beta. If you would like access, please [get in touch](../../support/get-in-touch.md).
-{% endhint %}
-
 ## Configuration
 
 To configure your Chatlayer Offloading Webhook, head over to **Settings &gt; Offloading** and create a **Webhook** integration.
