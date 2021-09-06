@@ -23,7 +23,7 @@ Use this handy flowchart so you can find out which type of entity best fits your
 ![Click the image to enlarge it](../../../.gitbook/assets/untitled-document.png)
 
 {% hint style="warning" %}
-All entities will only be detected after you've **updated the NLP** at least once
+All entities are only detected after you've **updated the NLP** at least once. Every time you change, add, or delete an entity, you should update the NLP again
 {% endhint %}
 
 ## 1 – Match entities
@@ -68,9 +68,9 @@ Find a concrete example of how to use match entities below 👇
 
 ## 2 – Contextual entities
 
-Contextual entities use machine learning to identify entities in sentences by learning which type of word your entity is, where it's placed in the sentence, and what the specific context is.
+Contextual entities use the principle of machine learning to identify entities that are used in sentences. They understand the entity by learning which type of word your entity is, where it's located in the sentence, and what the specific context is.
 
-[Synonyms](./#synonyms) can also be added for contextual entities.
+You can also add [synonyms](./#synonyms) to contextual entities.
 
 {% hint style="info" %}
 Contextual entities are the only type of entities that can \(and should be\) added to the expression itself, for example: "I want to book a train ticket from @origin to @destination"
@@ -80,20 +80,26 @@ You can see a live example of how you can use contextual entities in our tutoria
 
 {% page-ref page="../../../tutorials/tutorial-getting-information-using-entities.md" %}
 
+{% hint style="info" %}
+When adding contextual entity variables, there's no need to add capitalised and non-capitalised words. All text is decapitalized by the NLP before any recognition happens, so 'api' won't be recognised differently from 'API' ​
+{% endhint %}
+
 ### Fuzzy matching for contextual entities
 
-Fuzzy matching allows you to recognise a slight variation of an entity value \(or its synonym\) as the original value. For example "Brusselt" will be automatically corrected to "Brussels" by using fuzzy matching.
+Fuzzy matching allows you to recognise a slight variation of an entity value \(or its synonym\) as the original value. For example "Brusselt" will be automatically corrected to "Brussels" if fuzzy matching is enabled.
 
 ![](../../../.gitbook/assets/image%20%28355%29.png)
 
+{% hint style="info" %}
 Fuzzy matching is quite strict. Less than 20% of the characters are allowed to be different in order to link it to another entity. This is to avoid that the value is linked to another entity which also has overlap. 
+{% endhint %}
 
 ## 3 – System entities
 
 System entities are entities that can be automatically extracted from the user's messages. You can use these to enrich your conversations and data integrations without having to configure custom entities yourself.
 
 {% hint style="warning" %}
-You should not overwrite System Entities yourself – they will automatically be overwritten with the last detected value \(if any are available\). So instead, copy the System Entity variable to a variable of your own choosing outside the **sys** or **internal** namespaces.
+You should never overwrite System Entities yourself – they are automatically overwritten by the last detected value \(if any values are detected\). So instead, copy the System Entity variable to a variable of your own choosing outside the **sys** or **internal** namespaces.
 {% endhint %}
 
 ### Supported system entities
