@@ -44,6 +44,7 @@
 * [Publishing your bot](bot-answers/publishing-your-bot/README.md)
   * [Publishing & platform URLs FAQ](bot-answers/publishing-your-bot/publishing-new.md)
 * [Settings](bot-answers/settings/README.md)
+  * [Data retention](bot-answers/settings/data-retention.md)
   * [Variables](bot-answers/settings/secure-variables-gdpr.md)
 
 ## Organization Management

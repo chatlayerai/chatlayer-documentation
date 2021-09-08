@@ -35,9 +35,9 @@ Users that have a conversation during and before the selected time range in the 
 
 If a user had multiple conversations during the selected time range, but no conversations before that range, they will not be counted as a returning user.
 
-### Message
+### User Message
 
-A message is every interaction by the user with the bot. This can be a typed expression, but also a button click, a file upload, etc.
+A user message is every interaction by the user with the bot. This can be a typed expression, but also a button click, a file upload, etc.
 
 ### 'Not understood' message
 
