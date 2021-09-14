@@ -73,35 +73,18 @@ If you're connecting your bot to internal systems that require whitelisting, ple
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">DRAFT EU</td>
+      <td style="text-align:left">EU</td>
+      <td style="text-align:left">34.78.45.176/32</td>
       <td style="text-align:left">
-        <p>35.187.113.2/32</p>
-        <p>51.124.69.196/31</p>
-        <p>34.78.45.176/32</p>
-      </td>
-      <td style="text-align:left">
-        <p>35.195.244.99/32</p>
-        <p>51.124.69.196/31</p>
         <p>34.78.158.115/32</p>
+        <p>23.251.136.162/32</p>
+        <p>34.140.169.192/32</p>
+        <p>34.76.255.244/32</p>
+        <p>34.140.104.91/32</p>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">LIVE EU</td>
-      <td style="text-align:left">
-        <p>35.205.75.142/32</p>
-        <p>52.155.165.92/30</p>
-        <p>51.124.69.116/30</p>
-        <p>34.78.45.176/32</p>
-      </td>
-      <td style="text-align:left">
-        <p>35.195.244.99/32</p>
-        <p>52.155.165.92/30</p>
-        <p>51.124.69.116/30</p>
-        <p>34.78.158.115/32</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">DRAFT US</td>
+      <td style="text-align:left">US</td>
       <td style="text-align:left">
         <p>34.86.117.221/32</p>
         <p>35.245.65.209/32</p>
@@ -109,21 +92,13 @@ If you're connecting your bot to internal systems that require whitelisting, ple
       <td style="text-align:left">
         <p>35.236.193.49/32</p>
         <p>35.245.212.205/32</p>
+        <p>34.145.223.151/32</p>
+        <p>34.85.204.75/32</p>
+        <p>35.245.164.149/32</p>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">LIVE US</td>
-      <td style="text-align:left">
-        <p>34.86.117.221/32</p>
-        <p>35.245.65.209/32</p>
-      </td>
-      <td style="text-align:left">
-        <p>35.236.193.49/32</p>
-        <p>35.245.212.205/32</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">DRAFT AS</td>
+      <td style="text-align:left">India</td>
       <td style="text-align:left">
         <p>35.200.129.64/32</p>
         <p>35.200.132.180/32</p>
@@ -131,17 +106,9 @@ If you're connecting your bot to internal systems that require whitelisting, ple
       <td style="text-align:left">
         <p>35.244.41.108/32</p>
         <p>34.93.181.152/32</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">LIVE AS</td>
-      <td style="text-align:left">
-        <p>35.200.129.64/32</p>
-        <p>35.200.132.180/32</p>
-      </td>
-      <td style="text-align:left">
-        <p>35.244.41.108/32</p>
-        <p>34.93.181.152/32</p>
+        <p>34.93.184.224/32</p>
+        <p>35.244.23.10/32</p>
+        <p>34.93.140.182/32</p>
       </td>
     </tr>
   </tbody>
