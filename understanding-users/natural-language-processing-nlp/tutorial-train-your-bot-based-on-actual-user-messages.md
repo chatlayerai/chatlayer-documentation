@@ -15,6 +15,11 @@ All conversations from your channels will be loaded into the Train module. Conve
 ![](../../.gitbook/assets/image%20%2893%29.png)
 
 * Click on '+' to add this candidate expression as a validated expression
+
+{% hint style="warning" %}
+In your DRAFT environment you can see expressions from both the DRAFT and LIVE environment. Make sure you will add the expression to your DRAFT environment, and with the next published version your new expression will be in the LIVE environment as well. 
+{% endhint %}
+
 * Let's do a second test by sending a new user message on Facebook Messenger
 
 ![](../../.gitbook/assets/screen-shot-2018-03-04-at-11.34.20.png)
