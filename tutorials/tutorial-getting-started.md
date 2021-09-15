@@ -16,7 +16,7 @@ What better way to learn how to build a bot than building one! To help you get s
 
 {% hint style="warning" %}
 To get started, you need a Chatlayer account.   
-Don't have one yet? [Create a trial account here](https://chatlayer.ai/try-now/).   
+**Don't have an account yet?** [Create a trial account here](https://chatlayer.ai/try-now/)**.**   
 Have a problem with your account? Contact our support team [here](mailto:support@chatlayer.ai).
 {% endhint %}
 
