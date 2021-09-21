@@ -1,3 +1,9 @@
+---
+description: >-
+  This page explains how to use the train tab on the platform to use real user
+  data to train the NLP model of your bot.
+---
+
 # Training your bot with real user input
 
 After you published your bot, you want to keep training the NLP model with real user input. By doing so, your bot becomes smarter over time and can support more diverse expressions too. To do so, you can use the NLP `Train` tab.
