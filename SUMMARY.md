@@ -20,7 +20,7 @@
 * [Natural Language Processing \(NLP\)](understanding-users/natural-language-processing-nlp/README.md)
   * [NLP threshold](understanding-users/natural-language-processing-nlp/settings.md)
   * [NLP import & export](understanding-users/natural-language-processing-nlp/nlp-import-and-export.md)
-  * [Training your bot with actual user input](understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages.md)
+  * [Training your bot with real user input](understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages.md)
   * [NLP Dashboard & NLP Improve](understanding-users/natural-language-processing-nlp/nlp-dashboard-and-nlp-improve.md)
   * [Entities](understanding-users/natural-language-processing-nlp/synonym-entities/README.md)
     * [Detecting information with match entities](understanding-users/natural-language-processing-nlp/synonym-entities/how-to-use-match-entities.md)
