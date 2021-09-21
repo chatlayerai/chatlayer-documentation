@@ -38,7 +38,7 @@ We also recommend scoping expressions in case they contain unnecessary informati
 
 In this case, the NLP did find the correct intent, but the confidence score is rather low because the expression contains a lot of unnecessary information. It's best practice to **delete this information from the expression before adding it to the intent**, so that the bot trains on relevant info only.
 
-![Click on the image to enlarge it](../../.gitbook/assets/image%20%28599%29.png)
+![Click on the image to enlarge it](../../.gitbook/assets/image%20%28602%29.png)
 
 {% hint style="info" %}
 **Let's recap:**
