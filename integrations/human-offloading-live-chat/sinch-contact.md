@@ -75,6 +75,10 @@ Do you have an On Premise environment of Sinch Contact? Toggle 'Is On Premise' a
 
 ## Final steps
 
+{% hint style="info" %}
+In the example below, we'll use the Sinch Contact Pro web widget as a channel. You can also use channels like WhatsApp, Facebook Messenger, or the Chatlayer web widget.
+{% endhint %}
+
 * Open the page where you’ve configured your Sinch Contact Widget
 * Fill in your contact details, select the “Chatlayer Agents” queue and start the conversation
 
