@@ -36,9 +36,11 @@ Create a list of possible values for an entity. If a user mentions one of these 
 
 For example: you have defined @product as a match entity, and have created three possible values: Basic, Intermediate, Premium. When a user says "I want to know more about the **Premium** pack", the entity @product will be saved, with the value "Premium".
 
-Match entities are _case_ _insensitive_.
+![Match entities on the platform](../../../.gitbook/assets/image%20%28609%29.png)
 
-![](../../../.gitbook/assets/image%20%28354%29.png)
+{% hint style="info" %}
+Match entities are case insensitive, so there's no need to add the same word as a synonym but with a capital
+{% endhint %}
 
 #### Synonyms
 
@@ -58,9 +60,9 @@ The meaning of the two expressions above is exactly the same, but you want to co
 
 Use a pattern to extract data from a user expression if it matches a particular format. Patterns are formed as regular expressions \(like in Python\). You can learn more about how to create regular expressions [here](https://regex101.com/).
 
-For example: you have defined @customerID as a match entity, and have provided the following regex pattern: `[a-z]{5}[0-9]{2}`. This means that when a users says "My customer ID is **terwf33**", which consists of 5 letters and 2 numbers, it is saved as @customerID with the value "terwf33".
+For example: you have defined **@customer\_ID** as a match entity, and have provided the following regex pattern: `[a-z]{5}[0-9]{2}`. This means that when a users says "My customer ID is **terwf33**", which consists of 5 letters and 2 numbers, it is saved as @customer\_ID with the value "terwf33".
 
-![](../../../.gitbook/assets/image%20%28356%29.png)
+![Match entities on the platform](../../../.gitbook/assets/image%20%28610%29.png)
 
 Find a concrete example of how to use match entities below 👇
 
@@ -88,7 +90,7 @@ When adding contextual entity variables, there's no need to add capitalised and 
 
 Fuzzy matching allows you to recognise a slight variation of an entity value \(or its synonym\) as the original value. For example "Brusselt" will be automatically corrected to "Brussels" if fuzzy matching is enabled.
 
-![](../../../.gitbook/assets/image%20%28355%29.png)
+![](../../../.gitbook/assets/image%20%28607%29.png)
 
 {% hint style="info" %}
 Fuzzy matching is quite strict. Less than 20% of the characters are allowed to be different in order to link it to another entity. This is to avoid that the value is linked to another entity which also has overlap. 
