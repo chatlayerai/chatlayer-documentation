@@ -1,6 +1,6 @@
 # Human handover & live chat
 
-Bots are great as a first line of defense. However, they are not \(yet\) as smart as a real human agent worker. From our experience at Chatlayer, we have noticed that hybrid forms of chatbots in combination with live agents offer the best user experience. This is called human handover or offloading.
+Bots are great as a first line of defense. However, they are not \(yet\) as smart as a real human agent worker. From our experience at Chatlayer, we have noticed that hybrid forms of chatbots in combination with live agents offer the best user experience. This is called human handover, offloading or agent transfer.
 
 ## When is a user handed over to a live agent?
 
@@ -64,15 +64,15 @@ If you want to connect to a platform that's not in this list, try our [Offloadin
 
 Different live chat platforms support different feature sets. Below you can find a list of what's supported by which provider.
 
-|  | Sinch Contact | Zendesk | Sparkcentral | Genesys Cloud | \#Interact | Help Scout | Intercom | Salesforce | Webhook |
+|  | Sinch Contact Pro | Zendesk | Sparkcentral | Genesys Cloud | \#Interact | Help Scout | Intercom | Salesforce | Webhook |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Chatlayer.ai widget & channel configuration |  |  |  | ✅ |  | ✅ |  | ✅ | ✅ |
+| Chatlayer.ai widget & channel configuration | ✅ |  |  | ✅ |  | ✅ |  | ✅ | ✅ |
 | Provider widget & channel configuration | ✅ | ✅ | ✅ |  | ✅ |  | ✅ |  | ✅ |
 | Rich templates \(buttons, carousels, ...\) | ✅ | ✅ |  | ✅ | ✅ | ✅ |  | ✅ | ✅ |
 | Bot history visible to agent | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Agent conversations in Chatlayer.ai history |  |  |  | ✅ |  | ✅ |  | ✅ | ✅ |
+| Agent conversations in Chatlayer.ai history | ✅ |  |  | ✅ |  | ✅ |  | ✅ | ✅ |
 | Skill & language based routing | ✅ | ✅ |  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Tags & variables |  | ✅ |  | ✅ |  |  |  | ✅ | ✅ |
+| Tags & variables | ✅ | ✅ |  | ✅ |  |  |  | ✅ | ✅ |
 
 ## Human handover bot dialogs
 
