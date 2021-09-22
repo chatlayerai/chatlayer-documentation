@@ -122,11 +122,37 @@ Chatlayer.ai supports the following system entity types:
 
 ## 4 – Composite entities
 
-A Composite Entity is a combination of different, but related entities. This type of entity allows you to combine two separate entities into a single one.
+A Composite Entity is a combination of two or more different, yet related entities. This type of entity allows you to combine two separate entities into a single one.
 
-For example: "**Two** **fries** please": _@order_ \(composite entity\) consists of _@sys.number:_ 2 \(system entity\) and _@foodItem_: fries \(match entity\)
+Let's look at an example. When a user tells the bot "Two fries please", the bot will understand this as the predefined composite entity **@order**_,_ which consists of two separate entities: 
 
-![](../../../.gitbook/assets/image%20%28357%29.png)
+* **@sys.number:** 2, a system entity
+* and **@foodItem**: fries, a match entity which is predefined 
+
+![Composite entities on the Chatlayer platform](../../../.gitbook/assets/image%20%28605%29.png)
+
+### Using a go to with composite entities
+
+Here's an example use case to illustrate how to use a go to dialog for composite entities:
+
+* You created a composite entity named @car\_info, made up of the following two entities: @car\_brand and @sys.number
+* @car\_brand is a match entity that checks if the user's car brand is part of a predefined list of car brands. @sys.number captures the year the user got their car in
+* Next, you created an input validation to ask the user for their car brand \(@car\_brand\) and the year they got their car in \(@sys.number\)
+
+The input validation dialog looks like this:
+
+![An input validation capturing a composite entity](../../../.gitbook/assets/image%20%28606%29.png)
+
+* Next, you want to use a go to dialog to check if the car is a green car. 
+  * When the year is equal to or more than 2016, the car is a green car
+  * When the year is less than 2016, the car is not a green car
+* To set this up, you only need one of the two entities that make up the composite entity. The @car\_brand doesn't matter in this case, you only want @sys.number
+* If you would enter @sys.number as a variable, the set up wouldn't work because it's a predefined platform entity. You want the @sys.number that was part of the composite entity
+* To grab this entity, you need to use: car\_info.sys.number
+
+The go to dialog looks like this:
+
+![If the car was built in or after 2016, the user gets a discount](../../../.gitbook/assets/image%20%28604%29.png)
 
 ## The difference between entities, variables, and values
 
