@@ -34,12 +34,18 @@ Match entities are a type of entity that is detected when the user states a word
 
 Create a list of possible values for an entity. If a user mentions one of these values during their conversation with the bot, that value will automatically be saved as an entity.
 
-For example: you have defined @product as a match entity, and have created three possible values: Basic, Intermediate, Premium. When a user says "I want to know more about the **Premium** pack", the entity @product will be saved, with the value "Premium".
+For example: you have defined **@product** as a match entity, and have created three possible values: 
+
+* Basic
+* Intermediate
+* Premium
+
+When a user says "I want to know more about the **Premium** pack", the match entity **@product** will be recognized and saved with the value "Premium".
 
 ![Match entities on the platform](../../../.gitbook/assets/image%20%28609%29.png)
 
 {% hint style="info" %}
-Match entities are case insensitive, so there's no need to add the same word as a synonym but with a capital
+Match entities are case insensitive, so there's no need to add a capitalized synonym
 {% endhint %}
 
 #### Synonyms
@@ -60,7 +66,7 @@ The meaning of the two expressions above is exactly the same, but you want to co
 
 Use a pattern to extract data from a user expression if it matches a particular format. Patterns are formed as regular expressions \(like in Python\). You can learn more about how to create regular expressions [here](https://regex101.com/).
 
-For example: you have defined **@customer\_ID** as a match entity, and have provided the following regex pattern: `[a-z]{5}[0-9]{2}`. This means that when a users says "My customer ID is **terwf33**", which consists of 5 letters and 2 numbers, it is saved as @customer\_ID with the value "terwf33".
+For example: you have defined **@customer\_ID** as a match entity, and have provided the following regex pattern: `[a-z]{5}[0-9]{2}`. This means that when a users says "My customer ID is terwf33" – which consists of 5 letters and 2 numbers – it is saved as the match entity **@customer\_ID** with the value "terwf33".
 
 ![Match entities on the platform](../../../.gitbook/assets/image%20%28610%29.png)
 
@@ -76,15 +82,7 @@ Contextual entities use the principle of machine learning to identify entities t
 Contextual entities are the only type of entities that can \(and should be\) added to an expression itself, for example: "I want to book a train ticket from @origin to @destination"
 {% endhint %}
 
-You can see an example of how you can use contextual entities in our tutorial here:
-
-{% page-ref page="../../../tutorials/tutorial-getting-information-using-entities.md" %}
-
-{% hint style="info" %}
-When adding contextual entity variables, there's no need to add capitalised and non-capitalised words. All text is decapitalized by the NLP before any recognition happens, so 'api' won't be recognised differently from 'API' ​
-{% endhint %}
-
-### When to use contextual entities
+### **When to use contextual entities**
 
 Imagine you're a fruit seller who sells apples, pears, bananas and pineapples. Your chatbot can help people order fruit and ask for the price. Let's look at that pricing use case for apples. Some example expressions could be:
 
@@ -109,7 +107,15 @@ Now you can simply create an expression with the contextual entity in it:
 * How much does an **@fruit** cost?
 * What is the price of the **@fruit**?
 
-Now your bot will understand each expression, even if the fruit differs!
+Now your bot will understand each expression, even if the fruit changes! 
+
+{% hint style="info" %}
+When adding contextual entity variables, there's no need to add capitalised and non-capitalised words. All text is decapitalized by the NLP before any recognition happens, so 'api' won't be recognised differently from 'API' ​
+{% endhint %}
+
+You can see an example of how you can use contextual entities in our tutorial here:
+
+{% page-ref page="../../../tutorials/tutorial-getting-information-using-entities.md" %}
 
 ### Fuzzy matching for contextual entities
 
