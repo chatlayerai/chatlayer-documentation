@@ -4,7 +4,7 @@ This documentation will help you get started on our platform. Using our easy-to-
 
 Happy bot building!
 
-![The Chatlayer platform](.gitbook/assets/image%20%28614%29.png)
+![The Chatlayer platform](.gitbook/assets/image%20%28615%29.png)
 
   
 Ready to get started? 
