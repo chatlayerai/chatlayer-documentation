@@ -70,21 +70,46 @@ Find a concrete example of how to use match entities below 👇
 
 ## 2 – Contextual entities
 
-Contextual entities use the principle of machine learning to identify entities that are used in sentences. They understand the entity by learning which type of word your entity is, where it's located in the sentence, and what the specific context is.
-
-You can also add [synonyms](./#synonyms) to contextual entities.
+Contextual entities use the principle of machine learning to identify entities that are used in sentences. The NLP understands the entity by learning which type of word it is, where it's located in the sentence, and what the specific context around it is. You can also add [synonyms](./#synonyms) to contextual entities.
 
 {% hint style="info" %}
-Contextual entities are the only type of entities that can \(and should be\) added to the expression itself, for example: "I want to book a train ticket from @origin to @destination"
+Contextual entities are the only type of entities that can \(and should be\) added to an expression itself, for example: "I want to book a train ticket from @origin to @destination"
 {% endhint %}
 
-You can see a live example of how you can use contextual entities in our tutorial here:
+You can see an example of how you can use contextual entities in our tutorial here:
 
 {% page-ref page="../../../tutorials/tutorial-getting-information-using-entities.md" %}
 
 {% hint style="info" %}
 When adding contextual entity variables, there's no need to add capitalised and non-capitalised words. All text is decapitalized by the NLP before any recognition happens, so 'api' won't be recognised differently from 'API' ​
 {% endhint %}
+
+### When to use contextual entities
+
+Imagine you're a fruit seller who sells apples, pears, bananas and pineapples. Your chatbot can help people order fruit and ask for the price. Let's look at that pricing use case for apples. Some example expressions could be:
+
+* How much is the price of apples?
+* How much does an apple cost?
+* What is the price of the apples?
+
+Of course, these expressions could be asked for not just apples, but also pears, bananas, and pineapples. Does that mean you have to copy each expression and replace the fruit? No, you can just use contextual entities! 
+
+Create a contextual entity called 'fruit' and add the following values to it:
+
+* apple
+* banana
+* pear
+* pineapple
+
+In this case, we recommend to turn on fuzzy matching so that the bot will also recognise 'apples' and the plural of the other fruits. More info on fuzzy matching in the next section.
+
+Now you can simply create an expression with the contextual entity in it:
+
+* How much is the price of **@fruit**?
+* How much does an **@fruit** cost?
+* What is the price of the **@fruit**?
+
+Now your bot will understand each expression, even if the fruit differs!
 
 ### Fuzzy matching for contextual entities
 
