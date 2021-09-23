@@ -1,13 +1,13 @@
 # Welcome to Chatlayer 👋
 
-This documentation explains you how to get started on our platform, using easy-to-follow tutorials and visual guides. Within minutes, you'll be able to build a AI voice or chatbot and create advanced dialogues for personalised conversations.
+This documentation will help you get started on our platform. Using our easy-to-follow tutorials and visual guides, you'll be able to build a voice or chatbot and have personalised conversations with your customers.
 
 Happy bot building!
 
-![](.gitbook/assets/platform-screenshot.png)
+![The Chatlayer platform](.gitbook/assets/image%20%28611%29.png)
 
   
-Get started with these topics:
+Ready to get started? 
 
 {% page-ref page="tutorials/getting-started.md" %}
 
@@ -15,11 +15,9 @@ Get started with these topics:
 
 {% page-ref page="channels/webwidget/" %}
 
-
-
 ## Prefer to watch instead of read? 
 
-You can find our Tutorial Video Series here:
+You can find our video tutorial series here:
 
 {% embed url="https://www.youtube.com/playlist?list=PLDWxiKsSIVPJl0zssvGATGsib6Luj0WSH" %}
 
