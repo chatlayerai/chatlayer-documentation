@@ -16,12 +16,12 @@ When you have created a multi-lingual bot, you will notice that in the NLP modul
 
 Things to remember when managing NLP models in more than one language:
 
-* If you add an intent, the intent will automatically be added to all other languages as well. You can add intents in the primary as well as in the secondary languages.
-* If you add an expression, the expression is language-dependent and will only be added to the active language model.
-* As language models are independent from each other, so you'll have to train and publish them separately. That means that if you make changes in two languages, you will have to train and publish both. 
-* The number of expressions that is displayed under 'Intents' is the number of expression for the active language.
+* If you add an intent, the intent will automatically be added to all other languages as well. You can add intents in the primary as well as in the secondary languages
+* If you add an expression, the expression is language-dependent and will only be added to the active language model
+* As language models are independent from each other, so you'll have to train and publish them separately. That means that if you make changes in two languages, you will have to train and publish both
+* The number of expressions that is displayed under 'Intents' is the number of expression for the active language
 
-![](../../.gitbook/assets/image%20%28242%29.png)
+![A bot that speaks both English and Arabic](../../.gitbook/assets/image%20%28655%29.png)
 
 ## Talking to the user in the right language
 
