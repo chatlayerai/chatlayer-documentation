@@ -21,7 +21,7 @@ Things to remember when managing NLP models in more than one language:
 * As language models are independent from each other, so you'll have to train and publish them separately. That means that if you make changes in two languages, you will have to train and publish both
 * The number of expressions that is displayed under 'Intents' is the number of expression for the active language
 
-![A bot that speaks both English and Arabic](../../.gitbook/assets/image%20%28655%29.png)
+![A bot that speaks both English and Arabic](../../.gitbook/assets/image%20%28656%29.png)
 
 ## Talking to the user in the right language
 
