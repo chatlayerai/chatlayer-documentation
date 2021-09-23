@@ -25,11 +25,11 @@ Always make changes in the DRAFT bot. Once you're happy with the new changes and
 
 * When ready, click on the 'Publish' tab in the left side column. If you never published your bot before, you should see the following screen:
 
-![](../../.gitbook/assets/image%20%28614%29.png)
+![](../../.gitbook/assets/image%20%28623%29.png)
 
 * Now click 'Publish' to publish your bot:
 
-![Publishing your bot](../../.gitbook/assets/image%20%28612%29.png)
+![Publishing your bot](../../.gitbook/assets/image%20%28617%29.png)
 
 You can add some notes to each new bot version keep track of the changes you made in that specific version. This is especially handy when multiple people are working on the same bot.
 
@@ -41,7 +41,7 @@ Depending on the size of your bot, publishing could take a while. Relax, your bo
 
 Once you published your bot, you will see the following screen:
 
-![](../../.gitbook/assets/image%20%28613%29.png)
+![](../../.gitbook/assets/image%20%28618%29.png)
 
 When you click on 'Open live mode', it will take you to the LIVE environment of your bot. This version of your bot is the one users will interact with. Once you are in the LIVE environment, you will see a red banner on top to remind you that you are working in the LIVE environment:
 

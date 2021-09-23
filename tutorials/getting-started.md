@@ -36,9 +36,12 @@ Know that you know the why and the what of your bot, it’s important to underst
 
 ## 4. Know your user <a id="948d"></a>
 
-In order to design an experience that feels personal, you need to make it personal. **Who is this user that will engage with your bot?** Remember, there is no such thing as a universal user! It’s important to know what users want and how they are feeling during the conversation. What’s their backstory? Their challenges? Their motivations? How familiar are they with your business and using bots in general? Our Conversation Designer likes to create a user ID that they keep close when writing the actual dialogues.
+In order to design an experience that feels personal, you need to make it personal. **Who is this user that will engage with your bot?** Remember, there is no such thing as a universal user! It’s important to know what users want and how they are feeling during the conversation. 
 
-![An example of a user ID](../.gitbook/assets/sarah.png)
+* What’s their backstory? 
+* Their challenges? 
+* Their motivations? 
+* How familiar are they with your business and using bots in general? 
 
 ## 5. Craft your bot personality <a id="eb7b"></a>
 
@@ -72,7 +75,7 @@ Always make to strategically guide the user back to an existing flow, like in th
 
 ## Time to start building
 
-Now that you've done all the groundwork, it's time to build your bot on the Chatlayer.ai platform. Continue to our next tutorial:
+Now that you've done all the groundwork, it's time to build your bot. Continue to our next tutorial:
 
 {% page-ref page="tutorial-getting-started.md" %}
 
