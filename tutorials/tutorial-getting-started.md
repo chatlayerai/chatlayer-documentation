@@ -24,11 +24,11 @@ Have a problem with your account? Contact our support team [here](mailto:support
 
 2. To build a new bot, click the blue `+ Add bot` button:
 
-![](../.gitbook/assets/image%20%28634%29.png)
+![](../.gitbook/assets/image%20%28636%29.png)
 
 3. Choose "Start from scratch". You can add template bots to your account later
 
-![](../.gitbook/assets/image%20%28638%29.png)
+![](../.gitbook/assets/image%20%28642%29.png)
 
 4. Now enter `Choo Choo + your first name` as the name of the bot, so you can easily find it again after
 
@@ -36,7 +36,7 @@ Have a problem with your account? Contact our support team [here](mailto:support
 
 6. Now click `Create` to create your new bot!
 
-![](../.gitbook/assets/image%20%28623%29.png)
+![](../.gitbook/assets/image%20%28625%29.png)
 
 ## Creating bot dialogs
 
@@ -44,7 +44,7 @@ Have a problem with your account? Contact our support team [here](mailto:support
 
 2. Then go to the `General`flow by clicking the green flow icon:
 
-![](../.gitbook/assets/image%20%28625%29.png)
+![](../.gitbook/assets/image%20%28627%29.png)
 
 {% hint style="info" %}
 **Flows** are a way to group bot dialogs that are about the same topic or use case. You will learn more about them later.
@@ -96,7 +96,7 @@ Since this is our first bot and our first message, let's start with a simple tex
 
 The result will be:
 
-![](../.gitbook/assets/image%20%28643%29.png)
+![](../.gitbook/assets/image%20%28647%29.png)
 
 Just like in normal conversations, your users will find it odd if your bot always replies with the exact same message. That's why we support random messages. A random message means that the different messages will be alternated, so sometimes the first message will show, sometimes the second one.
 
@@ -122,7 +122,7 @@ If you have configured everything correctly, Choo Choo will now start the conver
   
 _PS: You can ignore the debug button on the left for now, though this will be useful a little later, when you want to debug more complicated flows._
 
-![](../.gitbook/assets/image%20%28622%29.png)
+![](../.gitbook/assets/image%20%28624%29.png)
 
 Congrats, you just created your first bot dialog! 🥳
 

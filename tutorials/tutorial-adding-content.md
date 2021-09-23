@@ -50,11 +50,11 @@ For this tutorial, we want to give Choo Choo the ability to answer basic questio
 
 * On the left side of the screen in the navigation menu, click on `NLP` to navigate to the NLP module. Click the `Intents` submenu.
 
-![The NLP menu](../.gitbook/assets/image%20%28627%29.png)
+![The NLP menu](../.gitbook/assets/image%20%28629%29.png)
 
 * Click on `Add Intent` and name it `who are you`
 
-![Creating a new intent](../.gitbook/assets/image%20%28641%29.png)
+![Creating a new intent](../.gitbook/assets/image%20%28645%29.png)
 
 * Click on `Create`
 * Now you see that the intent is successfully created, without any expressions added to it \(that is what the '0' means below the language\)
@@ -76,7 +76,7 @@ The more expressions you add to an Intent, the more accurately it will be recogn
 * Enter `Who are you?` in the open text field
 * Click on `Create`
 
-![Adding an expression to your intent](../.gitbook/assets/image%20%28640%29.png)
+![Adding an expression to your intent](../.gitbook/assets/image%20%28644%29.png)
 
 Add some more expressions by clicking `Add Expression`:
 
@@ -98,7 +98,7 @@ After you have finished your first expression, press Shift + Enter to save that 
 
 This will result in the following screen:
 
-![](../.gitbook/assets/image%20%28619%29.png)
+![](../.gitbook/assets/image%20%28621%29.png)
 
 Again, the more expressions you have, the more accurate your bot will be able to respond. Later on we'll see how we can make sure that our bot gets smarter over time; by looking at actual user input once the bot has been made public.
 
@@ -114,7 +114,7 @@ Add another intent, like `Greeting` and add some expressions:
 
 We have defined two intents now: who are you & greeting.
 
-![Adding more intents](../.gitbook/assets/image%20%28621%29.png)
+![Adding more intents](../.gitbook/assets/image%20%28623%29.png)
 
 However, if we were now to say 'Good morning' to the bot emulator, nothing will happen. That is because the NLP is not trained yet, and the intent is not yet linked to a bot dialog. We will work on that in the next steps.
 
@@ -132,11 +132,11 @@ To successfully train the NLP, you need to have at least two intents with a mini
 
 Select the language you used to add the expressions.  __You can view the status of the NLP update for each language by clicking on the Update NLP icon.
 
-![The NLP needs more intents and expressions to train](../.gitbook/assets/image%20%28635%29.png)
+![The NLP needs more intents and expressions to train](../.gitbook/assets/image%20%28638%29.png)
 
 Click on `Update` to start the training. This can take a couple of minutes to one hour depending on the size of your chatbot. The more complex, the longer it'll take.
 
-![The NLP is updating](../.gitbook/assets/image%20%28631%29.png)
+![The NLP is updating](../.gitbook/assets/image%20%28633%29.png)
 
 That was a great first step to use the 'Greeting' and 'How are you' intent. The next step is to link these intents in the bot dialogs. 
 
@@ -151,7 +151,7 @@ You have now taught the NLP to understand your intents and expressions, congrats
 * Choose the `introduction` dialog state as the parent \(in the Settings tab\)
 * Link the intent to the bot dialog in the bot dialog NLP tab as follows:
 
-![](../.gitbook/assets/image%20%28626%29.png)
+![](../.gitbook/assets/image%20%28628%29.png)
 
 * Go to `Bot Message` tab and add a text message that says:
 
@@ -159,7 +159,7 @@ You have now taught the NLP to understand your intents and expressions, congrats
 
 Your screen should look like this:
 
-![](../.gitbook/assets/image%20%28637%29.png)
+![](../.gitbook/assets/image%20%28641%29.png)
 
 * Click on `Create`
 * This will result in the folowing overview in the flow:

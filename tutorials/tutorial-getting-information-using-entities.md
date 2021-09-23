@@ -58,23 +58,23 @@ Next, it's time to add a contextual entity.
 
 * Select `Brussels` in this sentence
 
-![](../.gitbook/assets/image%20%28617%29.png)
+![](../.gitbook/assets/image%20%28619%29.png)
 
 * Click on the '+ entity' icon in the bottom right of the expression box to create a new contextual entity for 'Brussels'  
 
-![The &apos;+ entity&apos; icon](../.gitbook/assets/image%20%28647%29.png)
+![The &apos;+ entity&apos; icon](../.gitbook/assets/image%20%28651%29.png)
 
 * Brussels is the location the user wants to depart from, so we will name this entity `origin` 
 * Type `origin` in the `Create new entity` field and click on 'Create new entity' to confirm
 
-![Creating a new entity called &apos;origin&apos;](../.gitbook/assets/image%20%28632%29.png)
+![Creating a new entity called &apos;origin&apos;](../.gitbook/assets/image%20%28634%29.png)
 
 * Brussels will be added to the list of possible values for the @origin variable
 * Do the same thing for `Paris` as a 'destination' entity
 
 You will then have the following set-up for this expression:
 
-![Creating multiple entities in an expression](../.gitbook/assets/image%20%28633%29.png)
+![Creating multiple entities in an expression](../.gitbook/assets/image%20%28635%29.png)
 
 We now save added the expression 'I want to book a ticket from @origin to @destination', where 'Brussels' is a value for @origin and 'Paris' is a value for the entity @destination. 
 
@@ -106,7 +106,7 @@ When typing a new expression, you can add entities and entity values in two ways
 
 This will now result some expressions for the `Book train ticket` intent, and entity values, like so:
 
-![Adding expressions to an intent](../.gitbook/assets/image%20%28646%29.png)
+![Adding expressions to an intent](../.gitbook/assets/image%20%28650%29.png)
 
 To make it easier for you to add new expressions fast, we have built the expressions generator. Head over to [this page](../understanding-users/expression-generator.md) for more information.
 
@@ -124,7 +124,7 @@ You'll see that the entity gets recognized with a 99.93% confidence. The results
 Make sure you retrain the NLP model before testing newly added expressions
 {% endhint %}
 
-![Testing an expression](../.gitbook/assets/image%20%28642%29.png)
+![Testing an expression](../.gitbook/assets/image%20%28646%29.png)
 
 Now we know how to add intents, create expressions and entities, however we still need to create a conversation so the user can talk to Choo Choo and our bot replies accordingly. Let's add some bot messages in the next step.
 
@@ -134,7 +134,7 @@ When a user says something containing an entity, and the entity is successfully 
 
 At the moment, when you test your bot, the user is stuck after giving the information about the ticket:
 
-![The bot does not understand yet](../.gitbook/assets/image%20%28618%29.png)
+![The bot does not understand yet](../.gitbook/assets/image%20%28620%29.png)
 
 However, we do see some positive items, namely that the 'origin' and 'destination' are stored correctly as variables. You can see this by opening the debugger by clicking  'Debugger' \(with the magnifying glass icon\) in the emulator. In the 'Debugger' tab, you can scroll down and you see this:
 
@@ -157,7 +157,7 @@ To reuse the variable later on in the conversation, you can put it in between cu
 When writing this message to the users, Chatlayer will automatically substitute `{variable_name}` ****with the value of the variable. If the variable is empty, an empty space will be shown.
 {% endhint %}
 
-![Creating a bot reply](../.gitbook/assets/image%20%28629%29.png)
+![Creating a bot reply](../.gitbook/assets/image%20%28631%29.png)
 
 We have now linked the `Book train ticket` to this bot message, great job! This means that, when a user says something that triggers the `Book train ticket` intent, this bot message will show. 
 
@@ -208,7 +208,7 @@ And create the following entities:
 
 _If you are having trouble adding these, scroll back to step 9 in this tutorial to read all about it._
 
-![](../.gitbook/assets/image%20%28616%29.png)
+![](../.gitbook/assets/image%20%28617%29.png)
 
 #### Additional suggestions for expressions
 
@@ -233,29 +233,27 @@ Let's test out your newly created expressions:
 
 Update the wording in the `book train ticket` dialog to correctly display the entities:
 
-_So you'd like to book the following train ticket: from {origin} to {destination} on {date\_departure} at {time\_departure} in {class}_
+_I need a ticket from Antwerp to Brussels tomorrow at 9am in first class_
 
-![Updating the bot dialog](../.gitbook/assets/image%20%28636%29.png)
+![Updating the bot dialog](../.gitbook/assets/image%20%28618%29.png)
 
 {% hint style="warning" %}
 If you try to update your NLP and you get an error message about 5 example entities, it means you need to add more entity values to some of your newly created entities. To do so, go to NLP &gt; Entities &gt; Contextual entities and make sure that that entity has at least 5 values.
 {% endhint %}
 
-![](../.gitbook/assets/image%20%28417%29.png)
+![Testing the expression in the emulator](../.gitbook/assets/image%20%28637%29.png)
 
-Uh oh, this isn't really what we expected. As you can see, the departure date and time is not set \(your result may be different depending on the expressions you used\).  
-  
-So, what's the problem? Lets have a look at the NLP Results:
+Uh oh, this isn't really what we expected. As you can see, not all variables were recognized correctly. So, what's the issue? Lets have a look at the NLP results in the debugger:
 
-![](../.gitbook/assets/image%20%28440%29.png)
+![](../.gitbook/assets/image%20%28639%29.png)
 
-`origin`, `destination`, `class` and `departure-time` were found correctly, but only `origin` , `class` and `destination` have a confidence score above 80%. So `departure-date` was not processed and put into a variable. In this bot we have a threshold of 80%, so a score of 76.99% was not high enough. 
+`origin`, `destination`, `time_departure` and `class` were found correctly, but only `time_departure` and `class` have a confidence score higher than 80%. `Origin` and `destination` score much lower, so they weren't processed as variables.
 
 {% hint style="info" %}
-Read more about the NLP threshold [here ](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/settings)
+In the [NLP treshold settings](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/settings) of our bot, we put a threshold of 80%, so anything underneath that won't be recognized correctly.  
 {% endhint %}
 
-More expressions can help you fix this problem! Try adding more expressions and retrain your model to see if the variable now shows correctly in the bot message. 
+How can you fix this issue? By adding more expressions! Try adding more expressions and retrain your NLP model to see if the variables now show up correctly in the bot. You can also choose to lower the NLP score, but be careful as this can impact the overal accuracy of your bot in the long run.
 
 ## Lesson recap
 
