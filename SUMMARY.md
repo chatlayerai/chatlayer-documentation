@@ -41,7 +41,7 @@
   * [Action](bot-answers/dialog-state/action-bot-dialog.md)
 * [Conversation history](bot-answers/user-messages.md)
 * [Events](bot-answers/events.md)
-* [Publishing your bot](bot-answers/publishing-your-bot/README.md)
+* [How to publish your bot](bot-answers/publishing-your-bot/README.md)
   * [Publishing & platform URLs FAQ](bot-answers/publishing-your-bot/publishing-new.md)
 * [Settings](bot-answers/settings/README.md)
   * [Data retention](bot-answers/settings/data-retention.md)
