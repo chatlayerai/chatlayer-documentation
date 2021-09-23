@@ -16,11 +16,11 @@ There are four types of entities:
 * **System entity:** these are entities that are pre-built into the platform and can be detected automatically. _For example: "My e-mail address is **ilovebots@chatlayer.ai"**_ → _@sys.email: ilovebots@chatlayer.ai_ 
 * **Composite entity:** a combination of different, but related entities _For example: "**Two** **fries** please"_ → _@order consists of @sys.number \(2\) and @foodItem \(fries\)_
 
-### When to use which entity type?
+### When should you use which entity type?
 
 Use this handy flowchart so you can find out which type of entity best fits your use case:
 
-![Click the image to enlarge it](../../../.gitbook/assets/untitled-document.png)
+![Click on the image to enlarge it](../../../.gitbook/assets/untitled-document.png)
 
 {% hint style="warning" %}
 All entities are only detected after you've **updated the NLP** at least once. Every time you change, add, or delete an entity, you should update the NLP again
