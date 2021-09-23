@@ -11,6 +11,7 @@
 ## June 2021
 
 * Support for managing team members through Single Sign On \(SAML SSO\).  Read more [here](../../organization-management/access-control/single-sign-on-sso-saml.md)
+* We got ISO27001 certified
 
 ## May 2021
 
