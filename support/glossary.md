@@ -10,7 +10,7 @@ AI technology makes it possible for bots to “learn” by discovering certain p
 
 The session is an object that stores the state of the conversation. In it, we store some internal variables by default \(like the botId, version, detected intents and entities,...\) but you can also store your own variables for use in your bot's messages and actions.
 
-It's often referred to as "context" in other bot platforms however context is a different feature in Chatlayer as you may read [here](../understanding-users/using-context.md). 
+It's often referred to as "context" in other Conversational AI platforms however context is a different feature in Chatlayer as you may read [here](../understanding-users/using-context.md). 
 
 #### Bot dialogs
 
