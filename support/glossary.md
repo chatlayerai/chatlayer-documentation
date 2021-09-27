@@ -6,6 +6,12 @@ Artificial intelligence is an extensive field, one I couldn’t dream of coverin
 
 AI technology makes it possible for bots to “learn” by discovering certain patterns in user data. Bots can apply these patterns to similar but different problems without needing extra training from a human. This ability gives them the “intelligence” to perform tasks, solve problems, and manage information without human intervention.
 
+**Session**
+
+The session is an object that stores the state of the conversation. In it, we store some internal variables by default \(like the botId, version, detected intents and entities,...\) but you can also store your own variables for use in your bot's messages and actions.
+
+It's often referred to as "context" in other bot platforms however context is a different feature in Chatlayer as you may read [here](../understanding-users/using-context.md). 
+
 #### Bot dialogs
 
 A bot dialog contains a bot response, which is usually connected to an intent. There are different types of bot dialogs, each with different functionalities:
