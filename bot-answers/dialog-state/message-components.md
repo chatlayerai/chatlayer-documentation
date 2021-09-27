@@ -40,6 +40,12 @@ You can link a button to an external URL.
 
 This button will initiate a call if the user is using a mobile device.
 
+#### Webview
+
+This button will open a new browser window with the configured URL as target. 
+
+The parameters you configure for this button will be JSON stringified and appended to the URL as a Base64 encoded string. It is possible to decode this string using the `atob`  JavaScript function.
+
 ## Media
 
 With the Media template, you can enable the bot to send files to your users.
