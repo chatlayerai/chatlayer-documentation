@@ -118,15 +118,15 @@ This input type will parse and validate zip codes. Note: currently we only suppo
 
 #### **Image**
 
-The image format type allows you to check if a user has uploaded an image or other file \(such as pdf\). Currently, this is only possible in the Facebook Messenger and WhatsApp channels. If the bot user uploads a file, the URL to that file will be saved under the variable you choose.
+The image format type allows you to check if a user has uploaded an image or other file \(such as pdf\). Currently, this is only possible in the Facebook Messenger, WhatsApp, Instagram, RCS, MMS, Telegram and Instagram channels. If the bot user uploads a file, the URL to that file will be saved under the variable you save the response to.
 
 ![Example of saving an image URL to a variable in an input validation](../../.gitbook/assets/image%20%28658%29.png)
 
-For WhatsApp channels, the image will be saved as an array. If you chose {img} as variable, this means that you should use {img\[0\]} to retrieve the URL for the first saved image. 
+The image will be saved as an array. If you chose {img} as variable, this means that you should use {img\[0\]} to retrieve the URL for the first saved image. 
 
 ![Image URL array for WhatsApp channels](../../.gitbook/assets/image%20%28657%29.png)
 
-For the chat widget, we recommend using the [file upload](message-components.md#file-upload) template.
+For the chat widget \(web channel\), we recommend using the [file upload](message-components.md#file-upload) template.
 
 #### Language
 
