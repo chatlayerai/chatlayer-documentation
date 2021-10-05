@@ -22,6 +22,10 @@ The ideal bot-onboarding takes your user on a journey that naturally teaches the
 
 Your onboarding should be a guided experience for your users in which they learn how to use your bot, by, well ... using it. The experience should be inviting, make your users curious, and a gamified process – like the user is playing a game, with rewards, hints and lots of feedback. The experience should be easy and joyful.
 
+An easy way to set the right expectations for the user is to create a powerful introduction. In the introduction, set the expectations by explaining what the user can do with this bot! This way you guide the user in the correct way \(guideline number 3\) and set the expectations what the bot can do for the user.
+
+![](../.gitbook/assets/image%20%28663%29.png)
+
 ## 3 – Guide the user
 
 Bots should not receive an overload on information. This might misguide them, or make them lose the user’s focus. Keep your messages short and to the point, nobody wants to read a whole essay when they just want an answer to their question.

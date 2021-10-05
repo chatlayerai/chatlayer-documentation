@@ -26,6 +26,8 @@ Per default, sessions are expired after 30 days. That means that session informa
 
 It is also possible to delete the session at any point in the conversation, for example after a couple of hours and you want the user to re-identify themselves in the bot. This can be done using this [API endpoint](https://api.chatlayer.ai/v1/docs/#operation/deleteSessionDataByConversationId).
 
+Please note that changing the session settings will account for new conversations. Let's say you change your session retention today to 15 days. This will count for the new conversations, but the session created before today will still have the 30 day retention period.
+
 ### Error history
 
 If an API integration is used, and this throws an error, this error will end up in History &gt; Error logs. With the customised data retention settings you can choose when these logs are deleted.

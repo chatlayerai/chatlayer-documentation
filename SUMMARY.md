@@ -121,6 +121,7 @@
 * [Gathering user feedback](tutorials-1/gathering-user-feedback.md)
 * [Recognizing a returning user](tutorials-1/how-to-recognize-a-returning-bot-user.md)
 * [Reusing flows](tutorials-1/reuse-flows.md)
+* [Skip introduction message](tutorials-1/skip-introduction-message.md)
 * [Using time in your chatbot](tutorials-1/using-time-in-your-chatbot.md)
 
 ## Support
