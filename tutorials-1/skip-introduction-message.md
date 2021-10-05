@@ -44,7 +44,7 @@ Is your channel not listed here? All channels expect voice and web are usually a
 
 Want to give your users an even better first experience with your bot? Or are you not able to use this feature because you are using the web widget? 
 
-You can personalize the introduction by [greeting the user with their name](https://docs.chatlayer.ai/tutorials-1/how-to-recognize-a-returning-bot-user), creating a greeting based on the time of the day or[ set the right expectations for the user](https://docs.chatlayer.ai/tips-and-best-practices/what-makes-a-good-chatbot#2-set-the-right-expectations).
+You can personalize the introduction by [greeting the user with their name](https://docs.chatlayer.ai/tutorials-1/how-to-recognize-a-returning-bot-user), [creating a greeting based on the time of the day](https://docs.chatlayer.ai/tutorials-1/using-time-in-your-chatbot#examples) or[ set the right expectations for the user](https://docs.chatlayer.ai/tips-and-best-practices/what-makes-a-good-chatbot#2-set-the-right-expectations).
 
 
 
