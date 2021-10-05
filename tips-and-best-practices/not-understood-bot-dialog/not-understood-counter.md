@@ -24,7 +24,7 @@ You can create this message structure by introducing a counter. Learn how in thi
 
 Click on the 'not understood' bot dialog and change the type to 'Go To' 
 
-![From bot message to Go To](../../.gitbook/assets/image%20%28469%29.png)
+![](../../.gitbook/assets/image%20%28668%29.png)
 
 ## 2. Set the conditions in the Go To-dialog
 
