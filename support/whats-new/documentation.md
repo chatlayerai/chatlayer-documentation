@@ -7,6 +7,12 @@ description: >-
 
 # New documentation
 
+## October 2021
+
+* A new tutorial on how to [skip the introduction message](https://docs.chatlayer.ai/tutorials-1/skip-introduction-message) on certain channels 
+* Some examples on how to [use time in your chatbot](broken-reference)
+* Tips on how to [optimize your introduction message](https://docs.chatlayer.ai/tutorials-1/skip-introduction-message#optimize-your-introduction-further)
+
 ## June 2021
 
 * A new tutorial on how to [add external videos](https://docs.chatlayer.ai/tips-and-best-practices/solving-bot-issues/3.-media-upload-not-working) to your bot.
@@ -28,6 +34,4 @@ description: >-
 * How to create your own [web widget](https://docs.chatlayer.ai/tutorials-1/web-widget-demo-page) in Glitch 
 * Tutorial on how to create a [counter ](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog/not-understood-counter)for a different 'not understood' message after three 'not understood' in a row
 * An article on how to show the [previous bot](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog/go-to-previous-bot-dialog) dialog again to the user after 'not understood'
-
-
 

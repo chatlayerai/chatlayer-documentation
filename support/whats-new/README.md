@@ -1,22 +1,31 @@
+---
+description: New features and functionalities in the platform
+---
+
 # What's new
+
+## October 2021
+
+* You can now start a conversation initiated by the user, [skipping the introduction message](./#undefined)
+* On the home page, you can now find the menu 'Billing and usage' to track your usage and plans.
 
 ## August 2021
 
 * A brand new color scheme that fits our new branding 
-* Data retention: enterprise customers can set a custom retention time for their conversations, sessions and training expressions. More info will follow soon!
-* A configurable typing indicator
+* [Data retention](https://docs.chatlayer.ai/bot-answers/settings/data-retention): enterprise customers can set a custom retention time for their conversations, sessions and training expressions.
+* A configurable [typing indicator](https://docs.chatlayer.ai/bot-answers/settings#bot-behaviour)
 * Another new channel: talk to your users on [Telegram](../../channels/sinch-conversation-api-beta.md)
-* Using entities as a format type for input validations 
 
 ## June 2021
 
-* Support for managing team members through Single Sign On \(SAML SSO\).  Read more [here](../../organization-management/access-control/single-sign-on-sso-saml.md)
+* Support for managing team members through Single Sign On (SAML SSO). \
+  Read more [here](../../organization-management/access-control/single-sign-on-sso-saml.md)
 * We got ISO27001 certified
 
 ## May 2021
 
 * The bot name can now be seen in the tab title in your browser. Helps if you're managing multiple bots!
-* New analytics - more details will follow soon
+* New analytics, see all about it [here](https://docs.chatlayer.ai/bot-answers/analytics)
 * New way to access the platform & publish bots. Read more [here](../../bot-answers/publishing-your-bot/publishing-new.md)
 * Integration with Sinch Contact to transfer a conversation from the bot to an agent
 
@@ -32,7 +41,7 @@
 * Credit card payments: you can now pay for your Chatlayer subscription using a credit card
 * Zoom controls in the Flows view
 
-![](../../.gitbook/assets/image%20%28413%29.png)
+![](<../../.gitbook/assets/image (413).png>)
 
 * We have reworked out Translations table to be a lot faster, and more convenient to use
 
@@ -42,7 +51,7 @@
 
 We introduced a new style for the bot dialog components. Looks good, right?
 
-![](../../.gitbook/assets/image%20%28399%29.png)
+![](<../../.gitbook/assets/image (399).png>)
 
 This update also makes it easier to see which type of button you're creating
 
@@ -60,23 +69,29 @@ Enterprise customers can now restrict bots to only be accessible by certain team
 
 Read all about how to use team member roles & bot access:
 
-{% page-ref page="../../organization-management/access-control/" %}
+{% content-ref url="../../organization-management/access-control/" %}
+[access-control](../../organization-management/access-control/)
+{% endcontent-ref %}
 
 ## December 2020
 
 We released new types of entities. You can find all information about them here:
 
-{% page-ref page="../../understanding-users/natural-language-processing-nlp/synonym-entities/" %}
+{% content-ref url="../../understanding-users/natural-language-processing-nlp/synonym-entities/" %}
+[synonym-entities](../../understanding-users/natural-language-processing-nlp/synonym-entities/)
+{% endcontent-ref %}
 
 ## October 2020
 
-### Bot import/export \(in beta\)
+### Bot import/export (in beta)
 
 Save a copy of your bot in an export. Exporting a bot will result in a JSON file that you can download to your computer.
 
 This JSON file can be imported again to overwrite a bot with the data that is in the JSON file. Read more here:
 
-{% page-ref page="../../bot-answers/settings/" %}
+{% content-ref url="../../bot-answers/settings/" %}
+[settings](../../bot-answers/settings/)
+{% endcontent-ref %}
 
 ### Sorting
 
@@ -94,7 +109,5 @@ Change the language of a bot dialog to immediately add or edit the translations 
 
 Customize text messages the way you want them to look, and add links to other pages and bot dialogs, using rich text messages. You can read all about them [here](../../bot-answers/dialog-state/message-components.md#rich-text).
 
-![](../../.gitbook/assets/image%20%28325%29.png)
-
-
+![](<../../.gitbook/assets/image (325).png>)
 
