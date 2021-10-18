@@ -7,8 +7,8 @@ description: New features and functionalities in the platform
 ## October 2021
 
 * You can now start a conversation initiated by the user, [skipping the introduction message](./#undefined)
-* On the home page, you can now find the menu 'Billing and usage' to track your usage and plans.
-* We now support offloading via Sinch Contact & Contact Pro
+* On the home page, you can now find the menu ['Billing and usage'](https://docs.chatlayer.ai/support/billing-and-subscription#billing-and-usage) to track your usage and plans.
+* We now support offloading via [Sinch Contact & Contact Pro](https://docs.chatlayer.ai/integrations/human-offloading-live-chat/sinch-contact)
 
 ## August 2021
 
