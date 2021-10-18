@@ -6,7 +6,7 @@ Often, at the end of a flow, an API backend call will be configured to, for exam
 
 You can achieve this with the 'clear session' action. This action removes the values of set session variables. This is useful when a user asks to correct a value, or to start over and delete all variables.
 
-![](../../.gitbook/assets/image%20%28262%29.png)
+![](<../../.gitbook/assets/image (262).png>)
 
 ## Send to offload provider
 
@@ -16,7 +16,7 @@ Depending on your selected offloading provider, additional configuration may be 
 
 ## API
 
-This action can be used to integrate back-end services into your bot.   
+This action can be used to integrate back-end services into your bot. \
 More details can be found in [our tutorial](https://docs.chatlayer.ai/integrations/custom-back-end-integrations).
 
 ## Code
@@ -25,13 +25,19 @@ The code editor allows developers to quickly build custom logic on top of the bo
 
 You can find more information about the code editor here:
 
-{% page-ref page="../../integrations/code-action/" %}
+{% content-ref url="../../integrations/code-action/" %}
+[code-action](../../integrations/code-action/)
+{% endcontent-ref %}
 
 There are also two tutorials in which we show you how the code editor can be used:
 
-{% page-ref page="../../integrations/code-action/retrieving-data-from-airtable-get.md" %}
+{% content-ref url="../../integrations/code-action/retrieving-data-from-airtable-get.md" %}
+[retrieving-data-from-airtable-get.md](../../integrations/code-action/retrieving-data-from-airtable-get.md)
+{% endcontent-ref %}
 
-{% page-ref page="../../integrations/code-action/airtable.md" %}
+{% content-ref url="../../integrations/code-action/airtable.md" %}
+[airtable.md](../../integrations/code-action/airtable.md)
+{% endcontent-ref %}
 
 ## iframe
 
@@ -61,16 +67,16 @@ The postMessage API can also handle `UPDATE_SESSION` and `GO_TO_DIALOGSTATE` eve
 
 If your bot is published on the [Webhook API](../../channels/webhook-api.md) channel, you can use the JSON Builder action to send messages to the conversation that don't need to result in an actual message to the user. Typically, it's used to send information about the user or bot conversation to the website the bot is published on.
 
-![](../../.gitbook/assets/image%20%28230%29.png)
+![](<../../.gitbook/assets/image (230).png>)
 
 ### Website window events 
 
 **You can use the JSON builder action** **in combination with the webwidget channel** to receive window events on your webpage. These events will contain the data as configured in your JSON builder action. 
 
-Here's an example:   
-Configure your JSON builder action to send a **language** key, with a variable retrieved from the session, and the "Send config to parent window" toggled on.
+Here's an example: \
+Configure your JSON builder action to send a **language **key, with a variable retrieved from the session, and the "Send config to parent window" toggled on.
 
-![JSON builder action with a language field](../../.gitbook/assets/image%20%28324%29.png)
+![JSON builder action with a language field](<../../.gitbook/assets/image (324).png>)
 
 Your widget will trigger an event for that configuration to its parent window as a MessageEvent. The MessageEvent will contain a \`data\` field which contains the stringified result of the JSON builder configuration. Here's an example on how to listen to these events:
 
@@ -83,4 +89,3 @@ window.addEventListener('message', (event) => {
     console.log('Chatlayer language received: ' + payload.language)
 })
 ```
-

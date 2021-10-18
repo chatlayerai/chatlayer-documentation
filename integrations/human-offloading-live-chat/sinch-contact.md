@@ -11,18 +11,18 @@ This article will explain how to set this up:
 ## Configuration in Sinch Contact
 
 * Log into your Sinch Contact Domain
-* Configure a new **agent** that will act as the bot
-* Set-up a new **queue** specifically for chatbots 
+* Configure a new **agent **that will act as the bot
+* Set-up a new **queue **specifically for chatbots 
 * Open the configuration panel
 
-![](../../.gitbook/assets/image%20%28582%29.png)
+![](<../../.gitbook/assets/image (582).png>)
 
 * Click “Create new configuration” and go to “Common settings” 
 * Find the Visitor ECF Server URL
 
 
 
-![](../../.gitbook/assets/image%20%28578%29.png)
+![](<../../.gitbook/assets/image (578).png>)
 
 
 
@@ -32,7 +32,7 @@ This article will explain how to set this up:
 
 * Lastly, select your newly created Chatbot queue in the Sinch Contact Configuration Panel and click “Save”
 
-![](../../.gitbook/assets/image%20%28580%29.png)
+![](<../../.gitbook/assets/image (580).png>)
 
 ## Configuration in Chatlayer
 
@@ -41,9 +41,9 @@ This article will explain how to set this up:
 * Go to 'Channels' on the left hand side
 * Click on the '+' sign in the 'Sinch Contact' row to see the pop-up below:
 
-![](../../.gitbook/assets/image%20%28574%29.png)
+![](<../../.gitbook/assets/image (574).png>)
 
-Looking at the URL you copied before, you can identify _Region_ and _Tenant Name:_
+Looking at the URL you copied before, you can identify _Region _and _Tenant Name:_
 
 https://prod-_region_._domain_**.**com/_tenantname_/visitor/ecfs
 
@@ -59,17 +59,17 @@ The other fields can be found back in Sinch Contact:
 {% hint style="info" %}
 Do you have an On Premise environment of Sinch Contact? Toggle 'Is On Premise' and fill out the following: For the URL
 
-[_https://mywebsite.com/integrations/sinch-contact/tenantname_](https://mywebsite.com/integrations/sinch-contact/<tenantname>)\_\_
+[_https://mywebsite.com/integrations/sinch-contact/tenantname_](https://mywebsite.com/integrations/sinch-contact/%3Ctenantname%3E)__
 
- The **host** is 'mywebsite.com', and the **tenant name** will be 'integrations/sinch-contact/tenantname'
+ The **host **is 'mywebsite.com', and the **tenant name** will be 'integrations/sinch-contact/tenantname'
 {% endhint %}
 
 ### Setting up offload action
 
-* Add an “Action” bot dialog to your flow that contains a “Send to offload provider” plugin \(for example, after “Not understood”\). 
+* Add an “Action” bot dialog to your flow that contains a “Send to offload provider” plugin (for example, after “Not understood”). 
 * Select Sinch Contact in that plugin and the queue you want to offload to.
 
-![](../../.gitbook/assets/image%20%28573%29.png)
+![](<../../.gitbook/assets/image (573).png>)
 
 
 
@@ -82,17 +82,15 @@ In the example below, we'll use the Sinch Contact Pro web widget as a channel. Y
 * Open the page where you’ve configured your Sinch Contact Widget
 * Fill in your contact details, select the “Chatlayer Agents” queue and start the conversation
 
-![](../../.gitbook/assets/image%20%28579%29.png)
+![](<../../.gitbook/assets/image (579).png>)
 
 
 
-![](../../.gitbook/assets/image%20%28575%29.png)
+![](<../../.gitbook/assets/image (575).png>)
 
 After being transferred to an agent, open the right queue and take over the conversation:
 
-![](../../.gitbook/assets/image%20%28581%29.png)
+![](<../../.gitbook/assets/image (581).png>)
 
 And there you go, your Sinch Contact offloading is all set up!
-
-
 

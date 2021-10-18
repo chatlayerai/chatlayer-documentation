@@ -1,16 +1,16 @@
 # Bot message
 
-To design your conversational flow, you can use multiple components, like text messages, buttons and carousels. Depending on the channel you publish the bot to \(Facebook Messenger, web, Slack, Telegram, ...\), these will be shown slightly differently.
+To design your conversational flow, you can use multiple components, like text messages, buttons and carousels. Depending on the channel you publish the bot to (Facebook Messenger, web, Slack, Telegram, ...), these will be shown slightly differently.
 
 {% hint style="info" %}
 **Character limits**
 
 When you're building your flows, our platform gives you advice on how many characters you can use in buttons, text messages, etc.
 
-![](../../.gitbook/assets/image%20%2817%29.png)
+![](<../../.gitbook/assets/image (17).png>)
 
-For Facebook Messenger, these are hard limits, meaning that if you're adding a button label longer than 20 characters, it will be cut off and shown with "..."   
-  
+For Facebook Messenger, these are hard limits, meaning that if you're adding a button label longer than 20 characters, it will be cut off and shown with "..." \
+\
 For example: the label "hello I am a button click me" will be shown as "hello I am a button..."
 {% endhint %}
 
@@ -18,7 +18,7 @@ For example: the label "hello I am a button click me" will be shown as "hello I 
 For all other channels, the character limit is based on best practices. We recommend using less characters than the limit, but it's not mandatory.
 {% endhint %}
 
-## Text Messages <a id="text"></a>
+## Text Messages <a href="text" id="text"></a>
 
 Text messages are the most simple components. Most channels will show them as 'text bubbles'.
 
@@ -42,7 +42,7 @@ This button will initiate a call if the user is using a mobile device.
 
 #### Webview
 
-This button will open a webview \(or a new browser window depending on the channel\) with the configured URL as target. 
+This button will open a webview (or a new browser window depending on the channel) with the configured URL as target. 
 
 The parameters you configure for this button will be JSON stringified and appended to the URL as a Base64 encoded string. It is possible to decode this string using the `atob`  JavaScript function.
 
@@ -53,7 +53,7 @@ With the Media template, you can enable the bot to send files to your users.
 {% hint style="warning" %}
 If you upload the file directly in the platform, there is a file size limit of 10 MB. If you use a direct URL to the file, there is no file size limit.
 
-![](../../.gitbook/assets/image%20%28372%29.png)
+![](<../../.gitbook/assets/image (372).png>)
 {% endhint %}
 
 #### Images
@@ -124,11 +124,11 @@ Facebook has renamed the 'Carousel' template to 'Generic Template'. You can read
 
 #### Share button
 
-The share button opens a sharing-dialog in Facebook Messenger, enabling people to share message bubbles \(aka carousel cards\) with their friends.
+The share button opens a sharing-dialog in Facebook Messenger, enabling people to share message bubbles (aka carousel cards) with their friends.
 
 When a new user receives a message bubble, he can share it with his friends by tapping the same share button. When tapping the postback button, the user is send to the start page of the bot.
 
-You can only use share button in generic templates items \(previously called carousels\) and only items with maximum one url can be shared by Facebook. It is not possible to change the button title: Facebook Messenger will translate the button to the user's preferred language profile setting.
+You can only use share button in generic templates items (previously called carousels) and only items with maximum one url can be shared by Facebook. It is not possible to change the button title: Facebook Messenger will translate the button to the user's preferred language profile setting.
 
 ![](../../.gitbook/assets/carousel.png)
 
@@ -136,7 +136,7 @@ You can only use share button in generic templates items \(previously called car
 
 The List Template is a template that allows you to present a list of items, shown vertically.
 
-Each item may shown a button that can be used as a call-to-action \(postback\). You can also provide a URL that opens when an item is tapped.
+Each item may shown a button that can be used as a call-to-action (postback). You can also provide a URL that opens when an item is tapped.
 
 Each list template message can also have up to one global button that will show below the item list.
 
@@ -160,17 +160,17 @@ Compact lists show each item in the same way. This is useful for presenting a li
 
 Use the file upload template to let users upload a file directly from their device to your bot.
 
-![](../../.gitbook/assets/image%20%287%29.png)
+![](<../../.gitbook/assets/image (7).png>)
 
 Configuring the File Upload as shown above will show an Upload button in the conversation:
 
-![](../../.gitbook/assets/image%20%2890%29.png)
+![](<../../.gitbook/assets/image (90).png>)
 
 If the upload failed because there was a problem with the connection, or the file the user chose was bigger than 10 MB, the bot will go to the "failed upload" bot dialog.
 
 The URL where the uploaded file is stored can be found under the `{uploadedFileUrl}` variable in the user's session. You can reuse this variable to show the file that the user uploaded by using the [Media](message-components.md#attachments) template. Alternatively, you can retrieve the URL with an [API plugin](../../integrations/custom-back-end-integrations/) to store the files on your servers.
 
-![](../../.gitbook/assets/image%20%28106%29.png)
+![](<../../.gitbook/assets/image (106).png>)
 
 ## Rich text
 
@@ -180,7 +180,7 @@ Rich text allows you to go beyond text messages and style your text the way you 
 Rich text is only visible in the Chat Widget channel. The other channels do not support this type of text.
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%28323%29.png)
+![](<../../.gitbook/assets/image (323).png>)
 
 The rich text editor allows you to use the following styles:
 
@@ -190,7 +190,7 @@ The rich text editor allows you to use the following styles:
 * Heading 3
 * Heading 4
 * Bulleted list
-* Ordered list \(= numbered list\)
+* Ordered list (= numbered list)
 
 And format the text in the following ways:
 
@@ -198,11 +198,9 @@ And format the text in the following ways:
 * _Italic_
 * Underline
 
-You can also add hyperlinks \(weblinks\) that either go to an external page or to a specific place in your conversation.
+You can also add hyperlinks (weblinks) that either go to an external page or to a specific place in your conversation.
 
-![Inserting a link using rich text](../../.gitbook/assets/image%20%28412%29.png)
+![Inserting a link using rich text](<../../.gitbook/assets/image (412).png>)
 
 To hyperlink a word or sentence, select it and then click the chain icon on the right below. A popup will appear where you can put in the link address. Then click 'save'.
-
-
 

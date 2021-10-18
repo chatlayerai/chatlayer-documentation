@@ -7,22 +7,22 @@ That is why our platform allows you to recognise and greet returning users diffe
 {% hint style="info" %}
 Not all channels save variables the same way.
 
-Facebook Messenger saves them indefinitely, but by default, the Web Widget only saves variables for the duration of the session \(unless authentication of unique users is built in\).
+Facebook Messenger saves them indefinitely, but by default, the Web Widget only saves variables for the duration of the session (unless authentication of unique users is built in).
 {% endhint %}
 
 ## Step 1: How to convert your introduction into a go-to dialog
 
-By now you should know that every conversation starts with the introduction __dialog:
+By now you should know that every conversation starts with the introduction_ _dialog:
 
-![The introduction dialog kicks off every conversation](../.gitbook/assets/image%20%28523%29.png)
+![The introduction dialog kicks off every conversation](<../.gitbook/assets/image (523).png>)
 
-By default, the introduction dialog is a `Bot message` where you can greet the user and start the conversation:
+By default, the introduction dialog is a `Bot message `where you can greet the user and start the conversation:
 
 ![](../.gitbook/assets/schermafbeelding-2019-01-24-om-10.56.17-kopie.png)
 
 However, instead of greeting the user right away, you can use this dialog to first check if the bot has talked to this specific user before. To do so, you can the introduction bot message into a go-to message:
 
-![Under &apos;Type&apos;, select &apos;go to&apos; to convert the dialog into a go-to message](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.17.12.png)
+![Under 'Type', select 'go to' to convert the dialog into a go-to message](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.17.12.png)
 
 {% hint style="info" %}
 If you already wrote some text in the introduction dialog, you will lose it when converting the message into a go-to. We recommend creating a new bot message where you copy the text into, so you don't lose it.
@@ -37,7 +37,7 @@ To do so, you'll need to create an 'if-statement':
 * If `known_user_flag` equals `1`, the bot knows that there has been a conversation with this user before, otherwise this variable would be empty. Now the user can be redirected to an introduction message for returning users.
 * Else if `known_user_flag` does not exist, the user is a new user and should be redirected to an introduction for new users. At the same time, you should set the `known_user_flag` to `1` because now, the user is not new anymore. 
 
-![Setting the &apos;known\_user\_flag&apos; variables to recognise a returning user](../.gitbook/assets/image%20%28525%29.png)
+![Setting the 'known_user_flag' variables to recognise a returning user](<../.gitbook/assets/image (525).png>)
 
 ![Creating 2 different introductions: one for new, and one for returning users](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.39.38.png)
 
@@ -60,4 +60,3 @@ Before you can use any values, you'll first need to check whether any have been 
 ![What a great experience, this bot knows what I did last time!](../.gitbook/assets/schermafbeelding-2019-01-24-om-12.03.20.png)
 
 This way, previously saved variables can create a truly personalised experience for returning users and make your bot look super duper smart 🤓
-

@@ -11,10 +11,10 @@ Click "+ Create" to start building your first custom chat widget.
 {% hint style="info" %}
 You can create multiple chat widgets for one bot, remove them, view them, and copy them using the buttons in the chat widget table.
 
-![](../../.gitbook/assets/image%20%28140%29.png)
+![](<../../.gitbook/assets/image (140).png>)
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%28108%29.png)
+![](<../../.gitbook/assets/image (108).png>)
 
 On the Chat Widget page you can customize a number of key chat widget components:
 
@@ -24,8 +24,8 @@ On the Chat Widget page you can customize a number of key chat widget components
   * Upload custom CSS
   * Title font & font size
   * Paragraph font & font size
-  * White listing of the domains you want the bot to be activated on \(i.e. your own website domain and any other domains you use for testing\)
-  * Images \(title, bot, user, send icon, SDK button - which is the image that's shown when the bot is closed\)
+  * White listing of the domains you want the bot to be activated on (i.e. your own website domain and any other domains you use for testing)
+  * Images (title, bot, user, send icon, SDK button - which is the image that's shown when the bot is closed)
 * **Colors tab**
   * Colors of all the key components of the chatbot
 * **Translations tab**
@@ -56,7 +56,7 @@ A shorter regular expression which will match the same domains is:
 ^https:\/\/www\.(subdomain1|subdomain2)\.(rootdomain1|rootdomain2)\.com(\/|$)
 ```
 
-An easy way to validate your regular expression is by using online tools like [https://regex101.com/](https://regex101.com/)
+An easy way to validate your regular expression is by using online tools like [https://regex101.com/](https://regex101.com)
 
 #### Whitelisting with an iframe
 
@@ -86,7 +86,7 @@ There are two ways of integrating the Chat Widget on your website: you can use e
 
 You can switch between SDK and iframe using the Type switcher above your widget:
 
-![](../../.gitbook/assets/image%20%28224%29.png)
+![](<../../.gitbook/assets/image (224).png>)
 
 ### Should I use SDK or iframe?
 
@@ -122,16 +122,16 @@ In this case, your bot will be opened in English, and when a user clicks the SDK
 
 #### SDK Options
 
-| Property name | Type | Remark |
-| :--- | :--- | :--- |
-| `withCloseButton` | `boolean` | The close button allows customers to close the bot clicking an "X" icon at the top right of the chat widget |
-| `autoOpen` | `boolean` |  |
-| `noButton` | `boolean` |  |
-| `session` | `object` | Add data to the session which can be used to guide the flow. |
-| `sessionId` | `string` | A session ID can be used to continue the conversation after the user has left the page. Make sure it's 20 characters or longer. |
-| `language` | `string` |  |
-| `button` | `HTMLElement` |  |
-| `wrapper` | `HTMLElement` |  |
+| Property name     | Type          | Remark                                                                                                                          |
+| ----------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `withCloseButton` | `boolean`     | The close button allows customers to close the bot clicking an "X" icon at the top right of the chat widget                     |
+| `autoOpen`        | `boolean`     |                                                                                                                                 |
+| `noButton`        | `boolean`     |                                                                                                                                 |
+| `session`         | `object`      | Add data to the session which can be used to guide the flow.                                                                    |
+| `sessionId`       | `string`      | A session ID can be used to continue the conversation after the user has left the page. Make sure it's 20 characters or longer. |
+| `language`        | `string`      |                                                                                                                                 |
+| `button`          | `HTMLElement` |                                                                                                                                 |
+| `wrapper`         | `HTMLElement` |                                                                                                                                 |
 
 #### Transferring a variable from your website, through the SDK to the chatbot
 
@@ -168,7 +168,7 @@ internal: {
 
 #### User authentication with the chat widget SDK
 
-In a lot of cases it's required to know **who** is talking to the bot. One way to find out is by sending a login ID, detected on the website your user is logged in, and passing it on to the bot, when the SDK is initialized:
+In a lot of cases it's required to know **who **is talking to the bot. One way to find out is by sending a login ID, detected on the website your user is logged in, and passing it on to the bot, when the SDK is initialized:
 
 ```markup
 <script src="YOUR_CHATWIDGET_URL" 
@@ -261,10 +261,10 @@ By adding the properties underneath to your CSS, you can resize the chat widget 
 
 There are two main options for securing the chat widget. You can either verify the payload by using JWT, making sure it hasn't been tampered with, or you can encrypt the session created by the chat widget by using AES-256 data protection.
 
-![](../../.gitbook/assets/image%20%28310%29.png)
+![](<../../.gitbook/assets/image (310).png>)
 
-  
-When you turn on the AES-256 data protection, you can only pass an encrypted token as the chat session. This token should be generated in your own back-end. The code to generate the token looks like this \(using node.js\):
+\
+When you turn on the AES-256 data protection, you can only pass an encrypted token as the chat session. This token should be generated in your own back-end. The code to generate the token looks like this (using node.js):
 
 ```javascript
 const crypto = require('crypto');
@@ -382,11 +382,10 @@ We've created an example of how you can initialize and destroy the Chatlayer.ai 
 
 JSON builder plugin configuration:
 
-![](../../.gitbook/assets/image%20%28267%29.png)
+![](<../../.gitbook/assets/image (267).png>)
 
 {% hint style="info" %}
 View a live version of this code [here](https://codesandbox.io/s/chatlayer-destroy-webwidget-s0lnj?file=/index.html).
 {% endhint %}
 
 As you can see from the example above, you can initialize the widget, open/close it, as well as destroy it from your own code. The example shows you how to use the JSON Builder plugin to trigger a destroy event for the chat widget.
-

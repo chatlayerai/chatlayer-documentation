@@ -8,7 +8,9 @@ description: >-
 
 You will learn how to detect valuable information, mentioned by a user in an intent, using **contextual entities**. Entities are important pieces of information that are extracted from an expression. There are four types of entities. You can find more information about them here:
 
-{% page-ref page="../understanding-users/natural-language-processing-nlp/synonym-entities/" %}
+{% content-ref url="../understanding-users/natural-language-processing-nlp/synonym-entities/" %}
+[synonym-entities](../understanding-users/natural-language-processing-nlp/synonym-entities/)
+{% endcontent-ref %}
 
 In this tutorial we will focus on one entity type: contextual entities. Contextual entities use machine learning to identify entities in sentences by learning what type of word your entity is, where it's placed in the sentence, and what the specific context is.
 
@@ -24,8 +26,8 @@ This assures the bot dialog, linked to the corresponding intent, to be triggered
 
 But what would happen if the user says:
 
-* I want a train ticket to **Amsterdam**
-* I need to go to **Antwerp tomorrow**
+* I want a train ticket to** Amsterdam**
+* I need to go to** Antwerp tomorrow**
 * Can I book a train ticket to **Brussels** please?
 
 These expressions contain valuable information. We want to make sure we capture that information, in this case the destination and time, and save it as **entities**. We then have expressions with an entity in them.
@@ -36,7 +38,7 @@ We are now going to create a new intent with some expressions for booking a trai
 
 Not all users will immediately mention their destination, so let's make sure we train our intent without those specific entities as well:
 
-* Go to `NLP` &gt; `Intents`
+* Go to `NLP` > `Intents`
 * Click on `Add Intent`
 * Add a new intent called `book train ticket`
 * Add some simple expressions, like:
@@ -50,7 +52,7 @@ If you have trouble doing this, please read the [previous tutorial](tutorial-add
 
 Next, it's time to add a contextual entity.
 
-* Go to `Intents` and select your `book train ticket` intent
+* Go to `Intents `and select your `book train ticket` intent
 * Click on `+ Add expression` to create a new expression
 * Enter an expression that contains an entity, for example:
 
@@ -58,42 +60,44 @@ Next, it's time to add a contextual entity.
 
 * Select `Brussels` in this sentence
 
-![](../.gitbook/assets/image%20%28619%29.png)
+![](<../.gitbook/assets/image (619).png>)
 
 * Click on the '+ entity' icon in the bottom right of the expression box to create a new contextual entity for 'Brussels'  
 
-![The &apos;+ entity&apos; icon](../.gitbook/assets/image%20%28651%29.png)
+![The '+ entity' icon](<../.gitbook/assets/image (651).png>)
 
 * Brussels is the location the user wants to depart from, so we will name this entity `origin` 
 * Type `origin` in the `Create new entity` field and click on 'Create new entity' to confirm
 
-![Creating a new entity called &apos;origin&apos;](../.gitbook/assets/image%20%28634%29.png)
+![Creating a new entity called 'origin'](<../.gitbook/assets/image (634).png>)
 
 * Brussels will be added to the list of possible values for the @origin variable
 * Do the same thing for `Paris` as a 'destination' entity
 
 You will then have the following set-up for this expression:
 
-![Creating multiple entities in an expression](../.gitbook/assets/image%20%28635%29.png)
+![Creating multiple entities in an expression](<../.gitbook/assets/image (635).png>)
 
 We now save added the expression 'I want to book a ticket from @origin to @destination', where 'Brussels' is a value for @origin and 'Paris' is a value for the entity @destination. 
 
 * Add some other values to the 'origin' and 'destination' entities in the expression field. These will be saved for all future expressions. You can add these in the 'Create new value' box and pressing enter.
 * Add more expressions that contain the entities **origin** and **destination**
 
-Once you have added more Entity values, these will also show up in the menu   
-`Entities` &gt; `Contextual Entities`
+Once you have added more Entity values, these will also show up in the menu \
+`Entities `> `Contextual Entities`
 
-![](../.gitbook/assets/image%20%28432%29.png)
+![](<../.gitbook/assets/image (432).png>)
 
-* Now, let's add some more expressions to our `Book train ticket` intent. Some ideas for expressions:
+*   Now, let's add some more expressions to our `Book train ticket` intent. Some ideas for expressions:
 
-  * Can I book a train from Cologne to Brussels?
-  * I need to be in Rotterdam
-  * I need a train to London
-  * I want to travel to Lyon
-  * I want to buy a ticket from Moscow to Vladivostok
-  * I need a ticket from New York to Baltimore
+    * Can I book a train from Cologne to Brussels?
+    * I need to be in Rotterdam
+    * I need a train to London
+    * I want to travel to Lyon
+    * I want to buy a ticket from Moscow to Vladivostok
+    * I need a ticket from New York to Baltimore
+
+
 
 {% hint style="info" %}
 When typing a new expression, you can add entities and entity values in two ways:
@@ -106,7 +110,7 @@ When typing a new expression, you can add entities and entity values in two ways
 
 This will now result some expressions for the `Book train ticket` intent, and entity values, like so:
 
-![Adding expressions to an intent](../.gitbook/assets/image%20%28650%29.png)
+![Adding expressions to an intent](<../.gitbook/assets/image (650).png>)
 
 To make it easier for you to add new expressions fast, we have built the expressions generator. Head over to [this page](../understanding-users/expression-generator.md) for more information.
 
@@ -114,7 +118,7 @@ To make it easier for you to add new expressions fast, we have built the express
 
 After we have retrained our model, let's see if its good enough to recognise the destination entity.
 
-* Go to `NLP` &gt;`Test` to open the testing console 
+* Go to `NLP` >`Test` to open the testing console 
 * Write 'I would like to go to Brussels from Amsterdam' as the expression to be tested
 * Click on `Test`
 
@@ -124,21 +128,21 @@ You'll see that the entity gets recognized with a 99.93% confidence. The results
 Make sure you retrain the NLP model before testing newly added expressions
 {% endhint %}
 
-![Testing an expression](../.gitbook/assets/image%20%28646%29.png)
+![Testing an expression](<../.gitbook/assets/image (646).png>)
 
 Now we know how to add intents, create expressions and entities, however we still need to create a conversation so the user can talk to Choo Choo and our bot replies accordingly. Let's add some bot messages in the next step.
 
 ## Step 11: Using variables in messages
 
-When a user says something containing an entity, and the entity is successfully detected, our tool will automatically store the entity as a **variable** for that specific user.  
+When a user says something containing an entity, and the entity is successfully detected, our tool will automatically store the entity as a **variable **for that specific user.  
 
 At the moment, when you test your bot, the user is stuck after giving the information about the ticket:
 
-![The bot does not understand yet](../.gitbook/assets/image%20%28620%29.png)
+![The bot does not understand yet](<../.gitbook/assets/image (620).png>)
 
-However, we do see some positive items, namely that the 'origin' and 'destination' are stored correctly as variables. You can see this by opening the debugger by clicking  'Debugger' \(with the magnifying glass icon\) in the emulator. In the 'Debugger' tab, you can scroll down and you see this:
+However, we do see some positive items, namely that the 'origin' and 'destination' are stored correctly as variables. You can see this by opening the debugger by clicking  'Debugger' (with the magnifying glass icon) in the emulator. In the 'Debugger' tab, you can scroll down and you see this:
 
-![](../.gitbook/assets/image%20%28439%29.png)
+![](<../.gitbook/assets/image (439).png>)
 
 So even though the sentence did give an error message, these entities are correctly recognized in the user input. This means the variable 'origin' is now saved with a variable value 'Brussels' and the variable 'destination' with the value 'Paris'. Also, in the ''NLP Result' tab we see that the intent was recognised correctly, that's great! Let's now work on removing that error message first.
 
@@ -154,10 +158,10 @@ We can change that by adding a new Bot message:
 {% hint style="info" %}
 To reuse the variable later on in the conversation, you can put it in between curly brackets like this: `{variable_name}` 
 
-When writing this message to the users, Chatlayer will automatically substitute `{variable_name}` ****with the value of the variable. If the variable is empty, an empty space will be shown.
+When writing this message to the users, Chatlayer will automatically substitute `{variable_name}`** **with the value of the variable. If the variable is empty, an empty space will be shown.
 {% endhint %}
 
-![Creating a bot reply](../.gitbook/assets/image%20%28631%29.png)
+![Creating a bot reply](<../.gitbook/assets/image (631).png>)
 
 We have now linked the `Book train ticket` to this bot message, great job! This means that, when a user says something that triggers the `Book train ticket` intent, this bot message will show. 
 
@@ -165,14 +169,14 @@ We have now linked the `Book train ticket` to this bot message, great job! This 
 
 Now that we have linked everything, we are ready to test if everything is configured correctly by using the emulator.
 
-* Open the emulator \(the `Test your bot` tool on the bottom right\)
+* Open the emulator (the `Test your bot` tool on the bottom right)
 * If needed, clear the last conversation by clicking 'Clear conversation' on the top right. This starts a new conversation
 * Enter "I want to go to Amsterdam" and click on submit
 * Open the debugger
 
 In the tab 'NLP Result'  you can now see if the entity was recognized correctly:
 
-![The entity &apos;destination&apos; was correctly recognized](../.gitbook/assets/image%20%28615%29.png)
+![The entity 'destination' was correctly recognized](<../.gitbook/assets/image (615).png>)
 
 {% hint style="info" %}
 When creating new bot dialogs, you don't need to re-train the NLP
@@ -190,7 +194,7 @@ Now we already have a great start with linking the intent and giving a response 
 
 You can add as many entities as you want to one expression. For Choo Choo, we want to more information from the user than just the destination and origin, to give a complete train-booking experience. Let's add more contextual entities!
 
-* Go to the `Expressions` menu
+* Go to the `Expressions `menu
 * Click 'Add Expression'
 * Select the `Book train ticket` intent
 
@@ -208,7 +212,7 @@ And create the following entities:
 
 _If you are having trouble adding these, scroll back to step 9 in this tutorial to read all about it._
 
-![](../.gitbook/assets/image%20%28617%29.png)
+![](<../.gitbook/assets/image (617).png>)
 
 #### Additional suggestions for expressions
 
@@ -235,17 +239,17 @@ Update the wording in the `book train ticket` dialog to correctly display the en
 
 _I need a ticket from Antwerp to Brussels tomorrow at 9am in first class_
 
-![Updating the bot dialog](../.gitbook/assets/image%20%28618%29.png)
+![Updating the bot dialog](<../.gitbook/assets/image (618).png>)
 
 {% hint style="warning" %}
-If you try to update your NLP and you get an error message about 5 example entities, it means you need to add more entity values to some of your newly created entities. To do so, go to NLP &gt; Entities &gt; Contextual entities and make sure that that entity has at least 5 values.
+If you try to update your NLP and you get an error message about 5 example entities, it means you need to add more entity values to some of your newly created entities. To do so, go to NLP > Entities > Contextual entities and make sure that that entity has at least 5 values.
 {% endhint %}
 
-![Testing the expression in the emulator](../.gitbook/assets/image%20%28637%29.png)
+![Testing the expression in the emulator](<../.gitbook/assets/image (637).png>)
 
 Uh oh, this isn't really what we expected. As you can see, not all variables were recognized correctly. So, what's the issue? Lets have a look at the NLP results in the debugger:
 
-![](../.gitbook/assets/image%20%28639%29.png)
+![](<../.gitbook/assets/image (639).png>)
 
 `origin`, `destination`, `time_departure` and `class` were found correctly, but only `time_departure` and `class` have a confidence score higher than 80%. `Origin` and `destination` score much lower, so they weren't processed as variables.
 
@@ -271,4 +275,3 @@ You now know how to:
 * Test your input in the debugger
 
 Not every user will give all the entities you need. In the [next tutorial](tutorial-request-and-use-information-using-input-plugins.md), you will learn how to check if a user has already provided certain information, and ask for what's missing.
-

@@ -11,11 +11,11 @@ Keep in mind that flows, just like the connections between dialog states, are si
 * Bot builders can set-up a next bot dialog to another flow
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%286%29.png)
+![](<../../.gitbook/assets/image (6).png>)
 
 Some tips on choosing how to group flows:
 
-* Group all flows that have a functional relation. In our Choo Choo example, you could group all bot dialogs that are meant to help book a ticket, all general questions about trains, and all support flows \(e.g. "I lost my bag on the train"\)
+* Group all flows that have a functional relation. In our Choo Choo example, you could group all bot dialogs that are meant to help book a ticket, all general questions about trains, and all support flows (e.g. "I lost my bag on the train")
 * Reserve one flow for general questions, such as your offloading settings and the dialog for when your bot doesn't understand
 
 ## Bot dialog flow builder
@@ -24,15 +24,15 @@ Some tips on choosing how to group flows:
 
 There are 4 kinds of bot dialogs, each with its own colour and functionalities:
 
-![](../../.gitbook/assets/image%20%28152%29.png)
+![](<../../.gitbook/assets/image (152).png>)
 
-* \*\*\*\*[**Bot message**](message-components.md)
+* ****[**Bot message**](message-components.md)
   * Any message a bot is sending to a user is what we call a bot message. This includes text messages, buttons, quick replies, etc.
-* \*\*\*\*[**Go to**](plugins.md)
+* ****[**Go to**](plugins.md)
   * If you want to add rules to determine where a user is guided to, based on the value of a variable, you can do it with this bot dialog type.
-* \*\*\*\*[**Action**](action-bot-dialog.md)\*\*\*\*
+* ****[**Action**](action-bot-dialog.md)****
   * Actions allow you to configure the settings of a user session, such as the language that will be used to reply to your user, or the offloading of a user.
-* \*\*\*\*[**Input validation**](user-input-bot-dialog.md)
+* ****[**Input validation**](user-input-bot-dialog.md)
   * Use this bot dialog type to gather input from your users.
 
 Every bot dialog type has its own settings and NLP tab, which stays the same throughout the different types.
@@ -66,7 +66,7 @@ The name for a specific dialog state. This is also the label that is shown in th
 
 You may use this field as a custom identifier for your bot dialog when integrating solutions through the Webhook Channel API .
 
-For example: say you want to store the number of times some specific bot dialog \( eg. `Greeting Message` \) has been triggered. You have added a custom label to that bot dialog \( eg. `messages_greeting`\).
+For example: say you want to store the number of times some specific bot dialog ( eg. `Greeting Message` ) has been triggered. You have added a custom label to that bot dialog ( eg. `messages_greeting`).
 
 Now if you delete the `Greeting Message` and recreate it, its unique identifier on our side will change, but you could still add `messages_greeting` as the custom label again.
 
@@ -74,7 +74,7 @@ If you use this custom label in your system to check if the bot dialog has been 
 
 ### Flow
 
-The bot dialog flow determines in which flow the bot dialog you are editing \(or creating\) will be stored.
+The bot dialog flow determines in which flow the bot dialog you are editing (or creating) will be stored.
 
 ### Parent bot dialog
 
@@ -88,7 +88,7 @@ You can only choose a parent that is present in the flow you have selected.
 
 ### Intent
 
-Every bot dialog can be linked to an Intent. When a user is entering free-form text, it is analysed by the NLP model. If the model recognises an intent with a high enough accuracy \(above the threshold\), the user will get the bot dialog coupled to that intent. Multiple bot dialogs can reuse the same intent by using different `Context` settings. A dialog state can only be linked to one Intent.
+Every bot dialog can be linked to an Intent. When a user is entering free-form text, it is analysed by the NLP model. If the model recognises an intent with a high enough accuracy (above the threshold), the user will get the bot dialog coupled to that intent. Multiple bot dialogs can reuse the same intent by using different `Context` settings. A dialog state can only be linked to one Intent.
 
 ### Required context
 
@@ -107,7 +107,7 @@ Every bot, when created, has a set of standard bot dialogs.
 
 ### Bot Disabled
 
-The Bot Disabled bot dialog will only be triggered if you explicitly disable your bot. You can do this in the 'Settings &gt; Bot' page. Let's say you want to disable the bot for 1 day, then you can show a message like 'At this moment I can not help you further, please contact our support service through &lt;email&gt; or call us on &lt;phone&gt; if you have any questions' in that bot dialog.
+The Bot Disabled bot dialog will only be triggered if you explicitly disable your bot. You can do this in the 'Settings > Bot' page. Let's say you want to disable the bot for 1 day, then you can show a message like 'At this moment I can not help you further, please contact our support service through \<email> or call us on \<phone> if you have any questions' in that bot dialog.
 
 ### Error occurred
 
@@ -119,5 +119,4 @@ Whenever an intent is not recognized above your [threshold](https://docs.chatlay
 
 
 
-The other system bot dialogs are specifically related to our Offloading feature \(redirecting your users from the bot to a human\). You can find more information about them in our [documentation](https://docs.chatlayer.ai/integrations/human-offloading-live-chat#human-handover-bot-dialogs.).
-
+The other system bot dialogs are specifically related to our Offloading feature (redirecting your users from the bot to a human). You can find more information about them in our [documentation](https://docs.chatlayer.ai/integrations/human-offloading-live-chat#human-handover-bot-dialogs.).

@@ -19,17 +19,19 @@ body .chatlayer-chatbox-wrapper{
 If you are experiencing that your website is on top of the web widget, and the web widget is not correctly visible, you can change this with the z-index:
 
 * If you remove the 'z-index' css property for that HTML element which is overlapping the widget, the widget should not be hidden behind that element anymore.
-* Alternatively, you could pass an HTML element as an option to our SDK, that HTML element will then be used as a container to show the chat widget in. An example for using a wrapper element, assuming your webpage contains an HTML element with id 'chatlayer-sdk-wrapper': 
+* Alternatively, you could pass an HTML element as an option to our SDK, that HTML element will then be used as a container to show the chat widget in.\
+  An example for using a wrapper element, assuming your webpage contains an HTML element with id 'chatlayer-sdk-wrapper':\
+
 
 ```markup
 <script src=“YOUR_CHATBOX_URL" onload=‘chatlayer({ wrapper: document.querySelector('#chatlayer-sdk-wrapper') })’ async></script>
 ```
 
-This will allow you to apply css to the '\#chatlayer-sdk-wrapper' directly for positioning it on your page, instead of using our default wrapper.
+This will allow you to apply css to the '#chatlayer-sdk-wrapper' directly for positioning it on your page, instead of using our default wrapper.
 
 ## Border chat balloon
 
-You can style the balloon with an extra border in the colour of your choice by using the following in the custom CSS \(only available for Enterprise and Corporate customers\) in your chat widget:
+You can style the balloon with an extra border in the colour of your choice by using the following in the custom CSS (only available for Enterprise and Corporate customers) in your chat widget:
 
 ```css
 .chatBalloon-user{
@@ -115,6 +117,4 @@ To make your Chat Widget look customized as per your needs, our Enterprise and C
 * chatTemplate-chatCarousel-element-prevButtonIcon
 * chatTemplate-chatCarousel-element-nextButton
 * chatTemplate-chatCarousel-element-nextButtonIcon
-
-
 

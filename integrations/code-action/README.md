@@ -10,15 +10,15 @@ The code action allows developers to quickly build custom logic on top of their 
 
 ### Getting Started
 
-To get started with the Code Action, create a new 'Action Dialogstate' and select the **Code** plugin as an action.
+To get started with the Code Action, create a new 'Action Dialogstate' and select the **Code **plugin as an action.
 
-![](../../.gitbook/assets/image%20%28318%29.png)
+![](<../../.gitbook/assets/image (318).png>)
 
 ### Arguments in the Code Editor
 
 You can pass arguments to your Code actions by assigning them keys. Your keys will be made available to the `args` variable inside the Code Editor.
 
-![](../../.gitbook/assets/image%20%28319%29.png)
+![](<../../.gitbook/assets/image (319).png>)
 
 ### ChatlayerResponseBuilder function
 
@@ -56,9 +56,9 @@ builder.send();
 
 The `ChatlayerResponseBuilder` has the ability to set variables or adding messages to the chatbot. Both are shown in the example below:
 
-_`addSessionVariable(namespace: string, data: any)`:_  Insert a variable on a certain namespace within the session. 
+_`addSessionVariable(namespace: string, data: any)`:  _Insert a variable on a certain namespace within the session. 
 
-_`addMessage(message: string)`:_ Adds a text message to be sent by the bot.
+_`addMessage(message: string)`: _Adds a text message to be sent by the bot.
 
 ```javascript
 ChatlayerResponseBuilder()
@@ -81,7 +81,7 @@ If you would like to use this information in a bot message, simply type `{user.l
 
 Based on code, variables or other input, you can steer the conversation to other dialogstates. With the code below you can go to a next dialogstate. 
 
-#### setNextDialogState\(dialogstateId: string\)
+#### setNextDialogState(dialogstateId: string)
 
 Route the conversation to the given dialogstate ID. 
 
@@ -165,7 +165,7 @@ ChatlayerResponseBuilder()
 
 With bot messages we can also add buttons, but with code there is more variety than the bot message.
 
-![These buttons are created with the code below](../../.gitbook/assets/image%20%28371%29.png)
+![These buttons are created with the code below](<../../.gitbook/assets/image (371).png>)
 
 ```javascript
 const invoices = [
@@ -260,7 +260,7 @@ ChatlayerResponseBuilder()
 
 The following functionality exists inside the Code action's scope:
 
-#### lodash \(\_\)
+#### lodash (\_)
 
 Lodash is a JavaScript utility library. You can find more info [here](https://lodash.com/docs/4.17.15). 
 
@@ -274,7 +274,7 @@ chatlayer.send();
 
 #### fetch
 
-Fetch allows you to perform API calls. We use [**node-fetch**](https://github.com/node-fetch/node-fetch) ****as the default fetch library.
+Fetch allows you to perform API calls. We use [**node-fetch**](https://github.com/node-fetch/node-fetch)** **as the default fetch library.
 
 ```javascript
 const url = 'https://gorest.co.in/public/v1/users';
@@ -309,5 +309,4 @@ await new Promise((resolve)=>{_.delay(resolve,2000)});
 builder.send();
 ```
 
-_You can adjust the length of the delay by replacing the 2000 with 3000 \(3 seconds\) etc._
-
+_You can adjust the length of the delay by replacing the 2000 with 3000 (3 seconds) etc._

@@ -17,7 +17,7 @@ To complete our Choo Choo bot, we need to ask the following information from the
 
 This works great when the users says, for example:
 
-* **Tomorrow**, I need to go from **Amsterdam** to **Brussels** at **2pm** in **second** class
+* **Tomorrow**, I need to go from **Amsterdam **to **Brussels **at **2pm **in **second **class
 
 But right now, our bot can only detect this information when the user gives all this information in a single sentence. Of  course, in  a lot of cases, this will  not  always be the  case, so  we 'll need  to  ask  this  information  from  the  user. The dialog  to ask for this info is called  the  **Input Validation dialog**.
 
@@ -34,10 +34,10 @@ We are going to create new input validations. This can be done in the main flow 
 * In the Bot Message tab, scroll down to `Go to`
 * Type `destination` in the Go to field, and click `Create Input Validation 'destination'`
 
-![](../.gitbook/assets/image%20%28420%29.png)
+![](<../.gitbook/assets/image (420).png>)
 
 {% hint style="info" %}
-In every bot dialog, there is a `Go to` option. This means that the conversation flow will automatically go to that next bot dialog if the current one is finished, or if that specific input is given. With the current set-up, the bot will automatically go to the input validation if the first bot message for the `Book train ticket` intent is finished.
+In every bot dialog, there is a` Go to` option. This means that the conversation flow will automatically go to that next bot dialog if the current one is finished, or if that specific input is given. With the current set-up, the bot will automatically go to the input validation if the first bot message for the `Book train ticket` intent is finished.
 {% endhint %}
 
 * Save the `book train ticket` bot dialog
@@ -59,11 +59,11 @@ You can find more info about plugin parser types [here](../bot-answers/dialog-st
 * Type `destination` as the variable. The input from each user will be saved under this variable name.
 * Type `Confirm booking` in the 'Go to' field. Because the `Confirm booking` bot dialog doesn't exist, you get the option to create a new one. Pick `Create Bot Message 'Confirm booking'`
 
-![](../.gitbook/assets/image%20%28415%29.png)
+![](<../.gitbook/assets/image (415).png>)
 
 The end result should look like this:
 
-![](../.gitbook/assets/image%20%28428%29.png)
+![](<../.gitbook/assets/image (428).png>)
 
 #### NLP & input plugin
 
@@ -71,11 +71,11 @@ You want to make sure your users don't get stuck in a loop where the bot keeps a
 
 Our Choo Choo bot doesn't have a mature NLP model yet, which increases the likelihood of false intent matches. So for now, it's best to select the 'Disable NLP' checkbox in the input plugin.
 
-![](../.gitbook/assets/image%20%28464%29.png)
+![](<../.gitbook/assets/image (464).png>)
 
 Once created you will see the following flow:
 
-![](../.gitbook/assets/image%20%28452%29.png)
+![](<../.gitbook/assets/image (452).png>)
 
 {% hint style="warning" %}
 The parent-child relation between dialog state nodes is only a visual representation, it has no functional meaning. Always link your bot dialogs using Go to's.
@@ -83,22 +83,22 @@ The parent-child relation between dialog state nodes is only a visual representa
 
 #### Using user input in text messages
 
-As can be seen in the image above, the bot message is red. This means it is not completed yet. Let's complete it so it will turn grey \(the colour of all Bot messages\). All the session variables are stored in the user session. To access a variable in any displayed text, you can put the variable name between curly brackets.
+As can be seen in the image above, the bot message is red. This means it is not completed yet. Let's complete it so it will turn grey (the colour of all Bot messages). All the session variables are stored in the user session. To access a variable in any displayed text, you can put the variable name between curly brackets.
 
 * Open the `Confirm booking` bot dialog
 * Enter a new text message `Okay you want to go to {destination}. We can do that.`
 
-![](../.gitbook/assets/image%20%28421%29.png)
+![](<../.gitbook/assets/image (421).png>)
 
 Time for a test!
 
-![](../.gitbook/assets/image%20%28424%29.png)
+![](<../.gitbook/assets/image (424).png>)
 
 {% hint style="info" %}
 If you forget to define the 'Go to' and you test your conversation flow, the flow will just stop. The conversation will only continue if you correctly set the 'Go to' for each dialog state.
 {% endhint %}
 
-That looks great! If you are getting a message with empty spaces in the first bot message \('So I have a request for a train ticket'\), make sure you have changed that bot message accordingly for our newest set-up. If the destination is not captured correctly, make sure that you save the variable as 'destination' in the Input validation and you use '{destination}' in the bot message.
+That looks great! If you are getting a message with empty spaces in the first bot message ('So I have a request for a train ticket'), make sure you have changed that bot message accordingly for our newest set-up. If the destination is not captured correctly, make sure that you save the variable as 'destination' in the Input validation and you use '{destination}' in the bot message.
 
 ## Step 16: Completing the booking flow with the remaining input validations
 
@@ -108,21 +108,21 @@ Repeat the previous steps for the the other pieces of information you'd like to 
 * Departure time: At what time do you want to leave?
 * Departure date: Which day would you like to take the train?
 
-This means you need to create three extra Input Validations, just like the `destination`Input Validation. You can change the current `destination`Input Validation to make sure the `origin` is asked next:
+This means you need to create three extra Input Validations, just like the `destination`Input Validation. You can change the current `destination`Input Validation to make sure the `origin `is asked next:
 
-![](../.gitbook/assets/image%20%28418%29.png)
+![](<../.gitbook/assets/image (418).png>)
 
-Create the Input Validation. Save the variable under 'origin' and choose 'Check if response matches &gt; any'. Once this is created you will see this: 
+Create the Input Validation. Save the variable under 'origin' and choose 'Check if response matches > any'. Once this is created you will see this: 
 
  
 
-![](../.gitbook/assets/image%20%28445%29.png)
+![](<../.gitbook/assets/image (445).png>)
 
-This is because the `Confirm booking`Bot Message still has `destination` as parent. No worries, this will be fixed later. Add 'Where are you leaving from?' as text in the Input validation and save the input under 'origin' variable. Make sure that the next Input Validation after this one will be `departure time.`
+This is because the `Confirm booking`Bot Message still has `destination `as parent. No worries, this will be fixed later. Add 'Where are you leaving from?' as text in the Input validation and save the input under 'origin' variable. Make sure that the next Input Validation after this one will be `departure time.`
 
 * Now, create the other Input Validations:
-  * 'departure-time' variable, with text: 'At what time do you want to leave?'. Save under 'Check if response matches &gt; any'. Go to: departure date. Disable the NLP.
-  * 'departure-date' variable, with text: 'Which day do you want to take the train?'. Save under 'Check if response matches &gt; any'. Go to: confirm booking. Disable the NLP.
+  * 'departure-time' variable, with text: 'At what time do you want to leave?'. Save under 'Check if response matches > any'. Go to: departure date. Disable the NLP.
+  * 'departure-date' variable, with text: 'Which day do you want to take the train?'. Save under 'Check if response matches > any'. Go to: confirm booking. Disable the NLP.
 
 Make sure all of these input validations follow a consecutive flow, and end up in the `Confirm booking` bot dialog:
 
@@ -134,12 +134,12 @@ Make sure all of these input validations follow a consecutive flow, and end up i
 6. `Confirm booking`
 
 {% hint style="info" %}
-You will see, once you open `departure date` Input validation, that the go to is `confirm booking` but this does not show in the flow overview. That is because the parent of `confirm booking` is still destination. You can change this by opening `confirm booking` &gt; Setting tab &gt; change parent to `departure date`.
+You will see, once you open `departure date` Input validation, that the go to is `confirm booking` but this does not show in the flow overview. That is because the parent of `confirm booking` is still destination. You can change this by opening `confirm booking` > Setting tab > change parent to `departure date`.
 {% endhint %}
 
 This means the end result will look like the following:
 
-![](../.gitbook/assets/image%20%28435%29.png)
+![](<../.gitbook/assets/image (435).png>)
 
 If any of your bot dialogs are red - check if the bot dialog is complete with a text and saved under the correct variable. If you do not have a consecutive flow, please check if all parents are set correctly and the go-tos in the dialogs are saved correctly.
 
@@ -147,7 +147,7 @@ We now have a great train booking flow! Try it out a couple of times.
 
 In the emulator with the debugger tab  you can see if the variables are saved correctly. In this tab you can see all the variables stored in that specific session. If you scroll down you can see something like this:
 
-![](../.gitbook/assets/image%20%28456%29.png)
+![](<../.gitbook/assets/image (456).png>)
 
 This is a great start when you need to debug. Here you can see if you made a typo in a certain variable or if the user input is correctly stored in the variable.
 
@@ -165,7 +165,7 @@ Let's use buttons to request the user their preferred train class.
 * Add two buttons, choose the Go to option, "First class" and "Second class," both going to the `Confirm booking` bot dialog
 * In both buttons add a variable `class` and value `first` and `second`
 
-![](../.gitbook/assets/image%20%28463%29.png)
+![](<../.gitbook/assets/image (463).png>)
 
 * Select format type `Any`, enter `class` as variable, and go to `Confirm booking`
 
@@ -180,7 +180,7 @@ Depending on the user input, different actions will be executed:
 2. When the user is asked to give his preferred train class and he says 'first', this value will be added in the input variable 'class' in the user session.
 3. When the user clicks the button 'First class', the value 'first' will be added to the variable 'class' in the user session.
 
-This gives a lot of freedom to the user; no matter where they give their input \(in an input validation, expression, or button\) this is all saved in the correct variable.
+This gives a lot of freedom to the user; no matter where they give their input (in an input validation, expression, or button) this is all saved in the correct variable.
 
 Try it out in the emulator!
 
@@ -213,4 +213,3 @@ You  should now be familiar with:
 * Using the debugger tab to see how user input is stored 
 
 In the [next tutorial](https://docs.chatlayer.ai/tutorials/tutorial-conditional-flow-navigation), you will learn how you can steer the conversation in a certain direction based on known variables.
-

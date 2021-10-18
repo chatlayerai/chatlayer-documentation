@@ -6,7 +6,7 @@ Chatlayer supports many languages. From Dutch to English, Hindi and Afrikaans â€
 
 When you create a new bot, you need to choose a **primary language**. This is the language in which you will develop the bot. In other words, this language is the one that is shown in the 'Bot dialogs' module where you will configure all the messages, button labels, content, links and logic of the bot.
 
-When creating a new bot, you can also choose \(multiple\) **secondary languages**. To configure the copy for these languages, you can use the [Translations](translations.md) tool. 
+When creating a new bot, you can also choose (multiple) **secondary languages**. To configure the copy for these languages, you can use the [Translations](translations.md) tool. 
 
 The structure and logic of the bot is defined once and will then be reused for all languages. That means that you only have to build the bot once, and then simply can translate it. If you add functionalities or conversational flows, they will automatically be added to the secondary languages as well. This makes sure your bot remains in sync and offers a consistent experience in all languages.
 
@@ -21,7 +21,7 @@ Things to remember when managing NLP models in more than one language:
 * As language models are independent from each other, so you'll have to train and publish them separately. That means that if you make changes in two languages, you will have to train and publish both
 * The number of expressions that is displayed under 'Intents' is the number of expression for the active language
 
-![A bot that speaks both English and Arabic](../../.gitbook/assets/image%20%28656%29.png)
+![A bot that speaks both English and Arabic](<../../.gitbook/assets/image (656).png>)
 
 ## Talking to the user in the right language
 
@@ -33,12 +33,12 @@ Language detection can't be applied to text, so a chatbot cannot figure out what
 
 #### Language detection flow
 
-You can use the `Language detection` ****option to check if the user's language is supported by your bot. You can find this feature under `Bot Settings.`
+You can use the `Language detection`** **option to check if the user's language is supported by your bot. You can find this feature under `Bot Settings.`
 
 * If the user's language is supported, the user will be routed to the `Introduction` dialog
 * If the language is not supported by the bot, the user will be routed to a bot dialog of your choosing
 
-![](../../.gitbook/assets/image%20%28654%29.png)
+![](<../../.gitbook/assets/image (654).png>)
 
 {% hint style="warning" %}
 Whenever the user types an expression in a language other than the `preferredLanguage` activated, the bot will not automatically switch to that language. If the expression is in a language that the bot knows, the expression will be processed and the bot will answer in the original `preferredLanguage`.
@@ -47,11 +47,11 @@ Whenever the user types an expression in a language other than the `preferredLan
 * Let's create an input validation dialog that allows the user to select their preferred language. You can name it 'Choose language'
 * In the `Choose language` dialog, ask the user in what language they want to continue
 * Make sure to save this input as a variable with the name `preferredLanguage` 
-* If you use buttons that the user can click to select a language, please make sure they also contain the `preferredLanguage` variable and a two-letter language code \(en, nl, fr, de, ...\) for the value
+* If you use buttons that the user can click to select a language, please make sure they also contain the `preferredLanguage` variable and a two-letter language code (en, nl, fr, de, ...) for the value
 
 Our dialog now looks like this:
 
-![Click on the image to enlarge it](../../.gitbook/assets/image%20%28652%29.png)
+![Click on the image to enlarge it](<../../.gitbook/assets/image (652).png>)
 
 #### Web widget
 
@@ -62,10 +62,9 @@ In the web widget you can trigger a specific bot language based on the language 
 When using a voicebot that talks to user, for example, on the phone, the bot will greet the user in their default language. However, when the user starts talking for the first time, the user's preferred language is detected based on their first expression. The bot will automatically switch to that language and continue the entire conversation in the detected language.
 
 {% hint style="info" %}
-Language recognition is currently only available if the Google Speech-To-Text \(STT\) voice is used for all languages supported by the bot. When you mix voices, the language recognition does not work.
+Language recognition is currently only available if the Google Speech-To-Text (STT) voice is used for all languages supported by the bot. When you mix voices, the language recognition does not work.
 {% endhint %}
 
 {% hint style="info" %}
-Language recognition only works for voice. When it comes to chatbots \(aka text\), the bot will detect the user's language based on the channel's parameters. For the web widget, the bot will use the language that was set in the SDK. For FB messenger, the bot uses the language value it received from the FB user API.
+Language recognition only works for voice. When it comes to chatbots (aka text), the bot will detect the user's language based on the channel's parameters. For the web widget, the bot will use the language that was set in the SDK. For FB messenger, the bot uses the language value it received from the FB user API.
 {% endhint %}
-

@@ -8,7 +8,7 @@ Make your users smile. Provide excuses, lighthearted error messages and response
 
 One of the best things you can do, is validate people and give them unconditional positive regard. This will, in turn, foster a very strong connection and relationship between your user and bot.
 
-We support rich media ****like **gifs, videos, audio fragments** which can provide a nice break from the usual text messages. For example: maybe you can couple an intent that detects profanity with a gif of a shocked person?
+We support rich media** **like** gifs, videos, audio fragments** which can provide a nice break from the usual text messages. For example: maybe you can couple an intent that detects profanity with a gif of a shocked person?
 
 User: Ugh, you suck.
 
@@ -22,9 +22,9 @@ The ideal bot-onboarding takes your user on a journey that naturally teaches the
 
 Your onboarding should be a guided experience for your users in which they learn how to use your bot, by, well ... using it. The experience should be inviting, make your users curious, and a gamified process – like the user is playing a game, with rewards, hints and lots of feedback. The experience should be easy and joyful.
 
-An easy way to set the right expectations for the user is to create a powerful introduction. In the introduction, set the expectations by explaining what the user can do with this bot! This way you guide the user in the correct way \(guideline number 3\) and set the expectations what the bot can do for the user.
+An easy way to set the right expectations for the user is to create a powerful introduction. In the introduction, set the expectations by explaining what the user can do with this bot! This way you guide the user in the correct way (guideline number 3) and set the expectations what the bot can do for the user.
 
-![](../.gitbook/assets/image%20%28663%29.png)
+![](<../.gitbook/assets/image (663).png>)
 
 ## 3 – Guide the user
 
@@ -36,12 +36,12 @@ You can use buttons with multiple options to eliminate possible misunderstanding
 
 ## 4 – Train a good NLP
 
-Chatbots are just a visual layer, the front of the technology. The Natural Language Processing \(NLP\) and backend integration provide the real intelligence.
+Chatbots are just a visual layer, the front of the technology. The Natural Language Processing (NLP) and backend integration provide the real intelligence.
 
 Use context and intent combinations to provide deep flows and to enable reuse of intents in different flows. Train intents to recognize entities and extract the information instead of blindly accepting input. Consider the following example:
 
 * BOT: What is your name?
-* USER X: **Carl**
+* USER X:** Carl**
 * BOT: Nice to meet you, **Carl!**
 * BOT: What is your name?
 * USER Y: **my name is Carl.**
@@ -74,4 +74,3 @@ The Nielsen Normal Group published a [great article](https://www.nngroup.com/art
 * Save information you received in one task for a next one.
 * Program some flexibility into the bot: infer context and allow people to jump forward and backward in the linear flow.
 * Be honest about not understanding something. Offer an escape hatch in the form of a real human, a phone number, or a link to a different help-channel.
-

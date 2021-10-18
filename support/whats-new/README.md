@@ -8,6 +8,7 @@ description: New features and functionalities in the platform
 
 * You can now start a conversation initiated by the user, [skipping the introduction message](./#undefined)
 * On the home page, you can now find the menu 'Billing and usage' to track your usage and plans.
+* We now support offloading via Sinch Contact & Contact Pro
 
 ## August 2021
 

@@ -1,6 +1,6 @@
-# Natural Language Processing \(NLP\)
+# Natural Language Processing (NLP)
 
-The Natural Language Processing \(NLP\) engine is the underlying code that enables your bot to understand the natural language used by the user.
+The Natural Language Processing (NLP) engine is the underlying code that enables your bot to understand the natural language used by the user.
 
 Understanding natural language isn't easy: it takes us humans about 12 years and hundreds of examples to understand the 20,000 most common words and computers are not so different. To train the NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in. Our NLP engine will take care of spelling mistakes, synonyms, slang, varying word order, etc ...
 
@@ -56,18 +56,18 @@ Entities are important pieces of information which can be found in an expression
 
 Find out more about entities by clicking the link below:
 
-{% page-ref page="synonym-entities/" %}
+{% content-ref url="synonym-entities/" %}
+[synonym-entities](synonym-entities/)
+{% endcontent-ref %}
 
 ## Updating the NLP
 
-On every screen in our platform, you will find an 'update NLP' button at the top right of the screen. When you see a spinner icon instead of a brain symbol, your NLP model is \(still\) training.
+On every screen in our platform, you will find an 'update NLP' button at the top right of the screen. When you see a spinner icon instead of a brain symbol, your NLP model is (still) training.
 
-![](../../.gitbook/assets/image%20%28162%29.png)
+![](<../../.gitbook/assets/image (162).png>)
 
 {% hint style="info" %}
 Do you want to learn how you can improve your NLP model? You can find tips and tricks in the article below.
-
-{% page-ref page="../../tips-and-best-practices/how-to-nlp.md" %}
 {% endhint %}
 
 ## Intent pack
@@ -76,9 +76,14 @@ We've created a small intent pack in the most frequently used languages allowing
 
 You can add these pre-built intents directly in the platform, or by downloading them below:
 
-{% file src="../../.gitbook/assets/default-intents-chit-chat-en.csv" caption="Basic intent pack EN" %}
+{% file src="../../.gitbook/assets/default-intents-chit-chat-en.csv" %}
+Basic intent pack EN
+{% endfile %}
 
-{% file src="../../.gitbook/assets/default-intents-chit-chat-fr.csv" caption="Basic intent pack FR" %}
+{% file src="../../.gitbook/assets/default-intents-chit-chat-fr.csv" %}
+Basic intent pack FR
+{% endfile %}
 
-{% file src="../../.gitbook/assets/default-intents-chit-chat-nl.csv" caption="Basic intent pack NL" %}
-
+{% file src="../../.gitbook/assets/default-intents-chit-chat-nl.csv" %}
+Basic intent pack NL
+{% endfile %}
