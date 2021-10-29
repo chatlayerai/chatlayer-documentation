@@ -12,6 +12,10 @@ The offloading webhook allows you to integrate any human handover live chat plat
 * Receive outgoing bot messages
 * Act upon offloading requests from a user
 
+{% hint style="warning" %}
+Offloading Webhook is for offloading users from bot to human agent. The [Webhook channel](https://docs.chatlayer.ai/channels/webhook-api) is a custom integration channel, make sure  you don't mix up these two!
+{% endhint %}
+
 ## Configuration
 
 To configure your Chatlayer Offloading Webhook, head over to **Settings > Offloading **and create a **Webhook** integration.
@@ -212,7 +216,7 @@ Use a "Send to offload provider" bot action dialog to trigger an **offload **cal
 
 ### Sending messages as an agent
 
-Use the [conversation actions API ](https://api.chatlayer.ai/v1/docs/#operation/executeConversationAction)to send messages as an agent. 
+Use the [conversation actions API ](https://api.chatlayer.ai/v1/docs/#operation/executeConversationAction)to send messages as an agent.&#x20;
 
 
 

@@ -4,13 +4,13 @@
 The NLP Dashboard & NLP Improve is only available on the Enterprise plan or higher. Want to upgrade? [Get in touch](../../support/get-in-touch.md).
 {% endhint %}
 
-The NLP dashboard \(and the tab 'improve'\) give you an overview of the quality of your NLP model. It automatically detects any overlap between intents, which is especially useful if you are building a larger NLP model, or if multiple team members work on it.
+The NLP dashboard (and the tab 'improve') give you an overview of the quality of your NLP model. It automatically detects any overlap between intents, which is especially useful if you are building a larger NLP model, or if multiple team members work on it.
 
 ## **NLP Dashboard**
 
 The NLP dashboard lets you know how well you are doing for each language. Based on how you have trained your NLP, it gives you an overall model score, ranging from 0% to 100%. The overall model score is calculated based on the amount of intents with too few expressions and the amount of intents with misclassified expressions.
 
-![](../../.gitbook/assets/image%20%28150%29.png)
+![](<../../.gitbook/assets/image (150).png>)
 
 * On the left side of the dashboard you will find a general summary of your model
 * Below you can see your training history which shows how you're doing so far and whether or not you are improving over time
@@ -28,15 +28,14 @@ To guarantee the best possible outcome for your bot, we do an advanced analysis 
 
 In the intent list on the right side of the NLP Dashboard, you can click on the wrench icon to improve your set of expressions and thus to better differentiate between intents.
 
-## NLP Improve
+NLP Improve
+
 
 The 'NLP Improve' module helps you create better expressions for where the system has detected issues. At the top of the dashboard, you can select the language and the intent you wish to improve. Quick tip: the list is automatically sorted to show you the intents with the most known issues.
 
-![](../../.gitbook/assets/image%20%2811%29.png)
+![](<../../.gitbook/assets/image (11).png>)
 
 Next you can select the expression you wish to improve. Once you have selected this expression, you will see the confidence score on the right for the top two or three intents. As you may notice, the NLP model is more confident that your expression belongs to another intent than to this intent.
 
-![](../../.gitbook/assets/image%20%283%29.png)
-
-
+![](<../../.gitbook/assets/image (3).png>)
 

@@ -72,6 +72,7 @@
   * [Sparkcentral by Hootsuite](integrations/human-offloading-live-chat/sparkcentral-beta.md)
   * [Zendesk Chat](integrations/human-offloading-live-chat/zendesk-chat.md)
   * [Zendesk Support Ticket](integrations/human-offloading-live-chat/creating-a-zendesk-support-ticket.md)
+* [Integrations 101](integrations/integrations-101.md)
 * [Message objects for APIs](integrations/chat-message-structure-for-apis.md)
 
 ## Channels
@@ -87,7 +88,7 @@
 * [Web chat widget](channels/webwidget/README.md)
   * [Customize web widget](channels/webwidget/customize-web-widget.md)
   * [Live example web widget](channels/webwidget/live-example-web-widget.md)
-* [Webhook Channel](channels/webhook-api.md)
+* [Webhook channel](channels/webhook-api.md)
 * [WhatsApp Business API](channels/whatsapp.md)
 * [Workplace from Facebook](channels/workplace-from-facebook.md)
 

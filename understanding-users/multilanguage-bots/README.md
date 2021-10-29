@@ -6,7 +6,7 @@ Chatlayer supports many languages. From Dutch to English, Hindi and Afrikaans â€
 
 When you create a new bot, you need to choose a **primary language**. This is the language in which you will develop the bot. In other words, this language is the one that is shown in the 'Bot dialogs' module where you will configure all the messages, button labels, content, links and logic of the bot.
 
-When creating a new bot, you can also choose (multiple) **secondary languages**. To configure the copy for these languages, you can use the [Translations](translations.md) tool. 
+When creating a new bot, you can also choose (multiple) **secondary languages**. To configure the copy for these languages, you can use the [Translations](translations.md) tool.&#x20;
 
 The structure and logic of the bot is defined once and will then be reused for all languages. That means that you only have to build the bot once, and then simply can translate it. If you add functionalities or conversational flows, they will automatically be added to the secondary languages as well. This makes sure your bot remains in sync and offers a consistent experience in all languages.
 
@@ -46,12 +46,12 @@ Whenever the user types an expression in a language other than the `preferredLan
 
 * Let's create an input validation dialog that allows the user to select their preferred language. You can name it 'Choose language'
 * In the `Choose language` dialog, ask the user in what language they want to continue
-* Make sure to save this input as a variable with the name `preferredLanguage` 
+* Make sure to save this input as a variable with the name `preferredLanguage`&#x20;
 * If you use buttons that the user can click to select a language, please make sure they also contain the `preferredLanguage` variable and a two-letter language code (en, nl, fr, de, ...) for the value
 
 Our dialog now looks like this:
 
-![Click on the image to enlarge it](<../../.gitbook/assets/image (652).png>)
+![Click on the image to enlarge it](<../../.gitbook/assets/image (652) (1).png>)
 
 #### Web widget
 

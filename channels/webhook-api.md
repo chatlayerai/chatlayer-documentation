@@ -1,4 +1,24 @@
-# Webhook Channel
+---
+description: >-
+  The Webhook channel provides a way to build a custom integration with
+  Chatlayer that acts as a channel.
+---
+
+# Webhook channel
+
+With the Webhook channel you can enrich the information sent via certain Channels. For example, instead of using the 'regular' Facebook Messenger or Whatsapp channel, you can use Webhook as a channel and send your messages via Webhook to Messenger or Whatsapp.
+
+![With a regular channel integration, the channel is directly connected to Chatlayer](<../.gitbook/assets/image (652).png>)
+
+
+
+![By using the Webhook channel, the channel of choice is indirectly connected with Chatlayer](<../.gitbook/assets/image (653).png>)
+
+The two images above show the difference between using the channel of your choice directly, or if you would like to use Webhook to enhance the channel possibilities.&#x20;
+
+{% hint style="warning" %}
+Don't confuse the Webhook channel, a custom integration channel, with [Webhook offloading](https://docs.chatlayer.ai/integrations/human-offloading-live-chat/offloading-webhook), designed for offloading to human agents.
+{% endhint %}
 
 ## Sending User Messages & Receiving Bot messages
 
