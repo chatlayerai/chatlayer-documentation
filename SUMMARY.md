@@ -2,7 +2,7 @@
 
 * [Welcome to Chatlayer 👋](README.md)
 
-## Getting started <a id="tutorials"></a>
+## Getting started <a href="tutorials" id="tutorials"></a>
 
 * [Planning your bot](tutorials/getting-started.md)
 * [Creating a new bot](tutorials/tutorial-getting-started.md)
@@ -17,7 +17,7 @@
 * [Expression generator](understanding-users/expression-generator.md)
 * [Multilingual bots](understanding-users/multilanguage-bots/README.md)
   * [Translations](understanding-users/multilanguage-bots/translations.md)
-* [Natural Language Processing \(NLP\)](understanding-users/natural-language-processing-nlp/README.md)
+* [Natural Language Processing (NLP)](understanding-users/natural-language-processing-nlp/README.md)
   * [NLP threshold](understanding-users/natural-language-processing-nlp/settings.md)
   * [NLP import & export](understanding-users/natural-language-processing-nlp/nlp-import-and-export.md)
   * [Training your bot with real user input](understanding-users/natural-language-processing-nlp/tutorial-train-your-bot-based-on-actual-user-messages.md)
@@ -26,7 +26,7 @@
     * [Detecting information with match entities](understanding-users/natural-language-processing-nlp/synonym-entities/how-to-use-match-entities.md)
   * [Supported languages](understanding-users/natural-language-processing-nlp/supported-languages.md)
 
-## Bot management <a id="bot-answers"></a>
+## Bot management <a href="bot-answers" id="bot-answers"></a>
 
 * [Analytics](bot-answers/analytics/README.md)
   * [Definitions](bot-answers/analytics/definitions.md)
@@ -50,19 +50,19 @@
 ## Organization Management
 
 * [Access Control](organization-management/access-control/README.md)
-  * [Single Sign-On \(SAML SSO\)](organization-management/access-control/single-sign-on-sso-saml.md)
+  * [Single Sign-On (SAML SSO)](organization-management/access-control/single-sign-on-sso-saml.md)
 
 ## Integrations
 
 * [API integration](integrations/custom-back-end-integrations/README.md)
   * [Advanced API integrations](integrations/custom-back-end-integrations/advanced-api-integrations.md)
 * [Code Editor](integrations/code-action/README.md)
-  * [Sending data to Airtable \(POST\)](integrations/code-action/airtable.md)
-  * [Retrieving data from Airtable \(GET\)](integrations/code-action/retrieving-data-from-airtable-get.md)
+  * [Sending data to Airtable (POST)](integrations/code-action/airtable.md)
+  * [Retrieving data from Airtable (GET)](integrations/code-action/retrieving-data-from-airtable-get.md)
   * [Making SOAP requests](integrations/code-action/making-soap-requests.md)
 * [Human handover & live chat](integrations/human-offloading-live-chat/README.md)
-  * [Sinch Contact & Contact Pro](integrations/human-offloading-live-chat/sinch-contact.md)
-  * [\#Interact](integrations/human-offloading-live-chat/interact.md)
+  * [Sinch Contact Pro](integrations/human-offloading-live-chat/sinch-contact.md)
+  * [#Interact](integrations/human-offloading-live-chat/interact.md)
   * [Genesys Cloud](integrations/human-offloading-live-chat/genesys-purecloud.md)
   * [Help Scout](integrations/human-offloading-live-chat/helpscout.md)
   * [Intercom](integrations/human-offloading-live-chat/intercom-integration.md)
@@ -115,7 +115,7 @@
 * [Voice design](tips-and-best-practices/voice-design/README.md)
   * [From chat to voice](tips-and-best-practices/voice-design/from-chat-to-voice.md)
 
-## Tutorials <a id="tutorials-1"></a>
+## Tutorials <a href="tutorials-1" id="tutorials-1"></a>
 
 * [Create a web widget demo page](tutorials-1/web-widget-demo-page.md)
 * [Gathering user feedback](tutorials-1/gathering-user-feedback.md)
@@ -127,11 +127,10 @@
 ## Support
 
 * [Billing & subscription](support/billing-and-subscription.md)
-* [Frequently Asked Questions \(FAQ\)](support/frequently-asked-questions.md)
+* [Frequently Asked Questions (FAQ)](support/frequently-asked-questions.md)
 * [Get in touch](support/get-in-touch.md)
 * [Platform Glossary](support/glossary.md)
 * [SaaS Regions & IP Ranges](support/saas-regions-and-ip-ranges.md)
-* [Status](https://status.chatlayer.ai/)
+* [Status](https://status.chatlayer.ai)
 * [What's new](support/whats-new/README.md)
   * [New documentation](support/whats-new/documentation.md)
-
