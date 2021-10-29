@@ -113,7 +113,7 @@ The Webhook API works as an event triggering system where, when the processing o
 
 #### Which language do you support in Chatlayer?
 
-Our API are built in Nodejs and in the Chatlayer platform we use JavaScript
+Our code action bot dialogs allow you to execute a JavaScript script during the bot flow
 
 #### Do you have a swagger file?
 
