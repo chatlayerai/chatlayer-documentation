@@ -108,5 +108,5 @@ After being transferred to an agent, open the right queue and take over the conv
 
 ![](<../../.gitbook/assets/image (581).png>)
 
-And there you go, your Sinch Contact offloading is all set up!
+And there you go, your Sinch Contact Pro offloading is all set up!
 
