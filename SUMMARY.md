@@ -73,8 +73,6 @@
   * [Zendesk Chat](integrations/human-offloading-live-chat/zendesk-chat.md)
   * [Zendesk Support Ticket](integrations/human-offloading-live-chat/creating-a-zendesk-support-ticket.md)
 * [Integrations 101](integrations/integrations-101.md)
-* [App integrations](integrations/app-integrations/README.md)
-  * [Airtable](integrations/app-integrations/airtable.md)
 * [Message objects for APIs](integrations/chat-message-structure-for-apis.md)
 
 ## Channels
