@@ -2,7 +2,7 @@
 description: >-
   Airtable is a cloud collaboration service. It’s a spreadsheet-database hybrid:
   has the capabilities of a database applied to a spreadsheet. With this
-  integration you can search, get and
+  integration you can search, get and update data fr
 ---
 
 # Airtable App integration
