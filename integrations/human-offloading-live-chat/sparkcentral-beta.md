@@ -20,7 +20,7 @@ The first step to integrate Sparkcentral with Chatlayer.ai is to retrieve API Cr
 * Choose your region: US or EU
 * Enter your clientId and clientSecret in the form and press save.
 
-![](<../../.gitbook/assets/image (676).png>)
+![](<../../.gitbook/assets/image (676) (1).png>)
 
 * After saving, the webhook URL for your newly created channel is visible. Copy this Webhook URL and go back to sparkcentral.
 * Return to your Sparkcentral dashboard and open the Settings page. Open the Virtual Agents tab from the sidebar on the settings page and click the Add Custom Virtual Agent button in the top right corner. This will open a popup allowing you to configure some details for the Custom Virtual Agent.&#x20;

@@ -41,7 +41,7 @@ Match entities are a type of entity that is detected when the user states a word
 
 Create a list of possible values for an entity. If a user mentions one of these values during their conversation with the bot, that value will automatically be saved as an entity.
 
-For example: you have defined **@product** as a match entity, and have created three possible values: 
+For example: you have defined **@product** as a match entity, and have created three possible values:&#x20;
 
 * Basic
 * Intermediate
@@ -57,7 +57,7 @@ Match entities are case insensitive, so there's no need to add a capitalized syn
 
 #### Synonyms
 
-For each value, you can add a synonym that will be detected as the original value. Synonyms allow you to add alternatives to entities that are assigned to the same value. 
+For each value, you can add a synonym that will be detected as the original value. Synonyms allow you to add alternatives to entities that are assigned to the same value.&#x20;
 
 For example:
 
@@ -73,7 +73,7 @@ The meaning of the two expressions above is exactly the same, but you want to co
 
 Use a pattern to extract data from a user expression if it matches a particular format. Patterns are formed as regular expressions (like in Python). You can learn more about how to create regular expressions [here](https://regex101.com).
 
-For example: you have defined **@customer_ID** as a match entity, and have provided the following regex pattern: `[a-z]{5}[0-9]{2}`. This means that when a users says "My customer ID is terwf33" – which consists of 5 letters and 2 numbers – it is saved as the match entity **@customer_ID** with the value "terwf33".
+For example: you have defined **@customer\_ID** as a match entity, and have provided the following regex pattern: `[a-z]{5}[0-9]{2}`. This means that when a users says "My customer ID is terwf33" – which consists of 5 letters and 2 numbers – it is saved as the match entity **@customer\_ID** with the value "terwf33".
 
 ![Match entities on the platform](<../../../.gitbook/assets/image (610).png>)
 
@@ -99,7 +99,7 @@ Imagine you're a fruit seller who sells apples, pears, bananas and pineapples. Y
 * How much does an apple cost?
 * What is the price of the apples?
 
-Of course, these expressions could be asked for not just apples, but also pears, bananas, and pineapples. Does that mean you have to copy each expression and replace the fruit? No, you can just use contextual entities! 
+Of course, these expressions could be asked for not just apples, but also pears, bananas, and pineapples. Does that mean you have to copy each expression and replace the fruit? No, you can just use contextual entities!&#x20;
 
 Create a contextual entity called 'fruit' and add the following values to it:
 
@@ -116,7 +116,7 @@ Now you can simply create an expression with the contextual entity in it:
 * How much does an **@fruit** cost?
 * What is the price of the **@fruit**?
 
-Now your bot will understand each expression, even if the fruit changes! 
+Now your bot will understand each expression, even if the fruit changes!&#x20;
 
 {% hint style="info" %}
 When adding contextual entity variables, there's no need to add capitalised and non-capitalised words. All text is decapitalized by the NLP before any recognition happens, so 'api' won't be recognised differently from 'API' ​
@@ -135,7 +135,7 @@ Fuzzy matching allows you to recognise a slight variation of an entity value (or
 ![](<../../../.gitbook/assets/image (607).png>)
 
 {% hint style="info" %}
-Fuzzy matching is quite strict. Less than 20% of the characters are allowed to be different in order to link it to another entity. This is to avoid that the value is linked to another entity which also has overlap. 
+Fuzzy matching is quite strict. Less than 20% of the characters are allowed to be different in order to link it to another entity. This is to avoid that the value is linked to another entity which also has overlap.&#x20;
 {% endhint %}
 
 ## 3 – System entities
@@ -168,35 +168,35 @@ Chatlayer.ai supports the following system entity types:
 
 A Composite Entity is a combination of two or more different, yet related entities. This type of entity allows you to combine two separate entities into a single one.
 
-Let's look at an example. When a user tells the bot "Two fries please", the bot will understand this as the predefined composite entity **@order**_, _which consists of two separate entities: 
+Let's look at an example. When a user tells the bot "Two fries please", the bot will understand this as the predefined composite entity **@order**_, _which consists of two separate entities:&#x20;
 
 * **@sys.number: **2, a system entity
-* and **@foodItem**: fries, a match entity which is predefined 
+* and **@foodItem**: fries, a match entity which is predefined&#x20;
 
-![Composite entities on the Chatlayer platform](<../../../.gitbook/assets/image (605).png>)
+![Composite entities on the Chatlayer platform](<../../../.gitbook/assets/image (605) (1).png>)
 
 ### Using a go to with composite entities
 
 Here's an example use case to illustrate how to use a go to dialog for composite entities:
 
-* You created a composite entity named @car_info, made up of the following two entities: @car_brand and @sys.number
-* @car_brand is a match entity that checks if the user's car brand is part of a predefined list of car brands. @sys.number captures the year the user got their car in
-* Next, you created an input validation to ask the user for their car brand (@car_brand) and the year they got their car in (@sys.number)
+* You created a composite entity named @car\_info, made up of the following two entities: @car\_brand and @sys.number
+* @car\_brand is a match entity that checks if the user's car brand is part of a predefined list of car brands. @sys.number captures the year the user got their car in
+* Next, you created an input validation to ask the user for their car brand (@car\_brand) and the year they got their car in (@sys.number)
 
 The input validation dialog looks like this:
 
-![An input validation capturing a composite entity](<../../../.gitbook/assets/image (606).png>)
+![An input validation capturing a composite entity](<../../../.gitbook/assets/image (606) (1).png>)
 
-* Next, you want to use a go to dialog to check if the car is a green car. 
+* Next, you want to use a go to dialog to check if the car is a green car.&#x20;
   * When the year is equal to or more than 2016, the car is a green car
   * When the year is less than 2016, the car is not a green car
-* To set this up, you only need one of the two entities that make up the composite entity. The @car_brand doesn't matter in this case, you only want @sys.number
+* To set this up, you only need one of the two entities that make up the composite entity. The @car\_brand doesn't matter in this case, you only want @sys.number
 * If you would enter @sys.number as a variable, the set up wouldn't work because it's a predefined platform entity. You want the @sys.number that was part of the composite entity
-* To grab this entity, you need to use: car_info.sys.number
+* To grab this entity, you need to use: car\_info.sys.number
 
 The go to dialog looks like this:
 
-![If the car was built in or after 2016, the user gets a discount](<../../../.gitbook/assets/image (604).png>)
+![If the car was built in or after 2016, the user gets a discount](<../../../.gitbook/assets/image (604) (1).png>)
 
 ## The difference between entities, variables, and values
 
