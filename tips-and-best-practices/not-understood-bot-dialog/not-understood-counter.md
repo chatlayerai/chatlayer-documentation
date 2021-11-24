@@ -6,72 +6,68 @@ description: >-
 
 # Not understood counter
 
-Instead of displaying the same `not understood` message over and over to the user, you can create a counter to show different kinds of messages. For example, when the bot doesn't understand the user for the two first times, it displays the following:
+Instead of always showing the same `not understood` message, you can create a counter to show different messages, depending on how often the not understood dialog is triggered. For example, when the bot doesn't understand the user for the first time, it will display the first not understood message:
 
-"Sorry, I didn't get that. Can you please rephrase?" 
+"Sorry, I didn't get that. Can you please rephrase?"&#x20;
 
-Finally, if the bot can't understand again a third time, it shows the user a different message, including a way to get help:
+After the user has sent another message and the bot didn't understand a second time, it will display the second not understood message, offering an external way out:
 
-"Sorry, I can't understand. Perhaps you'd like to talk to my colleague instead?"
+"Sorry, I still don't understand. Perhaps you'd like to talk to my colleague instead?"
 
-Or 
+Or "Sorry, I still don't understand. Perhaps you'd like to email us instead?"
 
-"Sorry, I can't understand. Perhaps you'd like to email us instead?"
-
-You can create this message structure by introducing a counter. Learn how in this article.
+This counter set-up creates a better user experience and makes the bot appear much smarter. Ready to get started? Let's go! 👏
 
 ## 1. Change the dialog type
 
-Click on the 'not understood' bot dialog and change the type to 'Go To' 
+Step 1: Click on the 'not understood' Bot Message dialog and in the list under 'Type', select 'Go To'&#x20;
 
 ![](<../../.gitbook/assets/image (668).png>)
 
-## 2. Set the conditions in the Go To-dialog
+## 2. Set the first condition in the Go To dialog
 
-Now we are going to set the conditions for the Go To-dialog.
+For the next step, we are going to set the counter conditions so the bot knows how often this dialog was triggered already.
 
-For the first condition, you want to check if the previous bot dialog is different from the 'not understood message' dialog. To do so, refer to the previous bit dialog by using the variable `internal.previousDialogstate.id` . Then select `not equals` in the drop down menu in the middle. For the value on the right, you can leave this field empty for now and fill it in later. 
+For the first condition, we want to check if the 'not understood message' dialog was triggered already once. To do so, copy and paste the variable _**not\_understood\_counter**_ in the left field. Click on 'create' to create the variable.&#x20;
 
-Under `Go to`, create a new `bot message` and name it 'not understood message'. A new dialog will automatically be made once you hit enter.
+Then in the middle field, select `equals` in the drop down menu.&#x20;
 
-![](<../../.gitbook/assets/image (475).png>)
+In the field on the right, we'll put **1** – This tells the bot that the first not understood dialog was displayed already and that it's time to display the second not understood dialog.
 
-Make sure you add the variable `not_understood_counter` here to make sure that the counter starts when the bot does not understand for the first time:
+![](<../../.gitbook/assets/image (674).png>)
 
-![](<../../.gitbook/assets/image (473).png>)
+## 3. Set the final condition in the Go To dialog
 
-Next, click on the blue `+ sign` to create a second condition. You now want to check if the `not understood` was already shown 2 times in a row. If so, you want to show a different bot dialog, called 'Not understood 3 times in a row'.
+For the second and final condition, we're creating the actual counter.
 
-![](<../../.gitbook/assets/image (471).png>)
+Under Else, type _**Not understood x 1**_** **and click 'create' to create the variable.&#x20;
 
-The final condition (under `Else`) is where you need to add an [increment ](https://docs.chatlayer.ai/bot-answers/settings/secure-variables-gdpr#incrementing-variable-counter)for the `not_understood_counter` variable. This way, the bot will automatically increase the counter with one.
+Next, click `+ Add Variable` to add a variable and value. In the middle field, add the variable _**not\_understood\_counter**_. In the field on the right, add the [increment value](https://docs.chatlayer.ai/bot-answers/settings/secure-variables-gdpr#incrementing-variable-counter)  _**{not\_understood\_counter|increment}**_
 
-Add the following text in the value field: `{not_understood_counter|increment}`
+![](<../../.gitbook/assets/image (673).png>)
 
-![](<../../.gitbook/assets/image (474).png>)
+Save your set-up by clicking the `Save` button on the bottom right.
+
+The entire Go To dialog should look like this:
+
+![](<../../.gitbook/assets/image (675).png>)
 
 ## 4. Write the bot messages
 
-This is what you'll see after you have saved the `Go To` dialog:
+After saving your `Go To` dialog and closing it, the flow should look like this:
 
-![](<../../.gitbook/assets/image (476).png>)
+![](<../../.gitbook/assets/image (677).png>)
 
-Keep in mind: the dialog named `Not understood message` is the first message users will see when the bot doesn't understand. The dialog named `Not understood 3 times in a row` will be shown when the bot didn't understand for the 3rd time. 
+Now it's time to write the copy for both dialogs. Here's some inspiration for the first message that will be displayed – the 'Not understood x 1' dialog:
 
-Fill in text for both dialogs. Here's some inspiration:
+* Sorry, I didn't get that. Can you please rephrase?
+* Hmm, I can't understand. Can you use different words? Perhaps I'll get it then!
+* I didn't understand, please try once more
 
-`Not understood message`= "Sorry, I didn't get that. Can you please rephrase?" 
+For the second and final message, the 'Not understood x 2' dialog, you can write something like this:
 
-`Not understood 3 times in a row `= "Sorry, I can't understand. Perhaps you'd like to talk to my colleague instead?"
+* Sorry, I still can't understand. Perhaps you'd like to talk to my human colleague instead?
+* Sorry, I can't seem to understand. Would you like to call us instead?&#x20;
+* Sorry, I can't seem to understand. Perhaps it's better if you email us your question
 
-## 5. Fill in the bot id 
-
-Let's go back to the `Not understood message` bot dialog. Open this dialog and then copy the bot ID in your browser's URL field – it's the series of number that come after `/dialogstate/`:
-
-![](<../../.gitbook/assets/image (468).png>)
-
-Now go back to your `Go to` dialog that you just created and fill in the bot id in the field on the right:
-
-![](<../../.gitbook/assets/image (470).png>)
-
-And that's it, all done! You just created a user-friendly way of telling the user the bot didn't understand 👏
+That's it, all done! You just created a user-friendly way of telling the user the bot didn't understand 👏
