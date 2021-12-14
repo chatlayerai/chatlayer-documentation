@@ -42,7 +42,7 @@ Next we'll set up Single sign-on. Select the Single sign-on menu entry and selec
 
 ![](<../../.gitbook/assets/image (532).png>)
 
-**1. Basic SAML Configuration **\
+**1. Basic SAML Configuration** \
 Edit the configuration and fill in the following fields:
 
 * **Identifier (Entity ID):** `https://auth.chatlayer.ai/auth/realms/Chatlayer`
@@ -51,11 +51,11 @@ Edit the configuration and fill in the following fields:
 
 ![](<../../.gitbook/assets/image (550).png>)
 
-**2. User Attributes & Claims **- Default values
+**2. User Attributes & Claims** - Default values
 
 **3. SAML Signing Certificate** - Download the Base64 certificate, open it with a text editor and copy the value into the "Public Certificate" field in the SAML SSO configuration screen in our platform.
 
-**4. Set up Chatlayer **
+**4. Set up Chatlayer**&#x20;
 
 * **Login URL:** Copy this value into the "Sign on URL" field in our platform.
 * **Azure AD Identifie**r: Copy this value into the "Issuer" field in our platform.\
@@ -65,9 +65,9 @@ Edit the configuration and fill in the following fields:
 
 ![](<../../.gitbook/assets/image (534).png>)
 
-You may now save the changes in both Azure AD and Chatlayer. 
+You may now save the changes in both Azure AD and Chatlayer.&#x20;
 
 It is now possible for members of your AD organization to login to the Chatlayer application.
 
- We do not currently offer role-mapping of Azure AD roles to Chatlayer roles. You can find out more about roles and access control on our [user management page](https://docs.chatlayer.ai/bot-answers/user-management).
+&#x20;We do not currently offer role-mapping of Azure AD roles to Chatlayer roles. You can find out more about roles and access control on our [user management page](https://docs.chatlayer.ai/bot-answers/user-management).
 

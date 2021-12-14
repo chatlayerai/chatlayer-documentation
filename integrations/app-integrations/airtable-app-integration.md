@@ -131,7 +131,7 @@ B.7.2 Change Account Name: will open up a pop-up so you can rename your integrat
 
 ![](<../../.gitbook/assets/image (680).png>)
 
-B.7.3 Remove: **Attention!** When clicking this button, your App integration will **immediately **be removed
+B.7.3 Remove: **Attention!** When clicking this button, your App integration will **immediately** be removed
 
 ![](<../../.gitbook/assets/image (673) (1).png>)
 

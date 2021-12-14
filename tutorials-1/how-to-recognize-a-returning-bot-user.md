@@ -1,6 +1,6 @@
 # Recognizing a returning user
 
-A good bot makes users feel as if they're talking to another human. So when a user already talked to the bot, and your bot starts the next conversation as if it never met that same user before, the conversation feels a lot less natural and the bot appears dumb for not remembering this user. 
+A good bot makes users feel as if they're talking to another human. So when a user already talked to the bot, and your bot starts the next conversation as if it never met that same user before, the conversation feels a lot less natural and the bot appears dumb for not remembering this user.&#x20;
 
 That is why our platform allows you to recognise and greet returning users differently, by using saved variables from previous sessions.
 
@@ -12,11 +12,11 @@ Facebook Messenger saves them indefinitely, but by default, the Web Widget only 
 
 ## Step 1: How to convert your introduction into a go-to dialog
 
-By now you should know that every conversation starts with the introduction_ _dialog:
+By now you should know that every conversation starts with the introduction __ dialog:
 
 ![The introduction dialog kicks off every conversation](<../.gitbook/assets/image (523).png>)
 
-By default, the introduction dialog is a `Bot message `where you can greet the user and start the conversation:
+By default, the introduction dialog is a `Bot message` where you can greet the user and start the conversation:
 
 ![](../.gitbook/assets/schermafbeelding-2019-01-24-om-10.56.17-kopie.png)
 
@@ -35,9 +35,9 @@ By using the variable `known_user_flag`, the bot can check whether it has talked
 To do so, you'll need to create an 'if-statement':
 
 * If `known_user_flag` equals `1`, the bot knows that there has been a conversation with this user before, otherwise this variable would be empty. Now the user can be redirected to an introduction message for returning users.
-* Else if `known_user_flag` does not exist, the user is a new user and should be redirected to an introduction for new users. At the same time, you should set the `known_user_flag` to `1` because now, the user is not new anymore. 
+* Else if `known_user_flag` does not exist, the user is a new user and should be redirected to an introduction for new users. At the same time, you should set the `known_user_flag` to `1` because now, the user is not new anymore.&#x20;
 
-![Setting the 'known_user_flag' variables to recognise a returning user](<../.gitbook/assets/image (525).png>)
+![Setting the 'known\_user\_flag' variables to recognise a returning user](<../.gitbook/assets/image (525).png>)
 
 ![Creating 2 different introductions: one for new, and one for returning users](../.gitbook/assets/schermafbeelding-2019-01-24-om-11.39.38.png)
 

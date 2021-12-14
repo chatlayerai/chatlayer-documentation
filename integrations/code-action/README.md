@@ -10,7 +10,7 @@ The code action allows developers to quickly build custom logic on top of their 
 
 ### Getting Started
 
-To get started with the Code Action, create a new 'Action Dialogstate' and select the **Code **plugin as an action.
+To get started with the Code Action, create a new 'Action Dialogstate' and select the **Code** plugin as an action.
 
 ![](<../../.gitbook/assets/image (318).png>)
 
@@ -24,11 +24,11 @@ You can pass arguments to your Code actions by assigning them keys. Your keys wi
 
 The `ChatlayerResponseBuilder` function returns a helper instance that allows you to steer your conversation by sending messages as a bot, navigating to bot dialogs, or even creating session data.
 
-To start manipulating conversation data in your code action, simply call the function `ChatlayerResponseBuilder()` which will return a `ChatlayerResponseBuilder` instance. 
+To start manipulating conversation data in your code action, simply call the function `ChatlayerResponseBuilder()` which will return a `ChatlayerResponseBuilder` instance.&#x20;
 
-The `ChatlayerResponseBuilder` has a fluent interface, this means that every function you call will return the same instance. This makes it easy to chain multiple function calls when, for example, you want to show a message and manipulate session data at the same time. 
+The `ChatlayerResponseBuilder` has a fluent interface, this means that every function you call will return the same instance. This makes it easy to chain multiple function calls when, for example, you want to show a message and manipulate session data at the same time.&#x20;
 
-Whenever you want to publish your changes to the conversation, you must call the `send()` function. 
+Whenever you want to publish your changes to the conversation, you must call the `send()` function.&#x20;
 
 {% hint style="warning" %}
 If you don't call the `send()` function anywhere in your Code Action, users will not see any of your results after the code has executed.
@@ -56,9 +56,9 @@ builder.send();
 
 The `ChatlayerResponseBuilder` has the ability to set variables or adding messages to the chatbot. Both are shown in the example below:
 
-_`addSessionVariable(namespace: string, data: any)`:  _Insert a variable on a certain namespace within the session. 
+_`addSessionVariable(namespace: string, data: any)`:_  Insert a variable on a certain namespace within the session.&#x20;
 
-_`addMessage(message: string)`: _Adds a text message to be sent by the bot.
+_`addMessage(message: string)`:_ Adds a text message to be sent by the bot.
 
 ```javascript
 ChatlayerResponseBuilder()
@@ -67,7 +67,7 @@ ChatlayerResponseBuilder()
     .send();
 ```
 
-To enhance your variables even more, you can store multiple variables about the user in an object. 
+To enhance your variables even more, you can store multiple variables about the user in an object.&#x20;
 
 ```javascript
 ChatlayerResponseBuilder()
@@ -79,11 +79,11 @@ If you would like to use this information in a bot message, simply type `{user.l
 
 ### Next or previous dialogs
 
-Based on code, variables or other input, you can steer the conversation to other dialogstates. With the code below you can go to a next dialogstate. 
+Based on code, variables or other input, you can steer the conversation to other dialogstates. With the code below you can go to a next dialogstate.&#x20;
 
 #### setNextDialogState(dialogstateId: string)
 
-Route the conversation to the given dialogstate ID. 
+Route the conversation to the given dialogstate ID.&#x20;
 
 ```javascript
 const { introductionDialogstate } = args;
@@ -95,7 +95,7 @@ chatlayer.send();
 
 ### Bot Message functionalities
 
-In the code editor, some 'bot message' functionalities are also available, such as quick replies or buttons. For more in depth functionality, these same options can be created using code. 
+In the code editor, some 'bot message' functionalities are also available, such as quick replies or buttons. For more in depth functionality, these same options can be created using code.&#x20;
 
 #### addCarousel
 
@@ -200,7 +200,7 @@ ChatlayerResponseBuilder()
     .send();
 ```
 
-Here, the 'invoices' are the different button options displayed. With the `.addButtonGroup` you can add these buttons or create URL buttons. 
+Here, the 'invoices' are the different button options displayed. With the `.addButtonGroup` you can add these buttons or create URL buttons.&#x20;
 
 ### Add HTML or Iframe
 
@@ -262,7 +262,7 @@ The following functionality exists inside the Code action's scope:
 
 #### lodash (\_)
 
-Lodash is a JavaScript utility library. You can find more info [here](https://lodash.com/docs/4.17.15). 
+Lodash is a JavaScript utility library. You can find more info [here](https://lodash.com/docs/4.17.15).&#x20;
 
 ```javascript
 const introductionDialogstate = _.get(args, 'introductionDialogstate');
@@ -274,7 +274,7 @@ chatlayer.send();
 
 #### fetch
 
-Fetch allows you to perform API calls. We use [**node-fetch**](https://github.com/node-fetch/node-fetch)** **as the default fetch library.
+Fetch allows you to perform API calls. We use [**node-fetch**](https://github.com/node-fetch/node-fetch) **** as the default fetch library.
 
 ```javascript
 const url = 'https://gorest.co.in/public/v1/users';
@@ -298,7 +298,7 @@ chatlayer.send();
 
 ### Creating a slight delay between bot messages
 
-Sometimes you want to create a slight delay between bot messages, either to create a natural pauze between them or because you need a few seconds to make an API call and don't want the bot to just be silent. Either way, slight pauzes can improve the user experience a lot. 
+Sometimes you want to create a slight delay between bot messages, either to create a natural pauze between them or because you need a few seconds to make an API call and don't want the bot to just be silent. Either way, slight pauzes can improve the user experience a lot.&#x20;
 
 To create a short delay of two seconds, add an 'Action' dialog and paste the following code:
 

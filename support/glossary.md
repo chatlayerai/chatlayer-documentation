@@ -10,7 +10,7 @@ AI technology makes it possible for bots to “learn” by discovering certain p
 
 The session is an object that stores the state of the conversation. In it, we store some internal variables by default (like the botId, version, detected intents and entities,...) but you can also store your own variables for use in your bot's messages and actions.
 
-It's often referred to as "context" in other Conversational AI platforms however context is a different feature in Chatlayer as you may read [here](../understanding-users/using-context.md). 
+It's often referred to as "context" in other Conversational AI platforms however context is a different feature in Chatlayer as you may read [here](../understanding-users/using-context.md).&#x20;
 
 #### Bot dialogs
 
@@ -36,13 +36,13 @@ A chat widget is a ready-to-use, fully customizable chat window that can be adde
 ![](https://cdn-images-1.medium.com/max/1600/1\*K1tk14Vfh23HPMWjJe64Ww.png)
 
 \
-**CSS **
+**CSS**&#x20;
 
-Cascading Style Sheets (CSS) is a style sheet language used for describing the styling of a document written in a markup language such as HTML. 
+Cascading Style Sheets (CSS) is a style sheet language used for describing the styling of a document written in a markup language such as HTML.&#x20;
 
 **Confidence Score**
 
-The Confidence Score indicates how certain the NLP engine is that the intent has been assigned correctly. If the intent’s matching score falls below the confidence score, the bot will trigger a fallback dialog. 
+The Confidence Score indicates how certain the NLP engine is that the intent has been assigned correctly. If the intent’s matching score falls below the confidence score, the bot will trigger a fallback dialog.&#x20;
 
 **CUX**
 
@@ -104,9 +104,9 @@ Flows are kinda like folders in which you put bot dialogs that are related to th
 
 When a chatbot transfers the user to a human agent, we call this human handover or offloading**.**
 
-**Input validation **
+**Input validation**&#x20;
 
-An input validation dialog state can be used to get information from the bot's user. It first checks if the variable specified in the 'variable' field exists. If 'variable' has a value already, the bot will go automatically to the next bot dialog specified in the 'Next bot dialog' dropdown list. If 'variable' does not have a value, the bot will ask the question as defined in the Question section. 
+An input validation dialog state can be used to get information from the bot's user. It first checks if the variable specified in the 'variable' field exists. If 'variable' has a value already, the bot will go automatically to the next bot dialog specified in the 'Next bot dialog' dropdown list. If 'variable' does not have a value, the bot will ask the question as defined in the Question section.&#x20;
 
 **Intent**
 
@@ -127,17 +127,17 @@ The bot introduction is a short message that welcomes the user and gets the conv
 
 ![Two different kinds of introductions. One shows options, the other one asks an open question.](https://cdn-images-1.medium.com/max/1600/1\*9bIK1K0yNvt2vW7COXOyIQ.png)
 
-**JSON **
+**JSON**&#x20;
 
-If your bot is published on the Webhook API channel, you can use the JSON Builder action to send messages to the conversation that don't need to result in an actual message to the user. Typically, it's used to send information about the user or bot conversation to the website the bot is published on. 
+If your bot is published on the Webhook API channel, you can use the JSON Builder action to send messages to the conversation that don't need to result in an actual message to the user. Typically, it's used to send information about the user or bot conversation to the website the bot is published on.&#x20;
 
-**Live agent **
+**Live agent**&#x20;
 
-A human agent that can help the user when the chatbot is no longer able to. 
+A human agent that can help the user when the chatbot is no longer able to.&#x20;
 
-**Live Chat **
+**Live Chat**&#x20;
 
-Live chat allows the user to talk to a human agent. 
+Live chat allows the user to talk to a human agent.&#x20;
 
 **Machine learning (ML)**
 
@@ -165,25 +165,25 @@ Some real-world examples of NLU are: issuing short commands based on comprehendi
 
 It’s best to view NLU as a first step towards achieving NLP: before a machine can process a language, it must understand what’s being said.
 
-**Production & staging **
+**Production & staging**&#x20;
 
-Our platform provides 2 environments: staging and production, to support working in parallel on a new version of your chatbot without interfering with your production version which is talking to your users in real-time. You have access to both environments. 
+Our platform provides 2 environments: staging and production, to support working in parallel on a new version of your chatbot without interfering with your production version which is talking to your users in real-time. You have access to both environments.&#x20;
 
 * Staging ('Draft') = Used to build and test new bot versions and improve your NLP model
 * Production ('Live') = The production chatbot that is already communicating with your users
-* We recommend not changing data and configuration (flows, NLP, settings) directly in your production environment as this can break your live bot. 
+* We recommend not changing data and configuration (flows, NLP, settings) directly in your production environment as this can break your live bot.&#x20;
 
-Once your bot is ready and tested in the staging environment, it's time to publish your bot to the production environment. 
+Once your bot is ready and tested in the staging environment, it's time to publish your bot to the production environment.&#x20;
 
-**REST **
+**REST**&#x20;
 
-Chatlayer.ai provides a REST JSON API to retrieve, create and manipulate data from third**-**party applications and a webhook configuration to notify you when a variety of interactions or events happen, including when a bot sends a message. Webhook events are sent by Chatlayer.ai as POST requests to your webhook. 
+Chatlayer.ai provides a REST JSON API to retrieve, create and manipulate data from third**-**party applications and a webhook configuration to notify you when a variety of interactions or events happen, including when a bot sends a message. Webhook events are sent by Chatlayer.ai as POST requests to your webhook.&#x20;
 
 **SDK / iFrame**
 
-There are usually two ways of integrating a chat widget on your website: you can use either iframe or SDK. 
+There are usually two ways of integrating a chat widget on your website: you can use either iframe or SDK.&#x20;
 
-If you want to get the chat widget onto your website with minimal custom development, it’s best to use an SDK. If you want more control over certain elements, such as the chat button, it’s best you use an iFrame. 
+If you want to get the chat widget onto your website with minimal custom development, it’s best to use an SDK. If you want more control over certain elements, such as the chat button, it’s best you use an iFrame.&#x20;
 
 **SSML**
 
@@ -193,9 +193,9 @@ If you want to get the chat widget onto your website with minimal custom develop
 
 Speech to Text converts spoken words into text. This way, your voice bot can understand and process what a user is saying, and trigger the correct flow.
 
-**Token **
+**Token**&#x20;
 
-Each API request requires authentication to identify the user that is responsible for making the request. Authentication is provided by (access) tokens. 
+Each API request requires authentication to identify the user that is responsible for making the request. Authentication is provided by (access) tokens.&#x20;
 
 **TTS**
 
@@ -205,7 +205,7 @@ Text to Speech is a technology that converts written text to spoken words. So on
 
 **Utterance**
 
-Anything the user says to the bot. For example, when a user states “I’d like to order a pizza please”, the entire sentence is the utterance. Fun fact: [even a simple sigh can be understood as an utterance](https://tesstettelin.medium.com/is-a-sigh-just-a-sigh-the-ai-answer-is-no-cdb56f24597e?source=your_stories_page-------------------------------------).
+Anything the user says to the bot. For example, when a user states “I’d like to order a pizza please”, the entire sentence is the utterance. Fun fact: [even a simple sigh can be understood as an utterance](https://tesstettelin.medium.com/is-a-sigh-just-a-sigh-the-ai-answer-is-no-cdb56f24597e?source=your\_stories\_page-------------------------------------).
 
 **Value**
 
@@ -219,15 +219,15 @@ An entity that was successfully recognized by the NLP engine will be stored as a
 
 These bots allow its users to interact with them simply by speaking. They’re also called voice assistants, you know, like Alexa, Siri, or Ok Google. Both their input and output is voice.
 
-**Webhook **
+**Webhook**&#x20;
 
-Our platform contains the following features: 
+Our platform contains the following features:&#x20;
 
 * A Webhook message API endpoint to send a user message to the bot
-* A Webhook configuration to be notified when bot messages are returned as a response to user messages sent to the webhook message API as described in this section. This API is almost real-time and the purpose is to be able to trigger event-based behavior as soon as a bot message response occurs. This way you will be able to integrate the bot flow logic in your own application or message channel. 
+* A Webhook configuration to be notified when bot messages are returned as a response to user messages sent to the webhook message API as described in this section. This API is almost real-time and the purpose is to be able to trigger event-based behavior as soon as a bot message response occurs. This way you will be able to integrate the bot flow logic in your own application or message channel.&#x20;
 
-The overall mechanism is loosely based on Pubsub protocol and relies on HTTP request containing the bot message response being sent to a consumer Endpoint URL. The customer webhook Endpoint URL can be configured on our platform as described in this section. 
+The overall mechanism is loosely based on Pubsub protocol and relies on HTTP request containing the bot message response being sent to a consumer Endpoint URL. The customer webhook Endpoint URL can be configured on our platform as described in this section.&#x20;
 
 **White listing (Regex)**
 
-The White List allows you to configure your Chat Widget to only display on a website that you’ve allowed. To do so, you can write a Regex containing the allowed domains. This is an extra security measure to prevent third parties from including your Chatbot on their websites. 
+The White List allows you to configure your Chat Widget to only display on a website that you’ve allowed. To do so, you can write a Regex containing the allowed domains. This is an extra security measure to prevent third parties from including your Chatbot on their websites.&#x20;

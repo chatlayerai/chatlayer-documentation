@@ -8,7 +8,7 @@ Make your users smile. Provide excuses, lighthearted error messages and response
 
 One of the best things you can do, is validate people and give them unconditional positive regard. This will, in turn, foster a very strong connection and relationship between your user and bot.
 
-We support rich media** **like** gifs, videos, audio fragments** which can provide a nice break from the usual text messages. For example: maybe you can couple an intent that detects profanity with a gif of a shocked person?
+We support rich media **** like **gifs, videos, audio fragments** which can provide a nice break from the usual text messages. For example: maybe you can couple an intent that detects profanity with a gif of a shocked person?
 
 User: Ugh, you suck.
 
@@ -41,7 +41,7 @@ Chatbots are just a visual layer, the front of the technology. The Natural Langu
 Use context and intent combinations to provide deep flows and to enable reuse of intents in different flows. Train intents to recognize entities and extract the information instead of blindly accepting input. Consider the following example:
 
 * BOT: What is your name?
-* USER X:** Carl**
+* USER X: **Carl**
 * BOT: Nice to meet you, **Carl!**
 * BOT: What is your name?
 * USER Y: **my name is Carl.**
@@ -63,7 +63,7 @@ Chatbots are not the magical answer to every question. A link to a well designed
 
 ## UX Guidelines for Designing Chatbots
 
-The Nielsen Normal Group published a [great article](https://www.nngroup.com/articles/chatbots/) about the research they did to create UX Guidelines for chatbots. Make sure you follow them while designing your bot! 
+The Nielsen Normal Group published a [great article](https://www.nngroup.com/articles/chatbots/) about the research they did to create UX Guidelines for chatbots. Make sure you follow them while designing your bot!&#x20;
 
 * Tell the user they are talking to a bot and not an actual human.
 * Clearly tell people what tasks the bot can do, and what it cannot do. This way you don’t create false expectations.

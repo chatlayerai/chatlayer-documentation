@@ -17,27 +17,27 @@ To complete our Choo Choo bot, we need to ask the following information from the
 
 This works great when the users says, for example:
 
-* **Tomorrow**, I need to go from **Amsterdam **to **Brussels **at **2pm **in **second **class
+* **Tomorrow**, I need to go from **Amsterdam** to **Brussels** at **2pm** in **second** class
 
 But right now, our bot can only detect this information when the user gives all this information in a single sentence. Of  course, in  a lot of cases, this will  not  always be the  case, so  we 'll need  to  ask  this  information  from  the  user. The dialog  to ask for this info is called  the  **Input Validation dialog**.
 
 ## Step 15: working with input validation
 
-Until now, we have only worked with the bot dialog type `Bot Message`. One of the other [four bot dialogs](https://docs.chatlayer.ai/bot-answers/dialog-state) types is `Input validation`. With an input validation, you can ask specific information from a user and save the answer directly in a variable. Let's start with origin and destination. 
+Until now, we have only worked with the bot dialog type `Bot Message`. One of the other [four bot dialogs](https://docs.chatlayer.ai/bot-answers/dialog-state) types is `Input validation`. With an input validation, you can ask specific information from a user and save the answer directly in a variable. Let's start with origin and destination.&#x20;
 
-#### Text input 
+#### Text input&#x20;
 
 We are going to create new input validations. This can be done in the main flow overview with the green `+Input validation` button, but can also be created directly in another bot dialog.
 
 * Open the `book train ticket` bot dialog
-* Change your bot message text here to: 'So I have a request for a train ticket'. 
+* Change your bot message text here to: 'So I have a request for a train ticket'.&#x20;
 * In the Bot Message tab, scroll down to `Go to`
 * Type `destination` in the Go to field, and click `Create Input Validation 'destination'`
 
 ![](<../.gitbook/assets/image (420).png>)
 
 {% hint style="info" %}
-In every bot dialog, there is a` Go to` option. This means that the conversation flow will automatically go to that next bot dialog if the current one is finished, or if that specific input is given. With the current set-up, the bot will automatically go to the input validation if the first bot message for the `Book train ticket` intent is finished.
+In every bot dialog, there is a `Go to` option. This means that the conversation flow will automatically go to that next bot dialog if the current one is finished, or if that specific input is given. With the current set-up, the bot will automatically go to the input validation if the first bot message for the `Book train ticket` intent is finished.
 {% endhint %}
 
 * Save the `book train ticket` bot dialog
@@ -49,9 +49,9 @@ You can see that the newly created dialog turns red. This means it's not finishe
 * In the 'Save user input as 'pane, select `Any` as the format type under 'Check if response matches'
 
 {% hint style="info" %}
-Input validation can automatically detect certain types of data, like dates, addresses, numbers, hours, currencies, ... This will convert the users response into a more structured format. 
+Input validation can automatically detect certain types of data, like dates, addresses, numbers, hours, currencies, ... This will convert the users response into a more structured format.&#x20;
 
-In this example, we just want to know the city of destination, which can take on any format. So, we'll use input type 'Any' which will accept any value as valid input. 
+In this example, we just want to know the city of destination, which can take on any format. So, we'll use input type 'Any' which will accept any value as valid input.&#x20;
 
 You can find more info about plugin parser types [here](../bot-answers/dialog-state/user-input-bot-dialog.md#input-types).
 {% endhint %}
@@ -108,17 +108,17 @@ Repeat the previous steps for the the other pieces of information you'd like to 
 * Departure time: At what time do you want to leave?
 * Departure date: Which day would you like to take the train?
 
-This means you need to create three extra Input Validations, just like the `destination`Input Validation. You can change the current `destination`Input Validation to make sure the `origin `is asked next:
+This means you need to create three extra Input Validations, just like the `destination`Input Validation. You can change the current `destination`Input Validation to make sure the `origin` is asked next:
 
 ![](<../.gitbook/assets/image (418).png>)
 
-Create the Input Validation. Save the variable under 'origin' and choose 'Check if response matches > any'. Once this is created you will see this: 
+Create the Input Validation. Save the variable under 'origin' and choose 'Check if response matches > any'. Once this is created you will see this:&#x20;
 
- 
+&#x20;
 
 ![](<../.gitbook/assets/image (445).png>)
 
-This is because the `Confirm booking`Bot Message still has `destination `as parent. No worries, this will be fixed later. Add 'Where are you leaving from?' as text in the Input validation and save the input under 'origin' variable. Make sure that the next Input Validation after this one will be `departure time.`
+This is because the `Confirm booking`Bot Message still has `destination` as parent. No worries, this will be fixed later. Add 'Where are you leaving from?' as text in the Input validation and save the input under 'origin' variable. Make sure that the next Input Validation after this one will be `departure time.`
 
 * Now, create the other Input Validations:
   * 'departure-time' variable, with text: 'At what time do you want to leave?'. Save under 'Check if response matches > any'. Go to: departure date. Disable the NLP.
@@ -153,7 +153,7 @@ This is a great start when you need to debug. Here you can see if you made a typ
 
 ## Step 17: Combining user input with buttons
 
-In the tutorial above, we requested user input by sending a text message. However, in an `input validation`, we can also ask for the user's input by click, but it is also possible to use buttons, lists, carousels and other UI components to support user input as text or clicks. 
+In the tutorial above, we requested user input by sending a text message. However, in an `input validation`, we can also ask for the user's input by click, but it is also possible to use buttons, lists, carousels and other UI components to support user input as text or clicks.&#x20;
 
 This is especially useful and user friendly to have when there are only a few options to choose from, as described [here](https://docs.chatlayer.ai/tips-and-best-practices/chatbot-checklist) in the Conversation Design Chatbot Checklist.
 
@@ -175,7 +175,7 @@ It's important to use an identical variable name for the input variable, the NLP
 
 Depending on the user input, different actions will be executed:
 
-1. If a user writes an expression that contains an entity that matches with the variable in an input validation, this input validation is skipped. This way we can avoid asking things from the user which they've already said. 
+1. If a user writes an expression that contains an entity that matches with the variable in an input validation, this input validation is skipped. This way we can avoid asking things from the user which they've already said.&#x20;
    * For example: when the user says `I need a first class train ticket` which belongs to intent `book train ticket` and includes an entity `class`, the 'class' variable is stored in the user session with a value 'first' and the input validation 'class' is skipped because the value for the input variable is already available in the user session.
 2. When the user is asked to give his preferred train class and he says 'first', this value will be added in the input variable 'class' in the user session.
 3. When the user clicks the button 'First class', the value 'first' will be added to the variable 'class' in the user session.
@@ -194,13 +194,13 @@ Now that you have all this extra information, it's time to show all the data you
 
 Now test your newly created bot to see if it works!
 
-If you run into any issues, 
+If you run into any issues,&#x20;
 
 ## Lesson recap
 
 Now, you have a bot with:
 
-* A flow to book a train ticket with 2 bot messages and 5 input validations 
+* A flow to book a train ticket with 2 bot messages and 5 input validations&#x20;
 * The ability to recognize both variables given in expressions or via input validations
 * A final bot message summarizing all variables given by the user
 
@@ -209,7 +209,7 @@ You  should now be familiar with:
 * Creating an input validation and storing the user input in a variable
 * Creating a button and storing the input from the button click in a variable
 * Linking bot dialogs to each other with the go to option in a bot dialog, and creating a new bot dialog from the go to option
-* Changing the parent of a bot dialog 
-* Using the debugger tab to see how user input is stored 
+* Changing the parent of a bot dialog&#x20;
+* Using the debugger tab to see how user input is stored&#x20;
 
 In the [next tutorial](https://docs.chatlayer.ai/tutorials/tutorial-conditional-flow-navigation), you will learn how you can steer the conversation in a certain direction based on known variables.

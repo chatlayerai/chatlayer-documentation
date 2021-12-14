@@ -40,7 +40,7 @@ In the field on the right, we'll put **1** – This tells the bot that the first
 
 For the second and final condition, we're creating the actual counter.
 
-Under Else, type _**Not understood x 1**_** **and click 'create' to create the variable.&#x20;
+Under Else, type _**Not understood x 1**_** ** and click 'create' to create the variable.&#x20;
 
 Next, click `+ Add Variable` to add a variable and value. In the middle field, add the variable _**not\_understood\_counter**_. In the field on the right, add the [increment value](https://docs.chatlayer.ai/bot-answers/settings/secure-variables-gdpr#incrementing-variable-counter)  _**{not\_understood\_counter|increment}**_
 

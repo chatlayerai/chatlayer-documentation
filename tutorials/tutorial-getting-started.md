@@ -14,11 +14,11 @@ _Are you working on an existing project? Then you don't need to set up a new one
 
 ## Creating a new bot
 
-What better way to learn how to build a bot than building one! To help you get started, we'll go through a bot-building tutorial together. In this tutorial, you will create a bot called Choo Choo: a digital assistant that can help people book train tickets. 
+What better way to learn how to build a bot than building one! To help you get started, we'll go through a bot-building tutorial together. In this tutorial, you will create a bot called Choo Choo: a digital assistant that can help people book train tickets.&#x20;
 
 {% hint style="warning" %}
 To get started, you need a Chatlayer account. \
-**Don't have an account yet?** [Create a trial account here](https://chatlayer.ai/try-now/)**. **\
+**Don't have an account yet?** [Create a trial account here](https://chatlayer.ai/try-now/)**.** \
 Have a problem with your account? Contact our support team [here](mailto:support@chatlayer.ai).
 {% endhint %}
 
@@ -75,7 +75,7 @@ The first thing you'll need to do is create an introduction. This is the first m
 * You can edit the introduction by clicking the `introduction` bot dialog.
 
 {% hint style="info" %}
-**What is a bot dialog? **A bot dialog is a something that the bot will say or do when triggered by a user [intent](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp#intent) or user message. This can be anything: from a message to a user to connecting to an external system, giving a message back and jumping to a different dialog in the flow. We will come back to the [four different types ](https://docs.chatlayer.ai/bot-answers/dialog-state)of bot dialogs. 
+**What is a bot dialog?** A bot dialog is a something that the bot will say or do when triggered by a user [intent](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp#intent) or user message. This can be anything: from a message to a user to connecting to an external system, giving a message back and jumping to a different dialog in the flow. We will come back to the [four different types ](https://docs.chatlayer.ai/bot-answers/dialog-state)of bot dialogs.&#x20;
 {% endhint %}
 
 {% hint style="warning" %}
@@ -106,7 +106,7 @@ In the Text Message block, you can add multiple versions of the same message. Th
 
 * To add a random message, click on  `+ Add random message` and enter the following text:_"What can I do for you?"_
 
-Tip: you can add as many random messages as you like. 
+Tip: you can add as many random messages as you like.&#x20;
 
 ![](<../.gitbook/assets/image (451).png>)
 

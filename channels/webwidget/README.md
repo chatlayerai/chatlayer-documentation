@@ -33,7 +33,7 @@ On the Chat Widget page you can customize a number of key chat widget components
 
 ### Whitelisting
 
-To make sure your bot can only be activated on your website, all your chat widgets must be whitelisted before you can use them. To do this, go to the config tab of the Chat Widget builder and add a regular expression that matches the domain names that you wish to whitelist. 
+To make sure your bot can only be activated on your website, all your chat widgets must be whitelisted before you can use them. To do this, go to the config tab of the Chat Widget builder and add a regular expression that matches the domain names that you wish to whitelist.&#x20;
 
 A simple example of this regex format for https://www.chatlayer.ai: `^https:\/\/www\.chatlayer\.ai(\/|$)`
 
@@ -168,7 +168,7 @@ internal: {
 
 #### User authentication with the chat widget SDK
 
-In a lot of cases it's required to know **who **is talking to the bot. One way to find out is by sending a login ID, detected on the website your user is logged in, and passing it on to the bot, when the SDK is initialized:
+In a lot of cases it's required to know **who** is talking to the bot. One way to find out is by sending a login ID, detected on the website your user is logged in, and passing it on to the bot, when the SDK is initialized:
 
 ```markup
 <script src="YOUR_CHATWIDGET_URL" 
@@ -230,7 +230,7 @@ The same goal can also be achieved by changing the iframe url:
 <iframe src="https://chatbox.staging.chatlayer.ai/TOKEN?senderId=12345TEST&session[data][first_name]=Charlie"/>
 ```
 
-The example above, would result in a session containing: 
+The example above, would result in a session containing:&#x20;
 
 ```javascript
 {

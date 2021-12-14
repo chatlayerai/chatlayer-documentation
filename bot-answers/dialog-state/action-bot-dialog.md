@@ -69,12 +69,12 @@ If your bot is published on the [Webhook API](../../channels/webhook-api.md) cha
 
 ![](<../../.gitbook/assets/image (230).png>)
 
-### Website window events 
+### Website window events&#x20;
 
-**You can use the JSON builder action** **in combination with the webwidget channel** to receive window events on your webpage. These events will contain the data as configured in your JSON builder action. 
+**You can use the JSON builder action** **in combination with the webwidget channel** to receive window events on your webpage. These events will contain the data as configured in your JSON builder action.&#x20;
 
 Here's an example: \
-Configure your JSON builder action to send a **language **key, with a variable retrieved from the session, and the "Send config to parent window" toggled on.
+Configure your JSON builder action to send a **language** key, with a variable retrieved from the session, and the "Send config to parent window" toggled on.
 
 ![JSON builder action with a language field](<../../.gitbook/assets/image (324).png>)
 

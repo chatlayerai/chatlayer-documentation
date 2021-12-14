@@ -12,16 +12,16 @@ description: >-
 There are four types of entities:
 
 * **Match entity:** if the user states a word that is part of a predefined list or matches a certain pattern, this word will be detected as a match entity.\
-  _For example: "I want to know more about the **Premium** pack" _→_ @product: Premium_\
+  _For example: "I want to know more about the **Premium** pack"_ → _@product: Premium_\
   __
 * **Contextual entity:** train your NLP so it can recognise entities that depend on the context of an expression.\
-  _For example: "Book a train ticket from **Brussels** to **Amsterdam" **_→_** **@origin: Brussels, @destination: Amsterdam_\
+  _For example: "Book a train ticket from **Brussels** to **Amsterdam"**_ → _**** @origin: Brussels, @destination: Amsterdam_\
   __
 * **System entity:** these are entities that are pre-built into the platform and can be detected automatically.\
-  _For example: "My e-mail address is **ilovebots@chatlayer.ai" **_→ _@sys.email: ilovebots@chatlayer.ai_\
+  _For example: "My e-mail address is **ilovebots@chatlayer.ai"**_ → _@sys.email: ilovebots@chatlayer.ai_\
   __
 * **Composite entity:** a combination of different, but related entities\
-  _For example: "**Two** **fries** please" _→_ @order consists of @sys.number (2) and @foodItem (fries)_
+  _For example: "**Two**  **fries** please"_ → _@order consists of @sys.number (2) and @foodItem (fries)_
 
 ### When should you use which entity type?
 
@@ -168,9 +168,9 @@ Chatlayer.ai supports the following system entity types:
 
 A Composite Entity is a combination of two or more different, yet related entities. This type of entity allows you to combine two separate entities into a single one.
 
-Let's look at an example. When a user tells the bot "Two fries please", the bot will understand this as the predefined composite entity **@order**_, _which consists of two separate entities:&#x20;
+Let's look at an example. When a user tells the bot "Two fries please", the bot will understand this as the predefined composite entity **@order**_,_ which consists of two separate entities:&#x20;
 
-* **@sys.number: **2, a system entity
+* **@sys.number:** 2, a system entity
 * and **@foodItem**: fries, a match entity which is predefined&#x20;
 
 ![Composite entities on the Chatlayer platform](<../../../.gitbook/assets/image (605) (1).png>)
@@ -200,9 +200,9 @@ The go to dialog looks like this:
 
 ## The difference between entities, variables, and values
 
-**A value is a possible element of a variable or entity. **For example, the variable 'destination' can have the following values: Antwerp, London, Brussels, ...
+**A value is a possible element of a variable or entity.** For example, the variable 'destination' can have the following values: Antwerp, London, Brussels, ...
 
-**An entity that was successfully recognized by the NLP engine will be stored as a variable. **For example, say you created the match text entity 'Levels' with values 'Beginner', 'Intermediate' and 'Expert'. When the user says 'I think I'm an expert', the value 'expert' will be saved as a variable. So a variable is an entity that was successfully recognized and stored by the chatbot.
+**An entity that was successfully recognized by the NLP engine will be stored as a variable.** For example, say you created the match text entity 'Levels' with values 'Beginner', 'Intermediate' and 'Expert'. When the user says 'I think I'm an expert', the value 'expert' will be saved as a variable. So a variable is an entity that was successfully recognized and stored by the chatbot.
 
 **Variables are pieces of information you know about the person talking to the bot.** For example, if someone is talking to the bot in English, we will remember their preference and save 'English' as a value for the variable “Language”. **Variables and values always appear in pairs.** They are stored on the user session that gathers all information about a user.
 

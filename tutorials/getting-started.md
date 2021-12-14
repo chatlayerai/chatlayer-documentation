@@ -7,15 +7,15 @@ description: >-
 
 # Planning your bot
 
-## **1. Define the bot's goal** <a href="6f63" id="6f63"></a>
+## **1. Define the bot's goal** <a href="#6f63" id="6f63"></a>
 
-Before you can start building your bot, you need to know **why** **you are building it**. What is the goal here? If you want to automate an existing service, what is the current experience like, and how could a bot help you improve it? 
+Before you can start building your bot, you need to know **why** **you are building it**. What is the goal here? If you want to automate an existing service, what is the current experience like, and how could a bot help you improve it?&#x20;
 
 Make sure to look at your business and marketing goals: if one of your goals is to increase customer satisfaction, you may want to add a bot to your customer support team and let it handle the most common FAQs, so your team has more time to focus on the complex cases.
 
-## 2. Define the bot use cases <a href="9f38" id="9f38"></a>
+## 2. Define the bot use cases <a href="#9f38" id="9f38"></a>
 
-After figuring out the why of your bot, it’s **time for the what**. What is your bot going to do exactly? How will it help the user? We cannot stress how important it is to figure this out** before** **you start building your bot**, as you cannot build something that isn't defined yet.
+After figuring out the why of your bot, it’s **time for the what**. What is your bot going to do exactly? How will it help the user? We cannot stress how important it is to figure this out **before** **you start building your bot**, as you cannot build something that isn't defined yet.
 
 Here are some good use case examples:
 
@@ -23,33 +23,33 @@ Here are some good use case examples:
 * Play a song
 * Find specific products
 * Recommend new products
-* Get directions 
+* Get directions&#x20;
 * Book a flight
 * Show local promotions
 * Process returns
 
-## 3. Understand your tech <a href="d127" id="d127"></a>
+## 3. Understand your tech <a href="#d127" id="d127"></a>
 
 Know that you know the why and the what of your bot, it’s important to understand the where: **where will your bot live?** Will it be integrated with WhatsApp? Can customers engage with it via SMS, Facebook Messenger or on the company website? **What are the restrictions of each channel?** A bot that talks to your users via SMS won’t be able to use as many characters as a bot that only communicates via web. So make sure you understand your tech and its limitations.
 
 > Our platform allows you to easily connect your bot to multiple channels and all your back-end databases. That's how you provide your users with a truly delightful experience.
 
-## 4. Know your user <a href="948d" id="948d"></a>
+## 4. Know your user <a href="#948d" id="948d"></a>
 
-In order to design an experience that feels personal, you need to make it personal. **Who is this user that will engage with your bot?** Remember, there is no such thing as a universal user! It’s important to know what users want and how they are feeling during the conversation. 
+In order to design an experience that feels personal, you need to make it personal. **Who is this user that will engage with your bot?** Remember, there is no such thing as a universal user! It’s important to know what users want and how they are feeling during the conversation.&#x20;
 
-* What’s their backstory? 
-* Their challenges? 
-* Their motivations? 
-* How familiar are they with your business and using bots in general? 
+* What’s their backstory?&#x20;
+* Their challenges?&#x20;
+* Their motivations?&#x20;
+* How familiar are they with your business and using bots in general?&#x20;
 
-## 5. Craft your bot personality <a href="eb7b" id="eb7b"></a>
+## 5. Craft your bot personality <a href="#eb7b" id="eb7b"></a>
 
 How can you make sure that your users connect with your bot and that the conversation is engaging and representative of real human interaction? By giving your bot a **clear** **personality**.
 
 If you can, use your company branding as a starting point and build on it. You can read more about how to design your bot’s personality [**here**](https://chatbotslife.com/how-to-design-your-chatbots-personality-free-download-dd9eeccffbb9).
 
-## 6. Script your happy flow <a href="d5fb" id="d5fb"></a>
+## 6. Script your happy flow <a href="#d5fb" id="d5fb"></a>
 
 Now that you have a clear picture of who’s communicating (your bot persona and your user ID) and what they’re talking about (your use cases), it’s time to write the **dialogues**.
 
@@ -59,11 +59,11 @@ But they will, and you need to be ready for when they do.
 
 > **A great way to script a natural conversation is by creating a sample dialog**. Have two people sit back-to-back and improvise a conversation around a use case, with one person playing the user and the other playing the bot. Record their conversation or take notes to see which parts of the dialog still need a bit more work.
 
-## 7. Script for edge cases <a href="06e9" id="06e9"></a>
+## 7. Script for edge cases <a href="#06e9" id="06e9"></a>
 
 While our AI technology is very good, it is not yet capable of understanding every user utterance well enough in order to reply in a correct way — no matter how well the script is written, in tricky situations, it will most likely fail. So after writing the happy flows, write out the most likely ways a user might go off track and how you’re going to deal with that. The sample dialog should help those pain points, as will user testing.
 
-What if a user asks your bot how it’s doing? What if they tell the bot they don’t like it? What if they want another suggestion? What happens if the user wants to book a table for two, but one person is allergic to gluten and the other one doesn’t eat fish? 
+What if a user asks your bot how it’s doing? What if they tell the bot they don’t like it? What if they want another suggestion? What happens if the user wants to book a table for two, but one person is allergic to gluten and the other one doesn’t eat fish?&#x20;
 
 {% hint style="info" %}
 You can find these kind of questions as prebuilt intents in our platform's NLP section. These intens are predefined and come with their own expressions, which means you can use them straight away!

@@ -4,7 +4,7 @@ WhatsApp is a messaging service owned by Facebook with over 1.5 billion monthly 
 
 ## Inform users of your WhatsApp bot
 
-One of the key challenges in creating a WhatsApp bot is making sure your customers know it exists and where they can find it. So think carefully about where you want to position your WhatsApp conversational experience. 
+One of the key challenges in creating a WhatsApp bot is making sure your customers know it exists and where they can find it. So think carefully about where you want to position your WhatsApp conversational experience.&#x20;
 
 We have some suggestions to help you get started:
 
@@ -20,7 +20,7 @@ We have some suggestions to help you get started:
 
 ## WhatsApp restrictions
 
-Compared to the web widget or Facebook Messenger, WhatsApp is much more restrictive in what you can do with your bot. The following things are **not **supported by WhatsApp:
+Compared to the web widget or Facebook Messenger, WhatsApp is much more restrictive in what you can do with your bot. The following things are **not** supported by WhatsApp:
 
 * Introduction message: users will always have to initiate the conversation themselves. You can use a wa.me link to send a default first message – learn more [here](whatsapp.md#spreading-awareness-of-your-whatsapp-bot)
 * Buttons, carousels, lists, quick replies. WhatsApp only supports plain text messages, media, locations and contacts

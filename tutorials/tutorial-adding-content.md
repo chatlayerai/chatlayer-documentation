@@ -15,7 +15,7 @@ In this lesson, we are going to add intents to our Choo Choo bot. We will learn 
 
 Before we create some more dialogs, we'd like to tell you about the NLP engine first. You see, the Natural Language Processing (NLP) engine is the underlying algorithm that allows the bot to understand what the user is saying. And as each language has its own words and grammar, we have a separate NLP engine for each language!
 
-> Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. It's not so different for computers either. To train an NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in already. 
+> Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. It's not so different for computers either. To train an NLP engine, we need huge amounts of data. Luckily, we rely on pre-trained models that have a lot of smarts built in already.&#x20;
 
 ## Step 3: Adding an intent
 
@@ -76,7 +76,7 @@ Expressions are another word for what is sometimes called 'Utterances'
 The more expressions you add to an Intent, the more accurately it will be recognised. It is crucial for an intent to have a wide variety of expressions to give accurate results. The more expression you can think of, the better the result of the NLP will be and the 'smarter' your bot will appear.
 
 * Select the `who are you` intent in the **Intents** pane on the left hand side
-* The **Expressions **pane will open in the right. Click on `Add Expression` 
+* The **Expressions** pane will open in the right. Click on `Add Expression`&#x20;
 * Enter `Who are you?` in the open text field
 * Click on `Create`
 
@@ -134,7 +134,7 @@ To successfully train the NLP, you need to have at least two intents with a mini
 
 ![](<../.gitbook/assets/image (84).png>)
 
-Select the language you used to add the expressions. _ _You can view the status of the NLP update for each language by clicking on the Update NLP icon.
+Select the language you used to add the expressions. __ You can view the status of the NLP update for each language by clicking on the Update NLP icon.
 
 ![The NLP needs more intents and expressions to train](<../.gitbook/assets/image (638).png>)
 
@@ -142,7 +142,7 @@ Click on `Update` to start the training. This can take a couple of minutes to on
 
 ![The NLP is updating](<../.gitbook/assets/image (633).png>)
 
-That was a great first step to use the 'Greeting' and 'How are you' intent. The next step is to link these intents in the bot dialogs. 
+That was a great first step to use the 'Greeting' and 'How are you' intent. The next step is to link these intents in the bot dialogs.&#x20;
 
 ## Step 6: Linking the intent and defining a response
 
@@ -170,7 +170,7 @@ Your screen should look like this:
 
 ![](<../.gitbook/assets/image (342).png>)
 
-The image below means that a certain intent is linked to that bot dialog. 
+The image below means that a certain intent is linked to that bot dialog.&#x20;
 
 ![](<../.gitbook/assets/image (455).png>)
 
@@ -193,7 +193,7 @@ The 'Test your bot' feature is also referred to as the 'emulator'.
 Now, you have a bot with the following configuration:
 
 * 2 intents ('Greeting' and 'Who are you') and their expressions
-* A bot message 'Who are you', with the intent 'Who are you' and four text messages in it. 
+* A bot message 'Who are you', with the intent 'Who are you' and four text messages in it.&#x20;
 
 You  should now be familiar with:
 

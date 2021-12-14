@@ -7,8 +7,8 @@ This article will explain how to set this up.
 ## Configuration in Sinch Contact Pro
 
 * Log into your Sinch Contact Pro Domain
-* Configure a new **agent **that will act as the bot
-* Set-up a new **queue **specifically for chatbots&#x20;
+* Configure a new **agent** that will act as the bot
+* Set-up a new **queue** specifically for chatbots&#x20;
 * Open the configuration panel
 
 ![](<../../.gitbook/assets/image (582).png>)
@@ -39,7 +39,7 @@ This article will explain how to set this up.
 
 ![](<../../.gitbook/assets/image (574).png>)
 
-Looking at the URL you copied before, you can identify _Region _and _Tenant Name:_
+Looking at the URL you copied before, you can identify _Region_ and _Tenant Name:_
 
 https://prod-_region_._domain_**.**com/_tenantname_/visitor/ecfs
 
@@ -64,7 +64,7 @@ Do you have an On Premise environment of Sinch Contact Pro? Toggle 'Is On Premis
 
 [_https://mywebsite.com/integrations/sinch-contact/tenantname_](https://mywebsite.com/integrations/sinch-contact/%3Ctenantname%3E)__
 
-&#x20;The **host **is 'mywebsite.com', and the **tenant name** will be 'integrations/sinch-contact/tenantname'
+&#x20;The **host** is 'mywebsite.com', and the **tenant name** will be 'integrations/sinch-contact/tenantname'
 {% endhint %}
 
 ### Setting up offload action

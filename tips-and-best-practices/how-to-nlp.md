@@ -22,9 +22,9 @@ Expressions:
 
 The more expressions you add for one intent and the more varied they are, the more accurate the chatbot will recognize the user’s input. The quality of the data you train your bot with is crucial for this accuracy. Several factors determine the quality of your training data: the intent structure, the expressions for each intent, and the entities.
 
-## Intent structure <a href="trainingdatagenerationforchatbots-bestpractices-intentstructure" id="trainingdatagenerationforchatbots-bestpractices-intentstructure"></a>
+## Intent structure <a href="#trainingdatagenerationforchatbots-bestpractices-intentstructure" id="trainingdatagenerationforchatbots-bestpractices-intentstructure"></a>
 
-Thinking of the intents that you need for your bot is not always that easy. Additionally, there is no correct way of doing it, it depends on what you want your bot to do, how you define the bot flow, and on how the user actually interacts with the bot. 
+Thinking of the intents that you need for your bot is not always that easy. Additionally, there is no correct way of doing it, it depends on what you want your bot to do, how you define the bot flow, and on how the user actually interacts with the bot.&#x20;
 
 Here are some tips & tricks to create great intents:
 
@@ -35,7 +35,7 @@ Here are some tips & tricks to create great intents:
    \
    So think like your user; listen to how they phrase their problems in their words and use that to create your bot's messages and flow. \
 
-2. **Use all the data you have **\
+2. **Use all the data you have** \
    If you already have some user data, like a list of questions that users have asked your support desk – use it! Analyse that data to understand which questions are frequently asked and, more importantly, how they are asked specifically. Calculate the volumes for each group of questions and prioritize them accordingly. If you have no idea on how users will actually interact with your bot and what they might ask, you can start with a simple click bot, which will allow you to gather a lot of useful information on your users' needs, allowing you to define an good intent-structure afterward. \
 
 3. **Keep it simple, Sherlock**\
@@ -49,7 +49,7 @@ Here are some tips & tricks to create great intents:
    – Problem with wifi \
    And then add a follow-up question about the model of the phone, or the model of the modem. After a few weeks, when you analyse the actual user messages, you notice that users often already include the model of their phone (eg. Samsung Galaxy S9) in their messages before the bot explicitly asks for it, while they never use specific terms for anything related to wifi. In this case, it makes sense to refine the 'problem with phone' intent by splitting it up into several other intents, or by making use of entities to capture the phone model, whilst avoiding your bot asking for a piece of information that the user already gave. The 'problem with wifi' intent can stay as it is, with follow-up questions to pin-point the exact problem. Keep in mind that defining a good intent-structure is an iterative process, it takes time and effort.
 
-## Expressions <a href="trainingdatagenerationforchatbots-bestpractices-expressions" id="trainingdatagenerationforchatbots-bestpractices-expressions"></a>
+## Expressions <a href="#trainingdatagenerationforchatbots-bestpractices-expressions" id="trainingdatagenerationforchatbots-bestpractices-expressions"></a>
 
 Creating a set of expressions needed to train your bot is probably the most time-intensive part of creating your bot. The accuracy of your bot stands or falls with the quality of your expressions. So make sure to spend some time on it, and review them regularly.
 
@@ -85,7 +85,7 @@ Here are some tips & tricks for creating good expressions:
    You can also make use of the generator functionality on our platform to quickly create several expressions by simply substituting words for their synonyms. If you do so, make sure to pay special attention to creating a dataset with sufficient variation in the phrase structure. You don't want to repeat the same phrase over and over again, with only one word difference.\
 
 10. **Choose a varied phrase structure**\
-    Some people will state their intent by asking a question (“What to do when I move?”) while others might use a declarative sentence (“I am moving.”)  Avoid creating a data set that contains the same sentence over and over with only a few different words in it. For example: do not limit your dataset for the intent "buy_product" to a series of "I want to buy a book", " I want to buy a comic book", "I want to buy a dvd", I want to buy X", "I want to buy Y". If you do this, the model will latch on to the "I want to buy" portion of the expressions and wrongly predict the intent "buy_product" whenever a user uses those words. Additionally, the bot will not be able to correctly predict this intent for sentences with a different phrase structure, such as "My son needs the most recent edition of Yoga for dummies". Creating a data set with enough variation can be hard as it drains your creativity, so we advice to have more than one person participating in the creation process. Also account for a diverse array of people giving input; a man might not think of things a woman will think of because they might experience something differently. In short: the more (diverse) people, the more (creative and accurate) phrases you'll get.\
+    Some people will state their intent by asking a question (“What to do when I move?”) while others might use a declarative sentence (“I am moving.”)  Avoid creating a data set that contains the same sentence over and over with only a few different words in it. For example: do not limit your dataset for the intent "buy\_product" to a series of "I want to buy a book", " I want to buy a comic book", "I want to buy a dvd", I want to buy X", "I want to buy Y". If you do this, the model will latch on to the "I want to buy" portion of the expressions and wrongly predict the intent "buy\_product" whenever a user uses those words. Additionally, the bot will not be able to correctly predict this intent for sentences with a different phrase structure, such as "My son needs the most recent edition of Yoga for dummies". Creating a data set with enough variation can be hard as it drains your creativity, so we advice to have more than one person participating in the creation process. Also account for a diverse array of people giving input; a man might not think of things a woman will think of because they might experience something differently. In short: the more (diverse) people, the more (creative and accurate) phrases you'll get.\
 
 11. **Use correct spelling**\
     During training, each word is mapped to a numeric representation summarising their meaning in a computer-readable format. The mappings only exist for a pre-existing vocabulary which contains the 200 000 most common words in a language. Misspelled words are not part of this vocabulary and hence cannot be mapped to an accurate numeric representation. Although the NLU engines do apply spell correction before mapping words to their representation, it is better to avoid typo's. Think for instance of the non-word, _pone_: it could be corrected as _pony_ or as _phone_, which are two entirely different meanings, only one of them is relevant for a telco support bot. Check the spelling of the training data to make sure that your bot learns the meaning of words relevant for your use-case.\
@@ -97,17 +97,17 @@ Here are some tips & tricks for creating good expressions:
     ****Users don't often use punctuation when chatting with a bot, so make sure to include expressions both with and without punctuation. For instance, add questions with and without a question mark.\
 
 14. **Accents**\
-    Users don't often use accents when chatting with a bot. In order for the bot to learn how to deal with this, accents are ignored in our models, so don't worry about it. For instance, ‘élève’ is treated the same as ‘eleve’. 
+    Users don't often use accents when chatting with a bot. In order for the bot to learn how to deal with this, accents are ignored in our models, so don't worry about it. For instance, ‘élève’ is treated the same as ‘eleve’.&#x20;
 
-## Entities <a href="trainingdatagenerationforchatbots-bestpractices-entities" id="trainingdatagenerationforchatbots-bestpractices-entities"></a>
+## Entities <a href="#trainingdatagenerationforchatbots-bestpractices-entities" id="trainingdatagenerationforchatbots-bestpractices-entities"></a>
 
-Entities are a word or small number of words that are particularly relevant for your bot flow. They can be names of people or organisations, cities, products, brands, companies, street names and so on. 
+Entities are a word or small number of words that are particularly relevant for your bot flow. They can be names of people or organisations, cities, products, brands, companies, street names and so on.&#x20;
 
 {% hint style="info" %}
 We recommends adding at least 30 expressions per entity, to guarantee the quality of the entity detection.
 {% endhint %}
 
-Entities should only be used if their value is needed in the bot flow. For instance, if your bot allows for asking information about a certain product and you need to recover the name of that product to look up the necessary information in a database, you can use entities. If your bot simply redirects to a web page with an overview of all products, you do not need entities. 
+Entities should only be used if their value is needed in the bot flow. For instance, if your bot allows for asking information about a certain product and you need to recover the name of that product to look up the necessary information in a database, you can use entities. If your bot simply redirects to a web page with an overview of all products, you do not need entities.&#x20;
 
 When adding entities to your training data, take the following things into account:
 
@@ -118,4 +118,4 @@ When adding entities to your training data, take the following things into accou
    ****The entity extraction models are not case sensitive. So there is no need to add both 'Brussels' and 'brussels'.\
 
 3. **Words, not sentences**\
-   Entities are a word or small number of words, usually noun phrases. Never mark full sentences or bigger phrases as an entity. In case users often use paraphrases instead of a word, which frequently happens with more technical terms, such as 'the little box that I use in order to have internet everywhere in my house' instead of 'wifi extender', consider not using entities but a separate intent. 
+   Entities are a word or small number of words, usually noun phrases. Never mark full sentences or bigger phrases as an entity. In case users often use paraphrases instead of a word, which frequently happens with more technical terms, such as 'the little box that I use in order to have internet everywhere in my house' instead of 'wifi extender', consider not using entities but a separate intent.&#x20;

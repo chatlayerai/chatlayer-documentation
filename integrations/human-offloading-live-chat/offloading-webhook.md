@@ -18,7 +18,7 @@ Offloading Webhook is for offloading users from bot to human agent. The [Webhook
 
 ## Configuration
 
-To configure your Chatlayer Offloading Webhook, head over to **Settings > Offloading **and create a **Webhook** integration.
+To configure your Chatlayer Offloading Webhook, head over to **Settings > Offloading** and create a **Webhook** integration.
 
 ![](<../../.gitbook/assets/image (312).png>)
 
@@ -30,7 +30,7 @@ Congratulations! You are ready to start using your custom human handover integra
 
 ## Webservice Implementation Reference
 
-Your webservice will need to implement the following API methods for us to communicate with. All requests will arrive in JSON format at the API URL configured during the setup of the offloading webhook in Chatlayer. Every JSON POST request has a body with an **event **parameter that allows you to distinguish between the different types of data coming in. Different types are explained below.
+Your webservice will need to implement the following API methods for us to communicate with. All requests will arrive in JSON format at the API URL configured during the setup of the offloading webhook in Chatlayer. Every JSON POST request has a body with an **event** parameter that allows you to distinguish between the different types of data coming in. Different types are explained below.
 
 We expect a HTTP status code of 200 for every request made to the webservice. Response data should be in JSON format.
 
@@ -104,7 +104,7 @@ The items in the messages array have the following format -
 }
 ```
 
-**BotMessage **objects follow the same structure as that of the Webhook Channel API, documented [here](https://docs.chatlayer.ai/channels/webhook-api#message-objects).
+**BotMessage** objects follow the same structure as that of the Webhook Channel API, documented [here](https://docs.chatlayer.ai/channels/webhook-api#message-objects).
 
 ```javascript
 // Text Bot Message example
@@ -220,7 +220,7 @@ The items in the messages array have the following format -
 }
 ```
 
-**UserMessage **objects may have the following structures:
+**UserMessage** objects may have the following structures:
 
 ```javascript
 // UserMessage examples
@@ -522,7 +522,7 @@ One example of the offload request can be as follows:
 
 ### User-requested human handover
 
-Use a "Send to offload provider" bot action dialog to trigger an **offload **call to your API.
+Use a "Send to offload provider" bot action dialog to trigger an **offload** call to your API.
 
 ![](<../../.gitbook/assets/image (313).png>)
 

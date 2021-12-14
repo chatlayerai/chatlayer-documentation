@@ -33,7 +33,7 @@ Language detection can't be applied to text, so a chatbot cannot figure out what
 
 #### Language detection flow
 
-You can use the `Language detection`** **option to check if the user's language is supported by your bot. You can find this feature under `Bot Settings.`
+You can use the `Language detection` **** option to check if the user's language is supported by your bot. You can find this feature under `Bot Settings.`
 
 * If the user's language is supported, the user will be routed to the `Introduction` dialog
 * If the language is not supported by the bot, the user will be routed to a bot dialog of your choosing
