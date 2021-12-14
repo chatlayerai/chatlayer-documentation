@@ -4,6 +4,15 @@ description: New features and functionalities in the platform
 
 # What's new
 
+## December 2021
+
+* [Improved input validations](https://docs.chatlayer.ai/bot-answers/dialog-state/user-input-bot-dialog#entity-input-type), check whether the given user input is equal to one of your entities&#x20;
+
+## November 2021
+
+* We now have the [bot builder](https://docs.chatlayer.ai/organization-management/access-control#team-roles) role in our Team roles
+* [Native app integrations](https://docs.chatlayer.ai/integrations/app-integrations) without custom code, check out [the Airtable tutorial here](https://docs.chatlayer.ai/integrations/app-integrations/airtable-app-integration)
+
 ## October 2021
 
 * You can now start a conversation initiated by the user, [skipping the introduction message](./#undefined)
@@ -12,7 +21,7 @@ description: New features and functionalities in the platform
 
 ## August 2021
 
-* A brand new color scheme that fits our new branding 
+* A brand new color scheme that fits our new branding&#x20;
 * [Data retention](https://docs.chatlayer.ai/bot-answers/settings/data-retention): enterprise customers can set a custom retention time for their conversations, sessions and training expressions.
 * A configurable [typing indicator](https://docs.chatlayer.ai/bot-answers/settings#bot-behaviour)
 * Another new channel: talk to your users on [Telegram](../../channels/sinch-conversation-api-beta.md)

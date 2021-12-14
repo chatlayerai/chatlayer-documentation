@@ -7,9 +7,18 @@ description: >-
 
 # New documentation
 
+## December
+
+* Elaborate tutorials on how to use the [new input validation parser ](https://docs.chatlayer.ai/bot-answers/dialog-state/user-input-bot-dialog#entity-input-type)for entities&#x20;
+* A tutorial how to [connect Chatlayer to Google Home](https://docs.chatlayer.ai/channels/google-assistant)
+
+## November 2021
+
+* [Integrations 101](https://docs.chatlayer.ai/integrations/integrations-101), explaining how to get started on your integration journey within Chatlayer
+
 ## October 2021
 
-* A new tutorial on how to [skip the introduction message](https://docs.chatlayer.ai/tutorials-1/skip-introduction-message) on certain channels 
+* A new tutorial on how to [skip the introduction message](https://docs.chatlayer.ai/tutorials-1/skip-introduction-message) on certain channels&#x20;
 * Some examples on how to [use time in your chatbot](broken-reference)
 * Tips on how to [optimize your introduction message](https://docs.chatlayer.ai/tutorials-1/skip-introduction-message#optimize-your-introduction-further)
 
@@ -30,8 +39,8 @@ description: >-
 
 ## March 2021
 
-* Complete redesign of Choo Choo after our latest release 
-* How to create your own [web widget](https://docs.chatlayer.ai/tutorials-1/web-widget-demo-page) in Glitch 
+* Complete redesign of Choo Choo after our latest release&#x20;
+* How to create your own [web widget](https://docs.chatlayer.ai/tutorials-1/web-widget-demo-page) in Glitch&#x20;
 * Tutorial on how to create a [counter ](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog/not-understood-counter)for a different 'not understood' message after three 'not understood' in a row
 * An article on how to show the [previous bot](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog/go-to-previous-bot-dialog) dialog again to the user after 'not understood'
 
