@@ -2,7 +2,7 @@
 
 * [Welcome to Chatlayer 👋](README.md)
 
-## Getting started <a href="tutorials" id="tutorials"></a>
+## Getting started <a href="#tutorials" id="tutorials"></a>
 
 * [Planning your bot](tutorials/getting-started.md)
 * [Creating a new bot](tutorials/tutorial-getting-started.md)
@@ -25,8 +25,9 @@
   * [Entities](understanding-users/natural-language-processing-nlp/synonym-entities/README.md)
     * [Detecting information with match entities](understanding-users/natural-language-processing-nlp/synonym-entities/how-to-use-match-entities.md)
   * [Supported languages](understanding-users/natural-language-processing-nlp/supported-languages.md)
+  * [Sentiment analysis](understanding-users/natural-language-processing-nlp/sentiment-analysis.md)
 
-## Bot management <a href="bot-answers" id="bot-answers"></a>
+## Bot management <a href="#bot-answers" id="bot-answers"></a>
 
 * [Analytics](bot-answers/analytics/README.md)
   * [Definitions](bot-answers/analytics/definitions.md)
@@ -118,7 +119,7 @@
 * [Voice design](tips-and-best-practices/voice-design/README.md)
   * [From chat to voice](tips-and-best-practices/voice-design/from-chat-to-voice.md)
 
-## Tutorials <a href="tutorials-1" id="tutorials-1"></a>
+## Tutorials <a href="#tutorials-1" id="tutorials-1"></a>
 
 * [Create a web widget demo page](tutorials-1/web-widget-demo-page.md)
 * [Gathering user feedback](tutorials-1/gathering-user-feedback.md)
