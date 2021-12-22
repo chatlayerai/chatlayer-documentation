@@ -63,3 +63,40 @@ After confirming, you will be able to copy the client id and client secret to ou
 ![](<../.gitbook/assets/image (308).png>)
 
 Once you've entered all the information in the Chatlayer.ai channel window, click 'Create' and all the channels that are configured in the Sinch Conversation API app will be automatically added to Chatlayer.ai as well.
+
+## Variables
+
+If multiple channels are connected to your Conversation API app, it can be useful to be able to send a specific flow depending on the channel the bot user is on. To do that, you can use the `internal.sinchConversationAPI.channelIdentity` [variable](../bot-answers/settings/secure-variables-gdpr.md).&#x20;
+
+The possible values for the channel are:
+
+```
+internal.sinchConversationAPI.channelIdentifier: 
+"CHANNEL_UNSPECIFIED"
+"WHATSAPP"
+"RCS"
+"SMS"
+"MESSENGER"
+"VIBER"
+"VIBERBM"
+"MMS"
+"TELEGRAM"
+"LINE"
+"INSTAGRAM"
+```
+
+Furthermore, there are a few other variables that store data coming from the Sinch Conversation API that might be useful to guide your flow:
+
+```
+internal.sinchConversationAPI.channelIdentity: 'USER_PHONE_NUMBER_OR_ID',
+internal.sinchConversationAPI.contactId: 'CONTACT_ID_CONV_API',
+internal.sinchConversationAPI.appId: 'APP_ID_CONV_API',
+internal.sinchConversationAPI.conversationId: 'CONVERSATION_ID_CONV_API',
+```
+
+You can learn more about how to use variables to guide your flow here:
+
+{% content-ref url="../tutorials/tutorial-conditional-flow-navigation.md" %}
+[tutorial-conditional-flow-navigation.md](../tutorials/tutorial-conditional-flow-navigation.md)
+{% endcontent-ref %}
+
