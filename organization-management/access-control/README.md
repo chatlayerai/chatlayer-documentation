@@ -56,7 +56,7 @@ A member can have one of four types permissions to a RESTRICTED bot:
 * **NLP-only:** the member can change intents, expressions, entities, etc, but not bot dialogs or settings.
 * **Bot Builder:** the member can see and edit everything except for the conversation history in DRAFT and LIVE.&#x20;
 
-![](<../../.gitbook/assets/image (670).png>)
+![](<../../.gitbook/assets/image (670) (1).png>)
 
 Your access level to a bot can be seen on the "My Bots" overview page:
 

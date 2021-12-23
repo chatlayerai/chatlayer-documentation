@@ -4,9 +4,9 @@ The Chatlayer NLP engine allows you to analyse the sentiment in the message of a
 
 If you want to try out sentiment analysis, go the the "Test" menu under "NLP" and try out a few expressions.
 
-![](<../../.gitbook/assets/image (678).png>)
+![](<../../.gitbook/assets/image (678) (1).png>)
 
-![](<../../.gitbook/assets/image (677).png>)
+![](<../../.gitbook/assets/image (677) (1).png>)
 
 Chatlayer returns 3 different types of sentiments:
 
@@ -20,7 +20,7 @@ Sentiment analysis is currently in beta. If you'd like to try it out, [get in to
 
 If you want to enable sentiment analysis for your bot, go to the "NLP settings" menu and active the "Sentiment Analysis" toggle
 
-![Sentiment analysis settings in NLP settings](<../../.gitbook/assets/image (674).png>)
+![Sentiment analysis settings in NLP settings](<../../.gitbook/assets/image (674) (1).png>)
 
 As soon as you activate Sentiment analysis, all user messages will be analyzed for sentiment. You can find the result of that analysis in the `internal.nlp.sentiment` variable in the user session.
 

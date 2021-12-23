@@ -34,7 +34,7 @@ Then in the middle field, select `equals` in the drop down menu.&#x20;
 
 In the field on the right, we'll put **1** – This tells the bot that the first not understood dialog was displayed already and that it's time to display the second not understood dialog.
 
-![](<../../.gitbook/assets/image (674) (1).png>)
+![](<../../.gitbook/assets/image (674) (1) (1).png>)
 
 ## 3. Set the final condition in the Go To dialog
 
@@ -44,19 +44,19 @@ Under Else, type _**Not understood x 1**_** ** and click 'create' to create the 
 
 Next, click `+ Add Variable` to add a variable and value. In the middle field, add the variable _**not\_understood\_counter**_. In the field on the right, add the [increment value](https://docs.chatlayer.ai/bot-answers/settings/secure-variables-gdpr#incrementing-variable-counter)  _**{not\_understood\_counter|increment}**_
 
-![](<../../.gitbook/assets/image (673).png>)
+![](<../../.gitbook/assets/image (673) (1).png>)
 
 Save your set-up by clicking the `Save` button on the bottom right.
 
 The entire Go To dialog should look like this:
 
-![](<../../.gitbook/assets/image (675).png>)
+![](<../../.gitbook/assets/image (675) (1).png>)
 
 ## 4. Write the bot messages
 
 After saving your `Go To` dialog and closing it, the flow should look like this:
 
-![](<../../.gitbook/assets/image (677) (1).png>)
+![](<../../.gitbook/assets/image (677) (1) (1).png>)
 
 Now it's time to write the copy for both dialogs. Here's some inspiration for the first message that will be displayed – the 'Not understood x 1' dialog:
 
