@@ -25,16 +25,6 @@ Some examples of intents:
 
 It is important to scope and create your intents correctly to use your bot optimally. Tips on how to create great intents can be found [here](https://docs.chatlayer.ai/tips-and-best-practices/how-to-nlp).
 
-
-
-It’s important to roughly have an equal number of expressions for each intent. Even if it usually takes more examples to train your most important intent compared to the others, do strive to keep the number of expressions consistent over intents. This will help avoid creating a bias towards intents with a large expression count
-
-### Intent scoping
-
-If two of your intents are very similar in terms of meaning and/or use case, you should merge them to avoid confusing the NLP engine.
-
-For example, let's look at our bot responsible for booking train tickets. Imagine that, besides train tickets, you'd also like to offer bus tickets. You could create an extra intent for booking bus tickets, but the expressions would be very similar to the intent for booking train tickets, with only the transportation mode changing from time to time. In this case, it would be better to only have one intent for booking tickets, and an [entity](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/synonym-entities) to catch the requested vehicle type.&#x20;
-
 ## Expressions
 
 {% hint style="info" %}
