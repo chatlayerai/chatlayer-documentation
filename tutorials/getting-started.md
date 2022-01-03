@@ -66,7 +66,7 @@ While our AI technology is very good, it is not yet capable of understanding eve
 What if a user asks your bot how it’s doing? What if they tell the bot they don’t like it? What if they want another suggestion? What happens if the user wants to book a table for two, but one person is allergic to gluten and the other one doesn’t eat fish?&#x20;
 
 {% hint style="info" %}
-You can find these kind of questions as prebuilt intents in our platform's NLP section. These intens are predefined and come with their own expressions, which means you can use them straight away!
+You can find these kind of questions as prebuilt intents in our platform's NLP section. These intents are predefined and come with their own expressions, which means you can use them straight away!
 {% endhint %}
 
 Always make to strategically guide the user back to an existing flow, like in the example below:
