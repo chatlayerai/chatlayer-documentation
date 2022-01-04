@@ -41,13 +41,17 @@ Here are some tips & tricks to create great intents:
 3. **Keep it simple, Sherlock**\
    Do not be afraid of starting with a bot that can only handle four of the 10+ questions that you eventually want it to handle, especially if those four questions make up 90% of all incoming questions. You'll only need four intents to build a bot that considerably improves the life of your support agents, without affecting the quality of customer support, meaning that only the remaining 10% of questions will have to be handled manually. New intents can be added once you gather more user data, let it grow organically.\
 
-4. **Revise**\
-   Start with a general flow and some general intents, then add follow-up questions to get a detailed understanding of what your user needs. This will allow you to gather the necessary data to revise your intent structure. \
-   \
-   For instance, if you're building a telco support bot, you could start with two simple intents:\
-   – Problem with phone\
-   – Problem with wifi \
-   And then add a follow-up question about the model of the phone, or the model of the modem. After a few weeks, when you analyse the actual user messages, you notice that users often already include the model of their phone (eg. Samsung Galaxy S9) in their messages before the bot explicitly asks for it, while they never use specific terms for anything related to wifi. In this case, it makes sense to refine the 'problem with phone' intent by splitting it up into several other intents, or by making use of entities to capture the phone model, whilst avoiding your bot asking for a piece of information that the user already gave. The 'problem with wifi' intent can stay as it is, with follow-up questions to pin-point the exact problem. Keep in mind that defining a good intent-structure is an iterative process, it takes time and effort.
+4.  **Revise**\
+    Start with a general flow and some general intents, then add follow-up questions to get a detailed understanding of what your user needs. This will allow you to gather the necessary data to revise your intent structure. \
+    \
+    For instance, if you're building a telco support bot, you could start with two simple intents:\
+    – Problem with phone\
+    – Problem with wifi \
+    And then add a follow-up question about the model of the phone, or the model of the modem. After a few weeks, when you analyse the actual user messages, you notice that users often already include the model of their phone (eg. Samsung Galaxy S9) in their messages before the bot explicitly asks for it, while they never use specific terms for anything related to wifi. In this case, it makes sense to refine the 'problem with phone' intent by splitting it up into several other intents, or by making use of entities to capture the phone model, whilst avoiding your bot asking for a piece of information that the user already gave. The 'problem with wifi' intent can stay as it is, with follow-up questions to pin-point the exact problem. Keep in mind that defining a good intent-structure is an iterative process, it takes time and effort.&#x20;
+
+    However, if two of your intents are very similar in terms of meaning and/or use case, you should merge them to avoid confusing the NLP engine. If you are noticing that the NLP engine is confused with these two use cases because they are too similar, you may need to combine them into one intent. For example, let's look at our bot responsible for booking train tickets. Imagine that, besides train tickets, you'd also like to offer bus tickets. You could create an extra intent for booking bus tickets, but the expressions would be very similar to the intent for booking train tickets, with only the transportation mode changing from time to time. In this case, it would be better to only have one intent for booking tickets, and an [entity](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/synonym-entities) to catch the requested vehicle type.&#x20;
+
+It’s important to roughly have an equal number of expressions for each intent. Even if it usually takes more examples to train your most important intent compared to the others, do strive to keep the number of expressions consistent over intents. This will help avoid creating a bias towards intents with a large expression count.&#x20;
 
 ## Expressions <a href="#trainingdatagenerationforchatbots-bestpractices-expressions" id="trainingdatagenerationforchatbots-bestpractices-expressions"></a>
 
