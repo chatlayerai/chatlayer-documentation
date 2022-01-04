@@ -12,6 +12,10 @@ If the user continues the conversation on another channel, this is considered a 
 
 Conversations where the bot sends a message, but the user does not send a message are counted. These conversations will be included in the Analytics dashboards, but not in the [Conversations](../bot-answers/user-messages.md) table.
 
+Conversations in the "Test your bot" window will not be counted.
+
+Conversations from both the "DRAFT" and "LIVE" version of your bot will be counted.
+
 ## Features
 
 Some features are only included in some packs. For example, the following features are only in the Pro & Corporate plans:
@@ -27,13 +31,13 @@ To see which features are exactly in each plan, check the 'Billing and usage' pa
 
 When you log into the Chatlayer platform, you will see the 'Billing and usage' menu on the right hand side. This gives you more information about the following:
 
-### Usage 
+### Usage&#x20;
 
 When you open the 'Billing and usage' menu, you'll directly get an overview of your current usage of the conversations per month in your bot.
 
 ![](../.gitbook/assets/plans2.PNG)
 
-Depending on your current plan, there may be different solutions for you when you are over your monthly conversation limit. Your Customer Success Manager can help you out if you have any questions. 
+Depending on your current plan, there may be different solutions for you when you are over your monthly conversation limit. Your Customer Success Manager can help you out if you have any questions.&#x20;
 
 ### Plans and Pricing
 
@@ -45,4 +49,4 @@ Here, you can find your current plan and what is included in that plan, such as 
 
 If you notice that your bot is outgrowing its usage for your current plan, or if you are expanding your bot with more functionalities, this is a very useful page to see what your options are!
 
-At the top of the page, you can see the price for each of the plans and what is included in them. If you click on 'Compare all features', an overview will open where you see all features that each plan entails. If you want more information about a certain feature, check out the documentation or contact [support@chatlayer.ai](mailto:support@chatlayer.a). If you have questions about your plan or upgrading it, please contact your Customer Success Manager. 
+At the top of the page, you can see the price for each of the plans and what is included in them. If you click on 'Compare all features', an overview will open where you see all features that each plan entails. If you want more information about a certain feature, check out the documentation or contact [support@chatlayer.ai](mailto:support@chatlayer.a). If you have questions about your plan or upgrading it, please contact your Customer Success Manager.&#x20;
