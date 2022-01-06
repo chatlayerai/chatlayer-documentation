@@ -69,9 +69,49 @@ The web widget is opened when clicked on, but can also open automatically. This 
 <script src="<YOUR_SDK_URL>" referrerpolicy="no-referrer-when-downgrade" onload='initChatlayer()' async></script>
 ```
 
-Change `YOUR SDK URL` with the SDK URL, as described [here](https://docs.chatlayer.ai/channels/webwidget#embedding-the-web-widget-on-your-website). 
+Change `YOUR SDK URL` with the SDK URL, as described [here](https://docs.chatlayer.ai/channels/webwidget#embedding-the-web-widget-on-your-website).&#x20;
 
-## Custom CSS
+## Change colours
+
+For changing the color of the text that the user writes and for the color of the placeholder, you could add a custom CSS like below:
+
+```css
+.ChatInputText-textarea:focus{ 
+color: #404040; 
+} 
+.ChatInputText-textarea{ 
+border-color: #DCDCDC; 
+} 
+.ChatInputText-textarea::placeholder{ 
+color: #767676; 
+}
+```
+
+For changing the colour of the chat bubble you could already make those changes from the colors tab in the configuration screen. If you want to add your custom CSS, then something like this would work:
+
+```css
+.chatBalloon-bot{ 
+background-color: #E8F5FA; 
+color: #404040; 
+font-size: 14px; 
+font-family: "Open Sans"; 
+} 
+.chatBalloon-user{ 
+background-color: #E8F5FA; 
+color: #404040; 
+font-size: 14px; 
+font-family: "Open Sans"; 
+}
+```
+
+For changing the size of the buttons, you could add the CSS like this:
+
+```css
+.SendIconImage { 
+height: 2em; 
+padding: 1em; 
+}
+```
 
 To make your Chat Widget look customized as per your needs, our Enterprise and Corporate clients can upload their own CSS. Please see the following list of CSS classes that you can use to customize your Web Widget:
 
