@@ -4,9 +4,13 @@ description: New features and functionalities in the platform
 
 # What's new
 
+## January 2022
+
+* [Integration with Freshdesk](../../integrations/app-integrations/freshdesk-app-integration.md) to create Freshdesk support tickets
+
 ## December 2021
 
-* [Improved input validations](https://docs.chatlayer.ai/bot-answers/dialog-state/user-input-bot-dialog#entity-input-type), check whether the given user input is equal to one of your entities&#x20;
+* [Improved input validations](https://docs.chatlayer.ai/bot-answers/dialog-state/user-input-bot-dialog#entity-input-type), check whether the given user input is equal to one of your entities
 
 ## November 2021
 
