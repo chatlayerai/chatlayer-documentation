@@ -12,6 +12,7 @@ description: New features and functionalities in the platform
 
 * We now have the [bot builder](https://docs.chatlayer.ai/organization-management/access-control#team-roles) role in our Team roles
 * [Native app integrations](https://docs.chatlayer.ai/integrations/app-integrations) without custom code, check out [the Airtable tutorial here](https://docs.chatlayer.ai/integrations/app-integrations/airtable-app-integration)
+* We have a new channel: [LINE](../../channels/sinch-conversation-api-beta.md)
 
 ## October 2021
 
