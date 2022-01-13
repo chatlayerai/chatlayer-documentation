@@ -21,7 +21,7 @@ On the Chat Widget page you can customize a number of key chat widget components
 * **Config tab**
   * Title of the bot
   * Template
-  * Upload custom CSS
+  * Upload custom CSS (more information about custom CSS [here](customize-web-widget.md))
   * Title font & font size
   * Paragraph font & font size
   * White listing of the domains you want the bot to be activated on (i.e. your own website domain and any other domains you use for testing)
