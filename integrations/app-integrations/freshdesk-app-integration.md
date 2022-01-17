@@ -30,7 +30,7 @@ After you've entered this info and the connection is set up, you’ll be able to
 
 · Create contact (create new user)
 
-![](<../../.gitbook/assets/image (677).png>)
+![](<../../.gitbook/assets/image (677) (1).png>)
 
 ### **Gathering needed information**
 
