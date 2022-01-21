@@ -42,7 +42,11 @@ Next, your Actions could be as followed:
 
 **1 – Create ticket**
 
-![](<../../.gitbook/assets/image (690).png>)
+![](<../../.gitbook/assets/image (690) (1).png>)
+
+If your tickets have custom fields, you can also include them in the Action dialog state and request them thought the bot, as seen in "language" and "country" below:
+
+![](<../../.gitbook/assets/image (684).png>)
 
 **2 – Add notes to a ticket**
 
@@ -54,6 +58,6 @@ Next, your Actions could be as followed:
 
 **4 – Create a contact**
 
-![](<../../.gitbook/assets/image (681).png>)
+![](<../../.gitbook/assets/image (681) (1).png>)
 
 &#x20;And that's it, your Freshdesk connection is set up and ready to go!
