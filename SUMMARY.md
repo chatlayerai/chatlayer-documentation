@@ -77,6 +77,7 @@
 * [App Integrations](integrations/app-integrations/README.md)
   * [Airtable App integration](integrations/app-integrations/airtable-app-integration.md)
   * [Freshdesk App integration](integrations/app-integrations/freshdesk-app-integration.md)
+  * [Freshdesk Messaging App integration](integrations/app-integrations/freshdesk-messaging-app-integration.md)
 * [Message objects for APIs](integrations/chat-message-structure-for-apis.md)
 
 ## Channels

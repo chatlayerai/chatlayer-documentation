@@ -75,7 +75,7 @@ More information on what to fill if you want to use the “Search Formula” opt
 
 #### A.9 Build your answer syntax
 
-![](<../../.gitbook/assets/image (678) (1) (1).png>)
+![](<../../.gitbook/assets/image (678) (1) (1) (1).png>)
 
 #### A.10 You'll know it's right when your bot fetches the right data from your table
 
@@ -129,7 +129,7 @@ B.7.2 Test Connection (soon)
 
 B.7.2 Change Account Name: will open up a pop-up so you can rename your integrated App
 
-![](<../../.gitbook/assets/image (680) (1).png>)
+![](<../../.gitbook/assets/image (680) (1) (1).png>)
 
 B.7.3 Remove: **Attention!** When clicking this button, your App integration will **immediately** be removed
 

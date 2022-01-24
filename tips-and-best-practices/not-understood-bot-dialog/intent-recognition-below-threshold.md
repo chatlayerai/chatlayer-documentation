@@ -75,12 +75,12 @@ Another option is to use variables to create specific 'not understood' messages.
 
 &#x20;
 
-![In the example above, the variable 'topic' saves the route the user has taken in the bot](<../../.gitbook/assets/image (686).png>)
+![In the example above, the variable 'topic' saves the route the user has taken in the bot](<../../.gitbook/assets/image (686) (1).png>)
 
 
 
 Then, change your 'not understood' in a 'Go To' (see step 3 in the tutorial above) and create a logic as such:
 
-![](<../../.gitbook/assets/image (670).png>)
+![](<../../.gitbook/assets/image (670) (1).png>)
 
 Make sure to fill in your specific not understood bot messages, just like in Step 4 of the previous tutorial. After that, you are all set to give users a smarter 'not understood'  experience!

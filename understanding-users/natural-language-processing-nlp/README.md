@@ -6,7 +6,7 @@ Understanding natural language isn't easy: it takes us more than 12 years and hu
 
 ## The basics
 
-![](<../../.gitbook/assets/image (697).png>)
+![](<../../.gitbook/assets/image (697) (1).png>)
 
 Whenever a user sends a message to the bot, the bot will check if that message is related to any of the expressions that are part of the NLP engine. For example, when a user types _'Get me a flight ticket,'_ the __ NLP will check if this sentence matches any of its expressions and check if this message contains similar words as the expressions. In the example above, the NLP gives a 93% confidence score that _'Get me a flight ticket'_ belongs to the intent _'Book flight'_. Because this sentence is recognised above the [NLP threshold](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/settings), the response that is linked to this intent will be shown to the user.
 
@@ -80,8 +80,8 @@ Do you want to learn how you can improve your NLP model? You can find tips and t
 
 We've created a few intent packs so you can quickly get started and train your NLP model. You can add these pre-built intents directly in the platform by clicking on 'intents' in the NLP section and then on the top right, 'Add Prebuilt Intent'
 
-&#x20;![](<../../.gitbook/assets/image (683).png>)
+&#x20;![](<../../.gitbook/assets/image (683) (1).png>)
 
 Then you'll get a pop-up screen showing you all the pre-built intents you can add:
 
-![](<../../.gitbook/assets/image (677).png>)
+![](<../../.gitbook/assets/image (677) (1).png>)
