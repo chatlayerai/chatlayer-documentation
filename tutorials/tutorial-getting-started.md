@@ -1,12 +1,12 @@
 ---
 description: >-
-  Never built a bot before? This short tutorial video explains you the key steps
-  to creating a chatbot and the terminology used on our platform.
+  Never built a bot before? We got you. Follow this bot tutorial with key steps
+  on how to build a chatbot from scratch!
 ---
 
 # Creating a new bot
 
-_Are you working on an existing project? Then you don't need to set up a new one. Feel free to skip ahead to the next tutorial:_
+_Are you working on an existing bot? Then you don't need to set up a new one, just skip ahead to the next tutorial:_
 
 {% content-ref url="tutorial-adding-content.md" %}
 [tutorial-adding-content.md](tutorial-adding-content.md)
