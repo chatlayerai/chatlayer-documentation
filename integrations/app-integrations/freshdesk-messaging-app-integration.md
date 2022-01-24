@@ -39,7 +39,7 @@ To use Freshdesk Messaging as a channel, click in Channels > App Integration Cha
 
 Choose Freshdesk Messaging
 
-![](<../../.gitbook/assets/image (694).png>)
+![](<../../.gitbook/assets/image (684).png>)
 
 Either choose one of the connected accounts or connect new account:
 
@@ -77,7 +77,7 @@ To deploy the Freshdesk Messenger on your website, go to Freshdesk Messaging > A
 
 In “Deploy”, copy the code snippet and paste it on your source code.
 
-![](<../../.gitbook/assets/image (684).png>)
+![](<../../.gitbook/assets/image (684) (1).png>)
 
 You’ll be able to see the webchat icon and interact with your Chatlayer bot:
 
@@ -95,7 +95,7 @@ Create a topics in Freshdesk Messaging:
 
 You can assign different groups to different topics, depending on your customer support structure, skills and lines of attention.
 
-![](<../../.gitbook/assets/image (704).png>)
+![](<../../.gitbook/assets/image (704) (1).png>)
 
 ![](<../../.gitbook/assets/image (718).png>)
 
