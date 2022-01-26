@@ -6,7 +6,7 @@ If you want to try out sentiment analysis, go the the "Test" menu under "NLP" an
 
 ![](<../../.gitbook/assets/image (678) (1) (1).png>)
 
-![](<../../.gitbook/assets/image (677) (1) (1).png>)
+![](<../../.gitbook/assets/image (677) (1) (1) (1).png>)
 
 Chatlayer returns 3 different types of sentiments:
 

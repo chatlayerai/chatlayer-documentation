@@ -30,7 +30,7 @@ After you've entered this info in the Chatlayer action dialog and the connection
 
 · Create contact (create new user)
 
-![](<../../.gitbook/assets/image (677) (2).png>)
+![](<../../.gitbook/assets/image (677) (1) (1).png>)
 
 ### **Gathering information**
 
