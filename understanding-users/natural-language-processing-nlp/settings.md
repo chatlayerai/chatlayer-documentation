@@ -38,7 +38,7 @@ A threshold of 65% or lower would result in the expression "I lost something (..
 
 ## Entity threshold
 
-![An example where the entity 'London' is recognized with 74.55%](<../../.gitbook/assets/image (684) (1) (1).png>)
+![An example where the entity 'London' is recognized with 74.55%](<../../.gitbook/assets/image (684) (2).png>)
 
 The entity threshold defines at which level the entity will be correctly processed. In this example above, the 'book train intent' is recognized with 97.82%, and that's why the correct response _'So I have a request for a train ticket'_ is triggered. However, 'London' is recognized with 74.55%, which is below the entity threshold of 80%. Therefore London is not successfully saved and the bot asks again where the user would like to travel to.
 

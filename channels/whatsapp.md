@@ -22,7 +22,5 @@ We have some suggestions to help you get started:
 
 Compared to the web widget or Facebook Messenger, WhatsApp is much more restrictive in what you can do with your bot. The following things are **not** supported by WhatsApp:
 
-* Introduction message: users will always have to initiate the conversation themselves. You can use a wa.me link to send a default first message – learn more [here](whatsapp.md#spreading-awareness-of-your-whatsapp-bot)
-* Buttons, carousels, lists, quick replies. WhatsApp only supports plain text messages, media, locations and contacts
 * Voice and video calling are not supported
 * Typing indicators and read receipts are not supported
