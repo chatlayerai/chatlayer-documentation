@@ -11,7 +11,7 @@ description: >-
 A conversation starts when a first message is sent. This message can be sent by the user, or by the bot.&#x20;
 
 {% hint style="info" %}
-When there is no interaction between a user and the bot for at least 15 minutes, the current conversation stops and a new one starts.
+For the counting of conversations shown in analytics or billing, 15 mins of silence or no interaction between a user and a bot closes the conversation and automatically starts a new one.
 {% endhint %}
 
 You can try out your bot in the "test your bot" window on the bottom right of the platform. These conversations are not counted in your analytics or towards your billing.
