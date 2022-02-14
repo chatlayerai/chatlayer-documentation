@@ -13,10 +13,6 @@
 
 ## Understanding users
 
-* [Context](understanding-users/using-context.md)
-* [Expression generator](understanding-users/expression-generator.md)
-* [Multilingual bots](understanding-users/multilanguage-bots/README.md)
-  * [Translations](understanding-users/multilanguage-bots/translations.md)
 * [Natural Language Processing (NLP)](understanding-users/natural-language-processing-nlp/README.md)
   * [NLP threshold](understanding-users/natural-language-processing-nlp/settings.md)
   * [NLP import & export](understanding-users/natural-language-processing-nlp/nlp-import-and-export.md)
@@ -26,6 +22,10 @@
     * [Detecting information with match entities](understanding-users/natural-language-processing-nlp/synonym-entities/how-to-use-match-entities.md)
   * [Supported languages](understanding-users/natural-language-processing-nlp/supported-languages.md)
   * [Sentiment analysis](understanding-users/natural-language-processing-nlp/sentiment-analysis.md)
+* [Multilingual bots](understanding-users/multilanguage-bots/README.md)
+  * [Translations](understanding-users/multilanguage-bots/translations.md)
+* [Expression generator](understanding-users/expression-generator.md)
+* [Context](understanding-users/using-context.md)
 
 ## Bot management <a href="#bot-answers" id="bot-answers"></a>
 
