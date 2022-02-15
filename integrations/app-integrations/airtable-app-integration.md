@@ -79,7 +79,7 @@ More information on what to fill if you want to use the “Search Formula” opt
 
 #### A.10 You'll know it's right when your bot fetches the right data from your table
 
-![](<../../.gitbook/assets/image (672) (1) (1).png>)
+![](<../../.gitbook/assets/image (672) (2).png>)
 
 ## B. From Chatlayer's homepage menu
 
@@ -123,7 +123,7 @@ Description automatically generated](<../../.gitbook/assets/17 (1)>)
 
 B.7.1 Reconnect: it will open up a new pop-up allowing you to change the API Key
 
-![](<../../.gitbook/assets/image (674) (1) (1).png>)
+![](<../../.gitbook/assets/image (674) (3).png>)
 
 B.7.2 Test Connection (soon)
 
@@ -133,6 +133,6 @@ B.7.2 Change Account Name: will open up a pop-up so you can rename your integrat
 
 B.7.3 Remove: **Attention!** When clicking this button, your App integration will **immediately** be removed
 
-![](<../../.gitbook/assets/image (673) (1) (1).png>)
+![](<../../.gitbook/assets/image (673) (2).png>)
 
 If you're interested in using this integration, please request it by opening a support ticket via support@chatlayer.ai.

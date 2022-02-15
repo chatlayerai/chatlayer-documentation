@@ -28,7 +28,7 @@ This article will explain how to set this up.
 
 * Lastly, select your newly created Chatbot queue in the Sinch Contact Configuration Panel and click “Save”&#x20;
 
-![](<../../.gitbook/assets/image (672) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (672) (1) (1) (1).png>)
 
 ## Configuration in Chatlayer
 
