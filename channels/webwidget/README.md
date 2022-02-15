@@ -108,7 +108,7 @@ You can load the chat widget by using the script tag below. Calling the `chatlay
 
 ```
 
-Remove `.staging` from the URL if you want to integrate a production bot. You can add parameters to the `chatlayer` function to include additional functionality.
+Remove `.staging` from the URL if you want to integrate a LIVE bot. You can add parameters to the `chatlayer` function to include additional functionality.
 
 ```markup
 <script src="https://chatbox.staging.chatlayer.ai/sdk/INSERT-TOKEN-HERE" 
@@ -129,7 +129,7 @@ In this case, your bot will be opened in English, and when a user clicks the SDK
 | `noButton`        | `boolean`     |                                                                                                                                 |
 | `session`         | `object`      | Add data to the session which can be used to guide the flow.                                                                    |
 | `sessionId`       | `string`      | A session ID can be used to continue the conversation after the user has left the page. Make sure it's 20 characters or longer. |
-| `language`        | `string`      |                                                                                                                                 |
+| `lang`            | `string`      | Language of the bot                                                                                                             |
 | `button`          | `HTMLElement` |                                                                                                                                 |
 | `wrapper`         | `HTMLElement` |                                                                                                                                 |
 
@@ -205,10 +205,10 @@ Make sure that the SDK script is loaded before running these functions.
 Embedding the chat widget in an iframe is the most straight forward embedding option. You determine how and where you place the element and you can style it as you like.
 
 ```markup
-<iframe src="https://chatbox.staging.chatlayer.ai/INSERT-TOKEN-HERE?language=en"/>
+<iframe src="https://chatbox.staging.chatlayer.ai/INSERT-TOKEN-HERE?lang=en"/>
 ```
 
-Remove `.staging` from the URL if you want to integrate a production bot. You can change `?language=en` to any language the bot supports.
+Remove `.staging` from the URL if you want to integrate a production bot. You can change `?lang=en` to any language the bot supports.
 
 #### Defining the sender ID
 
