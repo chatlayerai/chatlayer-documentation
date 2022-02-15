@@ -13,7 +13,7 @@ The first step to integrate Sparkcentral with Chatlayer.ai is to retrieve API Cr
 
 * To retrieve your Sparkcentral API credentials click the Generate API Keys button in the top right corner of the screen.&#x20;
 
-![](<../../.gitbook/assets/image (674) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (674) (1) (1) (1).png>)
 
 * Enter a name for your API credentials and click the Save button. A new entry will now be visible in the Integrations page containing your clientId and clientSecret. Keep these credentials open and go back to Chatlayer.ai to start the Sparkcentral configuration.
 * Go to the channels page in Chatlayer. Click the plus icon next to Sparkcentral to start the channel configuration.&#x20;
@@ -26,7 +26,7 @@ The first step to integrate Sparkcentral with Chatlayer.ai is to retrieve API Cr
 * Return to your Sparkcentral dashboard and open the Settings page. Open the Virtual Agents tab from the sidebar on the settings page and click the Add Custom Virtual Agent button in the top right corner. This will open a popup allowing you to configure some details for the Custom Virtual Agent.&#x20;
 * Enter the webhook URL for your virtual Chatlayer.ai agent under the section Custom Virtual Agents Configuration.&#x20;
 
-![](<../../.gitbook/assets/image (677) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (677) (1) (2).png>)
 
 ![](<../../.gitbook/assets/image (675) (1) (1).png>)
 

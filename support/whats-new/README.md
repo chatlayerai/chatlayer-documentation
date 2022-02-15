@@ -6,6 +6,16 @@ description: New features and functionalities in the platform
 
 ## January 2022
 
+* The Webhook calls now give an Opaque identifier object in payload of postback buttons. These payload should not be modified. They can just be sent to chatlayer in order to trigger a postback button/quickreply.
+
+## October 2021
+
+* You can now start a conversation initiated by the user, [skipping the introduction message](./#undefined)
+* On the home page, you can now find the menu ['Billing and usage'](https://docs.chatlayer.ai/support/billing-and-subscription#billing-and-usage) to track your usage and plans.
+* We now support offloading via [Sinch Contact & Contact Pro](https://docs.chatlayer.ai/integrations/human-offloading-live-chat/sinch-contact)
+
+## January 2022
+
 * [Integration with Freshdesk](../../integrations/app-integrations/freshdesk-app-integration.md) to create Freshdesk support tickets
 
 ## December 2021
