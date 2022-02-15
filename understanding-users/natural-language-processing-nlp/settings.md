@@ -4,7 +4,7 @@ description: The NLP threshold defines the level of which user information is un
 
 # NLP threshold
 
-For each user message, our NLP model will check the [confidence score ](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp)of that message and how close it's related to an existing expression. If the confidence score is above the threshold, the corresponding bot dialog will be triggered. If it's below the threshold, the 'not understood' bot dialog will be triggered.
+For each user message, our NLP model will check the [confidence score ](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp)of that message and how close it's related to an existing expression. If the confidence score is above the threshold, the corresponding bot dialog will be triggered. If it's below or equal to the threshold, the 'not understood' bot dialog will be triggered.
 
 If you set the NLP threshold **rather high (> 80%),** very few user messages will be recognised correctly, so your users will often get a 'not understood' message. So when can you put the NLP threshold higher to make sure more accurate bot answers are given? When the bot's expressions are plenty and varied.
 
@@ -30,11 +30,11 @@ Have a look at the following three expressions and their confidence scores:
 * I need to be in Brussels tomorrow (79% confidence for 'Book train ticket')
 * I lost something but still have my train ticket (66% confidence for 'Book train ticket')
 
-In this example, the correct threshold should be higher than 63%, but lower than 79%.
+In this example, the correct threshold should be at least 66%, but lower than 79%.
 
 A threshold of 80% (or higher) wouldn't allow the bot to recognise the expression "I need to be in Brussels tomorrow" correctly. The user would receive a 'not understood' message, which we want to avoid of course.&#x20;
 
-A threshold of 65% (or lower) would result in the expression "I lost something (...)" to be incorrectly linked to the intent "Book train ticket" so the matching bot dialog would be triggered. So when the user says, "I lost something but still have my train ticket" the bot would reply "Where do you need to be?" which wouldn't fit the user's goal (= intent).
+A threshold lower than 66% would result in the expression "I lost something (...)" to be incorrectly linked to the intent "Book train ticket" so the matching bot dialog would be triggered. So when the user says, "I lost something but still have my train ticket" the bot would reply "Where do you need to be?" which wouldn't fit the user's goal (= intent).
 
 
 

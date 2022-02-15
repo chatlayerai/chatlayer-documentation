@@ -18,7 +18,7 @@ Before you can use the `train` tab, you should already have some real training d
 All conversations happening on channels will be displayed in the `Train` tab on the platform. Conversations that occur in the debugger (the testing environment on the platform) will be ignored.
 {% endhint %}
 
-Let's have a look at the NLP `train` tab. As you can see in the image below, all user messages are labeled by the NLP model. Each message get's a proposed intent and a confidence score so that you can evaluate these messages. The NLP also identifies possible entities and values.
+Let's have a look at the NLP `train` tab. As you can see in the image below, all user messages are labeled by the NLP model. Each message gets a proposed intent and a confidence score so that you can evaluate these messages. The NLP also identifies possible entities and values.
 
 ![A quick glance at the NLP train tab](<../../.gitbook/assets/image (93).png>)
 
