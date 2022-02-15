@@ -33,11 +33,11 @@ If you use the right techniques to create these word vectors, you can add even m
 
 If we put these modes of transportation on a simple graph, it looks something like this:
 
-![](<../../.gitbook/assets/image (315).png>)
+![](<../.gitbook/assets/image (315).png>)
 
 So if you create a chatbot to arrange transportation over land, you will have to be very strict with the horizontal axis. You cannot transport something by boat if there is no water. The vertical axis on the other hand can be less strict, maybe you want to transport a small package in a crowded city and then a bike is enough. If it is a larger freight, you might need a truck or a train, so the word diversity you would allow in this case is shown in yellow below.
 
-![](<../../.gitbook/assets/image (314).png>)
+![](<../.gitbook/assets/image (314).png>)
 
 But the opposite case can also occur. Imagine you want to transport something big, and you don’t care if it is over land, water or in the air. then a car and a bike won't be good options, but a boat, train or plane are. So in that case you might want to allow some variety in the horizontal axis, but not that much in the vertical axis. This can be illustrated by the blue box on the image above.
 

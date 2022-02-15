@@ -103,12 +103,11 @@
 
 ## Tips & Best practices
 
-* [Bot templates](tips-and-best-practices/bot-templates/README.md)
-  * [Bot flows](tips-and-best-practices/bot-templates/bot-flows.md)
+* [Bot templates](tips-and-best-practices/bot-templates.md)
 * [Bot-building best practices](tips-and-best-practices/bot-building-best-practices/README.md)
-  * [Bot-building checklist](tips-and-best-practices/bot-building-best-practices/chatbot-checklist.md)
-  * [Guidelines for building a good bot](tips-and-best-practices/bot-building-best-practices/what-makes-a-good-chatbot.md)
-  * [Creating diverse expressions](tips-and-best-practices/bot-building-best-practices/creating-diverse-expressions.md)
+  * [Bot-building checklist](tips-and-best-practices/chatbot-checklist.md)
+  * [Guidelines for building a good bot](tips-and-best-practices/what-makes-a-good-chatbot.md)
+  * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
 * [Bot maintenance](tips-and-best-practices/bot-maintenance.md)
 * [NLP best practices](tips-and-best-practices/how-to-nlp.md)
 * [Not understood bot dialog](tips-and-best-practices/not-understood-bot-dialog/README.md)

@@ -4,9 +4,9 @@ When you create a new bot, you can choose between building one from scratch, or 
 
 Next to templates, we also have ready to go bot flows. Read more about that [here](https://docs.chatlayer.ai/tips-and-best-practices/bot-templates/bot-flows).
 
-![](../../.gitbook/assets/image%20%28520%29.png)
+![](<../.gitbook/assets/image (520).png>)
 
-We are constantly building new template bots, covering different industries and use cases. Want to request a new bot template? [Let us know!](../../support/get-in-touch.md)
+We are constantly building new template bots, covering different industries and use cases. Want to request a new bot template? [Let us know!](../support/get-in-touch.md)
 
 ## Available bot templates
 
@@ -58,9 +58,9 @@ This chatbot banking assistant can help its users make payments, check their car
 * Get card info
 * Check card limit
 
-## 5 – Net Promoter Score® \(NPS\) Template Bot
+## 5 – Net Promoter Score® (NPS) Template Bot
 
-Wanna know more about your users, clients, and customers? Use our Net Promoter Score® \(NPS\) bot to collect and assess valuable feedback 🔍
+Wanna know more about your users, clients, and customers? Use our Net Promoter Score® (NPS) bot to collect and assess valuable feedback 🔍
 
 **Why use this template?**
 
@@ -78,3 +78,8 @@ Grab your bags because you’re going on a virtual trip! This bot can look up fl
 * Create a connection with the Skyscanner API
 * Learn how to change information from the bot to match the API calls
 
+## 7 – Zendesk ticket creation flow
+
+We wrote a [great article](https://docs.chatlayer.ai/integrations/human-offloading-live-chat/creating-a-zendesk-support-ticket) on how to create a Zendesk ticket integration, but how do you set up your bot so it can collect all those user details to create a ticket? Easy, just download the Zendesk ticket creation flow!
+
+This bot template allows your bot to collect the user info needed to create a ticket using [input validation dialogs](https://docs.chatlayer.ai/bot-answers/dialog-state/user-input-bot-dialog), then confirms with the user if the information is correct before sending it to Zendesk. All you have to do is fill in your own Zendesk login details and off you go!
