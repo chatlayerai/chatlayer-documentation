@@ -113,6 +113,8 @@ padding: 1em;
 }
 ```
 
+## Custom CSS
+
 To make your Chat Widget look customized as per your needs, our Enterprise and Corporate clients can upload their own CSS. Please see the following list of CSS classes that you can use to customize your Web Widget:
 
 * ChatTitle

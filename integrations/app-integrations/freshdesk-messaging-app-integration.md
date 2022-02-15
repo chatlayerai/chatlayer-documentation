@@ -39,11 +39,11 @@ To use Freshdesk Messaging as a channel, click in Channels > App Integration Cha
 
 Choose Freshdesk Messaging
 
-![](<../../.gitbook/assets/image (684).png>)
+![](<../../.gitbook/assets/image (684) (1).png>)
 
 Either choose one of the connected accounts or connect new account:
 
-![](<../../.gitbook/assets/image (703).png>)
+![](<../../.gitbook/assets/image (703) (1).png>)
 
 This is the pop up that will show when you choose to Connect new account:
 
@@ -63,11 +63,11 @@ Once the account is connected, Copy the Custom Webhook URL to paste it on Freshd
 
 Go to Freshdesk Messaging > Admin > Webhook
 
-![](<../../.gitbook/assets/image (685).png>)
+![](<../../.gitbook/assets/image (685) (1).png>)
 
 Paste the Custom Webhook URL copied from Chatlayer in the first field; copy the Authentication field, then paste it on Chatlayer:
 
-![](<../../.gitbook/assets/image (711).png>)
+![](<../../.gitbook/assets/image (711) (1).png>)
 
 ![](<../../.gitbook/assets/image (671).png>)
 
@@ -77,7 +77,7 @@ To deploy the Freshdesk Messenger on your website, go to Freshdesk Messaging > A
 
 In “Deploy”, copy the code snippet and paste it on your source code.
 
-![](<../../.gitbook/assets/image (684) (1).png>)
+![](<../../.gitbook/assets/image (684) (1) (1).png>)
 
 You’ll be able to see the webchat icon and interact with your Chatlayer bot:
 
@@ -91,13 +91,13 @@ Create a topics in Freshdesk Messaging:
 
 ![](<../../.gitbook/assets/image (712).png>)
 
-![](<../../.gitbook/assets/image (708).png>)
+![](<../../.gitbook/assets/image (708) (1).png>)
 
 You can assign different groups to different topics, depending on your customer support structure, skills and lines of attention.
 
 ![](<../../.gitbook/assets/image (704) (1).png>)
 
-![](<../../.gitbook/assets/image (718).png>)
+![](<../../.gitbook/assets/image (718) (1).png>)
 
 Once you have all your topics and groups created, when you reach the points of your flow that will enable the customer to talk to an agent, create an Action dialog state and click on Send to Offload Provider:
 

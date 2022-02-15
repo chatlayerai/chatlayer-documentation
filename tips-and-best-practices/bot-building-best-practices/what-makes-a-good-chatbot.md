@@ -14,7 +14,7 @@ User: Ugh, you suck.
 
 Bot:
 
-![](../.gitbook/assets/giphy.gif)
+![](../../.gitbook/assets/giphy.gif)
 
 ## 2 – Set the right expectations
 
@@ -24,7 +24,7 @@ Your onboarding should be a guided experience for your users in which they learn
 
 An easy way to set the right expectations for the user is to create a powerful introduction. In the introduction, set the expectations by explaining what the user can do with this bot! This way you guide the user in the correct way (guideline number 3) and set the expectations what the bot can do for the user.
 
-![](<../.gitbook/assets/image (663).png>)
+![](<../../.gitbook/assets/image (663).png>)
 
 ## 3 – Guide the user
 

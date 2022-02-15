@@ -192,11 +192,11 @@ What happens whenever the user gives an input, is that the platform will check i
 
 For contextual entities, you can also check if there is a match between the input given by the user and the contextual entity values saved in your bot:
 
-![](<../../.gitbook/assets/image (671) (3).png>)
+![](<../../.gitbook/assets/image (671) (1) (1) (1).png>)
 
 This will check if the answer is listed in the values  of the entity:
 
-![](<../../.gitbook/assets/image (676) (2).png>)
+![](<../../.gitbook/assets/image (676) (1) (1).png>)
 
 Two important things to note for contextual entities in Input validations:
 
