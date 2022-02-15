@@ -1,15 +1,15 @@
 # NLP best practices
 
-Chatbots are automated computer programs that act like human support agents, chatting on, for example, Facebook Messenger. They 'understand' what the user is saying and react accordingly. The Natural Language Processing (NLP) engine of a chatbot is the underlying algorithm that enables the bot to 'understand' what's being said.
+Voice and chatbots are virtual programs that act like human support agents, who live on, for example, Facebook Messenger. They can 'understand' what the user is saying and reply accordingly thanks to the Natural Language Processing (NLP) engine.
 
-Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. Computers are not that different; to train an NLP engine, you need large amounts of example phrases.
+Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. Computers are not that different; to train an NLP engine, you need huge amounts of data and example phrases.
 
-Intent recognition is the core of a clever chatbot. An intent can be understood as the speaker's 'intention' or 'need': what does the user wish to accomplish? In order to correctly recognise an intent, the chatbot has to learn a variety of ways of expressing a particular intent. For this to be possible, the bot needs to be trained for a set of expressions: for each intent, it needs a sufficiently large number of expressions that convey the same message (= intent).
+Accurate intent recognition lies at the core of any clever bot. FYI, an intent reflects the user's goal or 'intention': what is the user trying to accomplish through this bot? For the bot to be able to correctly recognise an intent, it needs to learn all the ways a user could express their particular intent. How does the bot learn? By getting fed user expressions which it then uses to train on. For every intent, the bot needs a large number of expressions that convey the same intent
 
 {% hint style="info" %}
 **An example**
 
-Intent: buy a train ticket
+Intent: Buy a train ticket
 
 Expressions:
 
@@ -17,90 +17,87 @@ Expressions:
 * I would like to buy a train ticket
 * We need tickets to go to Brussels
 * I have to go to Antwerp
-* I want a ticket to Ghent
+* Can I get a ticket to Ghent?
+* Help me book some train tickets
+* ...
 {% endhint %}
 
-The more expressions you add for one intent and the more varied they are, the more accurate the chatbot will recognize the user’s input. The quality of the data you train your bot with is crucial for this accuracy. Several factors determine the quality of your training data: the intent structure, the expressions for each intent, and the entities.
+The more expressions you add to the bot and the more diverse they are, the more accurate your bot will recognise the user’s input. The quality of the expressions you train your bot on is crucial for its accuracy. Several factors determine the quality of this training data: the intent structure, the quality of expressions for each intent, and possible entities.
 
-## Intent structure <a href="#trainingdatagenerationforchatbots-bestpractices-intentstructure" id="trainingdatagenerationforchatbots-bestpractices-intentstructure"></a>
+## Creating intents <a href="#trainingdatagenerationforchatbots-bestpractices-intentstructure" id="trainingdatagenerationforchatbots-bestpractices-intentstructure"></a>
 
-Thinking of the intents that you need for your bot is not always that easy. Additionally, there is no correct way of doing it, it depends on what you want your bot to do, how you define the bot flow, and on how the user actually interacts with the bot.&#x20;
+Finding the right intents to add to your bot isn't always so easy. So let us help you get started! Here are some tips & tricks to create great intents:
 
-Here are some tips & tricks to create great intents:
-
-1. **Think like a user**\
-   Don't make the mistake of defining the structure of your intents based on your own needs. Think for instance of a support bot for a software company. The goal is for the bot to route specific user problems to the correct specialised support agent. There is an agent for authentication issues, one for compatibility issues, one for feature requests, one for bug reports and one for functional issues. So you've defined an intent-structure of 5 intents, one for each type of issue. When one of these intents is recognised, the user will be routed to the corresponding support agent. \
+1. **Use the data you already have** \
+   If you already have some customer data available, like a list of frequently asked questions that your support desk handles daily – use it! Analyse this data to understand which questions are most important and asked most, so your bot can handle these. You can calculate the volume for each question and prioritise them accordingly. \
    \
-   However when putting your bot in production, you notice that users are almost never routed to the right agent, or that your bot doesn't understand what the user needs. So you check your user's messages and notice that they've written things like "the program freezes" or "I cannot do X or Y", instead of "I cannot do X because the update of your software is not backwards compatible with my operating system," which is what you planned for them to say in order for the routing to be correct. Lesson learned: do not expect your users to stick to a strict script that they are not aware of, because they won't. It doesn't come natural to them.\
+   No idea what your users want to get out of your bot? Start with a simple click-bot, so you can gather useful information on your users' needs. Use that info to define good intents afterward. \
+
+2. **Keep it simple, Sherlock**\
+   Don't be afraid of starting small. If the first version of your bot can only handle 5 of the 15 questions you eventually want it to handle, that's totally fine, especially if those 5 questions make up 80% of all incoming questions. You can already improve your customer support service significantly using a small bot with 5 intents, handling 70% to 80% of all requests, so your team of human agents can focus on the remaining 30% to 20% of requests. New intents can always be added later, when you've gathered more user data, so let your bot grow organically.\
    \
-   So think like your user; listen to how they phrase their problems in their words and use that to create your bot's messages and flow. \
+   Keep in mind: it's better to start small and do it right, then trying to do everything at once and do it wrong.\
 
-2. **Use all the data you have** \
-   If you already have some user data, like a list of questions that users have asked your support desk – use it! Analyse that data to understand which questions are frequently asked and, more importantly, how they are asked specifically. Calculate the volumes for each group of questions and prioritize them accordingly. If you have no idea on how users will actually interact with your bot and what they might ask, you can start with a simple click bot, which will allow you to gather a lot of useful information on your users' needs, allowing you to define an good intent-structure afterward. \
-
-3. **Keep it simple, Sherlock**\
-   Do not be afraid of starting with a bot that can only handle four of the 10+ questions that you eventually want it to handle, especially if those four questions make up 90% of all incoming questions. You'll only need four intents to build a bot that considerably improves the life of your support agents, without affecting the quality of customer support, meaning that only the remaining 10% of questions will have to be handled manually. New intents can be added once you gather more user data, let it grow organically.\
-
-4.  **Revise**\
-    Start with a general flow and some general intents, then add follow-up questions to get a detailed understanding of what your user needs. This will allow you to gather the necessary data to revise your intent structure. \
+3. **Revise, revise, optimise**\
+   Start with a general intent which triggers a general flow, then add some follow-up questions to get a detailed understanding of what your user needs exactly. This approach will allow you to gather the necessary data to revise your intents afterward. \
+   \
+   For example, if you're building a telco support bot, you could start with two simple intents: \
+   1\. Problem with phone\
+   2\. Problem with wifi\
+   \
+   The first intent catches all issues related to phones, which of course, can be very diverse. Is it a problem with the battery? The screen? The software? A lost order? The same goes for the second intent.
+4.  To figure out what the actual problem is, you can add a few follow-up questions about the model of the phone, or the model of the modem. After a few weeks, when you analyse the real user messages, you notice that users often already include the model of their phone (eg. Samsung Galaxy S9) in their messages before the bot explicitly asks for it, while they never use specific terms for anything related to wifi. \
     \
-    For instance, if you're building a telco support bot, you could start with two simple intents:\
-    – Problem with phone\
-    – Problem with wifi \
-    And then add a follow-up question about the model of the phone, or the model of the modem. After a few weeks, when you analyse the actual user messages, you notice that users often already include the model of their phone (eg. Samsung Galaxy S9) in their messages before the bot explicitly asks for it, while they never use specific terms for anything related to wifi. In this case, it makes sense to refine the 'problem with phone' intent by splitting it up into several other intents, or by making use of entities to capture the phone model, whilst avoiding your bot asking for a piece of information that the user already gave. The 'problem with wifi' intent can stay as it is, with follow-up questions to pin-point the exact problem. Keep in mind that defining a good intent-structure is an iterative process, it takes time and effort.&#x20;
+    In this case, it makes sense to split up the intent 'problem with phone' by creating several other intents, or by using entities to capture the phone model straight away. The intent 'problem with wifi' can stay as it is, with follow-up questions to pin-point the exact problem. Keep in mind that creating intents is an ongoing process, which takes time and effort. \
 
-    However, if two of your intents are very similar in terms of meaning and/or use case, you should merge them to avoid confusing the NLP engine. If you are noticing that the NLP engine is confused with these two use cases because they are too similar, you may need to combine them into one intent. For example, let's look at our bot responsible for booking train tickets. Imagine that, besides train tickets, you'd also like to offer bus tickets. You could create an extra intent for booking bus tickets, but the expressions would be very similar to the intent for booking train tickets, with only the transportation mode changing from time to time. In this case, it would be better to only have one intent for booking tickets, and an [entity](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/synonym-entities) to catch the requested vehicle type.&#x20;
 
-It’s important to roughly have an equal number of expressions for each intent. Even if it usually takes more examples to train your most important intent compared to the others, do strive to keep the number of expressions consistent over intents. This will help avoid creating a bias towards intents with a large expression count.&#x20;
+    When two (or more) intents are very similar in meaning and/or use case, you should merge them to avoid confusing the NLP engine. For example, you've built a bot that can help a user book train tickets. after a while, you would also like to offer bus tickets. You could create an extra intent for booking bus tickets, but the expressions would be too similar to the one for booking train tickets. Only the mode of transportation is different. In this case, it's better to create only one intent, 'booking tickets', and use an [entity](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/synonym-entities) to recognise the transportation mode.
 
-## Expressions <a href="#trainingdatagenerationforchatbots-bestpractices-expressions" id="trainingdatagenerationforchatbots-bestpractices-expressions"></a>
+{% hint style="info" %}
+It’s important to have about the same number of expressions per intent to make sure that the bot doesn't train more on intens with a large expression count, ignoring the ones with a less expressions.
+{% endhint %}
 
-Creating a set of expressions needed to train your bot is probably the most time-intensive part of creating your bot. The accuracy of your bot stands or falls with the quality of your expressions. So make sure to spend some time on it, and review them regularly.
+## Creating expressions <a href="#trainingdatagenerationforchatbots-bestpractices-expressions" id="trainingdatagenerationforchatbots-bestpractices-expressions"></a>
+
+Creating a good set of expressions is key to create a smart bot. The accuracy of your bot stands or falls with the quality of your expressions, so make sure to spend enough time on this, as well as reviewing them regularly.
 
 Here are some tips & tricks for creating good expressions:
 
-1. **Play Jeopardy**\
-   Jeopardy is a game in which an answer is provided and the question has to be guessed. So write the expressions as if you were playing this game. If for instance you have an intent 'report problem', to which your bot should answer 'No worries, I will solve your problem in no time', then think of all the possible things a user could say to get this specific answer. Starting with the answer instead of the question can help you clearly separate the expressions for each intent.\
+1.  **Use real live data**
 
-2. **Be specific enough**\
-   Expressions have to specifically match a certain intent. For example, if the intent is "I want to change my address," an expression like “I have a question” only confuses the model since it is not specific enough. For the intent “I forgot my password”, the expression “I forgot it” is not specific enough as it can apply to multiple contexts. Your bot will keep wondering; "you forgot what?".\
-
-3. **Don't allow overlap**\
-   Creating intents that are too similar to each other is dramatic for the performance of the NLP model. Make sure your intents are properly aligned and do not overlap.\
-
+    Chances are there are already a lot of user expressions which you can feed to your bot. Think customer support logs, social media posts, comments on your company's forum etc.
+2. **Use pre-built intents**\
+   ****No need to reinvent the wheel when you can download the wheel directly on the Chatlayer platform! We have a lot of pre-built intents ready for you to use. Simply download them, train the NLP, and you're good to go!
+3. **Be specific**\
+   Expressions have to match a specific intent, so your expressions have to specific too. For example, if the intent is "change address," an expression like “I have a question” will only confuse the bot since it is not specific enough. A question about what? For the intent “Forgot password”, the expression “I forgot it” is not specific enough as it can apply to multiple things a user could forget. So be specific.
 4. **Avoid filler words**\
-   Do not use intro’s and outro’s. Don’t add the expression “hello, I want to book a train ticket. Can I do that? Thanks,” Simply say “I want to book a train ticket” instead, which is short and simple. This ensures that the bot learns what is relevant.\
-
+   Avoid adding the expression “hello, I want to book a train ticket. Can you help me with that? Thanks” because this sentence contains too many irrelevant words. Simply use “I want to book a train ticket” which is shorter and more relevant.
 5. **Use real language**\
-   Use words and sentences you would use when talking to a real person. Don’t use paragraphs or language that are overly formal. Keep it light and natural instead. Make use of real user messages in case you have them; data is knowledge.\
+   Add words and sentences to your bot which a real person would use in this conversation. Don’t use entire paragraphs or language which is overly formal. Keep it light and natural instead. Make use of real user messages in case you have them; data is knowledge.\
 
 6. **Allow for slang and dialect**\
-   Feel free to use slang words, common abbreviations ('asap' instead of 'as soon as possible', or 'pq' instead of 'parce-que') and regional dialects. Don’t overdo it though: only stick to things the majority of people would actually use.\
+   Feel free to use slang words, common abbreviations ('asap' instead of 'as soon as possible', or 'pq' instead of 'parce-que') and regional dialects. Don’t overdo it though: only stick to things the majority of people would actually use.
+7. **Create enough expressions**\
+   We learned from lots of previous testing that you need at least 40 to 50 expressions to get a reasonable bot performance. Some of our customers added 200 to 400 expressions per intent, which results in excellent bot behaviour. Regularly check your user data (if you have it) and add the expressions your users provided you with to your model, which will make the model more and more accurate over time. \
 
-7. **Think like a user, not like an expert**\
-   Don’t assume a customer will ask for a SEPA code, they will most likely ask for a bank account number. Create expressions that your users would actually use and avoid jargon that only you would understand. Crowdsourced expressions are a great way of accomplishing this.\
-
-8. **Use enough expressions**\
-   We learned from lots of previous testing that you need at least 50 expressions to get a reasonable bot performance. Some are easier, some are harder. If you have entities, be prepared to add 20 expressions per type of entity. Some of our customers have between 200 and 400 expressions per intent, which results in great bot behavior. Regularly look at your user data (if you have it) and add the expressions your users provided you with to your model, which will make the model more and more accurate over time. \
-
-9. **Have a varied vocabulary**\
+8. **Have a varied vocabulary**\
    Capturing a wide variety of ways of saying the same thing is super important. Feel free to use a list of synonyms ([http://www.synonym.com/synonyms/](http://www.synonym.com/synonyms/)  or [https://www.thesaurus.com/](https://www.thesaurus.com)) to get inspired. \
    \
    You can also make use of the generator functionality on our platform to quickly create several expressions by simply substituting words for their synonyms. If you do so, make sure to pay special attention to creating a dataset with sufficient variation in the phrase structure. You don't want to repeat the same phrase over and over again, with only one word difference.\
 
-10. **Choose a varied phrase structure**\
-    Some people will state their intent by asking a question (“What to do when I move?”) while others might use a declarative sentence (“I am moving.”)  Avoid creating a data set that contains the same sentence over and over with only a few different words in it. For example: do not limit your dataset for the intent "buy\_product" to a series of "I want to buy a book", " I want to buy a comic book", "I want to buy a dvd", I want to buy X", "I want to buy Y". If you do this, the model will latch on to the "I want to buy" portion of the expressions and wrongly predict the intent "buy\_product" whenever a user uses those words. Additionally, the bot will not be able to correctly predict this intent for sentences with a different phrase structure, such as "My son needs the most recent edition of Yoga for dummies". Creating a data set with enough variation can be hard as it drains your creativity, so we advice to have more than one person participating in the creation process. Also account for a diverse array of people giving input; a man might not think of things a woman will think of because they might experience something differently. In short: the more (diverse) people, the more (creative and accurate) phrases you'll get.\
+9. **Choose a varied phrase structure**\
+   Some people will state their intent by asking a question (“What to do when I move?”) while others might use a declarative sentence (“I am moving.”)  Avoid creating a data set that contains the same sentence over and over with only a few different words in it. For example: do not limit your dataset for the intent "buy\_product" to a series of "I want to buy a book", " I want to buy a comic book", "I want to buy a dvd", I want to buy X", "I want to buy Y". If you do this, the model will latch on to the "I want to buy" portion of the expressions and wrongly predict the intent "buy\_product" whenever a user uses those words. Additionally, the bot will not be able to correctly predict this intent for sentences with a different phrase structure, such as "My son needs the most recent edition of Yoga for dummies". Creating a data set with enough variation can be hard as it drains your creativity, so we advice to have more than one person participating in the creation process. Also account for a diverse array of people giving input; a man might not think of things a woman will think of because they might experience something differently. In short: the more (diverse) people, the more (creative and accurate) phrases you'll get.\
 
-11. **Use correct spelling**\
+10. **Use correct spelling**\
     During training, each word is mapped to a numeric representation summarising their meaning in a computer-readable format. The mappings only exist for a pre-existing vocabulary which contains the 200 000 most common words in a language. Misspelled words are not part of this vocabulary and hence cannot be mapped to an accurate numeric representation. Although the NLU engines do apply spell correction before mapping words to their representation, it is better to avoid typo's. Think for instance of the non-word, _pone_: it could be corrected as _pony_ or as _phone_, which are two entirely different meanings, only one of them is relevant for a telco support bot. Check the spelling of the training data to make sure that your bot learns the meaning of words relevant for your use-case.\
 
-12. **Lower case vs UPPER CASE**\
+11. **Lower case vs UPPER CASE**\
     ****Users often do not use capitalisation when chatting with a bot. However, for intent classification, capitalisation is ignored, so you do not have to worry about it. But be careful: capitalisation is relevant for entity extraction (see below).\
 
-13. **Punctuation**\
+12. **Punctuation**\
     ****Users don't often use punctuation when chatting with a bot, so make sure to include expressions both with and without punctuation. For instance, add questions with and without a question mark.\
 
-14. **Accents**\
+13. **Accents**\
     Users don't often use accents when chatting with a bot. In order for the bot to learn how to deal with this, accents are ignored in our models, so don't worry about it. For instance, ‘élève’ is treated the same as ‘eleve’.&#x20;
 
 ## Entities <a href="#trainingdatagenerationforchatbots-bestpractices-entities" id="trainingdatagenerationforchatbots-bestpractices-entities"></a>

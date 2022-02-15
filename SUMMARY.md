@@ -103,7 +103,7 @@
 
 ## Tips & Best practices
 
-* [Bot templates](tips-and-best-practices/bot-templates.md)
+* [Bot templates](tips-and-best-practices/bot-templates/README.md)
 * [Bot-building best practices](tips-and-best-practices/bot-building-best-practices/README.md)
   * [Bot-building checklist](tips-and-best-practices/chatbot-checklist.md)
   * [Guidelines for building a good bot](tips-and-best-practices/what-makes-a-good-chatbot.md)

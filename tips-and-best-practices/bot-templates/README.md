@@ -4,9 +4,9 @@ When you create a new bot, you can choose between building one from scratch, or 
 
 Next to templates, we also have ready to go bot flows. Read more about that [here](https://docs.chatlayer.ai/tips-and-best-practices/bot-templates/bot-flows).
 
-![](<../.gitbook/assets/image (520).png>)
+![](<../../.gitbook/assets/image (520).png>)
 
-We are constantly building new template bots, covering different industries and use cases. Want to request a new bot template? [Let us know!](../support/get-in-touch.md)
+We are constantly building new template bots, covering different industries and use cases. Want to request a new bot template? [Let us know!](../../support/get-in-touch.md)
 
 ## Available bot templates
 
