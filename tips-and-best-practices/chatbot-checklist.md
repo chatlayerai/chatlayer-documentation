@@ -6,6 +6,8 @@ description: >-
 
 # Conversation Design checklist
 
+Here are some tips and tricks for building clever bots and offering customers the best possible user experience:
+
 | Your bot:                                                              | Example                                                                                                                                                |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Introduces itself and the organisation                                 | _Hi, welcome to Bot Trains. I'm Choo Choo, your virtual assistant 👋_                                                                                  |
