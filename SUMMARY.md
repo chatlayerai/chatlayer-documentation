@@ -68,7 +68,6 @@
   * [Help Scout](integrations/human-offloading-live-chat/helpscout.md)
   * [Intercom](integrations/human-offloading-live-chat/intercom-integration.md)
   * [Offloading Webhook](integrations/human-offloading-live-chat/offloading-webhook.md)
-  * [RingCentral Engage Digital](integrations/human-offloading-live-chat/ringcentral-engage-digital.md)
   * [Salesforce Service Cloud](integrations/human-offloading-live-chat/salesforce-service-cloud.md)
   * [Sparkcentral by Hootsuite](integrations/human-offloading-live-chat/sparkcentral-beta.md)
   * [Zendesk Chat](integrations/human-offloading-live-chat/zendesk-chat.md)
