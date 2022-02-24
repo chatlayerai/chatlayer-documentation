@@ -111,7 +111,7 @@
 * [Not understood bot dialog](tips-and-best-practices/not-understood-bot-dialog/README.md)
   * [Not understood counter](tips-and-best-practices/not-understood-bot-dialog/not-understood-counter.md)
   * [Go to previous bot dialog](tips-and-best-practices/not-understood-bot-dialog/go-to-previous-bot-dialog.md)
-  * [Create specific not understood messages](tips-and-best-practices/not-understood-bot-dialog/intent-recognition-below-threshold.md)
+  * [How to create better not understood messages](tips-and-best-practices/not-understood-bot-dialog/intent-recognition-below-threshold.md)
   * [Not understood Google search](tips-and-best-practices/not-understood-bot-dialog/not-understood-google-search.md)
 * [Solving bot issues](tips-and-best-practices/solving-bot-issues/README.md)
   * [1. No correct response](tips-and-best-practices/solving-bot-issues/1.-no-correct-response.md)
