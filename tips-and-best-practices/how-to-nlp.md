@@ -1,6 +1,6 @@
 # NLP best practices
 
-Voice and chatbots are virtual programs that act like human support agents, who live on, for example, Facebook Messenger. They can 'understand' what the user is saying and reply accordingly thanks to the Natural Language Processing (NLP) engine.
+Voice and chatbots are virtual programs that can understand and reply to what a user is saying, thanks to their Natural Language Processing (NLP) engine.
 
 Understanding language isn't easy: it takes us humans about 6 years and hundreds of examples to understand the most common 20,000 words. Computers are not that different; to train an NLP engine, you need huge amounts of data and example phrases.
 
@@ -45,13 +45,12 @@ Finding the right intents to add to your bot isn't always so easy. So let us hel
    1\. Problem with phone\
    2\. Problem with wifi\
    \
-   The first intent catches all issues related to phones, which of course, can be very diverse. Is it a problem with the battery? The screen? The software? A lost order? The same goes for the second intent.
-4.  To figure out what the actual problem is, you can add a few follow-up questions about the model of the phone, or the model of the modem. After a few weeks, when you analyse the real user messages, you notice that users often already include the model of their phone (eg. Samsung Galaxy S9) in their messages before the bot explicitly asks for it, while they never use specific terms for anything related to wifi. \
-    \
-    In this case, it makes sense to split up the intent 'problem with phone' by creating several other intents, or by using entities to capture the phone model straight away. The intent 'problem with wifi' can stay as it is, with follow-up questions to pin-point the exact problem. Keep in mind that creating intents is an ongoing process, which takes time and effort. \
+   The first intent catches all issues related to phones, which of course, can be very diverse. Is it a problem with the battery? The screen? The software? A lost order? The same goes for the second intent. To figure out what the actual problem is, you can add a few follow-up questions about the model of the phone, or the model of the modem. After a few weeks, when you analyse the real user messages, you notice that users often already include the model of their phone (eg. Samsung Galaxy S9) in their messages before the bot explicitly asks for it, while they never use specific terms for anything related to wifi. \
+   \
+   In this case, it makes sense to split up the intent 'problem with phone' by creating several other intents, or by using entities to capture the phone model straight away. The intent 'problem with wifi' can stay as it is, with follow-up questions to pin-point the exact problem. Keep in mind that creating intents is an ongoing process, which takes time and effort. \
 
 
-    When two (or more) intents are very similar in meaning and/or use case, you should merge them to avoid confusing the NLP engine. For example, you've built a bot that can help a user book train tickets. after a while, you would also like to offer bus tickets. You could create an extra intent for booking bus tickets, but the expressions would be too similar to the one for booking train tickets. Only the mode of transportation is different. In this case, it's better to create only one intent, 'booking tickets', and use an [entity](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/synonym-entities) to recognise the transportation mode.
+When two (or more) intents are very similar in meaning and/or use case, you should merge them to avoid confusing the NLP engine. For example, you've built a bot that can help a user book train tickets. after a while, you would also like to offer bus tickets. You could create an extra intent for booking bus tickets, but the expressions would be too similar to the one for booking train tickets. Only the mode of transportation is different. In this case, it's better to create only one intent, 'booking tickets', and use an [entity](https://docs.chatlayer.ai/understanding-users/natural-language-processing-nlp/synonym-entities) to recognise the transportation mode.
 
 {% hint style="info" %}
 It’s important to have about the same number of expressions per intent to make sure that the bot doesn't train more on intens with a large expression count, ignoring the ones with a less expressions.
@@ -73,32 +72,24 @@ Here are some tips & tricks for creating good expressions:
 4. **Avoid filler words**\
    Avoid adding the expression “hello, I want to book a train ticket. Can you help me with that? Thanks” because this sentence contains too many irrelevant words. Simply use “I want to book a train ticket” which is shorter and more relevant.
 5. **Use real language**\
-   Add words and sentences to your bot which a real person would use in this conversation. Don’t use entire paragraphs or language which is overly formal. Keep it light and natural instead. Make use of real user messages in case you have them; data is knowledge.\
-
+   Add words and sentences to your bot which a real person would use in this conversation. Don’t use entire paragraphs or language which is overly formal. Keep it light and natural instead. Make use of real user messages in case you have them; data is knowledge.
 6. **Allow for slang and dialect**\
    Feel free to use slang words, common abbreviations ('asap' instead of 'as soon as possible', or 'pq' instead of 'parce-que') and regional dialects. Don’t overdo it though: only stick to things the majority of people would actually use.
 7. **Create enough expressions**\
-   We learned from lots of previous testing that you need at least 40 to 50 expressions to get a reasonable bot performance. Some of our customers added 200 to 400 expressions per intent, which results in excellent bot behaviour. Regularly check your user data (if you have it) and add the expressions your users provided you with to your model, which will make the model more and more accurate over time. \
-
+   We learned from lots of previous testing that you need at least 40 to 50 expressions to get a reasonable bot performance. Some of our customers added 200 to 400 expressions per intent, which results in excellent bot behaviour. Regularly check your user data (if you have it) and add the expressions your users provided you with to your model, which will make the model more and more accurate over time.&#x20;
 8. **Have a varied vocabulary**\
    Capturing a wide variety of ways of saying the same thing is super important. Feel free to use a list of synonyms ([http://www.synonym.com/synonyms/](http://www.synonym.com/synonyms/)  or [https://www.thesaurus.com/](https://www.thesaurus.com)) to get inspired. \
    \
-   You can also make use of the generator functionality on our platform to quickly create several expressions by simply substituting words for their synonyms. If you do so, make sure to pay special attention to creating a dataset with sufficient variation in the phrase structure. You don't want to repeat the same phrase over and over again, with only one word difference.\
-
+   You can also make use of the generator functionality on our platform to quickly create several expressions by simply substituting words for their synonyms. If you do so, make sure to pay special attention to creating a dataset with sufficient variation in the phrase structure. You don't want to repeat the same phrase over and over again, with only one word difference.
 9. **Choose a varied phrase structure**\
-   Some people will state their intent by asking a question (“What to do when I move?”) while others might use a declarative sentence (“I am moving.”)  Avoid creating a data set that contains the same sentence over and over with only a few different words in it. For example: do not limit your dataset for the intent "buy\_product" to a series of "I want to buy a book", " I want to buy a comic book", "I want to buy a dvd", I want to buy X", "I want to buy Y". If you do this, the model will latch on to the "I want to buy" portion of the expressions and wrongly predict the intent "buy\_product" whenever a user uses those words. Additionally, the bot will not be able to correctly predict this intent for sentences with a different phrase structure, such as "My son needs the most recent edition of Yoga for dummies". Creating a data set with enough variation can be hard as it drains your creativity, so we advice to have more than one person participating in the creation process. Also account for a diverse array of people giving input; a man might not think of things a woman will think of because they might experience something differently. In short: the more (diverse) people, the more (creative and accurate) phrases you'll get.\
-
+   Some people will state their intent by asking a question (“What to do when I move?”) while others might use a declarative sentence (“I am moving.”)  Avoid creating a data set that contains the same sentence over and over with only a few different words in it. For example: do not limit your dataset for the intent "buy\_product" to a series of "I want to buy a book", " I want to buy a comic book", "I want to buy a dvd", I want to buy X", "I want to buy Y". If you do this, the model will latch on to the "I want to buy" portion of the expressions and wrongly predict the intent "buy\_product" whenever a user uses those words. Additionally, the bot will not be able to correctly predict this intent for sentences with a different phrase structure, such as "My son needs the most recent edition of Yoga for dummies". Creating a data set with enough variation can be hard as it drains your creativity, so we advice to have more than one person participating in the creation process. Also account for a diverse array of people giving input; a man might not think of things a woman will think of because they might experience something differently. In short: the more (diverse) people, the more (creative and accurate) phrases you'll get.
 10. **Use correct spelling**\
-    During training, each word is mapped to a numeric representation summarising their meaning in a computer-readable format. The mappings only exist for a pre-existing vocabulary which contains the 200 000 most common words in a language. Misspelled words are not part of this vocabulary and hence cannot be mapped to an accurate numeric representation. Although the NLU engines do apply spell correction before mapping words to their representation, it is better to avoid typo's. Think for instance of the non-word, _pone_: it could be corrected as _pony_ or as _phone_, which are two entirely different meanings, only one of them is relevant for a telco support bot. Check the spelling of the training data to make sure that your bot learns the meaning of words relevant for your use-case.\
-
+    During training, each word is mapped to a numeric representation summarising their meaning in a computer-readable format. The mappings only exist for a pre-existing vocabulary which contains the 200 000 most common words in a language. Misspelled words are not part of this vocabulary and hence cannot be mapped to an accurate numeric representation. Although the NLU engines do apply spell correction before mapping words to their representation, it is better to avoid typo's. Think for instance of the non-word, _pone_: it could be corrected as _pony_ or as _phone_, which are two entirely different meanings, only one of them is relevant for a telco support bot. Check the spelling of the training data to make sure that your bot learns the meaning of words relevant for your use-case.
 11. **Lower case vs UPPER CASE**\
-    ****Users often do not use capitalisation when chatting with a bot. However, for intent classification, capitalisation is ignored, so you do not have to worry about it. But be careful: capitalisation is relevant for entity extraction (see below).\
+    ****Users often do not use capitalisation when chatting with a bot. However, for intent classification, capitalisation is ignored, so you do not have to worry about it. But be careful: capitalisation is relevant for entity extraction (see below).
+12. **No need for punctuation (or accents)**
 
-12. **Punctuation**\
-    ****Users don't often use punctuation when chatting with a bot, so make sure to include expressions both with and without punctuation. For instance, add questions with and without a question mark.\
-
-13. **Accents**\
-    Users don't often use accents when chatting with a bot. In order for the bot to learn how to deal with this, accents are ignored in our models, so don't worry about it. For instance, ‘élève’ is treated the same as ‘eleve’.&#x20;
+    Punctuation and accents are ignored by our NLP, so don't worry about adding them. For instance, ‘élève’ is treated the same as ‘eleve’. &#x20;
 
 ## Entities <a href="#trainingdatagenerationforchatbots-bestpractices-entities" id="trainingdatagenerationforchatbots-bestpractices-entities"></a>
 
