@@ -103,6 +103,7 @@
 ## Tips & Best practices
 
 * [Bot templates](tips-and-best-practices/bot-templates/README.md)
+* [Functional flow templates](tips-and-best-practices/functional-flow-templates.md)
 * [Bot-building best practices](tips-and-best-practices/bot-building-best-practices/README.md)
   * [Conversation Design checklist](tips-and-best-practices/chatbot-checklist.md)
   * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
