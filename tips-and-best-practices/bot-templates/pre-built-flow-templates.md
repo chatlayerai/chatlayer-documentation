@@ -2,7 +2,7 @@
 
 Do you have an existing bot to which you'd like to add an extra use case? Or are you looking for an extra functionality to add to your bot? Look no further, our pre-built flow templates can be added to any existing bot to quickly help bring it to the next level.
 
-Here's an overview of all functional flow templates that can be downloaded on our platform:
+Here's an overview of the functional flow templates that can be downloaded on our platform:
 
 ### Find nearest location
 

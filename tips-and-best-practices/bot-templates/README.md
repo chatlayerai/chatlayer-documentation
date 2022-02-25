@@ -3,7 +3,7 @@
 When you create a new bot on the Chatlayer platform, you have two options to get started:
 
 1. You build a bot from scratch
-2. You start with a bot template and customise it for your business
+2. You download a bot template and customise it for your business
 
 _If you build a bot from scratch,_ [_this page_](../../tutorials/tutorial-getting-started.md) _can help you get started._
 
@@ -12,19 +12,15 @@ _If you build a bot from scratch,_ [_this page_](../../tutorials/tutorial-gettin
 Templates are bots or flows that were built by our team. There are two different kinds of templates:
 
 1. Bot templates: these are out-of-the-box bots, built for a certain type of business, which can handle that industry's most common use cases. They're a great way to get started on your own bot, or to learn more about how certain things can be built on our platform!
-2. Pre-built flow templates:&#x20;
+2. Pre-built flow templates: these are single flows, often enabling a single use case, which can quickly help you add a use case or functionality to an existing bot. Read more about pre-built flow templates [here](pre-built-flow-templates.md).
 
-{% hint style="info" %}
-If you have an existing bot already and you just want to add a specific use case, you can do so with a functional flow template. Read more about those here.
-{% endhint %}
+![An overview of the template bots on Chatlayer](<../../.gitbook/assets/image (709).png>)
 
-![](<../../.gitbook/assets/image (520).png>)
+PS: We are constantly building new templates, covering different industries and use cases. Would you like a specific template? [Let us know!](../../support/get-in-touch.md)
 
-We are constantly building new template bots, covering different industries and use cases. Want to request a new bot template? [Let us know!](../../support/get-in-touch.md)
+## Available template bots
 
-## Available bot templates
-
-Here's an overview of all available bot templates, ready to use!
+Here's an overview of all available template bots, ready to use!
 
 ## 1 – Restaurant Template bot
 
@@ -97,4 +93,3 @@ Grab your bags because you’re going on a virtual trip! This bot can look up fl
 We wrote a [great article](https://docs.chatlayer.ai/integrations/human-offloading-live-chat/creating-a-zendesk-support-ticket) on how to create a Zendesk ticket integration, but how do you set up your bot so it can collect all those user details to create a ticket? Easy, just download the Zendesk ticket creation flow!
 
 This bot template allows your bot to collect the user info needed to create a ticket using [input validation dialogs](https://docs.chatlayer.ai/bot-answers/dialog-state/user-input-bot-dialog), then confirms with the user if the information is correct before sending it to Zendesk. All you have to do is fill in your own Zendesk login details and off you go!
-

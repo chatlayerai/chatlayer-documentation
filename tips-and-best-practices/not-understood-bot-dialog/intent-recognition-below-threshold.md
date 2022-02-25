@@ -75,7 +75,7 @@ To check which intent is recognized under what score, check out the `Train tab` 
 
 Another option to create specific 'not understood' messages is to use variables. Many bots have a set-up like below, where you can add variables to buttons or Go-Tos to save the route users have taken in the bot:
 
-![In the example above, the variable 'topic' saves the route the user has taken in the bot](<../../.gitbook/assets/image (686) (1).png>)
+![In the example above, the variable 'topic' saves the route the user has taken in the bot](<../../.gitbook/assets/image (686) (1) (1).png>)
 
 
 
