@@ -1,8 +1,22 @@
 # Bot templates
 
-When you create a new bot, you can choose between building one from scratch, or starting with a template bot. These template bots are bots built by our team and contain an example conversation on a specific use case or industry. You can add these bots to your account to get inspiration or learn more about the Chatlayer features!
+When you create a new bot on the Chatlayer platform, you have two options to get started:
 
-Next to templates, we also have ready to go bot flows. Read more about that [here](https://docs.chatlayer.ai/tips-and-best-practices/bot-templates/bot-flows).
+1. You build a bot from scratch
+2. You start with a bot template and customise it for your business
+
+_If you build a bot from scratch,_ [_this page_](../../tutorials/tutorial-getting-started.md) _can help you get started._
+
+### Using a template
+
+Templates are bots or flows that were built by our team. There are two different kinds of templates:
+
+1. Bot templates: these are out-of-the-box bots, built for a certain type of business, which can handle that industry's most common use cases. They're a great way to get started on your own bot, or to learn more about how certain things can be built on our platform!
+2. Pre-built flow templates:&#x20;
+
+{% hint style="info" %}
+If you have an existing bot already and you just want to add a specific use case, you can do so with a functional flow template. Read more about those here.
+{% endhint %}
 
 ![](<../../.gitbook/assets/image (520).png>)
 
@@ -83,3 +97,4 @@ Grab your bags because you’re going on a virtual trip! This bot can look up fl
 We wrote a [great article](https://docs.chatlayer.ai/integrations/human-offloading-live-chat/creating-a-zendesk-support-ticket) on how to create a Zendesk ticket integration, but how do you set up your bot so it can collect all those user details to create a ticket? Easy, just download the Zendesk ticket creation flow!
 
 This bot template allows your bot to collect the user info needed to create a ticket using [input validation dialogs](https://docs.chatlayer.ai/bot-answers/dialog-state/user-input-bot-dialog), then confirms with the user if the information is correct before sending it to Zendesk. All you have to do is fill in your own Zendesk login details and off you go!
+
