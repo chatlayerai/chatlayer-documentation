@@ -3,11 +3,17 @@
 When you create a new bot on the Chatlayer platform, you have two options to get started:
 
 1. You build a bot from scratch
-2. You start with a template and customise it for your business
+2. You start with a bot template and customise it for your business
 
-These template bots are bots built by our team and contain an example conversation on a specific use case or industry. You can add these bots to your account to get inspiration or learn more about the Chatlayer features!
+If you build a bot from scratch, this page will help you get started: [https://app.gitbook.com/o/-LLTwFKMKb7nE4aFG5XD/s/-LLTwFwbOqJj4dDhg8Ju/tutorials/tutorial-getting-started](../../tutorials/tutorial-getting-started.md).
 
-Next to templates, we also have ready to go bot flows. Read more about that [here](https://docs.chatlayer.ai/tips-and-best-practices/bot-templates/bot-flows).
+### Starting with a bot template
+
+Bot templates are bots built by our team. Each template was made for a certain type of business and handles its most common use cases. They're a great way to get started on your own bot, or to learn more about how certain things can be built on our platform.
+
+{% hint style="info" %}
+If you have an existing bot already and you just want to add a specific use case, you can do so with a functional flow template. Read more about those here.
+{% endhint %}
 
 ![](<../../.gitbook/assets/image (520).png>)
 
