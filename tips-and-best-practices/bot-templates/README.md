@@ -12,7 +12,7 @@ _If you build a bot from scratch,_ [_this page_](../../tutorials/tutorial-gettin
 Templates are bots or flows that were built by our team. There are two different kinds of templates:
 
 1. Bot templates: these are out-of-the-box bots, built for a certain type of business, which can handle that industry's most common use cases. They're a great way to get started on your own bot, or to learn more about how certain things can be built on our platform!
-2. Pre-built flow templates: these are single flows, often enabling a single use case, which can quickly help you add a use case or functionality to an existing bot. Read more about pre-built flow templates [here](pre-built-flow-templates.md).
+2. Pre-built flow templates: these are single flows, often enabling a single use case, which can quickly help you add a use case or functionality to an existing bot. Read more about pre-built flow templates [here](pre-built-flow-templates/).
 
 ![An overview of the template bots on Chatlayer](<../../.gitbook/assets/image (709).png>)
 
