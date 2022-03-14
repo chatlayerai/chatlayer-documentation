@@ -21,3 +21,23 @@ If you want to incrementally increase the value of a variable, you can use the f
 
 This method will increase the value of counter by 1 each time, for example when a specific bot dialog is passed or a button is clicked. How to use this increment functionality in a bot dialog, see[ this tutorial](https://docs.chatlayer.ai/tips-and-best-practices/not-understood-bot-dialog/not-understood-counter).
 
+## Upper case and lower case variables
+
+Variables and values are case sensitive. For example:
+
+`capitalVariable`
+
+will be regarded as a separate variable from:
+
+`CapitalVariable`
+
+The same goes for values. If you check in a [Go To](../dialog-state/plugins.md) if a value for `variableX` is equal to `valueY` it will not be triggered if the value for `variableX` is equal to `valuey`
+
+You can transform a value from upper case to lower case and vice versa by adding these modifiers to the value name:
+
+```
+{name|toUpperCase}
+{name|toLowerCase}
+{name|capitalize}
+```
+
