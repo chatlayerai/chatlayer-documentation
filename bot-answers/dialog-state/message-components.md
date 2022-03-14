@@ -18,7 +18,7 @@ For example: the label "hello I am a button click me" will be shown as "hello I 
 For all other channels, the character limit is based on best practices. We recommend using less characters than the limit, but it's not mandatory.
 {% endhint %}
 
-## Text Messages <a href="text" id="text"></a>
+## Text Messages <a href="#text" id="text"></a>
 
 Text messages are the most simple components. Most channels will show them as 'text bubbles'.
 
@@ -42,7 +42,7 @@ This button will initiate a call if the user is using a mobile device.
 
 #### Webview
 
-This button will open a webview (or a new browser window depending on the channel) with the configured URL as target. 
+This button will open a webview (or a new browser window depending on the channel) with the configured URL as target.&#x20;
 
 The parameters you configure for this button will be JSON stringified and appended to the URL as a Base64 encoded string. It is possible to decode this string using the `atob`  JavaScript function.
 
@@ -171,6 +171,8 @@ If the upload failed because there was a problem with the connection, or the fil
 The URL where the uploaded file is stored can be found under the `{uploadedFileUrl}` variable in the user's session. You can reuse this variable to show the file that the user uploaded by using the [Media](message-components.md#attachments) template. Alternatively, you can retrieve the URL with an [API plugin](../../integrations/custom-back-end-integrations/) to store the files on your servers.
 
 ![](<../../.gitbook/assets/image (106).png>)
+
+Uploaded files are kept on Chatlayer servers for 30 days, after which they will automatically become unaccessible.
 
 ## Rich text
 
