@@ -41,9 +41,7 @@ Depending on your current plan, there may be different solutions for you when yo
 
 ### Plans and Pricing
 
-In the  'Billing and usage' page, you can click on the 'Change plan' button. This will show you an overview such as this:
-
-![](../.gitbook/assets/plans1.png)
+In the  'Billing and usage' page, you can click on the 'Change plan' button.
 
 Here, you can find your current plan and what is included in that plan, such as how many team members and the amount of conversations per month.
 
