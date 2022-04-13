@@ -1,10 +1,10 @@
 # Sinch Contact Pro
 
-It is now possible to connect your bot with Sinch Contact Pro, ensuring a seamless offloading experience from bot to human agent.
+It is now possible to connect your bot with Sinch Contact Pro and ensure a seamless offloading experience from bot to human agent.
 
-This article will explain how to set this up.
+Keep reading for a step-by-step guide on how to set this up!
 
-## Configuration in Sinch Contact Pro
+## 1 – Configuration in Sinch Contact Pro
 
 * Log into your Sinch Contact Pro Domain
 * Configure a new **agent** that will act as the bot
@@ -16,48 +16,42 @@ This article will explain how to set this up.
 * Click “Create new configuration” and go to “Common settings”&#x20;
 * Find the Visitor ECF Server URL
 
-
-
 ![](<../../.gitbook/assets/image (578).png>)
 
-
-
-* Copy this **URL**, you need it later for the Chatlayer configuration.
-
-
-
+* Copy this **URL**, you need it later for the Chatlayer configuration
 * Lastly, select your newly created Chatbot queue in the Sinch Contact Configuration Panel and click “Save”&#x20;
 
 ![](<../../.gitbook/assets/image (672) (1) (1) (1) (1).png>)
 
-## Configuration in Chatlayer
+## 2 – Configuration in Chatlayer
 
-### Setting up channel
+### Setting up the channel
 
 * Go to 'Channels' on the left hand side
 * Click on the '+' sign in the 'Sinch Contact' row to see the pop-up below:
 
-![](<../../.gitbook/assets/image (574).png>)
+![](<../../.gitbook/assets/image (693).png>)
 
 Looking at the URL you copied before, you can identify _Region_ and _Tenant Name:_
 
-https://prod-_region_._domain_**.**com/_tenantname_/visitor/ecfs
+https://prod-_**region**_._domain_**.**com/_**tenantname**_/visitor/ecfs
 
 * Now fill in the following:
   * Your region  - https://prod-_**region**_._domain_**.**com/_tenantname_/visitor/ecfs
   * Tenant name -  https://prod-_region_._domain_**.**com/_**tenantname**_/visitor/ecfs
 
-The other fields can be found back in Sinch Contact Pro:
+The other fields can be found in Sinch Contact Pro:
 
-Username and password: fill these fields in from the newly created virtual agent&#x20;
+* Username and password: fill these fields in from the newly created virtual agent&#x20;
 
-* Now click 'Continue' to save your configuration&#x20;
+Now click 'Continue' to save your configuration&#x20;
 
 > The Cloud Configuration has following regions:
 >
 > * **na**: 'login-na-w2.cc.sinch.com'
 > * **eu**: 'login-eu-c1.cc.sinch.com'
-> * &#x20;**au**: 'login-au-s2.cc.sinch.com'
+> * **au**: 'login-au-s2.cc.sinch.com'
+> * **af**: 'login-af-s1.cc.sinch.com'
 
 {% hint style="info" %}
 Do you have an On Premise environment of Sinch Contact Pro? Toggle 'Is On Premise' and fill out the following: For the URL
@@ -69,8 +63,8 @@ Do you have an On Premise environment of Sinch Contact Pro? Toggle 'Is On Premis
 
 ### Setting up offload action
 
-* Add an “Action” bot dialog to your flow that contains a “Send to offload provider” plugin (for example, after “Not understood”).&#x20;
-* Select Sinch Contact in that plugin and the queue you want to offload to.
+* Add an “Action” bot dialog to your flow that contains a “Send to offload provider” plugin (for example, after “Not understood”)
+* Select Sinch Contact in that plugin and the queue you want to offload to
 
 ![](<../../.gitbook/assets/image (573).png>)
 
@@ -107,6 +101,44 @@ In the example below, we'll use the Sinch Contact Pro web widget as a channel. Y
 After being transferred to an agent, open the right queue and take over the conversation:
 
 ![](<../../.gitbook/assets/image (581).png>)
+
+## Restart bot after offloading is complete
+
+This only works if you are using channels connected to your bot that are different from Sinch Contact Pro web [widget](sinch-contact.md#final-steps), only works in [this ](sinch-contact.md#setting-up-channel)setting.
+
+The returning part of your bot flow after offloading is complete will look like this:
+
+![](<../../.gitbook/assets/image (687).png>)
+
+Three things need to be set up for this use case to work:
+
+1. The variables that are going to identify the bot conversation and offloaded conversation are still active or paused need to be created:
+
+In this example, we created `internal.isPaused` toidentify when the bot is paused and internal.offload to identify when the&#x20;
+
+![](<../../.gitbook/assets/image (706).png>)
+
+2\. The bot needs to identify that the offloading isn't active anymore:&#x20;
+
+For that, we built a Go To bot dialog with the conditions: if the variable `internal.offload` does not exist, trigger the desired bot dialog to get user feedback, in the example below we named it "Feedback flow start", otherwise go to an empty bot dialog, "do nothing" as we named it in our example, because the offloaded conversation is still active.
+
+![](<../../.gitbook/assets/image (698).png>)
+
+3\. The bot needs to identify when the offloaded conversation is no longer active
+
+An event needs to be created by accessing the tab Events from the left-side menu, under the Bot Dialogs section. That event that will be triggered when the offloading variable is paused when the bot dialog from step 1 is visited.
+
+
+
+![](<../../.gitbook/assets/image (719).png>)
+
+Once the offloaded conversation is ended by the agent, like in the screenshot below, the bot will be able to identify that `internal.offload` is inexistent.
+
+![](<../../.gitbook/assets/image (722).png>)
+
+Ant the bot will restart the conversation, following the first condition of the Go To bot dialog
+
+![](<../../.gitbook/assets/image (708).png>)
 
 And there you go, your Sinch Contact Pro offloading is all set up!
 

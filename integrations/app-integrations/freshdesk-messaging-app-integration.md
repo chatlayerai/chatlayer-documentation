@@ -23,7 +23,7 @@ Here are the tutorials for these integrations.
 
 Create 1 group and 1 topic exclusive to the bot in Freshdesk Messaging
 
-![](<../../.gitbook/assets/image (687).png>)
+![](<../../.gitbook/assets/image (687) (1).png>)
 
 Don’t include any agents in the exclusive bot group:
 
@@ -51,11 +51,11 @@ This is the pop up that will show when you choose to Connect new account:
 
 Choose your region and paste the API Key that can be found in Freshdesk > Admin panel > API Tokens:
 
-![](<../../.gitbook/assets/image (693).png>)
+![](<../../.gitbook/assets/image (693) (1).png>)
 
 ![](<../../.gitbook/assets/image (705).png>)
 
-![](<../../.gitbook/assets/image (707).png>)
+![](<../../.gitbook/assets/image (707) (1).png>)
 
 Once the account is connected, Copy the Custom Webhook URL to paste it on Freshdesk Messaging:
 
@@ -81,7 +81,7 @@ In “Deploy”, copy the code snippet and paste it on your source code.
 
 You’ll be able to see the webchat icon and interact with your Chatlayer bot:
 
-![](<../../.gitbook/assets/image (695).png>)![](<../../.gitbook/assets/image (699).png>)
+![](<../../.gitbook/assets/image (695) (1).png>)![](<../../.gitbook/assets/image (699).png>)
 
 **As an Offloading provider:**
 
@@ -91,7 +91,7 @@ Create a topics in Freshdesk Messaging:
 
 ![](<../../.gitbook/assets/image (712).png>)
 
-![](<../../.gitbook/assets/image (708) (1).png>)
+![](<../../.gitbook/assets/image (708) (1) (1).png>)
 
 You can assign different groups to different topics, depending on your customer support structure, skills and lines of attention.
 

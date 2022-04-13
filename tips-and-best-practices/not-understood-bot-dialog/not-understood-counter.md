@@ -56,7 +56,7 @@ The entire Go To dialog should look like this:
 
 After saving your `Go To` dialog and closing it, the flow should look like this:
 
-![](<../../.gitbook/assets/image (677) (1) (1) (1) (1).png>)
+<img src="../../.gitbook/assets/image (677) (1) (1) (1) (1).png" alt="" data-size="original">
 
 Now it's time to write the copy for both dialogs. Here's some inspiration for the first message that will be displayed – the 'Not understood x 1' dialog:
 

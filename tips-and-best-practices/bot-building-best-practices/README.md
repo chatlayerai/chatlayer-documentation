@@ -1,9 +1,3 @@
----
-description: >-
-  Starting to build your own bot on Chatlayer? Great choice! Here are some best
-  practices to keep in mind while building your bot
----
-
 # Bot-building best practices
 
 Ready to build your own bot on Chatlayer? Great choice! Here are some best practices for creating a great user experience.

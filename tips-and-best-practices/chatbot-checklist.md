@@ -1,9 +1,3 @@
----
-description: >-
-  Here are some tips and tricks for building clever bots and offering customers
-  the best possible user experience.
----
-
 # Conversation Design checklist
 
 Here are some tips and tricks for building clever bots and offering customers the best possible user experience:
