@@ -44,19 +44,32 @@ Chatlayer.ai allows you to connect one bot to multiple channels at the same time
 
 If you want your users to follow a different flow based on the channel they are using, you can use our multi-channel functionality. To do this, add a [Go To](../bot-answers/dialog-state/plugins.md) to the point in your flow where you wish to diverge, based on the channel.
 
-Within this 'Go To', guide the user based on the botType variable, which contains the channel variable. For example:
+Within this 'Go To', guide the user based on the `internal.channel` variable, which contains the channel variable. In the image below you can see a bot that is connected to Facebook Messenger and Web chat; in order to offer the best experience in each channel, it diverts the users to the channel-specific flow by creating a condition: if internal.channel variable equals "facebook", create a 'Go To' to the Facebook flow; if not (else if), create a 'Go To' to the Web flow:
 
-![](<../.gitbook/assets/image (24).png>)
+![](<../.gitbook/assets/image (687).png>)
 
-The values for botType correspond to the channel names:
+The values for `internal.channel` correspond to the channel names:
 
-* Facebook Messenger: facebook
-* Webhook: webHook
-* Google Home: google
-* Chat widget: web
-* Facebook Workplace: facebookWorkplace
-* Phone: voice
-* All channels managed through the Sinch Conversation API (SMS, RCS, WhatsApp, Viber, Instagram, Telegram, LINE): sinchConversationAPI
+| Channel name                                                                                                   | values for internal.channel |
+| -------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| All channels managed through the Sinch Conversation API (SMS, RCS, WhatsApp, Viber, Instagram, Telegram, LINE) | sinchConversationAPI        |
+| Amazon                                                                                                         | amazon                      |
+| App integration channel (at the moment: Freshdesk Messaging webchat)                                           | AppIntegrationChannel       |
+| Chat widget                                                                                                    | web                         |
+| Facebook Messenger                                                                                             | facebook                    |
+| Facebook Workplace                                                                                             | facebookWorkplace           |
+| Google Home                                                                                                    | googleHome                  |
+| Intercom                                                                                                       | intercom                    |
+| Phone (through legacy CM.com)                                                                                  | cmPhone                     |
+| Sinch Contact Pro                                                                                              | SinchInboxBotChannel        |
+| Sinch Voice                                                                                                    | SinchVoiceBotChannel        |
+| Sparkcentral                                                                                                   | SparkcentralBotChannel      |
+| Voice (through legacy CM.com)                                                                                  | voice                       |
+| Webhook                                                                                                        | webHook                     |
+| Whatsapp (through legacy CM WhatsApp)                                                                          | whatsapp                    |
+| WhatsApp through ACL                                                                                           | ACLWhatsappBotChannel       |
+| WhatsApp through Wavy                                                                                          | WavyWhatsappBotChannel      |
+| Zendesk                                                                                                        | ZendeskChatBotChannel       |
 
 ## Channel comparison
 
@@ -65,10 +78,10 @@ The table below gives an overview of which features are available in which chann
 |                        | Chat Widget | Facebook Messenger | Facebook Workplace | WhatsApp | Webhook  API | Zendesk |
 | ---------------------- | ----------- | ------------------ | ------------------ | -------- | ------------ | ------- |
 | Text messages          | ✅           | ✅                  | ✅                  | ✅        | ✅            | ✅       |
-| Buttons                | ✅           | ✅                  | ✅                  |          | ✅            | ✅       |
+| Buttons                | ✅           | ✅                  | ✅                  | ✅        | ✅            | ✅       |
 | Quick replies          | ✅           | ✅                  | ✅                  | ✅\*2     | ✅            | ✅       |
 | Carousel               | ✅           | ✅                  | ✅                  |          | ✅            | ✅       |
-| List                   | ✅           | ✅                  | ✅                  |          | ✅            | ✅       |
+| List                   | ✅           | ✅                  | ✅                  | ✅        | ✅            | ✅       |
 | Media                  | ✅           | ✅                  | ✅                  | ✅        | ✅            | ✅       |
 | File upload            | ✅           |                    |                    |          |              |         |
 | Rich text              | ✅           |                    |                    |          |              |         |

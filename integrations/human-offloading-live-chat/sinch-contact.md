@@ -108,7 +108,7 @@ This only works if you are using channels connected to your bot that are differe
 
 The returning part of your bot flow after offloading is complete will look like this:
 
-![](<../../.gitbook/assets/image (687).png>)
+![](<../../.gitbook/assets/image (687) (1).png>)
 
 Three things need to be set up for this use case to work:
 
