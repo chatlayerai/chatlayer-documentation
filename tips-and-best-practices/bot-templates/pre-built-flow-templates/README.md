@@ -4,7 +4,7 @@ Do you have an existing bot to which you'd like to add an extra use case? Or are
 
 Here's an overview of the use case templates that can be downloaded on our platform:
 
-### Find nearest location (coming soon)
+### Find nearest location
 
 With this flow, users can easily find your organisation’s nearest location by simply asking your chatbot. After asking the user for their address, the bot will look through an external database (in this case, Airtable) which contains all the data of your organisation’s locations. Then the bot calculates which location is closest to the user’s address, using the Google Maps API. The result is shown on Google Maps, using an iFrame.
 

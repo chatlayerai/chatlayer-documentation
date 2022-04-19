@@ -103,8 +103,8 @@
 ## Tips & Best practices
 
 * [Bot templates](tips-and-best-practices/bot-templates/README.md)
-  * [Use case templates](tips-and-best-practices/bot-templates/use-case-templates/README.md)
-    * [Template: Find nearest location](tips-and-best-practices/bot-templates/use-case-templates/template-find-nearest-location.md)
+  * [Use case templates](tips-and-best-practices/bot-templates/pre-built-flow-templates/README.md)
+    * [Template: Find nearest location](tips-and-best-practices/bot-templates/pre-built-flow-templates/template-find-nearest-location.md)
 * [Bot-building best practices](tips-and-best-practices/bot-building-best-practices/README.md)
   * [Conversation Design checklist](tips-and-best-practices/chatbot-checklist.md)
   * [Creating diverse expressions](tips-and-best-practices/creating-diverse-expressions.md)
