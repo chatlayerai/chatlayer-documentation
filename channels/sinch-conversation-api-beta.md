@@ -66,7 +66,7 @@ Once you've entered all the information in the Chatlayer.ai channel window, clic
 
 ## Variables
 
-If multiple channels are connected to your Conversation API app, it can be useful to be able to send a specific flow depending on the channel the bot user is on. To do that, you can use the `internal.sinchConversationAPI.channelIdentity` [variable](../bot-answers/settings/secure-variables-gdpr.md).&#x20;
+If multiple channels are connected to your Conversation API app, it can be useful to be able to send a specific flow depending on the channel the bot user is on. To do that, you can use the `internal.sinchConversationAPI.channelIdentifier` [variable](../bot-answers/settings/secure-variables-gdpr.md).&#x20;
 
 The possible values for the channel are:
 
