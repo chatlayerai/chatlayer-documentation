@@ -103,6 +103,7 @@
 ## Tips & Best practices
 
 * [Bot templates](tips-and-best-practices/bot-templates/README.md)
+  * [Page 1](tips-and-best-practices/bot-templates/page-1.md)
   * [Feedback template](tips-and-best-practices/bot-templates/feedback-template.md)
   * [Use case templates](tips-and-best-practices/bot-templates/pre-built-flow-templates/README.md)
     * [Template: Find nearest location](tips-and-best-practices/bot-templates/pre-built-flow-templates/template-find-nearest-location.md)
