@@ -30,48 +30,42 @@ Your bot can make these API calls within an Action dialog, named `Locator`, whic
 
 Here's the code written within the `Locator` dialog:&#x20;
 
-\----------------------------------
+```
+const allStations = await fetch(`https://api.airtable.com/v0/(YOUR_BASE_ID)/(YOUR_TABLE_NAME)`, { 
+headers: {
+Authorization: `Bearer (YOUR_AIRTABLE_API_KEY)`
+}
+}).then(r => r.json());
+let re = / /g; 
 
-``const allStations = await fetch(`YOUR_OWN_AIRTABLE_LINK`, {``&#x20;
+const currLoc = args.user_address.replace(re, '+');
+let minDistance = Number.MAX_SAFE_INTEGER; 
+let nearestShop;
+const chatlayer = ChatlayerResponseBuilder(); chatlayer.addSessionVariable('currLoc', currLoc); 
+const addressFromMaps = await fetch(`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${currLoc}&inputtype=textquery&fields=geometry&key=(INSERT_YOUR_GOOGLEMAPS_API_KEY)`).then(r=> r.json()); 
+const geoLocation2 = { 
+Latitude: addressFromMaps.candidates[0].geometry.location.lat, 
+Longitude: addressFromMaps.candidates[0].geometry.location.lng, 
+} 
+//const geoLocation2 = {Latitude : "52.5001278", Longitude : "13.3121555"}; allStations.records.forEach(station=>{ 
+const geoLocation1 = station.fields;
+const lat = geoLocation1.Latitude - geoLocation2.Latitude; 
+const lon = geoLocation1.Longitude - geoLocation2.Longitude; 
+ 
+const val = Math.sqrt(Math.pow(lat, 2) + Math.pow(lon, 2)); if(minDistance>val){ 
+minDistance = val; 
+closestLocation = geoLocation1;
+}
+});
 
-`headers: {`\
-`` Authorization: `Bearer (YOUR_AIRTABLE_API_KEY)` ``\
-`}`\
-`}).then(r => r.json());`\
-`let re = / /g;` \
-``\
-`const currLoc = args.user_address.replace(re, '+');`\
-`let minDistance = Number.MAX_SAFE_INTEGER;` \
-`let nearestShop;`\
-`const chatlayer = ChatlayerResponseBuilder(); chatlayer.addSessionVariable('currLoc', currLoc);`&#x20;
-
-``const addressFromMaps = await fetch(`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${currLoc}&inputtype=textquery&fields=geometry&key=(INSERT_YOUR_GOOGLEMAPS_API_KEY)`).then(r=> r.json());``&#x20;
-
-`const geoLocation2 = {` \
-`Latitude: addressFromMaps.candidates[0].geometry.location.lat,` \
-`Longitude: addressFromMaps.candidates[0].geometry.location.lng,` \
-`}`&#x20;
-
-`//const geoLocation2 = {Latitude : "52.5001278", Longitude : "13.3121555"}; allStations.records.forEach(station=>{` \
-`const geoLocation1 = station.fields;`\
-`const lat = geoLocation1.Latitude - geoLocation2.Latitude;` \
-`const lon = geoLocation1.Longitude - geoLocation2.Longitude;` \
-&#x20;\
-`const val = Math.sqrt(Math.pow(lat, 2) + Math.pow(lon, 2)); if(minDistance>val){` \
-`minDistance = val;` \
-`closestLocation = geoLocation1;`\
-`}`\
-`});`\
-``\
-`closestLocation.Address = closestLocation.Address.replace(/ /g, ' ');`\
-`chatlayer.addSessionVariable('closestLocation', closestLocation);`\
-`chatlayer.addSessionVariable('addressFromMaps', addressFromMaps); chatlayer.send();`&#x20;
-
-\----------------------------------
+closestLocation.Address = closestLocation.Address.replace(/ /g, ' ');
+chatlayer.addSessionVariable('closestLocation', closestLocation);
+chatlayer.addSessionVariable('addressFromMaps', addressFromMaps); chatlayer.send();----------------------------------
+```
 
 In this piece of code, you should customise the following three things: &#x20;
 
-1. The link to your own Airtable
+1. The Airtable link
 2. The Airtable API key &#x20;
 3. The Google Maps API key &#x20;
 
@@ -84,7 +78,7 @@ For each of your organisation's locations, your Airtable will need to contain fi
 3. Latitude&#x20;
 4. Longitude&#x20;
 
-When you’ve newly imported the 'Nearest Location' template, it will automatically link to [this Airtable](https://airtable.com/invite/l?inviteId=invSGcyaorwSSPjLi\&inviteToken=a6d2dc90da0a95019886b059a10323d827520aa1b46dcf2c528756c3e120189c). Feel free to use it for testing, or as an example of what the data in your own Airtable should look like, but make sure to replace it once you start using the bot for your own organisation.&#x20;
+When you’ve newly imported the 'Nearest Location' template, it will automatically link to [this Airtable](https://airtable.com/invite/l?inviteId=invF76GY9tGp3hGyz\&inviteToken=224dcd7cbf041e3e39f7caefbbe6798f4dc4f5ef1643586d2a1a5cbcb286f1f3). Feel free to use it for testing, or as an example of what the data in your own Airtable should look like, but make sure to replace it once you start using the bot for your own organisation.&#x20;
 
 For more information on how to integrate Airtable into your bot, check out [this tutorial](https://docs.chatlayer.ai/integrations/code-action/airtable).&#x20;
 
@@ -94,11 +88,13 @@ You can link any sort of database to this bot, as long as it has an API. Read mo
 
 #### 2 – Adding your own Airtable link to the Action dialog
 
-In the piece of code within the 'Locator' dialog, on line 1, replace (`YOUR_OWN_AIRTABLE_LINK`) with the link to your own Airtable base ID. On line 3, replace (`YOUR_AIRTABLE_API_KEY`) with your own Airtable API key. You can find your Airtable's base ID and API key [here](https://airtable.com/api). Make sure to select the right one!
+In the piece of code within the 'Locator' dialog, in the url on line 1, replace `(YOUR_BASE_ID)` with the ID of your own Airtable base and `(YOUR_TABLE_NAME)` with the name of the table that contains your location data. On line 3, replace `(YOUR_AIRTABLE_API_KEY)` with your own Airtable API key. You can find your Airtable's base ID and API key [here](https://airtable.com/api). Make sure to select the right one!
 
 #### 3 – Adding your own Google Maps API to the Action dialog
 
-In the piece of code within the 'Locator' dialog, on line 13, replace (YOUR\_GOOGLEMAPS\_API\_KEY) with your own Google API key. Learn how to create a Google Maps API key (or find an existing one) [here.](https://developers.google.com/maps/documentation/embed/get-api-key)&#x20;
+In the piece of code within the 'Locator' dialog, on line 13, replace `(YOUR_GOOGLEMAPS_API_KEY)` with your own Google API key. Learn how to create a Google Maps API key (or find an existing one) [here.](https://developers.google.com/maps/documentation/embed/get-api-key)&#x20;
+
+In the Show Location on map Action dialog, in the Source Field of the iFrame action, you should also replace `(YOUR_GOOGLEMAPS_API_KEY)` with your own Google API key.
 
 #### 4 – Edit the text in the dialogs
 
