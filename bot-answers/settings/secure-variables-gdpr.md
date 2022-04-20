@@ -10,7 +10,7 @@ To make sure variables are not stored in the conversation history, you can click
 
 ![](<../../.gitbook/assets/image (589).png>)
 
-If you put the Sensitive toggle to `true`, the content of your variable will never be stored in your database. Instead only a placeholder with the variable name is stored.
+If you put the Sensitive toggle to `true`, the values of your variable will never be shown in Chatlayer. Instead, any user of our platform will only see a placeholder with the variable name. This information can only be retrieved through an [API request](https://api.chatlayer.ai/v1/docs/#operation/getAllMessagesInConversation).
 
 ## Incrementing variable counter
 
