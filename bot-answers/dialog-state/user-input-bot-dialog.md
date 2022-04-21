@@ -22,7 +22,7 @@ For example: the first time an input fails, the error message could simply be "S
 
 Users are able to leave the input validation if an intent is recognized. For bots with a very small NLP model, this might trigger a false positive. The 'disable NLP' checkbox allows you to disable the NLP model while in the input validation, which makes sure that whatever the user says gets saved as input.
 
-![](<../../.gitbook/assets/image (109).png>)
+![](<../../.gitbook/assets/image (699).png>)
 
 ### Always past - always future
 
@@ -31,7 +31,7 @@ Our platform parses user's expressions to match a default date format. If the da
 ## Input types
 
 {% hint style="info" %}
-Input validation have two types of input recogizition, 'general' input types to check if the input follows a desired format, or 'entity' input types to check the user input with existing entities in the platform.
+Input validation have two types of input recognition, 'general' input types to check if the input follows a desired format, or 'entity' input types to check the user input with existing entities in the platform.
 {% endhint %}
 
 Input plugins automatically validate and extract different input types based on the type setting. The type parser is responsible for extracting the data from the user's input. For example: if the input-plugin has a type of **date** and the user's input-sentence was 'I need to be in Paris _in two days_' the input plugin parser will extract the date definition from this input which results in 'in two days'. The parser will convert this into a date representation, DD-MM-YYYY, and the result will be stored in the user session.
@@ -69,11 +69,11 @@ The Date input parser type will try to parse the response as a date. Sentences l
 
 The location parser will send the user's input to a Google Geocoding API service. When a correct address or location is recognized, the Chatlayer platform will automatically create an object that contains all relevant geo-data.&#x20;
 
-![An example of an input validation dialog f](../../.gitbook/assets/screenshot-2020-09-17-at-12.25.45.png)
+![](<../../.gitbook/assets/image (721).png>)
 
-Look at the bot dialog above. When the user answers the question "Where do you work?" with a valid location, this information will be stored as a `user_work_location` variable (you can rename this variable if needed).&#x20;
+Look at the bot dialog above. When the user answers the question "Where do you work?" with a valid location, this information will be stored as a `userLocationInformed` variable (you can rename this variable if needed).&#x20;
 
-Below is an example that shows how the `user_work_location` variable would be stored when the user responds with 'Chatlayer.ai':
+Below is an example that shows how the `userLocationInformed` variable would be stored when the user responds with 'Chatlayer.ai':
 
 ```javascript
 {
@@ -89,14 +89,14 @@ Below is an example that shows how the `user_work_location` variable would be st
 ```
 
 {% hint style="info" %}
-To show the address as a full address (street, street number, zipcode and city) you need to add some extra information to the variable: `.fullAddress`
+To show the address as a full address (street, street number, zip code and city) you need to add some extra information to the variable: `.fullAddress`
 
-So in the example above, the bot can display the entire location by using the following variable:`{user_work_location.fullAddress}`
+So in the example above, the bot can display the entire location by using the following variable:`{userLocationInformed.fullAddress}`
 {% endhint %}
 
 A bot message containing the following info:
 
-`Thank you, shall I send your package to {user_work_location.fullAddress}?`
+`Thank you, shall I send your package to {userLocationInformed.fullAddress}?`
 
 Will display the following message to the user:
 
@@ -126,7 +126,7 @@ This input type will parse and validate NLP supported languages.
 
 #### **Voice message**
 
-![](<../../.gitbook/assets/image (21).png>)
+![](<../../.gitbook/assets/image (696).png>)
 
 Use the Voice message input type to save whatever is said to the bot in a voice channel as text. You can configure the maximum duration of this voice message, and how long it takes for the bot to regard the message as "complete".
 

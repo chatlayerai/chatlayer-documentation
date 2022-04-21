@@ -81,7 +81,7 @@ In “Deploy”, copy the code snippet and paste it on your source code.
 
 You’ll be able to see the webchat icon and interact with your Chatlayer bot:
 
-![](<../../.gitbook/assets/image (695) (1).png>)![](<../../.gitbook/assets/image (699).png>)
+![](<../../.gitbook/assets/image (695) (1).png>)![](<../../.gitbook/assets/image (699) (1).png>)
 
 **As an Offloading provider:**
 
@@ -113,6 +113,6 @@ You can create steps in your bot that will help you route the users to the most 
 
 After the offloading is completed, this is how you’ll see the conversation in your Freshdesk Messaging team inbox:
 
-![](<../../.gitbook/assets/image (721).png>)
+![](<../../.gitbook/assets/image (721) (1).png>)
 
 And that's it, your Freshdesk Messaging connection is set up and ready to go!
