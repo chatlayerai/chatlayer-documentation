@@ -9,62 +9,72 @@ Intercom is a customizable messaging suite to drive growth at every stage of the
 * Setup your Chatlayer.ai account and create a bot. You'll need its ID, which is in the URL.
 * Setup your Intercom account and create a teammate that will act as the bot (Intercom: Settings - General - Teammates). Its also a good idea to give your bot an Intercom icon (see profile bot)&#x20;
 
-### Add an Intercom Channel to your bot (click on the + icon)
+### Add an Intercom Channel to your bot
 
-![](../../.gitbook/assets/channel-config.png)
+From your bot, click on 'Channel' on the left side menu, then on 'Add Channel' and select Intercom:
+
+![](<../../.gitbook/assets/image (695).png>)
 
 ### Configure Chatlayer.ai Channel
 
 * From the Intercom Developer Hub (Intercom: Settings - Developer - Developer Hub - App - Authentication - Access token) copy the Access token and configure it in the channel.
+* Another option is: from your inbox e.g.: [https://app.intercom.com/a/apps/lzpg3ae2/inbox/inbox/5504566](https://app.intercom.com/a/apps/lzpg3ae2/inbox/inbox/5504566), you can modify the URL to [https://app.intercom.com/a/apps/lzpg3ae2/developer-hub](https://app.intercom.com/a/apps/lzpg3ae2/developer-hub)
 
-Create App
+From there, you should create a new App, as an Internal Integration
 
 ![](<../../.gitbook/assets/image (671).png>)
 
-After clicking Create App, you will be redirected to the Authentication page with an Authentication Token:
+After clicking Create App, you will be redirected to the Authentication page with your Access Token; you will need this token to connect with your Chatlayer bot.
 
-![](<../../.gitbook/assets/image (723).png>)
+![](<../../.gitbook/assets/image (723) (1).png>)
 
+You will also need the ID of your teammate that will acts as a bot to configure your channel.\
+You find the teammate ID in the URL of a teammate Inbox:
 
+![](<../../.gitbook/assets/image (724).png>)
 
-![](../../.gitbook/assets/access-token.png)
+Copy the Access Token and Teammate Id and paste them on Chatlayer to complete your configuration. 'Intercom Client Secret' is not needed at the moment (we are working on that), please just write "test" or anything that will fill the black and allow you to Create or Update the channel.
 
-* Get the ID of your teammate that will acts as a bot and configure it in the channel.\
-  You find the teammate ID in the URL when opening a teammate details:
-
-![](../../.gitbook/assets/intercom-teammate-id.png)
-
-* Finally you can click on `Create` or `Update` to save you changes.
-
-![](../../.gitbook/assets/intercom-channel-config.png)
+![](<../../.gitbook/assets/image (708).png>)
 
 ### Configure Intercom Webhook
 
-Add the Chatlayer.ai URL to your Intercom web hook.
+From the Configure Intercom window in Chatlayer, copy the Webhook URL and add it to your Intercom's App Webhooks page:&#x20;
 
-![](../../.gitbook/assets/intercom-webhook.png)
+![](<../../.gitbook/assets/image (722).png>)
 
-Copy the Webhook URL (Copy link) and configure the Webhook into the Intercom Developer Hub (Intercom: Settings - Developer - Developer Hub - App - Webhooks)
+In the same Webhooks page, select the following topics:
 
-![](<../../.gitbook/assets/intercom-webhooks (1).png>)
+`conversation.user.created` \
+`conversation.user.replied` \
+`conversation.admin.assigned` \
+`conversation.admin.closed`
 
-Select the following topics
-
-![](../../.gitbook/assets/intercom-wehbooks-topics.png)
+![](<../../.gitbook/assets/image (703).png>)
 
 And finally save your Webhook. A success message should be displayed.
 
-### Offloading a conversation to team
+![](<../../.gitbook/assets/image (679).png>)
 
-If you want to offload the conversation to a real person you can use the Action Bot Dialog.
+## Handing over conversation between bot and agent
 
-![](../../.gitbook/assets/action-bot-dialog-overview.png)
+First you will need to configure an Offloading Provider.\
+From your Chatlayer bot, navigate to Settings, Offloading and click on the "+" button to connect to Intercom. Paste your App's Access Token and choose from the list of your Bot admins, then save your configuration:
 
-## Handing over from and to the bot
+![](<../../.gitbook/assets/image (678).png>)
 
-Once the `"Send to offload provider"` is added you can select the team where the conversation would be assigned to. All the teams configured in your Intercom account will be listed.
+![](<../../.gitbook/assets/image (725).png>)
 
-![](../../.gitbook/assets/action-bot-dialog.png)
+
+
+\
+If you want to offload the conversation to an Agent on Intercom, you can use the Action Bot Dialog, selecting `"Send to offload provider"` :
+
+![](<../../.gitbook/assets/image (723).png>)
+
+Once the `"Send to offload provider"` is added, you can select the Offloading Provider and Team to which the conversation will be assigned to. All the teams configured in your Intercom account will be listed.
+
+![](<../../.gitbook/assets/image (714).png>)
 
 Once a conversation is handed over, the bot is placed in pause and will not answer anymore.
 
