@@ -8,7 +8,7 @@ description: >-
 
 You can connect the Freshdesk app to Chatlayer by using the Action bot dialog. In this dialog, choose _Integration widget_, then under 'App', select _Freshdesk_ and click on 'Connect a new Freshdesk account'.
 
-![](<../../.gitbook/assets/image (678) (1) (1).png>)
+![](<../../.gitbook/assets/image (678) (1).png>)
 
 After clicking on “Connect new account”, you’ll see this pop-up:
 
@@ -30,13 +30,13 @@ After you've entered this info in the Chatlayer action dialog and the connection
 
 · Create contact (create new user)
 
-![](<../../.gitbook/assets/image (677) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (677) (1) (1).png>)
 
 ### **Gathering information**
 
 You'll need to ask the user for the information needed to create a new ticket, like for example, the user's name. You can do so with an 'Input Validation' dialog. By saving the user’s response as a variable, you'll be able to create a new ticket:
 
-![Asking the user for their name](<../../.gitbook/assets/image (695) (1) (1) (1).png>)
+![Asking the user for their name](<../../.gitbook/assets/image (695) (1) (1).png>)
 
 Next, your Actions could be as followed:
 
@@ -46,7 +46,7 @@ Next, your Actions could be as followed:
 
 If your tickets have custom fields, you can also include them in the Action dialog state and request them thought the bot, as seen in "language" and "country" below:
 
-![](<../../.gitbook/assets/image (706) (1) (1).png>)
+![](<../../.gitbook/assets/image (706) (1).png>)
 
 **2 – Add notes to a ticket**
 
@@ -54,7 +54,7 @@ If your tickets have custom fields, you can also include them in the Action dial
 
 **3 – Add replies to a ticket**&#x20;
 
-![](<../../.gitbook/assets/image (679) (1) (1).png>)
+![](<../../.gitbook/assets/image (679) (1).png>)
 
 **4 – Create a contact**
 

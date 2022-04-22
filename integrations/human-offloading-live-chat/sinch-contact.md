@@ -21,7 +21,7 @@ Keep reading for a step-by-step guide on how to set this up!
 * Copy this **URL**, you need it later for the Chatlayer configuration
 * Lastly, select your newly created Chatbot queue in the Sinch Contact Configuration Panel and click “Save”&#x20;
 
-![](<../../.gitbook/assets/image (672) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (672) (1) (1) (1) (1).png>)
 
 ## 2 – Configuration in Chatlayer
 
@@ -116,7 +116,7 @@ Three things need to be set up for this use case to work:
 
 In this example, we created `internal.isPaused` toidentify when the bot is paused and internal.offload to identify when the&#x20;
 
-![](<../../.gitbook/assets/image (706) (1).png>)
+![](<../../.gitbook/assets/image (706).png>)
 
 2\. The bot needs to identify that the offloading isn't active anymore:&#x20;
 
@@ -134,11 +134,11 @@ An event needs to be created by accessing the tab Events from the left-side menu
 
 Once the offloaded conversation is ended by the agent, like in the screenshot below, the bot will be able to identify that `internal.offload` is inexistent.
 
-![](<../../.gitbook/assets/image (722) (1).png>)
+![](<../../.gitbook/assets/image (722).png>)
 
 Ant the bot will restart the conversation, following the first condition of the Go To bot dialog
 
-![](<../../.gitbook/assets/image (708) (1).png>)
+![](<../../.gitbook/assets/image (708).png>)
 
 And there you go, your Sinch Contact Pro offloading is all set up!
 

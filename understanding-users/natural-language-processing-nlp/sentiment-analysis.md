@@ -4,9 +4,9 @@ The Chatlayer NLP engine allows you to analyse the sentiment in the message of a
 
 If you want to try out sentiment analysis, go the the "Test" menu under "NLP" and try out a few expressions.
 
-![](<../../.gitbook/assets/image (678) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (678) (1) (1).png>)
 
-![](<../../.gitbook/assets/image (677) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (677) (1) (1) (1).png>)
 
 Chatlayer returns 3 different types of sentiments:
 

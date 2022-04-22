@@ -6,7 +6,7 @@ Ready to build your own bot on Chatlayer? Great choice! Here are some best pract
 
 1. Reuse bot dialogs as much as possible. Do not create similar bot dialogs, but just reuse the same one in multiple flows. For example, if you have a bot dialog explaining what the bot can do for its users, you will probably show this a couple of times, like when the user asks 'how can you help me?' but also at the start of the conversation. Simply use the same dialog:&#x20;
 
-![An example how the same bot dialog is reused at the end of different flows with different variables](<../../.gitbook/assets/image (711) (1).png>)
+![An example how the same bot dialog is reused at the end of different flows with different variables](<../../.gitbook/assets/image (711).png>)
 
 * Next to reusing bot dialogs, try to reuse information and variables as well. If you already asked the name of the user in the beginning of the conversation, this will be remembered throughout the entire conversation. If your bot would keep asking for the same information, it makes the bot look 'dumb'. Ask once, remember always.
 * Give clear titles to bot dialogs, intents, and variables. This helps other people working on the bot to make quick changes.
@@ -30,6 +30,6 @@ Make sure your bot can handle [edge cases](https://docs.chatlayer.ai/tutorials/g
 * For action dialogs, try to limit API calls to less than 20 seconds to increase bot performance and prevent timeouts
 * In an input validation dialog, always fill in the 'When user response is not valid the first 2 or 3 times, bot asks question' section. For example, if the input validation is expecting a date, but the user is not given a date as an answer, these error texts will be triggered. If they are empty, the bot will not give a response and the flow will simply stop.&#x20;
 
-![](<../../.gitbook/assets/image (703) (1).png>)
+![](<../../.gitbook/assets/image (703).png>)
 
 If you have any other questions, do not hesitate to [contact us,](https://docs.chatlayer.ai/support/get-in-touch) we're happy to help!

@@ -84,4 +84,4 @@ We've created a few intent packs so you can quickly get started and train your N
 
 Then you'll get a pop-up screen showing you all the pre-built intents you can add:
 
-![](<../../.gitbook/assets/image (677) (1) (1).png>)
+![](<../../.gitbook/assets/image (677) (1).png>)
