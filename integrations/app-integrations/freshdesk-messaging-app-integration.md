@@ -23,7 +23,7 @@ Here are the tutorials for these integrations.
 
 Create 1 group and 1 topic exclusive to the bot in Freshdesk Messaging
 
-![](<../../.gitbook/assets/image (687) (2).png>)
+![](<../../.gitbook/assets/image (687) (1) (1).png>)
 
 Don’t include any agents in the exclusive bot group:
 
