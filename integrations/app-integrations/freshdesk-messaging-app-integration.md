@@ -69,7 +69,7 @@ Paste the Custom Webhook URL copied from Chatlayer in the first field; copy the 
 
 ![](<../../.gitbook/assets/image (711) (1).png>)
 
-![](<../../.gitbook/assets/image (671).png>)
+![](<../../.gitbook/assets/image (671) (1).png>)
 
 To deploy the Freshdesk Messenger on your website, go to Freshdesk Messaging > Admin > Web Messenger:
 

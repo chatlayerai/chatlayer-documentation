@@ -1,6 +1,6 @@
 # Human handover & live chat
 
-Bots are great as a first line of defense. However, they are not \(yet\) as smart as a real human agent worker. From our experience at Chatlayer, we have noticed that hybrid forms of chatbots in combination with live agents offer the best user experience. This is called human handover, offloading or agent transfer.
+Bots are great as a first line of support. However, they are not (yet) as smart as capable as real humans. From our experience at Chatlayer, we noticed that hybrid forms of chatbots in combination with live agents usually offer the best user experience. This is called human handover, offloading, or agent transfer.
 
 ## When is a user handed over to a live agent?
 
@@ -30,7 +30,7 @@ There are two basic types of live chat integrations. The main difference lies in
 
 #### Chatlayer controls the channels
 
-* The channels are directly linked to Chatlayer \(in the [Channels](../../channels/multi-channel.md) tab\)
+* The channels are directly linked to Chatlayer (in the [Channels](../../channels/multi-channel.md) tab)
 * When the handover is triggered, the live chat platform is notified about a new conversation
 * The agent takes over the conversation. The bot is put on hold.
 * All messages will continue to be sent through Chatlayer, so they can end up at the right channel.
@@ -56,7 +56,7 @@ In the Settings menu under Offloading you can set-up a new offloading provider. 
 
 The specific configuration will depend on the offloading provider you want to integrate with. Currently we integrate with the most popular offloading providers of our customers.
 
-![](../../.gitbook/assets/image%20%28214%29.png)
+![](<../../.gitbook/assets/image (214).png>)
 
 If you want to connect to a platform that's not in this list, try our [Offloading Webhook](offloading-webhook.md)!
 
@@ -64,23 +64,21 @@ If you want to connect to a platform that's not in this list, try our [Offloadin
 
 Different live chat platforms support different feature sets. Below you can find a list of what's supported by which provider.
 
-|  | Sinch Contact Pro | Zendesk | Sparkcentral | Genesys Cloud | \#Interact | Help Scout | Intercom | Salesforce | Webhook |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Chatlayer.ai widget & channel configuration | ✅ |  |  | ✅ |  | ✅ |  | ✅ | ✅ |
-| Provider widget & channel configuration | ✅ | ✅ | ✅ |  | ✅ |  | ✅ |  | ✅ |
-| Rich templates \(buttons, carousels, ...\) | ✅ | ✅ |  | ✅ | ✅ | ✅ |  | ✅ | ✅ |
-| Bot history visible to agent | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Agent conversations in Chatlayer.ai history | ✅ |  |  | ✅ |  | ✅ |  | ✅ | ✅ |
-| Skill & language based routing | ✅ | ✅ |  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Tags & variables | ✅ | ✅ |  | ✅ |  |  |  | ✅ | ✅ |
+|                                             | Sinch Contact Pro | Zendesk | Sparkcentral | Genesys Cloud | #Interact | Help Scout | Intercom | Salesforce | Webhook |
+| ------------------------------------------- | ----------------- | ------- | ------------ | ------------- | --------- | ---------- | -------- | ---------- | ------- |
+| Chatlayer.ai widget & channel configuration | ✅                 |         |              | ✅             |           | ✅          |          | ✅          | ✅       |
+| Provider widget & channel configuration     | ✅                 | ✅       | ✅            |               | ✅         |            | ✅        |            | ✅       |
+| Rich templates (buttons, carousels, ...)    | ✅                 | ✅       |              | ✅             | ✅         | ✅          |          | ✅          | ✅       |
+| Bot history visible to agent                | ✅                 | ✅       | ✅            | ✅             | ✅         | ✅          | ✅        | ✅          | ✅       |
+| Agent conversations in Chatlayer.ai history | ✅                 |         |              | ✅             |           | ✅          |          | ✅          | ✅       |
+| Skill & language based routing              | ✅                 | ✅       |              | ✅             | ✅         | ✅          | ✅        | ✅          | ✅       |
+| Tags & variables                            | ✅                 | ✅       |              | ✅             |           |            |          | ✅          | ✅       |
 
 ## Human handover bot dialogs
 
 There are three predefined dialog states specifically for human offloading.
 
 * **Offloading disabled**: human offloading can temporarily be disabled, e.g. due to peak an incident within the contact center. When this happens, the message in this bot dialog will be displayed.
-* **Offloading closed**: message to be displayed when a user reaches the 'offloaded' state but the live chat is not open \(configurable: typically at night, lunch or weekends\)
+* **Offloading closed**: message to be displayed when a user reaches the 'offloaded' state but the live chat is not open (configurable: typically at night, lunch or weekends)
 * **Offloading opened**: temporary waiting message that is displayed once the user has reached the 'offloaded' state. Typically a message similar to "Please wait for a couple of minutes while a live agent connects to this chat session."
-
-
 

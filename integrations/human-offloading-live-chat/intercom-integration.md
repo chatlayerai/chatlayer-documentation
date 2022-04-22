@@ -7,7 +7,7 @@ Intercom is a customizable messaging suite to drive growth at every stage of the
 ### Preparation
 
 * Setup your Chatlayer.ai account and create a bot. You'll need its ID, which is in the URL.
-* Setup your Intercom account and create a teammate that will act as the bot (Intercom: Settings - General - Teammates). Its also a good idea to give your bot an Intercom icon (see profile bot) 
+* Setup your Intercom account and create a teammate that will act as the bot (Intercom: Settings - General - Teammates). Its also a good idea to give your bot an Intercom icon (see profile bot)&#x20;
 
 ### Add an Intercom Channel to your bot (click on the + icon)
 
@@ -16,6 +16,16 @@ Intercom is a customizable messaging suite to drive growth at every stage of the
 ### Configure Chatlayer.ai Channel
 
 * From the Intercom Developer Hub (Intercom: Settings - Developer - Developer Hub - App - Authentication - Access token) copy the Access token and configure it in the channel.
+
+Create App
+
+![](<../../.gitbook/assets/image (671).png>)
+
+After clicking Create App, you will be redirected to the Authentication page with an Authentication Token:
+
+![](<../../.gitbook/assets/image (723).png>)
+
+
 
 ![](../../.gitbook/assets/access-token.png)
 
