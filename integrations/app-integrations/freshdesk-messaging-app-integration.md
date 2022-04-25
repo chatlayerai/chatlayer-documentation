@@ -31,7 +31,7 @@ Don’t include any agents in the exclusive bot group:
 
 Assign the topic to the bot group
 
-![](<../../.gitbook/assets/image (714).png>)
+![](<../../.gitbook/assets/image (714) (1).png>)
 
 To use Freshdesk Messaging as a channel, click in Channels > App Integration Channel and follow these instructions:
 
@@ -43,7 +43,7 @@ Choose Freshdesk Messaging
 
 Either choose one of the connected accounts or connect new account:
 
-![](<../../.gitbook/assets/image (703) (1).png>)
+![](<../../.gitbook/assets/image (703) (1) (1).png>)
 
 This is the pop up that will show when you choose to Connect new account:
 
@@ -67,13 +67,13 @@ Go to Freshdesk Messaging > Admin > Webhook
 
 Paste the Custom Webhook URL copied from Chatlayer in the first field; copy the Authentication field, then paste it on Chatlayer:
 
-![](<../../.gitbook/assets/image (711) (1).png>)
+![](<../../.gitbook/assets/image (711) (1) (1).png>)
 
 ![](<../../.gitbook/assets/image (671) (1).png>)
 
 To deploy the Freshdesk Messenger on your website, go to Freshdesk Messaging > Admin > Web Messenger:
 
-![](<../../.gitbook/assets/image (677).png>)
+![](<../../.gitbook/assets/image (677) (1).png>)
 
 In “Deploy”, copy the code snippet and paste it on your source code.
 
@@ -81,7 +81,7 @@ In “Deploy”, copy the code snippet and paste it on your source code.
 
 You’ll be able to see the webchat icon and interact with your Chatlayer bot:
 
-![](<../../.gitbook/assets/image (695) (1).png>)![](<../../.gitbook/assets/image (699) (1).png>)
+![](<../../.gitbook/assets/image (695) (1) (1).png>)![](<../../.gitbook/assets/image (699) (1).png>)
 
 **As an Offloading provider:**
 
@@ -89,9 +89,9 @@ Make sure you followed all the previous steps to connect Freshdesk Messaging as 
 
 Create a topics in Freshdesk Messaging:
 
-![](<../../.gitbook/assets/image (712).png>)
+![](<../../.gitbook/assets/image (712) (1).png>)
 
-![](<../../.gitbook/assets/image (708) (1) (1).png>)
+![](<../../.gitbook/assets/image (708) (1) (1) (1).png>)
 
 You can assign different groups to different topics, depending on your customer support structure, skills and lines of attention.
 
@@ -107,7 +107,7 @@ Configure Freshdesk Messaging and the respective Topic and Group to which this A
 
 You can create steps in your bot that will help you route the users to the most pertinent support line and offload them via each Action dialog state that will refer to those lines.
 
-![](<../../.gitbook/assets/image (720).png>)
+![](<../../.gitbook/assets/image (720) (1).png>)
 
 ![](<../../.gitbook/assets/image (717).png>)
 

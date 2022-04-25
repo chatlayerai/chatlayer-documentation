@@ -196,7 +196,7 @@ For contextual entities, you can also check if there is a match between the inpu
 
 This will check if the answer is listed in the values  of the entity:
 
-![](<../../.gitbook/assets/image (676) (1) (1).png>)
+![](<../../.gitbook/assets/image (676) (1) (1) (1).png>)
 
 Two important things to note for contextual entities in Input validations:
 

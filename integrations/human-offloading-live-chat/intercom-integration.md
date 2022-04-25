@@ -26,7 +26,7 @@ From there, you should create a new App, as an Internal Integration
 
 After clicking Create App, you will be redirected to the Authentication page with your Access Token; you will need this token to connect with your Chatlayer bot.
 
-![](<../../.gitbook/assets/image (723) (1).png>)
+![](<../../.gitbook/assets/image (723) (1) (1).png>)
 
 You will also need the ID of your teammate that will acts as a bot to configure your channel.\
 You find the teammate ID in the URL of a teammate Inbox:
@@ -41,7 +41,7 @@ Copy the Access Token and Teammate Id and paste them on Chatlayer to complete yo
 
 From the Configure Intercom window in Chatlayer, copy the Webhook URL and add it to your Intercom's App Webhooks page:&#x20;
 
-![](<../../.gitbook/assets/image (722).png>)
+![](<../../.gitbook/assets/image (722) (1).png>)
 
 In the same Webhooks page, select the following topics:
 
@@ -70,7 +70,7 @@ From your Chatlayer bot, navigate to Settings, Offloading and click on the "+" b
 \
 If you want to offload the conversation to an Agent on Intercom, you can use the Action Bot Dialog, selecting `"Send to offload provider"` :
 
-![](<../../.gitbook/assets/image (723).png>)
+![](<../../.gitbook/assets/image (723) (1).png>)
 
 Once the `"Send to offload provider"` is added, you can select the Offloading Provider and Team to which the conversation will be assigned to. All the teams configured in your Intercom account will be listed.
 

@@ -21,7 +21,7 @@ Keep reading for a step-by-step guide on how to set this up!
 * Copy this **URL**, you need it later for the Chatlayer configuration
 * Lastly, select your newly created Chatbot queue in the Sinch Contact Configuration Panel and click “Save”&#x20;
 
-![](<../../.gitbook/assets/image (672) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (672) (1) (1) (1) (1) (1).png>)
 
 ## 2 – Configuration in Chatlayer
 
@@ -116,13 +116,13 @@ Three things need to be set up for this use case to work:
 
 In this example, we created `internal.isPaused` toidentify when the bot is paused and internal.offload to identify when the&#x20;
 
-![](<../../.gitbook/assets/image (706).png>)
+![](<../../.gitbook/assets/image (706) (1).png>)
 
 2\. The bot needs to identify that the offloading isn't active anymore:&#x20;
 
 For that, we built a Go To bot dialog with the conditions: if the variable `internal.offload` does not exist, trigger the desired bot dialog to get user feedback, in the example below we named it "Feedback flow start", otherwise go to an empty bot dialog, "do nothing" as we named it in our example, because the offloaded conversation is still active.
 
-![](<../../.gitbook/assets/image (698).png>)
+![](<../../.gitbook/assets/image (698) (1).png>)
 
 3\. The bot needs to identify when the offloaded conversation is no longer active
 
@@ -134,11 +134,11 @@ An event needs to be created by accessing the tab Events from the left-side menu
 
 Once the offloaded conversation is ended by the agent, like in the screenshot below, the bot will be able to identify that `internal.offload` is inexistent.
 
-![](<../../.gitbook/assets/image (722).png>)
+![](<../../.gitbook/assets/image (722) (1) (1).png>)
 
 Ant the bot will restart the conversation, following the first condition of the Go To bot dialog
 
-![](<../../.gitbook/assets/image (708).png>)
+![](<../../.gitbook/assets/image (708) (1).png>)
 
 And there you go, your Sinch Contact Pro offloading is all set up!
 
