@@ -106,6 +106,7 @@
   * [Banking template](tips-and-best-practices/bot-templates/banking-template.md)
   * [Feedback template](tips-and-best-practices/bot-templates/feedback-template.md)
   * [Restaurant template](tips-and-best-practices/bot-templates/restaurant-template.md)
+  * [NPS template](tips-and-best-practices/bot-templates/nps-template.md)
   * [Use case templates](tips-and-best-practices/bot-templates/pre-built-flow-templates/README.md)
     * [Template: Find nearest location](tips-and-best-practices/bot-templates/pre-built-flow-templates/template-find-nearest-location.md)
 * [Bot-building best practices](tips-and-best-practices/bot-building-best-practices/README.md)
