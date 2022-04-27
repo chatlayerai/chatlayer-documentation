@@ -8,11 +8,9 @@ description: >-
 
 ### Definition of a conversation
 
-A conversation starts when a first message is sent. This message can be sent by the user, or by the bot.&#x20;
+A conversation starts when a first message is sent. This message can be sent by the user, or by the bot. 15 minutes of silence or no interaction between a user and a bot closes the conversation. If a new message is sent after 15 minutes, a new conversation is counted.
 
-{% hint style="info" %}
-For the counting of conversations shown in analytics or billing, 15 mins of silence or no interaction between a user and a bot closes the conversation and automatically starts a new one.
-{% endhint %}
+This definition of a conversation is used both in our billing and our analytics.
 
 You can try out your bot in the "test your bot" window on the bottom right of the platform. These conversations are not counted in your analytics or towards your billing.
 
