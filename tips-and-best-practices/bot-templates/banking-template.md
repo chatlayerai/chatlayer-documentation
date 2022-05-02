@@ -42,6 +42,10 @@ This flow allows a user to report their card as lost or stolen. The user is imme
 
 You can customize the external links to redirect your users to your website and/or phone number.&#x20;
 
+{% hint style="info" %}
+In the Action dialog 'clear address', we tell the bot to forget the variable 'user\_address' because the user wants to correct their address by entering a new one. We need to clear the old variable in order to save the new one.
+{% endhint %}
+
 ### Flow: Office locations
 
 This flow is triggered when we want to show the user the office that is the closest to them. For the sake of this template, addresses are predefined within the dialog, but you customize yours following the [Find Nearest Location Template](https://docs.chatlayer.ai/tips-and-best-practices/bot-templates/use-case-templates/template-find-nearest-location) with Google Maps.
