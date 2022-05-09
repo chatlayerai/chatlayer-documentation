@@ -63,7 +63,7 @@ From your Chatlayer bot, navigate to Settings, Offloading and click on the "+" b
 
 ![](<../../.gitbook/assets/image (678).png>)
 
-![](<../../.gitbook/assets/image (725).png>)
+![](<../../.gitbook/assets/image (725) (1).png>)
 
 
 

@@ -80,7 +80,7 @@ Do you want to learn how you can improve your NLP model? You can find tips and t
 
 We've created a few intent packs so you can quickly get started and train your NLP model. You can add these pre-built intents directly in the platform by clicking on 'intents' in the NLP section and then on the top right, 'Add Prebuilt Intent'
 
-&#x20;![](<../../.gitbook/assets/image (683) (1).png>)
+&#x20;![](<../../.gitbook/assets/image (683) (1) (1).png>)
 
 Then you'll get a pop-up screen showing you all the pre-built intents you can add:
 

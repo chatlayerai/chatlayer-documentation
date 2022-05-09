@@ -143,5 +143,4 @@
 * [Platform Glossary](support/glossary.md)
 * [SaaS Regions & IP Ranges](support/saas-regions-and-ip-ranges.md)
 * [Status](https://status.chatlayer.ai)
-* [What's new](support/whats-new/README.md)
-  * [New documentation](support/whats-new/documentation.md)
+* [What's new](support/whats-new.md)

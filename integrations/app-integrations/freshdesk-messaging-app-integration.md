@@ -53,13 +53,13 @@ Choose your region and paste the API Key that can be found in Freshdesk > Admin 
 
 ![](<../../.gitbook/assets/image (693) (1).png>)
 
-![](<../../.gitbook/assets/image (705).png>)
+![](<../../.gitbook/assets/image (705) (1).png>)
 
 ![](<../../.gitbook/assets/image (707) (1).png>)
 
 Once the account is connected, Copy the Custom Webhook URL to paste it on Freshdesk Messaging:
 
-![](<../../.gitbook/assets/image (715).png>)
+![](<../../.gitbook/assets/image (715) (1).png>)
 
 Go to Freshdesk Messaging > Admin > Webhook
 
