@@ -74,7 +74,7 @@ If you want to offload the conversation to an Agent on Intercom, you can use the
 
 Once the `"Send to offload provider"` is added, you can select the Offloading Provider and Team to which the conversation will be assigned to. All the teams configured in your Intercom account will be listed.
 
-![](<../../.gitbook/assets/image (714).png>)
+![](<../../.gitbook/assets/image (714) (1).png>)
 
 Once a conversation is handed over, the bot is placed in pause and will not answer anymore.
 

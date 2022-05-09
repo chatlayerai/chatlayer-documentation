@@ -23,7 +23,7 @@ Here are the tutorials for these integrations.
 
 Create 1 group and 1 topic exclusive to the bot in Freshdesk Messaging
 
-![](<../../.gitbook/assets/image (687) (1) (1).png>)
+![](<../../.gitbook/assets/image (687) (1) (1) (1).png>)
 
 Don’t include any agents in the exclusive bot group:
 
@@ -31,7 +31,7 @@ Don’t include any agents in the exclusive bot group:
 
 Assign the topic to the bot group
 
-![](<../../.gitbook/assets/image (714) (1).png>)
+![](<../../.gitbook/assets/image (714) (1) (1).png>)
 
 To use Freshdesk Messaging as a channel, click in Channels > App Integration Channel and follow these instructions:
 
@@ -39,7 +39,7 @@ To use Freshdesk Messaging as a channel, click in Channels > App Integration Cha
 
 Choose Freshdesk Messaging
 
-![](<../../.gitbook/assets/image (684) (1).png>)
+![](<../../.gitbook/assets/image (684) (1) (1).png>)
 
 Either choose one of the connected accounts or connect new account:
 
@@ -77,7 +77,7 @@ To deploy the Freshdesk Messenger on your website, go to Freshdesk Messaging > A
 
 In “Deploy”, copy the code snippet and paste it on your source code.
 
-![](<../../.gitbook/assets/image (684) (1) (1).png>)
+![](<../../.gitbook/assets/image (684) (1) (1) (1).png>)
 
 You’ll be able to see the webchat icon and interact with your Chatlayer bot:
 
@@ -101,7 +101,7 @@ You can assign different groups to different topics, depending on your customer 
 
 Once you have all your topics and groups created, when you reach the points of your flow that will enable the customer to talk to an agent, create an Action dialog state and click on Send to Offload Provider:
 
-![](<../../.gitbook/assets/image (680).png>)
+![](<../../.gitbook/assets/image (680) (1).png>)
 
 Configure Freshdesk Messaging and the respective Topic and Group to which this Action should transfer the conversation.
 

@@ -46,7 +46,7 @@ If you want your users to follow a different flow based on the channel they are 
 
 Within this 'Go To', guide the user based on the `internal.channel` variable, which contains the channel variable. In the image below you can see a bot that is connected to Facebook Messenger and Web chat; in order to offer the best experience in each channel, it diverts the users to the channel-specific flow by creating a condition: if internal.channel variable equals "facebook", create a 'Go To' to the Facebook flow; if not (else if), create a 'Go To' to the Web flow:
 
-![](<../.gitbook/assets/image (687).png>)
+![](<../.gitbook/assets/image (687) (1).png>)
 
 The values for `internal.channel` correspond to the channel names:
 

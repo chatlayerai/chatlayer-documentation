@@ -50,7 +50,7 @@ If your tickets have custom fields, you can also include them in the Action dial
 
 **2 – Add notes to a ticket**
 
-![](<../../.gitbook/assets/image (687) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (687) (1) (1) (1) (1).png>)
 
 **3 – Add replies to a ticket**&#x20;
 

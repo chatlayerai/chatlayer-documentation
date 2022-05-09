@@ -25,7 +25,7 @@ Make sure your bot can handle [edge cases](https://docs.chatlayer.ai/tutorials/g
 
 * Avoid 'red' bot dialogs. Bot dialogs turn red when they are empty, which can lead to errors. When your bot dialog is red, either fill in a text message, delete it, or change the type.
 
-![An example of a 'red' bot dialog](<../../.gitbook/assets/image (684).png>)
+![An example of a 'red' bot dialog](<../../.gitbook/assets/image (684) (1).png>)
 
 * For action dialogs, try to limit API calls to less than 20 seconds to increase bot performance and prevent timeouts
 * In an input validation dialog, always fill in the 'When user response is not valid the first 2 or 3 times, bot asks question' section. For example, if the input validation is expecting a date, but the user is not given a date as an answer, these error texts will be triggered. If they are empty, the bot will not give a response and the flow will simply stop.&#x20;
