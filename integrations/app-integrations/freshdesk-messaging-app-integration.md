@@ -73,11 +73,11 @@ Paste the Custom Webhook URL copied from Chatlayer in the first field; copy the 
 
 To deploy the Freshdesk Messenger on your website, go to Freshdesk Messaging > Admin > Web Messenger:
 
-![](<../../.gitbook/assets/image (677) (1).png>)
+![](<../../.gitbook/assets/image (690).png>)
 
 In “Deploy”, copy the code snippet and paste it on your source code.
 
-![](<../../.gitbook/assets/image (684) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (680).png>)
 
 You’ll be able to see the webchat icon and interact with your Chatlayer bot:
 
@@ -95,13 +95,13 @@ Create a topics in Freshdesk Messaging:
 
 You can assign different groups to different topics, depending on your customer support structure, skills and lines of attention.
 
-![](<../../.gitbook/assets/image (704) (1).png>)
+![](<../../.gitbook/assets/image (704) (1) (1).png>)
 
 ![](<../../.gitbook/assets/image (718) (1).png>)
 
 Once you have all your topics and groups created, when you reach the points of your flow that will enable the customer to talk to an agent, create an Action dialog state and click on Send to Offload Provider:
 
-![](<../../.gitbook/assets/image (680) (1).png>)
+![](<../../.gitbook/assets/image (680) (1) (1).png>)
 
 Configure Freshdesk Messaging and the respective Topic and Group to which this Action should transfer the conversation.
 

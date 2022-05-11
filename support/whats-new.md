@@ -16,7 +16,7 @@ description: New features and functionalities in the platform
 
 * If you're not in the new page yet, you'll see this banner that will allow you to go to the new version:
 
-![](<../.gitbook/assets/image (680).png>)
+![](<../.gitbook/assets/image (680) (1).png>)
 
 ## March 2022
 
