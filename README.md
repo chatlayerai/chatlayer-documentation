@@ -7,7 +7,7 @@ Happy bot building!
 ![The Chatlayer platform](<.gitbook/assets/image (622).png>)
 
 \
-Ready to get started? 
+Ready to get started?&#x20;
 
 {% content-ref url="tutorials/getting-started.md" %}
 [getting-started.md](tutorials/getting-started.md)
@@ -17,11 +17,7 @@ Ready to get started?
 [tutorial-getting-started.md](tutorials/tutorial-getting-started.md)
 {% endcontent-ref %}
 
-{% content-ref url="channels/webwidget/" %}
-[webwidget](channels/webwidget/)
-{% endcontent-ref %}
-
-## Prefer to watch instead of read? 
+## Prefer to watch instead of read?&#x20;
 
 You can find our video tutorial series here:
 

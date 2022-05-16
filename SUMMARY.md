@@ -142,5 +142,5 @@
 * [Get in touch](support/get-in-touch.md)
 * [Platform Glossary](support/glossary.md)
 * [SaaS Regions & IP Ranges](support/saas-regions-and-ip-ranges.md)
-* [Status](https://status.chatlayer.ai)
+* [Status](https://status.chatlayer.ai/)
 * [What's new](support/whats-new.md)
