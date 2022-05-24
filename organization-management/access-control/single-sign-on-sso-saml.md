@@ -71,3 +71,22 @@ It is now possible for members of your AD organization to login to the Chatlayer
 
 &#x20;We do not currently offer role-mapping of Azure AD roles to Chatlayer roles. You can find out more about roles and access control on our [user management page](https://docs.chatlayer.ai/bot-answers/user-management).
 
+## Okta
+
+To set up SAML SSO through Okta, you can follow the steps below.
+
+Step 1: Create a new app integration in Okta, select SAML 2.0
+
+![](<../../.gitbook/assets/image (717).png>)
+
+Step 2: give the newly created SAML 2.0 app a name
+
+![](<../../.gitbook/assets/image (713).png>)
+
+Step 3: fill in the Single sign on URL as retrieved from Chatlayer (Assertion consumer service URL) and the Audience URI (`https://auth.chatlayer.ai/auth/realms/Chatlayer`)
+
+![](<../../.gitbook/assets/image (705).png>)
+
+Step 4: Select the following settings in the 'Feedback' step of the Okta configuration
+
+![](<../../.gitbook/assets/image (724).png>)

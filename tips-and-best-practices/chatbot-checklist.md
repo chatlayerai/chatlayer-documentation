@@ -18,4 +18,4 @@ Here are some tips and tricks for building clever bots and offering customers th
 | Uses emojis if/when appropriate                                  | <p>Good: "Get in, we're going shopping 🛍"</p><p>Bad: "Sorry you lost your bank card 😂"</p>                                                                                                                                          |
 | Collects user feedback about the conversation                    | <p>"Before you go, how was this experience for you?"</p><ul><li>Great!</li><li>Not so great...</li></ul>                                                                                                                              |
 
-Want to learn more about Conversation Design and its best practices? [**Head over to Medium**](https://tesstettelin.medium.com) for more content and articles!
+Want to learn more about Conversation Design and its best practices? [**Head over to Medium**](https://tesstettelin.medium.com/) for more content and articles!

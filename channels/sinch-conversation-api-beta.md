@@ -16,7 +16,7 @@ You don't have to think about which type of message works with which channel –
 
 ## Creating your channels
 
-First, you need to create channels in the [Sinch dashboard](https://dashboard.sinch.com). Depending on the channel you want to set-up, the instructions will be different.
+First, you need to create channels in the [Sinch dashboard](https://dashboard.sinch.com/). Depending on the channel you want to set-up, the instructions will be different.
 
 ## Linking the channels to the Conversation API app
 
