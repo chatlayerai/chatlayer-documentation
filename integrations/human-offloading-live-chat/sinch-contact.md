@@ -114,7 +114,7 @@ Three things need to be set up for this use case to work:
 
 1. The variables that are going to identify the bot conversation and offloaded conversation are still active or paused need to be created:
 
-In this example, we created `internal.isPaused` toidentify when the bot is paused and internal.offload to identify when the&#x20;
+In this example, we created `internal.isPaused` to identify when the bot is paused and `internal.offload` to identify when the offload is active:
 
 ![](<../../.gitbook/assets/image (706) (1).png>)
 
