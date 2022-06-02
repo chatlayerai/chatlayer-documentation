@@ -4,6 +4,15 @@ description: New features and functionalities in the platform
 
 # What's new
 
+## May 2022
+
+* New look for the bot building canvas
+
+![](<../.gitbook/assets/image (727).png>)
+
+* Option to test out bot dialogs by pressing the 'play button' while hovering over them
+* Upgrade of the NLP engine. This upgrade improves the detection rate of contextual entities in real user inputs by around 15% on average. The improvement is particularly noticeable when the user input contains noisy words, spelling mistakes or when the user uses a wording that differs significantly from your expressions.
+
 ## April 2022
 
 * New "My bots" page that makes it easier to learn about Chatlayer and discover new templates

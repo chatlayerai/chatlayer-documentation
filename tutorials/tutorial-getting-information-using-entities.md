@@ -112,8 +112,6 @@ This will now result some expressions for the `Book train ticket` intent, and en
 
 ![Adding expressions to an intent](<../.gitbook/assets/image (650).png>)
 
-To make it easier for you to add new expressions fast, we have built the expressions generator. Head over to [this page](../understanding-users/expression-generator.md) for more information.
-
 ## Step 10: Testing contextual entities
 
 After we have retrained our model, let's see if its good enough to recognise the destination entity.

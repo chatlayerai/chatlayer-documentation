@@ -24,7 +24,6 @@
   * [Sentiment analysis](understanding-users/natural-language-processing-nlp/sentiment-analysis.md)
 * [Multilingual bots](understanding-users/multilanguage-bots/README.md)
   * [Translations](understanding-users/multilanguage-bots/translations.md)
-* [Expression generator](understanding-users/expression-generator.md)
 * [Context](understanding-users/using-context.md)
 
 ## Bot management <a href="#bot-answers" id="bot-answers"></a>
