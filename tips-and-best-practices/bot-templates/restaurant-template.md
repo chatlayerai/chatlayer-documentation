@@ -25,7 +25,7 @@ In the Introduction dialog, replace the image with that of your own restaurant. 
 **Dialog: Show menu**
 
 Change the image of the taco menu in this dialog to an image of your own restaurant’s menu. \
-Tip: you can use [www.canva.com](https://www.canva.com/) to create a free menu and any other visuals needed.
+Tip: you can use [www.canva.com](https://www.canva.com) to create a free menu and any other visuals needed.
 
 ### Flow: Book a table&#x20;
 
@@ -39,7 +39,7 @@ This Action dialog will look up available reservation times in an external datab
 You can connect your own database or order management system to this bot, as long as this software can make an API call. Read more about these type of integrations [here](https://docs.chatlayer.ai/integrations/integrations-101).
 {% endhint %}
 
-You will need to customize this dialog by connecting it to your own Airtable account and your own Airtable base. However, when you just imported the Restaurant template, it will be linked to [this Airtable](https://airtable.com/invite/l?inviteId=inv4z7FlKMiMCJZC0\&inviteToken=c391841a94cbae63af44e7d8ae26c5700909a42e4adf95007f313badadfb8cfb\&utm\_source=email). Feel free to use this template for testing, or as an example of what the data in your own Airtable should look like, but make sure to replace it once you start using the bot for your own restaurant! &#x20;
+You will need to customize this dialog by connecting it to your own Airtable account and your own Airtable base. However, when you just imported the Restaurant template, it will be linked to [this Airtable](https://airtable.com/invite/l?inviteId=inv4z7FlKMiMCJZC0\&inviteToken=c391841a94cbae63af44e7d8ae26c5700909a42e4adf95007f313badadfb8cfb). Feel free to use this template for testing, or as an example of what the data in your own Airtable should look like, but make sure to replace it once you start using the bot for your own restaurant! &#x20;
 
 If you do not yet have an Airtable account set up yet, you can do so by clicking 'Connect new account' and following the steps in the pop-up window. You need your Airtable API key, which you can find on your [Airtable account page](https://airtable.com/account).&#x20;
 

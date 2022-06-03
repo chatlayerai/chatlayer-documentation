@@ -15,7 +15,7 @@ Ready to build your own bot on Chatlayer? Great choice! Here are some best pract
 
 Try to keep the bot as dynamic as possible, so it's resilient to change. For example, avoid hardcoding any information or variables in the bot but instead, pull needed information from an external database, to keep one source of truth. This way, whenever something changes in your organisation, you only need to change it in the database not in your bot dialogs as well.&#x20;
 
-![An example of a non-dynamic bot with hardcoded values. Instead, create an intent or entity to cover all possible spellings.](<../../.gitbook/assets/image (685) (1).png>)
+![An example of a non-dynamic bot with hardcoded values. Instead, create an intent or entity to cover all possible spellings.](<../../.gitbook/assets/image (685).png>)
 
 ## Edge cases
 

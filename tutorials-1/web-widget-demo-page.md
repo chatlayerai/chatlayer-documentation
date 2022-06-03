@@ -1,6 +1,6 @@
 # Create a web widget demo page
 
-This guide will explain to you how to set up a custom demo page to showcase your chatbot as seen in this example: [https://banking-bot-demo.glitch.me/](https://banking-bot-demo.glitch.me/). This can be done using Glitch, where you can create apps in your browser for free.
+This guide will explain to you how to set up a custom demo page to showcase your chatbot as seen in this example: [https://banking-bot-demo.glitch.me/](https://banking-bot-demo.glitch.me). This can be done using Glitch, where you can create apps in your browser for free.
 
 ## 1. Create a web widget in Chatlayer
 
@@ -8,15 +8,15 @@ Create a web widget with the configuration of your liking via Channels. Read mor
 
 ## 2. Create account on Glitch
 
-Create an account on [glitch.com](http://www.glitch.com/).&#x20;
+Create an account on [glitch.com](http://www.glitch.com). 
 
-Create a new project and name it the way you want your link to be shown:&#x20;
+Create a new project and name it the way you want your link to be shown: 
 
 ![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LLTwFwbOqJj4dDhg8Ju%2Fuploads%2FpoCWsn3ZrKa5HTTK9GAL%2Ffile.png?alt=media)
 
 ## 3. Create html page
 
-Now click on the Index.html page in the left column. There, paste the following block of code between the two lines.&#x20;
+Now click on the Index.html page in the left column. There, paste the following block of code between the two lines. 
 
 Pay close attention to:
 
@@ -26,7 +26,7 @@ Pay close attention to:
 
 * Replace 'onload='chatlayer()'' with 'onload="initChatlayer()'
 * Line 92: Please enter the name of your glitch web page here
-* Line 81: If you want to change the background colour of the web page, you can do so by entering the [HEX colour code](https://www.color-hex.com/)&#x20;
+* Line 81: If you want to change the background colour of the web page, you can do so by entering the [HEX colour code](https://www.color-hex.com) 
 
 ```markup
  <!DOCTYPE html> 
@@ -144,7 +144,7 @@ Pay close attention to:
 -------------------
 ```
 
-Now check your website by clicking on ‘Show’ and then ‘In a New Window’ (see left top corner)&#x20;
+Now check your website by clicking on ‘Show’ and then ‘In a New Window’ (see left top corner) 
 
 ![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LLTwFwbOqJj4dDhg8Ju%2Fuploads%2F7D542SghUCqAwxvo3GRJ%2Ffile.png?alt=media)
 

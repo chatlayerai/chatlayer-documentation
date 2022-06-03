@@ -22,7 +22,7 @@ To get started, you need a Chatlayer account. \
 Have a problem with your account? Contact our support team [here](mailto:support@chatlayer.ai).
 {% endhint %}
 
-1.Go to [https://app.chatlayer.ai/](https://app.chatlayer.ai/) and log in using your credentials
+1.Go to [https://app.chatlayer.ai/](https://app.chatlayer.ai) and log in using your credentials
 
 2\. To build a new bot, click the blue `+ Add bot` button:
 

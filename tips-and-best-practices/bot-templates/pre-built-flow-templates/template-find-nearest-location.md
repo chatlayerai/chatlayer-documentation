@@ -78,7 +78,7 @@ For each of your organisation's locations, your Airtable will need to contain fi
 3. Latitude&#x20;
 4. Longitude&#x20;
 
-When you’ve newly imported the 'Nearest Location' template, it will automatically link to [this Airtable](https://airtable.com/invite/l?inviteId=invF76GY9tGp3hGyz\&inviteToken=224dcd7cbf041e3e39f7caefbbe6798f4dc4f5ef1643586d2a1a5cbcb286f1f3\&utm\_source=email). Feel free to use it for testing, or as an example of what the data in your own Airtable should look like, but make sure to replace it once you start using the bot for your own organisation.&#x20;
+When you’ve newly imported the 'Nearest Location' template, it will automatically link to [this Airtable](https://airtable.com/invite/l?inviteId=invF76GY9tGp3hGyz\&inviteToken=224dcd7cbf041e3e39f7caefbbe6798f4dc4f5ef1643586d2a1a5cbcb286f1f3). Feel free to use it for testing, or as an example of what the data in your own Airtable should look like, but make sure to replace it once you start using the bot for your own organisation.&#x20;
 
 For more information on how to integrate Airtable into your bot, check out [this tutorial](https://docs.chatlayer.ai/integrations/code-action/airtable).&#x20;
 

@@ -23,7 +23,7 @@ A bot dialog contains a bot response, which is usually connected to an intent. T
 
 **Channel**
 
-The channel is where your chatbot will operate. These days, chatbots can live on almost any channel where a two-way conversation is possible, pick one where your target audience hangs out. The channel you choose for your bot depends on where its users will most likely look for help or hangs out already. The bot-building platform I use, [Chatlayer.ai](http://chatlayer.ai/), supports Facebook Messenger, WhatsApp, Google Assistant, web widget, phone & voice, SMS, and many others!
+The channel is where your chatbot will operate. These days, chatbots can live on almost any channel where a two-way conversation is possible, pick one where your target audience hangs out. The channel you choose for your bot depends on where its users will most likely look for help or hangs out already. The bot-building platform I use, [Chatlayer.ai](http://chatlayer.ai), supports Facebook Messenger, WhatsApp, Google Assistant, web widget, phone & voice, SMS, and many others!
 
 **Chatbot**
 

@@ -4,11 +4,11 @@
 
 The Chatlayer SaaS application has environments deployed in the following locations:
 
-| Region | Location                                    | Cloud Provider                              | App URL                                                                                |
-| ------ | ------------------------------------------- | ------------------------------------------- | -------------------------------------------------------------------------------------- |
-| EU     | <p></p><p>St. Ghislain, Belgium, Europe</p> | <p>Google Cloud</p><p>(eu-west1)</p>        | [https://app.chatlayer.ai/](https://app.chatlayer.ai/)                                 |
-| US     | Ashburn, Virginia, North America            | <p>Google Cloud</p><p>(us-east4-a)</p>      | [https://app.us-east4.gcp.chatlayer.ai/](https://app.us-east4.gcp.chatlayer.ai)        |
-| Asia   | Mumbai, India                               | <p>Google Cloud<br>(asia-south1)</p><p></p> | [https://app.asia-south1.gcp.chatlayer.ai/](https://app.asia-south1.gcp.chatlayer.ai/) |
+| Region | Location                                    | Cloud Provider                              | App URL                                                                               |
+| ------ | ------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------- |
+| EU     | <p></p><p>St. Ghislain, Belgium, Europe</p> | <p>Google Cloud</p><p>(eu-west1)</p>        | [https://app.chatlayer.ai/](https://app.chatlayer.ai)                                 |
+| US     | Ashburn, Virginia, North America            | <p>Google Cloud</p><p>(us-east4-a)</p>      | [https://app.us-east4.gcp.chatlayer.ai/](https://app.us-east4.gcp.chatlayer.ai)       |
+| Asia   | Mumbai, India                               | <p>Google Cloud<br>(asia-south1)</p><p></p> | [https://app.asia-south1.gcp.chatlayer.ai/](https://app.asia-south1.gcp.chatlayer.ai) |
 
 {% hint style="info" %}
 If you would like to switch your bots from one location to another, please [Get in Touch](get-in-touch.md) with us.

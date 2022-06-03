@@ -78,7 +78,7 @@ Here are some tips & tricks for creating good expressions:
 7. **Create enough expressions**\
    We learned from lots of previous testing that you need at least 40 to 50 expressions to get a reasonable bot performance. Some of our customers added 200 to 400 expressions per intent, which results in excellent bot behaviour. Regularly check your user data (if you have it) and add the expressions your users provided you with to your model, which will make the model more and more accurate over time.&#x20;
 8. **Have a varied vocabulary**\
-   Capturing a wide variety of ways of saying the same thing is super important. Feel free to use a list of synonyms ([http://www.synonym.com/synonyms/](http://www.synonym.com/synonyms/)  or [https://www.thesaurus.com/](https://www.thesaurus.com/)) to get inspired. \
+   Capturing a wide variety of ways of saying the same thing is super important. Feel free to use a list of synonyms ([http://www.synonym.com/synonyms/](http://www.synonym.com/synonyms/)  or [https://www.thesaurus.com/](https://www.thesaurus.com)) to get inspired. \
    \
    You can also make use of the generator functionality on our platform to quickly create several expressions by simply substituting words for their synonyms. If you do so, make sure to pay special attention to creating a dataset with sufficient variation in the phrase structure. You don't want to repeat the same phrase over and over again, with only one word difference.
 9. **Choose a varied phrase structure**\

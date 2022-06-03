@@ -71,7 +71,7 @@ The meaning of the two expressions above is exactly the same, but you want to co
 
 ### Option 2: Match pattern
 
-Use a pattern to extract data from a user expression if it matches a particular format. Patterns are formed as regular expressions (like in Python). You can learn more about how to create regular expressions [here](https://regex101.com/).
+Use a pattern to extract data from a user expression if it matches a particular format. Patterns are formed as regular expressions (like in Python). You can learn more about how to create regular expressions [here](https://regex101.com).
 
 For example: you have defined **@customer\_ID** as a match entity, and have provided the following regex pattern: `[a-z]{5}[0-9]{2}`. This means that when a users says "My customer ID is terwf33" – which consists of 5 letters and 2 numbers – it is saved as the match entity **@customer\_ID** with the value "terwf33".
 

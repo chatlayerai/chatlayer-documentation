@@ -8,7 +8,7 @@ Do you have questions about upgrading your Chatlayer.ai license? Have an idea fo
 
 Want to follow up on your ticket? Contribute to our [community](https://chatlayer.zendesk.com/hc/en-us/community/topics)? You can do so by creating a Chatlayer.ai Zendesk account following these steps:
 
-* Go to the [Chatlayer.ai Zendesk home page](https://chatlayer.zendesk.com/)
+* Go to the [Chatlayer.ai Zendesk home page](https://chatlayer.zendesk.com)
 * Click 'Sign in' on the top right of the page
 * In the pop-up window, click on 'Sign up' link on the bottom left
 

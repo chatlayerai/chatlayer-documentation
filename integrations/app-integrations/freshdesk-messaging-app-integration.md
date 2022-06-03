@@ -53,7 +53,7 @@ Choose your region and paste the API Key that can be found in Freshdesk > Admin 
 
 ![](<../../.gitbook/assets/image (693) (1).png>)
 
-![](<../../.gitbook/assets/image (705) (1) (1).png>)
+![](<../../.gitbook/assets/image (705) (1).png>)
 
 ![](<../../.gitbook/assets/image (707) (1).png>)
 
@@ -63,7 +63,7 @@ Once the account is connected, Copy the Custom Webhook URL to paste it on Freshd
 
 Go to Freshdesk Messaging > Admin > Webhook
 
-![](<../../.gitbook/assets/image (685) (1) (1).png>)
+![](<../../.gitbook/assets/image (685) (1).png>)
 
 Paste the Custom Webhook URL copied from Chatlayer in the first field; copy the Authentication field, then paste it on Chatlayer:
 
@@ -109,7 +109,7 @@ You can create steps in your bot that will help you route the users to the most 
 
 ![](<../../.gitbook/assets/image (720) (1).png>)
 
-![](<../../.gitbook/assets/image (717) (1).png>)
+![](<../../.gitbook/assets/image (717).png>)
 
 After the offloading is completed, this is how you’ll see the conversation in your Freshdesk Messaging team inbox:
 
