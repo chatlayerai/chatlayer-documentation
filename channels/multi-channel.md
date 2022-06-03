@@ -75,19 +75,19 @@ The values for `internal.channel` correspond to the channel names:
 
 The table below gives an overview of which features are available in which channels. If a feature is not listed below, it's available for all channels.
 
-|                        | Chat Widget | Facebook Messenger | Facebook Workplace | WhatsApp | Webhook  API | Zendesk |
-| ---------------------- | ----------- | ------------------ | ------------------ | -------- | ------------ | ------- |
-| Text messages          | ✅           | ✅                  | ✅                  | ✅        | ✅            | ✅       |
-| Buttons                | ✅           | ✅                  | ✅                  | ✅        | ✅            | ✅       |
-| Quick replies          | ✅           | ✅                  | ✅                  | ✅\*2     | ✅            | ✅       |
-| Carousel               | ✅           | ✅                  | ✅                  |          | ✅            | ✅       |
-| List                   | ✅           | ✅                  | ✅                  | ✅        | ✅            | ✅       |
-| Media                  | ✅           | ✅                  | ✅                  | ✅        | ✅            | ✅       |
-| File upload            | ✅           |                    |                    |          |              |         |
-| Rich text              | ✅           |                    |                    |          |              |         |
-| Branding customization | ✅           | ✅\*1               | ✅                  |          | ✅            | ✅       |
-| iframe                 | ✅           |                    |                    |          |              |         |
-| Webview                |             | ✅                  | ✅                  |          |              |         |
+|                        | Chat Widget | Facebook Messenger                                                                             | Facebook Workplace | WhatsApp | Webhook  API | Zendesk |
+| ---------------------- | ----------- | ---------------------------------------------------------------------------------------------- | ------------------ | -------- | ------------ | ------- |
+| Text messages          | ✅           | ✅                                                                                              | ✅                  | ✅        | ✅            | ✅       |
+| Buttons                | ✅           | ✅                                                                                              | ✅                  | ✅        | ✅            | ✅       |
+| Quick replies          | ✅           | ✅                                                                                              | ✅                  | ✅\*2     | ✅            | ✅       |
+| Carousel               | ✅           | [deprecated](https://developers.facebook.com/docs/messenger-platform/send-messages/templates/) | ✅                  |          | ✅            | ✅       |
+| List                   | ✅           | ✅                                                                                              | ✅                  | ✅        | ✅            | ✅       |
+| Media                  | ✅           | ✅                                                                                              | ✅                  | ✅        | ✅            | ✅       |
+| File upload            | ✅           |                                                                                                |                    |          |              |         |
+| Rich text              | ✅           |                                                                                                |                    |          |              |         |
+| Branding customization | ✅           | ✅\*1                                                                                           | ✅                  |          | ✅            | ✅       |
+| iframe                 | ✅           |                                                                                                |                    |          |              |         |
+| Webview                |             | ✅                                                                                              | ✅                  |          |              |         |
 
 \*1: Only possible to change the color scheme
 
