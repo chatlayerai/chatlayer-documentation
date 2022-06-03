@@ -56,7 +56,7 @@ A shorter regular expression which will match the same domains is:
 ^https:\/\/www\.(subdomain1|subdomain2)\.(rootdomain1|rootdomain2)\.com(\/|$)
 ```
 
-An easy way to validate your regular expression is by using online tools like [https://regex101.com/](https://regex101.com)
+An easy way to validate your regular expression is by using online tools like [https://regex101.com/](https://regex101.com/)
 
 #### Whitelisting with an iframe
 

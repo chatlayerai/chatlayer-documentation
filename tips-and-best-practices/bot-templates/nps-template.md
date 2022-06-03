@@ -36,7 +36,7 @@ This Action dialog will store the NPS score, respondent type, and specific feedb
 You can connect your own database or order management system to this bot, as long as this software can make an API call. Read more about these type of integrations [here](https://docs.chatlayer.ai/integrations/integrations-101).
 {% endhint %}
 
-You will need to customize this dialog by connecting it to your own Airtable account and your own Airtable base. However, when you just imported the NPS template, it will be linked to [this Airtable](https://airtable.com/invite/l?inviteId=invhLLUh0JbaO2y2f\&inviteToken=996adaa49de24b5973fee36732413e1dbee710403dd074512aa69a1dcb50a073). Feel free to use this template as an example of what the data in your own Airtable should look like, but make sure to replace it once you start using the bot for your own business! &#x20;
+You will need to customize this dialog by connecting it to your own Airtable account and your own Airtable base. However, when you just imported the NPS template, it will be linked to [this Airtable](https://airtable.com/invite/l?inviteId=invhLLUh0JbaO2y2f\&inviteToken=996adaa49de24b5973fee36732413e1dbee710403dd074512aa69a1dcb50a073\&utm\_source=email). Feel free to use this template as an example of what the data in your own Airtable should look like, but make sure to replace it once you start using the bot for your own business! &#x20;
 
 If you do not yet have an Airtable account set up yet, you can do so by clicking 'Connect new account' and following the steps in the pop-up window. You need your Airtable API key, which you can find on your [Airtable account page](https://airtable.com/account).&#x20;
 
@@ -46,4 +46,4 @@ In the 'Base' field, replace the example ID with the ID of your own Airtable bas
 
 In the action dialog, in the left column under Record, we add the names of all fields we want to fill in the new Airtable record, i.e. NPS\_rating, Respondent\_type, Reason\_positive\_rating, Improvement\_feedback; in the right column we specify the variables we want to put as values in those fields.&#x20;
 
-Once you have collected ratings from enough users you can use these to easily calculate your business' overall Net Promoter Score. You can learn more on how to calculate this score [here](https://customergauge.com/blog/how-to-calculate-the-net-promoter-score#:\~:text=program%20more%20reliable-,The%20NPS%20Calculation%20Formula,is%20a%20score%20of%2040.).
+Once you have collected ratings from enough users you can use these to easily calculate your business' overall Net Promoter Score. You can learn more on how to calculate this score [here](https://customergauge.com/blog/how-to-calculate-the-net-promoter-score).

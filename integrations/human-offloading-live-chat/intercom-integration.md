@@ -31,7 +31,7 @@ After clicking Create App, you will be redirected to the Authentication page wit
 You will also need the ID of your teammate that will acts as a bot to configure your channel.\
 You find the teammate ID in the URL of a teammate Inbox:
 
-![](<../../.gitbook/assets/image (724).png>)
+![](<../../.gitbook/assets/image (724) (1).png>)
 
 Copy the Access Token and Teammate Id and paste them on Chatlayer to complete your configuration. 'Intercom Client Secret' is not needed at the moment (we are working on that), please just write "test" or anything that will fill the black and allow you to Create or Update the channel.
 

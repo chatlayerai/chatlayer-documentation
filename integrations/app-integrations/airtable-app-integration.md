@@ -79,7 +79,7 @@ You'll know it's right when your bot displays the correct data from your table:
 
 ## 2. From Chatlayer's homepage menu
 
-You can set up the Airtable integration directly from the left side menu on [app.chatlayer.ai](https://app.chatlayer.ai)
+You can set up the Airtable integration directly from the left side menu on [app.chatlayer.ai](https://app.chatlayer.ai/)
 
 ![](<../../.gitbook/assets/13 (1)>)
 
@@ -119,7 +119,7 @@ When clicking the three dots on the right, you can manage your app integration. 
 
 ![Reconnect](<../../.gitbook/assets/image (674) (1) (1) (1).png>)
 
-![Change Account Name](<../../.gitbook/assets/image (680) (1) (1) (1) (1).png>)
+![Change Account Name](<../../.gitbook/assets/image (680) (1) (1) (1).png>)
 
 ![Remove](<../../.gitbook/assets/image (673) (1) (1).png>)
 

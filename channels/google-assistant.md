@@ -17,7 +17,7 @@ Google Assistant is a voice channel, which means the channel doesn't support but
 
 To invoke your bot you need to assign it a name in the Google Actions Console following the steps below:
 
-1. Login into the actions console at [https://console.actions.google.com/](https://console.actions.google.com)
+1. Login into the actions console at [https://console.actions.google.com/](https://console.actions.google.com/)
 2. &#x20;Select the project associated with the bot from the list
 3. From the project page, select the **Develop** tab on the top and on the sidebar select the section **Settings**
 4. You should see a form in which you can enter the **Display name** for your bot. Let's say you call it "Santa's helper", then click the **Save** button to persist the change
@@ -35,7 +35,7 @@ You can test your bot using Google Assistant on any device logged in with the sa
 
 Once your bot is ready to be shared with your users, you need to publish it. This can be done from the Google Actions Console as well.
 
-1. Login into the actions console at [https://console.actions.google.com/](https://console.actions.google.com)
+1. Login into the actions console at [https://console.actions.google.com/](https://console.actions.google.com/)
 2. Select the project associated with the bot from the l
 3. From the project page, select the **Deploy** tab on top
 4. Select **Directory Information** in the left sidebar and complete each section with the requested info. Click the **Save** button to persist the changes

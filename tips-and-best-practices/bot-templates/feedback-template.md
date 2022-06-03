@@ -20,7 +20,7 @@ If the user does give their email address, this dialog will look up an available
 You can link any sort of database to this bot, as long as it has an API. Read more about integrations [here](https://docs.chatlayer.ai/integrations/integrations-101).
 {% endhint %}
 
-You will need to customize this dialog by connecting it to your own Airtable account and your own Airtable base. However, when you have newly imported the Feedback template, it will be linked to [this Airtable](https://airtable.com/invite/l?inviteId=inv4OOmgw4Z9LECqW\&inviteToken=a76823d9162c8ffc11225de76fa27ced854aaaeaf90c1013bc5f65ffebf4a8ae). Feel free to use it as an example of what the data in your own Airtable should look like, but make sure to replace it once you start using the bot for your own organisation. &#x20;
+You will need to customize this dialog by connecting it to your own Airtable account and your own Airtable base. However, when you have newly imported the Feedback template, it will be linked to [this Airtable](https://airtable.com/invite/l?inviteId=inv4OOmgw4Z9LECqW\&inviteToken=a76823d9162c8ffc11225de76fa27ced854aaaeaf90c1013bc5f65ffebf4a8ae\&utm\_source=email). Feel free to use it as an example of what the data in your own Airtable should look like, but make sure to replace it once you start using the bot for your own organisation. &#x20;
 
 If you do not yet have an Airtable account set up in Chatlayer, you can do so by clicking Connect new account and following the steps in the pop-up window (you will need your Airtable API key). You can find your API key on your [Airtable account page](https://airtable.com/account).&#x20;
 

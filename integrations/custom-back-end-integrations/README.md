@@ -161,5 +161,5 @@ As a response for the request we send the next dialogs state to redirect the use
 As an alternative solution you could also send that chat message as a response of the API plugin requests by using the messages key.
 
 {% hint style="success" %}
-You can have a look at the code of our mock banking backend [here](https://chatlayer-integration-demo.glitch.me). Feel free to reuse parts of this project to create your own custom Chatlayer.ai integrations.
+You can have a look at the code of our mock banking backend [here](https://chatlayer-integration-demo.glitch.me/). Feel free to reuse parts of this project to create your own custom Chatlayer.ai integrations.
 {% endhint %}

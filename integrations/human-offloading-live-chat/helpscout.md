@@ -4,7 +4,7 @@ description: Learn how to configure Help Scout on you Chatlayer.ai chatbot
 
 # Help Scout
 
-Help Scout is a tool that offers simple service software. Read more [here](https://www.helpscout.com).
+Help Scout is a tool that offers simple service software. Read more [here](https://www.helpscout.com/).
 
 ## Help Scout Offloading
 
