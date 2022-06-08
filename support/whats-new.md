@@ -21,7 +21,7 @@ description: New features and functionalities in the platform
 
 * New version of the Channels page: you can now select the channels easier, with a search bar, choose which version (Draft or Live) of the channel you are creating, freely rename them, and have more than one channel of the same type (e.g., connecting 2 different WhatsApp numbers to the same bot).&#x20;
 
-![](<../.gitbook/assets/image (714).png>)
+![](<../.gitbook/assets/image (714) (1).png>)
 
 * If you're not in the new page yet, you'll see this banner that will allow you to go to the new version:
 
@@ -35,7 +35,7 @@ description: New features and functionalities in the platform
 
 * Signing up is easier than ever with our new sign-up flow - start your trial in mere seconds. Go to chatlayer.ai to try it.
 * An often requested feature: you can now search for a bot dialog directly from the canvas![](<../.gitbook/assets/image (715).png>)
-* The Chatlayer menu is now collapsible: more space for the bot canvas if you want it!![](<../.gitbook/assets/image (726).png>)
+* The Chatlayer menu is now collapsible: more space for the bot canvas if you want it!![](<../.gitbook/assets/image (726) (1).png>)
 
 ## January 2022
 

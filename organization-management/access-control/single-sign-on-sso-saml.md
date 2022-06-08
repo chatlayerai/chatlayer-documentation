@@ -81,7 +81,7 @@ Step 1: Create a new app integration in Okta, select SAML 2.0
 
 Step 2: give the newly created SAML 2.0 app a name
 
-![](<../../.gitbook/assets/image (713).png>)
+![](<../../.gitbook/assets/image (713) (1).png>)
 
 Step 3: fill in the Single sign on URL as retrieved from Chatlayer (Assertion consumer service URL) and the Audience URI (`https://auth.chatlayer.ai/auth/realms/Chatlayer`)
 

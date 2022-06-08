@@ -34,7 +34,7 @@ We are going to create new input validations. This can be done in the main flow 
 * In the Bot Message tab, scroll down to `Go to`
 * Type `destination` in the Go to field, and click `Create Input Validation 'destination'`
 
-![](<../.gitbook/assets/image (420).png>)
+![](<../.gitbook/assets/image (710).png>)
 
 {% hint style="info" %}
 In every bot dialog, there is a `Go to` option. This means that the conversation flow will automatically go to that next bot dialog if the current one is finished, or if that specific input is given. With the current set-up, the bot will automatically go to the input validation if the first bot message for the `Book train ticket` intent is finished.
@@ -59,11 +59,11 @@ You can find more info about plugin parser types [here](../bot-answers/dialog-st
 * Type `destination` as the variable. The input from each user will be saved under this variable name.
 * Type `Confirm booking` in the 'Go to' field. Because the `Confirm booking` bot dialog doesn't exist, you get the option to create a new one. Pick `Create Bot Message 'Confirm booking'`
 
-![](<../.gitbook/assets/image (415).png>)
+![](<../.gitbook/assets/image (716).png>)
 
 The end result should look like this:
 
-![](<../.gitbook/assets/image (428).png>)
+![](<../.gitbook/assets/image (723).png>)
 
 #### NLP & input plugin
 
@@ -71,11 +71,11 @@ You want to make sure your users don't get stuck in a loop where the bot keeps a
 
 Our Choo Choo bot doesn't have a mature NLP model yet, which increases the likelihood of false intent matches. So for now, it's best to select the 'Disable NLP' checkbox in the input plugin.
 
-![](<../.gitbook/assets/image (464).png>)
+![](<../.gitbook/assets/image (683).png>)
 
 Once created you will see the following flow:
 
-![](<../.gitbook/assets/image (452).png>)
+![](<../.gitbook/assets/image (692).png>)
 
 {% hint style="warning" %}
 The parent-child relation between dialog state nodes is only a visual representation, it has no functional meaning. Always link your bot dialogs using Go to's.
@@ -88,7 +88,7 @@ As can be seen in the image above, the bot message is red. This means it is not 
 * Open the `Confirm booking` bot dialog
 * Enter a new text message `Okay you want to go to {destination}. We can do that.`
 
-![](<../.gitbook/assets/image (421).png>)
+![](<../.gitbook/assets/image (706).png>)
 
 Time for a test!
 
@@ -108,15 +108,13 @@ Repeat the previous steps for the the other pieces of information you'd like to 
 * Departure time: At what time do you want to leave?
 * Departure date: Which day would you like to take the train?
 
-This means you need to create three extra Input Validations, just like the `destination`Input Validation. You can change the current `destination`Input Validation to make sure the `origin` is asked next:
-
-![](<../.gitbook/assets/image (418).png>)
+This means you need to create three extra Input Validations, just like the `destination`Input Validation. You can change the current `destination`Input Validation to make sure the `origin` is asked next.
 
 Create the Input Validation. Save the variable under 'origin' and choose 'Check if response matches > any'. Once this is created you will see this:&#x20;
 
 &#x20;
 
-![](<../.gitbook/assets/image (445).png>)
+![](<../.gitbook/assets/image (678).png>)
 
 This is because the `Confirm booking`Bot Message still has `destination` as parent. No worries, this will be fixed later. Add 'Where are you leaving from?' as text in the Input validation and save the input under 'origin' variable. Make sure that the next Input Validation after this one will be `departure time.`
 
@@ -165,7 +163,9 @@ Let's use buttons to request the user their preferred train class.
 * Add two buttons, choose the Go to option, "First class" and "Second class," both going to the `Confirm booking` bot dialog
 * In both buttons add a variable `class` and value `first` and `second`
 
-![](<../.gitbook/assets/image (463).png>)
+![](<../.gitbook/assets/image (725).png>)
+
+![](<../.gitbook/assets/image (675).png>)
 
 * Select format type `Any`, enter `class` as variable, and go to `Confirm booking`
 

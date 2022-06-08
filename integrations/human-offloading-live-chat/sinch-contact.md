@@ -116,7 +116,7 @@ Three things need to be set up for this use case to work:
 
 In this example, we created `internal.isPaused` to identify when the bot is paused and `internal.offload` to identify when the offload is active:
 
-![](<../../.gitbook/assets/image (706) (1).png>)
+![](<../../.gitbook/assets/image (706) (1) (1).png>)
 
 2\. The bot needs to identify that the offloading isn't active anymore:&#x20;
 
@@ -130,7 +130,7 @@ An event needs to be created by accessing the tab Events from the left-side menu
 
 
 
-![](<../../.gitbook/assets/image (719).png>)
+![](<../../.gitbook/assets/image (719) (1).png>)
 
 Once the offloaded conversation is ended by the agent, like in the screenshot below, the bot will be able to identify that `internal.offload` is inexistent.
 

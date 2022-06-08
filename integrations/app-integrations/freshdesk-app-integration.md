@@ -8,7 +8,7 @@ description: >-
 
 You can connect the Freshdesk app to Chatlayer by using the Action bot dialog. In this dialog, choose _Integration widget_, then under 'App', select _Freshdesk_ and click on 'Connect a new Freshdesk account'.
 
-![](<../../.gitbook/assets/image (678) (1) (1).png>)
+![](<../../.gitbook/assets/image (678) (1) (1) (1).png>)
 
 After clicking on “Connect new account”, you’ll see this pop-up:
 
@@ -46,7 +46,7 @@ Next, your Actions could be as followed:
 
 If your tickets have custom fields, you can also include them in the Action dialog state and request them thought the bot, as seen in "language" and "country" below:
 
-![](<../../.gitbook/assets/image (706) (1) (1).png>)
+![](<../../.gitbook/assets/image (706) (1) (1) (1).png>)
 
 **2 – Add notes to a ticket**
 

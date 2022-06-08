@@ -28,7 +28,7 @@ The first step to integrate Sparkcentral with Chatlayer.ai is to retrieve API Cr
 
 ![](<../../.gitbook/assets/image (677) (1) (1) (1) (1) (1) (1).png>)
 
-![](<../../.gitbook/assets/image (675) (1) (1).png>)
+![](<../../.gitbook/assets/image (675) (1) (1) (1).png>)
 
 * Once the configuration is complete, copy the Shared Secret under Custom Virtual Agent Configuration and save the new Custom Virtual Agent.
 * Go back to Chatlayer.ai, enter the shared webhook secret and save the channel configuration.

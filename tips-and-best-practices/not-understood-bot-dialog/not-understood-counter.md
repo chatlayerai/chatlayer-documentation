@@ -50,7 +50,7 @@ Save your set-up by clicking the `Save` button on the bottom right.
 
 The entire Go To dialog should look like this:
 
-![](<../../.gitbook/assets/image (675) (1).png>)
+![](<../../.gitbook/assets/image (675) (1) (1).png>)
 
 ## 4. Write the bot messages
 

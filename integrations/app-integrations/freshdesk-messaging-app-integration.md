@@ -27,11 +27,11 @@ Create 1 group and 1 topic exclusive to the bot in Freshdesk Messaging
 
 Don’t include any agents in the exclusive bot group:
 
-![](<../../.gitbook/assets/image (688).png>)
+![](<../../.gitbook/assets/image (688) (1).png>)
 
 Assign the topic to the bot group
 
-![](<../../.gitbook/assets/image (714) (1) (1).png>)
+![](<../../.gitbook/assets/image (714) (1) (1) (1).png>)
 
 To use Freshdesk Messaging as a channel, click in Channels > App Integration Channel and follow these instructions:
 
@@ -47,7 +47,7 @@ Either choose one of the connected accounts or connect new account:
 
 This is the pop up that will show when you choose to Connect new account:
 
-![](<../../.gitbook/assets/image (716).png>)
+![](<../../.gitbook/assets/image (716) (1).png>)
 
 Choose your region and paste the API Key that can be found in Freshdesk > Admin panel > API Tokens:
 
@@ -55,7 +55,7 @@ Choose your region and paste the API Key that can be found in Freshdesk > Admin 
 
 ![](<../../.gitbook/assets/image (705) (2).png>)
 
-![](<../../.gitbook/assets/image (707) (1).png>)
+![](<../../.gitbook/assets/image (707) (1) (1).png>)
 
 Once the account is connected, Copy the Custom Webhook URL to paste it on Freshdesk Messaging:
 

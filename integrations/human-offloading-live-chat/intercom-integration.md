@@ -26,7 +26,7 @@ From there, you should create a new App, as an Internal Integration
 
 After clicking Create App, you will be redirected to the Authentication page with your Access Token; you will need this token to connect with your Chatlayer bot.
 
-![](<../../.gitbook/assets/image (723) (1) (1).png>)
+![](<../../.gitbook/assets/image (723) (1) (1) (1).png>)
 
 You will also need the ID of your teammate that will acts as a bot to configure your channel.\
 You find the teammate ID in the URL of a teammate Inbox:
@@ -61,20 +61,20 @@ And finally save your Webhook. A success message should be displayed.
 First you will need to configure an Offloading Provider.\
 From your Chatlayer bot, navigate to Settings, Offloading and click on the "+" button to connect to Intercom. Paste your App's Access Token and choose from the list of your Bot admins, then save your configuration:
 
-![](<../../.gitbook/assets/image (678).png>)
+![](<../../.gitbook/assets/image (678) (1).png>)
 
-![](<../../.gitbook/assets/image (725) (1).png>)
+![](<../../.gitbook/assets/image (725) (1) (1).png>)
 
 
 
 \
 If you want to offload the conversation to an Agent on Intercom, you can use the Action Bot Dialog, selecting `"Send to offload provider"` :
 
-![](<../../.gitbook/assets/image (723) (1).png>)
+![](<../../.gitbook/assets/image (723) (1) (1).png>)
 
 Once the `"Send to offload provider"` is added, you can select the Offloading Provider and Team to which the conversation will be assigned to. All the teams configured in your Intercom account will be listed.
 
-![](<../../.gitbook/assets/image (714) (1).png>)
+![](<../../.gitbook/assets/image (714) (1) (1).png>)
 
 Once a conversation is handed over, the bot is placed in pause and will not answer anymore.
 

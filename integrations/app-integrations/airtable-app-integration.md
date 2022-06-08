@@ -71,7 +71,7 @@ More information on what to fill if you want to use the 'Search Formula' option 
 
 Now build your answer syntax:
 
-![](<../../.gitbook/assets/image (678) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (678) (1) (1) (1) (1) (1).png>)
 
 You'll know it's right when your bot displays the correct data from your table:
 
